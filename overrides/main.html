@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block site_name %}
+  <img src="{{ base_url }}/assets/thumbnails/OASIS_header.png" 
+       alt="OASIS Logo" 
+       style="height: 40px; object-fit: contain;">
+{% endblock %}
+
+
+{% block extrahead %}
+<meta name="google-site-verification" content="zuDAVj60mN5FV2Ujhrn0MbhUF6w0k2W7US8ztne1cuY" />
+{% endblock %}
+
+<script>
+    document.addEventListener("scroll", function () {
+        let scrolled = window.scrollY;
+        let headerImg = document.getElementById("header-img");
+        headerImg.style.transform = "scale(" + (1 + scrolled * 0.0005) + ")";
+    });
+</script>
+
