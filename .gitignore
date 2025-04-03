@@ -9,6 +9,13 @@
 # User-specific files
 .Ruserdata
 
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
 # Example code in package build process
 *-Ex.R
 
@@ -20,6 +27,13 @@
 
 # RStudio files
 .Rproj.user/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
 
 # produced vignettes
 vignettes/*.html
