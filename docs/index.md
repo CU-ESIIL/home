@@ -36,7 +36,7 @@
 
   <div class="library-item">
     <a href="https://textbook.esiil.org" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/advanced_textbook.jpeg?raw=true" alt="Advanced Textbook">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/advanced_textbook.jpeg?raw=true" alt="Tutorials and Learning Resources">
     </a>
     <p><strong>Advanced Textbook</strong></p>
     <p>Comprehensive guide to environmental data science.</p>
