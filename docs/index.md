@@ -82,6 +82,12 @@
 </style>
 
 ---
+<!-- Tag line under main content -->
+<div class="tagline">
+  Tags: environmental data science, synthesis, open science, analytics, ESIIL
+</div>
+
+---
 
 ## 🚀 **NSF Synthesis Working Groups**  
 
