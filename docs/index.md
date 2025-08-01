@@ -11,6 +11,11 @@
     <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 </div>
 
+<!-- Quick Start Button -->
+<div class="quick-start">
+  <a href="https://quickstart.esiil.org" class="quick-start-button" target="_blank">🚀 Quick Start</a>
+</div>
+
 ---
 ## 📚 Data & Analytics Libraries
 
@@ -32,6 +37,15 @@
     <p><strong>Analytics Library</strong></p>
     <p>Repository for data harmonization and analytics.</p>
     <a href="https://analytics-library.esiil.org" target="_blank">🔗 Visit Analytics Library</a>
+  </div>
+
+  <div class="library-item">
+    <a href="https://textbook.esiil.org" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/advanced_textbook.jpeg?raw=true" alt="Tutorials and Learning Resources">
+    </a>
+    <p><strong>Container Image Library</strong></p>
+    <p>Comprehensive guide to environmental data science.</p>
+    <a href="https://textbook.esiil.org" target="_blank">🔗 Read the Textbook</a>
   </div>
 
   <div class="library-item">
