@@ -22,12 +22,12 @@
 <div class="library-gallery">
 
   <div class="library-item">
-    <a href="https://data-library.esiil.org" target="_blank">
+    <a href="https://cu-esiil.github.io/data-library/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/data_library.jpeg?raw=true" alt="Data Library">
     </a>
     <p><strong>Data Library</strong></p>
     <p>Organizational hub for ESIIL datasets.</p>
-    <a href="https://data-library.esiil.org" target="_blank">🔗 Visit Data Library</a>
+    <a href="https://cu-esiil.github.io/data-library/" target="_blank">🔗 Visit Data Library</a>
   </div>
 
   <div class="library-item">
