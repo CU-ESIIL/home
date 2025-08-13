@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quickstart – OASIS</title>
+---
+title: Quick Start
+---
 
-  <!-- Overpass font (works on GitHub Pages) -->
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap');
 
-  <style>
-    :root{
+:root{
       --navy:#0f2747;
       --sky:#7db6ff;
       --ink:#0b1220;
@@ -87,10 +83,9 @@
       .label{font-size:1rem}
       .icon{width:30px;height:30px}
     }
-  </style>
-</head>
-<body>
-  <header class="hero">
+</style>
+
+<header class="hero">
     <div class="hero-inner">
       <h1>Quick Start</h1>
       <p class="subtitle">Jump into OASIS with these starter resources</p>
@@ -238,5 +233,3 @@
       out.textContent = logs.join('\n');
     })();
   </script>
-</body>
-</html>
