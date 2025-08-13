@@ -1,3 +1,9 @@
+---
+tags:
+  - stac
+  - tutorial
+---
+
 # Accessing data via STAC
 
 ESIIL, 2024

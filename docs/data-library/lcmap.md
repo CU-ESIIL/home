@@ -1,3 +1,10 @@
+---
+tags:
+  - landcover
+  - usgs
+  - remote-sensing
+---
+
 # Land Change Monitoring, Assessment, and Projection
 
 Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new generation of land cover mapping and change monitoring from the U.S. Geological Survey’s Earth Resources Observation and Science (EROS) Center. LCMAP answers a need for higher quality results at greater frequency with additional land cover and change variables than previous efforts. [The USGS website for LCMAP is here.](https://www.usgs.gov/special-topics/lcmap)

@@ -1,3 +1,10 @@
+---
+tags:
+  - gedi
+  - lidar
+  - biomass
+---
+
 # GEDI data overview
 
 The Global Ecosystem Dynamics Investigation (GEDI) is a joint mission between NASA and the University of Maryland, with the instrument installed aboard the International Space Station. Data acquired using the instrument’s three lasers are used to construct detailed three-dimensional (3D) maps of forest canopy height and the distribution of branches and leaves. By accurately measuring forests in 3D, GEDI data play an important role in understanding the amounts of biomass and carbon forests store and how much they lose when disturbed – vital information for understanding Earth’s carbon cycle and how it is changing. GEDI data also can be used to study plant and animal habitats and biodiversity, and how these change over time.

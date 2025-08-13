@@ -1,3 +1,9 @@
+---
+tags:
+  - tutorial
+  - data-management
+---
+
 # Moving data to your instance from the data store
 
 Some data has been pre-downloaded for you and stored on the CyVerse data store in order to help expedite your projects.

@@ -1,3 +1,10 @@
+---
+tags:
+  - landfire
+  - disturbance
+  - fire
+---
+
 # LANDFIRE Public Events Geodatabase
 
 *From ['LANDFIRE Product Descriptions with References'](https://landfire.gov/documents/LF_Data_Product_Descriptions_w-References2019.pdf)*

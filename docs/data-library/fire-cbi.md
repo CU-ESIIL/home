@@ -1,3 +1,9 @@
+---
+tags:
+  - fire
+  - burn-severity
+---
+
 # Fire severity: Composite Burn Index (CBI)
 
 The Composite Burn Index (CBI) is a commonly used and ecologically meaningful measure of fire severity. Unlike some other measures of fire burn severity (e.g. MTBS fire severity), CBI is more readily comparable across large regions.

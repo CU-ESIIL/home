@@ -1,3 +1,10 @@
+---
+tags:
+  - stac
+  - tutorial
+  - data-cubes
+---
+
 The art of making a data cube
 ================
 Ty Tuff, ESIIL Data Scientist

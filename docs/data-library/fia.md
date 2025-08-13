@@ -1,3 +1,10 @@
+---
+tags:
+  - forest
+  - inventory
+  - fia
+---
+
 # Forest Inventory and Analysis Database (FIA or FIADB)
 
 ## Database description
