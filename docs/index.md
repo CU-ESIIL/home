@@ -64,24 +64,25 @@
 <style>
   .library-gallery {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap; /* No wrapping */
+    gap: 10px; /* Smaller gap so it fits */
     justify-content: center;
   }
 
   .library-item {
-    width: calc(100% / 3 - 20px);
+    width: calc(25% - 10px); /* 4 items per row */
     text-align: center;
   }
 
   .library-item img {
     width: 100%;
-    max-width: none;
+    max-width: 150px; /* Keep them smaller so text fits */
     border-radius: 10px;
     object-fit: cover;
     height: auto;
   }
 </style>
+
 
 <div class="tagline">
   Tags: environmental data science, synthesis, open science, analytics, ESIIL
