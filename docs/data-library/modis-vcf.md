@@ -1,3 +1,10 @@
+---
+tags:
+  - modis
+  - vegetation
+  - remote-sensing
+---
+
 # MODIS Vegetation Continuous Fields (VCF)
 
 The MODIS VCF product is derived from the MODIS satellite. The dataset provides proportional estimates of varying cover types. This data is developed from global training data derived using high-resolution imagery. The training data and phenological metrics are used with a regression tree to derive percent cover globally. The model is then used to estimate areal proportions of life form, leaf type, and leaf longevity.

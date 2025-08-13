@@ -1,3 +1,10 @@
+---
+tags:
+  - forest
+  - treemap
+  - remote-sensing
+---
+
 # TreeMap
 
 TreeMap 2016 is a USFS tree-level model of the forests of the conterminous United States created by using machine learning algorithms to match forest plot data from Forest Inventory and Analysis (FIA) to a 30x30 meter (m) grid.

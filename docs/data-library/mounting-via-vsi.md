@@ -1,3 +1,10 @@
+---
+tags:
+  - tutorial
+  - gdal
+  - cloud
+---
+
 # Mounting data directly from a URL
 
 ESIIL, 2024

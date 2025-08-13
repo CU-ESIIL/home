@@ -1,6 +1,10 @@
+---
+title: ESIIL Data Libraries
+---
+
 # ESIIL Data Libraries
 
-ESIIL has compiled additional data libraries for use at summits and hackathons. Link to those data libraries are available here, along with a summary of their current contents (February 2024).
+ESIIL has compiled additional data libraries for use at summits and hackathons. Links to those data libraries are available here, along with a summary of their current contents (February 2024).
 
 ## General ESIIL Data Library
 

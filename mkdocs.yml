@@ -113,9 +113,11 @@ extra_javascript:
   - chatbot_widget.js
 
 plugins:
-    - search
-    - mkdocstrings
-    - git-revision-date
-    - mkdocs-jupyter:
-          include_source: True
-          ignore_h1_titles: False
+  - search
+  - tags:
+      tags_file: data-library/esiil-data-library.md
+  - mkdocstrings
+  - git-revision-date
+  - mkdocs-jupyter:
+        include_source: True
+        ignore_h1_titles: False
