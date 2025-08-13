@@ -27,12 +27,19 @@
     html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Overpass',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
 
     /* Parallax hero */
-    .hero{height:40vh;min-height:260px;background:url('../assets/thumbnails/OASIS_header.png') center/cover fixed;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
-    .hero-inner{background:rgba(0,0,0,.45);padding:24px 32px;border-radius:12px}
+    .hero{height:40vh;min-height:260px;background:radial-gradient(circle at center,var(--sky),var(--navy)) fixed;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+    .hero-inner{background:rgba(15,39,71,.6);padding:24px 32px;border-radius:12px}
     .hero h1{margin:0;font-size:2.2rem;font-weight:800;letter-spacing:.4px}
     .hero p{margin:8px 0 0;font-size:1.1rem;opacity:.9}
 
     .wrap{max-width:var(--grid-max);margin:40px auto;padding:0 16px}
+
+    /* Tag cloud */
+    .tag-cloud{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:var(--gap)}
+    .tag-cloud a{text-decoration:none;color:var(--navy);background:rgba(125,182,255,.2);padding:4px 10px;border-radius:8px;transition:background .2s,font-size .2s}
+    .tag-cloud a:hover{background:rgba(125,182,255,.35)}
+    .tag-cloud a:nth-child(2n){font-size:1.1rem}
+    .tag-cloud a:nth-child(3n){font-size:.9rem}
 
     /* Grid of links */
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--gap)}
@@ -91,6 +98,17 @@
   </header>
 
   <div class="wrap">
+    <div class="tag-cloud" role="navigation" aria-label="Tag cloud">
+      <a href="./cyverse/">CyVerse</a>
+      <a href="./r/">R</a>
+      <a href="./python/">Python</a>
+      <a href="./github/">GitHub</a>
+      <a href="./docker/">Docker</a>
+      <a href="./oasis/">OASIS</a>
+      <a href="./data-library/">Data</a>
+      <a href="./analytics-library/">Analytics</a>
+      <a href="./container-library/">Containers</a>
+    </div>
     <div class="grid" role="list">
       <!-- Quick Start Page -->
       <a class="pill is-ink" href="./" role="listitem" aria-label="Quick Start Page">
