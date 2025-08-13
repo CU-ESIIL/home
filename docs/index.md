@@ -1,7 +1,7 @@
 <!-- Static Header Section -->
 <div class="static-header">
-    <img id="header-img" src="https://raw.githubusercontent.com/CU-ESIIL/home/main/docs/assets/thumbnails/OASIS_header.png" 
-         alt="OASIS Header">
+    <img id="header-img" src="https://raw.githubusercontent.com/CU-ESIIL/home/main/docs/assets/thumbnails/esiil_oasis_logo.png"
+         alt="ESIIL OASIS Header">
 </div>
 
 
