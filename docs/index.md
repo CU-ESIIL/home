@@ -20,7 +20,8 @@
 
 <style>
 .quick-start {
-  text-align: center; /* centers inline elements like <a> and <img> */
+  display: flex;
+  justify-content: center;
 }
 </style>
 
