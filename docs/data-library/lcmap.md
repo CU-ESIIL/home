@@ -3,6 +3,7 @@ tags:
   - landcover
   - usgs
   - remote-sensing
+  - raster
 ---
 
 # Land Change Monitoring, Assessment, and Projection

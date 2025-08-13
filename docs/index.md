@@ -4,7 +4,6 @@
          alt="ESIIL OASIS Header">
 </div>
 
-
 <!-- Main Content -->
 <div class="content">
     <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>

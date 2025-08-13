@@ -19,3 +19,19 @@
     });
 </script>
 
+{% block toc %}
+  {% if page.url == '' %}
+    <nav class="md-nav md-nav--secondary" aria-label="Tags">
+      <label class="md-nav__title">Subject Areas</label>
+      <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="{{ base_url }}/tags/raster/" class="md-nav__link">Raster Data</a></li>
+        <li class="md-nav__item"><a href="{{ base_url }}/tags/analytics/" class="md-nav__link">Analytics</a></li>
+        <li class="md-nav__item"><a href="{{ base_url }}/tags/container/" class="md-nav__link">Containers</a></li>
+        <li class="md-nav__item"><a href="{{ base_url }}/tags/education/" class="md-nav__link">Education</a></li>
+      </ul>
+    </nav>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+

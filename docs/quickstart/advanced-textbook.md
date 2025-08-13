@@ -1,3 +1,7 @@
+---
+tags: [education, raster]
+---
+
 # Advanced Textbook
 
 ## Sell It
