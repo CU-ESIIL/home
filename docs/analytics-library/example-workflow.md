@@ -1,5 +1,5 @@
 ---
-tags: [analytics, example]
+tags: [analytics, example, raster]
 ---
 
 # Example Workflow
