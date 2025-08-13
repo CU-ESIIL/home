@@ -1,3 +1,9 @@
+---
+tags:
+  - epa
+  - ecoregions
+---
+
 # EPA Ecoregions
 
 EPA ecoregions are a convenient spatial framework for ecosystem regions used by the United States Environmental Protection Agency. Full details on EPA ecoregions [can be found here.](https://www.epa.gov/eco-research/ecoregions)

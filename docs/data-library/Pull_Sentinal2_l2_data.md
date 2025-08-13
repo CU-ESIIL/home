@@ -1,3 +1,10 @@
+---
+tags:
+  - sentinel-2
+  - remote-sensing
+  - featured
+---
+
 Pulling Sentinal 2 data
 ================
 Ty Tuff, ESIIL Data Scientist

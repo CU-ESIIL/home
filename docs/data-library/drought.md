@@ -1,3 +1,9 @@
+---
+tags:
+  - drought
+  - climate
+---
+
 # Drought Indices
 
 There are a wide variety of drought indices and variables used to describe various forms of drought. This data is best accessed via VSI and STAC to enable climate data summarization at the desired temporal and spatial resolution.
