@@ -1,5 +1,5 @@
 ---
-tags: [container, example]
+tags: [container, example, raster]
 ---
 
 # Example Container
