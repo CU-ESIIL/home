@@ -8,59 +8,66 @@
 <!-- Main Content -->
 <div class="content">
     <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
-    <div class="search-tabs">
+    <div class="search-bar">
       <form action="search/" method="get" class="search-form">
-        <input type="text" name="q" placeholder="Search..." aria-label="Search" />
-        <button type="submit">Search</button>
+        <input type="search" name="q" placeholder="Search..." aria-label="Search" />
+        <button type="submit" aria-label="Submit search">🔍</button>
       </form>
-      <nav class="tab-nav">
-        <a href="./quickstart/">Quickstart</a>
-        <a href="./container-library/">Containers</a>
-        <a href="./resources/">Resources</a>
-      </nav>
+      <div class="tag-suggestions">
+        <a href="./quickstart/" class="tag">Quickstart</a>
+        <a href="./container-library/" class="tag">Containers</a>
+        <a href="./resources/" class="tag">Resources</a>
+      </div>
     </div>
     <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 </div>
 
 <style>
-  .search-tabs {
+  .search-bar {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
     margin: 10px 0;
   }
-  .search-tabs .search-form {
-    flex: 1 1 200px;
-  }
-  .search-tabs input[type="text"] {
+  .search-form {
+    position: relative;
     width: 100%;
-    padding: 5px 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    max-width: 500px;
   }
-  .search-tabs button {
-    padding: 5px 10px;
-    margin-left: 5px;
+  .search-form input[type="search"] {
+    width: 100%;
+    padding: 10px 40px 10px 14px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search-form button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
     cursor: pointer;
+    font-size: 1.2em;
   }
-  .tab-nav {
+  .tag-suggestions {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
   }
-  .tab-nav a {
-    padding: 5px 10px;
+  .tag-suggestions .tag {
+    padding: 5px 12px;
     text-decoration: none;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 15px;
     background: #f5f5f5;
     color: #333;
+    font-size: 0.9em;
   }
-  .tab-nav a:hover {
+  .tag-suggestions .tag:hover {
     background: #e0e0e0;
   }
 </style>
