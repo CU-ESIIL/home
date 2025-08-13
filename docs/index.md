@@ -14,9 +14,15 @@
 <!-- Quick Start Image Link -->
 <div class="quick-start">
   <a href="./quickstart/">
-    <img src="assets/thumbnails/quick_start_button.jpg" alt="Quickstart" width="800">
+    <img src="assets/thumbnails/quick_start_button.jpg" alt="Quickstart" width="400">
   </a>
 </div>
+
+<style>
+.quick-start {
+  text-align: center; /* centers inline elements like <a> and <img> */
+}
+</style>
 
 ---
 ## 📚 Data & Analytics Libraries
