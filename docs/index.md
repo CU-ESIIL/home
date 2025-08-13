@@ -11,9 +11,11 @@
     <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 </div>
 
-<!-- Quick Start Button -->
+<!-- Quick Start Image Link -->
 <div class="quick-start">
-  <a href="https://quickstart.esiil.org" class="quick-start-button" target="_blank">🚀 Quick Start</a>
+  <a href="./quickstart/">
+    <img src="assets/launch-terminal.png" alt="Quickstart">
+  </a>
 </div>
 
 ---
