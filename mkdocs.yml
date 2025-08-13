@@ -22,7 +22,6 @@ theme:
   font:
     text: 'Open Sans'
     code: 'Roboto Mono'
-  logo: 'assets/thumbnails/esiil_oasis_logo.png'
   favicon: 'assets/esiil_content/favicon.ico'
   # setting features for the navigation tab
   toc:
