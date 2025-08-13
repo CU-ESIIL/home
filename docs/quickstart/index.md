@@ -92,6 +92,9 @@ title: Quick Start
   </header>
 
   <div class="wrap">
+    <p>New to ESIIL's tools? Start with one of the guides below. Each quickstart
+    page walks you through the basics with step-by-step instructions and links
+    for deeper learning.</p>
     <div class="tag-cloud" role="navigation" aria-label="Tag cloud">
       <a href="./cyverse/">CyVerse</a>
       <a href="./r/">R</a>
