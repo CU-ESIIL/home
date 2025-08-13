@@ -9,7 +9,6 @@ title: Quick Start
       --navy:#0f2747;
       --sky:#7db6ff;
       --ink:#0b1220;
-      --bg:#fafbfc;
       --card:#ffffff;
       --border:rgba(15,39,71,.12);
       --shadow:0 1px 2px rgba(15,39,71,.06), 0 6px 18px rgba(15,39,71,.08);
@@ -20,7 +19,7 @@ title: Quick Start
       --grid-max:1100px;
     }
 
-    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Overpass',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    html,body{margin:0;background:transparent;color:var(--ink);font-family:'Overpass',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
 
     /* Parallax hero */
     .hero{height:40vh;min-height:260px;background:radial-gradient(circle at center,var(--sky),var(--navy)) fixed;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
@@ -94,15 +93,15 @@ title: Quick Start
 
   <div class="wrap">
     <div class="tag-cloud" role="navigation" aria-label="Tag cloud">
-      <a href="./cyverse.html">CyVerse</a>
-      <a href="./r.html">R</a>
-      <a href="./python.html">Python</a>
-      <a href="./github.html">GitHub</a>
-      <a href="./docker.html">Docker</a>
-      <a href="./oasis.html">OASIS</a>
+      <a href="./cyverse/">CyVerse</a>
+      <a href="./r/">R</a>
+      <a href="./python/">Python</a>
+      <a href="./github/">GitHub</a>
+      <a href="./docker/">Docker</a>
+      <a href="./oasis/">OASIS</a>
       <a href="./data-library/">Data</a>
-      <a href="./analytics-library.html">Analytics</a>
-      <a href="./container-library.html">Containers</a>
+      <a href="./analytics-library/">Analytics</a>
+      <a href="./container-library/">Containers</a>
     </div>
     <div class="grid" role="list">
       <!-- Quick Start Page -->
@@ -118,7 +117,7 @@ title: Quick Start
       </a>
 
       <!-- Starting with CyVerse -->
-      <a class="pill is-sky" href="./cyverse.html" role="listitem" aria-label="Starting with CyVerse">
+      <a class="pill is-sky" href="./cyverse/" role="listitem" aria-label="Starting with CyVerse">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M6 16h10a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.5 2A3.5 3.5 0 0 0 6 16z"/></svg>
         </div>
@@ -127,7 +126,7 @@ title: Quick Start
       </a>
 
       <!-- Starting with R -->
-      <a class="pill" href="./r.html" role="listitem" aria-label="Starting with R">
+      <a class="pill" href="./r/" role="listitem" aria-label="Starting with R">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M4 12.5c0-3.6 3.6-6.5 8-6.5s8 2.9 8 6.5-3.6 6.5-8 6.5H9"/><path d="M9 18V9h4a3 3 0 0 1 0 6h-4l6 3"/></svg>
         </div>
@@ -136,7 +135,7 @@ title: Quick Start
       </a>
 
       <!-- Starting with Python -->
-      <a class="pill is-sky" href="./python.html" role="listitem" aria-label="Starting with Python">
+      <a class="pill is-sky" href="./python/" role="listitem" aria-label="Starting with Python">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M7 12a5 5 0 0 1 5-5h3a2 2 0 0 1 2 2v2H9a2 2 0 0 0 0 4h6"/><circle cx="14.5" cy="9.5" r=".75"/></svg>
         </div>
@@ -145,7 +144,7 @@ title: Quick Start
       </a>
 
       <!-- Starting with GitHub -->
-      <a class="pill" href="./github.html" role="listitem" aria-label="Starting with GitHub">
+      <a class="pill" href="./github/" role="listitem" aria-label="Starting with GitHub">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M12 3c-5 0-9 4-9 9a9 9 0 0 0 6 8.6c.4.1.5-.2.5-.4v-2.1c-2.2.5-2.7-1-2.7-1-.4-1-1-1.2-1-1.2-.8-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.6.3-1.1.6-1.3-1.8-.2-3.7-.9-3.7-4A3.2 3.2 0 0 1 8.6 9a3 3 0 0 1 .1-2.2s.7-.2 2.2.9a7.6 7.6 0 0 1 4 0c1.5-1.1 2.2-.9 2.2-.9.3.7.3 1.5.1 2.2A3.2 3.2 0 0 1 17 12c0 3.1-1.9 3.8-3.7 4 .3.2.6.8.6 1.6v2.3c0 .2.1.5.6.4A9 9 0 0 0 21 12c0-5-4-9-9-9z"/></svg>
         </div>
@@ -154,7 +153,7 @@ title: Quick Start
       </a>
 
       <!-- Starting Docker Container -->
-      <a class="pill is-sky" href="./docker.html" role="listitem" aria-label="Starting Docker Container">
+      <a class="pill is-sky" href="./docker/" role="listitem" aria-label="Starting Docker Container">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M4 14h8M3 12h8M3 10h8M12 16c2 2 5 2 7-.5 1.3-1.6 1.2-3.7.4-5.5-1 .6-2 .8-3 .7"/><path d="M10 6h3v3h-3zM6 6h3v3H6zM6 10h3v3H6zM10 10h3v3h-3zM14 10h3v3h-3z"/></svg>
         </div>
@@ -163,7 +162,7 @@ title: Quick Start
       </a>
 
       <!-- Starting with OASIS -->
-      <a class="pill" href="./oasis.html" role="listitem" aria-label="Starting with OASIS">
+      <a class="pill" href="./oasis/" role="listitem" aria-label="Starting with OASIS">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 12c3-3 6-3 9 0s6 3 9 0"/><path d="M3 16c3-2 6-2 9 0s6 2 9 0"/><path d="M3 8c3-2 6-2 9 0s6 2 9 0"/></svg>
         </div>
@@ -181,7 +180,7 @@ title: Quick Start
       </a>
 
       <!-- Analytics Library -->
-      <a class="pill" href="./analytics-library.html" role="listitem" aria-label="Analytics Library">
+      <a class="pill" href="./analytics-library/" role="listitem" aria-label="Analytics Library">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M10 14l-2 2a4 4 0 0 1-6-6l3-3a4 4 0 0 1 6 0"/><path d="M14 10l2-2a4 4 0 0 1 6 6l-3 3a4 4 0 0 1-6 0"/></svg>
         </div>
@@ -190,7 +189,7 @@ title: Quick Start
       </a>
 
       <!-- Container Image Library -->
-      <a class="pill is-sky" href="./container-library.html" role="listitem" aria-label="Container Image Library">
+      <a class="pill is-sky" href="./container-library/" role="listitem" aria-label="Container Image Library">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 12h18"/><path d="M8 12h13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6v8"/></svg>
         </div>
@@ -199,7 +198,7 @@ title: Quick Start
       </a>
 
       <!-- Advanced Textbook -->
-      <a class="pill" href="./advanced-textbook.html" role="listitem" aria-label="Advanced Textbook">
+      <a class="pill" href="./advanced-textbook/" role="listitem" aria-label="Advanced Textbook">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M5 8h14"/><path d="M8 4v16"/></svg>
         </div>
@@ -209,27 +208,4 @@ title: Quick Start
 
     </div>
 
-    <!-- Minimal inline test cases -->
-    <div class="tests" id="tests" style="margin-top:28px;padding:12px 14px;border:1px dashed rgba(15,39,71,.2);border-radius:12px;background:#fff">
-      <h2 style="margin:0 0 10px;font-size:1rem;color:var(--navy)">Self‑tests</h2>
-      <pre id="test-log" style="margin:0;font-size:.9rem;white-space:pre-wrap">Running…</pre>
-    </div>
-  </div>
-
-  <script>
-    (function(){
-      const out = document.getElementById('test-log');
-      const logs = [];
-      function ok(cond, msg){
-        const line = (cond ? '✔ ' : '✖ ') + msg; logs.push(line);
-        if(!cond) console.error(msg); else console.log(msg);
-      }
-      try{
-        const pills = document.querySelectorAll('.pill');
-        ok(pills.length === 11, 'All 11 quick links are present');
-        const allHaveLabels = Array.from(document.querySelectorAll('.grid [role="listitem"]')).every(el => el.getAttribute('aria-label') || el.textContent.trim().length > 0);
-        ok(allHaveLabels, 'Each quick link has an accessible label or text');
-      }catch(e){ logs.push('✖ Exception during tests: ' + e.message); }
-      out.textContent = logs.join('\n');
-    })();
-  </script>
+</div>
