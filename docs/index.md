@@ -72,19 +72,117 @@
   }
 </style>
 
-<!-- Quick Start Image Link -->
-<div class="quick-start">
-  <a href="./quickstart/">
-    <img src="assets/thumbnails/quick_start_button.jpg" alt="Quickstart" width="800">
+<!-- Quick Start Button -->
+<div class="qs-wrap">
+  <a class="qs-btn" href="./quickstart/" role="button" aria-label="Open Quick Start">
+    <img src="assets/thumbnails/quick_start_button.jpg" alt="Quick Start" />
+    <!-- Corner badge -->
+    <span class="qs-badge">CLICK</span>
+    <!-- Bottom CTA bar -->
+    <span class="qs-cta">
+      <span class="qs-icon">▶</span>
+      <span>Open Quick Start</span>
+    </span>
   </a>
 </div>
 
 <style>
-.quick-start {
-  display: flex;
-  justify-content: center;
-}
+  /* Layout: centers the button */
+  .qs-wrap {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  }
+
+  /* Button container */
+  .qs-btn {
+    position: relative;
+    display: inline-block;
+    max-width: 720px;              /* control size here */
+    width: min(90vw, 720px);
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    outline: none;
+    /* “buttony” depth + hover lift */
+    box-shadow:
+      0 6px 14px rgba(0,0,0,.25),
+      inset 0 0 0 2px rgba(255,255,255,.08);
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  }
+
+  .qs-btn img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Subtle interactive glow ring */
+  .qs-btn::after {
+    content: "";
+    position: absolute; inset: 0;
+    border-radius: 16px;
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.0);
+    pointer-events: none;
+    transition: box-shadow .18s ease;
+  }
+
+  /* Corner "CLICK" badge */
+  .qs-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    background: #34d399; /* emerald */
+    color: #0b1220;
+    font: 700 12px/1 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    letter-spacing: .06em;
+    padding: .4rem .55rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  }
+
+  /* Bottom CTA bar */
+  .qs-cta {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    display: flex; align-items: center; justify-content: center; gap: .6rem;
+    padding: .7rem 1rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 35%, rgba(0,0,0,.75) 100%);
+    color: #e6f6ff;
+    font: 700 16px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,.65);
+  }
+  .qs-icon { display: inline-block; transform: translateY(1px); }
+
+  /* Hover / focus states = feel like a pressable button */
+  .qs-btn:hover,
+  .qs-btn:focus-visible {
+    transform: translateY(-2px);
+    box-shadow:
+      0 10px 22px rgba(0,0,0,.30),
+      inset 0 0 0 2px rgba(255,255,255,.1);
+    filter: saturate(1.08);
+  }
+  .qs-btn:hover::after,
+  .qs-btn:focus-visible::after {
+    box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.25); /* cyan glow ring */
+  }
+
+  /* Active (mouse down) */
+  .qs-btn:active {
+    transform: translateY(0);
+    box-shadow:
+      0 6px 14px rgba(0,0,0,.25),
+      inset 0 0 0 2px rgba(255,255,255,.08);
+  }
+
+  /* Optional: reduce motion respect */
+  @media (prefers-reduced-motion: reduce) {
+    .qs-btn { transition: none; }
+    .qs-btn::after { transition: none; }
+  }
 </style>
+
 
 ---
 ## 📚 Data & Analytics Libraries
