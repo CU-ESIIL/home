@@ -114,7 +114,7 @@ extra_javascript:
 plugins:
   - search
   - tags:
-      tags_file: data-library/esiil-data-library.md
+      tags_file: analytics-library/esiil-analytics-library.md
   - mkdocstrings
   - git-revision-date
   - mkdocs-jupyter:
