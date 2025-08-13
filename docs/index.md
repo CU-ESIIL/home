@@ -40,12 +40,12 @@
   </div>
 
   <div class="library-item">
-    <a href="https://textbook.esiil.org" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/advanced_textbook.jpeg?raw=true" alt="Tutorials and Learning Resources">
+    <a href="./container-library/">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/docker.jpeg?raw=true" alt="Container Image Library">
     </a>
     <p><strong>Container Image Library</strong></p>
-    <p>Comprehensive guide to environmental data science.</p>
-    <a href="https://textbook.esiil.org" target="_blank">🔗 Read the Textbook</a>
+    <p>Browse available container images for ESIIL computing.</p>
+    <a href="./container-library/">🔗 Explore Container Images</a>
   </div>
 
   <div class="library-item">
