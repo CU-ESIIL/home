@@ -38,7 +38,7 @@ invisible(lapply(list.of.packages, library, character.only = TRUE)) #apply libra
 ```{r, message=FALSE, warning = FALSE, results = 'hide'}
 
 #Read in MTBS data, ensure valid, add burn year
-mtbsPerims <- sf::st_read("C:/Users/tyler/OneDrive - UCB-O365/dev/fast-fires/data/mtbs_perimeter_data_1984_2021/mtbs_perims_DD.shp") %>% 
+mtbsPerims <- sf::st_read(here::here("data", "mtbs_perimeter_data_1984_2021", "mtbs_perims_DD.shp")) %>%
   st_transform(st_crs(4269)) #Data from https://www.mtbs.gov/
 
 
