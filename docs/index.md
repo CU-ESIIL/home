@@ -14,7 +14,7 @@
 <!-- Quick Start Image Link -->
 <div class="quick-start">
   <a href="./quickstart/">
-    <img src="assets/launch-terminal.png" alt="Quickstart">
+    <img src="assets/thumbnails/quick_start_button.jpg" alt="Quickstart">
   </a>
 </div>
 
