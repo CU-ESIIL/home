@@ -14,7 +14,6 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 nav:
   - OASIS: index.md
   - Quickstart: quickstart.md
-  - Container Library: container-library.md
   
 # Configuration
 theme:
