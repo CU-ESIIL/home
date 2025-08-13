@@ -8,8 +8,62 @@
 <!-- Main Content -->
 <div class="content">
     <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
+    <div class="search-tabs">
+      <form action="search/" method="get" class="search-form">
+        <input type="text" name="q" placeholder="Search..." aria-label="Search" />
+        <button type="submit">Search</button>
+      </form>
+      <nav class="tab-nav">
+        <a href="./quickstart/">Quickstart</a>
+        <a href="./container-library/">Containers</a>
+        <a href="./resources/">Resources</a>
+      </nav>
+    </div>
     <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 </div>
+
+<style>
+  .search-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .search-tabs .search-form {
+    flex: 1 1 200px;
+  }
+  .search-tabs input[type="text"] {
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .search-tabs button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f5f5f5;
+    cursor: pointer;
+  }
+  .tab-nav {
+    display: flex;
+    gap: 10px;
+  }
+  .tab-nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f5f5f5;
+    color: #333;
+  }
+  .tab-nav a:hover {
+    background: #e0e0e0;
+  }
+</style>
 
 <!-- Quick Start Image Link -->
 <div class="quick-start">
