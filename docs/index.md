@@ -1,8 +1,14 @@
+---
+hide:
+  - toc
+---
+
 <!-- Static Header Section -->
 <div class="static-header">
     <img id="header-img" src="https://raw.githubusercontent.com/CU-ESIIL/home/main/docs/assets/thumbnails/OASIS_header.png"
          alt="ESIIL OASIS Header">
 </div>
+
 
 <!-- Main Content -->
 <div class="content">
@@ -182,6 +188,66 @@
   }
 </style>
 
+<!-- Shared hover animation for linked images -->
+<style>
+  .library-item a,
+  .gallery-item a,
+  .template-item a {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 6px 14px rgba(0,0,0,.25),
+      inset 0 0 0 2px rgba(255,255,255,.08);
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  }
+
+  .library-item a::after,
+  .gallery-item a::after,
+  .template-item a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 0 rgba(56,189,248,0.0);
+    pointer-events: none;
+    transition: box-shadow .18s ease;
+  }
+
+  .library-item a:hover,
+  .library-item a:focus-visible,
+  .gallery-item a:hover,
+  .gallery-item a:focus-visible,
+  .template-item a:hover,
+  .template-item a:focus-visible {
+    transform: translateY(-2px);
+    box-shadow:
+      0 10px 22px rgba(0,0,0,.30),
+      inset 0 0 0 2px rgba(255,255,255,.1);
+    filter: saturate(1.08);
+  }
+
+  .library-item a:hover::after,
+  .library-item a:focus-visible::after,
+  .gallery-item a:hover::after,
+  .gallery-item a:focus-visible::after,
+  .template-item a:hover::after,
+  .template-item a:focus-visible::after {
+    box-shadow: 0 0 0 6px rgba(56,189,248,0.25);
+  }
+
+  .library-item a:active,
+  .gallery-item a:active,
+  .template-item a:active {
+    transform: translateY(0);
+    box-shadow:
+      0 6px 14px rgba(0,0,0,.25),
+      inset 0 0 0 2px rgba(255,255,255,.08);
+  }
+</style>
+
+
 
 ---
 ## 📚 Data & Analytics Libraries
@@ -194,7 +260,6 @@
     </a>
     <p><strong>Data Library</strong></p>
     <p>Organizational hub for ESIIL datasets.</p>
-    <a href="https://cu-esiil.github.io/data-library/" target="_blank">🔗 Visit Data Library</a>
   </div>
 
   <div class="library-item">
@@ -203,7 +268,6 @@
     </a>
     <p><strong>Analytics Library</strong></p>
     <p>Repository for data harmonization and analytics.</p>
-    <a href="https://analytics-library.esiil.org" target="_blank">🔗 Visit Analytics Library</a>
   </div>
 
   <div class="library-item">
@@ -212,7 +276,6 @@
     </a>
     <p><strong>Container Image Library</strong></p>
     <p>Browse available container images for ESIIL computing.</p>
-    <a href="./container-library/">🔗 Explore Container Images</a>
   </div>
 
   <div class="library-item">
@@ -221,7 +284,6 @@
     </a>
     <p><strong>Advanced Textbook</strong></p>
     <p>Comprehensive guide to environmental data science.</p>
-    <a href="https://textbook.esiil.org" target="_blank">🔗 Read the Textbook</a>
   </div>
 
 </div>
@@ -265,7 +327,6 @@
     </a>
     <p><strong>BioViewPoint</strong></p>
     <p>Visualization tools for biodiversity data.</p>
-    <a href="https://cu-esiil.github.io/BioViewPoint/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -274,7 +335,6 @@
     </a>
     <p><strong>Extreme Wildfire</strong></p>
     <p>Investigating extreme wildfire behavior.</p>
-    <a href="https://cu-esiil.github.io/ExtremeWildfire/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -283,7 +343,6 @@
     </a>
     <p><strong>Fungal Dispersal</strong></p>
     <p>ESIIL working group on fungal dispersal.</p>
-    <a href="https://cu-esiil.github.io/fungal_dispersal/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -292,7 +351,6 @@
     </a>
     <p><strong>Macrophenology</strong></p>
     <p>Macroecological patterns in phenology.</p>
-    <a href="https://cu-esiil.github.io/macrophenology/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -301,7 +359,6 @@
     </a>
     <p><strong>Maka-Sitomniya</strong></p>
     <p>Research on traditional ecological knowledge.</p>
-    <a href="https://cu-esiil.github.io/maka_sitomniya/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -310,7 +367,6 @@
     </a>
     <p><strong>AI for Natural Methane</strong></p>
     <p>Harmonizing natural methane datasets using AI.</p>
-    <a href="https://cu-esiil.github.io/AI-for-Natural-Methane/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -319,7 +375,6 @@
     </a>
     <p><strong>Zooplankton Indicator Dataset</strong></p>
     <p>Dataset and tools for zooplankton as environmental indicators.</p>
-    <a href="https://cu-esiil.github.io/zooplankton_indicator_dataset/" target="_blank">🔗 Visit</a>
   </div>
 
 </div>
@@ -357,7 +412,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Datacube Sandbox</strong></p>
     <p>Training and practice space for data cubes.</p>
-    <a href="https://cu-esiil.github.io/Jim-s-Sandbox/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -366,7 +420,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Biotic Niche Modeling</strong></p>
     <p>Research on species niche dynamics.</p>
-    <a href="https://cu-esiil.github.io/biotic_niche_modeling/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -375,7 +428,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Nutrient Flows</strong></p>
     <p>Analysis of seafood trade and sustainability.</p>
-    <a href="https://cu-esiil.github.io/nutrient-flows/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -384,7 +436,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>LTER Material Legacies</strong></p>
     <p>Impact of dead tree legacies on forest resilience.</p>
-    <a href="https://github.com/CU-ESIIL/LTER-material-legacies" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -393,7 +444,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Team Science</strong></p>
     <p>Studying scientific collaboration networks.</p>
-    <a href="https://cu-esiil.github.io/Team-Science/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -402,7 +452,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Opt Decision Making</strong></p>
     <p>Optimization and decision science.</p>
-    <a href="https://github.com/CU-ESIIL/opt-decision-making" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -411,7 +460,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Water Carbon Dynamics</strong></p>
     <p>Investigating water-carbon interactions.</p>
-    <a href="https://cu-esiil.github.io/water_carbon_management/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -420,7 +468,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Cultural ES WildfireRx</strong></p>
     <p>Wildfire effects on cultural ecosystem services.</p>
-    <a href="https://cu-esiil.github.io/CulturalES_WildfireRx/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="gallery-item">
@@ -429,7 +476,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>SCE Wildfire</strong></p>
     <p>Socioecological impacts of wildfire.</p>
-    <a href="https://cu-esiil.github.io/SCE-Wildfire/" target="_blank">🔗 Visit</a>
   </div>
 
  <div class="gallery-item">
@@ -438,7 +484,6 @@ These repositories represent postdoc-led research initiatives at ESIIL.
     </a>
     <p><strong>Tundra Shrub Expansion</strong></p>
     <p>Remote sensing tools for alpine ecosystems.</p>
-    <a href="https://cu-esiil.github.io/tundra_shrub_expansion/" target="_blank">🔗 Visit</a>
   </div>
 
 </div>
@@ -477,7 +522,6 @@ Major ESIIL-hosted and affiliated events.
     </a>
     <p><strong>Innovation Summit 2025</strong></p>
     <p>Official repository for the ESIIL Innovation Summit 2025.</p>
-    <a href="https://cu-esiil.github.io/Innovation-Summit-2025/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -486,7 +530,6 @@ Major ESIIL-hosted and affiliated events.
     </a>
     <p><strong>FIRE Plan 2024</strong></p>
     <p>Planning and strategy for fire management.</p>
-    <a href="https://cu-esiil.github.io/FIRE-plan-2024/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -495,7 +538,6 @@ Major ESIIL-hosted and affiliated events.
     </a>
     <p><strong>Innovation Summit 2024</strong></p>
     <p>Official repo for the ESIIL Innovation Summit 2024.</p>
-    <a href="https://cu-esiil.github.io/Innovation-Summit-2024/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -504,7 +546,6 @@ Major ESIIL-hosted and affiliated events.
     </a>
     <p><strong>Forest Carbon Codefest</strong></p>
     <p>Hands-on coding event for forest carbon research.</p>
-    <a href="https://cu-esiil.github.io/forest-carbon-codefest/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -513,7 +554,6 @@ Major ESIIL-hosted and affiliated events.
     </a>
     <p><strong>HYR-SENSE</strong></p>
     <p>Remote sensing.</p>
-    <a href="https://cu-esiil.github.io/HYR-SENSE/" target="_blank">🔗 Visit</a>
   </div>
 
 
@@ -524,7 +564,6 @@ Major ESIIL-hosted and affiliated events.
     </a>
     <p><strong>AGU 2023 Innovation Session</strong></p>
     <p>Maximizing Stakeholder Engagement in Open Environmental Data Science.</p>
-    <a href="https://cu-esiil.github.io/agu-2023_innovation_session/" target="_blank">🔗 Visit</a>
   </div>
 
 </div>
@@ -564,7 +603,6 @@ Templates to streamline project development and research collaboration.
     </a>
     <p><strong>Postdoc OASIS</strong></p>
     <p>Template for postdoc research documentation.</p>
-    <a href="https://cu-esiil.github.io/Postdoc_OASIS/" target="_blank">🔗 Visit</a>
   </div>
 
 
@@ -574,7 +612,6 @@ Templates to streamline project development and research collaboration.
     </a>
     <p><strong>Working Group OASIS</strong></p>
     <p>Central hub for information on ESIIL working groups.</p>
-    <a href="https://cu-esiil.github.io/Working_group_OASIS/" target="_blank">🔗 Visit</a>
   </div>
 
   
@@ -584,7 +621,6 @@ Templates to streamline project development and research collaboration.
     </a>
     <p><strong>Base GitHub Pages</strong></p>
     <p>Starter repository for GitHub Pages projects.</p>
-    <a href="https://github.com/CU-ESIIL/base-gh-pages" target="_blank">🔗 Visit</a>
   </div>
   
   <div class="template-item">
@@ -593,7 +629,6 @@ Templates to streamline project development and research collaboration.
     </a>
     <p><strong>Education OASIS</strong></p>
     <p>Template for ESIIL education students to create their own OASIS.</p>
-    <a href="https://cu-esiil.github.io/Education_OASIS/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -602,7 +637,6 @@ Templates to streamline project development and research collaboration.
     </a>
     <p><strong>Slideshow OASIS</strong></p>
     <p>Basic slideshow template for presentations.</p>
-    <a href="https://cu-esiil.github.io/Slideshow_OASIS/" target="_blank">🔗 Visit</a>
   </div>
 
 </div>
@@ -651,7 +685,6 @@ Repositories focused on software, data infrastructure, and computational tools.
     </a>
     <p><strong>Docker</strong></p>
     <p>Private repository for containerized workflows and CI/CD.</p>
-    <a href="https://github.com/CU-ESIIL/docker" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -660,7 +693,6 @@ Repositories focused on software, data infrastructure, and computational tools.
     </a>
     <p><strong>CyVerse Utils</strong></p>
     <p>Utilities for working with CyVerse infrastructure.</p>
-    <a href="https://github.com/CU-ESIIL/cyverse-utils" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -669,7 +701,6 @@ Repositories focused on software, data infrastructure, and computational tools.
     </a>
     <p><strong>OASIS Docker Demo</strong></p>
     <p>Public demonstration of Dockerized workflows.</p>
-    <a href="https://cu-esiil.github.io/OASISDockerDemo/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -678,7 +709,6 @@ Repositories focused on software, data infrastructure, and computational tools.
     </a>
     <p><strong>Min Docker Demo</strong></p>
     <p>Minimal demonstration for Docker containers.</p>
-    <a href="https://cu-esiil.github.io/Min_docker_demo/" target="_blank">🔗 Visit</a>
   </div>
 
   <div class="template-item">
@@ -687,7 +717,6 @@ Repositories focused on software, data infrastructure, and computational tools.
     </a>
     <p><strong>CyVerse Issues</strong></p>
     <p>Documenting known issues in CyVerse workflows.</p>
-    <a href="https://github.com/CU-ESIIL/cyverse-issues" target="_blank">🔗 Visit</a>
   </div>
 
 </div>
