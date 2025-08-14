@@ -12,8 +12,10 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 
 # Page tree
 nav:
-  - Tags: tags/
-  
+  - Tags:
+      - tags/index.md
+      - '!include tags/_tags.yml'
+      
 # Configuration
 theme:
   highlightjs: true
@@ -111,6 +113,10 @@ extra_javascript:
 
 plugins:
   - search
+  - tags:
+      tags_file: tags/index.md
+      tags_dir: tags
+      tags_nav_file: tags/_tags.yml
   - mkdocstrings
   - git-revision-date-localized:
       enable_creation_date: false
