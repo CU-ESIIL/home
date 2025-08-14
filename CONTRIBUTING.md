@@ -19,3 +19,8 @@ weight: 0.0       # optional, higher ranks first
 
 Run `pre-commit run --files <file.md>` before committing to ensure the metadata
 is present.
+
+## Revision dates
+
+Pages generated under `tags/` during the build are intentionally excluded from
+Git-based revision dates.

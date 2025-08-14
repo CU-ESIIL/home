@@ -92,8 +92,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -133,7 +133,11 @@ plugins:
   - tags:
       tags_file: analytics-library/esiil-analytics-library.md
   - mkdocstrings
-  - git-revision-date
+  - git-revision-date-localized:
+      enable_creation_date: false
+      fallback_to_build_date: true
+      exclude:
+        - ^tags/.*
   - mkdocs-jupyter:
         include_source: True
         ignore_h1_titles: False
