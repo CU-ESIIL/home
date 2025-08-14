@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: front-matter
+        name: Ensure pages have tags and date
+        entry: python scripts/check_front_matter.py
+        language: system
+        files: '^docs/.*\.md$'
+        exclude: '^docs/tags/index\.md$'
