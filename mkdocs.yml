@@ -15,7 +15,7 @@ nav:
   - Tags:
       - tags/index.md
       - '!include tags/_tags.yml'
-  
+      
 # Configuration
 theme:
   highlightjs: true
@@ -107,17 +107,12 @@ markdown_extensions:
 extra_css:
   - assets/css/style.css
   - chatbot_widget.css
-  - assets/css/tags-ui.css
 
 extra_javascript:
-  - assets/js/tags-ui.js
   - chatbot_widget.js
 
 plugins:
   - search
-  - gen-files:
-      scripts:
-        - scripts/build_tags.py
   - tags:
       tags_file: tags/index.md
       tags_dir: tags
