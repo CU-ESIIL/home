@@ -12,7 +12,9 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 
 # Page tree
 nav:
-  - Tags: tags/index.md
+  - Tags:
+      - tags/index.md
+      - !include tags/_tags.yml
   
 # Configuration
 theme:
@@ -117,7 +119,9 @@ plugins:
       scripts:
         - scripts/build_tags.py
   - tags:
-      tags_file: analytics-library/esiil-analytics-library.md
+      tags_file: tags/index.md
+      tags_dir: tags
+      tags_nav_file: tags/_tags.yml
   - mkdocstrings
   - git-revision-date-localized:
       enable_creation_date: false
