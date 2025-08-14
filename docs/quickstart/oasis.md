@@ -1,3 +1,10 @@
+---
+title: Starting with OASIS
+tags: [quickstart, oasis, docker]
+date: 2024-01-01
+weight: 0.8
+---
+
 # Starting with OASIS
 
 ## Sell It

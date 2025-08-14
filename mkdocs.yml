@@ -25,12 +25,13 @@ nav:
       - Analytics Library: quickstart/analytics-library.md
       - Container Image Library: quickstart/container-library.md
       - Advanced Textbook: quickstart/advanced-textbook.md
+  - Tags: tags/index.md
   
 # Configuration
 theme:
   highlightjs: true
   name: material
-  custom_dir: "docs/overrides"
+  custom_dir: overrides
   font:
     text: 'Open Sans'
     code: 'Roboto Mono'
@@ -41,11 +42,9 @@ theme:
     position: right
   features:
     - navigation.instant
-    #- navigation.tracking
-    #- navigation.tabs
+    - navigation.sections
+    - navigation.indexes
     - navigation.tabs.sticky
-    #- navigation.indexes
-    #- navigation.top
     - toc.integrate
     - toc.follow
     - content.code.copy
@@ -119,12 +118,17 @@ markdown_extensions:
 extra_css:
   - assets/css/style.css
   - chatbot_widget.css
-  
+  - assets/css/tags-ui.css
+
 extra_javascript:
+  - assets/js/tags-ui.js
   - chatbot_widget.js
 
 plugins:
   - search
+  - gen-files:
+      scripts:
+        - scripts/build_tags.py
   - tags:
       tags_file: analytics-library/esiil-analytics-library.md
   - mkdocstrings
