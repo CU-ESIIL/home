@@ -4,26 +4,53 @@ hide:
   - toc
 ---
 
-# Browse by Tag
+# Tags
 
-<div class="tag-hub">
-  <div class="tag-controls">
-    <label>
-      Tag:
-      <select id="tag-select"></select>
-    </label>
-    <label>
-      Sort:
-      <select id="sort-select">
-        <option value="recent">Most Recent</option>
-        <option value="weight">Weight + Recent</option>
-        <option value="alpha">Title A–Z</option>
-      </select>
-    </label>
-    <label>
-      Filter:
-      <input id="filter-input" type="text" placeholder="Type to filter titles..." />
-    </label>
-  </div>
-  <ul id="tag-results" class="tag-results"></ul>
-</div>
+- [analytics](analytics.md)
+- [Bayesian](Bayesian.md)
+- [biomass](biomass.md)
+- [burn-severity](burn-severity.md)
+- [climate](climate.md)
+- [cloud](cloud.md)
+- [container](container.md)
+- [contribution](contribution.md)
+- [data library](data library.md)
+- [data-cubes](data-cubes.md)
+- [data-management](data-management.md)
+- [development](development.md)
+- [disturbance](disturbance.md)
+- [docker](docker.md)
+- [drought](drought.md)
+- [ecoregions](ecoregions.md)
+- [education](education.md)
+- [epa](epa.md)
+- [example](example.md)
+- [featured](featured.md)
+- [fia](fia.md)
+- [fire](fire.md)
+- [forest](forest.md)
+- [gdal](gdal.md)
+- [gedi](gedi.md)
+- [GLMM](GLMM.md)
+- [INLA](INLA.md)
+- [inventory](inventory.md)
+- [landcover](landcover.md)
+- [landfire](landfire.md)
+- [LGM](LGM.md)
+- [lidar](lidar.md)
+- [modis](modis.md)
+- [oasis](oasis.md)
+- [quickstart](quickstart.md)
+- [R](R.md)
+- [raster](raster.md)
+- [remote-sensing](remote-sensing.md)
+- [schedule](schedule.md)
+- [sentinel-2](sentinel-2.md)
+- [spatial](spatial.md)
+- [spatiotemporal](spatiotemporal.md)
+- [stac](stac.md)
+- [treemap](treemap.md)
+- [tutorial](tutorial.md)
+- [usage](usage.md)
+- [usgs](usgs.md)
+- [vegetation](vegetation.md)
