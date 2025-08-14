@@ -64,12 +64,10 @@ json_payload = {
     "pages": [{k: v for k, v in p.items() if k != "_dt"} for p in pages],
     "tags": tags_sorted
 }
-os.makedirs("assets", exist_ok=True)
 with gen_open("assets/tags.json", "w") as f:
     json.dump(json_payload, f, indent=2, ensure_ascii=False)
 
 # Generate per-tag markdown pages ranked by date desc then weight desc
-os.makedirs("tags", exist_ok=True)
 for tag, items in tagmap.items():
     items_sorted = sorted(items, key=lambda x: (x["_dt"], x["weight"]), reverse=True)
     out_lines = [f"---\ntitle: {tag}\nhide:\n  - toc\n---\n", f"# {tag}\n"]
