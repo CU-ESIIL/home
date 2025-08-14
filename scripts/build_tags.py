@@ -1,5 +1,5 @@
 import os, re, json, yaml
-from datetime import datetime
+from datetime import datetime, date as date_cls
 from mkdocs_gen_files import open as gen_open, set_edit_path
 
 DOCS_DIR = "docs"
@@ -12,9 +12,12 @@ def parse_front_matter(text):
     return meta if isinstance(meta, dict) else {}
 
 def norm_date(d):
-    # Expect YYYY-MM-DD; fallback to empty string
+    """Return a datetime for sorting or None if invalid. Accepts datetime/date/str (YYYY-MM-DD)."""
+    if isinstance(d, (datetime, date_cls)):
+        # If it's a date (but not datetime), combine with midnight for consistency
+        return datetime.combine(d, datetime.min.time()) if isinstance(d, date_cls) and not isinstance(d, datetime) else d
     try:
-        return datetime.strptime(d, "%Y-%m-%d")
+        return datetime.strptime(str(d), "%Y-%m-%d")
     except Exception:
         return None
 
@@ -32,8 +35,9 @@ for root, _, files in os.walk(DOCS_DIR):
             if tags:
                 rel = os.path.relpath(p, DOCS_DIR).replace("\\", "/")
                 title = meta.get("title") or os.path.splitext(os.path.basename(p))[0]
-                date_s = meta.get("date", "")
-                dt = norm_date(date_s)
+                date_val = meta.get("date", "")
+                dt = norm_date(date_val)
+                date_s = dt.strftime("%Y-%m-%d") if dt else (str(date_val) if date_val else "")
                 weight = meta.get("weight", 0)
                 try:
                     weight = float(weight)
