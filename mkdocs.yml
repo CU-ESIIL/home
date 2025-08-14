@@ -14,18 +14,6 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 nav:
   - OASIS: index.md
   - Development Schedule: dev-schedule.md
-  - Quickstart:
-      - Quick Start: quickstart/index.md
-      - Starting with CyVerse: quickstart/cyverse.md
-      - Starting with R: quickstart/r.md
-      - Starting with Python: quickstart/python.md
-      - Starting with GitHub: quickstart/github.md
-      - Starting Docker Container: quickstart/docker.md
-      - Starting with OASIS: quickstart/oasis.md
-      - Data Library: quickstart/data-library/index.md
-      - Analytics Library: quickstart/analytics-library.md
-      - Container Image Library: quickstart/container-library.md
-      - Advanced Textbook: quickstart/advanced-textbook.md
   - Tags: tags/index.md
   
 # Configuration
