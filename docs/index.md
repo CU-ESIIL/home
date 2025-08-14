@@ -8,18 +8,6 @@ hide:
     <img id="header-img" src="https://raw.githubusercontent.com/CU-ESIIL/home/main/docs/assets/thumbnails/OASIS_header.png"
          alt="ESIIL OASIS Header">
 </div>
-
-<div class="tag-sidebar">
-  <h3>Subject Areas</h3>
-  <ul>
-    <li><a href="./tags/raster/">Raster Data</a></li>
-    <li><a href="./tags/analytics/">Analytics</a></li>
-    <li><a href="./tags/container/">Containers</a></li>
-    <li><a href="./tags/education/">Education</a></li>
-  </ul>
-</div>
-
-
 <!-- Main Content -->
 <div class="content">
     <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
