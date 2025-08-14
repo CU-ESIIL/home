@@ -9,35 +9,47 @@
 
 <script>
 (function(){
-  // Resolve base path to load assets/tags.json relative to current page
-  function basePath() {
-    var loc = document.querySelector("link[rel='canonical']");
-    if (loc && loc.href) {
-      try {
-        var url = new URL(loc.href);
-        return url.pathname.replace(/\/[^\/]*$/, '/');
-      } catch(e){}
+  function init(){
+    // Remove default table of contents nav if present
+    var defaultToc = document.querySelector("nav.md-nav--secondary");
+    if (defaultToc) defaultToc.remove();
+
+    // Resolve base path to load assets/tags.json relative to current page
+    function basePath() {
+      var loc = document.querySelector("link[rel='canonical']");
+      if (loc && loc.href) {
+        try {
+          var url = new URL(loc.href);
+          return url.pathname.replace(/\/[^\/]*$/, '/');
+        } catch(e){}
+      }
+      // Fallback for local builds
+      var p = window.location.pathname;
+      return p.endsWith("/") ? p : p.replace(/\/[^\/]*$/, "/");
     }
-    // Fallback for local builds
-    var p = window.location.pathname;
-    return p.endsWith("/") ? p : p.replace(/\/[^\/]*$/, "/");
+
+    fetch(basePath() + "assets/tags.json")
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!data || !data.tags) return;
+        var list = document.getElementById("tag-list");
+        data.tags.forEach(function(tag){
+          var li = document.createElement("li");
+          var a = document.createElement("a");
+          a.href = basePath() + "tags/" + encodeURIComponent(tag) + "/";
+          a.textContent = tag;
+          a.className = "tag-link";
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+      })
+      .catch(function(){ /* silently ignore */ });
   }
 
-  fetch(basePath() + "assets/tags.json")
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
-      if (!data || !data.tags) return;
-      var list = document.getElementById("tag-list");
-      data.tags.forEach(function(tag){
-        var li = document.createElement("li");
-        var a = document.createElement("a");
-        a.href = basePath() + "tags/" + encodeURIComponent(tag) + "/";
-        a.textContent = tag;
-        a.className = "tag-link";
-        li.appendChild(a);
-        list.appendChild(li);
-      });
-    })
-    .catch(function(){ /* silently ignore */ });
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
 })();
 </script>
