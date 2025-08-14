@@ -12,9 +12,7 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 
 # Page tree
 nav:
-  - Tags:
-      - tags/index.md
-      - !include tags/_tags.yml
+  - Tags: tags/
   
 # Configuration
 theme:
@@ -107,21 +105,12 @@ markdown_extensions:
 extra_css:
   - assets/css/style.css
   - chatbot_widget.css
-  - assets/css/tags-ui.css
 
 extra_javascript:
-  - assets/js/tags-ui.js
   - chatbot_widget.js
 
 plugins:
   - search
-  - gen-files:
-      scripts:
-        - scripts/build_tags.py
-  - tags:
-      tags_file: tags/index.md
-      tags_dir: tags
-      tags_nav_file: tags/_tags.yml
   - mkdocstrings
   - git-revision-date-localized:
       enable_creation_date: false
