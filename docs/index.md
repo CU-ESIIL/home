@@ -717,7 +717,15 @@ Repositories focused on software, data infrastructure, and computational tools.
     <p>Documenting known issues in CyVerse workflows.</p>
   </div>
 
-</div>
+  <div class="template-item">
+    <a href="./dev-schedule/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/gantt_chart.png?raw=true" alt="Development Schedule">
+    </a>
+    <p><strong>Development Schedule</strong></p>
+    <p>Living task list and timeline for OASIS development.</p>
+  </div>
+
+  </div>
 
 <style>
   .template-gallery {
