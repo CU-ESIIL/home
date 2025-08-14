@@ -1145,7 +1145,7 @@ Map natural habitats over each grade individually
  print(natural_habitats_match$plot)
 ```
 
-![](worksheet_redlining_files/figure-gfm/unnamed-chunk-18-1.png)
+![](redlining_figures/figure-gfm/unnamed-chunk-18-1.png)
 
 </details>
 

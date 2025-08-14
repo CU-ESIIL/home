@@ -81,16 +81,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="worksheet_redlining_files/libs/clipboard/clipboard.min.js"></script>
-<script src="worksheet_redlining_files/libs/quarto-html/quarto.js"></script>
-<script src="worksheet_redlining_files/libs/quarto-html/popper.min.js"></script>
-<script src="worksheet_redlining_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="worksheet_redlining_files/libs/quarto-html/anchor.min.js"></script>
-<link href="worksheet_redlining_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="worksheet_redlining_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="worksheet_redlining_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="worksheet_redlining_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="worksheet_redlining_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="redlining_figures/libs/clipboard/clipboard.min.js"></script>
+<script src="redlining_figures/libs/quarto-html/quarto.js"></script>
+<script src="redlining_figures/libs/quarto-html/popper.min.js"></script>
+<script src="redlining_figures/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="redlining_figures/libs/quarto-html/anchor.min.js"></script>
+<link href="redlining_figures/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="redlining_figures/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="redlining_figures/libs/bootstrap/bootstrap.min.js"></script>
+<link href="redlining_figures/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="redlining_figures/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -464,7 +464,7 @@ Geodetic CRS:  WGS 84
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>denver_plot <span class="ot">&lt;-</span> <span class="fu">plot_city_redlining</span>(denver_redlining)</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(denver_plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell" data-hash="worksheet_redlining_cache/html/unnamed-chunk-9_2ddd1ea75b40fa65f01a0d8ae65f535e">
@@ -518,7 +518,7 @@ Geodetic CRS:  WGS 84
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>plot_row <span class="ot">&lt;-</span> <span class="fu">split_plot</span>(denver_redlining, roads, rivers)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(plot_row)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell">
@@ -643,7 +643,7 @@ Geodetic CRS:  WGS 84
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a> food_match <span class="ot">&lt;-</span> <span class="fu">process_and_plot_sf_layers</span>(layer1, layer2, <span class="st">"final_redlining_plot.png"</span>)</span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">print</span>(food_match<span class="sc">$</span>plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell">
@@ -660,7 +660,7 @@ Some words could not fit on page. They have been removed.</code></pre>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a> processed_food_match <span class="ot">&lt;-</span> <span class="fu">process_and_plot_sf_layers</span>(layer1, layer2, <span class="st">"final_redlining_plot.png"</span>)</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">print</span>(processed_food_match<span class="sc">$</span>plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell">
@@ -673,7 +673,7 @@ Some words could not fit on page. They have been removed.</code></pre>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a> natural_habitats_match <span class="ot">&lt;-</span> <span class="fu">process_and_plot_sf_layers</span>(layer1, layer2, <span class="st">"final_redlining_plot.png"</span>)</span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">print</span>(natural_habitats_match<span class="sc">$</span>plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell">
@@ -815,7 +815,7 @@ Some words could not fit on page. They have been removed.</code></pre>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>ndvi_background <span class="ot">&lt;-</span> <span class="fu">yearly_average_ndvi</span>(denver_redlining,<span class="at">dx =</span> <span class="fl">0.0001</span>, <span class="at">dy =</span> <span class="fl">0.0001</span>)</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ndvi_background<span class="sc">$</span>plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
 </div>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ndvi_background<span class="sc">$</span>processing_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -913,7 +913,7 @@ name        : NDVI </code></pre>
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>ndvi_background_low <span class="ot">&lt;-</span> <span class="fu">yearly_average_ndvi</span>(denver_redlining)</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ndvi_background_low<span class="sc">$</span>plot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="672"></p>
 </div>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ndvi_background_low<span class="sc">$</span>processing_time)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -947,7 +947,7 @@ D     D MULTIPOLYGON (((-105.0865 3...</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>ndvi<span class="sc">$</span>plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="worksheet_redlining_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="672"></p>
+<p><img src="redlining_figures/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p><img src="redlining_mask_ndvi.png" class="img-fluid"></p>

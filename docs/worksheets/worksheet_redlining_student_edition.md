@@ -335,7 +335,7 @@ denver_plot <- plot_city_redlining(denver_redlining)
 denver_plot
 ```
 
-![](worksheet_redlining_student_edition_files/figure-gfm/unnamed-chunk-8-1.png)
+![](redlining_student_figures/figure-gfm/unnamed-chunk-8-1.png)
 
 </details>
 
@@ -351,7 +351,7 @@ plot_row <- split_plot(denver_redlining, roads, rivers)
 plot_row
 ```
 
-![](worksheet_redlining_student_edition_files/figure-gfm/unnamed-chunk-9-1.png)
+![](redlining_student_figures/figure-gfm/unnamed-chunk-9-1.png)
 
 </details>
 
