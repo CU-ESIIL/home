@@ -12,8 +12,9 @@ def parse_front_matter(text):
     return meta if isinstance(meta, dict) else {}
 
 def norm_date(d):
-    """Return a datetime for sorting or None if invalid."""
+    """Return a datetime for sorting or None if invalid. Accepts datetime/date/str (YYYY-MM-DD)."""
     if isinstance(d, (datetime, date_cls)):
+        # If it's a date (but not datetime), combine with midnight for consistency
         return datetime.combine(d, datetime.min.time()) if isinstance(d, date_cls) and not isinstance(d, datetime) else d
     try:
         return datetime.strptime(str(d), "%Y-%m-%d")
