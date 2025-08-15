@@ -6,5 +6,5 @@ hide:
 
 # featured
 
-- [Pull_Sentinal2_l2_data](/data-library/Pull_Sentinal2_l2_data.md)  
+- [Pull_Sentinal2_l2_data](/data-library/Pull_Sentinal2_l2_data/)  
   <small></small>

@@ -78,6 +78,8 @@ for tag, items in tagmap.items():
     lines = ["---", f"title: {tag}", "hide:", "  - toc", "---", "", f"# {tag}", ""]
     for it in items_sorted:
         date_str = it["date"] if it["date"] else ""
-        lines.append(f"- [{it['title']}](/{it['path']})  \n  <small>{date_str}</small>")
+        # Build an absolute link without the .md extension so the site points to the rendered page
+        link_path = '/' + it['path'][:-3] + '/' if it['path'].endswith('.md') else '/' + it['path']
+        lines.append(f"- [{it['title']}]({link_path})  \n  <small>{date_str}</small>")
     with open(os.path.join(TAGS_DIR, f"{tag}.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines))

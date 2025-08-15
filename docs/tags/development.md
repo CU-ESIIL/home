@@ -6,5 +6,5 @@ hide:
 
 # development
 
-- [dev-schedule](/dev-schedule.md)  
+- [dev-schedule](/dev-schedule/)  
   <small>2025-08-14</small>

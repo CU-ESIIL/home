@@ -6,5 +6,5 @@ hide:
 
 # landcover
 
-- [lcmap](/data-library/lcmap.md)  
+- [lcmap](/data-library/lcmap/)  
   <small></small>

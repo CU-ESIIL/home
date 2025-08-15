@@ -6,5 +6,5 @@ hide:
 
 # inventory
 
-- [fia](/data-library/fia.md)  
+- [fia](/data-library/fia/)  
   <small></small>

@@ -6,11 +6,11 @@ hide:
 
 # tutorial
 
-- [move-data-to-instance](/data-library/move-data-to-instance.md)  
+- [mounting-via-vsi](/data-library/mounting-via-vsi/)  
   <small></small>
-- [stac_simple](/data-library/stac_simple.md)  
+- [stac_mount_save](/data-library/stac_mount_save/)  
   <small></small>
-- [stac_mount_save](/data-library/stac_mount_save.md)  
+- [move-data-to-instance](/data-library/move-data-to-instance/)  
   <small></small>
-- [mounting-via-vsi](/data-library/mounting-via-vsi.md)  
+- [stac_simple](/data-library/stac_simple/)  
   <small></small>

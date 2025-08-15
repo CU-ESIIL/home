@@ -6,11 +6,11 @@ hide:
 
 # remote-sensing
 
-- [Pull_Sentinal2_l2_data](/data-library/Pull_Sentinal2_l2_data.md)  
+- [lcmap](/data-library/lcmap/)  
   <small></small>
-- [lcmap](/data-library/lcmap.md)  
+- [Pull_Sentinal2_l2_data](/data-library/Pull_Sentinal2_l2_data/)  
   <small></small>
-- [modis-vcf](/data-library/modis-vcf.md)  
+- [modis-vcf](/data-library/modis-vcf/)  
   <small></small>
-- [treemap](/data-library/treemap.md)  
+- [treemap](/data-library/treemap/)  
   <small></small>

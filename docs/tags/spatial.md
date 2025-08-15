@@ -6,5 +6,5 @@ hide:
 
 # spatial
 
-- [INLA — Drop-in Analytics Module](/analytics-library/inla.md)  
+- [INLA — Drop-in Analytics Module](/analytics-library/inla/)  
   <small></small>

@@ -6,7 +6,7 @@ hide:
 
 # landfire
 
-- [disturbance-stack](/data-library/disturbance-stack.md)  
+- [landfire-events](/data-library/landfire-events/)  
   <small></small>
-- [landfire-events](/data-library/landfire-events.md)  
+- [disturbance-stack](/data-library/disturbance-stack/)  
   <small></small>
