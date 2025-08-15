@@ -6,5 +6,5 @@ hide:
 
 # oasis
 
-- [Starting with OASIS](/quickstart/oasis.md)  
+- [Starting with OASIS](/quickstart/oasis/)  
   <small>2024-01-01</small>

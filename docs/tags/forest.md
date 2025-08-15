@@ -6,7 +6,7 @@ hide:
 
 # forest
 
-- [fia](/data-library/fia.md)  
+- [fia](/data-library/fia/)  
   <small></small>
-- [treemap](/data-library/treemap.md)  
+- [treemap](/data-library/treemap/)  
   <small></small>

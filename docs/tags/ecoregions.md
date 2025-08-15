@@ -6,5 +6,5 @@ hide:
 
 # ecoregions
 
-- [epa-ecoregions](/data-library/epa-ecoregions.md)  
+- [epa-ecoregions](/data-library/epa-ecoregions/)  
   <small></small>

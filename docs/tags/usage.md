@@ -6,5 +6,5 @@ hide:
 
 # usage
 
-- [how-to-use](/quickstart/data-library/how-to-use.md)  
+- [how-to-use](/quickstart/data-library/how-to-use/)  
   <small></small>

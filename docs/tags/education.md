@@ -6,5 +6,5 @@ hide:
 
 # education
 
-- [advanced-textbook](/quickstart/advanced-textbook.md)  
+- [advanced-textbook](/quickstart/advanced-textbook/)  
   <small></small>

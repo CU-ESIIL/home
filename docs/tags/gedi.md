@@ -6,5 +6,5 @@ hide:
 
 # gedi
 
-- [gedi](/data-library/gedi.md)  
+- [gedi](/data-library/gedi/)  
   <small></small>

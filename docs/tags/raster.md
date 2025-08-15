@@ -6,11 +6,11 @@ hide:
 
 # raster
 
-- [example-container](/container-library/example-container.md)  
+- [example-workflow](/analytics-library/example-workflow/)  
   <small></small>
-- [example-workflow](/analytics-library/example-workflow.md)  
+- [lcmap](/data-library/lcmap/)  
   <small></small>
-- [lcmap](/data-library/lcmap.md)  
+- [example-container](/container-library/example-container/)  
   <small></small>
-- [advanced-textbook](/quickstart/advanced-textbook.md)  
+- [advanced-textbook](/quickstart/advanced-textbook/)  
   <small></small>
