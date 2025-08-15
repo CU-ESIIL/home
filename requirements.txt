@@ -34,5 +34,5 @@ requests>=2.26
 
 mkdocs-gen-files>=0.5
 PyYAML>=6
-mkdocs-tags-plugin>=0.11
+mkdocs-tags-plugin
 pyyaml-include>=1.3
