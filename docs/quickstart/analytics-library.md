@@ -7,7 +7,7 @@ documented, saving you from reinventing common analysis steps.
 
 ## Show It
 Each workflow page includes step-by-step instructions and example outputs at
-the [Analytics Library](https://analytics-library.esiil.org). Many provide
+the [Analytics Library](https://cu-esiil.github.io/library/analytics/). Many provide
 Jupyter notebooks demonstrating how to use the functions.
 
 ## Do It

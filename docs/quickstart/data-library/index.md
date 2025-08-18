@@ -8,11 +8,11 @@ and ready-to-use code snippets.
 ## Show It
 Visit a dataset page to see descriptive metadata, citation information, and
 copy-and-paste code snippets, like on the
-[library homepage](https://cu-esiil.github.io/data-library/).
+[library homepage](https://cu-esiil.github.io/library/data/).
 
 ## Do It
 1. **Head to the site.** Open the
-   [Data Library](https://cu-esiil.github.io/data-library/).
+   [Data Library](https://cu-esiil.github.io/library/data/).
 2. **Search or browse.** Use search or tags to find a dataset relevant to your
    question.
 3. **Read the metadata.** Review the description, license, and code snippets.

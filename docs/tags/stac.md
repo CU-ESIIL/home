@@ -6,7 +6,7 @@ hide:
 
 # stac
 
-- [stac_mount_save](/data-library/stac_mount_save/)  
+- [stac_mount_save](/library/data/stac_mount_save/)  
   <small></small>
-- [stac_simple](/data-library/stac_simple/)  
+- [stac_simple](/library/data/stac_simple/)  
   <small></small>

@@ -19,8 +19,8 @@ hide:
       <div class="tag-suggestions">
         <a href="./quickstart/" class="tag">Quickstart</a>
         <a href="./container-library/" class="tag">Containers</a>
-        <a href="./analytics-library/" class="tag">Analytics</a>
-        <a href="./data-library/" class="tag">Data Library</a>
+        <a href="./quickstart/analytics-library/" class="tag">Analytics</a>
+        <a href="./quickstart/data-library/" class="tag">Data Library</a>
         <a href="./resources/" class="tag">Resources</a>
       </div>
     </div>
@@ -255,7 +255,7 @@ hide:
 <div class="library-gallery">
 
   <div class="library-item">
-    <a href="https://cu-esiil.github.io/data-library/" target="_blank">
+    <a href="https://cu-esiil.github.io/library/data/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/data_library.jpeg?raw=true" alt="Data Library">
     </a>
     <p><strong>Data Library</strong></p>
@@ -263,7 +263,7 @@ hide:
   </div>
 
   <div class="library-item">
-    <a href="https://analytics-library.esiil.org" target="_blank">
+    <a href="https://cu-esiil.github.io/library/analytics/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/analytics_library.jpeg?raw=true" alt="Analytics Library">
     </a>
     <p><strong>Analytics Library</strong></p>

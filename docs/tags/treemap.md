@@ -6,5 +6,5 @@ hide:
 
 # treemap
 
-- [treemap](/data-library/treemap/)  
+- [treemap](/library/data/treemap/)  
   <small></small>
