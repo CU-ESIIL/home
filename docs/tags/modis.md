@@ -6,5 +6,5 @@ hide:
 
 # modis
 
-- [modis-vcf](/data-library/modis-vcf/)  
+- [modis-vcf](/library/data/modis-vcf/)  
   <small></small>

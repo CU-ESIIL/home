@@ -6,7 +6,7 @@ hide:
 
 # drought
 
-- [drought](/data-library/drought/)  
+- [drought](/library/data/drought/)  
   <small></small>
-- [disturbance-stack](/data-library/disturbance-stack/)  
+- [disturbance-stack](/library/data/disturbance-stack/)  
   <small></small>

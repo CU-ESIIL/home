@@ -6,7 +6,7 @@ hide:
 
 # analytics
 
-- [INLA — Drop-in Analytics Module](/analytics-library/inla/)  
+- [INLA — Drop-in Analytics Module](/library/analytics/inla/)  
   <small></small>
-- [example-workflow](/analytics-library/example-workflow/)
+- [example-workflow](/library/analytics/example-workflow/)
   <small></small>

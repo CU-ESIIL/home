@@ -54,7 +54,7 @@
 
 
 ### Which Big Data Sets
-- **Explore potential data sets for your project's topic from the [data library](https://cu-esiil.github.io/data-library/). List your options below, and after discussion and review, indicate your final choice for both the system being perturbed/disrupted and the perturbator/disrupter.**
+- **Explore potential data sets for your project's topic from the [data library](https://cu-esiil.github.io/library/data/). List your options below, and after discussion and review, indicate your final choice for both the system being perturbed/disrupted and the perturbator/disrupter.**
 
 #### Draft Potential Data Sets
   - **System Being Perturbed/Disrupted:**
