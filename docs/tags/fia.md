@@ -6,5 +6,5 @@ hide:
 
 # fia
 
-- [fia](/library/data/fia/)  
+- [fia](/home/library/data/fia/)  
   <small></small>

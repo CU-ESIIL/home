@@ -6,5 +6,5 @@ hide:
 
 # lidar
 
-- [gedi](/library/data/gedi/)  
+- [gedi](/home/library/data/gedi/)  
   <small></small>

@@ -6,5 +6,5 @@ hide:
 
 # LGM
 
-- [INLA — Drop-in Analytics Module](/library/analytics/inla/)  
+- [INLA — Drop-in Analytics Module](/home/library/analytics/inla/)  
   <small></small>

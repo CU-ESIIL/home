@@ -6,5 +6,5 @@ hide:
 
 # data-management
 
-- [move-data-to-instance](/library/data/move-data-to-instance/)  
+- [move-data-to-instance](/home/library/data/move-data-to-instance/)  
   <small></small>

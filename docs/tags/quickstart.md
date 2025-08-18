@@ -6,9 +6,9 @@ hide:
 
 # quickstart
 
-- [Starting with OASIS](/quickstart/oasis/)  
+- [Starting with OASIS](/home/quickstart/oasis/)  
   <small>2024-01-01</small>
-- [how-to-use](/quickstart/data-library/how-to-use/)  
+- [how-to-use](/home/quickstart/data-library/how-to-use/)  
   <small></small>
-- [how-to-contribute](/quickstart/data-library/how-to-contribute/)  
+- [how-to-contribute](/home/quickstart/data-library/how-to-contribute/)  
   <small></small>

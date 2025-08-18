@@ -6,5 +6,5 @@ hide:
 
 # burn-severity
 
-- [fire-cbi](/library/data/fire-cbi/)  
+- [fire-cbi](/home/library/data/fire-cbi/)  
   <small></small>

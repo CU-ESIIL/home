@@ -6,5 +6,5 @@ hide:
 
 # container
 
-- [example-container](/container-library/example-container/)  
+- [example-container](/home/container-library/example-container/)  
   <small></small>

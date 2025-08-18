@@ -6,7 +6,7 @@ hide:
 
 # fire
 
-- [landfire-events](/library/data/landfire-events/)  
+- [landfire-events](/home/library/data/landfire-events/)  
   <small></small>
-- [fire-cbi](/library/data/fire-cbi/)  
+- [fire-cbi](/home/library/data/fire-cbi/)  
   <small></small>
