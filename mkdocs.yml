@@ -1,128 +1,74 @@
-site_name: 'OASIS: Open Analysis and Synthesis Infrastructure for Science'
-site_description: 'Open Analysis and Synthesis Infrastructure for Science'
-site_author: ESIIL staff
-site_url: https://CU-ESIIL.github.io/home
+site_name: "OASIS (ESIIL)"
 
-# Repository
-repo_name: home
-repo_url: https://github.com/CU-ESIIL/home
-edit_uri: edit/main/docs/
-# Copyright
-copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
-
-# Page tree
 nav:
-  - Tags:
-      - tags/index.md
-      - '!include tags/_tags.yml'
-      
-# Configuration
+  - Home: index.md
+  - About:
+      - About OASIS: about/index.md
+      - Governance: about/governance.md
+      - Policies: about/policies.md
+      - Accessibility: about/accessibility.md
+      - How to Cite: about/citation.md
+  - Libraries:
+      - Data Library:
+          - Overview: library/data/index.md
+          - Dataset Template: library/data/dataset-template.md
+          - Contribute a Dataset: library/data/contribute.md
+      - Analytics Library:
+          - Overview: library/analytics/index.md
+          - Module Template: library/analytics/module-template.md
+          - Contribute a Module: library/analytics/contribute.md
+      - Container Image Library:
+          - Overview: library/containers/index.md
+          - Catalog: library/containers/catalog.md
+          - Policies: library/containers/policies.md
+  - Quick Start: quickstart/index.md
+  - Tutorials: tutorials/index.md
+  - Roadmap: roadmap/index.md
+  - Changelog: changelog/index.md
+  - Contributing: contributing.md
+  - Code of Conduct: code-of-conduct.md
+  - Security: security.md
+  - Support: support/index.md
+
 theme:
-  highlightjs: true
   name: material
-  custom_dir: overrides
-  font:
-    text: 'Open Sans'
-    code: 'Roboto Mono'
-  favicon: 'assets/esiil_content/favicon.ico'
-  logo: 'assets/thumbnails/esiil_oasis_logo.png'
-  # setting features for the navigation tab
-  toc:
-    position: right
   features:
-    - navigation.instant
+    - navigation.tabs
     - navigation.sections
-    - navigation.indexes
-    - navigation.tabs.sticky
-    - toc.integrate
-    - toc.follow
+    - navigation.top
     - content.code.copy
-  # Default values, taken from mkdocs_theme.yml
-  language: en
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: white)"
-      primary: 'white'
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
+    - content.tabs.link
+    - toc.integrate
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to system preference
+plugins:
+  - search
+  - tags
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - mkdocs-simple-hooks # placeholder
+  - redirects
 
-# Options
-extra:
-  social:
-    - icon: fontawesome/brands/github
-    # link: https://github.com/cu-esiil/
-
-
-# Extensions
 markdown_extensions:
   - admonition
-  - abbr
   - attr_list
   - def_list
   - footnotes
-  - meta
-  - md_in_html
   - toc:
       permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-        - name: collapsible
-          class: collapsible
-          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.details
   - pymdownx.tabbed
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+  - pymdownx.emoji
+  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.tasklist
+  - pymdownx.arithmatex
+  - pymdownx.keys
 
-extra_css:
-  - assets/css/style.css
-  - chatbot_widget.css
-
-extra_javascript:
-  - chatbot_widget.js
-
-plugins:
-  - search
-  - tags:
-      tags_file: tags/index.md
-      tags_dir: tags
-      tags_nav_file: tags/_tags.yml
-  - mkdocstrings
-  - git-revision-date-localized:
-      enable_creation_date: false
-      fallback_to_build_date: true
-      exclude:
-        - ^tags/.*
-  - mkdocs-jupyter:
-        include_source: True
-        ignore_h1_titles: False
+extra:
+  social: []
+  analytics: {}
