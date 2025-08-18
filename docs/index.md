@@ -19,6 +19,8 @@ hide:
       <div class="tag-suggestions">
         <a href="./quickstart/" class="tag">Quickstart</a>
         <a href="./container-library/" class="tag">Containers</a>
+        <a href="./analytics-library/" class="tag">Analytics</a>
+        <a href="./data-library/" class="tag">Data Library</a>
         <a href="./resources/" class="tag">Resources</a>
       </div>
     </div>

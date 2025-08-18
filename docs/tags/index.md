@@ -14,7 +14,7 @@ hide:
 - [cloud](cloud.md)
 - [container](container.md)
 - [contribution](contribution.md)
-- [data library](data library.md)
+- [data library](data-library.md)
 - [data-cubes](data-cubes.md)
 - [data-management](data-management.md)
 - [development](development.md)
