@@ -274,6 +274,39 @@ readr::read_csv("outputs/inla/posterior_fixed.csv")
 readr::read_csv("outputs/inla/criteria.csv")
 ```
 
+## Example: Poisson regression with random intercept
+
+The following standalone example simulates count data with one predictor and a
+group-level random effect. The model is then fit with INLA and a brief summary
+is printed.
+
+```r
+library(INLA)
+set.seed(123)
+
+n_groups <- 5
+n_per_group <- 20
+group <- rep(1:n_groups, each = n_per_group)
+x1 <- rnorm(n_groups * n_per_group)
+eta <- 0.5 + 0.3 * x1 + rnorm(n_groups)[group]
+y <- rpois(length(eta), exp(eta))
+
+d <- data.frame(y, x1, group = factor(group))
+
+m <- inla(
+  y ~ 1 + x1 + f(group, model = "iid"),
+  family = "poisson",
+  data = d,
+  control.predictor = list(compute = TRUE)
+)
+
+summary(m)
+```
+
+The output includes posterior summaries for the fixed effect `x1` and the
+variance of the group-level random effect. Fitted values and diagnostics can be
+accessed from the returned object `m` as shown in the Quick Start above.
+
 ---
 
 ## Example Configs
