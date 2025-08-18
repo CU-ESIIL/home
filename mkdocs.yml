@@ -45,8 +45,6 @@ plugins:
   - tags
   - git-revision-date-localized:
       fallback_to_build_date: true
-  - mkdocs-simple-hooks # placeholder
-  - redirects
 
 markdown_extensions:
   - admonition
