@@ -6,5 +6,5 @@ hide:
 
 # data-cubes
 
-- [stac_mount_save](/library/data/stac_mount_save/)  
+- [stac_mount_save](/home/library/data/stac_mount_save/)  
   <small></small>

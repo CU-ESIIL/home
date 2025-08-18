@@ -6,5 +6,5 @@ hide:
 
 # usgs
 
-- [lcmap](/library/data/lcmap/)  
+- [lcmap](/home/library/data/lcmap/)  
   <small></small>

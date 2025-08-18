@@ -6,5 +6,5 @@ hide:
 
 # gdal
 
-- [mounting-via-vsi](/library/data/mounting-via-vsi/)  
+- [mounting-via-vsi](/home/library/data/mounting-via-vsi/)  
   <small></small>

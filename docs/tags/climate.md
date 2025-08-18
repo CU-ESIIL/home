@@ -6,5 +6,5 @@ hide:
 
 # climate
 
-- [drought](/library/data/drought/)  
+- [drought](/home/library/data/drought/)  
   <small></small>
