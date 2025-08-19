@@ -6,5 +6,5 @@ hide:
 
 # treemap
 
-- [treemap](/home/library/data/treemap/)  
+- [treemap](https://cu-esiil.github.io/data-library/treemap/)  
   <small></small>

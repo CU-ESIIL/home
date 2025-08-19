@@ -6,5 +6,5 @@ hide:
 
 # ecoregions
 
-- [epa-ecoregions](/home/library/data/epa-ecoregions/)  
+- [epa-ecoregions](https://cu-esiil.github.io/data-library/epa-ecoregions/)  
   <small></small>

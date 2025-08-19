@@ -6,5 +6,5 @@ hide:
 
 # climate
 
-- [drought](/home/library/data/drought/)  
+- [drought](https://cu-esiil.github.io/data-library/drought/)  
   <small></small>

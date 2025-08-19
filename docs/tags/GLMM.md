@@ -6,5 +6,5 @@ hide:
 
 # GLMM
 
-- [INLA — Drop-in Analytics Module](/home/library/analytics/inla/)  
+- [INLA — Drop-in Analytics Module](https://cu-esiil.github.io/analytics-library/inla/)  
   <small></small>
