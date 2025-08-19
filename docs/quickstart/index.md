@@ -212,9 +212,3 @@ title: Quick Start
     </div>
 
 </div>
-
-## TODO
-
-- [ ] Add "Who is this for?" section
-- [ ] Add "What you'll find here" details
-- [ ] Add "Next steps" links
