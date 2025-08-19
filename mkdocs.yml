@@ -14,7 +14,54 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 nav:
   - Tags:
       - tags/index.md
-      - '!include tags/_tags.yml'
+      - tags/analytics.md
+      - tags/Bayesian.md
+      - tags/biomass.md
+      - tags/burn-severity.md
+      - tags/climate.md
+      - tags/cloud.md
+      - tags/container.md
+      - tags/contribution.md
+      - tags/data-library.md
+      - tags/data-cubes.md
+      - tags/data-management.md
+      - tags/development.md
+      - tags/disturbance.md
+      - tags/docker.md
+      - tags/drought.md
+      - tags/ecoregions.md
+      - tags/education.md
+      - tags/epa.md
+      - tags/example.md
+      - tags/featured.md
+      - tags/fia.md
+      - tags/fire.md
+      - tags/forest.md
+      - tags/gdal.md
+      - tags/gedi.md
+      - tags/GLMM.md
+      - tags/INLA.md
+      - tags/inventory.md
+      - tags/landcover.md
+      - tags/landfire.md
+      - tags/LGM.md
+      - tags/lidar.md
+      - tags/modis.md
+      - tags/oasis.md
+      - tags/quickstart.md
+      - tags/R.md
+      - tags/raster.md
+      - tags/remote-sensing.md
+      - tags/schedule.md
+      - tags/sentinel-2.md
+      - tags/spatial.md
+      - tags/spatiotemporal.md
+      - tags/stac.md
+      - tags/treemap.md
+      - tags/tutorial.md
+      - tags/usage.md
+      - tags/usgs.md
+      - tags/vegetation.md
       
 # Configuration
 theme:
@@ -115,8 +162,6 @@ plugins:
   - search
   - tags:
       tags_file: tags/index.md
-      tags_dir: tags
-      tags_nav_file: tags/_tags.yml
   - mkdocstrings
   - git-revision-date-localized:
       enable_creation_date: false
