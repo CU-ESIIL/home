@@ -6,5 +6,5 @@ hide:
 
 # gedi
 
-- [gedi](/home/library/data/gedi/)  
+- [gedi](https://cu-esiil.github.io/data-library/gedi/)  
   <small></small>

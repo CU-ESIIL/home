@@ -6,5 +6,5 @@ hide:
 
 # landcover
 
-- [lcmap](/home/library/data/lcmap/)  
+- [lcmap](https://cu-esiil.github.io/data-library/lcmap/)  
   <small></small>

@@ -6,5 +6,5 @@ hide:
 
 # fia
 
-- [fia](/home/library/data/fia/)  
+- [fia](https://cu-esiil.github.io/data-library/fia/)  
   <small></small>

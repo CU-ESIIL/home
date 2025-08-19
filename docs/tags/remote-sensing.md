@@ -6,11 +6,11 @@ hide:
 
 # remote-sensing
 
-- [lcmap](/home/library/data/lcmap/)  
+- [lcmap](https://cu-esiil.github.io/data-library/lcmap/)  
   <small></small>
-- [Pull_Sentinal2_l2_data](/home/library/data/Pull_Sentinal2_l2_data/)  
+- [Pull_Sentinal2_l2_data](https://cu-esiil.github.io/data-library/Pull_Sentinal2_l2_data/)  
   <small></small>
-- [modis-vcf](/home/library/data/modis-vcf/)  
+- [modis-vcf](https://cu-esiil.github.io/data-library/modis-vcf/)  
   <small></small>
-- [treemap](/home/library/data/treemap/)  
+- [treemap](https://cu-esiil.github.io/data-library/treemap/)  
   <small></small>
