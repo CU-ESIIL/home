@@ -96,6 +96,7 @@ title: Quick Start
     page walks you through the basics with step-by-step instructions and links
     for deeper learning.</p>
     <div class="tag-cloud" role="navigation" aria-label="Tag cloud">
+      <a href="./cloud/">Cloud</a>
       <a href="./cyverse/">CyVerse</a>
       <a href="./r/">R</a>
       <a href="./python/">Python</a>
@@ -116,6 +117,15 @@ title: Quick Start
           <div class="label">QUICK START PAGE</div>
           <div class="note">overview & orientation</div>
         </div>
+        <span class="chev" aria-hidden="true"></span>
+      </a>
+
+      <!-- Introduction to Cloud -->
+      <a class="pill" href="./cloud/" role="listitem" aria-label="Introduction to Cloud">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6 16h10a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.5 2A3.5 3.5 0 0 0 6 16z"/></svg>
+        </div>
+        <div class="label">Introduction to Cloud</div>
         <span class="chev" aria-hidden="true"></span>
       </a>
 
