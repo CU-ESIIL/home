@@ -1,0 +1,6 @@
+<svg width="300" height="260" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="150,20 280,240 20,240" fill="none" stroke="black" stroke-width="2"/>
+  <text x="150" y="35" text-anchor="middle" font-size="14">Cloud Instance</text>
+  <text x="280" y="255" text-anchor="end" font-size="14">Persistent Storage</text>
+  <text x="20" y="255" text-anchor="start" font-size="14">GitHub</text>
+</svg>
