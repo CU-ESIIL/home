@@ -7,12 +7,7 @@ weight: 0.5
 
 # Introduction to the Cloud Triangle
 
-```mermaid
-graph TD
-    GH[GitHub] <--> CI[Cloud Instance]
-    CI <--> PS[Persistent Storage]
-    PS <--> GH
-```
+![Diagram of the cloud triangle showing connections among GitHub, a cloud instance, and persistent storage](cloud-triangle.svg)
 
 The cloud triangle illustrates how work moves among three services: a cloud compute instance, persistent storage, and GitHub. Each side of the triangle represents a connection, and understanding how data flows along those sides helps you decide where to place your files and how to retrieve them later.
 
@@ -24,17 +19,29 @@ A **cloud compute instance** is a virtual computer that you rent temporarily. It
 
 Instances are **ephemeral**. When you stop an instance or it idles out, the virtual machine disappears. Any data that lived only on that instance is lost. Because of this, you should treat the instance as a workspace for computation rather than storage. Work with files there, but always push important results to GitHub or persistent storage before closing.
 
+**Example:** Launch a notebook on your instance, generate figures, and commit the resulting image files before shutting it down.
+
+> **Tip:** Make a habit of pushing commits or copying data off the instance at the end of each session to avoid losing work.
+
 ## Persistent Storage: The Long-Term Memory
 
 **Persistent storage** is where you keep files that need to outlive the instance. CyVerse provides this storage, and it is ideal for datasets larger than 100 MB. The instance communicates with storage over HTTP, but that connection has a 2 GB limit. Within that limit, you can drag and drop files or use simple `push` and `pull` commands.
 
 When files exceed 2 GB, use CyVerse's **gocmds** utility. Gocmds is a specialized transfer tool derived from the older `commands` interface. It can move large datasets efficiently between your instance and persistent storage, ensuring that big files make the trip safely.
 
+**Example:** Keep a 10 GB reference genome in persistent storage and pull only the necessary chromosomes to your instance when needed.
+
+> **Tip:** For long-term organization, mirror the folder structure of your GitHub repositories inside persistent storage.
+
 ## GitHub: Collaboration Hub and Record
 
 **GitHub** is the collaboration hub for anything under 100 MB. It keeps a versioned history of your code, notebooks, and small data files, and it is the place where teams review changes and document their work. The organization leans heavily on GitHub, so repository templates are provided with a ready‑made GitHub Pages site. After you create a repository from a template, all you have to do is enable Pages to publish your documentation.
 
 GitHub also ties into the authentication story. Today most instances authenticate with GitHub over SSH using keys and the `git@github.com:` address. Newer containers are transitioning to two‑factor authentication over HTTPS (`https://github.com/`). Anyone can clone a public repository via HTTPS, but pushing changes back requires authentication. With 2FA enabled, you supply a personal access token instead of a password when you push.
+
+**Example:** Open a pull request to share a Jupyter notebook with colleagues and discuss revisions before merging.
+
+> **Tip:** Use `.gitignore` to keep large or sensitive files out of your repository and track them in persistent storage instead.
 
 ## Moving Data Around the Triangle
 
