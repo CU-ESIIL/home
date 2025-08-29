@@ -56,8 +56,8 @@ Think of it like this:
 1. **Launch an instance.**  
    In the Discovery Environment, start a **JupyterLab** session using the course’s containerized image so everyone shares the same software.
 
-2. **Connect GitHub (no shell required).**  
-   Open the **Git** sidebar → **Clone a Repository** → paste your SSH URL `git@github.com:ORG/REPO.git`.  
+2. **Connect GitHub (no shell required).**
+   Open the **Git** sidebar → **Clone a Repository** → paste your SSH URL `git@github.com:ORG/REPO.git` (e.g., `git@github.com:CU-ESIIL/Ty_ed_demo.git` to practice).
    Stage with checkboxes, write a message, **Commit**, then **Push**.
 
 3. **Fetch data (stream only what you need).**  
@@ -138,8 +138,8 @@ This rhythm—**clone → compute → preserve**—is the Cloud Triangle in moti
   1) **Pre‑req:** Set up **SSH key** *or* **Web Authentication** (2FA via browser) first.  
   2) **Be in your top‑level working folder** in the file browser (the place you want the repo folder to appear).  
   3) Open the **Git** sidebar (left toolbar).  
-     • **Not in a repo yet:** You’ll see **three blue buttons** (e.g., *Clone a Repository*, *Create a New Repository*, *Open a Repository*). Click **Clone a Repository** and paste your SSH URL `git@github.com:ORG/REPO.git`.  
-     • **Already inside a repo folder:** You’ll see the **status panel** (Unstaged ↔ Staged changes, commit message box) with **Commit / Push / Pull** buttons. Use checkboxes to stage only what you intend to version.  
+    • **Not in a repo yet:** You’ll see **three blue buttons** (e.g., *Clone a Repository*, *Create a New Repository*, *Open a Repository*). Click **Clone a Repository** and paste your SSH URL `git@github.com:ORG/REPO.git` (e.g., `git@github.com:CU-ESIIL/Ty_ed_demo.git` to practice).
+    • **Already inside a repo folder:** You’ll see the **status panel** (Unstaged ↔ Staged changes, commit message box) with **Commit / Push / Pull** buttons. Use checkboxes to stage only what you intend to version.
   > **Tip:** Keep big data out of Git. The widget’s file‑by‑file staging makes it obvious when you’re about to add large artifacts—uncheck them and use the Data Store instead.
 
 - **SSH key (for GitHub)**  
@@ -303,7 +303,7 @@ Remember: compute runs on Jetstream2; persistent storage is at UArizona behind a
 3. **Clone with the Git widget (Jupyter sidebar).**  
    - In the file browser, **navigate to your top-level working folder** (where you want the repo folder created).  
    - Open the **Git** sidebar (left toolbar).  
-     - **If you’re not inside a repo yet:** you’ll see **three blue buttons** (e.g., *Clone a Repository*, *Create a New Repository*, *Open a Repository*). Click **Clone a Repository** and paste your SSH URL `git@github.com:ORG/REPO.git`.  
+     - **If you’re not inside a repo yet:** you’ll see **three blue buttons** (e.g., *Clone a Repository*, *Create a New Repository*, *Open a Repository*). Click **Clone a Repository** and paste your SSH URL `git@github.com:ORG/REPO.git` (e.g., `git@github.com:CU-ESIIL/Ty_ed_demo.git` to practice).  
      - **If you are inside a repo folder:** you’ll see the **status panel** (Unstaged/Staged changes, commit box) with **Commit / Push / Pull**.  
    > Tip: Use the checkboxes to avoid staging large data files—keep those in the Data Store.
 
