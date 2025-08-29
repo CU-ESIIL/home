@@ -255,7 +255,7 @@ hide:
 <div class="library-gallery">
 
   <div class="library-item">
-    <a href="https://cu-esiil.github.io/library/data/" target="_blank">
+    <a href="https://cu-esiil.github.io/data-library/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/data_library.jpeg?raw=true" alt="Data Library">
     </a>
     <p><strong>Data Library</strong></p>
