@@ -61,7 +61,7 @@ This rhythm—**clone → compute → preserve**—is the Cloud Triangle in moti
 
 ## 3. Anatomy of the Cloud Triangle 
 
-### A) Compute — CyVerse DE / Jetstream2
+A) Compute — CyVerse DE / Jetstream2
 - **Instance (VM / VICE app)**  
   **What:** A running virtual machine in CyVerse DE that pairs a hardware profile with a container image.  
   **Why:** Everyone starts identical; you “rent” compute only while it’s on; local files are temporary.  
@@ -94,7 +94,7 @@ This rhythm—**clone → compute → preserve**—is the Cloud Triangle in moti
 
 ---
 
-### B) Persistent Storage — CyVerse Data Store (UArizona)
+B) Persistent Storage — CyVerse Data Store (UArizona)
 - **Remote disk (Data Store / iRODS)**  
   **What:** Your durable home at `/iplant/home/<username>` hosted at the University of Arizona, behind a firewall.  
   **Why:** Backed‑up, shareable, and persists beyond any single VM.  
@@ -112,7 +112,7 @@ This rhythm—**clone → compute → preserve**—is the Cloud Triangle in moti
 
 ---
 
-### C) GitHub — Code, Website & Auth (Jupyter‑first)
+C) GitHub — Code, Website & Auth (Jupyter‑first)
 - **Git (JupyterLab Git widget) — Clone vs Repo modes**  
   **What:** Built‑in panel for clone, stage, commit, push—no terminal needed.  
   **Why:** Safer staging (you can see file sizes), fewer auth pitfalls, harder to accidentally commit huge data.  
@@ -167,7 +167,7 @@ This rhythm—**clone → compute → preserve**—is the Cloud Triangle in moti
   **How (here):** Use `gh auth login --web` to establish HTTPS credentials, or for advanced operations (opening PRs, viewing issues).  
   **Caveat:** The CLI doesn’t “protect” you from committing large files—Git will still reject pushes over size limits. The **widget’s staging UI** makes it easier to avoid adding big data in the first place. Keep large artifacts in the **CyVerse Data Store**, not in Git.
 
-#### A sensible `.gitignore` starter (to reduce accidents)
+A sensible `.gitignore` starter (to reduce accidents)
 ```gitignore
 # keep heavy data out of git
 data/
@@ -193,7 +193,7 @@ __pycache__/
 
 ---
 
-### Golden workflow
+Golden workflow
 **Clone (GitHub) → Compute (local scratch) → Preserve (GitHub + Data Store) → Shut down.**  
 Remember: compute runs on Jetstream2; persistent storage is at UArizona behind a firewall—plan transfers, don’t assume local files persist.
 
