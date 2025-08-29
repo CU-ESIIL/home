@@ -81,7 +81,6 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.tabs.sticky
-    - toc.integrate
     - toc.follow
     - content.code.copy
   # Default values, taken from mkdocs_theme.yml

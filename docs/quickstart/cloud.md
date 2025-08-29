@@ -9,24 +9,6 @@ date: 2024-01-01
 > **What you’ll learn**
 > Launch a CyVerse Discovery Environment (DE) JupyterLab session, connect to GitHub with SSH through the Git sidebar, move data with GoCommands, and—most importantly—keep your work alive after an ephemeral compute session ends.
 
-## Table of Contents
-- [1. Why the Triangle?](#1-why-the-triangle)
-- [2. The Routine (clone → compute → preserve)](#2-the-routine-clone--compute--preserve)
-- [3. Anatomy of the Cloud Triangle](#3-anatomy-of-the-cloud-triangle)
-  - [A) Compute — CyVerse DE / Jetstream2](#a-compute--cyverse-de--jetstream2)
-  - [B) Persistent Storage — CyVerse Data Store (UArizona)](#b-persistent-storage--cyverse-data-store-uarizona)
-  - [C) GitHub — Code, Website & Auth (Jupyter-first)](#c-github--code-website--auth-jupyter-first)
-  - [Golden workflow](#golden-workflow)
-- [4. Go through the routine yourself (step-by-step)](#4-go-through-the-routine-yourself-step-by-step)
-- [5. Good Project Habits](#5-good-project-habits)
-  - [`data/README.md` template (use this verbatim and edit)](#datareadmemd-template-use-this-verbatim-and-edit)
-  - [Tiny helper scripts (optional)](#tiny-helper-scripts-optional)
-- [6. Before You Power Down (checklist)](#6-before-you-power-down-checklist)
-- [7. Troubleshooting (by symptom)](#7-troubleshooting-by-symptom)
-- [8. Why This Works](#8-why-this-works)
-- [9. Self-Check (2 minutes)](#9-selfcheck-2-minutes)
-
----
 
 ## 1. Why the Triangle?
 
