@@ -141,6 +141,27 @@ This rhythm—**clone → compute → preserve**—is the Cloud Triangle in moti
   **How (here):** In GitHub → **Settings → Pages** → *Deploy from a branch* → `main` + `/docs`. Put site files in `/docs/` (e.g., `docs/index.md`), then Commit/Push from the widget.  
   > From pages in `docs/quickstart/...`, use `../assets/...` (or `{{ '/assets/... ' | relative_url }}` if using Jekyll) so paths don’t duplicate `docs/`.
 
+- **Markdown (docs & Pages authoring)**  
+  **What:** Plain‑text syntax for structured docs (headings, lists, links, images, code). Renders consistently on GitHub and on your Pages site.  
+  **Why:** Fast, versionable, and reviewable; encourages clear communication. Perfect for lab notes, assignments, and how‑tos.  
+  **How (here):**  
+  1. Put site files in `/docs/` (e.g., `docs/index.md`, `docs/quickstart/getting-started.md`).  
+  2. Use relative links between pages: `[Next →](../quickstart/getting-started.md)`.  
+  3. Images from a page under `docs/quickstart/`: `../assets/...`  *(or Jekyll: `{{ '/assets/... ' | relative_url }}`)*.  
+  4. Code fences for reproducible snippets:
+     ```python
+     # example
+     print("hello, world")
+     ```  
+  5. Optional Jekyll front matter for page metadata:
+     ```yaml
+     ---
+     title: Getting Started
+     layout: default
+     ---
+     ```
+
+
 - **GitHub CLI (`gh`) — optional power tool**  
   **What:** Command‑line helper for GitHub tasks (auth, PRs, releases).  
   **Why:** Useful for scripted workflows and browser‑based 2FA login on ephemeral instances.  
@@ -176,7 +197,6 @@ __pycache__/
 ### Golden workflow
 **Clone (GitHub) → Compute (local scratch) → Preserve (GitHub + Data Store) → Shut down.**  
 Remember: compute runs on Jetstream2; persistent storage is at UArizona behind a firewall—plan transfers, don’t assume local files persist.
-
 
 ---
 
