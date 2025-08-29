@@ -61,24 +61,14 @@ This rhythm—**clone → compute → preserve**—is the triangle in motion. It
 ## 4. Your First Loop (step-by-step)
 
 1. **Launch an instance.** Choose the JupyterLab-based image your course specifies.  
-2. **Set up SSH (one-time).**  
-   ```python
+2. Set up SSH (one-time).
 import os
-import subprocess
-
-
-def add_github_to_known_hosts():
-    known_hosts_file = os.path.expanduser('~/.ssh/known_hosts')
-    host = 'github.com'
-
-    # Create known_hosts file if it doesn't exist
-    # subprocess.run(['touch', known_hosts_file])
-
-    # Retrieve the host key using ssh-keyscan
-    output = subprocess.run(['ssh-keyscan', '-t', 'rsa', host], capture_output=True, text=True)
     host_key = output.stdout.strip()
 
-    # Append the host key to the known hosts file
+    # Ensure the .ssh directory exists
+    os.makedirs(os.path.dirname(known_hosts_file), exist_ok=True)
+
+    # Append the host key to the known_hosts file
     with open(known_hosts_file, 'a') as file:
         file.write(host_key + '\n')
 
@@ -98,33 +88,35 @@ def configure():
     private_key_path = os.path.join(ssh_dir, key_name)
     public_key_path = private_key_path + ".pub"
 
+    os.makedirs(ssh_dir, exist_ok=True)
     subprocess.run(["ssh-keygen", "-t", "ed25519", "-f", private_key_path, "-N", ""])
 
     # Update SSH config
     config_file = os.path.join(ssh_dir, "config")
     github_config = f"""
-    Host github.com
-        HostName github.com
-        IdentityFile {private_key_path}
-    """
+Host github.com
+    HostName github.com
+    IdentityFile {private_key_path}
+"""
 
     with open(config_file, "a") as file:
         file.write(github_config)
 
-    # Print public key
+    # Print public key (copy this into GitHub → Settings → SSH keys)
     with open(public_key_path, "r") as file:
         public_key = file.read()
 
-    subprocess.run(["eval", "$(ssh-agent -s)", "&&", "ssh-add", private_key_path], shell=True)
+    # Start agent and add key (single shell)
+    subprocess.run(f'eval "$(ssh-agent -s)" && ssh-add {private_key_path}', shell=True)
 
     add_github_to_known_hosts()
 
     print("Public Key:")
     print(public_key)
 
-   configure()
-   ```
-   > Keys live in `~/.ssh/` (your home). Never use `/.ssh/` (the root).
+
+configure()
+Keys live in ~/.ssh/ (your home). Never use /.ssh/ (the root).
 3. **Clone with the Git widget.** Open the Git sidebar → “Clone a Repository” → paste `git@github.com:ORG/REPO.git`.  
 4. **Commit & push.** Stage files with checkboxes, write a commit message, press **Commit**, then **Push**.  
 5. **Install GoCommands.**  
