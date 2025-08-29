@@ -34,20 +34,7 @@ Think of it like this:
 
 ---
 
-## 2. The Routine
-
-**First, what is an “instance”?**  
-An **instance** is a virtual machine (VM) composed of **hardware you choose** (CPU/RAM/GPU/storage profile) plus **software you choose** (a container image).  
-- To change **software**, pick a different container image or build a new one and add it as a software option.  
-- To change **hardware**, pick a different CyVerse resource profile. CyVerse presets are constrained to typical needs and equitable sharing. If you need bigger boxes, request your own allocation and manage a custom hardware pack via **ACCESS-CI**.
-
-> **Default for this course:**  
-> **Software:** ESIIL “large spatial analysis” pack (satellite-focused)  
-> **Hardware:** Jetstream2 facility (via CyVerse Discovery Environment)
-
----
-
-### The Routine (clone → compute → preserve)
+## 2. The Routine (clone → compute → preserve)
 
 1. **Launch an instance.**  
    In the Discovery Environment, start a **JupyterLab** session using the course’s containerized image so everyone shares the same software.
@@ -69,23 +56,131 @@ An **instance** is a virtual machine (VM) composed of **hardware you choose** (C
    - **Large outputs → Data Store**  
    When both are saved, **shut down** the instance—nothing important is left behind.
 
-This rhythm—**clone → compute → preserve**—is the Cloud Triangle in motion. It mirrors the workflows used in BinderHub sessions, JupyterHub classes, and professional cloud notebooks worldwide.
+This rhythm—**clone → compute → preserve**—is the Cloud Triangle in motion. 
 
 ---
 
-## 3. Quick Definitions
+## 3. Anatomy of the Cloud Triangle 
 
-- **Instance.** A temporary virtual machine running in CyVerse DE (aka a VICE app). Files vanish when it stops.
-- **Container / Image.** The prebuilt software environment (JupyterLab, Python, R, etc.) that makes runs reproducible.
-- **Git widget.** The JupyterLab sidebar that lets you clone, pull, commit, and push over SSH without a terminal.
-- **SSH key.** A password-free credential that lets the instance authenticate to GitHub. Works cleanly with 2FA.
-- **Data Store path.** Your home lives at `/iplant/home/<username>`. With GoCommands, prefix with `i:`, e.g. `i:/iplant/home/<username>/projects/...`.
-- **GoCommands.** Cross-platform CLI for the Data Store. Robust, resumable, checksum-verified transfers.
-- **Ephemeral vs Persistent.** Ephemeral = gone when compute stops. Persistent = survives (Data Store, GitHub).
+### A) Compute — CyVerse DE / Jetstream2
+- **Instance (VM / VICE app)**  
+  **What:** A running virtual machine in CyVerse DE that pairs a hardware profile with a container image.  
+  **Why:** Everyone starts identical; you “rent” compute only while it’s on; local files are temporary.  
+  **How (here):** DE → *Apps* → **JupyterLab** → launch with the course preset.
+
+- **Image → Container**  
+  **What:** An **image** is a frozen software recipe; a **container** is that image running inside your instance.  
+  **Why:** Reproducibility—no “works on my laptop” drift.  
+  **How (here):** Use the **ESIIL large spatial analysis** image (satellite-focused). For repeat needs, bake changes into a new image rather than ad‑hoc installs.
+
+- **Hardware profile**  
+  **What:** vCPUs, RAM, GPUs, and disk size for your instance.  
+  **Why:** Right-size performance while sharing resources fairly.  
+  **How (here):** Pick the **Jetstream2** course profile provided in DE.
+
+- **Jetstream2**  
+  **What:** NSF cloud where many DE apps run.  
+  **Why:** Academic cloud at scale for on-demand classrooms and research.  
+  **How (here):** Your instance is scheduled on Jetstream2 when you launch JupyterLab.
+
+- **ACCESS-CI (when you need more)**  
+  **What:** Program to obtain larger/longer compute allocations.  
+  **Why:** Run bigger jobs without straining shared classroom quotas.  
+  **How (here):** If you consistently outgrow presets, request an allocation and attach that hardware pack to your DE launches.
+
+- **Local disk (instance scratch)**  
+  **What:** The filesystem inside your VM (e.g., your working directory `~`).  
+  **Why:** Fast for computation and intermediates but **ephemeral**—can disappear when the app stops.  
+  **How (here):** Work in `./data/` or `./tmp/` during the session; before stopping, move deliverables to persistent storage (see Storage).
 
 ---
 
-## 4. Your First Loop (step-by-step)
+### B) Persistent Storage — CyVerse Data Store (UArizona)
+- **Remote disk (Data Store / iRODS)**  
+  **What:** Your durable home at `/iplant/home/<username>` hosted at the University of Arizona, behind a firewall.  
+  **Why:** Backed‑up, shareable, and persists beyond any single VM.  
+  **How (here):** From compute, use the `i:` prefix for paths, e.g., `i:/iplant/home/<username>/projects/...`.
+
+- **Network layout (why local ≠ remote)**  
+  **What:** Compute (Jetstream2) and storage (UArizona Data Store) live in different places and are separated by a firewall.  
+  **Why:** Expect latency; uploading/downloading is a deliberate step—don’t assume local files persist.  
+  **How (here):** Pull **only what you need** for a run; push results back when done.
+
+- **GoCommands (data mover)**  
+  **What:** Cross‑platform CLI for robust, resumable, checksum‑verified transfers to/from the Data Store.  
+  **Why:** Reliable for “data are heavy” workflows and long‑running moves.  
+  **How (here):** Use `i:` paths with GoCommands to move between the VM and `/iplant/home/<username>/...`. For small items, the DE file browser is fine.
+
+---
+
+### C) GitHub — Code, Website & Auth (Jupyter‑first)
+- **Git (JupyterLab Git widget) — Clone vs Repo modes**  
+  **What:** Built‑in panel for clone, stage, commit, push—no terminal needed.  
+  **Why:** Safer staging (you can see file sizes), fewer auth pitfalls, harder to accidentally commit huge data.  
+  **How (here):**  
+  1) **Pre‑req:** Set up **SSH key** *or* **Web Authentication** (2FA via browser) first.  
+  2) **Be in your top‑level working folder** in the file browser (the place you want the repo folder to appear).  
+  3) Open the **Git** sidebar (left toolbar).  
+     • **Not in a repo yet:** You’ll see **three blue buttons** (e.g., *Clone a Repository*, *Create a New Repository*, *Open a Repository*). Click **Clone a Repository** and paste your SSH URL `git@github.com:ORG/REPO.git`.  
+     • **Already inside a repo folder:** You’ll see the **status panel** (Unstaged ↔ Staged changes, commit message box) with **Commit / Push / Pull** buttons. Use checkboxes to stage only what you intend to version.  
+  > **Tip:** Keep big data out of Git. The widget’s file‑by‑file staging makes it obvious when you’re about to add large artifacts—uncheck them and use the Data Store instead.
+
+- **SSH key (for GitHub)**  
+  **What:** Password‑less credential stored in `~/.ssh/` inside the instance.  
+  **Why:** Works cleanly with 2FA; avoids repeated prompts.  
+  **How (here):** Generate once on an instance, add the **public** key to GitHub (*Settings → SSH keys*). The Git widget will push/pull over SSH automatically.
+
+- **Web Authentication (2FA via browser) — optional HTTPS path**  
+  **What:** Uses the `gh` CLI to open a browser and store a token; Git delegates credentials to `gh`.  
+  **Why:** Handy on ephemeral VMs when you don’t want to manage SSH keys.  
+  **How (here):** Run the provided notebook cell once per new instance to log in via web; after that the Git widget can operate over HTTPS.
+
+- **GitHub Pages (project website)**  
+  **What:** A static site built directly from your repo.  
+  **Why:** Push once; your docs/tutorials publish automatically.  
+  **How (here):** In GitHub → **Settings → Pages** → *Deploy from a branch* → `main` + `/docs`. Put site files in `/docs/` (e.g., `docs/index.md`), then Commit/Push from the widget.  
+  > From pages in `docs/quickstart/...`, use `../assets/...` (or `{{ '/assets/... ' | relative_url }}` if using Jekyll) so paths don’t duplicate `docs/`.
+
+- **GitHub CLI (`gh`) — optional power tool**  
+  **What:** Command‑line helper for GitHub tasks (auth, PRs, releases).  
+  **Why:** Useful for scripted workflows and browser‑based 2FA login on ephemeral instances.  
+  **How (here):** Use `gh auth login --web` to establish HTTPS credentials, or for advanced operations (opening PRs, viewing issues).  
+  **Caveat:** The CLI doesn’t “protect” you from committing large files—Git will still reject pushes over size limits. The **widget’s staging UI** makes it easier to avoid adding big data in the first place. Keep large artifacts in the **CyVerse Data Store**, not in Git.
+
+#### A sensible `.gitignore` starter (to reduce accidents)
+```gitignore
+# keep heavy data out of git
+data/
+*.tif
+*.tiff
+*.h5
+*.hdf5
+*.nc
+*.zip
+*.tar
+*.parquet
+*.feather
+
+# notebooks: keep checkpoints out
+.ipynb_checkpoints/
+
+# environments & caches
+.env
+.venv/
+__pycache__/
+*.pyc
+```
+
+---
+
+### Golden workflow
+**Clone (GitHub) → Compute (local scratch) → Preserve (GitHub + Data Store) → Shut down.**  
+Remember: compute runs on Jetstream2; persistent storage is at UArizona behind a firewall—plan transfers, don’t assume local files persist.
+
+
+---
+
+## 4. Go through the routine yourself (step-by-step)
 
 1. **Launch an instance.** Choose the JupyterLab-based image your course specifies.  [![Launch in CyVerse](https://img.shields.io/badge/Launch-CyVerse%20DE-0b6efd?style=flat-square)](https://de.cyverse.org/apps/de/faf1d268-44cc-11ed-9715-008cfa5ae621/launch?saved-launch-id=dc65718e-1964-4d11-99ad-bf901cddda99)
 
