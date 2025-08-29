@@ -6,11 +6,12 @@ hide:
 
 # raster
 
-- [example-workflow](https://cu-esiil.github.io/analytics-library/example-workflow/)  
+- [example-workflow](https://cu-esiil.github.io/analytics-library/example-workflow/)
   <small></small>
-- [lcmap](https://cu-esiil.github.io/data-library/lcmap/)  
+- [lcmap](https://cu-esiil.github.io/data-library/lcmap/)
   <small></small>
-- [example-container](/home/container-library/example-container/)  
+- [example-container](../container-library/example-container/)
   <small></small>
-- [advanced-textbook](/home/quickstart/advanced-textbook/)  
+- [advanced-textbook](../quickstart/advanced-textbook/)
   <small></small>
+
