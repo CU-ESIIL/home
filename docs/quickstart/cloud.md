@@ -60,7 +60,8 @@ This rhythm—**clone → compute → preserve**—is the triangle in motion. It
 
 ## 4. Your First Loop (step-by-step)
 
-1. **Launch an instance.** Choose the JupyterLab-based image your course specifies.  
+1. **Launch an instance.** Choose the JupyterLab-based image your course specifies.  [![Launch in CyVerse](https://img.shields.io/badge/Launch-CyVerse%20DE-0b6efd?style=flat-square)](https://de.cyverse.org/apps/de/faf1d268-44cc-11ed-9715-008cfa5ae621/launch?saved-launch-id=dc65718e-1964-4d11-99ad-bf901cddda99)
+
 2. Set up SSH (one-time).
 ```python
 import os
@@ -125,6 +126,7 @@ def configure():
 configure()
 ```
 Keys live in ~/.ssh/ (your home). Never use /.ssh/ (the root).
+
 3. **Clone with the Git widget.** Open the Git sidebar → “Clone a Repository” → paste `git@github.com:ORG/REPO.git`.  
 4. **Commit & push.** Stage files with checkboxes, write a commit message, press **Commit**, then **Push**.  
 5. **Install GoCommands.**  
