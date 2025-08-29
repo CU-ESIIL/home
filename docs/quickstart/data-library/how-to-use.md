@@ -19,7 +19,7 @@ dataset.
 
 ## Do It
 1. **Navigate to the site.** Go to the
-   [Data Library](https://cu-esiil.github.io/library/data/).
+   [Data Library](https://cu-esiil.github.io/data-library/).
 2. **Browse or search.** Look for a dataset that matches your project goals.
 3. **Open the dataset page.** Read the description and preview any available
    files.
