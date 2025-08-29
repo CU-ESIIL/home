@@ -6,7 +6,8 @@ hide:
 
 # example
 
-- [example-workflow](https://cu-esiil.github.io/analytics-library/example-workflow/)  
+- [example-workflow](https://cu-esiil.github.io/analytics-library/example-workflow/)
   <small></small>
-- [example-container](/home/container-library/example-container/)  
+- [example-container](../container-library/example-container/)
   <small></small>
+

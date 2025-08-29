@@ -6,5 +6,6 @@ hide:
 
 # contribution
 
-- [how-to-contribute](/home/quickstart/data-library/how-to-contribute/)  
+- [how-to-contribute](../quickstart/data-library/how-to-contribute/)
   <small></small>
+
