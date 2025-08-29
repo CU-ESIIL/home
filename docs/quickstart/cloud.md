@@ -27,7 +27,7 @@ Think of it like this:
 - **GitHub** = your lab notebook: versioned, accountable, and collaborative  
 - **Data Store** = your filing cabinet: heavy, permanent, and backed up
 
-![Cloud Triangle Diagram](assets/art_gallery/cloud_triangle_diagram.png)
+![Cloud Triangle Diagram](home/docs/assets/art_gallery/cloud_triangle_diagram.png)
 
 > **Golden Rule**  
 > Never let the only copy of your work live on the instance. If you don’t push to GitHub or save to the Data Store, it will vanish when compute stops.
