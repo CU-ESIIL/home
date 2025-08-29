@@ -62,6 +62,7 @@ This rhythm—**clone → compute → preserve**—is the triangle in motion. It
 
 1. **Launch an instance.** Choose the JupyterLab-based image your course specifies.  
 2. Set up SSH (one-time).
+```python
 import os
     host_key = output.stdout.strip()
 
@@ -116,6 +117,7 @@ Host github.com
 
 
 configure()
+```
 Keys live in ~/.ssh/ (your home). Never use /.ssh/ (the root).
 3. **Clone with the Git widget.** Open the Git sidebar → “Clone a Repository” → paste `git@github.com:ORG/REPO.git`.  
 4. **Commit & push.** Stage files with checkboxes, write a commit message, press **Commit**, then **Push**.  
