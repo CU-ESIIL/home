@@ -7,6 +7,8 @@ date: 2025-08-29
 
 A collaborative timeline for OASIS development. Update this page through pull requests and link to contributions as tasks are completed.
 
+See [Development Requests](dev-requests.md) for external requests made of the team.
+
 Since February 2025, OASIS has grown from an initial scaffold into a tagged documentation site. Late August 2025 added sidebar tag pages, fixed tag links, and launched the Cloud Triangle lesson with examples. Our next steps are to link tasks directly to GitHub issues and automate Gantt chart updates so the roadmap stays current.
 
 ## Historical Task List
