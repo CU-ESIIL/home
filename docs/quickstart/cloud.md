@@ -1,10 +1,10 @@
 ---
-title: Working the Cloud Triangle
-tags: [quickstart, cloud, cyverse]
+title: Cloud Reproducibility Triangle (CRT)
+tags: [quickstart, cloud, cyverse, CRT triangle]
 date: 2024-01-01
 ---
 
-# Chapter: Working the CyVerse Cloud Triangle
+# Cloud Reproducibility Triangle (CRT)
 
 > **What you’ll learn**
 > Launch a CyVerse Discovery Environment (DE) JupyterLab session, connect to GitHub with SSH through the Git sidebar, move data with GoCommands, and—most importantly—keep your work alive after an ephemeral compute session ends.
