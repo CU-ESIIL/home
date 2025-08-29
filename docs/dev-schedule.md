@@ -1,13 +1,13 @@
 ---
 tags: [development, schedule]
-date: 2025-08-14
+date: 2025-08-29
 ---
 
 # Development Schedule
 
 A collaborative timeline for OASIS development. Update this page through pull requests and link to contributions as tasks are completed.
 
-Since February 2025, OASIS has grown from an initial scaffold into a tagged documentation site. Recent work in August 2025 introduced tag-based navigation, a static tag system, and documentation of the repository structure. Our next steps are to link tasks directly to GitHub issues and automate Gantt chart updates so the roadmap stays current.
+Since February 2025, OASIS has grown from an initial scaffold into a tagged documentation site. Late August 2025 added sidebar tag pages, fixed tag links, and launched the Cloud Triangle lesson with examples. Our next steps are to link tasks directly to GitHub issues and automate Gantt chart updates so the roadmap stays current.
 
 ## Historical Task List
 
@@ -17,10 +17,17 @@ Since February 2025, OASIS has grown from an initial scaffold into a tagged docu
 - [x] [Repository structure docs](https://github.com/CU-ESIIL/home/pull/34) — 2025-08-14
 - [x] [Development schedule page](https://github.com/CU-ESIIL/home/pull/35) — 2025-08-14
 
+- [x] [Sidebar tag pages](https://github.com/CU-ESIIL/home/pull/55) — 2025-08-19
+- [x] [Fix tag links in sidebar](https://github.com/CU-ESIIL/home/pull/56) — 2025-08-19
+- [x] [Cloud Triangle scaffold](https://github.com/CU-ESIIL/home/pull/57) — 2025-08-22
+- [x] [Cloud Triangle overview](https://github.com/CU-ESIIL/home/pull/58) — 2025-08-22
+- [x] [Cloud Triangle examples & figure](https://github.com/CU-ESIIL/home/pull/59) — 2025-08-22
+
 ## Upcoming Task List
 
 - [ ] [Add GitHub linking to tasks](https://github.com/CU-ESIIL/home/issues/TBD)
 - [ ] [Automate Gantt chart updates](https://github.com/CU-ESIIL/home/issues/TBD)
+- [ ] [Interactive Cloud Triangle lesson](https://github.com/CU-ESIIL/home/issues/TBD)
 
 ## Timeline Overview
 
@@ -31,6 +38,11 @@ Since February 2025, OASIS has grown from an initial scaffold into a tagged docu
 | Static tag system | 2025-08-14 | 2025-08-14 | [Ty Tuff](https://github.com/tytuff) |
 | Repository structure docs | 2025-08-14 | 2025-08-14 | [Ty Tuff](https://github.com/tytuff) |
 | Development schedule page | 2025-08-14 | 2025-08-14 | [Ty Tuff](https://github.com/tytuff) |
+| Sidebar tag pages | 2025-08-19 | 2025-08-19 | [Ty Tuff](https://github.com/tytuff) |
+| Fix tag links in sidebar | 2025-08-19 | 2025-08-19 | [Ty Tuff](https://github.com/tytuff) |
+| Cloud Triangle scaffold | 2025-08-22 | 2025-08-22 | [Ty Tuff](https://github.com/tytuff) |
+| Cloud Triangle overview | 2025-08-22 | 2025-08-22 | [Ty Tuff](https://github.com/tytuff) |
+| Cloud Triangle examples & figure | 2025-08-22 | 2025-08-22 | [Ty Tuff](https://github.com/tytuff) |
 | Add GitHub linking to tasks | 2025-08-15 | 2025-08-21 | TBD |
 | Automate Gantt chart updates | 2025-08-22 | 2025-08-26 | TBD |
 
@@ -47,9 +59,15 @@ gantt
     Static tag system         :done, hist3, 2025-08-14, 1d
     Repository structure docs :done, hist4, 2025-08-14, 1d
     Dev schedule page         :done, hist5, 2025-08-14, 1d
+    Sidebar tag pages         :done, hist6, 2025-08-19, 1d
+    Fix tag links             :done, hist7, 2025-08-19, 1d
+    Cloud Triangle scaffold   :done, hist8, 2025-08-22, 1d
+    Cloud Triangle overview   :done, hist9, 2025-08-22, 1d
+    Cloud Triangle examples   :done, hist10, 2025-08-22, 1d
     section Planned
     GitHub link integration   :active, plan1, 2025-08-15, 6d
     Auto Gantt updates        :       plan2, 2025-08-22, 5d
+    Interactive Cloud lesson  :       plan3, 2025-08-29, 5d
 ```
 
 <style>
