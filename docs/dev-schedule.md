@@ -53,30 +53,7 @@ Since February 2025, OASIS has grown from an initial scaffold into a tagged docu
 
 ## Gantt Chart
 
-```mermaid
-gantt
-    title OASIS Development Timeline
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %d
-    section History
-    Initial repository setup  :done, hist1, 2025-02-05, 1d
-    Tag-based navigation      :done, hist2, 2025-08-13, 1d
-    Static tag system         :done, hist3, 2025-08-14, 1d
-    Repository structure docs :done, hist4, 2025-08-14, 1d
-    Dev schedule page         :done, hist5, 2025-08-14, 1d
-    Sidebar tag pages         :done, hist6, 2025-08-19, 1d
-    Fix tag links             :done, hist7, 2025-08-19, 1d
-    Cloud Triangle scaffold   :done, hist8, 2025-08-22, 1d
-    Cloud Triangle overview   :done, hist9, 2025-08-22, 1d
-    Cloud Triangle examples   :done, hist10, 2025-08-22, 1d
-    section Planned
-<!-- gantt-start -->
-    Add GitHub linking to tasks  :active, plan1, 2025-08-15, 7d
-    Automate Gantt chart updates  : plan2, 2025-08-22, 5d
-    Interactive Cloud Triangle lesson  : plan3, 2025-08-29, 5d
-<!-- gantt-end -->
-
-```
+![OASIS Development Timeline](gantt_chart.png)
 
 <style>
   table {
