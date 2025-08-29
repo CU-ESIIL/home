@@ -38,7 +38,7 @@ Think of it like this:
 
 1. **You begin at the instance.** You launch a JupyterLab session in the Discovery Environment. This containerized image ensures everyone starts with the same software.  
 2. **You connect GitHub.** In the Git sidebar, you paste an SSH clone URL. Files appear instantly. With checkboxes you stage changes, commit, and push—no shell required.  
-3. **You fetch data.** Code is light, data is heavy. For datasets, you use **GoCommands**, a resumable transfer tool. With the `i:` prefix, you pull just what you need into `./data/` for this run.  
+3. **You fetch data.** Code is light, data are heavy. For datasets, you use **GoCommands**, a resumable transfer tool. With the `i:` prefix, you pull just what you need into `./data/` for this run.  
 4. **You compute.** The instance is your scratch pad. Notebooks run quickly, intermediate files pile up. But you remember: they’re temporary.  
 5. **You preserve.** Finished code goes back to GitHub; large results go to the Data Store. Only then do you shut the instance down, confident that nothing important will be lost.  
 
