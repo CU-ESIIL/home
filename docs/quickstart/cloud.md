@@ -36,13 +36,40 @@ Think of it like this:
 
 ## 2. The Routine
 
-1. **You begin at the instance.** You launch a JupyterLab session in the Discovery Environment. This containerized image ensures everyone starts with the same software.  
-2. **You connect GitHub.** In the Git sidebar, you paste an SSH clone URL. Files appear instantly. With checkboxes you stage changes, commit, and push—no shell required.  
-3. **You fetch data.** Code is light, data are heavy. For datasets, you use **GoCommands**, a resumable transfer tool. With the `i:` prefix, you pull just what you need into `./data/` for this run.  
-4. **You compute.** The instance is your scratch pad. Notebooks run quickly, intermediate files pile up. But you remember: they’re temporary.  
-5. **You preserve.** Finished code goes back to GitHub; large results go to the Data Store. Only then do you shut the instance down, confident that nothing important will be lost.  
+**First, what is an “instance”?**  
+An **instance** is a virtual machine (VM) composed of **hardware you choose** (CPU/RAM/GPU/storage profile) plus **software you choose** (a container image).  
+- To change **software**, pick a different container image or build a new one and add it as a software option.  
+- To change **hardware**, pick a different CyVerse resource profile. CyVerse presets are constrained to typical needs and equitable sharing. If you need bigger boxes, request your own allocation and manage a custom hardware pack via **ACCESS-CI**.
 
-This rhythm—**clone → compute → preserve**—is the triangle in motion. It’s the same rhythm used in BinderHub sessions, JupyterHub classrooms, and professional cloud notebooks worldwide.
+> **Default for this course:**  
+> **Software:** ESIIL “large spatial analysis” pack (satellite-focused)  
+> **Hardware:** Jetstream2 facility (via CyVerse Discovery Environment)
+
+---
+
+### The Routine (clone → compute → preserve)
+
+1. **Launch an instance.**  
+   In the Discovery Environment, start a **JupyterLab** session using the course’s containerized image so everyone shares the same software.
+
+2. **Connect GitHub (no shell required).**  
+   Open the **Git** sidebar → **Clone a Repository** → paste your SSH URL `git@github.com:ORG/REPO.git`.  
+   Stage with checkboxes, write a message, **Commit**, then **Push**.
+
+3. **Fetch data (stream only what you need).**  
+   Use **GoCommands** (resumable transfers) to pull datasets from the CyVerse Data Store.  
+   With the `i:` prefix you copy exactly what you need into `./data/` for this run.
+
+4. **Compute (scratch space mindset).**  
+   Treat the instance like a **scratch pad**. Run notebooks, generate intermediates, iterate fast.  
+   Remember: the VM is temporary; don’t assume its local files will persist.
+
+5. **Preserve (separate code from data).**  
+   - **Code & small artifacts → GitHub**  
+   - **Large outputs → Data Store**  
+   When both are saved, **shut down** the instance—nothing important is left behind.
+
+This rhythm—**clone → compute → preserve**—is the Cloud Triangle in motion. It mirrors the workflows used in BinderHub sessions, JupyterHub classes, and professional cloud notebooks worldwide.
 
 ---
 
