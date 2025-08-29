@@ -25,9 +25,12 @@ Since February 2025, OASIS has grown from an initial scaffold into a tagged docu
 
 ## Upcoming Task List
 
-- [ ] [Add GitHub linking to tasks](https://github.com/CU-ESIIL/home/issues/TBD)
-- [ ] [Automate Gantt chart updates](https://github.com/CU-ESIIL/home/issues/TBD)
-- [ ] [Interactive Cloud Triangle lesson](https://github.com/CU-ESIIL/home/issues/TBD)
+<!-- upcoming-start -->
+- [ ] [Add GitHub linking to tasks](https://github.com/CU-ESIIL/home/issues/60)
+- [ ] [Automate Gantt chart updates](https://github.com/CU-ESIIL/home/issues/61)
+- [ ] [Interactive Cloud Triangle lesson](https://github.com/CU-ESIIL/home/issues/62)
+<!-- upcoming-end -->
+
 
 ## Timeline Overview
 
@@ -65,9 +68,12 @@ gantt
     Cloud Triangle overview   :done, hist9, 2025-08-22, 1d
     Cloud Triangle examples   :done, hist10, 2025-08-22, 1d
     section Planned
-    GitHub link integration   :active, plan1, 2025-08-15, 6d
-    Auto Gantt updates        :       plan2, 2025-08-22, 5d
-    Interactive Cloud lesson  :       plan3, 2025-08-29, 5d
+<!-- gantt-start -->
+    Add GitHub linking to tasks  :active, plan1, 2025-08-15, 7d
+    Automate Gantt chart updates  : plan2, 2025-08-22, 5d
+    Interactive Cloud Triangle lesson  : plan3, 2025-08-29, 5d
+<!-- gantt-end -->
+
 ```
 
 <style>
