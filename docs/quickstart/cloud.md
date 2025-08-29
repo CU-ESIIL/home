@@ -34,7 +34,7 @@ Think of it like this:
 
 ---
 
-## 2. The Journey
+## 2. The Routine
 
 1. **You begin at the instance.** You launch a JupyterLab session in the Discovery Environment. This containerized image ensures everyone starts with the same software.  
 2. **You connect GitHub.** In the Git sidebar, you paste an SSH clone URL. Files appear instantly. With checkboxes you stage changes, commit, and push—no shell required.  
