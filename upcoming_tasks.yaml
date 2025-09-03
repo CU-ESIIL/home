@@ -1,0 +1,14 @@
+upcoming_tasks:
+  - title: "Add GitHub linking to tasks"
+    issue: 60
+    start: 2025-08-15
+    end: 2025-08-21
+    active: true
+  - title: "Automate Gantt chart updates"
+    issue: 61
+    start: 2025-08-22
+    end: 2025-08-26
+  - title: "Interactive Cloud Triangle lesson"
+    issue: 62
+    start: 2025-08-29
+    end: 2025-09-02
