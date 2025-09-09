@@ -1,5 +1,5 @@
 ---
-title: Streaming Data in the Cloud with GDAL, VSI, and STAC
+title: Data Exploration and Collaboration in the Cloud
 tags: [cloud, streaming, GDAL, VSI, STAC, collaboration]
 ---
 
