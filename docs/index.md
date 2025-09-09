@@ -66,14 +66,16 @@ hide:
   .tag-suggestions .tag {
     padding: 5px 12px;
     text-decoration: none;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 15px;
-    background: #f5f5f5;
-    color: #333;
+    background: #e0e0e0;
+    color: #000 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-size: 0.9em;
+    font-weight: 600;
   }
   .tag-suggestions .tag:hover {
-    background: #e0e0e0;
+    background: #d5d5d5;
   }
 </style>
 
