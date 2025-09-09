@@ -3,7 +3,7 @@ title: Data Exploration and Collaboration in the Cloud
 tags: [cloud, streaming, GDAL, VSI, STAC, collaboration]
 ---
 
-# Streaming Data in the Cloud with GDAL, VSI, and STAC
+# Data Exploration and Collaboration in the Cloud
 
 Today’s theme is **Creative Data Exploration in the Cloud**. We’ll learn how to stream data into our CyVerse instance, define key concepts (GDAL, VSI, STAC), and practice opening cloud-hosted datasets directly without downloading them.
 
