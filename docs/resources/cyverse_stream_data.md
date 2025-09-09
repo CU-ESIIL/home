@@ -1,91 +1,224 @@
-# Connecting Cyverse to GitHub
+---
+title: Streaming Data in the Cloud with GDAL, VSI, and STAC
+tags: [cloud, streaming, gdal, vsi, stac, collaboration]
+date: 2024-01-01
+---
 
-## Log in to Cyverse
+# Streaming Data in the Cloud with GDAL, VSI, and STAC
 
-1. Go to the Cyverse user account website [https://user.cyverse.org/](https://user.cyverse.org/)
+Today’s theme is **Creative Data Exploration in the Cloud**. We’ll learn how to stream data into our CyVerse instance, define key concepts (GDAL, VSI, STAC), and practice opening cloud-hosted datasets directly without downloading them.
 
-<img width="881" alt="image" src="https://github.com/CU-ESIIL/hackathon2023_datacube/assets/3465768/61b8c22a-bed3-457a-b603-736fd8e59568">
+---
 
-2. Click `Sign up` (if you do not already have an account)
+## 1. Startup Procedure: Opening the Lab
 
-   <img width="881" alt="image" src="https://github.com/CU-ESIIL/hackathon2023_datacube/assets/3465768/73dc39a4-30f2-4017-8f0d-1006db24d25b">
+We’ll use the [OASIS QuickStart: Cloud Triangle](https://cu-esiil.github.io/home/quickstart/cloud/) to start our **CyVerse instance**.
 
-3. Head over to the Cyverse Discovery Environment [https://de.cyverse.org](https://de.cyverse.org), and log in with your new account.
+- Log in to JupyterHub through CyVerse.  
+- Confirm the **triangle environment** is running.  
+- Open a terminal and check that `gocmd` is ready:
 
-   <img width="881" alt="image" src="https://github.com/CU-ESIIL/hackathon2023_datacube/assets/3465768/41970a8d-c434-4075-9dd4-fbcd0f2ea07c">
+```bash
+gocmd --help
+```
 
-   You should now see the Discovery Environment:
+If this works, your persistent storage connection is set up.
 
-   <img width="881" alt="image" src="https://github.com/CU-ESIIL/hackathon2023_datacube/assets/3465768/0dcd0048-a4e3-469c-bd28-5a5574c5dec3">
+**Checkpoint:** You now have a shared cloud lab ready to use.
 
-4. We will give you permissions to access the Hackathon app. If you haven't already, let us know that you need access
+---
 
-## Open up an analysis with the hackathon environment (Jupyter Lab)
+## 2. Collaboration: GitHub Workflow
 
-1. From the Cyverse Discovery Environment, click on `Apps` in the left menu
-   ![apps](../assets/cyverse_basics/apps.png)
+We’ll use GitHub to work collaboratively. As last week:
 
-2. Select `JupyterLab ESIIL`
-   ![use_this_app](../assets/cyverse_basics/use_this_app.png)
+### Preferred Method: GitHub Widget
+- Open the **GitHub tab** in JupyterLab (left sidebar).  
+- Log in with your GitHub account if prompted.  
+- Navigate to your repository.  
+- Edit a `.md` file, save, and use the widget buttons to **Pull → Commit → Push**.  
+- Confirm the edit appears on GitHub in your browser.
 
-3. Configure and launch your analysis - when choosing the disk size, make sure to choose 64GB or greater. The rest of the settings you can change to suit your computing needs:
-   ![app_launch](../assets/cyverse_basics/app_launch.png)
+### Alternative Method: Command Line
+```bash
+git pull origin main
+# edit your file in JupyterLab, then save
+git add file.md
+git commit -m "edit example"
+git push origin main
+```
 
-   ![app_settings](../assets/cyverse_basics/app_settings.png)
+**Checkpoint:** Everyone has successfully pushed an edit to GitHub.
 
-   ![launch](../assets/cyverse_basics/launch.png)
+---
 
-4. Click `Go to analysis`:
-   ![go_to_analysis](../assets/cyverse_basics/go_to_analysis.png)
+## 3. Key Concepts: GDAL, VSI, and STAC
 
-5. Now you should see Jupyter Lab!
-   ![jupyterlab](../assets/cyverse_basics/jupyterlab.png)
+### GDAL
+- **Geospatial Data Abstraction Library**.  
+- Reads/writes geospatial data (raster and vector).  
+- Used widely in Python (`from osgeo import gdal`).
 
-## Set up your GitHub credentials
+### VSI (Virtual File System)
+- A GDAL feature that lets you open remote files as if they were local.  
+- Examples:  
+  - `/vsicurl/` → stream from HTTP/HTTPS  
+  - `/vsis3/` → stream from Amazon S3 buckets  
+  - `/vsizip/` → read inside zipped archives without extracting  
 
-### If you would prefer to follow a video instead of a written outline, we have prepared a video here:
-<a href="https://www.youtube.com/watch?v=nOwOzPJEQbU">
-    <img src="https://img.youtube.com/vi/nOwOzPJEQbU/0.jpg" style="width: 100%;">
-</a>
+### STAC (SpatioTemporal Asset Catalog)
+- A standard API for discovering and describing geospatial data.  
+- Used by catalogs like [Planetary Computer](https://planetarycomputer.microsoft.com/).  
+- Metadata describes spatial extent, time, and available assets.  
+- Tools: `pystac-client`, `planetary_computer`.
 
-1. From Jupyter Lab, click on the Git Extension icon on the left menu:
-   ![jupyterlab](../assets/cyverse_basics/jupyterlab.png)
+---
 
-2. Click `Clone a Repository` and Paste the link to the cyverse-utils [https://github.com/CU-ESIIL/cyverse-utils.git](https://github.com/CU-ESIIL/cyverse-utils.git) and click `Clone`:
-   ![clone](../assets/cyverse_basics/clone.png)
-   
-3. You should now see the `cyverse-utils` folder in your directory tree (provided you haven't changed directories from the default `/home/jovyan/data-store`
-   ![cyverse-utils](../assets/cyverse_basics/cyverse-utils.png)
+## 4. Example: Streaming with GDAL + VSI
 
-4. Go into the `cyverse-utils` folder:
-   ![click_cyverse_utils](../assets/cyverse_basics/click_cyverse_utils.png)
+```python
+from osgeo import gdal
 
-5. open up the `create_github_keypair.ipynb` notebook if you prefer Python or the 'create_github_keypair.R' script if you prefer R by double-clicking and then select the default 'macrosystems' kernel:
-![open_cyverse_utils](../assets/cyverse_basics/open_cyverse_utils.png)
+# Example: Landsat band 4 hosted on AWS
+url = "/vsicurl/https://landsat-pds.s3.amazonaws.com/c1/L8/001/002/LC08_L1TP_001002_20200810_20200823_01_T1/LC08_L1TP_001002_20200810_20200823_01_T1_B4.TIF"
 
-6. Now you should see the notebook open. Click the `play` button at the top. You will be prompted to enter your GitHub username and email:
-   ![script_1](../assets/cyverse_basics/script_1.png)
+# Open remote raster
+ds = gdal.Open(url)
+print("Raster size:", ds.RasterXSize, ds.RasterYSize, "Bands:", ds.RasterCount)
 
-   ![username](../assets/cyverse_basics/username.png)
+# Read first band
+band = ds.GetRasterBand(1).ReadAsArray()
+print("Array shape:", band.shape)
+```
 
-   ![email](../assets/cyverse_basics/email.png)
+---
 
-7. You should now see your Public Key. Copy the WHOLE LINE including `ssh-ed25519` at the beginning and the `jovyan@...` at the end
-![key](../assets/cyverse_basics/key.png)
+## 5. Example: Discovering Data with STAC
 
-8. Go to your GitHub settings page (you may need to log in to GitHub first):
-   ![settings](../assets/cyverse_basics/settings.png)
+```python
+# pip install pystac-client planetary-computer
 
-9. Select `SSH and GPG keys`
-   ![ssh](../assets/cyverse_basics/ssh.png)
+from pystac_client import Client
+import planetary_computer as pc
 
-10. Select `New SSH key`
-   ![new_key](../assets/cyverse_basics/new_key.png)
+# Open Planetary Computer STAC
+catalog = Client.open("https://planetarycomputer.microsoft.com/api/stac/v1")
 
-11. Give your key a descriptive name, paste your ENTIRE public key in the `Key` input box, and click `Add SSH Key`. You may need to re-authenticate with your password or two-factor authentication.:
-   ![paste_key](../assets/cyverse_basics/paste_key.png)
+# Search Sentinel-2 over Boulder, CO in July 2021
+search = catalog.search(
+    collections=["sentinel-2-l2a"],
+    bbox=[-105.3, 39.9, -105.1, 40.1],
+    datetime="2021-07-01/2021-07-31",
+    limit=1,
+)
 
-12. You should now see your new SSH key in your `Authentication Keys` list! Now you will be able to clone private repositories and push changes to GitHub from your Cyverse analysis!
-   ![final](../assets/cyverse_basics/final.png)
+items = list(search.items())
+item = items[0]
+print("Item ID:", item.id)
 
-> NOTE! Your GitHub authentication is ONLY for the analysis you're working with right now. You will be able to use it as long as you want there, but once you start a new analysis you will need to go through this process again. Feel free to delete keys from old analyses that have been shut down.
+# Get signed URL for red band (B04)
+asset = item.assets["B04"]
+signed_href = pc.sign(asset.href)
+print("Signed URL:", signed_href)
+```
+
+---
+
+## 6. Example: Combining STAC + VSI
+
+Use the signed STAC URL with GDAL’s `/vsicurl/` to stream directly:
+
+```python
+from osgeo import gdal
+
+vsi_url = "/vsicurl/" + signed_href
+ds = gdal.Open(vsi_url)
+
+print("Size:", ds.RasterXSize, ds.RasterYSize, "Bands:", ds.RasterCount)
+```
+
+---
+
+## 7. Saving Results to the CyVerse Data Store
+
+Use the **CyVerse Data Store** for persistence beyond your session. This mirrors last week’s steps (install → init → transfer).
+
+### 7.1 Install `gocmd` (if not already available)
+
+```bash
+# Check if gocmd is available
+which gocmd || echo "gocmd not found"
+
+# Install (user scope) if needed
+python -m pip install --user gocmd
+
+# Ensure user-level bin is on PATH (Jupyter terminals sometimes need this)
+export PATH="$HOME/.local/bin:$PATH"
+
+# Verify
+gocmd --version
+```
+
+### 7.2 Initialize `gocmd` for the CyVerse Data Store
+
+```bash
+# Initialize and follow prompts (use your CyVerse username/password)
+# Common defaults:
+#   Host: data.cyverse.org
+#   Port: 1247
+#   Zone: iplant
+# Accept defaults if pre-filled by the image.
+
+gocmd init
+
+# Confirm login/profile
+gocmd whoami
+
+# Optional: list your home in the Data Store
+gocmd ls i:/
+```
+
+### 7.3 Transfer files to the Data Store (upload)
+
+```bash
+# Create a folder (first time only)
+gocmd mkdir -p i:my_folder
+
+# Upload a file from the current working directory → Data Store
+# Example: result from your analysis
+gocmd transfer prism_tipping_point.png i:my_folder/prism_tipping_point.png
+
+# Upload multiple files (globs are expanded by the shell)
+gocmd transfer *.png i:my_folder/
+```
+
+### 7.4 Transfer files from the Data Store (download)
+
+```bash
+# Download from Data Store → current directory
+gocmd transfer i:my_folder/prism_tipping_point.png .
+
+# Download a whole folder recursively (to a local folder)
+mkdir -p downloads
+gocmd transfer -r i:my_folder/ downloads/
+```
+
+This ensures your results are safe and can be accessed later by you or collaborators.
+
+---
+
+## Key Learning Goals
+
+- Start a CyVerse instance and confirm `gocmd` works.  
+- Use the GitHub widget for collaborative editing (CLI as backup).  
+- Understand GDAL, VSI, and STAC.  
+- Stream remote datasets with GDAL + VSI.  
+- Discover and sign assets with STAC.  
+- Save outputs to the CyVerse Data Store with `gocmd transfer`.  
+
+---
+
+### Theme Recap
+
+Today we explored **streaming data in the cloud**. By combining GDAL, VSI, and STAC, we can work collaboratively in our CyVerse instance, pull in new data without downloads, and persist our creative explorations in GitHub and the CyVerse Data Store.
+
