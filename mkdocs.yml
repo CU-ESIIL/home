@@ -20,6 +20,7 @@ nav:
       - tags/burn-severity.md
       - tags/climate.md
       - tags/cloud.md
+      - tags/collaboration.md
       - tags/container.md
       - tags/contribution.md
       - tags/data-library.md
@@ -57,11 +58,13 @@ nav:
       - tags/spatial.md
       - tags/spatiotemporal.md
       - tags/stac.md
+      - tags/streaming.md
       - tags/treemap.md
       - tags/tutorial.md
       - tags/usage.md
       - tags/usgs.md
       - tags/vegetation.md
+      - tags/vsi.md
       
 # Configuration
 theme:
