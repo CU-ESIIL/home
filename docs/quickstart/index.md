@@ -1,5 +1,7 @@
 ---
 title: Quick Start
+tags: [quickstart]
+date: 2024-01-01
 ---
 
 <style>
@@ -147,12 +149,12 @@ title: Quick Start
         <span class="chev" aria-hidden="true"></span>
       </a>
 
-      <!-- Starting with Python -->
-      <a class="pill is-sky" href="./python/" role="listitem" aria-label="Starting with Python">
+      <!-- Data Exploration in the Cloud -->
+      <a class="pill is-sky" href="./python/" role="listitem" aria-label="Data Exploration in the Cloud">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M7 12a5 5 0 0 1 5-5h3a2 2 0 0 1 2 2v2H9a2 2 0 0 0 0 4h6"/><circle cx="14.5" cy="9.5" r=".75"/></svg>
         </div>
-        <div class="label">Starting with Python</div>
+        <div class="label">Data Exploration in the Cloud</div>
         <span class="chev" aria-hidden="true"></span>
       </a>
 

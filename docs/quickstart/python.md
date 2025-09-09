@@ -1,34 +1,28 @@
-# Starting with Python
+---
+title: Creative Data Exploration in the Cloud
+tags: [cloud, GitHub, collaboration, time series, machine learning]
+date: 2024-01-01
+---
 
-## Sell It
-Python is a flexible language with a rich ecosystem of libraries for data
-science, web apps, and automation. Its clean syntax reads like English and it
-runs on every major operating system, making it a great first language for
-researchers and analysts.
+# Creative Data Exploration in the Cloud
 
-## Show It
-A minimal script prints a message, but even this tiny example demonstrates the
-language's readability:
+Today’s theme is **Creative Data Exploration in the Cloud** with a focus on **collaboration using GitHub**.  
+We’ll build skills step by step — each one necessary for the next — while working together in a shared environment.  
 
-```python
-print("Hello, OASIS!")
+---
+
+## 1. Opening the Lab Together: Startup Procedure
+
+Before we can explore, we need to get into the cloud.
+
+Follow the [OASIS QuickStart: Cloud Triangle](https://cu-esiil.github.io/home/quickstart/cloud/) instructions:
+
+- Log in to ACCESS-CI.  
+- Launch your JupyterHub instance.  
+- Confirm the Triangle is running.  
+- Open a terminal and check that `gocmd` is available:
+
+```bash
+gocmd --help
 ```
-
-## Do It
-1. **Install Python.** Download Python from the
-   [official site](https://www.python.org/) or install a distribution like
-   [Anaconda](https://www.anaconda.com/download) that bundles common tools.
-2. **Create an environment.** Use `conda create -n myenv python` or
-   `python -m venv myenv` to keep project packages isolated.
-3. **Activate the environment.** Run `conda activate myenv` or on macOS/Linux
-   `source myenv/bin/activate` (Windows: `myenv\Scripts\activate`).
-4. **Install a package.** Try `pip install pandas` to see how dependencies are
-   added.
-5. **Run the script.** Save the example above as `hello.py` and execute
-   `python hello.py`.
-
-## Review It
-Check `python --version` and run `pip list` to view installed packages. When
-you're done, deactivate the environment with `conda deactivate` or
-`deactivate` so your base system stays clean.
 
