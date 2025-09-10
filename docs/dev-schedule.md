@@ -7,6 +7,8 @@ date: 2025-08-29
 
 A collaborative timeline for OASIS development. Update this page through pull requests and link to contributions as tasks are completed.
 
+Use `python scripts/add_task.py "Task title" ISSUE --duration DAYS` to append work items. The Gantt chart refreshes automatically on pushes and pull requests.
+
 See [Development Requests](dev-requests.md) for external requests made of the team.
 
 Since February 2025, OASIS has grown from an initial scaffold into a tagged documentation site. Late August 2025 added sidebar tag pages, fixed tag links, and launched the Cloud Triangle lesson with examples. Our next steps are to link tasks directly to GitHub issues and automate Gantt chart updates so the roadmap stays current.
@@ -53,7 +55,16 @@ Since February 2025, OASIS has grown from an initial scaffold into a tagged docu
 
 ## Gantt Chart
 
-![OASIS Development Timeline](gantt_chart.png)
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title OASIS Development Timeline
+%% gantt-start
+    Add GitHub linking to tasks  :active, plan1, 2025-08-15, 7d
+    Automate Gantt chart updates  : plan2, 2025-08-22, 5d
+    Interactive Cloud Triangle lesson  : plan3, 2025-08-29, 5d
+%% gantt-end
+```
 
 <style>
   table {

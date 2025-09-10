@@ -48,8 +48,8 @@ def update_dev_schedule(dev_path=DEV_SCHEDULE_PATH, tasks_path=TASKS_PATH):
     )
     content = replace_section(
         content,
-        '<!-- gantt-start -->',
-        '<!-- gantt-end -->',
+        '%% gantt-start',
+        '%% gantt-end',
         format_gantt(tasks),
     )
     dev_path.write_text(content)
