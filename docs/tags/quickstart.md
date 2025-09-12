@@ -10,7 +10,7 @@ hide:
   <small>2024-01-01</small>
 - [how-to-use](../quickstart/data-library/how-to-use/)
   <small></small>
-- [how-to-contribute](../quickstart/data-library/how-to-contribute/)
+- [how-to-contribute](https://cu-esiil.github.io/how_to_contribute/)
   <small></small>
 - [Introduction to the Cloud Triangle](../quickstart/cloud/)
   <small>2024-01-01</small>
