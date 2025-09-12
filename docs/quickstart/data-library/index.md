@@ -22,7 +22,7 @@ copy-and-paste code snippets, like on the
 ## Review It
 Reflect on how the dataset fits your project and explore the guides:
 - [How to Use the Data Library](how-to-use.md)
-- [How to Contribute to the Data Library](how-to-contribute.md)
+- [How to Contribute to the Data Library](https://cu-esiil.github.io/how_to_contribute/)
 Consider noting any data quality issues or additional metadata that would help
 future users.
 
