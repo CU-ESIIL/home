@@ -265,7 +265,7 @@ hide:
   </div>
 
   <div class="library-item">
-    <a href="https://cu-esiil.github.io/library/analytics/" target="_blank">
+    <a href="https://cu-esiil.github.io/analytics-library/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/analytics_library.jpeg?raw=true" alt="Analytics Library">
     </a>
     <p><strong>Analytics Library</strong></p>
