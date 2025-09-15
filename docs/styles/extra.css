@@ -9,15 +9,17 @@
 
 .sticker-badge {
   position: absolute;
-  top: -14px;
-  right: -10px;
+  top: -36px;
+  right: -6px;
   z-index: 2;
 
   display: inline-block;
-  padding: 0.5rem 0.7rem;
+  padding: 0.65rem 1rem;
   font-weight: 700;
-  font-size: 0.85rem;
-  line-height: 1;
+  font-size: 1rem;
+  line-height: 1.15;
+  text-align: center;
+  max-width: 240px;
   text-decoration: none;
 
   color: #111;
@@ -26,7 +28,7 @@
   border-radius: 12px 18px 14px 16px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.35);
 
-  transform: rotate(-8deg);
+  transform: rotate(-5deg);
   transform-origin: 80% 20%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   animation: sticker-float 3.2s ease-in-out infinite;
@@ -47,7 +49,7 @@
 
 .sticker-badge:hover,
 .sticker-badge:focus-visible {
-  transform: rotate(-4deg) translateY(-1px);
+  transform: rotate(-3deg) translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.4);
   outline: none;
 }
@@ -58,13 +60,13 @@
 
 @keyframes sticker-float {
   0% {
-    transform: rotate(-8deg) translateY(0);
+    transform: rotate(-5deg) translateY(0);
   }
   50% {
-    transform: rotate(-7deg) translateY(-2px);
+    transform: rotate(-4deg) translateY(-3px);
   }
   100% {
-    transform: rotate(-8deg) translateY(0);
+    transform: rotate(-5deg) translateY(0);
   }
 }
 
@@ -77,8 +79,10 @@
 
 @media (max-width: 520px) {
   .sticker-badge {
-    top: -10px;
-    right: -6px;
-    font-size: 0.8rem;
+    top: -24px;
+    right: -2px;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.9rem;
+    max-width: 220px;
   }
 }
