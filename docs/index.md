@@ -81,16 +81,23 @@ hide:
 
 <!-- Quick Start Button -->
 <div class="qs-wrap">
-  <a class="qs-btn" href="./quickstart/" role="button" aria-label="Open Quick Start">
-    <img src="assets/thumbnails/quick_start_button.jpg" alt="Quick Start" />
-    <!-- Corner badge -->
-    <span class="qs-badge">CLICK</span>
-    <!-- Bottom CTA bar -->
-    <span class="qs-cta">
-      <span class="qs-icon">▶</span>
-      <span>Open Quick Start</span>
-    </span>
-  </a>
+  <div class="cta-wrap">
+    <a class="qs-btn quickstart-btn" href="./quickstart/" role="button" aria-label="Open Quick Start">
+      <img src="assets/thumbnails/quick_start_button.jpg" alt="Quick Start" />
+      <!-- Corner badge -->
+      <span class="qs-badge">CLICK</span>
+      <!-- Bottom CTA bar -->
+      <span class="qs-cta">
+        <span class="qs-icon">▶</span>
+        <span>Open Quick Start</span>
+      </span>
+    </a>
+
+    <!-- Sticker-style animated button -->
+    <a class="sticker-badge" href="https://cu-esiil.github.io/how_to_contribute/" aria-label="See how to contribute" title="See how to contribute">
+      Contribute
+    </a>
+  </div>
 </div>
 
 <style>
