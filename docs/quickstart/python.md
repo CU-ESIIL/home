@@ -15,7 +15,7 @@ We’ll use the [OASIS QuickStart: Cloud Triangle](https://cu-esiil.github.io/ho
 
 - Log in to JupyterHub through CyVerse.  
 - Confirm the **triangle environment** is running.  
-- Open a terminal and check that `gocmd` is ready:
+- Open a terminal and check that `gocmd` (refer to 7.1 to initialise gocmd before you run them) is ready:
 
 ```bash
 gocmd --help
