@@ -105,8 +105,8 @@ date: 2024-01-01
       <a href="./github/">GitHub</a>
       <a href="./docker/">Docker</a>
       <a href="./oasis/">OASIS</a>
-      <a href="./data-library/">Data</a>
-      <a href="./analytics-library/">Analytics</a>
+      <a href="https://cu-esiil.github.io/data-library/">Data</a>
+      <a href="https://cu-esiil.github.io/analytics-library/">Analytics</a>
       <a href="./container-library/">Containers</a>
     </div>
     <div class="grid" role="list">
@@ -186,7 +186,7 @@ date: 2024-01-01
       </a>
 
       <!-- Data Library -->
-      <a class="pill is-sky" href="./data-library/" role="listitem" aria-label="Data Library">
+      <a class="pill is-sky" href="https://cu-esiil.github.io/data-library/" role="listitem" aria-label="Data Library">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M5 5h4v14H5zM10 7h4v12h-4zM15 9h4v10h-4z"/></svg>
         </div>
@@ -195,7 +195,7 @@ date: 2024-01-01
       </a>
 
       <!-- Analytics Library -->
-      <a class="pill" href="./analytics-library/" role="listitem" aria-label="Analytics Library">
+      <a class="pill" href="https://cu-esiil.github.io/analytics-library/" role="listitem" aria-label="Analytics Library">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M10 14l-2 2a4 4 0 0 1-6-6l3-3a4 4 0 0 1 6 0"/><path d="M14 10l2-2a4 4 0 0 1 6 6l-3 3a4 4 0 0 1-6 0"/></svg>
         </div>
