@@ -6,5 +6,5 @@ hide:
 
 # usgs
 
-- [lcmap](https://cu-esiil.github.io/data-library/lcmap/)  
+- [lcmap](https://cu-esiil.github.io/data-library/library/lcmap/)  
   <small></small>

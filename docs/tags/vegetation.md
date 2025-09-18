@@ -6,5 +6,5 @@ hide:
 
 # vegetation
 
-- [modis-vcf](https://cu-esiil.github.io/data-library/modis-vcf/)  
+- [modis-vcf](https://cu-esiil.github.io/data-library/library/modis-vcf/)  
   <small></small>

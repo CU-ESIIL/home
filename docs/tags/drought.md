@@ -6,7 +6,7 @@ hide:
 
 # drought
 
-- [drought](https://cu-esiil.github.io/data-library/drought/)  
+- [drought](https://cu-esiil.github.io/data-library/library/drought/)  
   <small></small>
-- [disturbance-stack](https://cu-esiil.github.io/data-library/disturbance-stack/)  
+- [disturbance-stack](https://cu-esiil.github.io/data-library/library/disturbance-stack/)  
   <small></small>

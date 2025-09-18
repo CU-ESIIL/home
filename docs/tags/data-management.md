@@ -6,5 +6,5 @@ hide:
 
 # data-management
 
-- [move-data-to-instance](https://cu-esiil.github.io/data-library/move-data-to-instance/)  
+- [move-data-to-instance](https://cu-esiil.github.io/data-library/library/move-data-to-instance/)  
   <small></small>

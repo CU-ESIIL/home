@@ -6,5 +6,5 @@ hide:
 
 # fia
 
-- [fia](https://cu-esiil.github.io/data-library/fia/)  
+- [fia](https://cu-esiil.github.io/data-library/library/fia/)  
   <small></small>

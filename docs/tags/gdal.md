@@ -6,5 +6,5 @@ hide:
 
 # gdal
 
-- [mounting-via-vsi](https://cu-esiil.github.io/data-library/mounting-via-vsi/)  
+- [mounting-via-vsi](https://cu-esiil.github.io/data-library/library/mounting-via-vsi/)  
   <small></small>
