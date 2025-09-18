@@ -10,8 +10,8 @@ hide:
   <small></small>
 - [lcmap](https://cu-esiil.github.io/data-library/library/lcmap/)
   <small></small>
-- [example-container](../container-library/example-container/)
+- [example-container](../../container-library/example-container/)
   <small></small>
-- [advanced-textbook](../quickstart/advanced-textbook/)
+- [advanced-textbook](../../quickstart/advanced-textbook/)
   <small></small>
 
