@@ -10,8 +10,10 @@ TASKS_PATH = ROOT / 'docs' / 'upcoming_tasks.yaml'
 
 def load_tasks(path=TASKS_PATH):
     with open(path) as f:
-        data = yaml.safe_load(f)
-    return data.get('upcoming_tasks', [])
+        data = yaml.safe_load(f) or {}
+    upcoming = data.get('upcoming_tasks', [])
+    completed = data.get('completed_tasks', [])
+    return upcoming, completed
 
 def format_upcoming(tasks):
     lines = []
@@ -20,14 +22,37 @@ def format_upcoming(tasks):
         lines.append(f"- [ ] [{t['title']}]({link})")
     return "\n".join(lines)
 
-def format_gantt(tasks):
+def _task_status(task, default_status):
+    if 'status' in task:
+        return f":{task['status']},"
+    if task.get('active'):
+        return ':active,'
+    return default_status
+
+def _format_gantt_tasks(tasks, start_index, default_status):
     lines = []
-    for i, t in enumerate(tasks, 1):
+    for offset, t in enumerate(tasks):
         start = datetime.strptime(str(t['start']), '%Y-%m-%d')
         end = datetime.strptime(str(t['end']), '%Y-%m-%d')
         duration = (end - start).days + 1
-        status = ':active,' if t.get('active') else ':'
-        lines.append(f"    {t['title']}  {status} plan{i}, {t['start']}, {duration}d")
+        status = _task_status(t, default_status)
+        lines.append(
+            f"    {t['title']}  {status} plan{start_index + offset}, {t['start']}, {duration}d"
+        )
+    return lines
+
+def format_gantt(upcoming, completed):
+    lines = []
+    counter = 1
+    if completed:
+        lines.append('    section Completed')
+        completed_lines = _format_gantt_tasks(completed, counter, ':done,')
+        lines.extend(completed_lines)
+        counter += len(completed_lines)
+    if upcoming:
+        lines.append('    section Upcoming')
+        upcoming_lines = _format_gantt_tasks(upcoming, counter, ':')
+        lines.extend(upcoming_lines)
     return "\n".join(lines)
 
 def replace_section(content, start_marker, end_marker, replacement):
@@ -38,19 +63,19 @@ def replace_section(content, start_marker, end_marker, replacement):
     return pattern.sub(rf"\1{replacement}\3", content)
 
 def update_dev_schedule(dev_path=DEV_SCHEDULE_PATH, tasks_path=TASKS_PATH):
-    tasks = load_tasks(tasks_path)
+    upcoming, completed = load_tasks(tasks_path)
     content = dev_path.read_text()
     content = replace_section(
         content,
         '<!-- upcoming-start -->',
         '<!-- upcoming-end -->',
-        format_upcoming(tasks),
+        format_upcoming(upcoming),
     )
     content = replace_section(
         content,
         '%% gantt-start',
         '%% gantt-end',
-        format_gantt(tasks),
+        format_gantt(upcoming, completed),
     )
     dev_path.write_text(content)
 

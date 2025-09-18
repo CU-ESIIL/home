@@ -6,11 +6,41 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: update-dev-schedule-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  update:
+  validate:
+    if: github.event_name == 'pull_request'
+    name: Validate schedule is current
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install PyYAML
+      - name: Refresh dev schedule
+        run: python scripts/update_dev_schedule.py
+      - name: Ensure no diff
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::Development schedule is out of date. Run python scripts/update_dev_schedule.py"
+            git status --short
+            git diff
+            exit 1
+          fi
+
+  update:
+    if: github.event_name == 'push'
+    name: Update schedule on main
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
