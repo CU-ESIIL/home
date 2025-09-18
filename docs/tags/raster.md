@@ -6,9 +6,9 @@ hide:
 
 # raster
 
-- [example-workflow](https://cu-esiil.github.io/analytics-library/example-workflow/)
+- [example-workflow](https://cu-esiil.github.io/data-library/analytics/example-workflow/)
   <small></small>
-- [lcmap](https://cu-esiil.github.io/data-library/lcmap/)
+- [lcmap](https://cu-esiil.github.io/data-library/library/lcmap/)
   <small></small>
 - [example-container](../container-library/example-container/)
   <small></small>

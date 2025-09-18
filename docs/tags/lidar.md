@@ -6,5 +6,5 @@ hide:
 
 # lidar
 
-- [gedi](https://cu-esiil.github.io/data-library/gedi/)  
+- [gedi](https://cu-esiil.github.io/data-library/library/gedi/)  
   <small></small>

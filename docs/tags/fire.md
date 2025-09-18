@@ -6,7 +6,7 @@ hide:
 
 # fire
 
-- [landfire-events](https://cu-esiil.github.io/data-library/landfire-events/)  
+- [landfire-events](https://cu-esiil.github.io/data-library/library/landfire-events/)  
   <small></small>
-- [fire-cbi](https://cu-esiil.github.io/data-library/fire-cbi/)  
+- [fire-cbi](https://cu-esiil.github.io/data-library/library/fire-cbi/)  
   <small></small>

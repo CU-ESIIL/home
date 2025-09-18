@@ -6,5 +6,5 @@ hide:
 
 # sentinel-2
 
-- [Pull_Sentinal2_l2_data](https://cu-esiil.github.io/data-library/Pull_Sentinal2_l2_data/)  
+- [Pull_Sentinal2_l2_data](https://cu-esiil.github.io/data-library/library/Pull_Sentinal2_l2_data/)  
   <small></small>

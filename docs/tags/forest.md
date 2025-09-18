@@ -6,7 +6,7 @@ hide:
 
 # forest
 
-- [fia](https://cu-esiil.github.io/data-library/fia/)  
+- [fia](https://cu-esiil.github.io/data-library/library/fia/)  
   <small></small>
-- [treemap](https://cu-esiil.github.io/data-library/treemap/)  
+- [treemap](https://cu-esiil.github.io/data-library/library/treemap/)  
   <small></small>

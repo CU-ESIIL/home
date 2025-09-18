@@ -6,7 +6,7 @@ hide:
 
 # disturbance
 
-- [landfire-events](https://cu-esiil.github.io/data-library/landfire-events/)  
+- [landfire-events](https://cu-esiil.github.io/data-library/library/landfire-events/)  
   <small></small>
-- [disturbance-stack](https://cu-esiil.github.io/data-library/disturbance-stack/)  
+- [disturbance-stack](https://cu-esiil.github.io/data-library/library/disturbance-stack/)  
   <small></small>

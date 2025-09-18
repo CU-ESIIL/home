@@ -6,7 +6,7 @@ hide:
 
 # analytics
 
-- [INLA — Drop-in Analytics Module](https://cu-esiil.github.io/analytics-library/inla/)  
+- [INLA — Drop-in Analytics Module](https://cu-esiil.github.io/data-library/analytics/inla/)  
   <small></small>
-- [example-workflow](https://cu-esiil.github.io/analytics-library/example-workflow/)
+- [example-workflow](https://cu-esiil.github.io/data-library/analytics/example-workflow/)
   <small></small>

@@ -6,5 +6,5 @@ hide:
 
 # burn-severity
 
-- [fire-cbi](https://cu-esiil.github.io/data-library/fire-cbi/)  
+- [fire-cbi](https://cu-esiil.github.io/data-library/library/fire-cbi/)  
   <small></small>
