@@ -794,6 +794,31 @@ This section contains sub-repositories from various events, including the **Inno
 
 ---
 
+## 🌟 **Innovation Summit 2025 — Breakout Groups**
+
+| Name | Description | Link |
+|------|------------|------|
+| **[Defining Tipping Points And Transformation](https://github.com/CU-ESIIL/defining-tipping-points-and-transformation-innovation-summit-2025__1)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Language Perspectives On Sustainability](https://github.com/CU-ESIIL/language-perspectives-on-sustainability-innovation-summit-2025__2)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Understanding Environmental Drivers](https://github.com/CU-ESIIL/understanding-environmental-drivers-innovation-summit-2025__3)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Stressors And Regime Shifts](https://github.com/CU-ESIIL/stressors-and-regime-shifts-innovation-summit-2025__4)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Abrupt Vs Gradual Shifts](https://github.com/CU-ESIIL/abrupt-vs-gradual-shifts-innovation-summit-2025__5)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Stressors Foodweb Connectivity Stability](https://github.com/CU-ESIIL/stressors-foodweb-connectivity-stability-innovation-summit-2025__6)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Historic Biodiversity And Social Systems](https://github.com/CU-ESIIL/historic-biodiversity-and-social-systems-innovation-summit-2025__7)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Unsustainable Land Use And Social Drivers](https://github.com/CU-ESIIL/unsustainable-land-use-and-social-drivers-innovation-summit-2025__8)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Policy Law And Sacred Sites](https://github.com/CU-ESIIL/policy-law-and-sacred-sites-innovation-summit-2025__9)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[System Dynamics And Early Warnings](https://github.com/CU-ESIIL/system-dynamics-and-early-warnings-innovation-summit-2025__10)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Anomaly Detection In Coral Reefs](https://github.com/CU-ESIIL/anomaly-detection-in-coral-reefs-innovation-summit-2025__11)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Ecoregional Models And Regime Shifts](https://github.com/CU-ESIIL/ecoregional-models-and-regime-shifts-innovation-summit-2025__12)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Ecosystem Services And Transformation](https://github.com/CU-ESIIL/ecosystem-services-and-transformation-innovation-summit-2025__13)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Species Interactions And Restoration](https://github.com/CU-ESIIL/species-interactions-and-restoration-innovation-summit-2025__14)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Sacred Spaces Mining And Tourism](https://github.com/CU-ESIIL/sacred-spaces-mining-and-tourism-innovation-summit-2025__15)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Measuring Social Impacts Of Transformation](https://github.com/CU-ESIIL/measuring-social-impacts-of-transformation-innovation-summit-2025__16)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Resilience To Rare Hydrologic Events](https://github.com/CU-ESIIL/resilience-to-rare-hydrologic-events-innovation-summit-2025__17)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Indigenous Approaches And Co Management](https://github.com/CU-ESIIL/indigenous-approaches-and-co-management-innovation-summit-2025__18)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Management Practices And Thresholds](https://github.com/CU-ESIIL/management-practices-and-thresholds-innovation-summit-2025__19)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+| **[Data Interoperability And Harmonization](https://github.com/CU-ESIIL/data-interoperability-and-harmonization-innovation-summit-2025__20)** | Breakout group from the Innovation Summit 2025. | 🔗 GitHub |
+
 ## 🌟 **Innovation Summit 2024 Breakout Groups**
 
 | Name | Description | Link |
