@@ -1,0 +1,2029 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Open Analysis and Synthesis Infrastructure for Science">
+      
+      
+        <meta name="author" content="ESIIL staff">
+      
+      
+        <link rel="canonical" href="https://CU-ESIIL.github.io/home/resources/cyverse_stream_data/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/esiil_content/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Streaming Data in the Cloud with GDAL, VSI, and STAC - OASIS: Open Analysis and Synthesis Infrastructure for Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../assets/css/style.css">
+    
+      <link rel="stylesheet" href="../../chatbot_widget.css">
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+<meta name="google-site-verification" content="zuDAVj60mN5FV2Ujhrn0MbhUF6w0k2W7US8ztne1cuY" />
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#streaming-data-in-the-cloud-with-gdal-vsi-and-stac" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OASIS: Open Analysis and Synthesis Infrastructure for Science" class="md-header__button md-logo" aria-label="OASIS: Open Analysis and Synthesis Infrastructure for Science" data-md-component="logo">
+      
+  <img src="../../assets/thumbnails/esiil_oasis_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OASIS: Open Analysis and Synthesis Infrastructure for Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Streaming Data in the Cloud with GDAL, VSI, and STAC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: white)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CU-ESIIL/home" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    home
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OASIS: Open Analysis and Synthesis Infrastructure for Science" class="md-nav__button md-logo" aria-label="OASIS: Open Analysis and Synthesis Infrastructure for Science" data-md-component="logo">
+      
+  <img src="../../assets/thumbnails/esiil_oasis_logo.png" alt="logo">
+
+    </a>
+    OASIS: Open Analysis and Synthesis Infrastructure for Science
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CU-ESIIL/home" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    home
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tags/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Tags
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/analytics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/Bayesian/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bayesian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/biomass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    biomass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/burn-severity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    burn-severity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/climate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    climate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/collaboration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    collaboration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    container
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/contribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    contribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/data-library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    data library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/data-cubes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    data-cubes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/data-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    data-management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/disturbance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    disturbance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/drought/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    drought
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/ecoregions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ecoregions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/education/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    education
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/epa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    epa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/featured/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    featured
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/fia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/fire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/forest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    forest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/gdal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    gdal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/gedi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    gedi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/GLMM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GLMM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/INLA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    INLA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/inventory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    inventory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/landcover/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    landcover
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/landfire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    landfire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/LGM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LGM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/lidar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lidar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/modis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    modis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/oasis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    oasis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/R/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    R
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/raster/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    raster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/remote-sensing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    remote-sensing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/sentinel-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    sentinel-2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/spatial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    spatial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/spatiotemporal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    spatiotemporal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/stac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    stac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    streaming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/treemap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    treemap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/tutorial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/usgs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    usgs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/vegetation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vegetation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/vsi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vsi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-startup-procedure-opening-the-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Startup Procedure: Opening the Lab
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-collaboration-github-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Collaboration: GitHub Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Collaboration: GitHub Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preferred-method-github-widget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preferred Method: GitHub Widget
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-method-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Method: Command Line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-key-concepts-gdal-vsi-and-stac" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Key Concepts: GDAL, VSI, and STAC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Key Concepts: GDAL, VSI, and STAC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdal" class="md-nav__link">
+    <span class="md-ellipsis">
+      GDAL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vsi-virtual-file-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSI (Virtual File System)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stac-spatiotemporal-asset-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      STAC (SpatioTemporal Asset Catalog)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-example-streaming-with-gdal-vsi" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Example: Streaming with GDAL + VSI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-example-discovering-data-with-stac" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Example: Discovering Data with STAC
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-example-combining-stac-vsi" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Example: Combining STAC + VSI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-saving-results-to-the-cyverse-data-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Saving Results to the CyVerse Data Store
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Saving Results to the CyVerse Data Store">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-install-gocmd-if-not-already-available" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Install gocmd (if not already available)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-initialize-gocmd-for-the-cyverse-data-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Initialize gocmd for the CyVerse Data Store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-transfer-files-to-the-data-store-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Transfer files to the Data Store (upload)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-transfer-files-from-the-data-store-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Transfer files from the Data Store (download)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-learning-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Learning Goals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Learning Goals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theme-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theme Recap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../../tags/#cloud" class="md-tag">cloud</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#streaming" class="md-tag">streaming</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#gdal" class="md-tag">gdal</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#vsi" class="md-tag">vsi</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#stac" class="md-tag">stac</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#collaboration" class="md-tag">collaboration</a>
+    
+  
+</nav>
+
+
+  
+  
+
+
+<h1 id="streaming-data-in-the-cloud-with-gdal-vsi-and-stac">Streaming Data in the Cloud with GDAL, VSI, and STAC<a class="headerlink" href="#streaming-data-in-the-cloud-with-gdal-vsi-and-stac" title="Permanent link">&para;</a></h1>
+<p>Today’s theme is <strong>Creative Data Exploration in the Cloud</strong>. We’ll learn how to stream data into our CyVerse instance, define key concepts (GDAL, VSI, STAC), and practice opening cloud-hosted datasets directly without downloading them.</p>
+<hr />
+<h2 id="1-startup-procedure-opening-the-lab">1. Startup Procedure: Opening the Lab<a class="headerlink" href="#1-startup-procedure-opening-the-lab" title="Permanent link">&para;</a></h2>
+<p>We’ll use the <a href="https://cu-esiil.github.io/home/quickstart/cloud/">OASIS QuickStart: Cloud Triangle</a> to start our <strong>CyVerse instance</strong>.</p>
+<ul>
+<li>Log in to JupyterHub through CyVerse.  </li>
+<li>Confirm the <strong>triangle environment</strong> is running.  </li>
+<li>Open a terminal and check that <code>gocmd</code> is ready:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gocmd<span class="w"> </span>--help
+</code></pre></div>
+<p>If this works, your persistent storage connection is set up.</p>
+<p><strong>Checkpoint:</strong> You now have a shared cloud lab ready to use.</p>
+<hr />
+<h2 id="2-collaboration-github-workflow">2. Collaboration: GitHub Workflow<a class="headerlink" href="#2-collaboration-github-workflow" title="Permanent link">&para;</a></h2>
+<p>We’ll use GitHub to work collaboratively. As last week:</p>
+<h3 id="preferred-method-github-widget">Preferred Method: GitHub Widget<a class="headerlink" href="#preferred-method-github-widget" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Open the <strong>GitHub tab</strong> in JupyterLab (left sidebar).  </li>
+<li>Log in with your GitHub account if prompted.  </li>
+<li>Navigate to your repository.  </li>
+<li>Edit a <code>.md</code> file, save, and use the widget buttons to <strong>Pull → Commit → Push</strong>.  </li>
+<li>Confirm the edit appears on GitHub in your browser.</li>
+</ul>
+<h3 id="alternative-method-command-line">Alternative Method: Command Line<a class="headerlink" href="#alternative-method-command-line" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+<span class="c1"># edit your file in JupyterLab, then save</span>
+git<span class="w"> </span>add<span class="w"> </span>file.md
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;edit example&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<p><strong>Checkpoint:</strong> Everyone has successfully pushed an edit to GitHub.</p>
+<hr />
+<h2 id="3-key-concepts-gdal-vsi-and-stac">3. Key Concepts: GDAL, VSI, and STAC<a class="headerlink" href="#3-key-concepts-gdal-vsi-and-stac" title="Permanent link">&para;</a></h2>
+<h3 id="gdal">GDAL<a class="headerlink" href="#gdal" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Geospatial Data Abstraction Library</strong>.  </li>
+<li>Reads/writes geospatial data (raster and vector).  </li>
+<li>Used widely in Python (<code>from osgeo import gdal</code>).</li>
+</ul>
+<h3 id="vsi-virtual-file-system">VSI (Virtual File System)<a class="headerlink" href="#vsi-virtual-file-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A GDAL feature that lets you open remote files as if they were local.  </li>
+<li>Examples:  </li>
+<li><code>/vsicurl/</code> → stream from HTTP/HTTPS  </li>
+<li><code>/vsis3/</code> → stream from Amazon S3 buckets  </li>
+<li><code>/vsizip/</code> → read inside zipped archives without extracting  </li>
+</ul>
+<h3 id="stac-spatiotemporal-asset-catalog">STAC (SpatioTemporal Asset Catalog)<a class="headerlink" href="#stac-spatiotemporal-asset-catalog" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A standard API for discovering and describing geospatial data.  </li>
+<li>Used by catalogs like <a href="https://planetarycomputer.microsoft.com/">Planetary Computer</a>.  </li>
+<li>Metadata describes spatial extent, time, and available assets.  </li>
+<li>Tools: <code>pystac-client</code>, <code>planetary_computer</code>.</li>
+</ul>
+<hr />
+<h2 id="4-example-streaming-with-gdal-vsi">4. Example: Streaming with GDAL + VSI<a class="headerlink" href="#4-example-streaming-with-gdal-vsi" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">osgeo</span><span class="w"> </span><span class="kn">import</span> <span class="n">gdal</span>
+
+<span class="c1"># Example: Landsat band 4 hosted on AWS</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/vsicurl/https://landsat-pds.s3.amazonaws.com/c1/L8/001/002/LC08_L1TP_001002_20200810_20200823_01_T1/LC08_L1TP_001002_20200810_20200823_01_T1_B4.TIF&quot;</span>
+
+<span class="c1"># Open remote raster</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">gdal</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Raster size:&quot;</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterXSize</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterYSize</span><span class="p">,</span> <span class="s2">&quot;Bands:&quot;</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterCount</span><span class="p">)</span>
+
+<span class="c1"># Read first band</span>
+<span class="n">band</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">GetRasterBand</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">ReadAsArray</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Array shape:&quot;</span><span class="p">,</span> <span class="n">band</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="5-example-discovering-data-with-stac">5. Example: Discovering Data with STAC<a class="headerlink" href="#5-example-discovering-data-with-stac" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># pip install pystac-client planetary-computer</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pystac_client</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">planetary_computer</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pc</span>
+
+<span class="c1"># Open Planetary Computer STAC</span>
+<span class="n">catalog</span> <span class="o">=</span> <span class="n">Client</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;https://planetarycomputer.microsoft.com/api/stac/v1&quot;</span><span class="p">)</span>
+
+<span class="c1"># Search Sentinel-2 over Boulder, CO in July 2021</span>
+<span class="n">search</span> <span class="o">=</span> <span class="n">catalog</span><span class="o">.</span><span class="n">search</span><span class="p">(</span>
+    <span class="n">collections</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;sentinel-2-l2a&quot;</span><span class="p">],</span>
+    <span class="n">bbox</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">105.3</span><span class="p">,</span> <span class="mf">39.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">105.1</span><span class="p">,</span> <span class="mf">40.1</span><span class="p">],</span>
+    <span class="n">datetime</span><span class="o">=</span><span class="s2">&quot;2021-07-01/2021-07-31&quot;</span><span class="p">,</span>
+    <span class="n">limit</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">items</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+<span class="n">item</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Item ID:&quot;</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+
+<span class="c1"># Get signed URL for red band (B04)</span>
+<span class="n">asset</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">assets</span><span class="p">[</span><span class="s2">&quot;B04&quot;</span><span class="p">]</span>
+<span class="n">signed_href</span> <span class="o">=</span> <span class="n">pc</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">asset</span><span class="o">.</span><span class="n">href</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Signed URL:&quot;</span><span class="p">,</span> <span class="n">signed_href</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="6-example-combining-stac-vsi">6. Example: Combining STAC + VSI<a class="headerlink" href="#6-example-combining-stac-vsi" title="Permanent link">&para;</a></h2>
+<p>Use the signed STAC URL with GDAL’s <code>/vsicurl/</code> to stream directly:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">osgeo</span><span class="w"> </span><span class="kn">import</span> <span class="n">gdal</span>
+
+<span class="n">vsi_url</span> <span class="o">=</span> <span class="s2">&quot;/vsicurl/&quot;</span> <span class="o">+</span> <span class="n">signed_href</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">gdal</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="n">vsi_url</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Size:&quot;</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterXSize</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterYSize</span><span class="p">,</span> <span class="s2">&quot;Bands:&quot;</span><span class="p">,</span> <span class="n">ds</span><span class="o">.</span><span class="n">RasterCount</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="7-saving-results-to-the-cyverse-data-store">7. Saving Results to the CyVerse Data Store<a class="headerlink" href="#7-saving-results-to-the-cyverse-data-store" title="Permanent link">&para;</a></h2>
+<p>Use the <strong>CyVerse Data Store</strong> for persistence beyond your session. This mirrors last week’s steps (install → init → transfer).</p>
+<h3 id="71-install-gocmd-if-not-already-available">7.1 Install <code>gocmd</code> (if not already available)<a class="headerlink" href="#71-install-gocmd-if-not-already-available" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Check if gocmd is available</span>
+which<span class="w"> </span>gocmd<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;gocmd not found&quot;</span>
+
+<span class="c1"># Install (user scope) if needed</span>
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>gocmd
+
+<span class="c1"># Ensure user-level bin is on PATH (Jupyter terminals sometimes need this)</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.local/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+
+<span class="c1"># Verify</span>
+gocmd<span class="w"> </span>--version
+</code></pre></div>
+<h3 id="72-initialize-gocmd-for-the-cyverse-data-store">7.2 Initialize <code>gocmd</code> for the CyVerse Data Store<a class="headerlink" href="#72-initialize-gocmd-for-the-cyverse-data-store" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Initialize and follow prompts (use your CyVerse username/password)</span>
+<span class="c1"># Common defaults:</span>
+<span class="c1">#   Host: data.cyverse.org</span>
+<span class="c1">#   Port: 1247</span>
+<span class="c1">#   Zone: iplant</span>
+<span class="c1"># Accept defaults if pre-filled by the image.</span>
+
+gocmd<span class="w"> </span>init
+
+<span class="c1"># Confirm login/profile</span>
+gocmd<span class="w"> </span>whoami
+
+<span class="c1"># Optional: list your home in the Data Store</span>
+gocmd<span class="w"> </span>ls<span class="w"> </span>i:/
+</code></pre></div>
+<h3 id="73-transfer-files-to-the-data-store-upload">7.3 Transfer files to the Data Store (upload)<a class="headerlink" href="#73-transfer-files-to-the-data-store-upload" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Create a folder (first time only)</span>
+gocmd<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>i:my_folder
+
+<span class="c1"># Upload a file from the current working directory → Data Store</span>
+<span class="c1"># Example: result from your analysis</span>
+gocmd<span class="w"> </span>transfer<span class="w"> </span>prism_tipping_point.png<span class="w"> </span>i:my_folder/prism_tipping_point.png
+
+<span class="c1"># Upload multiple files (globs are expanded by the shell)</span>
+gocmd<span class="w"> </span>transfer<span class="w"> </span>*.png<span class="w"> </span>i:my_folder/
+</code></pre></div>
+<h3 id="74-transfer-files-from-the-data-store-download">7.4 Transfer files from the Data Store (download)<a class="headerlink" href="#74-transfer-files-from-the-data-store-download" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Download from Data Store → current directory</span>
+gocmd<span class="w"> </span>transfer<span class="w"> </span>i:my_folder/prism_tipping_point.png<span class="w"> </span>.
+
+<span class="c1"># Download a whole folder recursively (to a local folder)</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>downloads
+gocmd<span class="w"> </span>transfer<span class="w"> </span>-r<span class="w"> </span>i:my_folder/<span class="w"> </span>downloads/
+</code></pre></div>
+<p>This ensures your results are safe and can be accessed later by you or collaborators.</p>
+<hr />
+<h2 id="key-learning-goals">Key Learning Goals<a class="headerlink" href="#key-learning-goals" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Start a CyVerse instance and confirm <code>gocmd</code> works.  </li>
+<li>Use the GitHub widget for collaborative editing (CLI as backup).  </li>
+<li>Understand GDAL, VSI, and STAC.  </li>
+<li>Stream remote datasets with GDAL + VSI.  </li>
+<li>Discover and sign assets with STAC.  </li>
+<li>Save outputs to the CyVerse Data Store with <code>gocmd transfer</code>.  </li>
+</ul>
+<hr />
+<h3 id="theme-recap">Theme Recap<a class="headerlink" href="#theme-recap" title="Permanent link">&para;</a></h3>
+<p>Today we explored <strong>streaming data in the cloud</strong>. By combining GDAL, VSI, and STAC, we can work collaboratively in our CyVerse instance, pull in new data without downloads, and persist our creative explorations in GitHub and the CyVerse Data Store.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 23, 2025 20:18:12 UTC">September 23, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 University of Colorado Boulder
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.indexes", "navigation.tabs.sticky", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+        <script src="../../chatbot_widget.js"></script>
+      
+    
+  </body>
+</html>
