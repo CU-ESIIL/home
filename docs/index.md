@@ -798,26 +798,26 @@ This section contains sub-repositories from various events, including the **Inno
 
 | Name | Description | Link |
 |------|------------|------|
-| **[Defining Tipping Points And Transformation](https://cu-esiil.github.io/Innovation-Summit-2025/#1---Defining-Tipping-Points-And-Transformation)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Stressors Order Duration Frequency Intensity](https://cu-esiil.github.io/Innovation-Summit-2025/#2---Stressors-Order-Duration-Frequency-Intensity)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Abrupt Vs Gradual Shifts Rate Factors](https://cu-esiil.github.io/Innovation-Summit-2025/#3---Abrupt-Vs-Gradual-Shifts-Rate-Factors)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Stressors Food Web Connectivity Stability](https://cu-esiil.github.io/Innovation-Summit-2025/#4---Stressors-Food-Web-Connectivity-Stability)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Historic Biodiversity Human Infrastructure](https://cu-esiil.github.io/Innovation-Summit-2025/#5---Historic-Biodiversity-Human-Infrastructure)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Unsustainable Land Use Agriculture Behavior Change Capacity](https://cu-esiil.github.io/Innovation-Summit-2025/#6---Unsustainable-Land-Use-Agriculture-Behavior-Change-Capacity)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Policy Law Indigenous Sacred Sites](https://cu-esiil.github.io/Innovation-Summit-2025/#7---Policy-Law-Indigenous-Sacred-Sites)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[System Dynamics Early Warning Signals](https://cu-esiil.github.io/Innovation-Summit-2025/#8---System-Dynamics-Early-Warning-Signals)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Anomaly Detection Coral Reef Remote Sensing](https://cu-esiil.github.io/Innovation-Summit-2025/#9---Anomaly-Detection-Coral-Reef-Remote-Sensing)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Ecoregional Models PNW Regime Shifts Hazards](https://cu-esiil.github.io/Innovation-Summit-2025/#10---Ecoregional-Models-PNW-Regime-Shifts-Hazards)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Transformations Ecosystem Services](https://cu-esiil.github.io/Innovation-Summit-2025/#11---Transformations-Ecosystem-Services)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Transformations Species Interactions Restoration](https://cu-esiil.github.io/Innovation-Summit-2025/#12---Transformations-Species-Interactions-Restoration)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Sacred Spaces Mining Tourism](https://cu-esiil.github.io/Innovation-Summit-2025/#13---Sacred-Spaces-Mining-Tourism)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Social Impacts Measurement Evaluation](https://cu-esiil.github.io/Innovation-Summit-2025/#14---Social-Impacts-Measurement-Evaluation)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Resilience Rare Hydrologic Events Management](https://cu-esiil.github.io/Innovation-Summit-2025/#15---Resilience-Rare-Hydrologic-Events-Management)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Indigenous Approaches Co Management Hegemonic Responses](https://cu-esiil.github.io/Innovation-Summit-2025/#16---Indigenous-Approaches-Co-Management-Hegemonic-Responses)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Management Practices Prevent Thresholds](https://cu-esiil.github.io/Innovation-Summit-2025/#17---Management-Practices-Prevent-Thresholds)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Cross Cutting Data Interoperability Harmonization](https://cu-esiil.github.io/Innovation-Summit-2025/#18---Cross-Cutting-Data-Interoperability-Harmonization)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Wildcard Topic (19)](https://cu-esiil.github.io/Innovation-Summit-2025/#19---Wildcard-Topic)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
-| **[Wildcard Topic (20)](https://cu-esiil.github.io/Innovation-Summit-2025/#20---Wildcard-Topic)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[1. Defining Tipping Points And Transformation](https://cu-esiil.github.io/Innovation-Summit-2025/#1---Defining-Tipping-Points-And-Transformation)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[2. Stressors Order Duration Frequency Intensity](https://cu-esiil.github.io/Innovation-Summit-2025/#2---Stressors-Order-Duration-Frequency-Intensity)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[3. Abrupt Vs Gradual Shifts Rate Factors](https://cu-esiil.github.io/Innovation-Summit-2025/#3---Abrupt-Vs-Gradual-Shifts-Rate-Factors)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[4. Stressors Food Web Connectivity Stability](https://cu-esiil.github.io/Innovation-Summit-2025/#4---Stressors-Food-Web-Connectivity-Stability)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[5. Historic Biodiversity Human Infrastructure](https://cu-esiil.github.io/Innovation-Summit-2025/#5---Historic-Biodiversity-Human-Infrastructure)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[6. Unsustainable Land Use Agriculture Behavior Change Capacity](https://cu-esiil.github.io/Innovation-Summit-2025/#6---Unsustainable-Land-Use-Agriculture-Behavior-Change-Capacity)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[7. Policy Law Indigenous Sacred Sites](https://cu-esiil.github.io/Innovation-Summit-2025/#7---Policy-Law-Indigenous-Sacred-Sites)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[8. System Dynamics Early Warning Signals](https://cu-esiil.github.io/Innovation-Summit-2025/#8---System-Dynamics-Early-Warning-Signals)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[9. Anomaly Detection Coral Reef Remote Sensing](https://cu-esiil.github.io/Innovation-Summit-2025/#9---Anomaly-Detection-Coral-Reef-Remote-Sensing)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[10. Ecoregional Models PNW Regime Shifts Hazards](https://cu-esiil.github.io/Innovation-Summit-2025/#10---Ecoregional-Models-PNW-Regime-Shifts-Hazards)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[11. Transformations Ecosystem Services](https://cu-esiil.github.io/Innovation-Summit-2025/#11---Transformations-Ecosystem-Services)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[12. Transformations Species Interactions Restoration](https://cu-esiil.github.io/Innovation-Summit-2025/#12---Transformations-Species-Interactions-Restoration)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[13. Sacred Spaces Mining Tourism](https://cu-esiil.github.io/Innovation-Summit-2025/#13---Sacred-Spaces-Mining-Tourism)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[14. Social Impacts Measurement Evaluation](https://cu-esiil.github.io/Innovation-Summit-2025/#14---Social-Impacts-Measurement-Evaluation)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[15. Resilience Rare Hydrologic Events Management](https://cu-esiil.github.io/Innovation-Summit-2025/#15---Resilience-Rare-Hydrologic-Events-Management)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[16. Indigenous Approaches Co Management Hegemonic Responses](https://cu-esiil.github.io/Innovation-Summit-2025/#16---Indigenous-Approaches-Co-Management-Hegemonic-Responses)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[17. Management Practices Prevent Thresholds](https://cu-esiil.github.io/Innovation-Summit-2025/#17---Management-Practices-Prevent-Thresholds)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[18. Cross Cutting Data Interoperability Harmonization](https://cu-esiil.github.io/Innovation-Summit-2025/#18---Cross-Cutting-Data-Interoperability-Harmonization)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[19. Wildcard Topic (19)](https://cu-esiil.github.io/Innovation-Summit-2025/#19---Wildcard-Topic)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
+| **[20. Wildcard Topic (20)](https://cu-esiil.github.io/Innovation-Summit-2025/#20---Wildcard-Topic)** | Breakout group from the Innovation Summit 2025. | 🔗 Website |
 
 ## 🌟 **Innovation Summit 2024 Breakout Groups**
 
