@@ -1,7 +1,3 @@
-html {
-  outline: 8px solid magenta !important;
-}
-
 :root {
   --brand-primary: #234A65;
   --brand-accent: #42BCDC;
