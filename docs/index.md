@@ -16,7 +16,7 @@ hide:
         <input type="search" name="q" placeholder="Search..." aria-label="Search" />
         <button type="submit" aria-label="Submit search">🔍</button>
       </form>
-      <div class="tag-suggestions">
+      <div class="tag-suggestions oasis-pills">
         <a href="./quickstart/" class="tag">Quickstart</a>
         <a href="./container-library/" class="tag">Containers</a>
         <a href="https://cu-esiil.github.io/analytics-library/" class="tag">Analytics</a>
@@ -63,20 +63,6 @@ hide:
     gap: 8px;
     justify-content: center;
   }
-  .tag-suggestions .tag {
-    padding: 5px 12px;
-    text-decoration: none;
-    border: none;
-    border-radius: 15px;
-    background: #e0e0e0;
-    color: #000 !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-size: 0.9em;
-    font-weight: 600;
-  }
-  .tag-suggestions .tag:hover {
-    background: #d5d5d5;
-  }
 </style>
 
 <!-- Quick Start Button -->
@@ -117,7 +103,6 @@ hide:
     border-radius: 16px;
     overflow: hidden;
     text-decoration: none;
-    outline: none;
     /* “buttony” depth + hover lift */
     box-shadow:
       0 6px 14px rgba(0,0,0,.25),
