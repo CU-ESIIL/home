@@ -156,7 +156,7 @@ markdown_extensions:
 extra_css:
   - assets/css/style.css
   - chatbot_widget.css
-  - styles/extra.css
+  - styles/brand.css
 
 extra_javascript:
   - chatbot_widget.js
