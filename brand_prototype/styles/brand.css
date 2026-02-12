@@ -1,52 +1,23 @@
-/* =========================================
-   ESIIL / OASIS Brand Prototype Layer
-   ========================================= */
-
-/* DEBUG: remove after confirming this stylesheet is loaded. */
-html { outline: 6px solid rgba(209,73,91,0.25); }
-
-/* -------------------------
-   Material Design Tokens
-   ------------------------- */
-
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #1b365d; /* primary brand */
-  --md-accent-fg-color: #d1495b;  /* accent */
-  --md-typeset-a-color: #1b365d;  /* links */
-  --md-default-bg-color: #ffffff; /* page background */
-}
-
-[data-md-color-scheme="slate"] {
   --md-primary-fg-color: #1b365d;
   --md-accent-fg-color: #d1495b;
   --md-typeset-a-color: #1b365d;
   --md-default-bg-color: #ffffff;
 }
 
-/* -------------------------
-   Typography
-   ------------------------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1b365d;
+  --md-accent-fg-color: #d1495b;
+  --md-typeset-a-color: #d1495b;
+}
 
 body {
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
-
-/* -------------------------
-   Header
-   ------------------------- */
-
-.md-header {
-  box-shadow: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* -------------------------
-   Buttons
-   ------------------------- */
 
 .md-typeset .md-button {
-  border-radius: 6px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .md-typeset .md-button--primary {
@@ -56,19 +27,3 @@ body {
 .md-typeset .md-button:hover {
   transform: translateY(-1px);
 }
-
-/* -------------------------
-   Footer cleanup
-   ------------------------- */
-
-.md-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* -------------------------
-   How to verify in DevTools
-   -------------------------
-   1) Inspect the root element with [data-md-color-scheme="default"].
-   2) In Computed styles, confirm --md-primary-fg-color resolves to #1b365d.
-   3) Confirm html outline debug rule appears, then remove this debug rule.
-*/
