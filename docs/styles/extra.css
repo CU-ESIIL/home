@@ -238,6 +238,42 @@ body,
   transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
 }
 
+/* Homepage search tag pills */
+.md-content__inner .content .search-bar .tag-suggestions > a.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(35, 74, 101, 0.38);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--brand-primary) !important;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.md-content__inner .content .search-bar .tag-suggestions > a.tag:is(:hover, :focus-visible) {
+  background: rgba(66, 188, 220, 0.16);
+  border-color: var(--brand-accent);
+  color: var(--brand-primary) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  transform: translateY(-1px);
+}
+
+[data-md-color-scheme="slate"] .md-content__inner .content .search-bar .tag-suggestions > a.tag {
+  background: rgba(9, 21, 30, 0.92);
+  border-color: rgba(66, 188, 220, 0.52);
+  color: #d5eef7 !important;
+}
+
+[data-md-color-scheme="slate"] .md-content__inner .content .search-bar .tag-suggestions > a.tag:is(:hover, :focus-visible) {
+  background: rgba(66, 188, 220, 0.22);
+  border-color: #6ed4eb;
+  color: #ebf9fd !important;
+}
+
 .tag-cloud a:is(:hover, :focus-visible) {
   color: var(--brand-green);
   border-color: var(--brand-accent);
