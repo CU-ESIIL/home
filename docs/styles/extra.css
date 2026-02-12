@@ -221,3 +221,34 @@ body,
     max-width: 220px;
   }
 }
+
+/* Tag cloud visual treatment (non-structural) */
+.tag-cloud a {
+  text-decoration: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--brand-border);
+  color: var(--brand-primary);
+  background-color: transparent;
+  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.tag-cloud a:is(:hover, :focus-visible) {
+  color: var(--brand-green);
+  border-color: var(--brand-accent);
+  background-color: rgba(66, 188, 220, 0.1);
+  text-decoration: underline;
+  text-underline-offset: 0.12rem;
+}
+
+[data-md-color-scheme="slate"] .tag-cloud a {
+  color: var(--brand-accent);
+  background-color: rgba(66, 188, 220, 0.08);
+}
+
+[data-md-color-scheme="slate"] .tag-cloud a:is(:hover, :focus-visible) {
+  color: var(--brand-accent);
+  border-color: var(--brand-green);
+  background-color: rgba(0, 113, 53, 0.24);
+}
