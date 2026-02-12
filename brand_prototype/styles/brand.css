@@ -1,0 +1,48 @@
+/* =========================================
+   ESIIL / OASIS Brand Prototype Layer
+   ========================================= */
+
+/* -------------------------
+   Material Design Tokens
+   ------------------------- */
+
+:root {
+  --md-primary-fg-color: #1b365d;        /* primary brand */
+  --md-accent-fg-color: #d1495b;         /* accent */
+  --md-typeset-a-color: #1b365d;         /* links */
+  --md-default-bg-color: #ffffff;
+}
+
+/* -------------------------
+   Typography
+   ------------------------- */
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* -------------------------
+   Header
+   ------------------------- */
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* -------------------------
+   Buttons
+   ------------------------- */
+
+.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-radius: 6px;
+}
+
+/* -------------------------
+   Footer cleanup
+   ------------------------- */
+
+.md-footer {
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
