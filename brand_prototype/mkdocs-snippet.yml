@@ -1,0 +1,7 @@
+# Brand prototype layer
+# To enable locally:
+#   - mkdocs.yml: theme.custom_dir -> brand_prototype/overrides
+#   - mkdocs.yml: extra_css includes brand_prototype/styles/brand.css
+# Test:
+#   mkdocs serve
+# Then hard refresh and confirm CSS rules come from brand_prototype/styles/brand.css in DevTools.
