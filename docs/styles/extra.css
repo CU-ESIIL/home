@@ -1,61 +1,50 @@
-/* Final authority skin layer overrides */
-:root {
-  --oasis-accent-gradient: var(--brand-gradient-cta);
+/* Header */
+.md-header {
+  min-height: 100px;
 }
 
-/* A) 2x logo sizing while preserving header layout */
 .md-header__inner {
-  min-height: 4rem;
+  min-height: 100px;
   align-items: center;
 }
 
 .md-header__button.md-logo img,
 .md-logo img,
 .md-logo svg {
-  height: 3.5rem;
+  height: 85px;
   width: auto;
   max-height: none;
 }
 
-/* B) Sidebar gradient to match primary nav buttons */
+/* Sidebar */
 .md-sidebar--primary,
 .md-sidebar--primary .md-sidebar__scrollwrap,
 .md-sidebar--primary .md-sidebar__inner,
 .md-sidebar--primary .md-nav--primary {
-  background: var(--oasis-accent-gradient);
-}
-
-.md-sidebar--primary .md-nav,
-.md-sidebar--primary .md-nav__title,
-.md-sidebar--primary .md-nav__item .md-nav__link,
-.md-sidebar--primary .md-nav__item .md-nav__link code {
-  color: #f4fbff;
-}
-
-.md-sidebar--primary .md-nav__item .md-nav__link:is(:hover, :focus-visible) {
+  background: #2fa66a;
   color: #ffffff;
-  background-color: rgba(16, 34, 47, 0.18);
 }
 
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__link code {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.md-sidebar--primary .md-nav__link:is(:hover, :focus-visible),
 .md-sidebar--primary .md-nav__item--active > .md-nav__link {
   color: #ffffff;
-  background-color: rgba(16, 34, 47, 0.26);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* C) Contribute overlay button uses same blue/teal palette */
+/* Contribute Button */
 .sticker-badge {
-  color: #f4fbff;
-  background: var(--oasis-accent-gradient);
-  border: 2px solid rgba(16, 34, 47, 0.22);
-  box-shadow: 0 6px 14px rgba(35, 74, 101, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  background: #1f6fd6;
+  color: #ffffff;
 }
 
 .sticker-badge:hover,
 .sticker-badge:focus-visible {
+  background: #185bb3;
   color: #ffffff;
-  box-shadow: 0 10px 20px rgba(35, 74, 101, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-}
-
-.sticker-badge:focus-visible {
-  box-shadow: 0 0 0 3px rgba(244, 251, 255, 0.32), 0 10px 20px rgba(35, 74, 101, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
