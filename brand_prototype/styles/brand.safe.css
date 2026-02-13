@@ -43,7 +43,63 @@
 .esiil-hero h1 {
   font-size: 3.5rem;
   line-height: 1.1;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.2em;
+}
+
+.esiil-hero {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem 1rem;
+}
+
+.esiil-hero p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.esiil-hero::after {
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 999px;
+  margin-top: 1.25rem;
+  background: linear-gradient(90deg, #42BCDC, #007135);
+  opacity: 0.85;
+}
+
+.esiil-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+.esiil-hero-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(66,188,220,0.12);
+  color: #234A65;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(66,188,220,0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.esiil-hero-links a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+.esiil-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .esiil-hero h2 {

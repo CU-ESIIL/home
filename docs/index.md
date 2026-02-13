@@ -17,7 +17,7 @@ hide:
         <input type="search" name="q" placeholder="Search..." aria-label="Search" />
         <button type="submit" aria-label="Submit search">🔍</button>
       </form>
-      <div class="tag-suggestions oasis-pills">
+      <div class="tag-suggestions oasis-pills esiil-hero-links">
         <a href="./quickstart/" class="tag">Quickstart</a>
         <a href="./container-library/" class="tag">Containers</a>
         <a href="https://cu-esiil.github.io/analytics-library/" class="tag">Analytics</a>
@@ -27,8 +27,10 @@ hide:
     </div>
     <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 
+<div class="esiil-hero-cta">
 [Open Quick Start](./quickstart/){ .md-button .md-button--primary }
 [Browse Resources](./resources/){ .md-button .md-button--secondary }
+</div>
   </div>
 </div>
 
@@ -861,5 +863,4 @@ This section contains sub-repositories from various events, including the **Inno
 
 
 📧 **Contact**: [esiil-support@cu.edu](mailto:esiil-support@cu.edu)
-
 
