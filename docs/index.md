@@ -84,7 +84,7 @@ hide:
     </a>
 
     <!-- Sticker-style animated button -->
-    <a class="sticker-badge" href="https://cu-esiil.github.io/how_to_contribute/" aria-label="Click here to contribute to OASIS" title="Click here to contribute to OASIS">
+    <a class="sticker-badge oasis-contribute-badge" href="https://cu-esiil.github.io/how_to_contribute/" aria-label="Click here to contribute to OASIS" title="Click here to contribute to OASIS">
       Click here to contribute to OASIS
     </a>
   </div>

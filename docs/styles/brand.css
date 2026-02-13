@@ -1,11 +1,23 @@
 :root {
-  --brand-primary: #234A65;
-  --brand-accent: #42BCDC;
-  --brand-green: #007135;
-  --brand-gradient-brand: linear-gradient(90deg, #234A65 0%, #007135 100%);
-  --brand-gradient-cta: linear-gradient(to right, #42BCDC 0%, #47BF7F 60%);
-  --oasis-surface-sidebar: var(--brand-green);
-  --oasis-surface-cta: var(--brand-accent);
+  --oasis-font-sans: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  --oasis-blue: #234A65;
+  --oasis-green: #007135;
+  --oasis-teal: #42BCDC;
+
+  --oasis-text-primary: #161A19;
+  --oasis-text-secondary: #5c6b73;
+  --oasis-text-muted: #7b8b93;
+
+  /* Semantic surfaces */
+  --oasis-surface-sidebar: var(--oasis-green);
+  --oasis-surface-cta: var(--oasis-blue);
+
+  --brand-primary: var(--oasis-blue);
+  --brand-accent: var(--oasis-teal);
+  --brand-green: var(--oasis-green);
+  --brand-gradient-brand: linear-gradient(90deg, var(--oasis-blue) 0%, var(--oasis-green) 100%);
+  --brand-gradient-cta: linear-gradient(to right, var(--oasis-teal) 0%, #47BF7F 60%);
   --brand-border: rgba(35, 74, 101, 0.18);
   --brand-hover-shadow: 0 10px 24px rgba(35, 74, 101, 0.18);
   --md-primary-fg-color: var(--brand-primary);

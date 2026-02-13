@@ -158,6 +158,7 @@ markdown_extensions:
 extra_css:
   - assets/css/style.css
   - chatbot_widget.css
+  - https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap
   - styles/brand.css
   - brand_prototype/styles/brand.safe.css
   - styles/extra.css
