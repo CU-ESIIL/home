@@ -158,8 +158,6 @@ body[data-md-page="index"] .md-content__inner {
     position: sticky;
     top: 0;
     height: 100vh;
-    margin-top: calc(var(--oasis-topband-height) + (var(--oasis-header-height) * -0.25));
-    padding-top: calc(var(--oasis-topband-height) + (var(--oasis-header-height) * 0.25));
   }
 }
 
@@ -179,23 +177,36 @@ body[data-md-page="index"] .md-content__inner {
 }
 
 /* -------------------------------------------------
-   Top black band (ESIIL-like)
+   Header — dark like ESIIL
    ------------------------------------------------- */
 
 .md-header {
-  position: sticky;
-  top: 0;
-  margin-top: var(--oasis-topband-height);
+  background-color: var(--oasis-header-bg) !important;
+  color: var(--oasis-header-fg) !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.md-header::before {
-  content: "";
-  position: absolute;
-  top: calc(-1 * var(--oasis-topband-height));
-  left: 0;
-  right: 0;
-  height: var(--oasis-topband-height);
-  background: #000;
+/* Top nav icons / links in header */
+.md-header .md-header__button,
+.md-header a,
+.md-header .md-header__title,
+.md-header .md-ellipsis {
+  color: var(--oasis-header-fg) !important;
+}
+
+/* Search box styling so it reads on dark */
+.md-search__form {
+  background-color: rgba(255,255,255,0.10) !important;
+}
+
+.md-search__input {
+  color: var(--oasis-header-fg) !important;
+}
+
+.md-search__icon,
+.md-search__input::placeholder {
+  color: var(--oasis-header-fg-muted) !important;
 }
 
 /* -------------------------------------------------
