@@ -21,7 +21,7 @@
 .md-sidebar--primary .md-sidebar__scrollwrap,
 .md-sidebar--primary .md-sidebar__inner,
 .md-sidebar--primary .md-nav--primary {
-  background: #2fa66a;
+  background-color: var(--oasis-surface-sidebar);
   color: #ffffff;
 }
 
@@ -39,12 +39,13 @@
 
 /* Contribute Button */
 .sticker-badge {
-  background: #1f6fd6;
+  background-color: var(--oasis-surface-cta);
   color: #ffffff;
 }
 
 .sticker-badge:hover,
 .sticker-badge:focus-visible {
-  background: #185bb3;
+  background-color: var(--oasis-surface-cta);
+  filter: brightness(0.92);
   color: #ffffff;
 }

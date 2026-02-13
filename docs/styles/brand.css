@@ -4,6 +4,8 @@
   --brand-green: #007135;
   --brand-gradient-brand: linear-gradient(90deg, #234A65 0%, #007135 100%);
   --brand-gradient-cta: linear-gradient(to right, #42BCDC 0%, #47BF7F 60%);
+  --oasis-surface-sidebar: var(--brand-green);
+  --oasis-surface-cta: var(--brand-accent);
   --brand-border: rgba(35, 74, 101, 0.18);
   --brand-hover-shadow: 0 10px 24px rgba(35, 74, 101, 0.18);
   --md-primary-fg-color: var(--brand-primary);
