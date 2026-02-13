@@ -3,11 +3,6 @@ hide:
   - toc
 ---
 
-<!-- Static Header Section -->
-<div class="static-header">
-    <img id="header-img" src="https://raw.githubusercontent.com/CU-ESIIL/home/main/docs/assets/thumbnails/OASIS_header.png"
-         alt="ESIIL OASIS Header">
-</div>
 <!-- Main Content -->
 <div class="oasis-layout" markdown="1">
 <main class="oasis-main" markdown="1">
