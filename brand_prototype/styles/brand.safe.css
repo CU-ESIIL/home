@@ -1,19 +1,37 @@
-/* Safe brand overlay for MkDocs Material
-   - Token overrides only
-   - Minimal component styling
-   - No layout/container overrides
+/*
+  Brand Safe Overlay
+  - Token expansion
+  - Gradient primary buttons
+  - Surface styling
+  No layout overrides. No !important.
 */
 
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #234a65;
-  --md-accent-fg-color: #42bcdc;
-  --md-typeset-a-color: #234a65;
+  --md-primary-fg-color: #234A65;
+  --md-primary-fg-color--light: #2d5c7c;
+  --md-primary-fg-color--dark: #1f4058;
+
+  --md-accent-fg-color: #42BCDC;
+  --md-accent-fg-color--transparent: rgba(66,188,220,0.15);
+
+  --md-default-fg-color: #161A19;
+  --md-default-bg-color: #ffffff;
+
+  --md-code-bg-color: #EDF0F2;
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #234a65;
-  --md-accent-fg-color: #42bcdc;
-  --md-typeset-a-color: #42bcdc;
+  --md-primary-fg-color: #234A65;
+  --md-primary-fg-color--light: #2d5c7c;
+  --md-primary-fg-color--dark: #1f4058;
+
+  --md-accent-fg-color: #42BCDC;
+  --md-accent-fg-color--transparent: rgba(66,188,220,0.15);
+
+  --md-default-fg-color: #EDF0F2;
+  --md-default-bg-color: #161A19;
+
+  --md-code-bg-color: #1f4058;
 }
 
 .md-typeset .md-button {
@@ -22,7 +40,13 @@
 }
 
 .md-typeset .md-button--primary {
-  background-color: var(--md-primary-fg-color);
+  background: linear-gradient(90deg, #234A65, #007135);
+  color: #ffffff;
+}
+
+.md-typeset .md-button--primary:hover {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
 }
 
 .md-typeset .md-button--secondary {
@@ -30,6 +54,13 @@
   color: var(--md-primary-fg-color);
 }
 
-.md-typeset .md-button:hover {
-  transform: translateY(-1px);
+.md-typeset .admonition,
+.md-typeset details {
+  background: #EDF0F2;
+  border-radius: 12px;
+}
+
+.md-tabs__link:hover,
+.md-nav__link:hover {
+  color: #42BCDC;
 }
