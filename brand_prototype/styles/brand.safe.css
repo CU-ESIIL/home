@@ -162,3 +162,34 @@
   border-radius: 12px;
   padding: 1rem 1.25rem;
 }
+
+/* Homepage 2-col layout (content-only; not Material containers) */
+.oasis-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+/* Sticky sidebar */
+.oasis-sidebar {
+  position: sticky;
+  top: 5rem;  /* below header */
+  align-self: start;
+}
+
+/* Ensure main column doesn’t overflow */
+.oasis-main {
+  min-width: 0;
+}
+
+/* Responsive: collapse to 1 column on small screens */
+@media (max-width: 900px) {
+  .oasis-layout {
+    grid-template-columns: 1fr;
+  }
+  .oasis-sidebar {
+    position: static;
+  }
+}
