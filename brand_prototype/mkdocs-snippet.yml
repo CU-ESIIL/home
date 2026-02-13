@@ -1,9 +1,16 @@
-# Brand prototype layer
+# Brand prototype layer (safe mode, recommended)
 # To enable locally:
-#   - mkdocs.yml: theme.custom_dir -> brand_prototype/overrides
-#   - mkdocs.yml: extra_css includes brand_prototype/styles/brand.css
+#   - Keep theme.custom_dir unset (or use default theme templates)
+#   - Load brand_prototype/styles/brand.safe.css as the LAST entry in extra_css
+#
+# Example:
+# extra_css:
+#   - assets/css/style.css
+#   - chatbot_widget.css
+#   - styles/brand.css
+#   - brand_prototype/styles/brand.safe.css
+#
 # Test:
 #   mkdocs serve
-# Then hard refresh and confirm CSS rules come from brand_prototype/styles/brand.css in DevTools.
-# NOTE: brand_prototype/styles/brand.css currently includes a temporary html outline debug rule.
-#       Remove that debug rule after verification.
+# Then hard refresh and confirm rules are sourced from
+# brand_prototype/styles/brand.safe.css in DevTools.
