@@ -9,7 +9,7 @@ hide:
          alt="ESIIL OASIS Header">
 </div>
 <!-- Main Content -->
-<div class="content">
+<div class="content" markdown="1">
   <div class="esiil-hero" markdown="1">
     <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
     <div class="search-bar">
