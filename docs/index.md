@@ -9,29 +9,32 @@ hide:
          alt="ESIIL OASIS Header">
 </div>
 <!-- Main Content -->
-<div class="content" markdown="1">
-  <div class="esiil-hero" markdown="1">
-    <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
-    <div class="search-bar">
-      <form action="search/" method="get" class="search-form">
-        <input type="search" name="q" placeholder="Search..." aria-label="Search" />
-        <button type="submit" aria-label="Submit search">🔍</button>
-      </form>
-      <div class="tag-suggestions oasis-pills esiil-hero-links" markdown="1">
-        <a href="./quickstart/" class="tag">Quickstart</a>
-        <a href="./container-library/" class="tag">Containers</a>
-        <a href="https://cu-esiil.github.io/analytics-library/" class="tag">Analytics</a>
-        <a href="https://cu-esiil.github.io/data-library/" class="tag">Data Library</a>
-        <a href="./resources/" class="tag">Resources</a>
-      </div>
-    </div>
-    <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
+<div class="oasis-layout" markdown="1">
+<aside class="oasis-sidebar" markdown="1">
+<div class="tag-suggestions oasis-pills esiil-hero-links" markdown="1">
+<a href="./quickstart/" class="tag">Quickstart</a>
+<a href="./container-library/" class="tag">Containers</a>
+<a href="https://cu-esiil.github.io/analytics-library/" class="tag">Analytics</a>
+<a href="https://cu-esiil.github.io/data-library/" class="tag">Data Library</a>
+<a href="./resources/" class="tag">Resources</a>
+</div>
+</aside>
+
+<main class="oasis-main" markdown="1">
+<div class="esiil-hero" markdown="1">
+<h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
+<div class="search-bar">
+<form action="search/" method="get" class="search-form">
+<input type="search" name="q" placeholder="Search..." aria-label="Search" />
+<button type="submit" aria-label="Submit search">🔍</button>
+</form>
+</div>
+<p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 
 <div class="esiil-hero-cta" markdown="1">
 [Open Quick Start](./quickstart/){ .md-button .md-button--primary }
 [Browse Resources](./resources/){ .md-button .md-button--secondary }
 </div>
-  </div>
 </div>
 
 <style>
@@ -863,3 +866,6 @@ This section contains sub-repositories from various events, including the **Inno
 
 
 📧 **Contact**: [esiil-support@cu.edu](mailto:esiil-support@cu.edu)
+
+</main>
+</div>
