@@ -16,36 +16,87 @@
   max-height: none;
 }
 
-/* Sidebar */
+/* -------------------------------------------------
+   Global Typography (ESIIL feel)
+   ------------------------------------------------- */
+body,
+.md-typeset {
+  font-family: var(--oasis-font-sans);
+  color: var(--oasis-text-primary);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+/* Headings */
+.md-typeset h1 {
+  font-weight: 600;
+  color: var(--oasis-blue);
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  color: var(--oasis-blue);
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+  color: var(--oasis-blue);
+}
+
+/* Accent / Kicker text */
+.oasis-kicker {
+  color: var(--oasis-teal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+/* -------------------------------------------------
+   Sidebar / TOC (Solid Green Surface)
+   ------------------------------------------------- */
 .md-sidebar--primary,
 .md-sidebar--primary .md-sidebar__scrollwrap,
-.md-sidebar--primary .md-sidebar__inner,
-.md-sidebar--primary .md-nav--primary {
+.md-sidebar--primary .md-sidebar__inner {
   background-color: var(--oasis-surface-sidebar);
-  color: #ffffff;
+  background-image: none !important;
 }
 
-.md-sidebar--primary .md-nav__link,
-.md-sidebar--primary .md-nav__title,
-.md-sidebar--primary .md-nav__link code {
+.md-sidebar--primary .md-nav__link {
   color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
 }
 
-.md-sidebar--primary .md-nav__link:is(:hover, :focus-visible),
+.md-sidebar--primary .md-nav__link--active,
 .md-sidebar--primary .md-nav__item--active > .md-nav__link {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+  font-weight: 700;
 }
 
-/* Contribute Button */
-.sticker-badge {
-  background-color: var(--oasis-surface-cta);
-  color: #ffffff;
+/* -------------------------------------------------
+   Buttons (ESIIL weight + tone)
+   ------------------------------------------------- */
+a.md-button,
+button.md-button {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
-.sticker-badge:hover,
-.sticker-badge:focus-visible {
-  background-color: var(--oasis-surface-cta);
+/* -------------------------------------------------
+   Contribute Badge (Solid Blue Surface)
+   ------------------------------------------------- */
+.oasis-contribute-badge,
+.sticker-badge.oasis-contribute-badge {
+  background-color: var(--oasis-surface-cta) !important;
+  background-image: none !important;
+  color: white !important;
+  font-weight: 600;
+  border: none;
+}
+
+.oasis-contribute-badge:hover,
+.oasis-contribute-badge:focus-visible {
   filter: brightness(0.92);
-  color: #ffffff;
 }
