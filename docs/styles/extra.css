@@ -96,23 +96,71 @@ body[data-md-page="index"] .md-content__inner {
 
 .md-sidebar--primary::before,
 .md-sidebar--primary::after,
+.md-sidebar--primary .md-sidebar__scrollwrap::before,
+.md-sidebar--primary .md-sidebar__scrollwrap::after,
 .md-sidebar--primary .md-sidebar__inner::before,
 .md-sidebar--primary .md-sidebar__inner::after {
   content: none !important;
   background: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
 /* -------------------------------------------------
-   Sidebar background — 50% transparent brand green
+   Sidebar: remove stacked boxes / backgrounds
+   ------------------------------------------------- */
+
+/* Remove the white top box and any panel chrome */
+.md-sidebar--primary .md-sidebar__inner,
+.md-sidebar--primary .md-nav,
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__source,
+.md-sidebar--primary .md-nav__header {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Remove spacing that can expose unwanted stacked layers */
+.md-sidebar--primary .md-sidebar__inner {
+  margin: 0 !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* -------------------------------------------------
+   Sidebar: single surface layer, 50% transparent, underlap header
    ------------------------------------------------- */
 
 .md-sidebar--primary,
 .md-sidebar--primary .md-sidebar__scrollwrap,
 .md-sidebar--primary .md-sidebar__inner {
-  background-color: var(--oasis-surface-sidebar) !important;
   background-image: none !important;
   -webkit-backdrop-filter: saturate(1.1) blur(0px);
   backdrop-filter: saturate(1.1) blur(0px);
+}
+
+.md-sidebar--primary {
+  background-color: var(--oasis-surface-sidebar) !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner {
+  background: transparent !important;
+}
+
+@media (min-width: 60em) {
+  .md-sidebar--primary {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    margin-top: calc(var(--oasis-topband-height) + (var(--oasis-header-height) * -0.25));
+    padding-top: calc(var(--oasis-topband-height) + (var(--oasis-header-height) * 0.25));
+  }
 }
 
 .md-sidebar--primary .md-nav__title,
@@ -128,6 +176,26 @@ body[data-md-page="index"] .md-content__inner {
 
 .md-sidebar--primary .md-nav__link:hover {
   color: #fff !important;
+}
+
+/* -------------------------------------------------
+   Top black band (ESIIL-like)
+   ------------------------------------------------- */
+
+.md-header {
+  position: sticky;
+  top: 0;
+  margin-top: var(--oasis-topband-height);
+}
+
+.md-header::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--oasis-topband-height));
+  left: 0;
+  right: 0;
+  height: var(--oasis-topband-height);
+  background: #000;
 }
 
 /* -------------------------------------------------

@@ -26,6 +26,8 @@
 
   /* Logo sizing */
   --oasis-logo-height: 110px;
+  --oasis-header-height: 120px;
+  --oasis-topband-height: 10px;
 
   --brand-primary: var(--oasis-blue);
   --brand-accent: var(--oasis-teal);
