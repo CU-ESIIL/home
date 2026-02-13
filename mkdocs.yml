@@ -160,6 +160,7 @@ extra_css:
   - chatbot_widget.css
   - styles/brand.css
   - brand_prototype/styles/brand.safe.css
+  - styles/extra.css
 
 extra_javascript:
   - chatbot_widget.js
