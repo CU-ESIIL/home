@@ -1,7 +1,8 @@
 /*
   Brand Safe Overlay
   - Token expansion
-  - Typography scale (.md-typeset only)
+  - Banner typography is scoped to .esiil-hero only
+  - Do not apply banner heading sizes globally
   - Style-guide buttons
   No layout overrides. No !important.
 */
@@ -39,29 +40,39 @@
   font-size: 1rem;
 }
 
-.md-typeset h1 {
+.esiil-hero h1 {
   font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 0.25em;
+}
+
+.esiil-hero h2 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  margin-top: 0.25em;
+}
+
+.esiil-section-title {
+  font-size: 2.5rem;
   line-height: 1.15;
 }
 
-.md-typeset h2 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-}
-
-.md-typeset h3 {
+.esiil-card-title {
   font-size: 1.5rem;
   line-height: 1.25;
 }
 
-.md-typeset h4 {
-  font-size: 1.5rem;
-  line-height: 1.25;
-}
-
-.md-typeset h5 {
+.esiil-misc-title {
   font-size: 1.125rem;
-  line-height: 1.3;
+  font-weight: 700;
+}
+
+.esiil-section {
+  padding: 1.5rem 0;
+}
+
+.esiil-section--tight {
+  padding: 1rem 0;
 }
 
 .md-typeset .md-button {
@@ -89,7 +100,9 @@
 }
 
 .md-typeset .admonition,
-.md-typeset details {
-  background: #EDF0F2;
+.md-typeset details,
+.esiil-card {
+  background: #E3E3E3;
   border-radius: 12px;
+  padding: 1rem 1.25rem;
 }
