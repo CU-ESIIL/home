@@ -40,22 +40,68 @@
   font-size: 1rem;
 }
 
-.esiil-hero h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  margin-bottom: 0.2em;
+/* ================================
+   Header Logo Sizing
+   ================================ */
+
+.md-header__button.md-logo img {
+  height: 42px;
+  width: auto;
 }
 
+/* Slightly larger on wide screens */
+@media (min-width: 960px) {
+  .md-header__button.md-logo img {
+    height: 50px;
+  }
+}
+
+.esiil-hero h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+/* ================================
+   Hero Background (ESIIL style)
+   ================================ */
+
 .esiil-hero {
+  background: linear-gradient(
+    120deg,
+    #234A65 0%,
+    #007135 60%,
+    #42BCDC 100%
+  );
+  color: #ffffff;
   max-width: 56rem;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 2rem 1rem;
+  margin: 0 auto 3rem auto;
+  padding: 5rem 2rem 4rem 2rem;
+  border-radius: 12px;
 }
 
 .esiil-hero p {
   font-size: 1.125rem;
   line-height: 1.5;
   margin-top: 0.5rem;
+}
+
+/* Light text inside hero */
+.esiil-hero h1,
+.esiil-hero h2,
+.esiil-hero h3,
+.esiil-hero p,
+.esiil-hero .oasis-header {
+  color: #ffffff;
+}
+
+/* Slightly larger hero title */
+.esiil-hero .oasis-header {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .esiil-hero::after {
@@ -153,6 +199,21 @@
   background: linear-gradient(90deg, #42BCDC, #007135);
   color: #ffffff;
   border: 0;
+}
+
+.esiil-hero .md-button--primary {
+  background: linear-gradient(90deg, #42BCDC, #007135);
+  color: #ffffff;
+}
+
+.esiil-hero .md-button--secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+.esiil-hero .md-button--secondary:hover {
+  background: rgba(255,255,255,0.15);
 }
 
 .md-typeset .admonition,
