@@ -11,8 +11,9 @@
   --oasis-text-muted: #7b8b93;
   --oasis-text-on-green: rgba(255, 255, 255, 0.9);
 
-  --oasis-header-bg: #0b0b0b;
-  --oasis-header-fg: rgba(255,255,255,0.92);
+  --oasis-header-bg: #ffffff;
+  --oasis-header-fg: #161A19;
+  --oasis-header-border: rgba(0,0,0,0.08);
   --oasis-header-fg-muted: rgba(255,255,255,0.75);
 
   /* Semantic surfaces */
