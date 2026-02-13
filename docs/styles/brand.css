@@ -4,6 +4,7 @@
   --oasis-blue: #234A65;
   --oasis-green: #007135;
   --oasis-teal: #42BCDC;
+  --oasis-green-rgb: 0, 113, 53;
 
   --oasis-text-primary: #161A19;
   --oasis-text-secondary: #5c6b73;
@@ -11,17 +12,17 @@
   --oasis-text-on-green: rgba(255, 255, 255, 0.9);
 
   /* Semantic surfaces */
-  --oasis-surface-sidebar: var(--oasis-green);
+  --oasis-surface-sidebar: rgba(var(--oasis-green-rgb), 0.5);
   --oasis-surface-cta: var(--oasis-blue);
 
   /* Sidebar sizing */
-  --oasis-sidebar-width: 16rem;
+  --oasis-sidebar-width: 14rem;
   --oasis-sidebar-padding-y: 0.75rem;
   --oasis-sidebar-padding-x: 0.85rem;
 
   /* Sidebar typography */
-  --oasis-sidebar-font-size: 0.95rem;
-  --oasis-sidebar-line-height: 1.35;
+  --oasis-sidebar-font-size: 1.05rem;
+  --oasis-sidebar-line-height: 1.4;
 
   /* Logo sizing */
   --oasis-logo-height: 110px;
