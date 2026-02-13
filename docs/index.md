@@ -10,6 +10,7 @@ hide:
 </div>
 <!-- Main Content -->
 <div class="content">
+  <div class="esiil-hero">
     <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
     <div class="search-bar">
       <form action="search/" method="get" class="search-form">
@@ -28,6 +29,7 @@ hide:
 
 [Open Quick Start](./quickstart/){ .md-button .md-button--primary }
 [Browse Resources](./resources/){ .md-button .md-button--secondary }
+  </div>
 </div>
 
 <style>
@@ -859,6 +861,5 @@ This section contains sub-repositories from various events, including the **Inno
 
 
 📧 **Contact**: [esiil-support@cu.edu](mailto:esiil-support@cu.edu)
-
 
 
