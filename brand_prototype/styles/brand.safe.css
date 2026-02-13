@@ -1,0 +1,35 @@
+/* Safe brand overlay for MkDocs Material
+   - Token overrides only
+   - Minimal component styling
+   - No layout/container overrides
+*/
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #234a65;
+  --md-accent-fg-color: #42bcdc;
+  --md-typeset-a-color: #234a65;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #234a65;
+  --md-accent-fg-color: #42bcdc;
+  --md-typeset-a-color: #42bcdc;
+}
+
+.md-typeset .md-button {
+  border-radius: 0.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-typeset .md-button--secondary {
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset .md-button:hover {
+  transform: translateY(-1px);
+}

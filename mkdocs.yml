@@ -70,7 +70,6 @@ nav:
 theme:
   highlightjs: true
   name: material
-  custom_dir: brand_prototype/overrides
   font:
     text: 'Open Sans'
     code: 'Roboto Mono'
@@ -159,7 +158,8 @@ markdown_extensions:
 extra_css:
   - assets/css/style.css
   - chatbot_widget.css
-  - brand_prototype/styles/brand.css
+  - styles/brand.css
+  - brand_prototype/styles/brand.safe.css
 
 extra_javascript:
   - chatbot_widget.js
