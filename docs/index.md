@@ -12,11 +12,11 @@ hide:
 <div class="oasis-layout" markdown="1">
 <aside class="oasis-sidebar" markdown="1">
 <div class="tag-suggestions oasis-pills esiil-hero-links" markdown="1">
-<a href="./quickstart/" class="tag">Quickstart</a>
-<a href="./container-library/" class="tag">Containers</a>
-<a href="https://cu-esiil.github.io/analytics-library/" class="tag">Analytics</a>
-<a href="https://cu-esiil.github.io/data-library/" class="tag">Data Library</a>
-<a href="./resources/" class="tag">Resources</a>
+[Quickstart](./quickstart/){ .md-button .md-button--primary }
+[Containers](./container-library/){ .md-button .md-button--primary }
+[Analytics](https://cu-esiil.github.io/analytics-library/){ .md-button .md-button--primary }
+[Data Library](https://cu-esiil.github.io/data-library/){ .md-button .md-button--primary }
+[Resources](./resources/){ .md-button .md-button--primary }
 </div>
 </aside>
 
