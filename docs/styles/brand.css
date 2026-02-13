@@ -8,10 +8,23 @@
   --oasis-text-primary: #161A19;
   --oasis-text-secondary: #5c6b73;
   --oasis-text-muted: #7b8b93;
+  --oasis-text-on-green: rgba(255, 255, 255, 0.9);
 
   /* Semantic surfaces */
   --oasis-surface-sidebar: var(--oasis-green);
   --oasis-surface-cta: var(--oasis-blue);
+
+  /* Sidebar sizing */
+  --oasis-sidebar-width: 16rem;
+  --oasis-sidebar-padding-y: 0.75rem;
+  --oasis-sidebar-padding-x: 0.85rem;
+
+  /* Sidebar typography */
+  --oasis-sidebar-font-size: 0.95rem;
+  --oasis-sidebar-line-height: 1.35;
+
+  /* Logo sizing */
+  --oasis-logo-height: 110px;
 
   --brand-primary: var(--oasis-blue);
   --brand-accent: var(--oasis-teal);
