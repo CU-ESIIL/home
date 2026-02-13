@@ -25,6 +25,9 @@ hide:
       </div>
     </div>
     <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
+
+[Open Quick Start](./quickstart/){ .md-button .md-button--primary }
+[Browse Resources](./resources/){ .md-button .md-button--secondary }
 </div>
 
 <style>
@@ -856,7 +859,6 @@ This section contains sub-repositories from various events, including the **Inno
 
 
 📧 **Contact**: [esiil-support@cu.edu](mailto:esiil-support@cu.edu)
-
 
 
 
