@@ -156,3 +156,20 @@ button.md-button {
 .md-header {
   min-height: calc(var(--oasis-logo-height) + 22px);
 }
+
+/* -------------------------------------------------
+   Hero Layout — Clean ESIIL-style whitespace
+   ------------------------------------------------- */
+.md-content__inner {
+  padding-top: 4rem;
+}
+
+body[data-md-page="index"] .md-content__inner {
+  padding-top: 5rem;
+}
+
+body[data-md-page="index"] .md-typeset h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
