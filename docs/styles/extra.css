@@ -9,6 +9,10 @@ body,
   line-height: 1.65;
 }
 
+:root{
+  --oasis-sidebar-w: 260px;
+}
+
 /* Headings */
 .md-typeset h1 {
   font-weight: 600;
@@ -261,7 +265,7 @@ body:has(.oasis-hero) .md-typeset h1 {
 }
 
 /* --- ESIIL-style banner hero (homepage) --- */
-body:has(.oasis-hero) .oasis-hero {
+body:has(.oasis-main .oasis-hero) .oasis-main .oasis-hero {
   margin-top: calc(var(--md-header-height, 3rem) * -1);
   padding-top: var(--md-header-height, 3rem);
 }
@@ -277,9 +281,9 @@ body:has(.oasis-hero) .md-content__inner {
 }
 
 .esiil-banner{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   min-height: 520px;
 
   background:
@@ -326,4 +330,40 @@ body:has(.oasis-hero) .esiil-banner .esiil-kicker{
 .oasis-layout .md-content,
 .oasis-layout .md-content__inner {
   background: #fff;
+}
+
+@media (min-width: 60em){
+  .oasis-layout{
+    display: flex;
+    align-items: stretch;
+  }
+
+  .oasis-sidebar{
+    flex: 0 0 var(--oasis-sidebar-w);
+    width: var(--oasis-sidebar-w);
+    position: relative;
+    z-index: 2;
+  }
+
+  .oasis-main{
+    flex: 1 1 auto;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .oasis-main .oasis-hero{
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .oasis-main .oasis-hero::before{
+    left: 0;
+    margin-left: 0;
+    right: 0;
+    margin-right: 0;
+    width: 100%;
+  }
 }
