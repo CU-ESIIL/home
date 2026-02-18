@@ -9,23 +9,6 @@ body,
   line-height: 1.65;
 }
 
-/* Safari website tint sampling surface */
-html {
-  background: #0b0b0b;
-}
-
-body {
-  background: transparent;
-}
-
-.md-container,
-.md-main,
-.md-content,
-.md-content__inner,
-.md-grid {
-  background: #fff;
-}
-
 /* Headings */
 .md-typeset h1 {
   font-weight: 600;
@@ -200,40 +183,6 @@ body[data-md-page="index"] .md-content__inner {
   z-index: 20;
 }
 
-/* Homepage: allow banner color to be the topmost sampled surface */
-body[data-md-page="index"] .md-header,
-body.homepage .md-header{
-  background: transparent !important;
-  position: sticky;
-}
-
-/* This is the 'peeking' banner strip that Safari can sample */
-body[data-md-page="index"] .md-header::before,
-body.homepage .md-header::before{
-  content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  height: 28px; /* the peek amount — adjust if needed */
-  background: linear-gradient(90deg, rgba(35,74,101,1), rgba(0,113,53,1));
-  z-index: 0;
-}
-
-/* White nav surface */
-body[data-md-page="index"] .md-header__inner,
-body.homepage .md-header__inner{
-  position: relative;
-  z-index: 1;
-  background: #fff;
-}
-
-/* Optional: ensure the header has a subtle divider like ESIIL */
-body[data-md-page="index"] .md-header__inner,
-body.homepage .md-header__inner{
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-
 .md-header a,
 .md-header .md-header__button,
 .md-header .md-header__title,
@@ -341,11 +290,6 @@ body[data-md-page="index"] .md-typeset h1 {
   background: transparent !important;
 }
 
-body.homepage .esiil-banner,
-body[data-md-page="index"] .esiil-banner{
-  margin-top: calc(-1 * var(--md-header-height, 64px));
-}
-
 .esiil-banner h1,
 .esiil-banner h2,
 .esiil-banner h3,
@@ -359,17 +303,6 @@ body[data-md-page="index"] .esiil-banner .esiil-kicker{
   letter-spacing: 0.06em;
   font-weight: 700;
   opacity: 0.85;
-}
-
-/* Homepage only: transparent header shell so Safari samples hero */
-body[data-md-page="index"] .md-header {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Homepage only: keep visible header surface white */
-body[data-md-page="index"] .md-header__inner {
-  background: #fff;
 }
 
 /* Return page background to normal after hero */

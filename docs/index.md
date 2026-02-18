@@ -25,7 +25,6 @@ hide:
 </div>
 </div>
 </div>
-</div>
 
 <!-- Main Content -->
 <div class="oasis-layout" markdown="1">
