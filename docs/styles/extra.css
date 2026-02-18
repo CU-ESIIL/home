@@ -277,51 +277,45 @@ body[data-md-page="index"] .md-typeset h1 {
 }
 
 /* --- ESIIL-style banner hero (homepage) --- */
-body[data-md-page="index"] .esiil-banner{
-  position: relative;
+.esiil-banner{
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-top: calc(-1 * var(--md-header-height, 64px));
+  min-height: 520px;
 
-  /* ESIIL-like: gradient overlay + image */
   background:
     linear-gradient(90deg, rgba(35,74,101,0.90), rgba(0,113,53,0.90)),
     url("../assets/ForestBanner_NASA_Imagery.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  /* height + spacing */
-  min-height: 520px;
   display: flex;
   align-items: flex-end;
-
   padding-top: calc(var(--md-header-height, 64px) + 72px);
   padding-bottom: 80px;
   color: #fff;
 }
 
-body[data-md-page="index"] .esiil-banner,
-body[data-md-page="index"] .esiil-banner * {
-  /* do not set background globally, only targeted below */
-}
-
-body[data-md-page="index"] .esiil-banner .md-grid,
-body[data-md-page="index"] .esiil-banner .md-content,
-body[data-md-page="index"] .esiil-banner .md-content__inner,
-body[data-md-page="index"] .esiil-banner__inner {
-  background: transparent !important;
-}
-
-body[data-md-page="index"] .esiil-banner__inner{
+.esiil-banner__inner{
   width: 100%;
 }
 
-body[data-md-page="index"] .esiil-banner h1,
-body[data-md-page="index"] .esiil-banner h2,
-body[data-md-page="index"] .esiil-banner h3,
-body[data-md-page="index"] .esiil-banner p{
+.esiil-banner .md-grid,
+.esiil-banner .md-content,
+.esiil-banner .md-content__inner,
+.esiil-banner__inner {
+  background: transparent !important;
+}
+
+body.homepage .esiil-banner,
+body[data-md-page="index"] .esiil-banner{
+  margin-top: calc(-1 * var(--md-header-height, 64px));
+}
+
+.esiil-banner h1,
+.esiil-banner h2,
+.esiil-banner h3,
+.esiil-banner p{
   color: #fff !important;
 }
 
