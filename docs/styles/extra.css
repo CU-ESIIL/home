@@ -9,6 +9,23 @@ body,
   line-height: 1.65;
 }
 
+/* Safari website tint sampling surface */
+html {
+  background: #0b0b0b;
+}
+
+body {
+  background: transparent;
+}
+
+.md-container,
+.md-main,
+.md-content,
+.md-content__inner,
+.md-grid {
+  background: #fff;
+}
+
 /* Headings */
 .md-typeset h1 {
   font-weight: 600;
@@ -177,10 +194,11 @@ body[data-md-page="index"] .md-content__inner {
 }
 
 .md-header{
-  background: var(--oasis-header-bg) !important;
-  color: var(--oasis-header-fg) !important;
+  background: #fff !important;
+  color: #111 !important;
   border-bottom: 1px solid var(--oasis-header-border);
   box-shadow: none !important;
+  z-index: 20;
 }
 
 .md-header a,
