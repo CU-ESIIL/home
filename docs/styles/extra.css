@@ -253,6 +253,7 @@ button.md-button {
   padding-top: 4rem;
 }
 
+/* Homepage/main-column reset should be container-scoped (no :has()) */
 .oasis-layout .md-content__inner {
   padding-top: 0 !important;
   margin-top: 0 !important;
