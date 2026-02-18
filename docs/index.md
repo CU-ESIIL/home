@@ -3,6 +3,10 @@ hide:
   - toc
 ---
 
+<!-- Main Content -->
+<div class="oasis-layout" markdown="1">
+<main class="oasis-main" markdown="1">
+
 <div class="esiil-banner oasis-hero" markdown="1">
 <div class="esiil-banner__inner md-grid" markdown="1">
 <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
@@ -25,10 +29,6 @@ hide:
 </div>
 </div>
 </div>
-
-<!-- Main Content -->
-<div class="oasis-layout" markdown="1">
-<main class="oasis-main" markdown="1">
 
 <style>
   .search-bar {
