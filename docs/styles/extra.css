@@ -56,7 +56,7 @@ body,
   padding-right: 2rem;
 }
 
-body[data-md-page="index"] .md-content__inner {
+body:has(.oasis-hero) .md-content__inner {
   padding-left: 0;
   padding-right: 0;
 }
@@ -249,33 +249,30 @@ button.md-button {
   padding-top: 4rem;
 }
 
-body[data-md-page="index"] .md-content__inner {
-  padding-top: 5rem;
+body:has(.oasis-hero) .md-content__inner {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-body[data-md-page="index"] .md-typeset h1 {
+body:has(.oasis-hero) .md-typeset h1 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 /* --- ESIIL-style banner hero (homepage) --- */
-.md-home .oasis-hero,
-body[data-md-page="index"] .oasis-hero {
+body:has(.oasis-hero) .oasis-hero {
   margin-top: calc(var(--md-header-height, 3rem) * -1);
   padding-top: var(--md-header-height, 3rem);
 }
 
-.md-home .md-main__inner,
-body[data-md-page="index"] .md-main__inner {
+body:has(.oasis-hero) .md-main__inner {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-.md-home .md-content,
-body[data-md-page="index"] .md-content,
-.md-home .md-content__inner,
-body[data-md-page="index"] .md-content__inner {
+body:has(.oasis-hero) .md-content,
+body:has(.oasis-hero) .md-content__inner {
   padding-top: 0 !important;
 }
 
@@ -317,7 +314,7 @@ body[data-md-page="index"] .md-content__inner {
 }
 
 /* Optional: make the first small heading “WELCOME TO OASIS” match ESIIL style */
-body[data-md-page="index"] .esiil-banner .esiil-kicker{
+body:has(.oasis-hero) .esiil-banner .esiil-kicker{
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 700;
