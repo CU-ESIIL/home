@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-<div class="esiil-banner">
+<div class="esiil-banner" markdown="1">
 <div class="esiil-banner__inner md-grid" markdown="1">
 <div class="esiil-hero" markdown="1">
 <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
