@@ -194,7 +194,6 @@ body[data-md-page="index"] .md-content__inner {
 }
 
 .md-header{
-  background: #fff !important;
   color: #111 !important;
   border-bottom: 1px solid var(--oasis-header-border);
   box-shadow: none !important;
@@ -278,11 +277,12 @@ body[data-md-page="index"] .md-typeset h1 {
 }
 
 /* --- ESIIL-style banner hero (homepage) --- */
-.esiil-banner{
+body[data-md-page="index"] .esiil-banner{
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  margin-top: calc(-1 * var(--md-header-height, 64px));
 
   /* ESIIL-like: gradient overlay + image */
   background:
@@ -302,42 +302,46 @@ body[data-md-page="index"] .md-typeset h1 {
   color: #fff;
 }
 
-.esiil-banner,
-.esiil-banner * {
+body[data-md-page="index"] .esiil-banner,
+body[data-md-page="index"] .esiil-banner * {
   /* do not set background globally, only targeted below */
 }
 
-.esiil-banner .md-grid,
-.esiil-banner .md-content,
-.esiil-banner .md-content__inner,
-.esiil-banner__inner {
+body[data-md-page="index"] .esiil-banner .md-grid,
+body[data-md-page="index"] .esiil-banner .md-content,
+body[data-md-page="index"] .esiil-banner .md-content__inner,
+body[data-md-page="index"] .esiil-banner__inner {
   background: transparent !important;
 }
 
-.esiil-banner__inner{
+body[data-md-page="index"] .esiil-banner__inner{
   width: 100%;
 }
 
-.esiil-banner h1,
-.esiil-banner h2,
-.esiil-banner h3,
-.esiil-banner p{
+body[data-md-page="index"] .esiil-banner h1,
+body[data-md-page="index"] .esiil-banner h2,
+body[data-md-page="index"] .esiil-banner h3,
+body[data-md-page="index"] .esiil-banner p{
   color: #fff !important;
 }
 
 /* Optional: make the first small heading “WELCOME TO OASIS” match ESIIL style */
-.esiil-banner .esiil-kicker{
+body[data-md-page="index"] .esiil-banner .esiil-kicker{
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 700;
   opacity: 0.85;
 }
 
-/* Ensure header stays white above the hero */
-.md-header{
-  background: #fff !important;
-  color: #111 !important;
-  z-index: 50;
+/* Homepage only: transparent header shell so Safari samples hero */
+body[data-md-page="index"] .md-header {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Homepage only: keep visible header surface white */
+body[data-md-page="index"] .md-header__inner {
+  background: #fff;
 }
 
 /* Return page background to normal after hero */
