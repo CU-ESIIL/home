@@ -3,13 +3,12 @@ hide:
   - toc
 ---
 
-<!-- Main Content -->
-<div class="oasis-layout" markdown="1">
-<main class="oasis-main" markdown="1">
-<div class="esiil-banner" markdown="1">
+<div class="esiil-banner">
 <div class="esiil-banner__inner md-grid" markdown="1">
 <div class="esiil-hero" markdown="1">
 <h1 class="oasis-header">Open Analysis and Synthesis Infrastructure for Science</h1>
+
+<p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 
 <div class="tag-suggestions oasis-pills esiil-hero-links" markdown="1">
 [Quickstart](./quickstart/){ .md-button .md-button--primary }
@@ -25,10 +24,13 @@ hide:
 <button type="submit" aria-label="Submit search">🔍</button>
 </form>
 </div>
-<p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 </div>
 </div>
 </div>
+
+<!-- Main Content -->
+<div class="oasis-layout" markdown="1">
+<main class="oasis-main" markdown="1">
 
 <style>
   .search-bar {
