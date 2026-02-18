@@ -279,6 +279,7 @@ body[data-md-page="index"] .md-typeset h1 {
 
 /* --- ESIIL-style banner hero (homepage) --- */
 .esiil-banner{
+  position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -286,21 +287,31 @@ body[data-md-page="index"] .md-typeset h1 {
   /* ESIIL-like: gradient overlay + image */
   background:
     linear-gradient(90deg, rgba(35,74,101,0.90), rgba(0,113,53,0.90)),
-    url("/home/assets/ForestBanner_NASA_Imagery.png");
+    url("../assets/ForestBanner_NASA_Imagery.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   /* height + spacing */
-  min-height: 420px;
+  min-height: 520px;
   display: flex;
   align-items: flex-end;
 
-  /* pull under header slightly like ESIIL */
-  margin-top: calc(-1 * var(--md-header-height, 64px));
-  padding-top: calc(var(--md-header-height, 64px) + 64px);
-  padding-bottom: 72px;
+  padding-top: calc(var(--md-header-height, 64px) + 72px);
+  padding-bottom: 80px;
   color: #fff;
+}
+
+.esiil-banner,
+.esiil-banner * {
+  /* do not set background globally, only targeted below */
+}
+
+.esiil-banner .md-grid,
+.esiil-banner .md-content,
+.esiil-banner .md-content__inner,
+.esiil-banner__inner {
+  background: transparent !important;
 }
 
 .esiil-banner__inner{
@@ -330,9 +341,8 @@ body[data-md-page="index"] .md-typeset h1 {
 }
 
 /* Return page background to normal after hero */
-.md-main,
-.md-content,
-.md-content__inner,
-.md-grid{
+.oasis-layout,
+.oasis-layout .md-content,
+.oasis-layout .md-content__inner {
   background: #fff;
 }
