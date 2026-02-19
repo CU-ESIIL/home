@@ -12,6 +12,7 @@ body,
 
 :root{
   --oasis-sidebar-w: 300px;
+  --oasis-home-top-gap: 4rem; /* cancels MkDocs Material container top padding on homepage */
 }
 
 /* Headings */
@@ -254,10 +255,10 @@ button.md-button {
   padding-top: 4rem;
 }
 
-/* Homepage/main-column reset should be container-scoped (no :has()) */
-.oasis-layout .md-content__inner {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
+/* Homepage top-gap cancellation is container-scoped */
+.oasis-layout{
+  margin-top: calc(var(--oasis-home-top-gap) * -1);
+  padding-top: var(--oasis-home-top-gap);
 }
 
 .oasis-layout .oasis-main .md-typeset h1 {
@@ -270,16 +271,6 @@ button.md-button {
 .oasis-layout .oasis-main .oasis-hero {
   margin-top: calc(var(--md-header-height, 3rem) * -1);
   padding-top: var(--md-header-height, 3rem);
-}
-
-.oasis-layout .md-main__inner {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.oasis-layout .md-content,
-.oasis-layout .md-content__inner {
-  padding-top: 0 !important;
 }
 
 .esiil-banner{

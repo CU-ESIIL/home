@@ -49,24 +49,22 @@ Keep the homepage shell in this form:
 
 - Do **NOT** use `:has()` for homepage scoping (brittle + can silently fail in tooling and cause no-ops).
 - Prefer scoping homepage-only rules using `.oasis-layout` as the homepage hook, since it only exists on `index.md`.
-- Be careful not to over-tighten selectors through `.oasis-main` when overriding Material container padding/margins.
-- The padding gap lives in Material containers and sometimes must be reset via:
-  - `.oasis-layout .md-main__inner`
-  - `.oasis-layout .md-content`
-  - `.oasis-layout .md-content__inner`
+- For the white strip issue, do not target Material ancestor containers from inside `.oasis-layout`; those selectors cannot match.
 
 ### White-gap root cause (documented incident)
 
-The visible white strip above the hero came from `.md-content__inner` top padding.
+The visible white strip above the hero comes from MkDocs Material top padding on ancestor containers (for example, `.md-content__inner`). Since those containers are ancestors of homepage content, they cannot be reliably and safely overridden with descendant selectors from `.oasis-layout` without introducing brittle approaches.
 
-When this regresses, confirm the homepage-scoped reset is present:
+Our chosen fix is to cancel that inherited top gap at the first homepage wrapper we control:
 
 ```css
-.oasis-layout .md-content__inner {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
+.oasis-layout {
+  margin-top: calc(var(--oasis-home-top-gap) * -1);
+  padding-top: var(--oasis-home-top-gap);
 }
 ```
+
+This keeps homepage behavior explicit, structural, and maintainable while preserving internal layout flow.
 
 ## File responsibility boundaries
 
@@ -82,8 +80,8 @@ Rationale: separating aesthetic intent from compatibility glue lowers regression
 
 ### If hero no longer touches header
 
-1. Check Material container padding resets on `.md-main__inner`, `.md-content`, and `.md-content__inner` under `.oasis-layout`.
-2. Confirm hero negative margin/padding rule still exists on `.oasis-layout .oasis-main .oasis-hero`.
+1. Confirm hero negative margin/padding rule still exists on `.oasis-layout .oasis-main .oasis-hero`.
+2. Confirm `.oasis-layout` top-gap cancellation is present (`margin-top` negative + matching `padding-top`).
 
 ### If hero overlaps sidebar
 
@@ -93,13 +91,11 @@ Rationale: separating aesthetic intent from compatibility glue lowers regression
 
 ### If white strip returns above hero
 
-The `.md-content__inner` / `.md-main__inner` reset likely got over-scoped. Restore:
+1. Check the value of `--oasis-home-top-gap` in `docs/styles/extra.css`.
+2. Confirm it matches current Material top padding at the active breakpoint.
+3. If needed, adjust the variable value or add a breakpoint override for `--oasis-home-top-gap`.
 
-```css
-.oasis-layout .md-content__inner { padding-top: 0 !important; }
-```
-
-(and ensure companion `.md-main__inner`/`.md-content` resets are still homepage-scoped).
+Do **not** reintroduce `:has()` or dead descendant selectors that try to target ancestor containers.
 
 ### If sidebar width changes unexpectedly
 
@@ -173,7 +169,12 @@ We iterated through homepage regressions (white top gap, hero/sidebar overlap, r
 
 - homepage hook = `.oasis-layout`
 - hero constrained to `.oasis-main`
-- container resets scoped to homepage-only Material containers
+- white-gap cancellation handled at `.oasis-layout` using `--oasis-home-top-gap` (negative margin + matching padding)
 - explicit split between brand skin (`extra.css`) and legacy structure glue (`style.css`)
 
 This guide exists to preserve those decisions and prevent repeating the same regressions.
+
+## Local testing note
+
+- GitHub Pages deploys this site under `/home/`, but `mkdocs serve` runs the homepage at `/` locally.
+- Do not test local homepage behavior at `/home/`; use `/` when validating layout fixes.
