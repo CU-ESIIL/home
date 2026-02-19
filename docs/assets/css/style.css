@@ -1,4 +1,5 @@
-/* Structural layout quirks retained from legacy overrides */
+/* Structural compatibility glue only (legacy layout quirks).
+   Do not add brand/aesthetic styling here; put visual styling in docs/styles/extra.css. */
 
 /* Static header container/image behavior */
 .static-header {

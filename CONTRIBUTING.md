@@ -24,3 +24,12 @@ is present.
 
 Pages generated under `tags/` during the build are intentionally excluded from
 Git-based revision dates.
+
+
+## Homepage and layout edits
+
+Before editing homepage structure or CSS, read the canonical guide:
+
+- [`docs/dev/oasis-site-dev-guide.md`](docs/dev/oasis-site-dev-guide.md)
+
+Use that guide for layout architecture, selector rules, file ownership boundaries, and the homepage regression debug checklist.

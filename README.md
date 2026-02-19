@@ -15,3 +15,9 @@ pip install -r requirements.txt
 python -m mkdocs serve -a localhost:8000
 ```
 Open a browser and go to https://localhost:8000 If something is already running on localhost:8000 just change the port in the command.
+
+## Homepage/layout development guidance
+
+For homepage architecture, hero/sidebar/header CSS rules, selector strategy, and Codex-safe prompts, use the canonical dev guide:
+
+- [`docs/dev/oasis-site-dev-guide.md`](docs/dev/oasis-site-dev-guide.md)
