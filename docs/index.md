@@ -4,6 +4,7 @@ hide:
 ---
 
 <!-- Main Content -->
+<!-- Homepage contract: keep hero inside .oasis-layout > .oasis-main to avoid sidebar overlap regressions. -->
 <div class="oasis-layout" markdown="1">
 <main class="oasis-main" markdown="1">
 
