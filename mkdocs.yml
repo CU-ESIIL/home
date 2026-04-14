@@ -12,59 +12,12 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 
 # Page tree
 nav:
-  - Tags:
-      - tags/index.md
-      - tags/analytics.md
-      - tags/Bayesian.md
-      - tags/biomass.md
-      - tags/burn-severity.md
-      - tags/climate.md
-      - tags/cloud.md
-      - tags/collaboration.md
-      - tags/container.md
-      - tags/contribution.md
-      - tags/data-library.md
-      - tags/data-cubes.md
-      - tags/data-management.md
-      - tags/development.md
-      - tags/disturbance.md
-      - tags/docker.md
-      - tags/drought.md
-      - tags/ecoregions.md
-      - tags/education.md
-      - tags/epa.md
-      - tags/example.md
-      - tags/featured.md
-      - tags/fia.md
-      - tags/fire.md
-      - tags/forest.md
-      - tags/gdal.md
-      - tags/gedi.md
-      - tags/GLMM.md
-      - tags/INLA.md
-      - tags/inventory.md
-      - tags/landcover.md
-      - tags/landfire.md
-      - tags/LGM.md
-      - tags/lidar.md
-      - tags/modis.md
-      - tags/oasis.md
-      - tags/quickstart.md
-      - tags/R.md
-      - tags/raster.md
-      - tags/remote-sensing.md
-      - tags/schedule.md
-      - tags/sentinel-2.md
-      - tags/spatial.md
-      - tags/spatiotemporal.md
-      - tags/stac.md
-      - tags/streaming.md
-      - tags/treemap.md
-      - tags/tutorial.md
-      - tags/usage.md
-      - tags/usgs.md
-      - tags/vegetation.md
-      - tags/vsi.md
+  - Home: index.md
+  - Quickstart: quickstart/index.md
+  - Container Library: container-library/index.md
+  - Resources: resources/index.md
+  - Development Schedule: dev-schedule.md
+  - Tags: tags/index.md
       
 # Configuration
 theme:
@@ -159,13 +112,17 @@ markdown_extensions:
 extra_css:
   - assets/css/style.css
   - chatbot_widget.css
-  - brand_prototype/styles/brand.safe.css
+  - styles/brand.safe.css
   - https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap
   - styles/brand.css
   - styles/extra.css
 
 extra_javascript:
   - chatbot_widget.js
+
+validation:
+  nav:
+    omitted_files: ignore
 
 plugins:
   - search

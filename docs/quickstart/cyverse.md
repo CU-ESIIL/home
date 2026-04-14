@@ -1,3 +1,9 @@
+---
+title: Connecting CyVerse to GitHub
+tags: [cloud, quickstart, collaboration]
+date: 2024-01-01
+---
+
 # Connecting Cyverse to GitHub
 
 ## Log in to Cyverse

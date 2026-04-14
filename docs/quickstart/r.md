@@ -1,3 +1,9 @@
+---
+title: Starting with R
+tags: [R, quickstart]
+date: 2024-01-01
+---
+
 # Starting with R
 
 ## Sell It
@@ -29,4 +35,3 @@ plot(cars)
 Confirm the plot appears in the **Plots** pane and use `sessionInfo()` to see
 package versions. Explore the **Environment** and **Help** tabs to get
 comfortable with the interface.
-

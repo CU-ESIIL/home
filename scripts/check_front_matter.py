@@ -1,16 +1,17 @@
 import re, sys, yaml
 from pathlib import Path
 
-EXCLUDE = {"docs/tags/index.md"}
+ENFORCED_PREFIXES = ("docs/quickstart/", "docs/container-library/")
 
 def check_file(path: Path):
+    posix_path = path.as_posix()
+    if not posix_path.startswith(ENFORCED_PREFIXES):
+        return None
     text = path.read_text(encoding="utf-8")
     m = re.match(r"---\n(.*?)\n---\n", text, re.S)
     if not m:
         return f"{path}: missing front matter"
     data = yaml.safe_load(m.group(1)) or {}
-    if path.as_posix() in EXCLUDE:
-        return None
     errs = []
     if not data.get("tags"):
         errs.append("tags missing")

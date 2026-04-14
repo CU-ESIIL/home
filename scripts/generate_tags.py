@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os, re, yaml
 from datetime import datetime, date as date_cls
+from pathlib import Path
 
 DOCS_DIR = "docs"
 TAGS_DIR = os.path.join(DOCS_DIR, "tags")
@@ -64,11 +65,20 @@ for pg in pages:
         tagmap.setdefault(t, []).append(pg)
 
 os.makedirs(TAGS_DIR, exist_ok=True)
+existing_tag_files = {
+    path.stem.lower(): path.name
+    for path in Path(TAGS_DIR).glob("*.md")
+    if path.name != "index.md"
+}
+tag_filenames = {
+    tag: existing_tag_files.get(tag.lower(), f"{tag}.md")
+    for tag in tagmap
+}
 
 # Write index page
 index_lines = ["---", "title: Tags", "hide:", "  - toc", "---", "", "# Tags", ""]
 for tag in sorted(tagmap.keys(), key=lambda x: x.lower()):
-    index_lines.append(f"- [{tag}]({tag}.md)")
+    index_lines.append(f"- [{tag}]({tag_filenames[tag]})")
 with open(os.path.join(TAGS_DIR, "index.md"), "w", encoding="utf-8") as f:
     f.write("\n".join(index_lines))
 
@@ -78,8 +88,10 @@ for tag, items in tagmap.items():
     lines = ["---", f"title: {tag}", "hide:", "  - toc", "---", "", f"# {tag}", ""]
     for it in items_sorted:
         date_str = it["date"] if it["date"] else ""
-        # Build an absolute link without the .md extension so the site points to the rendered page
-        link_path = '/' + it['path'][:-3] + '/' if it['path'].endswith('.md') else '/' + it['path']
+        link_path = os.path.relpath(
+            Path(DOCS_DIR) / it["path"],
+            Path(TAGS_DIR),
+        ).replace("\\", "/")
         lines.append(f"- [{it['title']}]({link_path})  \n  <small>{date_str}</small>")
-    with open(os.path.join(TAGS_DIR, f"{tag}.md"), "w", encoding="utf-8") as f:
+    with open(os.path.join(TAGS_DIR, tag_filenames[tag]), "w", encoding="utf-8") as f:
         f.write("\n".join(lines))

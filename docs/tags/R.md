@@ -6,5 +6,5 @@ hide:
 
 # R
 
-- [INLA — Drop-in Analytics Module](https://cu-esiil.github.io/data-library/analytics/inla/)  
-  <small></small>
+- [Starting with R](../quickstart/r.md)  
+  <small>2024-01-01</small>

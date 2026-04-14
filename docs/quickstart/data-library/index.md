@@ -1,3 +1,9 @@
+---
+title: Data Library
+tags: [data-library, quickstart]
+date: 2024-01-01
+---
+
 # Data Library
 
 ## Sell It
@@ -25,4 +31,3 @@ Reflect on how the dataset fits your project and explore the guides:
 - [How to Contribute to the Data Library](https://cu-esiil.github.io/how_to_contribute/)
 Consider noting any data quality issues or additional metadata that would help
 future users.
-

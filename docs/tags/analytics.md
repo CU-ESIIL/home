@@ -6,7 +6,5 @@ hide:
 
 # analytics
 
-- [INLA — Drop-in Analytics Module](https://cu-esiil.github.io/data-library/analytics/inla/)  
-  <small></small>
-- [example-workflow](https://cu-esiil.github.io/data-library/analytics/example-workflow/)
-  <small></small>
+- [Analytics Library](../quickstart/analytics-library.md)  
+  <small>2024-01-01</small>

@@ -1,10 +1,10 @@
 ---
-title: gdal
+title: GDAL
 hide:
   - toc
 ---
 
-# gdal
+# GDAL
 
-- [mounting-via-vsi](https://cu-esiil.github.io/data-library/library/mounting-via-vsi/)  
-  <small></small>
+- [Data Exploration and Collaboration in the Cloud](../quickstart/python.md)  
+  <small>2024-01-01</small>

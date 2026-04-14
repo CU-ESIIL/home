@@ -6,8 +6,5 @@ hide:
 
 # example
 
-- [example-workflow](https://cu-esiil.github.io/data-library/analytics/example-workflow/)
-  <small></small>
-- [example-container](../../container-library/example-container/)
-  <small></small>
-
+- [example-container](../container-library/example-container.md)  
+  <small>2024-01-01</small>

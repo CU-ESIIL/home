@@ -16,6 +16,8 @@ def load_tasks(path=TASKS_PATH):
     return upcoming, completed
 
 def format_upcoming(tasks):
+    if not tasks:
+        return "_No active roadmap items are tracked on this archived page._"
     lines = []
     for t in tasks:
         link = f"https://github.com/CU-ESIIL/home/issues/{t['issue']}"

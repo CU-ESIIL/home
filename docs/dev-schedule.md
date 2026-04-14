@@ -1,17 +1,26 @@
 ---
 tags: [development, schedule]
-date: 2025-08-29
+date: 2026-04-13
 ---
 
 # Development Schedule
 
-A collaborative timeline for OASIS development. Update this page through pull requests and link to contributions as tasks are completed.
+> Archive note: This page documents the 2025 OASIS launch roadmap and is kept
+> for historical context. Active prioritization should happen in GitHub issues
+> and pull requests.
 
-Use `python scripts/add_task.py "Task title" ISSUE --duration DAYS` to append work items. The Gantt chart refreshes automatically on pushes and pull requests.
+This page remains in the site as a reference timeline for the initial homepage,
+quickstart, and tag system rollout.
 
 See [Development Requests](dev-requests.md) for external requests made of the team.
 
-Since February 2025, OASIS has grown from an initial scaffold into a tagged documentation site. Late August 2025 added sidebar tag pages, fixed tag links, and launched the Cloud Triangle lesson with examples. Early September 2025 expanded the ecosystem with the [How to Contribute guide](https://cu-esiil.github.io/how_to_contribute/), new quickstarts pointing to the [Data Library](https://cu-esiil.github.io/data-library/) and [Analytics Library](https://cu-esiil.github.io/analytics-library/), and a refreshed [Project Group OASIS hub](https://cu-esiil.github.io/Project_group_OASIS/). Our next steps are to link tasks directly to GitHub issues and automate Gantt chart updates so the roadmap stays current.
+Since February 2025, OASIS grew from an initial scaffold into a tagged
+documentation site. Late August 2025 added sidebar tag pages, fixed tag links,
+and launched the Cloud Triangle lesson with examples. Early September 2025
+expanded the ecosystem with the [How to Contribute guide](https://cu-esiil.github.io/how_to_contribute/),
+new quickstarts pointing to the [Data Library](https://cu-esiil.github.io/data-library/)
+and [Analytics Library](https://cu-esiil.github.io/analytics-library/), and a
+refreshed [Project Group OASIS hub](https://cu-esiil.github.io/Project_group_OASIS/).
 
 ## Historical Task List
 
@@ -34,9 +43,7 @@ Since February 2025, OASIS has grown from an initial scaffold into a tagged docu
 ## Upcoming Task List
 
 <!-- upcoming-start -->
-- [ ] [Add GitHub linking to tasks](https://github.com/CU-ESIIL/home/issues/60)
-- [ ] [Automate Gantt chart updates](https://github.com/CU-ESIIL/home/issues/61)
-- [ ] [Interactive Cloud Triangle lesson](https://github.com/CU-ESIIL/home/issues/62)
+_No active roadmap items are tracked on this archived page._
 <!-- upcoming-end -->
 
 
@@ -69,14 +76,13 @@ gantt
     title OASIS Development Timeline
 %% gantt-start
     section Completed
-    How to Contribute guide launch  :done, plan1, 2025-09-10, 3d
-    Data Library quickstart integration  :done, plan2, 2025-09-12, 1d
-    Analytics Library quickstart integration  :done, plan3, 2025-09-12, 1d
-    Project Group OASIS hub refresh  :done, plan4, 2025-09-15, 2d
-    section Upcoming
-    Add GitHub linking to tasks  :active, plan5, 2025-08-15, 7d
-    Automate Gantt chart updates  : plan6, 2025-08-22, 5d
-    Interactive Cloud Triangle lesson  : plan7, 2025-08-29, 5d
+    Add GitHub linking to tasks  :done, plan1, 2025-08-15, 7d
+    Automate Gantt chart updates  :done, plan2, 2025-08-22, 5d
+    Interactive Cloud Triangle lesson  :done, plan3, 2025-08-29, 5d
+    How to Contribute guide launch  :done, plan4, 2025-09-10, 3d
+    Data Library quickstart integration  :done, plan5, 2025-09-12, 1d
+    Analytics Library quickstart integration  :done, plan6, 2025-09-12, 1d
+    Project Group OASIS hub refresh  :done, plan7, 2025-09-15, 2d
 %% gantt-end
 ```
 

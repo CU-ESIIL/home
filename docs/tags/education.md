@@ -6,6 +6,5 @@ hide:
 
 # education
 
-- [advanced-textbook](../../quickstart/advanced-textbook/)
-  <small></small>
-
+- [advanced-textbook](../quickstart/advanced-textbook.md)  
+  <small>2024-01-01</small>

@@ -6,6 +6,9 @@ hide:
 
 # development
 
-- [dev-schedule](../../dev-schedule/)
-  <small>2025-08-14</small>
-
+- [dev-schedule](../dev-schedule.md)  
+  <small>2026-04-13</small>
+- [pending-tasks](../pending-tasks.md)  
+  <small>2025-08-29</small>
+- [dev-requests](../dev-requests.md)  
+  <small>2025-08-29</small>

@@ -1,6 +1,7 @@
 ---
 title: Data Exploration and Collaboration in the Cloud
 tags: [cloud, streaming, GDAL, VSI, STAC, collaboration]
+date: 2024-01-01
 ---
 
 # Data Exploration and Collaboration in the Cloud

@@ -1,3 +1,9 @@
+---
+title: Analytics Library
+tags: [analytics, quickstart]
+date: 2024-01-01
+---
+
 # Analytics Library
 
 ## Sell It

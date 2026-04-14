@@ -363,7 +363,7 @@ ggplot(data.frame(x, y), aes(x = x, y = y)) +
   geom_point()
 ```
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-25-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 Python code:
 
 ``` python
@@ -383,7 +383,7 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-26-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 
 In both cases, we generate some sample data and create a scatter plot to
 visualize the relationship between the variables.
@@ -446,7 +446,7 @@ ggplot(data.frame(x, y), aes(x = x, y = y)) +
 
     ## `geom_smooth()` using formula = 'y ~ x'
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-27-3.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 
 Python code:
 
@@ -486,7 +486,7 @@ plt.plot(x, model_py.predict(x.reshape(-1, 1)), color='red')
 plt.show()
 ```
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-28-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 
 In both cases, we generate some sample data with a linear relationship
 between x and y, and then perform a simple linear regression to estimate
@@ -613,7 +613,7 @@ tm_shape(osm_data$osm_lines) +
   tm_lines()
 ```
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-31-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 Python code:
 
 ``` python
@@ -632,7 +632,7 @@ ox.plot_graph(osm_data)
 
     ## (<Figure size 1600x1600 with 0 Axes>, <AxesSubplot:>)
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-32-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 
 In both cases, we define the map location and zoom level, retrieve the
 OpenStreetMap data using the specified bounding box, and plot the map.
@@ -779,7 +779,7 @@ iris %>%
        y = "Mean Petal Length")
 ```
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-37-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 
 In this example, we start with the iris dataset and filter it to only
 include rows where the Species column is “setosa”. We then group the
@@ -1766,7 +1766,7 @@ grade_counts <- philly_geojson %>%
 plot(grade_counts)
 ```
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-65-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 
 Python: In Python, we’ll use the ‘geopandas’ library to read and process
 the GeoJSON data.
@@ -2070,7 +2070,7 @@ plot(indian_lands)
     ## Warning: plotting the first 9 out of 23 attributes; use max.plot = 23 to plot
     ## all
 
-![](bilingualism_md_files/figure-gfm/unnamed-chunk-71-1.pdf)<!-- -->
+_Associated figure not included in this repository snapshot._
 
 Python: In Python, we’ll use the ‘geopandas’ and ‘pandas’ libraries to
 read the Shapefile and process the data.

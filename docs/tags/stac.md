@@ -1,12 +1,10 @@
 ---
-title: stac
+title: STAC
 hide:
   - toc
 ---
 
-# stac
+# STAC
 
-- [stac_mount_save](https://cu-esiil.github.io/data-library/library/stac_mount_save/)  
-  <small></small>
-- [stac_simple](https://cu-esiil.github.io/data-library/library/stac_simple/)  
-  <small></small>
+- [Data Exploration and Collaboration in the Cloud](../quickstart/python.md)  
+  <small>2024-01-01</small>

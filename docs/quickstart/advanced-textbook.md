@@ -1,5 +1,6 @@
 ---
 tags: [education, raster]
+date: 2024-01-01
 ---
 
 # Advanced Textbook

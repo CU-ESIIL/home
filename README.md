@@ -1,23 +1,36 @@
-# Build
+# OASIS Home
 
-To build the docs locally:
-```
-git clone https://github.com/CyVerse-learning-materials/foss.git
+This repository powers the OASIS homepage and supporting documentation for the
+Open Analysis and Synthesis Infrastructure for Science. It is a MkDocs site
+with a dense single-page homepage, supporting quickstarts, resource hubs, and
+tag-driven discovery pages.
 
-cd foss
+## Local development
 
-python3 -m venv .venv
+Create and activate a virtual environment if you want an isolated Python setup,
+then install the site requirements and start the local server:
 
-source .venv/bin/activate
-
+```bash
 pip install -r requirements.txt
-
-python -m mkdocs serve -a localhost:8000
+mkdocs serve
 ```
-Open a browser and go to https://localhost:8000 If something is already running on localhost:8000 just change the port in the command.
+
+The local site is typically available at `http://127.0.0.1:8000/`.
+
+## Build and deploy
+
+Use a strict local build before opening a pull request:
+
+```bash
+mkdocs build --strict
+```
+
+GitHub Actions runs the same strict build before publishing with
+`mkdocs gh-deploy`, so deploys cannot bypass build failures.
 
 ## Homepage/layout development guidance
 
-For homepage architecture, hero/sidebar/header CSS rules, selector strategy, and Codex-safe prompts, use the canonical dev guide:
+For homepage architecture, hero/sidebar/header CSS rules, selector strategy,
+and Codex-safe prompts, use the canonical dev guide:
 
 - [`docs/dev/oasis-site-dev-guide.md`](docs/dev/oasis-site-dev-guide.md)

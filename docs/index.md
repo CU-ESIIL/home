@@ -15,11 +15,11 @@ hide:
 <p>Welcome to the <strong>OASIS</strong>, a hub for open analysis and synthesis in <strong>Environmental Data Science</strong>.</p>
 
 <div class="tag-suggestions oasis-pills esiil-hero-links" markdown="1">
-[Quickstart](./quickstart/){ .md-button .md-button--primary }
-[Containers](./container-library/){ .md-button .md-button--primary }
+[Quickstart](quickstart/index.md){ .md-button .md-button--primary }
+[Containers](container-library/index.md){ .md-button .md-button--primary }
 [Analytics](https://cu-esiil.github.io/analytics-library/){ .md-button .md-button--primary }
 [Data Library](https://cu-esiil.github.io/data-library/){ .md-button .md-button--primary }
-[Resources](./resources/){ .md-button .md-button--primary }
+[Resources](resources/index.md){ .md-button .md-button--primary }
 </div>
 
 <div class="search-bar">

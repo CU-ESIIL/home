@@ -107,7 +107,7 @@ date: 2024-01-01
       <a href="./oasis/">OASIS</a>
       <a href="https://cu-esiil.github.io/data-library/">Data</a>
       <a href="https://cu-esiil.github.io/analytics-library/">Analytics</a>
-      <a href="./container-library/">Containers</a>
+      <a href="../container-library/">Containers</a>
     </div>
     <div class="grid" role="list">
       <!-- Quick Start Page -->
@@ -204,7 +204,7 @@ date: 2024-01-01
       </a>
 
       <!-- Container Image Library -->
-      <a class="pill is-sky" href="./container-library/" role="listitem" aria-label="Container Image Library">
+      <a class="pill is-sky" href="../container-library/" role="listitem" aria-label="Container Image Library">
         <div class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 12h18"/><path d="M8 12h13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6v8"/></svg>
         </div>
