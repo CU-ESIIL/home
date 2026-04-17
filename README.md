@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/927951976.svg)](https://doi.org/10.5281/zenodo.19635122)
 # OASIS Home
 
 This repository powers the OASIS homepage and supporting documentation for the
