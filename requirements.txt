@@ -4,7 +4,7 @@ flake8
 grip
 ipykernel
 livereload
-nbconvert==7.17.0
+nbconvert==7.17.1
 pip
 sphinx
 tox
