@@ -194,6 +194,39 @@ homepage cards or docs:
 - remove “site unavailable” notes once a live site exists
 - note placeholder images/descriptions when final assets are not available yet
 
+## Button Image Generation Rules
+
+All agents, including Codex, MUST read
+[`docs/button-image-guidelines.md`](docs/button-image-guidelines.md) before
+generating, replacing, or modifying any button image.
+
+The guideline is authoritative over default image generation behavior. Agents
+must match the existing visual family before creating new assets.
+
+Do not generate button images using generic AI defaults. Always follow the
+repository image guidelines. If there is a conflict, the guidelines take
+precedence.
+
+If uncertain, agents should:
+
+- inspect existing button images
+- choose simpler compositions
+- avoid introducing new styles
+
+When:
+
+- a new homepage section is added
+- a new library or feature needs a button
+- an existing button is replaced
+
+the agent must:
+
+1. Read the guideline file.
+2. Derive an appropriate subject from the content.
+3. Use the prompt template defined in the guideline.
+4. Save the image using the correct path and naming convention.
+5. Verify visual consistency before committing.
+
 ## 7. Build, Test, and Validation Expectations
 
 ### Preferred validation

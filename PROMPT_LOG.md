@@ -50,3 +50,19 @@ homepage sections.
   into the larger ESIIL ecosystem.
 - Follow-up / unresolved: If desired, the same ecosystem framing could also be
   added to `README.md` for human contributors.
+
+## 2026-04-21
+
+- Goal: Establish a durable button-image guideline system and explicitly direct
+  all agents, including Codex, to use it for homepage button imagery.
+- Context reviewed: Existing homepage image references in `docs/index.md`,
+  current asset storage under `docs/assets/thumbnails/`, the repo instruction
+  structure in `AGENTS.md`, and the required visual constraints for future
+  button-image generation.
+- Files changed: `docs/button-image-guidelines.md`, `AGENTS.md`,
+  `PROMPT_LOG.md`.
+- Validation: Confirmed that `docs/assets/thumbnails/` is the active existing
+  repository pattern for homepage button imagery, so the new guideline aligns
+  with that path rather than creating a parallel asset tree.
+- Follow-up / unresolved: Existing images were not modified. The new guidance
+  standardizes future generated assets and future replacements only.
