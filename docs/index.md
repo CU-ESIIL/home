@@ -317,6 +317,8 @@ hide:
 
 ## 🚀 **NSF Synthesis Working Groups**  
 
+### Cohort 1
+
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
 
   <div class="gallery-item">
@@ -376,6 +378,48 @@ hide:
 
 </div>
 
+### Cohort 2
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/popClimVar/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="popClimVar">
+    </a>
+    <p><strong>popClimVar</strong></p>
+    <p>Working group site for popClimVar.</p>
+  </div>
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/envirollm/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="EnviroLLM">
+    </a>
+    <p><strong>EnviroLLM</strong></p>
+    <p>Working group site for EnviroLLM.</p>
+  </div>
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/GUBIC/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="GUBIC">
+    </a>
+    <p><strong>GUBIC</strong></p>
+    <p>Global Urban Biological Invasions Consortium.</p>
+  </div>
+
+</div>
+
+### Cohort 3
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+
+  <div class="gallery-item">
+    <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="Cohort 3 Coming Soon">
+    <p><strong>Cohort 3</strong></p>
+    <p>TBD after tech training in the coming month.</p>
+  </div>
+
+</div>
+
 <style>
   .gallery-item {
     width: calc(100% / 2 - 20px); /* Two per row on small screens */
@@ -402,6 +446,14 @@ hide:
 These repositories represent postdoc-led research initiatives at ESIIL.
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/LLM_lesson_exemplar/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/advanced_textbook.jpeg?raw=true" alt="LLM Lesson Exemplar">
+    </a>
+    <p><strong>LLM Lesson Exemplar</strong></p>
+    <p>Example lesson materials for working with large language models.</p>
+  </div>
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/Jim-s-Sandbox/" target="_blank">
@@ -496,13 +548,53 @@ These repositories represent postdoc-led research initiatives at ESIIL.
 
 ---
 
+## 🎓 **Graduate Student Research Projects**
+These repositories represent graduate student-led research initiatives at ESIIL.
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/daniellelosos/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/esiil_oasis_logo.png?raw=true" alt="Danielle Losos">
+    </a>
+    <p><strong>Danielle Losos</strong></p>
+    <p>Graduate student research project site.</p>
+  </div>
+
+</div>
+
+---
+
 ## 🔬 **Staff and Affiliate Research Projects**  
 These repositories represent broader research efforts contributing to environmental data science.
 
-| Name | Description | Link |
-|------|------------|------|
-| **[SpectralBEF](https://cu-esiil.github.io/spectralBEF/)** | Spectral analysis of biodiversity-ecosystem functioning. | 🔗 Website |
-| **[GEDI-ECOSTRESS Data Project](https://github.com/CU-ESIIL/GEDI-ECOSTRESS_data_project)** | Aligning GEDI and ECOSTRESS datasets for ML applications. | 🔗 GitHub |
+<div class="template-gallery">
+
+  <div class="template-item">
+    <a href="https://cu-esiil.github.io/cubedynamics/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/water_carbon_dynamics.jpeg?raw=true" alt="CubeDynamics">
+    </a>
+    <p><strong>CubeDynamics</strong></p>
+    <p>A composable grammar of operations for spatiotemporal data cubes.</p>
+  </div>
+
+  <div class="template-item">
+    <a href="https://cu-esiil.github.io/spectralBEF/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/biotic_niche_modeling.jpeg?raw=true" alt="SpectralBEF">
+    </a>
+    <p><strong>SpectralBEF</strong></p>
+    <p>Spectral analysis of biodiversity-ecosystem functioning.</p>
+  </div>
+
+  <div class="template-item">
+    <a href="https://github.com/CU-ESIIL/GEDI-ECOSTRESS_data_project" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/analytics_library.jpeg?raw=true" alt="GEDI-ECOSTRESS Data Project">
+    </a>
+    <p><strong>GEDI-ECOSTRESS Data Project</strong></p>
+    <p>Aligning GEDI and ECOSTRESS datasets for ML applications.</p>
+  </div>
+
+</div>
 
 ---
 
@@ -511,6 +603,22 @@ Major ESIIL-hosted and affiliated events.
 
 <div class="template-gallery">
 
+
+  <div class="template-item">
+    <a href="https://cu-esiil.github.io/Innovation-Summit-2026/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/innovation_summit_2025.jpeg?raw=true" alt="Innovation Summit 2026">
+    </a>
+    <p><strong>Innovation Summit 2026</strong></p>
+    <p>Official repository for the ESIIL Innovation Summit 2026.</p>
+  </div>
+
+  <div class="template-item">
+    <a href="https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/innovation_summit_2025.jpeg?raw=true" alt="HDR-ML Hackathon 2026">
+    </a>
+    <p><strong>HDR-ML Hackathon 2026</strong></p>
+    <p>Official repository for the ESIIL HDR-ML Hackathon 2026.</p>
+  </div>
 
   <div class="template-item">
     <a href="https://cu-esiil.github.io/Innovation-Summit-2025/" target="_blank">
@@ -594,6 +702,14 @@ Templates to streamline project development and research collaboration.
   
 
   <div class="template-item">
+    <a href="https://github.com/CU-ESIIL/basic_OASIS" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/esiil_oasis_logo.png?raw=true" alt="Basic OASIS">
+    </a>
+    <p><strong>Basic OASIS</strong></p>
+    <p>Starter template for building a new OASIS project site.</p>
+  </div>
+
+  <div class="template-item">
     <a href="https://cu-esiil.github.io/Postdoc_OASIS/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/postdoc_oasis.jpeg?raw=true" alt="Postdoc OASIS">
     </a>
@@ -608,6 +724,14 @@ Templates to streamline project development and research collaboration.
     </a>
     <p><strong>Working Group OASIS</strong></p>
     <p>Central hub for information on ESIIL working groups.</p>
+  </div>
+
+  <div class="template-item">
+    <a href="https://cu-esiil.github.io/Project_group_OASIS/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="Project Group OASIS">
+    </a>
+    <p><strong>Project Group OASIS</strong></p>
+    <p>Template for project group collaboration and documentation.</p>
   </div>
 
   
@@ -676,7 +800,7 @@ Repositories focused on software, data infrastructure, and computational tools.
 <div class="template-gallery">
 
   <div class="template-item">
-    <a href="./container-library/">
+    <a href="https://hub.docker.com/u/esiil" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/docker.jpeg?raw=true" alt="Docker">
     </a>
     <p><strong>Docker</strong></p>
