@@ -74,6 +74,12 @@ tag_filenames = {
     tag: existing_tag_files.get(tag.lower(), f"{tag}.md")
     for tag in tagmap
 }
+expected_tag_files = set(tag_filenames.values()) | {"index.md"}
+
+# Remove stale generated tag pages that no longer correspond to tagged content.
+for path in Path(TAGS_DIR).glob("*.md"):
+    if path.name not in expected_tag_files:
+        path.unlink()
 
 # Write index page
 index_lines = ["---", "title: Tags", "hide:", "  - toc", "---", "", "# Tags", ""]

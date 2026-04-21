@@ -11,9 +11,9 @@ level up your environmental data science skills. Chapters blend narrative and
 code so you learn concepts and immediately apply them.
 
 ## Show It
-Browse chapters that mix narrative, code, and exercises at the
-[Advanced Textbook site](https://textbook.esiil.org). Each section links to a
-runnable notebook in the cloud or instructions for local execution.
+The public Advanced Textbook site is currently unavailable. Use this page as
+the starting point for archived textbook guidance and any companion notebook
+materials still maintained in OASIS.
 
 ## Do It
 1. **Open the textbook.** Explore the table of contents to see available

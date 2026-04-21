@@ -196,14 +196,14 @@ far by clicking on the “Commit” button in the “Git” pane in RStudio.
 To link your local repository to a remote GitHub repository, go to your
 GitHub account and create a new repository.
 
-Copy the remote repository’s URL (e.g.,
-“https://github.com/username/repository.git”).
+Copy the remote repository’s URL (for example,
+`https://github.com/OWNER/REPOSITORY.git`).
 
 In RStudio, open the “Shell” by going to “Tools” \> “Shell.”
 
 In the shell, run the following command to add the remote repository:
 
-git remote add origin https://github.com/username/repository.git
+`git remote add origin <remote-repository-url>`
 
 Replace the URL with the one you copied from your GitHub repository.
 

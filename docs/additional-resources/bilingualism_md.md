@@ -1396,11 +1396,10 @@ the Data for Black Lives website provides resources, reports, articles,
 and datasets related to racial equity, it doesn’t provide a direct API
 for downloading data.
 
-Instead, you can access the Data for Black Lives GitHub repository
-(<https://github.com/Data4BlackLives>) to find datasets and resources to
-work with. In this example, we’ll use a sample dataset available at
-<https://github.com/Data4BlackLives/covid-19/tree/master/data>. The
-dataset “COVID19_race_data.csv” contains COVID-19 race-related data.
+Instead, use the Data for Black Lives website (<https://d4bl.org/>) to
+find current datasets, reports, and resources to work with. Earlier
+versions of this lesson referenced historical GitHub examples that are
+no longer publicly available.
 
 R: In R, we’ll use the ‘readr’ and ‘dplyr’ packages to read, process,
 and analyze the dataset.

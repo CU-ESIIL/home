@@ -2,7 +2,9 @@
 
 {% macro next_steps(links) -%}
 ### Next steps
+<ul>
 {% for text, url in links %}
-- [{{ text }}]({{ url }})
+- <li><a href="{{ url }}">{{ text }}</a></li>
 {% endfor %}
+</ul>
 {%- endmacro %}

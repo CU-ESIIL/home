@@ -277,7 +277,7 @@ hide:
   </div>
 
   <div class="library-item">
-    <a href="https://textbook.esiil.org" target="_blank">
+    <a href="./quickstart/advanced-textbook/">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/advanced_textbook.jpeg?raw=true" alt="Tutorials and Learning Resources">
     </a>
     <p><strong>Advanced Textbook</strong></p>
@@ -352,11 +352,10 @@ hide:
   </div>
 
   <div class="gallery-item">
-    <a href="https://cu-esiil.github.io/maka_sitomniya/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/maka_sitomniya.jpeg?raw=true" alt="Maka-Sitomniya">
-    </a>
+    <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/maka_sitomniya.jpeg?raw=true" alt="Maka-Sitomniya">
     <p><strong>Maka-Sitomniya</strong></p>
     <p>Research on traditional ecological knowledge.</p>
+    <p><small>Public project site currently unavailable.</small></p>
   </div>
 
   <div class="gallery-item">
@@ -453,11 +452,10 @@ These repositories represent postdoc-led research initiatives at ESIIL.
   </div>
 
   <div class="gallery-item">
-    <a href="https://cu-esiil.github.io/water_carbon_management/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/water_carbon_dynamics.jpeg?raw=true" alt="Water Carbon Dynamics">
-    </a>
+    <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/water_carbon_dynamics.jpeg?raw=true" alt="Water Carbon Dynamics">
     <p><strong>Water Carbon Dynamics</strong></p>
     <p>Investigating water-carbon interactions.</p>
+    <p><small>Public project site currently unavailable.</small></p>
   </div>
 
   <div class="gallery-item">
@@ -678,11 +676,11 @@ Repositories focused on software, data infrastructure, and computational tools.
 <div class="template-gallery">
 
   <div class="template-item">
-    <a href="https://github.com/CU-ESIIL/docker" target="_blank">
+    <a href="./container-library/">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/docker.jpeg?raw=true" alt="Docker">
     </a>
     <p><strong>Docker</strong></p>
-    <p>Private repository for containerized workflows and CI/CD.</p>
+    <p>Containerized workflows and CI/CD resources for OASIS.</p>
   </div>
 
   <div class="template-item">
@@ -771,7 +769,7 @@ These repositories are marked for removal.
 
 | Name | Description | Link |
 |------|------------|------|
-| **[Shannon-Boldt](https://github.com/CU-ESIIL/Shannon-Boldt)** | Private repository, marked for deletion. | 🔗 GitHub |
+| **Shannon-Boldt** | Private repository, marked for deletion. | Unavailable |
 | **[Ty Ed Demo](https://cu-esiil.github.io/Ty_ed_demo/)** | One-time use education repository. | 🔗 Website |
 | **[Ty Test](https://cu-esiil.github.io/Ty_test/)** | Single-use education test repository. | 🔗 Website |
 
@@ -812,10 +810,10 @@ This section contains sub-repositories from various events, including the **Inno
 
 | Name | Description | Link |
 |------|------------|------|
-| **[Innovation-Summit-2024__3](https://github.com/CU-ESIIL/Innovation-Summit-2024__3)** | Breakout group 3 from the Innovation Summit 2024. | 🔗 GitHub |
-| **[Innovation-Summit-2024__4](https://github.com/CU-ESIIL/Innovation-Summit-2024__4)** | Breakout group 4 from the Innovation Summit 2024. | 🔗 GitHub |
-| **[Innovation-Summit-2024__5](https://github.com/CU-ESIIL/Innovation-Summit-2024__5)** | Breakout group 5 from the Innovation Summit 2024. | 🔗 GitHub |
-| **[Innovation-Summit-2024__6](https://github.com/CU-ESIIL/Innovation-Summit-2024__6)** | Breakout group 6 from the Innovation Summit 2024. | 🔗 GitHub |
+| **Innovation-Summit-2024__3** | Breakout group 3 from the Innovation Summit 2024. | Unavailable |
+| **Innovation-Summit-2024__4** | Breakout group 4 from the Innovation Summit 2024. | Unavailable |
+| **Innovation-Summit-2024__5** | Breakout group 5 from the Innovation Summit 2024. | Unavailable |
+| **Innovation-Summit-2024__6** | Breakout group 6 from the Innovation Summit 2024. | Unavailable |
 
 ---
 
@@ -823,8 +821,8 @@ This section contains sub-repositories from various events, including the **Inno
 
 | Name | Description | Link |
 |------|------------|------|
-| **[HYR-SENSE-Alaska](https://github.com/CU-ESIIL/HYR-SENSE-Alaska)** | HYR-SENSE Alaska breakout group. | 🔗 GitHub |
-| **[HYR-SENSE-Tyler](https://github.com/CU-ESIIL/HYR-SENSE-Tyler)** | HYR-SENSE Tyler breakout project. | 🔗 GitHub |
+| **HYR-SENSE-Alaska** | HYR-SENSE Alaska breakout group. | Unavailable |
+| **HYR-SENSE-Tyler** | HYR-SENSE Tyler breakout project. | Unavailable |
 | **[HYR-SENSE-VTaho](https://github.com/CU-ESIIL/HYR-SENSE-VTaho)** | HYR-SENSE Vermont-Tahoe research group. | 🔗 GitHub |
 | **[HYR-SENSE-MaryB](https://github.com/CU-ESIIL/HYR-SENSE-MaryB)** | HYR-SENSE research led by Mary B. | 🔗 GitHub |
 

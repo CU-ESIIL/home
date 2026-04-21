@@ -29,10 +29,11 @@
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
         ??? Tip "Foster Open Science Diagram"
-        
-            [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
-             Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
+            The original Foster Open Science diagram and resource links used in
+            earlier versions of this training are no longer publicly available.
+            Keep this section as a text reference when discussing open science
+            taxonomies.
 
 ## Introduction
 
@@ -462,7 +463,6 @@ Note: The rendering of these equations as formatted math will depend on your Mar
 ## Creating Footnotes
 
 - **Example Syntax:**
-  - [^1]: First reference details. Example: Emma Jones, "Environmental Study," Nature Journal, May 2020, https://nature-journal.com/envstudy2020.
-  - [^2]: Second reference details. Example: David Smith, "Climate Change Controversies," Science Daily, August 2019, https://sciencedaily.com/climatechange2019.
-
+  - [^1]: First reference details. Example: Emma Jones, "Environmental Study," Nature Journal, May 2020.
+  - [^2]: Second reference details. Example: David Smith, "Climate Change Controversies," Science Daily, August 2019.
 

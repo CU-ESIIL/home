@@ -375,7 +375,6 @@ Note: The rendering of these equations as formatted math will depend on your Mar
 ## Creating Footnotes
 
 - **Example Syntax:**
-  - [^1]: First reference details. Example: Emma Jones, "Environmental Study," Nature Journal, May 2020, https://nature-journal.com/envstudy2020.
-  - [^2]: Second reference details. Example: David Smith, "Climate Change Controversies," Science Daily, August 2019, https://sciencedaily.com/climatechange2019.
-
+  - [^1]: First reference details. Example: Emma Jones, "Environmental Study," Nature Journal, May 2020.
+  - [^2]: Second reference details. Example: David Smith, "Climate Change Controversies," Science Daily, August 2019.
 

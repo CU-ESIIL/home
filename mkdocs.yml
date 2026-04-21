@@ -2,6 +2,8 @@ site_name: 'OASIS: Open Analysis and Synthesis Infrastructure for Science'
 site_description: 'Open Analysis and Synthesis Infrastructure for Science'
 site_author: ESIIL staff
 site_url: https://CU-ESIIL.github.io/home
+exclude_docs: |
+  _includes/
 
 # Repository
 repo_name: home
