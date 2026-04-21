@@ -354,10 +354,11 @@ hide:
   </div>
 
   <div class="gallery-item">
-    <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/maka_sitomniya.jpeg?raw=true" alt="Maka-Sitomniya">
+    <a href="https://cu-esiil.github.io/Maka-Sitomniya/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/maka_sitomniya.jpeg?raw=true" alt="Maka-Sitomniya">
+    </a>
     <p><strong>Maka-Sitomniya</strong></p>
     <p>Research on traditional ecological knowledge.</p>
-    <p><small>Public project site currently unavailable.</small></p>
   </div>
 
   <div class="gallery-item">
@@ -404,6 +405,22 @@ hide:
     </a>
     <p><strong>GUBIC</strong></p>
     <p>Global Urban Biological Invasions Consortium.</p>
+  </div>
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/Public-Observing-Unci-Maka/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="Public Observing Unci Maka">
+    </a>
+    <p><strong>Public Observing Unci Maka</strong></p>
+    <p>Working group site for Public Observing Unci Maka.</p>
+  </div>
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/VERDE/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="VERDE">
+    </a>
+    <p><strong>VERDE</strong></p>
+    <p>Working group site for VERDE.</p>
   </div>
 
 </div>
@@ -568,9 +585,9 @@ These repositories represent graduate student-led research initiatives at ESIIL.
 ## 🔬 **Staff and Affiliate Research Projects**  
 These repositories represent broader research efforts contributing to environmental data science.
 
-<div class="template-gallery">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
 
-  <div class="template-item">
+  <div class="gallery-item">
     <a href="https://cu-esiil.github.io/cubedynamics/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/water_carbon_dynamics.jpeg?raw=true" alt="CubeDynamics">
     </a>
@@ -578,7 +595,7 @@ These repositories represent broader research efforts contributing to environmen
     <p>A composable grammar of operations for spatiotemporal data cubes.</p>
   </div>
 
-  <div class="template-item">
+  <div class="gallery-item">
     <a href="https://cu-esiil.github.io/spectralBEF/" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/biotic_niche_modeling.jpeg?raw=true" alt="SpectralBEF">
     </a>
@@ -586,12 +603,28 @@ These repositories represent broader research efforts contributing to environmen
     <p>Spectral analysis of biodiversity-ecosystem functioning.</p>
   </div>
 
-  <div class="template-item">
+  <div class="gallery-item">
     <a href="https://github.com/CU-ESIIL/GEDI-ECOSTRESS_data_project" target="_blank">
       <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/analytics_library.jpeg?raw=true" alt="GEDI-ECOSTRESS Data Project">
     </a>
     <p><strong>GEDI-ECOSTRESS Data Project</strong></p>
     <p>Aligning GEDI and ECOSTRESS datasets for ML applications.</p>
+  </div>
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/on_growth_and_form/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/SCE_wildfire.jpeg?raw=true" alt="On Growth and Form">
+    </a>
+    <p><strong>On Growth and Form</strong></p>
+    <p>Wildfire-scaling research on growth, form, and event-based Earth system analysis.</p>
+  </div>
+
+  <div class="gallery-item">
+    <a href="https://cu-esiil.github.io/WUI_boundary/" target="_blank">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/SCE_wildfire.jpeg?raw=true" alt="WUI Boundary Length Manuscript">
+    </a>
+    <p><strong>WUI Boundary Length Manuscript</strong></p>
+    <p>Measuring the Wildland-Urban Interface across delineation and scale.</p>
   </div>
 
 </div>
