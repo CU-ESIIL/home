@@ -1,22 +1,20 @@
 ---
 tags: [development]
-date: 2025-08-29
+date: 2026-04-21
 ---
 
 # Pending Development Tasks
 
-Some items from the development schedule remain outstanding. The notes below outline recommended steps for completing them.
+The original 2025 launch roadmap is largely complete. The remaining follow-up work is mostly automation and a small amount of homepage polish.
 
-## Interactive Cloud Triangle lesson
+## Schedule automation follow-ups
 
-1. Design interactive plots using libraries such as Plotly or Altair to illustrate the Cloud Triangle concept.
-2. Host the interactive components as standalone HTML or within Jupyter notebooks and integrate them into the documentation with `mkdocs-jupyter` or embedded iframes.
-3. Provide explanatory text and data sources alongside the interactive elements.
-4. Link the lesson to the existing Cloud Triangle overview and examples pages.
-
-## Further automation
-
-- Enhance `scripts/update_dev_schedule.py` to fetch issue titles and status directly from the GitHub API.
+- Enhance `scripts/update_dev_schedule.py` to fetch issue titles and status directly from the GitHub API instead of relying only on `docs/upcoming_tasks.yaml`.
 - Extend the script to update the timeline table in `docs/dev-schedule.md` for a fully automated roadmap.
 
-Running `python scripts/update_dev_schedule.py` will rebuild the upcoming task list and planned Gantt section from `docs/upcoming_tasks.yaml`.
+## Homepage follow-up polish
+
+- Replace placeholder thumbnails and placeholder descriptions on newly added homepage cards as project teams publish final artwork and summaries.
+- If the homepage development schedule tile should mirror the current roadmap exactly, regenerate or replace `docs/gantt_chart.png`, because the live schedule page is updated separately from that static image.
+
+Running `python scripts/update_dev_schedule.py` will rebuild the upcoming task list and planned Gantt section from `docs/upcoming_tasks.yaml`, but it still does not update the historical task list, the timeline table, or the homepage thumbnail image.

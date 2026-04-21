@@ -1,6 +1,6 @@
 ---
 tags: [development, schedule]
-date: 2026-04-13
+date: 2026-04-21
 ---
 
 # Development Schedule
@@ -21,6 +21,10 @@ expanded the ecosystem with the [How to Contribute guide](https://cu-esiil.githu
 new quickstarts pointing to the [Data Library](https://cu-esiil.github.io/data-library/)
 and [Analytics Library](https://cu-esiil.github.io/analytics-library/), and a
 refreshed [Project Group OASIS hub](https://cu-esiil.github.io/Project_group_OASIS/).
+April 2026 focused on homepage curation: working groups were reorganized into
+cohort rows, research sections were expanded for graduate student and staff
+projects, event and template cards were refreshed, and key external links such
+as the container library destination were updated.
 
 ## Historical Task List
 
@@ -39,6 +43,10 @@ refreshed [Project Group OASIS hub](https://cu-esiil.github.io/Project_group_OAS
 - [x] [Data Library quickstart integration](https://github.com/CU-ESIIL/home/commit/e2d76a5) — 2025-09-12
 - [x] [Analytics Library quickstart integration](https://github.com/CU-ESIIL/home/commit/f69d9da) — 2025-09-12
 - [x] [Project Group OASIS hub refresh](https://cu-esiil.github.io/Project_group_OASIS/) — 2025-09-16
+- [x] [Homepage working group cohort refresh](index.md) — 2026-04-21
+- [x] [Homepage research project section refresh](index.md) — 2026-04-21
+- [x] [Homepage events and summits refresh](index.md) — 2026-04-21
+- [x] [Homepage templates and resource links refresh](index.md) — 2026-04-21
 
 ## Upcoming Task List
 
@@ -67,6 +75,10 @@ _No active roadmap items are tracked on this archived page._
 | Data Library quickstart integration | 2025-09-12 | 2025-09-12 | [Ty Tuff](https://github.com/tytuff) |
 | Analytics Library quickstart integration | 2025-09-12 | 2025-09-12 | [Ty Tuff](https://github.com/tytuff) |
 | Project Group OASIS hub refresh | 2025-09-15 | 2025-09-16 | OASIS Team |
+| Homepage working group cohort refresh | 2026-04-21 | 2026-04-21 | OASIS Team |
+| Homepage research project section refresh | 2026-04-21 | 2026-04-21 | OASIS Team |
+| Homepage events and summits refresh | 2026-04-21 | 2026-04-21 | OASIS Team |
+| Homepage templates and resource links refresh | 2026-04-21 | 2026-04-21 | OASIS Team |
 
 ## Gantt Chart
 
@@ -83,6 +95,10 @@ gantt
     Data Library quickstart integration  :done, plan5, 2025-09-12, 1d
     Analytics Library quickstart integration  :done, plan6, 2025-09-12, 1d
     Project Group OASIS hub refresh  :done, plan7, 2025-09-15, 2d
+    Homepage working group cohort refresh  :done, plan8, 2026-04-21, 1d
+    Homepage research project section refresh  :done, plan9, 2026-04-21, 1d
+    Homepage events and summits refresh  :done, plan10, 2026-04-21, 1d
+    Homepage templates and resource links refresh  :done, plan11, 2026-04-21, 1d
 %% gantt-end
 ```
 
