@@ -57,6 +57,7 @@ Default style shorthand:
 - Prioritize recognition at small scale.
 - Use negative space intentionally.
 - Keep supporting details subordinate to the main idea.
+- Use one primary scene plus at most one or two subordinate analytic elements.
 - Prefer a central subject with a small number of contextual elements.
 - Avoid multi-panel or collage-like layouts unless the content truly requires a
   synthesis scene.
@@ -94,6 +95,8 @@ Avoid:
 ## Subject selection rules
 
 - Derive the subject from the actual content of the button.
+- Inspect the linked page or repository README when available before deciding
+  what the image depicts.
 - Represent the real domain, workflow, or scientific theme.
 - Prefer concrete environmental data science subjects over abstract symbols.
 - For collaboration-oriented buttons, show collaboration in the context of
@@ -130,6 +133,7 @@ Do not use:
 - shiny 3D render style
 - sterile flat vector icon packs
 - random symbol collages
+- fields of tiny floating icons without one dominant scene
 - unrelated scientific icons mashed together
 - meme aesthetics
 - mascot or emoji style

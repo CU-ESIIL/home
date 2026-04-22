@@ -210,6 +210,7 @@ precedence.
 If uncertain, agents should:
 
 - inspect existing button images
+- inspect the linked destination page or repository README when available
 - choose simpler compositions
 - avoid introducing new styles
 
@@ -222,7 +223,8 @@ When:
 the agent must:
 
 1. Read the guideline file.
-2. Derive an appropriate subject from the content.
+2. Inspect the linked page or repository README when available, then derive an
+   appropriate subject from the content.
 3. Use the prompt template defined in the guideline.
 4. Save the image using the correct path and naming convention.
 5. Verify visual consistency before committing.

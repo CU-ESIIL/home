@@ -385,7 +385,7 @@ hide:
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/popClimVar/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="popClimVar">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/popclimvar-button.png?raw=true" alt="popClimVar">
     </a>
     <p><strong>popClimVar</strong></p>
     <p>Working group site for popClimVar.</p>
@@ -393,7 +393,7 @@ hide:
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/envirollm/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="EnviroLLM">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/envirollm-button.png?raw=true" alt="EnviroLLM">
     </a>
     <p><strong>EnviroLLM</strong></p>
     <p>Working group site for EnviroLLM.</p>
@@ -401,7 +401,7 @@ hide:
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/GUBIC/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="GUBIC">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/gubic-button.png?raw=true" alt="GUBIC">
     </a>
     <p><strong>GUBIC</strong></p>
     <p>Global Urban Biological Invasions Consortium.</p>
@@ -409,7 +409,7 @@ hide:
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/Public-Observing-Unci-Maka/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="Public Observing Unci Maka">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/public-observing-unci-maka-button.png?raw=true" alt="Public Observing Unci Maka">
     </a>
     <p><strong>Public Observing Unci Maka</strong></p>
     <p>Working group site for Public Observing Unci Maka.</p>
@@ -417,7 +417,7 @@ hide:
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/VERDE/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="VERDE">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/verde-button.png?raw=true" alt="VERDE">
     </a>
     <p><strong>VERDE</strong></p>
     <p>Working group site for VERDE.</p>
@@ -466,7 +466,7 @@ These repositories represent postdoc-led research initiatives at ESIIL.
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/LLM_lesson_exemplar/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/advanced_textbook.jpeg?raw=true" alt="LLM Lesson Exemplar">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/llm-lesson-exemplar-button.png?raw=true" alt="LLM Lesson Exemplar">
     </a>
     <p><strong>LLM Lesson Exemplar</strong></p>
     <p>Example lesson materials for working with large language models.</p>
@@ -572,7 +572,7 @@ These repositories represent graduate student-led research initiatives at ESIIL.
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/daniellelosos/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/esiil_oasis_logo.png?raw=true" alt="Danielle Losos">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/danielle-losos-button.png?raw=true" alt="Danielle Losos">
     </a>
     <p><strong>Danielle Losos</strong></p>
     <p>Graduate student research project site.</p>
@@ -589,7 +589,7 @@ These repositories represent broader research efforts contributing to environmen
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/cubedynamics/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/water_carbon_dynamics.jpeg?raw=true" alt="CubeDynamics">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/cubedynamics-button.png?raw=true" alt="CubeDynamics">
     </a>
     <p><strong>CubeDynamics</strong></p>
     <p>A composable grammar of operations for spatiotemporal data cubes.</p>
@@ -597,7 +597,7 @@ These repositories represent broader research efforts contributing to environmen
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/spectralBEF/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/biotic_niche_modeling.jpeg?raw=true" alt="SpectralBEF">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/spectralbef-button.png?raw=true" alt="SpectralBEF">
     </a>
     <p><strong>SpectralBEF</strong></p>
     <p>Spectral analysis of biodiversity-ecosystem functioning.</p>
@@ -605,7 +605,7 @@ These repositories represent broader research efforts contributing to environmen
 
   <div class="gallery-item">
     <a href="https://github.com/CU-ESIIL/GEDI-ECOSTRESS_data_project" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/analytics_library.jpeg?raw=true" alt="GEDI-ECOSTRESS Data Project">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/gedi-ecostress-data-project-button.png?raw=true" alt="GEDI-ECOSTRESS Data Project">
     </a>
     <p><strong>GEDI-ECOSTRESS Data Project</strong></p>
     <p>Aligning GEDI and ECOSTRESS datasets for ML applications.</p>
@@ -613,7 +613,7 @@ These repositories represent broader research efforts contributing to environmen
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/on_growth_and_form/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/SCE_wildfire.jpeg?raw=true" alt="On Growth and Form">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/on-growth-and-form-button.png?raw=true" alt="On Growth and Form">
     </a>
     <p><strong>On Growth and Form</strong></p>
     <p>Wildfire-scaling research on growth, form, and event-based Earth system analysis.</p>
@@ -621,7 +621,7 @@ These repositories represent broader research efforts contributing to environmen
 
   <div class="gallery-item">
     <a href="https://cu-esiil.github.io/WUI_boundary/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/SCE_wildfire.jpeg?raw=true" alt="WUI Boundary Length Manuscript">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/wui-boundary-button.png?raw=true" alt="WUI Boundary Length Manuscript">
     </a>
     <p><strong>WUI Boundary Length Manuscript</strong></p>
     <p>Measuring the Wildland-Urban Interface across delineation and scale.</p>
@@ -639,7 +639,7 @@ Major ESIIL-hosted and affiliated events.
 
   <div class="template-item">
     <a href="https://cu-esiil.github.io/Innovation-Summit-2026/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/innovation_summit_2025.jpeg?raw=true" alt="Innovation Summit 2026">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/innovation-summit-2026-button.png?raw=true" alt="Innovation Summit 2026">
     </a>
     <p><strong>Innovation Summit 2026</strong></p>
     <p>Official repository for the ESIIL Innovation Summit 2026.</p>
@@ -647,7 +647,7 @@ Major ESIIL-hosted and affiliated events.
 
   <div class="template-item">
     <a href="https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/innovation_summit_2025.jpeg?raw=true" alt="HDR-ML Hackathon 2026">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/hdr-ml-hackathon-2026-button.png?raw=true" alt="HDR-ML Hackathon 2026">
     </a>
     <p><strong>HDR-ML Hackathon 2026</strong></p>
     <p>Official repository for the ESIIL HDR-ML Hackathon 2026.</p>
@@ -736,7 +736,7 @@ Templates to streamline project development and research collaboration.
 
   <div class="template-item">
     <a href="https://github.com/CU-ESIIL/basic_OASIS" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/esiil_oasis_logo.png?raw=true" alt="Basic OASIS">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/basic-oasis-button.png?raw=true" alt="Basic OASIS">
     </a>
     <p><strong>Basic OASIS</strong></p>
     <p>Starter template for building a new OASIS project site.</p>
@@ -761,7 +761,7 @@ Templates to streamline project development and research collaboration.
 
   <div class="template-item">
     <a href="https://cu-esiil.github.io/Project_group_OASIS/" target="_blank">
-      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/working_group_oasis.jpeg?raw=true" alt="Project Group OASIS">
+      <img src="https://github.com/CU-ESIIL/home/blob/main/docs/assets/thumbnails/project-group-oasis-button.png?raw=true" alt="Project Group OASIS">
     </a>
     <p><strong>Project Group OASIS</strong></p>
     <p>Template for project group collaboration and documentation.</p>
