@@ -42,12 +42,13 @@ Required style characteristics:
 - one clear concept per image
 - print-inspired scientific illustration
 - subtle texture and slight imperfection
-- muted palette built from cream, green, and dark ink tones
+- restrained 3 to 4 color palette that feels brighter and more lively while
+  still print-based
 - strong readability at homepage thumbnail size
 
 Default style shorthand:
 
-`screen print / linocut / woodblock inspired scientific illustration, square image, cream paper, muted greens, dark ink, slight print texture, one clear subject, no text`
+`screen print / linocut / woodblock inspired scientific illustration, square image, cream paper, dark ink, 3 to 4 brighter but earthy colors, slight print texture, one clear subject, no text`
 
 ## Composition rules
 
@@ -68,15 +69,22 @@ Primary palette:
 
 - dark ink: charcoal, deep green-black, forest ink
 - light ground: cream, warm ivory, parchment
-- secondary tones: muted sage, moss, olive, subdued eucalyptus
+- color 1: leafy sage or moss green
+- color 2: brighter teal-blue or dusty cyan
+- color 3: warm rust, clay red, or poppy coral
+- optional color 4: ochre or golden straw
 
-Optional accent use:
+Palette rule:
 
-- restrained earthy rust
-- restrained dusty blue-green
+- Most new images should use 3 clear colors plus dark ink on a cream ground.
+- The colors should pop more than the earlier muted set, but still feel
+  printed, earthy, and scientific rather than neon or glossy.
+- Use contrast intentionally so the image reads at small size.
 
 Avoid:
 
+- monochrome treatments unless replacing a legacy asset that already depends on
+  it
 - neon greens
 - bright tech blues and purples
 - glossy gradients
@@ -146,7 +154,7 @@ Subject: [specific content-derived subject].
 Style: screen print / linocut / woodblock inspired scientific illustration.
 Composition: one clear concept, strong focal structure, readable at thumbnail size.
 Texture: subtle paper grain, imperfect ink, carved or printed linework, not clean vector.
-Palette: cream background, muted greens, dark ink tones, restrained earthy accent only if needed.
+Palette: cream background, dark ink, and 3 to 4 brighter but earthy print colors such as sage green, teal-blue, warm rust, and ochre.
 Mood: thoughtful, research-oriented, ecological, content-specific.
 Constraints: no text, no logos, no photorealism, no glossy UI icon style, no corporate SaaS look.
 ```
@@ -154,7 +162,7 @@ Constraints: no text, no logos, no photorealism, no glossy UI icon style, no cor
 ## Negative prompt template
 
 ```text
-text, letters, logo, photorealism, glossy icon, app icon, clean flat vector, SaaS illustration, shiny 3D render, neon colors, futuristic dashboard, corporate tech branding, emoji style, mascot, clutter, unrelated symbols, infographic, stock icon set
+text, letters, logo, photorealism, glossy icon, app icon, clean flat vector, SaaS illustration, shiny 3D render, muddy monochrome palette, neon colors, futuristic dashboard, corporate tech branding, emoji style, mascot, clutter, unrelated symbols, infographic, stock icon set
 ```
 
 ## Example prompts
@@ -167,7 +175,7 @@ Subject: a wildfire boundary research scene showing ecological burn patterns, la
 Style: screen print / linocut / woodblock inspired scientific illustration.
 Composition: one clear focal concept, readable at thumbnail size.
 Texture: subtle paper grain, imperfect ink, carved linework.
-Palette: cream paper, muted greens, dark ink, restrained earthy rust.
+Palette: cream paper, dark ink, sage green, teal-blue, and warm rust.
 Constraints: no text, no logos, no photorealism, no glossy UI icon style, no corporate SaaS look.
 ```
 
@@ -179,7 +187,7 @@ Subject: environmental data analysis combining a map surface, ecological forms, 
 Style: screen print / linocut / woodblock inspired scientific illustration.
 Composition: one integrated concept, not a symbol collage.
 Texture: printed ink texture and carved contours.
-Palette: cream, sage, moss, dark ink.
+Palette: cream, dark ink, sage green, teal-blue, and ochre.
 Constraints: no text, no logos, no photorealism, no glossy interface icon style.
 ```
 
@@ -191,7 +199,7 @@ Subject: a small group of researchers gathered around environmental data, field 
 Style: screen print / woodblock scientific illustration.
 Composition: one central collaboration scene with a small number of supporting scientific details.
 Texture: imperfect ink and paper grain.
-Palette: cream, muted greens, dark ink.
+Palette: cream, dark ink, sage green, teal-blue, and warm rust.
 Constraints: no text, no generic network iconography, no corporate illustration style.
 ```
 
@@ -202,7 +210,7 @@ Create a square homepage button image for OASIS.
 Subject: a learner-oriented environmental data science scene with notebook, map, and analysis marks arranged as one coherent printed composition.
 Style: linocut / woodblock inspired scientific illustration.
 Composition: one clear concept, readable at small scale.
-Palette: cream paper, muted greens, dark ink.
+Palette: cream paper, dark ink, sage green, teal-blue, and ochre.
 Constraints: no text, no photorealism, no glossy UI icon style.
 ```
 
@@ -214,7 +222,7 @@ Subject: environmental computing infrastructure represented through containers, 
 Style: screen print / linocut / woodblock inspired scientific illustration.
 Composition: one clear infrastructure concept, readable at thumbnail size.
 Texture: subtle print grain, imperfect ink.
-Palette: cream, muted green family, dark ink.
+Palette: cream, dark ink, sage green, teal-blue, warm rust, and optional ochre.
 Constraints: no text, no logos, no generic cloud icon cluster, no glossy UI icon style.
 ```
 
@@ -246,7 +254,8 @@ Examples:
 - Is there one clear concept?
 - Does the image match the OASIS print-inspired family?
 - Does the image communicate the real content intent?
-- Is the palette limited and muted?
+- Does the palette use 3 to 4 brighter but earthy colors instead of reading as
+  muddy or monochrome?
 - Is there visible texture and slight imperfection?
 - Is the image readable at homepage thumbnail size?
 - Is there no text inside the image?
