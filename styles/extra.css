@@ -1,0 +1,367 @@
+/* Final authority for homepage visual/brand styling. Keep structural compatibility glue in docs/assets/css/style.css. */
+/* -------------------------------------------------
+   Global Typography (ESIIL feel)
+   ------------------------------------------------- */
+body,
+.md-typeset {
+  font-family: var(--oasis-font-sans);
+  color: var(--oasis-text-primary);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+:root{
+  --oasis-sidebar-w: 300px;
+  --oasis-home-top-gap: 4rem; /* cancels MkDocs Material container top padding on homepage */
+}
+
+/* Headings */
+.md-typeset h1 {
+  font-weight: 600;
+  color: var(--oasis-blue);
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  color: var(--oasis-blue);
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+  color: var(--oasis-blue);
+}
+
+/* Accent / Kicker text */
+.oasis-kicker {
+  color: var(--oasis-teal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+/* -------------------------------------------------
+   Full-width layout (remove left/right white gutters)
+   ------------------------------------------------- */
+
+.md-grid {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.md-main__inner,
+.md-content,
+.md-content__inner {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.md-content__inner {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.oasis-layout .md-content__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* -------------------------------------------------
+   Sidebar / TOC sizing + typography
+   ------------------------------------------------- */
+
+@media (min-width: 60em) {
+  .md-sidebar--primary {
+    width: var(--oasis-sidebar-width) !important;
+  }
+}
+
+.md-sidebar--primary .md-nav__link {
+  font-size: var(--oasis-sidebar-font-size) !important;
+  line-height: var(--oasis-sidebar-line-height) !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+}
+
+/* -------------------------------------------------
+   Sidebar cleanup — remove redundant header/junk above Tags
+   ------------------------------------------------- */
+
+.md-sidebar--primary .md-sidebar__title,
+.md-sidebar--primary .md-sidebar__topic,
+.md-sidebar--primary .md-nav__title.md-nav__title--site {
+  display: none !important;
+}
+
+.md-sidebar--primary hr,
+.md-sidebar--primary .md-nav__source,
+.md-sidebar--primary .md-nav__title + .md-nav__list {
+  border-top: none !important;
+}
+
+.md-sidebar--primary::before,
+.md-sidebar--primary::after,
+.md-sidebar--primary .md-sidebar__scrollwrap::before,
+.md-sidebar--primary .md-sidebar__scrollwrap::after,
+.md-sidebar--primary .md-sidebar__inner::before,
+.md-sidebar--primary .md-sidebar__inner::after {
+  content: none !important;
+  background: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* -------------------------------------------------
+   Sidebar: remove stacked boxes / backgrounds
+   ------------------------------------------------- */
+
+/* Remove the white top box and any panel chrome */
+.md-sidebar--primary .md-sidebar__inner,
+.md-sidebar--primary .md-nav,
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__source,
+.md-sidebar--primary .md-nav__header {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Remove spacing that can expose unwanted stacked layers */
+.md-sidebar--primary .md-sidebar__inner {
+  margin: 0 !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* -------------------------------------------------
+   Sidebar: single surface layer, 50% transparent, underlap header
+   ------------------------------------------------- */
+
+.md-sidebar--primary,
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner {
+  background-image: none !important;
+  -webkit-backdrop-filter: saturate(1.1) blur(0px);
+  backdrop-filter: saturate(1.1) blur(0px);
+}
+
+.md-sidebar--primary {
+  background-color: var(--oasis-surface-sidebar) !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner {
+  background: transparent !important;
+}
+
+@media (min-width: 60em) {
+  .md-sidebar--primary {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+}
+
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__link {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav__item--active > .md-nav__link {
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+  color: #fff !important;
+}
+
+.md-header{
+  color: #111 !important;
+  border-bottom: 1px solid var(--oasis-header-border);
+  box-shadow: none !important;
+  z-index: 20;
+}
+
+.md-header a,
+.md-header .md-header__button,
+.md-header .md-header__title,
+.md-header .md-ellipsis{
+  color: var(--oasis-header-fg) !important;
+}
+
+/* search on white */
+.md-search__form{ background: rgba(0,0,0,0.06) !important; }
+.md-search__input{ color: var(--oasis-header-fg) !important; }
+.md-search__icon,
+.md-search__input::placeholder{ color: rgba(0,0,0,0.55) !important; }
+
+/* -------------------------------------------------
+   Buttons (ESIIL weight + tone)
+   ------------------------------------------------- */
+a.md-button,
+button.md-button {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* -------------------------------------------------
+   Contribute Badge (Solid Blue Surface)
+   ------------------------------------------------- */
+.oasis-contribute-badge,
+.sticker-badge.oasis-contribute-badge {
+  background-color: var(--oasis-surface-cta) !important;
+  background-image: none !important;
+  color: white !important;
+  font-weight: 600;
+  border: none;
+}
+
+.oasis-contribute-badge:hover,
+.oasis-contribute-badge:focus-visible {
+  filter: brightness(0.92);
+}
+
+/* -------------------------------------------------
+   Header / Logo — bigger to match ESIIL scale
+   ------------------------------------------------- */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg,
+.md-logo img,
+.md-logo svg {
+  height: var(--oasis-logo-height) !important;
+  width: auto !important;
+}
+
+.md-header__inner {
+  align-items: center;
+}
+
+.md-header {
+  min-height: calc(var(--oasis-logo-height) + 22px);
+}
+
+/* -------------------------------------------------
+   Hero Layout — Clean ESIIL-style whitespace
+   ------------------------------------------------- */
+.md-content__inner {
+  padding-top: 4rem;
+}
+
+/* Homepage top-gap cancellation is container-scoped */
+.oasis-layout{
+  margin-top: calc(var(--oasis-home-top-gap) * -1);
+  padding-top: var(--oasis-home-top-gap);
+}
+
+.oasis-layout .oasis-main .md-typeset h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* --- ESIIL-style banner hero (homepage) --- */
+.oasis-layout .oasis-main .oasis-hero {
+  margin-top: calc(var(--md-header-height, 3rem) * -1);
+  padding-top: var(--md-header-height, 3rem);
+}
+
+.esiil-banner{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  min-height: 520px;
+
+  background:
+    linear-gradient(90deg, rgba(35,74,101,0.90), rgba(0,113,53,0.90)),
+    url("../assets/ForestBanner_NASA_Imagery.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding-top: calc(var(--md-header-height, 64px) + 72px);
+  padding-bottom: 80px;
+  color: #fff;
+}
+
+.esiil-banner__inner{
+  width: 100%;
+}
+
+.esiil-banner .md-grid,
+.esiil-banner .md-content,
+.esiil-banner .md-content__inner,
+.esiil-banner__inner {
+  background: transparent !important;
+}
+
+.esiil-banner h1,
+.esiil-banner h2,
+.esiil-banner h3,
+.esiil-banner p{
+  color: #fff !important;
+}
+
+/* Optional: make the first small heading “WELCOME TO OASIS” match ESIIL style */
+.oasis-layout .oasis-main .esiil-banner .esiil-kicker{
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+/* Return page background to normal after hero */
+.oasis-layout,
+.oasis-layout .md-content,
+.oasis-layout .md-content__inner {
+  background: #fff;
+}
+
+@media (min-width: 60em){
+  .oasis-layout{
+    display: flex;
+    align-items: stretch;
+  }
+
+  .oasis-sidebar{
+    flex: 0 0 var(--oasis-sidebar-w);
+    width: var(--oasis-sidebar-w);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+
+  .oasis-sidebar *{
+    max-width: 100%;
+  }
+
+  .oasis-main{
+    flex: 1 1 auto;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .oasis-main .oasis-hero{
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .oasis-main .oasis-hero::before{
+    left: 0;
+    margin-left: 0;
+    right: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}

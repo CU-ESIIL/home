@@ -1,0 +1,41 @@
+/* Structural compatibility glue only (legacy layout quirks).
+   Do not add brand/aesthetic styling here; put visual styling in docs/styles/extra.css. */
+
+/* Static header container/image behavior */
+.static-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.static-header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .static-header img {
+    max-height: 200px;
+  }
+}
+
+/* Header logo sizing */
+.md-header__button.md-logo img {
+  max-height: 400px;
+  width: auto;
+}
+
+/* Hide floating page title in header */
+.md-header__topic {
+  display: none;
+}
+
+/* Tag cloud layout only */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
