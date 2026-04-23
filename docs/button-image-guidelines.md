@@ -17,22 +17,23 @@ an existing button image.
 
 ## Design intent
 
-OASIS button images should look like scientific print artifacts, not generic
-software icons. The visual language should feel handcrafted, ecological,
-research-oriented, and slightly imperfect.
+OASIS button images should look like minimal scientific screen-print emblems,
+not generic software icons and not small illustrations. The visual language
+should feel abstract, legible, research-oriented, and slightly imperfect.
 
 The intended family is:
 
-- screen print
-- linocut
-- woodblock-inspired scientific illustration
+- minimal scientific screen-print emblem
+- mid-century scientific infographic plus logo hybrid
+- bold geometric symbolic composition
 
 The intended family is not:
 
 - glossy interface art
 - corporate SaaS illustration
 - generic AI icon generation
-- clean flat vector symbol sets
+- scenic illustration
+- miniature poster art
 
 ## Core visual style
 
@@ -40,51 +41,50 @@ Required style characteristics:
 
 - square format
 - one clear concept per image
-- print-inspired scientific illustration
+- completely flat composition with no perspective
+- emblem-like symbolic design, not an illustrated scene
 - subtle texture and slight imperfection
-- restrained 3 to 4 color palette that feels brighter and more lively while
-  still print-based
+- restrained 3 to 4 color palette
 - strong readability at homepage thumbnail size
 
 Default style shorthand:
 
-`screen print / linocut / woodblock inspired scientific illustration, square image, cream paper, dark ink, 3 to 4 brighter but earthy colors, slight print texture, one clear subject, no text`
+`minimal scientific screen-print emblem, square image, completely flat, highly abstract and symbolic, 2 to 4 large elements, strong negative space, cream paper, navy or teal structure, muted red or orange or blue accents, slight print texture, no text`
 
 ## Composition rules
 
 - Use a square canvas.
-- Show one dominant subject or one tightly unified concept.
-- Build around a readable focal structure.
+- Show one dominant symbol and at most one or two supporting marks.
+- Build around a readable focal structure with strong negative space.
 - Prioritize recognition at small scale.
-- Use negative space intentionally.
 - Keep supporting details subordinate to the main idea.
-- Use one primary scene plus at most one or two subordinate analytic elements.
-- Prefer a central subject with a small number of contextual elements.
-- Avoid multi-panel or collage-like layouts unless the content truly requires a
-  synthesis scene.
+- Prefer centered or strongly balanced compositions.
+- Use only 2 to 4 large elements.
+- Reduce complexity aggressively.
+- Avoid scenes, dashboards, and collage-like layouts.
 
 ## Color palette guidance
 
 Primary palette:
 
-- dark ink: charcoal, deep green-black, forest ink
+- dark structure: navy, dark teal, or deep blue-green
 - light ground: cream, warm ivory, parchment
-- color 1: leafy sage or moss green
-- color 2: brighter teal-blue or dusty cyan
-- color 3: warm rust, clay red, or poppy coral
-- optional color 4: ochre or golden straw
+- accent 1: muted red, rust, or orange
+- accent 2: muted teal, blue, or cyan
+- optional accent 3: muted gold or ochre
 
 Palette rule:
 
-- Most new images should use 3 clear colors plus dark ink on a cream ground.
-- The colors should pop more than the earlier muted set, but still feel
-  printed, earthy, and scientific rather than neon or glossy.
+- Most new images should use 3 to 4 colors maximum including the dark
+  structural ink.
+- Prefer navy or teal structure with restrained red, orange, or blue accents.
+- Avoid brown-heavy palettes.
 - Use contrast intentionally so the image reads at small size.
 
 Avoid:
 
-- monochrome treatments unless replacing a legacy asset that already depends on
-  it
+- monochrome treatments unless replacing a legacy asset that already depends on it
+- brown-heavy palettes
 - neon greens
 - bright tech blues and purples
 - glossy gradients
@@ -105,13 +105,13 @@ Avoid:
 - Derive the subject from the actual content of the button.
 - Inspect the linked page or repository README when available before deciding
   what the image depicts.
-- Represent the real domain, workflow, or scientific theme.
-- Prefer concrete environmental data science subjects over abstract symbols.
-- For collaboration-oriented buttons, show collaboration in the context of
-  science, fieldwork, maps, data, or synthesis.
-- For data or compute buttons, combine computing with the domain subject when
-  possible.
-- Avoid generic symbols when a content-specific subject is available.
+- First represent the core process or question.
+- Second represent the key method or data structure.
+- Include biology only if it is central and scientifically accurate.
+- Prefer symbols over scenes.
+- Prefer dots, grids, lines, blocks, arrows, boundaries, networks, and simple
+  silhouettes.
+- Avoid generic symbols when a content-specific symbolic encoding is available.
 
 ## What the image should communicate
 
@@ -120,6 +120,8 @@ Each image should communicate:
 - what this content is about
 - what kind of scientific or technical work it represents
 - the domain or theme behind the destination
+- the core process first
+- the key method or data structure second
 
 The image should not merely communicate:
 
@@ -138,11 +140,16 @@ Do not use:
 - glossy UI icon style
 - corporate SaaS icon look
 - generic AI defaults
-- shiny 3D render style
+- scenic layouts
+- perspective or angled views
+- 3D or isometric forms
 - sterile flat vector icon packs
 - random symbol collages
-- fields of tiny floating icons without one dominant scene
-- unrelated scientific icons mashed together
+- fields of tiny floating icons without one dominant symbol
+- multi-panel dashboards
+- overly detailed drawings
+- decorative nature scenes
+- generic plants or animals
 - meme aesthetics
 - mascot or emoji style
 
@@ -150,19 +157,21 @@ Do not use:
 
 ```text
 Create a square homepage button image for OASIS.
-Subject: [specific content-derived subject].
-Style: screen print / linocut / woodblock inspired scientific illustration.
-Composition: one clear concept, strong focal structure, readable at thumbnail size.
-Texture: subtle paper grain, imperfect ink, carved or printed linework, not clean vector.
-Palette: cream background, dark ink, and 3 to 4 brighter but earthy print colors such as sage green, teal-blue, warm rust, and ochre.
-Mood: thoughtful, research-oriented, ecological, content-specific.
-Constraints: no text, no logos, no photorealism, no glossy UI icon style, no corporate SaaS look.
+Subject: [one sentence science summary].
+Primary symbol: [core process].
+Supporting symbol: [key method or data structure].
+Optional biology: [only if central and accurate].
+Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
+Composition: completely flat, highly abstract and symbolic, readable instantly at small size, 2 to 4 large elements, strong negative space, centered or balanced layout.
+Texture: cream paper, subtle paper grain, light ink texture or halftone, slightly imperfect edges, no gradients.
+Palette: 3 to 4 colors maximum including navy or teal structure and muted red or orange or blue accents.
+Constraints: no text, no logos, no perspective, no 3D, no scenes, no illustrative layout, no photorealism, no glossy UI icon style, no corporate SaaS look.
 ```
 
 ## Negative prompt template
 
 ```text
-text, letters, logo, photorealism, glossy icon, app icon, clean flat vector, SaaS illustration, shiny 3D render, muddy monochrome palette, neon colors, futuristic dashboard, corporate tech branding, emoji style, mascot, clutter, unrelated symbols, infographic, stock icon set
+text, letters, logo, photorealism, glossy icon, app icon, SaaS illustration, shiny 3D render, perspective, isometric, scene, landscape, dashboard, busy composition, clutter, decorative plants, decorative animals, unrelated symbols, infographic panel, stock icon set, muddy brown palette, smooth gradients
 ```
 
 ## Example prompts
@@ -171,59 +180,74 @@ text, letters, logo, photorealism, glossy icon, app icon, clean flat vector, Saa
 
 ```text
 Create a square homepage button image for OASIS.
-Subject: a wildfire boundary research scene showing ecological burn patterns, landscape edges, and analysis structure.
-Style: screen print / linocut / woodblock inspired scientific illustration.
-Composition: one clear focal concept, readable at thumbnail size.
-Texture: subtle paper grain, imperfect ink, carved linework.
-Palette: cream paper, dark ink, sage green, teal-blue, and warm rust.
-Constraints: no text, no logos, no photorealism, no glossy UI icon style, no corporate SaaS look.
+Subject: wildfire boundary analysis across landscapes.
+Primary symbol: a bold irregular boundary edge.
+Supporting symbol: a grid and one directional analysis mark.
+Optional biology: none.
+Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
+Composition: completely flat, highly abstract and symbolic, 2 to 4 large elements, strong negative space.
+Texture: cream paper, light ink texture, slightly imperfect edges.
+Palette: navy structure with muted rust and teal accents.
+Constraints: no text, no perspective, no scenery, no photorealism.
 ```
 
 ### 2. Analytics resource
 
 ```text
 Create a square homepage button image for OASIS.
-Subject: environmental data analysis combining a map surface, ecological forms, and a simple plot in one coherent printed scene.
-Style: screen print / linocut / woodblock inspired scientific illustration.
-Composition: one integrated concept, not a symbol collage.
-Texture: printed ink texture and carved contours.
-Palette: cream, dark ink, sage green, teal-blue, and ochre.
-Constraints: no text, no logos, no photorealism, no glossy interface icon style.
+Subject: environmental data analysis.
+Primary symbol: a simple plot line crossing a gridded map block.
+Supporting symbol: a small node cluster or data dots.
+Optional biology: none.
+Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
+Composition: flat, centered, 2 to 4 large elements, strong negative space.
+Texture: cream paper, light ink texture.
+Palette: dark teal structure with muted blue and orange accents.
+Constraints: no text, no dashboard layout, no photorealism.
 ```
 
 ### 3. Working-group collaboration
 
 ```text
 Create a square homepage button image for OASIS.
-Subject: a small group of researchers gathered around environmental data, field observations, and synthesis materials.
-Style: screen print / woodblock scientific illustration.
-Composition: one central collaboration scene with a small number of supporting scientific details.
+Subject: collaborative synthesis around environmental data.
+Primary symbol: a central circular meeting or synthesis mark.
+Supporting symbol: one network arc and one plot or grid.
+Optional biology: none.
+Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
+Composition: flat, symbolic, 2 to 4 large elements, strong negative space.
 Texture: imperfect ink and paper grain.
-Palette: cream, dark ink, sage green, teal-blue, and warm rust.
-Constraints: no text, no generic network iconography, no corporate illustration style.
+Palette: navy structure with muted red and teal accents.
+Constraints: no text, no scenic figures, no corporate illustration style.
 ```
 
 ### 4. Education or quickstart
 
 ```text
 Create a square homepage button image for OASIS.
-Subject: a learner-oriented environmental data science scene with notebook, map, and analysis marks arranged as one coherent printed composition.
-Style: linocut / woodblock inspired scientific illustration.
-Composition: one clear concept, readable at small scale.
-Palette: cream paper, dark ink, sage green, teal-blue, and ochre.
-Constraints: no text, no photorealism, no glossy UI icon style.
+Subject: learning environmental data science methods.
+Primary symbol: an open book or lesson block.
+Supporting symbol: a grid, plot line, or branching method arrow.
+Optional biology: none.
+Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
+Composition: flat, symbolic, 2 to 4 large elements, strong negative space.
+Palette: dark teal structure with muted orange and blue accents.
+Constraints: no text, no scenes, no photorealism.
 ```
 
 ### 5. Container or compute infrastructure
 
 ```text
 Create a square homepage button image for OASIS.
-Subject: environmental computing infrastructure represented through containers, data flow, and scientific analysis tools as one coherent ecological-computation scene.
-Style: screen print / linocut / woodblock inspired scientific illustration.
-Composition: one clear infrastructure concept, readable at thumbnail size.
+Subject: environmental computing infrastructure.
+Primary symbol: one container or modular block.
+Supporting symbol: a simple data-flow arrow and one grid or plot.
+Optional biology: none.
+Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
+Composition: flat, symbolic, 2 to 4 large elements, strong negative space.
 Texture: subtle print grain, imperfect ink.
-Palette: cream, dark ink, sage green, teal-blue, warm rust, and optional ochre.
-Constraints: no text, no logos, no generic cloud icon cluster, no glossy UI icon style.
+Palette: navy or teal structure with muted orange and blue accents.
+Constraints: no text, no logos, no scenic layouts, no glossy UI icon style.
 ```
 
 ## Filename and asset conventions
@@ -252,14 +276,16 @@ Examples:
 
 - Is the image square?
 - Is there one clear concept?
-- Does the image match the OASIS print-inspired family?
+- Does the image match the OASIS emblem-like scientific print family?
 - Does the image communicate the real content intent?
-- Does the palette use 3 to 4 brighter but earthy colors instead of reading as
-  muddy or monochrome?
+- Is the composition completely flat with no perspective?
+- Is the image built from only 2 to 4 large elements?
+- Does the image encode process first and method second?
+- Is the palette limited, balanced, and not brown-heavy?
 - Is there visible texture and slight imperfection?
 - Is the image readable at homepage thumbnail size?
 - Is there no text inside the image?
-- Does it avoid photorealism, glossy UI icon style, and corporate SaaS look?
+- Does it avoid scenes, photorealism, glossy UI icon style, and corporate SaaS look?
 - Is the asset saved in the correct directory?
 - Does the filename follow the new-asset convention?
 
@@ -269,12 +295,14 @@ Before generating or replacing any button image, Codex must:
 
 1. Read this file in full.
 2. Inspect existing button images in `docs/assets/thumbnails/`.
-3. Derive the subject from the actual content.
-4. Use the prompt template from this document.
+3. Write a one-sentence subject summary.
+4. Define the primary symbol, supporting symbol, and optional biology.
+5. Derive the image from the actual content.
+6. Use the prompt template from this document.
 5. Use the negative prompt template when supported.
-6. Prefer the simpler composition if multiple ideas compete.
-7. Save the asset using the correct path and naming convention.
-8. Verify consistency before committing.
+7. Prefer the simpler composition if multiple ideas compete.
+8. Save the asset using the correct path and naming convention.
+9. Verify consistency before committing.
 
 ## Notes on consistency with homepage
 

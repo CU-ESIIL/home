@@ -211,6 +211,7 @@ If uncertain, agents should:
 
 - inspect existing button images
 - inspect the linked destination page or repository README when available
+- reduce the image to a process symbol plus a method symbol
 - choose simpler compositions
 - avoid introducing new styles
 
@@ -225,9 +226,10 @@ the agent must:
 1. Read the guideline file.
 2. Inspect the linked page or repository README when available, then derive an
    appropriate subject from the content.
-3. Use the prompt template defined in the guideline.
-4. Save the image using the correct path and naming convention.
-5. Verify visual consistency before committing.
+3. Define the subject, primary symbol, supporting symbol, and optional biology.
+4. Use the prompt template defined in the guideline.
+5. Save the image using the correct path and naming convention.
+6. Verify visual consistency before committing.
 
 ## 7. Build, Test, and Validation Expectations
 
