@@ -212,6 +212,7 @@ If uncertain, agents should:
 - inspect existing button images
 - inspect the linked destination page or repository README when available
 - reduce the image to a process symbol plus a method symbol
+- fill the square and avoid badge-like centered layouts
 - choose simpler compositions
 - avoid introducing new styles
 
@@ -227,9 +228,10 @@ the agent must:
 2. Inspect the linked page or repository README when available, then derive an
    appropriate subject from the content.
 3. Define the subject, primary symbol, supporting symbol, and optional biology.
-4. Use the prompt template defined in the guideline.
-5. Save the image using the correct path and naming convention.
-6. Verify visual consistency before committing.
+4. Build a connected square-tile composition rather than a centered icon.
+5. Use the prompt template defined in the guideline.
+6. Save the image using the correct path and naming convention.
+7. Verify visual consistency before committing.
 
 ## 7. Build, Test, and Validation Expectations
 

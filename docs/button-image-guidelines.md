@@ -17,15 +17,16 @@ an existing button image.
 
 ## Design intent
 
-OASIS button images should look like minimal scientific screen-print emblems,
-not generic software icons and not small illustrations. The visual language
-should feel abstract, legible, research-oriented, and slightly imperfect.
+OASIS button images should look like minimal scientific screen-print panels,
+not generic software icons, not centered badges, and not small illustrations.
+The visual language should feel abstract, legible, research-oriented, and
+slightly imperfect.
 
 The intended family is:
 
-- minimal scientific screen-print emblem
+- minimal scientific screen-print panel
 - mid-century scientific infographic plus logo hybrid
-- bold geometric symbolic composition
+- bold geometric symbolic composition distributed across a square tile
 
 The intended family is not:
 
@@ -34,6 +35,7 @@ The intended family is not:
 - generic AI icon generation
 - scenic illustration
 - miniature poster art
+- centered logo or badge layouts
 
 ## Core visual style
 
@@ -42,26 +44,31 @@ Required style characteristics:
 - square format
 - one clear concept per image
 - completely flat composition with no perspective
-- emblem-like symbolic design, not an illustrated scene
+- symbolic designed panel, not an illustrated scene
 - subtle texture and slight imperfection
 - restrained 3 to 4 color palette
 - strong readability at homepage thumbnail size
+- visual weight distributed across the square
 
 Default style shorthand:
 
-`minimal scientific screen-print emblem, square image, completely flat, highly abstract and symbolic, 2 to 4 large elements, strong negative space, cream paper, navy or teal structure, muted red or orange or blue accents, slight print texture, no text`
+`minimal scientific screen-print panel, square image, completely flat, highly abstract and symbolic, 2 to 4 connected elements, edge-filled composition, strong negative space, cream paper, navy or teal structure, muted red or orange or blue accents, slight print texture, no text`
 
 ## Composition rules
 
 - Use a square canvas.
-- Show one dominant symbol and at most one or two supporting marks.
+- Show one dominant element and at most one or two supporting elements.
 - Build around a readable focal structure with strong negative space.
 - Prioritize recognition at small scale.
 - Keep supporting details subordinate to the main idea.
-- Prefer centered or strongly balanced compositions.
+- Distribute visual weight across the whole square.
+- Anchor at least one element to an edge.
+- Extend shapes toward edges or corners.
+- Connect or overlap elements into one composition.
+- Use directional flow when helpful, such as left to right, bottom to top, or diagonal.
 - Use only 2 to 4 large elements.
 - Reduce complexity aggressively.
-- Avoid scenes, dashboards, and collage-like layouts.
+- Avoid centered icon layouts, empty margins, and collage-like layouts.
 
 ## Color palette guidance
 
@@ -110,7 +117,7 @@ Avoid:
 - Include biology only if it is central and scientifically accurate.
 - Prefer symbols over scenes.
 - Prefer dots, grids, lines, blocks, arrows, boundaries, networks, and simple
-  silhouettes.
+  glyphs.
 - Avoid generic symbols when a content-specific symbolic encoding is available.
 
 ## What the image should communicate
@@ -122,6 +129,7 @@ Each image should communicate:
 - the domain or theme behind the destination
 - the core process first
 - the key method or data structure second
+- a connected designed surface rather than a floating icon
 
 The image should not merely communicate:
 
@@ -143,6 +151,9 @@ Do not use:
 - scenic layouts
 - perspective or angled views
 - 3D or isometric forms
+- circular or badge-like layouts
+- large empty borders
+- disconnected icons sitting apart from each other
 - sterile flat vector icon packs
 - random symbol collages
 - fields of tiny floating icons without one dominant symbol
@@ -161,17 +172,17 @@ Subject: [one sentence science summary].
 Primary symbol: [core process].
 Supporting symbol: [key method or data structure].
 Optional biology: [only if central and accurate].
-Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
-Composition: completely flat, highly abstract and symbolic, readable instantly at small size, 2 to 4 large elements, strong negative space, centered or balanced layout.
+Style: minimal scientific screen-print panel, mid-century scientific infographic plus logo hybrid.
+Composition: completely flat, highly abstract and symbolic, readable instantly at small size, 2 to 4 large connected elements, edge-filled square tile, strong negative space, no centered badge layout.
 Texture: cream paper, subtle paper grain, light ink texture or halftone, slightly imperfect edges, no gradients.
 Palette: 3 to 4 colors maximum including navy or teal structure and muted red or orange or blue accents.
-Constraints: no text, no logos, no perspective, no 3D, no scenes, no illustrative layout, no photorealism, no glossy UI icon style, no corporate SaaS look.
+Constraints: no text, no logos, no perspective, no 3D, no scenes, no circular layout, no empty margins, no illustrative layout, no photorealism, no glossy UI icon style, no corporate SaaS look.
 ```
 
 ## Negative prompt template
 
 ```text
-text, letters, logo, photorealism, glossy icon, app icon, SaaS illustration, shiny 3D render, perspective, isometric, scene, landscape, dashboard, busy composition, clutter, decorative plants, decorative animals, unrelated symbols, infographic panel, stock icon set, muddy brown palette, smooth gradients
+text, letters, logo, photorealism, glossy icon, app icon, SaaS illustration, shiny 3D render, perspective, isometric, scene, landscape, dashboard, centered logo, circular badge, large empty margin, disconnected icons, clutter, decorative plants, decorative animals, unrelated symbols, infographic panel, stock icon set, muddy brown palette, smooth gradients
 ```
 
 ## Example prompts
@@ -185,7 +196,7 @@ Primary symbol: a bold irregular boundary edge.
 Supporting symbol: a grid and one directional analysis mark.
 Optional biology: none.
 Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
-Composition: completely flat, highly abstract and symbolic, 2 to 4 large elements, strong negative space.
+Composition: completely flat, highly abstract and symbolic, 2 to 4 connected elements, edge-filled square tile, strong negative space.
 Texture: cream paper, light ink texture, slightly imperfect edges.
 Palette: navy structure with muted rust and teal accents.
 Constraints: no text, no perspective, no scenery, no photorealism.
@@ -200,7 +211,7 @@ Primary symbol: a simple plot line crossing a gridded map block.
 Supporting symbol: a small node cluster or data dots.
 Optional biology: none.
 Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
-Composition: flat, centered, 2 to 4 large elements, strong negative space.
+Composition: flat, edge-filled, 2 to 4 connected elements, strong negative space.
 Texture: cream paper, light ink texture.
 Palette: dark teal structure with muted blue and orange accents.
 Constraints: no text, no dashboard layout, no photorealism.
@@ -215,7 +226,7 @@ Primary symbol: a central circular meeting or synthesis mark.
 Supporting symbol: one network arc and one plot or grid.
 Optional biology: none.
 Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
-Composition: flat, symbolic, 2 to 4 large elements, strong negative space.
+Composition: flat, symbolic, 2 to 4 connected elements, edge-filled square tile, strong negative space.
 Texture: imperfect ink and paper grain.
 Palette: navy structure with muted red and teal accents.
 Constraints: no text, no scenic figures, no corporate illustration style.
@@ -230,7 +241,7 @@ Primary symbol: an open book or lesson block.
 Supporting symbol: a grid, plot line, or branching method arrow.
 Optional biology: none.
 Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
-Composition: flat, symbolic, 2 to 4 large elements, strong negative space.
+Composition: flat, symbolic, 2 to 4 connected elements, edge-filled square tile, strong negative space.
 Palette: dark teal structure with muted orange and blue accents.
 Constraints: no text, no scenes, no photorealism.
 ```
@@ -244,7 +255,7 @@ Primary symbol: one container or modular block.
 Supporting symbol: a simple data-flow arrow and one grid or plot.
 Optional biology: none.
 Style: minimal scientific screen-print emblem, mid-century scientific infographic plus logo hybrid.
-Composition: flat, symbolic, 2 to 4 large elements, strong negative space.
+Composition: flat, symbolic, 2 to 4 connected elements, edge-filled square tile, strong negative space.
 Texture: subtle print grain, imperfect ink.
 Palette: navy or teal structure with muted orange and blue accents.
 Constraints: no text, no logos, no scenic layouts, no glossy UI icon style.
@@ -281,6 +292,9 @@ Examples:
 - Is the composition completely flat with no perspective?
 - Is the image built from only 2 to 4 large elements?
 - Does the image encode process first and method second?
+- Does the composition fill the square instead of behaving like a centered logo?
+- Are the elements connected or interacting rather than floating independently?
+- Does at least one element reach toward an edge or corner?
 - Is the palette limited, balanced, and not brown-heavy?
 - Is there visible texture and slight imperfection?
 - Is the image readable at homepage thumbnail size?
