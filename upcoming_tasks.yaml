@@ -1,0 +1,35 @@
+upcoming_tasks: []
+completed_tasks:
+  - title: "Add GitHub linking to tasks"
+    start: 2025-08-15
+    end: 2025-08-21
+  - title: "Automate Gantt chart updates"
+    start: 2025-08-22
+    end: 2025-08-26
+  - title: "Interactive Cloud Triangle lesson"
+    start: 2025-08-29
+    end: 2025-09-02
+  - title: "How to Contribute guide launch"
+    start: 2025-09-10
+    end: 2025-09-12
+  - title: "Data Library quickstart integration"
+    start: 2025-09-12
+    end: 2025-09-12
+  - title: "Analytics Library quickstart integration"
+    start: 2025-09-12
+    end: 2025-09-12
+  - title: "Project Group OASIS hub refresh"
+    start: 2025-09-15
+    end: 2025-09-16
+  - title: "Homepage working group cohort refresh"
+    start: 2026-04-21
+    end: 2026-04-21
+  - title: "Homepage research project section refresh"
+    start: 2026-04-21
+    end: 2026-04-21
+  - title: "Homepage events and summits refresh"
+    start: 2026-04-21
+    end: 2026-04-21
+  - title: "Homepage templates and resource links refresh"
+    start: 2026-04-21
+    end: 2026-04-21

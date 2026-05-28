@@ -1,0 +1,256 @@
+/*
+  Brand Safe Overlay
+  - Token expansion
+  - Banner typography is scoped to .esiil-hero only
+  - Do not apply banner heading sizes globally
+  - Style-guide buttons
+  No layout overrides. No !important.
+*/
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #234A65;
+  --md-primary-fg-color--light: #2d5c7c;
+  --md-primary-fg-color--dark: #1f4058;
+
+  --md-accent-fg-color: #42BCDC;
+  --md-accent-fg-color--transparent: rgba(66,188,220,0.15);
+
+  --md-default-fg-color: #161A19;
+  --md-default-bg-color: #ffffff;
+
+  --md-code-bg-color: #E3E3E3;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #234A65;
+  --md-primary-fg-color--light: #2d5c7c;
+  --md-primary-fg-color--dark: #1f4058;
+
+  --md-accent-fg-color: #42BCDC;
+  --md-accent-fg-color--transparent: rgba(66,188,220,0.15);
+
+  --md-default-fg-color: #EDF0F2;
+  --md-default-bg-color: #161A19;
+
+  --md-code-bg-color: #1f4058;
+}
+
+.md-typeset {
+  color: var(--md-default-fg-color);
+  font-size: 1rem;
+}
+
+/* ================================
+   Header Logo Sizing
+   ================================ */
+
+.md-header__button.md-logo img {
+  height: 42px;
+  width: auto;
+}
+
+/* Slightly larger on wide screens */
+@media (min-width: 960px) {
+  .md-header__button.md-logo img {
+    height: 50px;
+  }
+}
+
+.esiil-hero h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+/* ================================
+   Hero Background (ESIIL style)
+   ================================ */
+
+.esiil-hero {
+  background: linear-gradient(
+    120deg,
+    #234A65 0%,
+    #007135 60%,
+    #42BCDC 100%
+  );
+  color: #ffffff;
+  max-width: 56rem;
+  margin: 0 auto 3rem auto;
+  padding: 5rem 2rem 4rem 2rem;
+  border-radius: 12px;
+}
+
+.esiil-hero p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+/* Light text inside hero */
+.esiil-hero h1,
+.esiil-hero h2,
+.esiil-hero h3,
+.esiil-hero p,
+.esiil-hero .oasis-header {
+  color: #ffffff;
+}
+
+/* Slightly larger hero title */
+.esiil-hero .oasis-header {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.esiil-hero::after {
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 999px;
+  margin-top: 1.25rem;
+  background: linear-gradient(90deg, #42BCDC, #007135);
+  opacity: 0.85;
+}
+
+.tag-suggestions.oasis-pills.esiil-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+.esiil-hero-links a:not(.md-button) {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(66,188,220,0.12);
+  color: #234A65;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(66,188,220,0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.esiil-hero-links a:not(.md-button):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+.esiil-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.esiil-hero h2 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  margin-top: 0.25em;
+}
+
+.esiil-section-title {
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+.esiil-card-title {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.esiil-misc-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.esiil-section {
+  padding: 1.5rem 0;
+}
+
+.esiil-section--tight {
+  padding: 1rem 0;
+}
+
+.md-typeset .md-button {
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 0.5rem 2.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .md-button--primary {
+  background: linear-gradient(90deg, #42BCDC, #007135);
+  border: 0;
+  color: #ffffff;
+}
+
+.md-typeset .md-button--primary:hover {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+.md-typeset .md-button--secondary {
+  background: linear-gradient(90deg, #42BCDC, #007135);
+  color: #ffffff;
+  border: 0;
+}
+
+.esiil-hero .md-button--primary {
+  background: linear-gradient(90deg, #42BCDC, #007135);
+  color: #ffffff;
+}
+
+.esiil-hero .md-button--secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+.esiil-hero .md-button--secondary:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.md-typeset .admonition,
+.md-typeset details,
+.esiil-card {
+  background: #E3E3E3;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+/* Homepage 2-col layout (content-only; not Material containers) */
+.oasis-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+/* Sticky sidebar */
+.oasis-sidebar {
+  position: sticky;
+  top: 5rem;  /* below header */
+  align-self: start;
+}
+
+/* Ensure main column doesn’t overflow */
+.oasis-main {
+  min-width: 0;
+}
+
+/* Responsive: collapse to 1 column on small screens */
+@media (max-width: 900px) {
+  .oasis-layout {
+    grid-template-columns: 1fr;
+  }
+  .oasis-sidebar {
+    position: static;
+  }
+}
