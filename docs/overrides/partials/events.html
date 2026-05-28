@@ -1,0 +1,76 @@
+{% set events = [
+  {
+    "title": "Innovation Summit 2026",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2026/",
+    "image": "assets/thumbnails/innovation-summit-2026-button.png",
+    "tag": "2026",
+    "description": "AI for sustainability and environmental data-to-decision exchange."
+  },
+  {
+    "title": "HDR-ML Hackathon 2026",
+    "url": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026",
+    "image": "assets/thumbnails/hdr-ml-hackathon-2026-button.png",
+    "tag": "2026",
+    "description": "Hands-on machine learning collaboration around environmental datasets."
+  },
+  {
+    "title": "Innovation Summit 2025",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2025/",
+    "image": "assets/thumbnails/innovation_summit_2025.jpeg",
+    "tag": "2025",
+    "description": "Open environmental innovation at summit scale."
+  },
+  {
+    "title": "FIRE Plan 2024",
+    "url": "https://cu-esiil.github.io/FIRE-plan-2024/",
+    "image": "assets/thumbnails/fire_plan.jpeg",
+    "tag": "2024",
+    "description": "Planning and strategy work for fire management and shared response."
+  },
+  {
+    "title": "Forest Carbon Codefest",
+    "url": "https://cu-esiil.github.io/forest-carbon-codefest/",
+    "image": "assets/thumbnails/FCC.jpeg",
+    "tag": "Codefest",
+    "description": "A coding exchange focused on forest carbon research and tools."
+  }
+] %}
+
+<section class="oasis-band oasis-band--earth" id="events-summits-section">
+  <div class="oasis-shell">
+    <div class="oasis-section-heading" data-reveal>
+      <div class="oasis-section-heading__copy">
+        <p class="oasis-section-heading__eyebrow">Momentum</p>
+        <h2>Events &amp; Summits</h2>
+        <p>
+          Gatherings, codefests, workshops, and summits that turn OASIS into a
+          visible public exchange rather than a quiet back-end platform.
+        </p>
+      </div>
+
+      <a class="oasis-inline-link" href="directory/#events-summits-directory">
+        <span>View All Events</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="oasis-event-grid">
+      {% for event in events %}
+        <a class="oasis-event-card" href="{{ event.url }}" target="_blank" rel="noopener" data-reveal>
+          <div class="oasis-event-card__media">
+            <img src="{{ event.image }}" alt="{{ event.title }}" loading="lazy" decoding="async" />
+            <span class="oasis-event-card__tag">{{ event.tag }}</span>
+          </div>
+          <div class="oasis-event-card__body">
+            <h3>{{ event.title }}</h3>
+            <p>{{ event.description }}</p>
+            <span class="oasis-event-card__link">
+              <span>See Event</span>
+              <span aria-hidden="true">→</span>
+            </span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

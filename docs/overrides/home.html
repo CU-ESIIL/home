@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    document.documentElement.classList.add("oasis-home-template");
+  </script>
+{% endblock %}
+
+{% block content %}
+  <div class="oasis-homepage">
+    {% include "partials/hero.html" %}
+    {% include "partials/working_groups.html" %}
+    {% include "partials/staff_projects.html" %}
+    {% include "partials/events.html" %}
+    {% include "partials/infrastructure.html" %}
+    {% include "partials/footer_cta.html" %}
+  </div>
+{% endblock %}
