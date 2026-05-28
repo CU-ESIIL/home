@@ -16,20 +16,20 @@
 
 4. From your account, go to the navigation bar at left and select 'Workshops'
 
-![user portal](../assets/cyverse-user-portal.png)
+![user portal](../assets/collaborating-on-the-cloud/cyverse-user-portal.png)
 
 5. From the workshop page, find the workshop titled "Forest Carbon Codefest". It should look like this:
 
-![workshop tile](../assets/fcc-workshop-tile.png)
+![workshop tile](../assets/collaborating-on-the-cloud/fcc-workshop-tile.png)
 
 6. Click on the tile, and then on the page for the workshop, click, "Enroll" at upper right. You should be enrolled automatically if you are using the email you have given our team.
 
-![workshop enroll](../assets/workshop-enroll.png)
+![workshop enroll](../assets/collaborating-on-the-cloud/workshop-enroll.png)
 
 
 7. Head over to the Cyverse Discovery Environment by clicking on 'Services' at the upper right and then 'Discovery Environment' under 'My Services'.
 
-![user portal](../assets/cyverse-user-portal.png)
+![user portal](../assets/collaborating-on-the-cloud/cyverse-user-portal.png)
 
 
    You should now see the Discovery Environment:
@@ -46,15 +46,15 @@
 
 2. Select `JupyterLab ESIIL`
 
-![select jupyterlab esiil](../assets/select-j-esiil.png)
+![select jupyterlab esiil](../assets/collaborating-on-the-cloud/select-jupyter-esiil.png)
 
 3. Configure and launch your analysis - the defaults are fine for now:
 
-![defaults1](../assets/defaults1.png)
+![defaults1](../assets/collaborating-on-the-cloud/cyverse-defaults-step-1.png)
 
   <img width="881" alt="image" src="https://github.com/CU-ESIIL/hackathon2023_datacube/assets/3465768/b82f08d7-4d21-4fba-9e40-f0a4ac492898">
 
-![defaults3](../assets/defaults3.png)
+![defaults3](../assets/collaborating-on-the-cloud/cyverse-defaults-step-3.png)
 
 4. Click `Go to analysis`:
 
@@ -93,7 +93,7 @@
 
 6. open up the `create_github_keypair.ipynb` notebook by double-clicking:
 
-![create github keypair](../assets/create-github-keypair.png)
+![create github keypair](../assets/collaborating-on-the-cloud/create-github-keypair.png)
 
 7. Select the default kernel
 

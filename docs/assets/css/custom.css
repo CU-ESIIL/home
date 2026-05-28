@@ -653,7 +653,7 @@
   color: #f3f7f8;
   background:
     linear-gradient(180deg, rgba(18, 50, 73, 0.94), rgba(11, 41, 63, 0.98)),
-    url("../thumbnails/maka_sitomniya.jpeg") center / cover no-repeat;
+    url("../homepage/working-groups/maka-sitomniya-button.jpeg") center / cover no-repeat;
 }
 
 .oasis-footer-band::before {

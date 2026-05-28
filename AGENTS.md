@@ -110,10 +110,11 @@ needed to finish the task.
 - `scripts/update_dev_schedule.py`: updates the upcoming-task block and mermaid
   gantt block in `docs/dev-schedule.md`.
 
-### Repo structure and submodules
+### Repo structure and mirrored content
 
-- `docs/analytics-library/` is a Git submodule pointing at another repository.
-  Do not edit it unless the user explicitly wants submodule work.
+- `docs/analytics-library/` contains mirrored analytics-library content inside
+  this repository. Treat it as imported reference material and update it
+  intentionally rather than casually editing around it.
 
 ## 5. Homepage Safety Rules
 
@@ -273,8 +274,8 @@ handoff.
   use the local section’s existing structure, not a nearby section by default.
 - `docs/gantt_chart.png` is a static asset and can drift from
   `docs/dev-schedule.md`.
-- `docs/analytics-library/` may appear modified independently because it is a
-  submodule; do not “clean it up” unless asked.
+- `docs/analytics-library/` contains imported content from a separate project.
+  Avoid incidental cleanup there unless the task explicitly calls for it.
 - GitHub Pages deploys under `/home/`, but `mkdocs serve` runs locally at `/`.
 
 ## 9. Agent Workflow Expectations

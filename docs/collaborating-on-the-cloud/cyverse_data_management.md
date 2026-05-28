@@ -24,7 +24,7 @@ Use the terminal command line interface on your instance to move data from the d
 ```
 To do so, open the Terminal from your launcher
 
-![launch terminal](../assets/launch-terminal.png)
+![launch terminal](../assets/collaborating-on-the-cloud/launch-terminal.png)
 
 Then, use the 'cp' command to copy data from the data store to your instance. Use the flag -r if you are moving an entire directory or directory structure.
 

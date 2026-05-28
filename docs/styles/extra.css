@@ -281,7 +281,7 @@ button.md-button {
 
   background:
     linear-gradient(90deg, rgba(35,74,101,0.90), rgba(0,113,53,0.90)),
-    url("../assets/ForestBanner_NASA_Imagery.png");
+    url("../assets/backgrounds/forest-banner-nasa-imagery.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

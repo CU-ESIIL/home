@@ -1,5 +1,6 @@
 ---
 title: OASIS Home
+template: home.html
 hide:
   - toc
 ---

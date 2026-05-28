@@ -265,23 +265,26 @@ Constraints: no text, no logos, no scenic layouts, no glossy UI icon style.
 
 Detected existing repository pattern:
 
-- homepage button imagery is already stored in `docs/assets/thumbnails/`
-- existing filenames are mixed legacy names and formats
+- homepage button imagery is now organized under `docs/assets/homepage/`
+- assets are grouped by section or content family
+- existing filenames are standardized to describe the destination project or use
 
 Authoritative rule for new button-image assets:
 
-- place new assets in `docs/assets/thumbnails/`
-- do not rename legacy assets solely to enforce the new convention
+- place new assets in the matching `docs/assets/homepage/<section>/` folder
+- use the existing section folders whenever possible:
+  `working-groups/`, `research/`, `events/`, `infrastructure/`, and
+  `templates/`
 - for new generated assets, use lowercase kebab-case
 - prefer `.png` for newly generated button images
 - for new generated assets, use the suffix `-button.png` unless intentionally
-  replacing an established legacy filename already referenced in the site
+  replacing an established file that already uses another extension
 
 Examples:
 
-- `wildfire-boundary-button.png`
-- `analytics-library-button.png`
-- `graduate-student-button.png`
+- `docs/assets/homepage/working-groups/wildfire-boundary-button.png`
+- `docs/assets/homepage/infrastructure/analytics-library-button.png`
+- `docs/assets/homepage/research/graduate-student-button.png`
 
 ## Review checklist before committing
 
@@ -308,7 +311,7 @@ Examples:
 Before generating or replacing any button image, Codex must:
 
 1. Read this file in full.
-2. Inspect existing button images in `docs/assets/thumbnails/`.
+2. Inspect existing button images in `docs/assets/homepage/`.
 3. Write a one-sentence subject summary.
 4. Define the primary symbol, supporting symbol, and optional biology.
 5. Derive the image from the actual content.
@@ -330,6 +333,14 @@ visual thread is:
 
 New assets should strengthen that thread. Do not introduce a parallel style
 system.
+
+When choosing a destination path, match the content type first:
+
+- working groups to `docs/assets/homepage/working-groups/`
+- staff, postdoc, and student projects to `docs/assets/homepage/research/`
+- summits, hackathons, and codefests to `docs/assets/homepage/events/`
+- libraries, tools, and tutorials to `docs/assets/homepage/infrastructure/`
+- reusable site starters to `docs/assets/homepage/templates/`
 
 ## Codex operating rule
 
