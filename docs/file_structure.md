@@ -17,7 +17,7 @@ This document summarizes the repository's key directories following recent clean
   - `cyverse_basics/` – screenshots for CyVerse basics tutorial
   - `homepage/` – homepage button imagery grouped by section
   - `archive/` – legacy or currently unused assets retained for reference
- - `docs/overrides/` – MkDocs theme overrides and homepage partials
+- `docs/overrides/` – MkDocs theme overrides and homepage partials
 - `docs/worksheets/` – worksheet materials and generated figures
   - `redlining_figures/` – figures produced for the redlining worksheet
   - `redlining_student_figures/` – figures for the student edition worksheet

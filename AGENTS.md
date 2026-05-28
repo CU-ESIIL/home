@@ -53,7 +53,8 @@ When making changes, optimize for these users:
 
 ### Preserve the homepage as a curated front door
 
-`docs/index.md` is the highest-visibility file in the repo. Changes there should
+`docs/index.md` and the homepage template files under `docs/overrides/` are the
+highest-visibility homepage sources in the repo. Changes there should
 prioritize:
 
 - Clear scanning and discoverability.
@@ -87,12 +88,16 @@ needed to finish the task.
 
 ### Homepage and layout
 
-- `docs/index.md`: homepage content and many inline layout/card sections.
+- `docs/index.md`: homepage front matter entry point that selects the custom
+  homepage template.
+- `docs/overrides/home.html`: homepage template wrapper.
+- `docs/overrides/partials/`: reusable homepage section partials.
 - `docs/dev/oasis-site-dev-guide.md`: canonical homepage layout safety guide.
 - `docs/styles/extra.css`: final-authority brand/visual styling layer.
 - `docs/assets/css/style.css`: structural compatibility glue only.
-- `docs/overrides/main.html` and `overrides/main.html`: MkDocs Material
-  overrides; edit carefully and minimally.
+- `docs/assets/css/custom.css`: homepage-specific editorial layout and motion.
+- `docs/overrides/main.html`: MkDocs Material override for shared head-level
+  behavior; edit carefully and minimally.
 
 ### Content sections
 
@@ -268,8 +273,9 @@ handoff.
 
 ## 8. Known Repo Constraints and Pitfalls
 
-- `docs/index.md` is large and mixes Markdown, inline HTML, and inline CSS.
-  Read locally around the section you are editing before patching.
+- The homepage is now rendered through `docs/index.md` front matter plus
+  `docs/overrides/home.html` and `docs/overrides/partials/`. Read the
+  surrounding template and partial files before patching.
 - The homepage contains repeated card-grid patterns with subtle differences;
   use the local section’s existing structure, not a nearby section by default.
 - `docs/gantt_chart.png` is a static asset and can drift from

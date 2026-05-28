@@ -7,7 +7,8 @@ export default defineConfig({
     trace: "on-first-retry",
   },
   webServer: {
-    command: "python3 -m mkdocs build --strict && python3 -m http.server 8000 --directory site",
+    command:
+      "if [ -x .venv/bin/python ]; then .venv/bin/python -m mkdocs build --strict; else python3 -m mkdocs build --strict; fi && python3 -m http.server 8000 --directory site",
     url: "http://127.0.0.1:8000",
     reuseExistingServer: !process.env.CI,
     timeout: 120000,

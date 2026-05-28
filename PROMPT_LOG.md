@@ -66,3 +66,26 @@ homepage sections.
   with that path rather than creating a parallel asset tree.
 - Follow-up / unresolved: Existing images were not modified. The new guidance
   standardizes future generated assets and future replacements only.
+
+## 2026-05-28
+
+- Goal: Restore the redesigned homepage after the custom template stopped
+  rendering, clean up stale repo structure and asset organization, remove the
+  lingering analytics-library submodule metadata, and add stronger Playwright
+  link-health coverage to CI/deploy workflows.
+- Context reviewed: `mkdocs.yml`, `docs/index.md`, homepage override templates
+  and partials, homepage CSS/JS, existing Playwright config and tests, GitHub
+  workflows, asset references across `docs/`, `.gitmodules`, `AGENTS.md`, and
+  the current analytics-library nested repo state.
+- Files changed: `.github/workflows/gh-pages.yml`,
+  `.github/workflows/playwright.yml`, `.gitmodules`, `AGENTS.md`,
+  `PROMPT_LOG.md`, `playwright.config.ts`, `tests/homepage.spec.ts`,
+  `docs/file_structure.md`, plus cleanup/removal of the unused root
+  `overrides/` folder and stale `.DS_Store` files.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npm ci`; `npx
+  playwright test` with elevated local-server permission; in-app browser
+  snapshot confirmed the custom homepage sections and CTAs render again.
+- Follow-up / unresolved: The curated homepage and ecosystem directory links
+  are now covered in Playwright. If future work expands the directory or adds
+  new homepage sections, the link-health expectations should be reviewed
+  alongside those content changes.

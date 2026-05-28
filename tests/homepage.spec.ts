@@ -1,57 +1,100 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
 
-test("homepage key interactions work", async ({ page }) => {
-  await page.goto("/");
+function isSkippableHref(href: string): boolean {
+  return (
+    href.startsWith("mailto:") ||
+    href.startsWith("tel:") ||
+    href.startsWith("javascript:")
+  );
+}
 
-  const topButtons = [
-    { label: "Quickstart", type: "internal", path: /\/quickstart\/$/ },
-    { label: "Containers", type: "internal", path: /\/container-library\/$/ },
-    { label: "Analytics", type: "external", href: "https://cu-esiil.github.io/analytics-library/" },
-    { label: "Data Library", type: "external", href: "https://cu-esiil.github.io/data-library/" },
-    { label: "Resources", type: "internal", path: /\/resources\/$/ },
-  ] as const;
+async function collectUniqueHrefs(page: Page, selector: string): Promise<string[]> {
+  const hrefs = await page.locator(selector).evaluateAll((links) =>
+    links
+      .map((link) => link.getAttribute("href") || "")
+      .filter((href) => href.length > 0),
+  );
 
-  for (const button of topButtons) {
-    const link = page.locator(".tag-suggestions").getByRole("link", { name: button.label });
-    await expect(link).toBeVisible();
-    const href = await link.getAttribute("href");
-    expect(href).not.toBeNull();
+  return [...new Set(hrefs)].filter((href) => !isSkippableHref(href));
+}
 
-    if (button.type === "external") {
-      expect(href).toBe(button.href);
+async function assertLinksResolve(
+  page: Page,
+  request: APIRequestContext,
+  hrefs: string[],
+) {
+  const baseUrl = page.url();
+
+  for (const href of hrefs) {
+    if (href.startsWith("#")) {
+      await expect(page.locator(href), `Missing same-page anchor target for ${href}`).toHaveCount(1);
       continue;
     }
 
-    await link.click();
-    await expect(page).toHaveURL(button.path);
-    await page.goBack();
-  }
+    const resolved = new URL(href, baseUrl);
+    const hash = resolved.hash;
+    resolved.hash = "";
 
-  const quickstartButton = page.locator(".quickstart-btn");
-  await expect(quickstartButton).toBeVisible();
-  await quickstartButton.click();
-  await expect(page).toHaveURL(/\/quickstart\/$/);
-  await page.goBack();
+    const response = await request.get(resolved.toString(), {
+      failOnStatusCode: false,
+      maxRedirects: 5,
+      timeout: 30000,
+    });
 
-  for (const selector of [
-    ".oasis-main .library-item a",
-    ".oasis-main .gallery-item a",
-    ".oasis-main .template-item a",
-  ]) {
-    const links = page.locator(selector);
-    const limit = Math.min(3, await links.count());
+    expect(
+      response.status(),
+      `Expected ${href} to resolve successfully, got ${response.status()} for ${resolved.toString()}`,
+    ).toBeLessThan(400);
 
-    for (let index = 0; index < limit; index += 1) {
-      const link = links.nth(index);
-      await expect(link).toBeVisible();
-      const href = await link.getAttribute("href");
-      expect(href).toBeTruthy();
+    if (hash && resolved.origin === new URL(baseUrl).origin) {
+      const probe = await page.context().newPage();
+      await probe.goto(resolved.toString());
+      await expect(
+        probe.locator(hash),
+        `Missing hash target ${hash} on ${resolved.toString()}`,
+      ).toHaveCount(1);
+      await probe.close();
     }
   }
+}
 
-  const sidebarTagsLink = page.locator(".md-sidebar").getByRole("link", { name: "Tags" }).first();
-  if (await sidebarTagsLink.isVisible()) {
-    await sidebarTagsLink.click();
-    await expect(page).toHaveURL(/\/tags\/$/);
+test("homepage renders the custom OASIS layout", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page.locator(".oasis-homepage")).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /open analysis and synthesis infrastructure for science/i })).toBeVisible();
+
+  for (const sectionId of [
+    "#working-groups-section",
+    "#research-projects-section",
+    "#events-summits-section",
+    "#infrastructure-libraries-section",
+  ]) {
+    await expect(page.locator(sectionId)).toHaveCount(1);
   }
+
+  await expect(page.getByRole("link", { name: /explore projects/i })).toHaveAttribute(
+    "href",
+    /#working-groups-section$/,
+  );
+  await expect(page.getByRole("link", { name: /browse libraries/i })).toHaveAttribute(
+    "href",
+    /#infrastructure-libraries-section$/,
+  );
+});
+
+test("homepage and ecosystem directory links stay healthy", async ({ page, request }) => {
+  test.slow();
+
+  await page.goto("/");
+  await expect(page.locator(".oasis-homepage")).toBeVisible();
+
+  const homepageHrefs = await collectUniqueHrefs(page, ".oasis-homepage a[href]");
+  await assertLinksResolve(page, request, homepageHrefs);
+
+  await page.goto("/directory/");
+  await expect(page.getByRole("heading", { level: 1, name: /ecosystem directory/i })).toBeVisible();
+
+  const directoryHrefs = await collectUniqueHrefs(page, ".md-content__inner a[href]");
+  await assertLinksResolve(page, request, directoryHrefs);
 });
