@@ -161,3 +161,53 @@ homepage sections.
 - Follow-up / unresolved: The homepage keeps its existing top CTA footer band,
   with the reference-style institutional footer replacing the previous
   supporters/nav block beneath it.
+
+## 2026-05-28
+
+- Goal: Tighten the homepage footer after the first institutional-footer pass
+  landed too large, especially the overall band height and the four partner
+  logos.
+- Context reviewed: `docs/assets/css/custom.css`, the homepage footer partial,
+  the user screenshot of the oversized footer, and a live local browser render
+  of the homepage footer after rebuild.
+- Files changed: `PROMPT_LOG.md`, `docs/assets/css/custom.css`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission; browser spot check confirmed a
+  shorter footer band and smaller logo row.
+- Follow-up / unresolved: If you want it even quieter, the next easy pass would
+  be shrinking the top CTA band typography rather than the institutional block.
+
+## 2026-05-28
+
+- Goal: Replace the checkerboard-backed header logo with a real white-backed,
+  tightly cropped lockup so the header can be thinner while the logo occupies
+  more of the header height.
+- Context reviewed: `docs/assets/branding/esiil-oasis-lockup.png`,
+  `docs/assets/css/style.css`, the header rendering on the homepage, and the
+  user screenshot showing the faux transparency pattern in the logo asset.
+- Files changed: `PROMPT_LOG.md`, `docs/assets/css/style.css`,
+  `docs/assets/branding/esiil-oasis-lockup.png`, and archived copy
+  `docs/assets/archive/branding/esiil-oasis-lockup-checkerboard-legacy.png`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission; browser spot check confirmed the
+  tighter white-backed logo inside a thinner header.
+- Follow-up / unresolved: If desired, the next refinement would be adjusting
+  the overall header controls spacing so the search box and repo metadata align
+  even more tightly with the new logo scale.
+
+## 2026-05-28
+
+- Goal: Repair dark mode so the palette toggle actually repaints the custom
+  homepage and gallery pages, and remove the GitHub repository badge from the
+  header.
+- Context reviewed: `mkdocs.yml`, `docs/styles/brand.css`,
+  `docs/assets/css/custom.css`, `docs/dev/oasis-site-dev-guide.md`, and the
+  homepage Playwright coverage in `tests/homepage.spec.ts`.
+- Files changed: `PROMPT_LOG.md`, `mkdocs.yml`, `docs/styles/brand.css`,
+  `docs/assets/css/custom.css`, and `tests/homepage.spec.ts`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission; in-app browser snapshot check on
+  the rebuilt homepage after the theme and header updates.
+- Follow-up / unresolved: The repo metadata stays in `mkdocs.yml` so `edit_uri`
+  remains valid, and the visible header source badge is suppressed in CSS
+  instead of removing repository configuration entirely.

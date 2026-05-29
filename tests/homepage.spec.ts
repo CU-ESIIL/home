@@ -149,6 +149,7 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
   await page.goto("/");
 
   await expect(page.locator(".oasis-homepage")).toBeVisible();
+  await expect(page.locator(".md-header__source")).toBeHidden();
   await expect(
     page.getByRole("heading", {
       level: 1,
@@ -173,6 +174,29 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
     "href",
     /#infrastructure-libraries-section$/,
   );
+});
+
+test("theme toggle switches to dark mode without restoring the repo badge", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page.locator(".oasis-homepage")).toBeVisible();
+  await expect(page.locator(".md-header__source")).toBeHidden();
+
+  const themeToggle = page.locator('[data-md-component="palette"] label').first();
+  await expect(themeToggle).toBeVisible();
+  await themeToggle.click();
+
+  await expect(page.locator("body")).toHaveAttribute("data-md-color-scheme", "slate");
+
+  const headerBackground = await page.locator(".md-header").evaluate((node) =>
+    window.getComputedStyle(node).backgroundColor,
+  );
+  expect(headerBackground).not.toBe("rgb(255, 255, 255)");
+
+  await page.goto("/directory/working-groups/");
+  await expect(page.locator(".oasis-section-page")).toBeVisible();
+  await expect(page.locator("body")).toHaveAttribute("data-md-color-scheme", "slate");
+  await expect(page.locator(".md-header__source")).toBeHidden();
 });
 
 test("homepage stays within the viewport on small screens", async ({ page }) => {

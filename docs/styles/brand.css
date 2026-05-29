@@ -88,6 +88,54 @@ body,
   border-top: 1px solid var(--brand-border);
 }
 
+.md-header__source {
+  display: none;
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #0f1820;
+  color: #edf3f5;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  box-shadow: 0 1px 0 rgba(143, 221, 240, 0.16);
+}
+
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-header__button,
+[data-md-color-scheme="slate"] .md-tabs__link,
+[data-md-color-scheme="slate"] .md-search__icon,
+[data-md-color-scheme="slate"] .md-search__input,
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+  color: #edf3f5;
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid > .card,
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details,
+[data-md-color-scheme="slate"] .esiil-card {
+  background: #18242d;
+  border-color: rgba(143, 221, 240, 0.18);
+}
+
+[data-md-color-scheme="slate"] .md-content__inner .content .search-bar .oasis-pills > a.tag {
+  background: #15212b;
+  color: #edf3f5;
+  border-color: rgba(143, 221, 240, 0.24);
+}
+
+[data-md-color-scheme="slate"] .tag-cloud a {
+  color: #edf3f5;
+  border-color: rgba(143, 221, 240, 0.2);
+}
+
 .md-tabs__link {
   position: relative;
   display: inline-block;

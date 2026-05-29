@@ -45,22 +45,19 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-sunny
-        name: Switch to system preference
+        name: Switch to light mode
 
 # Options
 extra:

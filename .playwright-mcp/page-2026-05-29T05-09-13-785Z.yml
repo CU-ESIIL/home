@@ -1,0 +1,325 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Header" [ref=e3]:
+      - 'link "OASIS: Open Analysis and Synthesis Infrastructure for Science" [ref=e4] [cursor=pointer]':
+        - /url: http://127.0.0.1:8022/
+        - img "logo" [ref=e5]
+      - generic [ref=e8]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e9] [cursor=pointer]:
+          - img [ref=e10]
+        - radio "Switch to light mode"
+      - dialog [ref=e12]:
+        - search [ref=e13]:
+          - generic [ref=e14]:
+            - textbox "Search" [ref=e15]
+            - generic:
+              - img
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e17]: Initializing search
+  - main [ref=e19]:
+    - article [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - paragraph [ref=e27]: OASIS
+            - heading "Open Analysis and Synthesis Infrastructure for Science" [level=1] [ref=e28]
+            - paragraph [ref=e29]: A living ecosystem connecting people, data, tools, and ideas to solve environmental challenges through open analysis and synthesis.
+            - generic [ref=e30]:
+              - link "Explore Projects" [ref=e31] [cursor=pointer]:
+                - /url: http://127.0.0.1:8022/#working-groups-section
+                - generic [ref=e32]: Explore Projects
+                - generic [ref=e33]: →
+              - link "Browse Libraries" [ref=e34] [cursor=pointer]:
+                - /url: http://127.0.0.1:8022/#infrastructure-libraries-section
+                - generic [ref=e35]: Browse Libraries
+                - generic [ref=e36]: →
+            - paragraph [ref=e37]: Environmental data science as a field notebook, an exhibition wall, and an open science infrastructure.
+          - generic [ref=e38]:
+            - figure [ref=e41]
+            - figure [ref=e42]
+            - figure [ref=e43]
+            - figure [ref=e44]
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - paragraph [ref=e49]: Living Ecosystem
+              - heading "Working Groups" [level=2] [ref=e50]
+              - paragraph [ref=e51]: Collaborative research constellations that turn field questions, community knowledge, and environmental data into shared synthesis.
+            - link "View All Working Groups" [ref=e52] [cursor=pointer]:
+              - /url: http://127.0.0.1:8022/directory/working-groups/
+              - generic [ref=e53]: View All Working Groups
+              - generic [ref=e54]: →
+          - generic [ref=e55]:
+            - complementary [ref=e56]:
+              - paragraph [ref=e57]: Primary ecosystem
+              - paragraph [ref=e58]: OASIS is strongest when it feels like active collaboration instead of a static repository list. These groups anchor that living, exploratory energy.
+            - generic [ref=e59]:
+              - link "Extreme Wildfire Working Group Extreme Wildfire Collaborative research on extreme wildfire behavior and environmental change. Explore" [ref=e60] [cursor=pointer]:
+                - /url: https://cu-esiil.github.io/ExtremeWildfire/
+                - img "Extreme Wildfire" [ref=e62]
+                - generic [ref=e63]:
+                  - paragraph [ref=e64]: Working Group
+                  - heading "Extreme Wildfire" [level=3] [ref=e65]
+                  - paragraph [ref=e66]: Collaborative research on extreme wildfire behavior and environmental change.
+                  - generic [ref=e67]:
+                    - generic [ref=e68]: Explore
+                    - generic [ref=e69]: →
+              - link "Fungal Dispersal Working Group Fungal Dispersal Open synthesis on fungal dispersal, connectivity, and ecological spread. Explore" [ref=e70] [cursor=pointer]:
+                - /url: https://cu-esiil.github.io/fungal_dispersal/
+                - img "Fungal Dispersal" [ref=e72]
+                - generic [ref=e73]:
+                  - paragraph [ref=e74]: Working Group
+                  - heading "Fungal Dispersal" [level=3] [ref=e75]
+                  - paragraph [ref=e76]: Open synthesis on fungal dispersal, connectivity, and ecological spread.
+                  - generic [ref=e77]:
+                    - generic [ref=e78]: Explore
+                    - generic [ref=e79]: →
+              - link "Macrophenology Working Group Macrophenology Macroecological phenology patterns across changing environments. Explore" [ref=e80] [cursor=pointer]:
+                - /url: https://cu-esiil.github.io/macrophenology/
+                - img "Macrophenology" [ref=e82]
+                - generic [ref=e83]:
+                  - paragraph [ref=e84]: Working Group
+                  - heading "Macrophenology" [level=3] [ref=e85]
+                  - paragraph [ref=e86]: Macroecological phenology patterns across changing environments.
+                  - generic [ref=e87]:
+                    - generic [ref=e88]: Explore
+                    - generic [ref=e89]: →
+              - link "Maka-Sitomniya Working Group Maka-Sitomniya Research centered on place-based and traditional ecological knowledge. Explore" [ref=e90] [cursor=pointer]:
+                - /url: https://cu-esiil.github.io/Maka-Sitomniya/
+                - img "Maka-Sitomniya" [ref=e92]
+                - generic [ref=e93]:
+                  - paragraph [ref=e94]: Working Group
+                  - heading "Maka-Sitomniya" [level=3] [ref=e95]
+                  - paragraph [ref=e96]: Research centered on place-based and traditional ecological knowledge.
+                  - generic [ref=e97]:
+                    - generic [ref=e98]: Explore
+                    - generic [ref=e99]: →
+              - link "AI for Natural Methane Working Group AI for Natural Methane Harmonizing natural methane datasets and discovery workflows with AI. Explore" [ref=e100] [cursor=pointer]:
+                - /url: https://cu-esiil.github.io/AI-for-Natural-Methane/
+                - img "AI for Natural Methane" [ref=e102]
+                - generic [ref=e103]:
+                  - paragraph [ref=e104]: Working Group
+                  - heading "AI for Natural Methane" [level=3] [ref=e105]
+                  - paragraph [ref=e106]: Harmonizing natural methane datasets and discovery workflows with AI.
+                  - generic [ref=e107]:
+                    - generic [ref=e108]: Explore
+                    - generic [ref=e109]: →
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - paragraph [ref=e114]: Research Wall
+              - heading "ESIIL Staff & Postdoc Research" [level=2] [ref=e115]
+              - paragraph [ref=e116]: Computational ecology, methodological experimentation, and open environmental analytics built by the people shaping OASIS from inside the ecosystem.
+            - link "View All Projects" [ref=e117] [cursor=pointer]:
+              - /url: http://127.0.0.1:8022/directory/research/
+              - generic [ref=e118]: View All Projects
+              - generic [ref=e119]: →
+          - generic [ref=e120]:
+            - complementary [ref=e121]:
+              - paragraph [ref=e122]: Computational ecology
+              - paragraph [ref=e123]: This band highlights the methodological and software innovation that supports the broader OASIS ecosystem, from environmental computing to team science and lesson design.
+            - link "CubeDynamics Computational Ecology CubeDynamics Composable operations for spatiotemporal data cubes. Open Project" [ref=e124] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/cubedynamics/
+              - img "CubeDynamics" [ref=e126]
+              - generic [ref=e127]:
+                - paragraph [ref=e128]: Computational Ecology
+                - heading "CubeDynamics" [level=3] [ref=e129]
+                - paragraph [ref=e130]: Composable operations for spatiotemporal data cubes.
+                - generic [ref=e131]:
+                  - generic [ref=e132]: Open Project
+                  - generic [ref=e133]: →
+            - article [ref=e134]:
+              - img "Water Carbon Dynamics" [ref=e136]
+              - generic [ref=e137]:
+                - paragraph [ref=e138]: Staff Research
+                - heading "Water Carbon Dynamics" [level=3] [ref=e139]
+                - paragraph [ref=e140]: Investigating water-carbon interactions across environmental systems.
+                - generic [ref=e141]: Public site forthcoming
+            - link "Datacube Sandbox Postdoc Project Datacube Sandbox Training and experimentation space for data cube workflows. Open Project" [ref=e142] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/Jim-s-Sandbox/
+              - img "Datacube Sandbox" [ref=e144]
+              - generic [ref=e145]:
+                - paragraph [ref=e146]: Postdoc Project
+                - heading "Datacube Sandbox" [level=3] [ref=e147]
+                - paragraph [ref=e148]: Training and experimentation space for data cube workflows.
+                - generic [ref=e149]:
+                  - generic [ref=e150]: Open Project
+                  - generic [ref=e151]: →
+            - link "SpectralBEF Staff Research SpectralBEF Spectral biodiversity and ecosystem-functioning analysis. Open Project" [ref=e152] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/spectralBEF/
+              - img "SpectralBEF" [ref=e154]
+              - generic [ref=e155]:
+                - paragraph [ref=e156]: Staff Research
+                - heading "SpectralBEF" [level=3] [ref=e157]
+                - paragraph [ref=e158]: Spectral biodiversity and ecosystem-functioning analysis.
+                - generic [ref=e159]:
+                  - generic [ref=e160]: Open Project
+                  - generic [ref=e161]: →
+            - link "WUI Boundary Staff Research WUI Boundary Measuring the wildland-urban interface across delineation and scale. Open Project" [ref=e162] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/WUI_boundary/
+              - img "WUI Boundary" [ref=e164]
+              - generic [ref=e165]:
+                - paragraph [ref=e166]: Staff Research
+                - heading "WUI Boundary" [level=3] [ref=e167]
+                - paragraph [ref=e168]: Measuring the wildland-urban interface across delineation and scale.
+                - generic [ref=e169]:
+                  - generic [ref=e170]: Open Project
+                  - generic [ref=e171]: →
+            - link "Team Science Postdoc Project Team Science Studying scientific collaboration networks and synthesis practice. Open Project" [ref=e172] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/Team-Science/
+              - img "Team Science" [ref=e174]
+              - generic [ref=e175]:
+                - paragraph [ref=e176]: Postdoc Project
+                - heading "Team Science" [level=3] [ref=e177]
+                - paragraph [ref=e178]: Studying scientific collaboration networks and synthesis practice.
+                - generic [ref=e179]:
+                  - generic [ref=e180]: Open Project
+                  - generic [ref=e181]: →
+            - link "LLM Lesson Exemplar Postdoc Project LLM Lesson Exemplar Example lesson materials for large language model workflows. Open Project" [ref=e182] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/LLM_lesson_exemplar/
+              - img "LLM Lesson Exemplar" [ref=e184]
+              - generic [ref=e185]:
+                - paragraph [ref=e186]: Postdoc Project
+                - heading "LLM Lesson Exemplar" [level=3] [ref=e187]
+                - paragraph [ref=e188]: Example lesson materials for large language model workflows.
+                - generic [ref=e189]:
+                  - generic [ref=e190]: Open Project
+                  - generic [ref=e191]: →
+        - generic [ref=e193]:
+          - generic [ref=e194]:
+            - generic [ref=e195]:
+              - paragraph [ref=e196]: Momentum
+              - heading "Events & Summits" [level=2] [ref=e197]
+              - paragraph [ref=e198]: Gatherings, codefests, workshops, and summits that turn OASIS into a visible public exchange rather than a quiet back-end platform.
+            - link "View All Events" [ref=e199] [cursor=pointer]:
+              - /url: http://127.0.0.1:8022/directory/events/
+              - generic [ref=e200]: View All Events
+              - generic [ref=e201]: →
+          - generic [ref=e202]:
+            - link "Innovation Summit 2026 2026 Innovation Summit 2026 AI for sustainability and environmental data-to-decision exchange. See Event" [ref=e203] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/Innovation-Summit-2026/
+              - generic [ref=e204]:
+                - img "Innovation Summit 2026" [ref=e205]
+                - generic [ref=e206]: "2026"
+              - generic [ref=e207]:
+                - heading "Innovation Summit 2026" [level=3] [ref=e208]
+                - paragraph [ref=e209]: AI for sustainability and environmental data-to-decision exchange.
+                - generic [ref=e210]:
+                  - generic [ref=e211]: See Event
+                  - generic [ref=e212]: →
+            - link "HDR-ML Hackathon 2026 2026 HDR-ML Hackathon 2026 Hands-on machine learning collaboration around environmental datasets. See Event" [ref=e213] [cursor=pointer]:
+              - /url: https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026
+              - generic [ref=e214]:
+                - img "HDR-ML Hackathon 2026" [ref=e215]
+                - generic [ref=e216]: "2026"
+              - generic [ref=e217]:
+                - heading "HDR-ML Hackathon 2026" [level=3] [ref=e218]
+                - paragraph [ref=e219]: Hands-on machine learning collaboration around environmental datasets.
+                - generic [ref=e220]:
+                  - generic [ref=e221]: See Event
+                  - generic [ref=e222]: →
+            - link "Innovation Summit 2025 2025 Innovation Summit 2025 Open environmental innovation at summit scale. See Event" [ref=e223] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/Innovation-Summit-2025/
+              - generic [ref=e224]:
+                - img "Innovation Summit 2025" [ref=e225]
+                - generic [ref=e226]: "2025"
+              - generic [ref=e227]:
+                - heading "Innovation Summit 2025" [level=3] [ref=e228]
+                - paragraph [ref=e229]: Open environmental innovation at summit scale.
+                - generic [ref=e230]:
+                  - generic [ref=e231]: See Event
+                  - generic [ref=e232]: →
+            - link "FIRE Plan 2024 2024 FIRE Plan 2024 Planning and strategy work for fire management and shared response. See Event" [ref=e233] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/FIRE-plan-2024/
+              - generic [ref=e234]:
+                - img "FIRE Plan 2024" [ref=e235]
+                - generic [ref=e236]: "2024"
+              - generic [ref=e237]:
+                - heading "FIRE Plan 2024" [level=3] [ref=e238]
+                - paragraph [ref=e239]: Planning and strategy work for fire management and shared response.
+                - generic [ref=e240]:
+                  - generic [ref=e241]: See Event
+                  - generic [ref=e242]: →
+            - link "Forest Carbon Codefest Codefest Forest Carbon Codefest A coding exchange focused on forest carbon research and tools. See Event" [ref=e243] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/forest-carbon-codefest/
+              - generic [ref=e244]:
+                - img "Forest Carbon Codefest" [ref=e245]
+                - generic [ref=e246]: Codefest
+              - generic [ref=e247]:
+                - heading "Forest Carbon Codefest" [level=3] [ref=e248]
+                - paragraph [ref=e249]: A coding exchange focused on forest carbon research and tools.
+                - generic [ref=e250]:
+                  - generic [ref=e251]: See Event
+                  - generic [ref=e252]: →
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - paragraph [ref=e257]: Trusted Systems
+              - heading "Infrastructure & Libraries" [level=2] [ref=e258]
+              - paragraph [ref=e259]: Calm, precise infrastructure for environmental data science, from containers and analytics to tutorials and operational tools.
+            - link "Browse Infrastructure" [ref=e260] [cursor=pointer]:
+              - /url: http://127.0.0.1:8022/directory/infrastructure/
+              - generic [ref=e261]: Browse Infrastructure
+              - generic [ref=e262]: →
+          - generic [ref=e263]:
+            - link "Container Library Browse available container images for ESIIL computing. Explore →" [ref=e264] [cursor=pointer]:
+              - /url: http://127.0.0.1:8022/container-library/
+              - img [ref=e266]
+              - heading "Container Library" [level=3] [ref=e271]
+              - paragraph [ref=e272]: Browse available container images for ESIIL computing.
+              - generic [ref=e273]: Explore →
+            - link "Analytics Library Data harmonization, workflows, and environmental analytics methods. Explore →" [ref=e274] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/analytics-library/
+              - img [ref=e276]
+              - heading "Analytics Library" [level=3] [ref=e280]
+              - paragraph [ref=e281]: Data harmonization, workflows, and environmental analytics methods.
+              - generic [ref=e282]: Explore →
+            - link "Data Library Organizational hub for datasets, discovery, and shared data access. Explore →" [ref=e283] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/data-library/
+              - img [ref=e285]
+              - heading "Data Library" [level=3] [ref=e289]
+              - paragraph [ref=e290]: Organizational hub for datasets, discovery, and shared data access.
+              - generic [ref=e291]: Explore →
+            - link "Education & Tutorials Courses, quickstarts, training paths, and learning materials. Explore →" [ref=e292] [cursor=pointer]:
+              - /url: http://127.0.0.1:8022/quickstart/
+              - img [ref=e294]
+              - heading "Education & Tutorials" [level=3] [ref=e296]
+              - paragraph [ref=e297]: Courses, quickstarts, training paths, and learning materials.
+              - generic [ref=e298]: Explore →
+            - link "Infrastructure & Tools Operational utilities, demos, CI resources, and ecosystem tooling. Explore →" [ref=e299] [cursor=pointer]:
+              - /url: http://127.0.0.1:8022/directory/infrastructure/
+              - img [ref=e301]
+              - heading "Infrastructure & Tools" [level=3] [ref=e305]
+              - paragraph [ref=e306]: Operational utilities, demos, CI resources, and ecosystem tooling.
+              - generic [ref=e307]: Explore →
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - img "ESIIL OASIS" [ref=e312]
+            - generic [ref=e313]:
+              - paragraph [ref=e314]: Open Science Ecosystem
+              - heading "Open Science. Stronger Together." [level=2] [ref=e315]
+              - paragraph [ref=e316]: OASIS is a shared space for collaboration, innovation, and open environmental data science across people, infrastructure, and field-grounded research.
+            - link "Join the Community" [ref=e317] [cursor=pointer]:
+              - /url: https://cu-esiil.github.io/how_to_contribute/
+              - generic [ref=e318]: Join the Community
+              - generic [ref=e319]: →
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - strong [ref=e322]: Environmental Data Science Innovation and Impact Lab (ESIIL)
+              - paragraph [ref=e323]: University of Colorado Boulder
+              - paragraph [ref=e324]: Cooperative Institute for Research in Environmental Sciences (CIRES)
+              - paragraph [ref=e325]: Boulder, Colorado, USA
+              - paragraph [ref=e326]:
+                - text: "Website:"
+                - link "https://esiil.org" [ref=e327] [cursor=pointer]:
+                  - /url: https://esiil.org
+              - paragraph [ref=e328]:
+                - emphasis [ref=e329]: "Last updated: May 2026"
+            - generic "Institutional logos" [ref=e330]:
+              - img "University of Colorado Boulder"
+              - img "CIRES"
+              - img "ESIIL"
+              - img "NSF"
