@@ -251,6 +251,36 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(251, 248, 243, 0.98));
 }
 
+.oasis-interlude {
+  position: relative;
+  padding: clamp(1.2rem, 2vw, 2rem) 0;
+  overflow: clip;
+}
+
+.oasis-interlude__frame {
+  position: relative;
+  width: 100%;
+  min-height: clamp(13rem, 24vw, 20rem);
+  background: #0f1414;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.oasis-interlude__frame img {
+  display: block;
+  width: 100%;
+  height: clamp(13rem, 24vw, 20rem);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.oasis-interlude--tech .oasis-interlude__frame {
+  background: linear-gradient(180deg, #171b12 0%, #161b12 100%);
+}
+
+.oasis-interlude--ecology .oasis-interlude__frame {
+  background: linear-gradient(180deg, #09090a 0%, #18140f 100%);
+}
+
 .oasis-home__hero {
   min-height: calc(100vh - 5rem);
   display: flex;
@@ -1329,6 +1359,14 @@
     width: min(22rem, 56%);
   }
 
+  .oasis-interlude {
+    padding: 0.9rem 0;
+  }
+
+  .oasis-interlude__frame img {
+    height: clamp(11rem, 32vw, 15rem);
+  }
+
   .oasis-section-page__actions {
     justify-content: flex-start;
   }
@@ -1398,6 +1436,10 @@
 
   .oasis-home__hero-art {
     min-height: 20rem;
+  }
+
+  .oasis-interlude__frame img {
+    height: clamp(9rem, 38vw, 12rem);
   }
 
   .oasis-card-rail--groups,
