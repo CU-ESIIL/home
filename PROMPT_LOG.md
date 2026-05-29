@@ -379,3 +379,31 @@ homepage sections.
   use `object-fit: cover` with minimal padding by design, so if future assets
   for those slots need exact full-art preservation they may need dedicated
   layout-specific crops.
+## 2026-05-29 - Hero spill, interlude refresh, and tighter thumbnail crops
+
+- Goal: push the hero illustration farther off the right edge, replace both
+  interlude banners with newer artwork, and remove the remaining baked-in white
+  margins from the most prominent alternate-set thumbnails.
+- Repo context reviewed:
+  [docs/assets/css/custom.css](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/css/custom.css),
+  [docs/overrides/home.html](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/overrides/home.html),
+  active and `set-002-generated` thumbnail paths under
+  `docs/assets/thumbnails/`.
+- Major files changed:
+  [docs/assets/css/custom.css](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/css/custom.css),
+  [docs/assets/branding/oasis-interlude-banner.png](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/branding/oasis-interlude-banner.png),
+  [docs/assets/branding/animal-interlude-banner.png](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/branding/animal-interlude-banner.png),
+  [docs/assets/thumbnails/active/events/innovation-summit-2026-button.png](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/thumbnails/active/events/innovation-summit-2026-button.png),
+  [docs/assets/thumbnails/active/events/forest-carbon-codefest-button.png](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/thumbnails/active/events/forest-carbon-codefest-button.png),
+  [docs/assets/thumbnails/active/research/datacube-sandbox-button.png](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/thumbnails/active/research/datacube-sandbox-button.png),
+  [docs/assets/thumbnails/active/research/wui-boundary-button.png](/Users/tuff/Library/CloudStorage/OneDrive-UCB-O365/Documents/github/home/docs/assets/thumbnails/active/research/wui-boundary-button.png),
+  plus their preserved copies in `docs/assets/thumbnails/sets/set-002-generated/`.
+- Validation performed:
+  `./.venv/bin/python -m mkdocs build --strict`
+  Playwright passed once earlier in the same edit pass after the CSS/banner
+  changes, then a final rerun after the last crop-tightening step was declined
+  by the app permission prompt.
+- Follow-ups / assumptions:
+  The remaining most noticeable whitespace issue was image-intrinsic, not CSS
+  layout padding, so the final pass focused on tighter asset crops rather than
+  further shrinking card gutters.

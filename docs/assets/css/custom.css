@@ -657,16 +657,16 @@
 .oasis-home__hero-art {
   position: relative;
   min-height: 60rem;
-  margin-left: clamp(-10rem, -11vw, -3rem);
+  margin-left: clamp(-6rem, -6vw, -1rem);
   isolation: isolate;
 }
 
 .oasis-home__hero-figure {
   position: relative;
   z-index: 1;
-  width: min(210%, 108rem);
+  width: min(224%, 116rem);
   max-width: none;
-  margin: -9rem -28rem 0 auto;
+  margin: -9rem -46rem 0 auto;
   transform: translate3d(0, var(--oasis-parallax-shift, 0px), 0);
   filter: drop-shadow(0 34px 64px rgba(35, 74, 101, 0.22));
 }
@@ -680,8 +680,8 @@
 .oasis-home__hero-atlas {
   position: absolute;
   top: -4%;
-  left: 18%;
-  width: min(54rem, 106%);
+  left: 26%;
+  width: min(58rem, 112%);
   aspect-ratio: 1;
   border-radius: 50%;
   background:
