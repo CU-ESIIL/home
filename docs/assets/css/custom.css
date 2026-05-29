@@ -253,32 +253,29 @@
 
 .oasis-interlude {
   position: relative;
-  padding: clamp(1.2rem, 2vw, 2rem) 0;
-  overflow: clip;
+  padding: clamp(0.2rem, 0.8vw, 0.75rem) 0;
+  margin: clamp(-1.6rem, -2.2vw, -0.8rem) 0;
+  overflow: visible;
+  z-index: 3;
 }
 
 .oasis-interlude__frame {
   position: relative;
   width: 100%;
   min-height: clamp(13rem, 24vw, 20rem);
-  background: #0f1414;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .oasis-interlude__frame img {
   display: block;
   width: 100%;
   height: clamp(13rem, 24vw, 20rem);
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
-}
-
-.oasis-interlude--tech .oasis-interlude__frame {
-  background: linear-gradient(180deg, #171b12 0%, #161b12 100%);
-}
-
-.oasis-interlude--ecology .oasis-interlude__frame {
-  background: linear-gradient(180deg, #09090a 0%, #18140f 100%);
+  mix-blend-mode: screen;
+  filter: saturate(1.02) contrast(1.04);
 }
 
 .oasis-home__hero {
@@ -660,16 +657,16 @@
 .oasis-home__hero-art {
   position: relative;
   min-height: 60rem;
-  margin-left: clamp(-12rem, -14vw, -3rem);
+  margin-left: clamp(-17rem, -18vw, -5rem);
   isolation: isolate;
 }
 
 .oasis-home__hero-figure {
   position: relative;
   z-index: 1;
-  width: min(175%, 92rem);
+  width: min(210%, 108rem);
   max-width: none;
-  margin: -6rem -10rem 0 auto;
+  margin: -9rem -16rem 0 auto;
   transform: translate3d(0, var(--oasis-parallax-shift, 0px), 0);
   filter: drop-shadow(0 34px 64px rgba(35, 74, 101, 0.22));
 }
@@ -683,8 +680,8 @@
 .oasis-home__hero-atlas {
   position: absolute;
   top: -4%;
-  left: -2%;
-  width: min(66rem, 125%);
+  left: 18%;
+  width: min(54rem, 106%);
   aspect-ratio: 1;
   border-radius: 50%;
   background:
@@ -696,7 +693,7 @@
 .oasis-home__hero-scratch {
   position: absolute;
   inset: 4% -4% 0 auto;
-  width: min(44rem, 72%);
+  width: min(50rem, 78%);
   background:
     linear-gradient(135deg, rgba(35, 74, 101, 0.08), transparent 40%),
     repeating-linear-gradient(90deg, transparent 0 14px, rgba(35, 74, 101, 0.06) 14px 15px);
@@ -1280,7 +1277,7 @@
 
   .oasis-home__hero-art {
     min-height: 44rem;
-    margin-left: clamp(-4rem, -5vw, -1rem);
+    margin-left: clamp(-6rem, -7vw, -1.5rem);
   }
 
   .oasis-card-rail--groups {
@@ -1343,7 +1340,7 @@
   }
 
   .oasis-home__hero-figure {
-    width: min(100%, 42rem);
+    width: min(112%, 48rem);
     margin: 0 auto;
     max-width: none;
   }
@@ -1360,7 +1357,8 @@
   }
 
   .oasis-interlude {
-    padding: 0.9rem 0;
+    padding: 0.5rem 0;
+    margin: -0.4rem 0;
   }
 
   .oasis-interlude__frame img {

@@ -320,3 +320,38 @@ homepage sections.
 - Follow-up / unresolved: The hero art now intentionally pushes further into
   the text column on desktop while collapsing back to a centered stacked layout
   on tablet and mobile breakpoints.
+
+## 2026-05-29
+
+- Goal: Add user-provided full-width interlude banners between major homepage
+  sections so the long front page has stronger visual pacing.
+- Context reviewed: `docs/overrides/home.html`, the homepage partial ordering,
+  and the shared homepage section styles in `docs/assets/css/custom.css`.
+- Files changed: `docs/overrides/home.html`,
+  `docs/overrides/partials/interlude_banner.html`,
+  `docs/assets/css/custom.css`, plus new banner assets at
+  `docs/assets/branding/oasis-interlude-banner.png` and
+  `docs/assets/branding/animal-interlude-banner.png`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission.
+- Follow-up / unresolved: The first banner currently sits between working
+  groups and staff research, and the second sits between events and
+  infrastructure. If the pacing feels off in practice, these placements can be
+  swapped without changing the banner component itself.
+
+## 2026-05-29
+
+- Goal: Rework the new interlude banners so they behave like floating overlay
+  artwork instead of boxed dark strips, and make the hero illustration itself
+  substantially larger by trimming excess transparent canvas and pushing the art
+  farther into the headline area from the right.
+- Context reviewed: `docs/assets/css/custom.css`, the interlude partial, and
+  the alpha bounds of the current hero and banner assets in
+  `docs/assets/branding/`.
+- Files changed: `docs/assets/css/custom.css`,
+  `docs/assets/branding/oasis-hero-illustration.png`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission.
+- Follow-up / unresolved: The interlude banners now rely on blend/overlay
+  presentation rather than a solid container background, so if future banner
+  art uses very different tonal ranges it may need per-banner tuning.
