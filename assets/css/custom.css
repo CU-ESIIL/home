@@ -253,26 +253,29 @@
 
 .oasis-interlude {
   position: relative;
-  padding: clamp(0.2rem, 0.8vw, 0.75rem) 0;
-  margin: clamp(-1.6rem, -2.2vw, -0.8rem) 0;
+  padding: 0;
+  margin: clamp(-5.5rem, -7vw, -2.75rem) 0;
   overflow: visible;
-  z-index: 3;
+  z-index: 5;
 }
 
 .oasis-interlude__frame {
   position: relative;
-  width: 100%;
-  min-height: clamp(13rem, 24vw, 20rem);
+  left: 50%;
+  width: min(124rem, 112vw);
+  min-height: 0;
+  margin-left: 0;
+  transform: translateX(-50%);
   background: transparent;
   box-shadow: none;
   overflow: visible;
+  pointer-events: none;
 }
 
 .oasis-interlude__frame img {
   display: block;
   width: 100%;
-  height: clamp(13rem, 24vw, 20rem);
-  object-fit: contain;
+  height: auto;
   object-position: center center;
   mix-blend-mode: screen;
   filter: saturate(1.02) contrast(1.04);
