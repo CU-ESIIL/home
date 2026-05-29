@@ -355,3 +355,27 @@ homepage sections.
 - Follow-up / unresolved: The interlude banners now rely on blend/overlay
   presentation rather than a solid container background, so if future banner
   art uses very different tonal ranges it may need per-banner tuning.
+
+## 2026-05-29
+
+- Goal: Improve the blurry oversized staff/postdoc research tiles by replacing
+  the cube and WUI-related thumbnail assets with tighter, higher-resolution
+  panel-derived crops and making the larger research-card image variants fill
+  their frames more aggressively.
+- Context reviewed: `docs/overrides/partials/staff_projects.html`,
+  `docs/overrides/partials/directory/research_page.html`,
+  `docs/assets/css/custom.css`, and the source panel at
+  `docs/assets/thumbnails/style-guides/staff-postdoc-thumbnails-panel.png`.
+- Files changed: `docs/assets/css/custom.css`,
+  `docs/assets/thumbnails/active/research/cubedynamics-button.png`,
+  `docs/assets/thumbnails/active/research/wui-boundary-button.png`,
+  `docs/assets/thumbnails/active/research/datacube-sandbox-button.png`, plus
+  matching files under
+  `docs/assets/thumbnails/sets/set-002-generated/research/`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission after clearing a stale local
+  server on port 8000.
+- Follow-up / unresolved: The larger `feature` and `wide` research cards now
+  use `object-fit: cover` with minimal padding by design, so if future assets
+  for those slots need exact full-art preservation they may need dedicated
+  layout-specific crops.
