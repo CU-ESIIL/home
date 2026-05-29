@@ -107,6 +107,44 @@ async function assertGalleryImagesResolve(page: Page, request: APIRequestContext
   }
 }
 
+async function assertNoHorizontalOverflow(page: Page, selector: string) {
+  const metrics = await page.locator(selector).evaluate((root) => {
+    const viewportWidth = document.documentElement.clientWidth;
+    const scrollWidth = document.documentElement.scrollWidth;
+
+    const offenders = Array.from(root.querySelectorAll("*"))
+      .map((node) => {
+        const rect = node.getBoundingClientRect();
+        const text = (node.textContent || "").trim().replace(/\s+/g, " ").slice(0, 60);
+
+        if (rect.width === 0 || rect.height === 0) {
+          return null;
+        }
+
+        if (rect.left < -1 || rect.right > viewportWidth + 1) {
+          return {
+            tag: node.tagName.toLowerCase(),
+            className: node.className,
+            text,
+            left: Math.round(rect.left),
+            right: Math.round(rect.right),
+          };
+        }
+
+        return null;
+      })
+      .filter(Boolean)
+      .slice(0, 10);
+
+    return { viewportWidth, scrollWidth, offenders };
+  });
+
+  expect(
+    metrics.scrollWidth,
+    `Expected ${selector} to avoid horizontal overflow, but document scrollWidth was ${metrics.scrollWidth} for viewport ${metrics.viewportWidth}. Offenders: ${JSON.stringify(metrics.offenders)}`,
+  ).toBeLessThanOrEqual(metrics.viewportWidth + 1);
+}
+
 test("homepage renders the custom OASIS layout", async ({ page }) => {
   await page.goto("/");
 
@@ -135,6 +173,21 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
     "href",
     /#infrastructure-libraries-section$/,
   );
+});
+
+test("homepage stays within the viewport on small screens", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 740 });
+  await page.goto("/");
+
+  await expect(page.locator(".oasis-homepage")).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      level: 1,
+      name: /open analysis and synthesis infrastructure for science/i,
+    }),
+  ).toBeVisible();
+
+  await assertNoHorizontalOverflow(page, ".oasis-homepage");
 });
 
 test("homepage band links open dedicated gallery pages and browser back returns home", async ({ page }) => {

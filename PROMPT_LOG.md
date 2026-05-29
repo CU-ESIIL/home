@@ -122,3 +122,42 @@ homepage sections.
   the homepage and ecosystem hub rather than expanding the top-level nav. If
   the user wants them added to global navigation later, that can be done as a
   small follow-up.
+
+## 2026-05-28
+
+- Goal: Fix narrow-window homepage overlap by making the hero responsive at
+  phone widths and add an automated regression check for horizontal overflow.
+- Context reviewed: `docs/assets/css/custom.css`, `tests/homepage.spec.ts`,
+  the homepage hero structure in `docs/overrides/partials/hero.html`, and a
+  live narrow-width browser render of the built site.
+- Files changed: `PROMPT_LOG.md`, `docs/assets/css/custom.css`,
+  `tests/homepage.spec.ts`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission; browser spot check at `320px`
+  width confirmed the hero stays within the viewport without horizontal
+  clipping.
+- Follow-up / unresolved: If other sections show narrow-width crowding later,
+  the new small-screen overflow test can be extended to the gallery pages too.
+
+## 2026-05-28
+
+- Goal: Replace the homepage’s lower footer area with the institutional footer
+  pattern from the `Project_group_OASIS` reference page, including the CU
+  Boulder, CIRES, ESIIL, and NSF logos.
+- Context reviewed: `docs/overrides/partials/footer_cta.html`,
+  `docs/assets/css/custom.css`, the live footer structure at
+  `https://cu-esiil.github.io/Project_group_OASIS/#cite-reuse`, and the logo
+  asset paths used by that reference page.
+- Files changed: `PROMPT_LOG.md`, `docs/overrides/partials/footer_cta.html`,
+  `docs/assets/css/custom.css`, plus new local footer logo assets in
+  `docs/assets/branding/footer-cu-logo.png`,
+  `docs/assets/branding/footer-cires-logo.png`,
+  `docs/assets/branding/footer-esiil-logo.png`, and
+  `docs/assets/branding/footer-nsf-logo.png`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission; browser spot check confirmed
+  the institutional footer copy and four logos render together at the bottom of
+  the homepage.
+- Follow-up / unresolved: The homepage keeps its existing top CTA footer band,
+  with the reference-style institutional footer replacing the previous
+  supporters/nav block beneath it.
