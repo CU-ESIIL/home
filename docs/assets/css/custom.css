@@ -264,21 +264,23 @@
 .oasis-interlude__frame {
   position: relative;
   top: 0;
-  left: 50%;
-  width: min(132rem, 118vw);
+  left: 0;
+  width: 100%;
+  height: clamp(12rem, 17vw, 16rem);
   min-height: 0;
   margin-left: 0;
-  transform: translate(-50%, -34%);
+  transform: translateY(-24%);
   background: transparent;
   box-shadow: none;
-  overflow: visible;
+  overflow: hidden;
   pointer-events: none;
 }
 
 .oasis-interlude__frame img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   object-position: center center;
   mix-blend-mode: screen;
   filter: saturate(1.02) contrast(1.04);
