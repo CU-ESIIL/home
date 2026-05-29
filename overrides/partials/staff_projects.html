@@ -4,56 +4,49 @@
     "url": "https://cu-esiil.github.io/cubedynamics/",
     "image": "assets/thumbnails/active/research/cubedynamics-button.png",
     "meta": "Computational Ecology",
-    "description": "Composable operations for spatiotemporal data cubes.",
-    "class": "oasis-research-card--feature"
+    "description": "Composable operations for spatiotemporal data cubes."
   },
   {
     "title": "Water Carbon Dynamics",
     "url": "",
     "image": "assets/thumbnails/active/research/water-carbon-dynamics-button.png",
     "meta": "Staff Research",
-    "description": "Investigating water-carbon interactions across environmental systems.",
-    "class": "oasis-research-card--tall"
+    "description": "Investigating water-carbon interactions across environmental systems."
   },
   {
     "title": "Datacube Sandbox",
     "url": "https://cu-esiil.github.io/Jim-s-Sandbox/",
     "image": "assets/thumbnails/active/research/datacube-sandbox-button.png",
     "meta": "Postdoc Project",
-    "description": "Training and experimentation space for data cube workflows.",
-    "class": ""
+    "description": "Training and experimentation space for data cube workflows."
   },
   {
     "title": "SpectralBEF",
     "url": "https://cu-esiil.github.io/spectralBEF/",
     "image": "assets/thumbnails/active/research/spectralbef-button.png",
     "meta": "Staff Research",
-    "description": "Spectral biodiversity and ecosystem-functioning analysis.",
-    "class": ""
+    "description": "Spectral biodiversity and ecosystem-functioning analysis."
   },
   {
     "title": "WUI Boundary",
     "url": "https://cu-esiil.github.io/WUI_boundary/",
     "image": "assets/thumbnails/active/research/wui-boundary-button.png",
     "meta": "Staff Research",
-    "description": "Measuring the wildland-urban interface across delineation and scale.",
-    "class": "oasis-research-card--wide"
+    "description": "Measuring the wildland-urban interface across delineation and scale."
   },
   {
     "title": "Team Science",
     "url": "https://cu-esiil.github.io/Team-Science/",
     "image": "assets/thumbnails/active/research/team-science-button.png",
     "meta": "Postdoc Project",
-    "description": "Studying scientific collaboration networks and synthesis practice.",
-    "class": ""
+    "description": "Studying scientific collaboration networks and synthesis practice."
   },
   {
     "title": "LLM Lesson Exemplar",
     "url": "https://cu-esiil.github.io/LLM_lesson_exemplar/",
     "image": "assets/thumbnails/active/research/llm-lesson-exemplar-button.png",
     "meta": "Postdoc Project",
-    "description": "Example lesson materials for large language model workflows.",
-    "class": ""
+    "description": "Example lesson materials for large language model workflows."
   }
 ] %}
 
@@ -76,8 +69,8 @@
       </a>
     </div>
 
-    <div class="oasis-research-wall">
-      <aside class="oasis-research-wall__intro" data-reveal>
+    <div class="oasis-feature-row oasis-feature-row--research">
+      <aside class="oasis-feature-intro" data-reveal>
         <p class="oasis-feature-intro__label">Computational ecology</p>
         <p class="oasis-feature-intro__text">
           This band highlights the methodological and software innovation that
@@ -86,42 +79,38 @@
         </p>
       </aside>
 
-      {% for project in projects %}
-        {% if project.url %}
-          <a
-            class="oasis-research-card {{ project.class }}"
-            href="{{ project.url }}"
-            target="_blank"
-            rel="noopener"
-            data-reveal
-          >
-            <div class="oasis-research-card__image">
-              <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy" decoding="async" />
-            </div>
-            <div class="oasis-research-card__body">
-              <p class="oasis-research-card__meta">{{ project.meta }}</p>
-              <h3>{{ project.title }}</h3>
-              <p>{{ project.description }}</p>
-              <span class="oasis-research-card__link">
-                <span>Open Project</span>
-                <span aria-hidden="true">→</span>
-              </span>
-            </div>
-          </a>
-        {% else %}
-          <article class="oasis-research-card {{ project.class }}" data-reveal>
-            <div class="oasis-research-card__image">
-              <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy" decoding="async" />
-            </div>
-            <div class="oasis-research-card__body">
-              <p class="oasis-research-card__meta">{{ project.meta }}</p>
-              <h3>{{ project.title }}</h3>
-              <p>{{ project.description }}</p>
-              <span class="oasis-research-card__status">Public site forthcoming</span>
-            </div>
-          </article>
-        {% endif %}
-      {% endfor %}
+      <div class="oasis-card-rail oasis-card-rail--groups" data-reveal>
+        {% for project in projects %}
+          {% if project.url %}
+            <a class="oasis-project-card oasis-project-card--research" href="{{ project.url }}" target="_blank" rel="noopener">
+              <div class="oasis-project-card__media">
+                <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy" decoding="async" />
+              </div>
+              <div class="oasis-project-card__body">
+                <p class="oasis-project-card__meta">{{ project.meta }}</p>
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <span class="oasis-project-card__cta">
+                  <span>Open Project</span>
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          {% else %}
+            <article class="oasis-project-card oasis-project-card--research">
+              <div class="oasis-project-card__media">
+                <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy" decoding="async" />
+              </div>
+              <div class="oasis-project-card__body">
+                <p class="oasis-project-card__meta">{{ project.meta }}</p>
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <span class="oasis-project-card__status">Public site forthcoming</span>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>

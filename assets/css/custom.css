@@ -943,6 +943,13 @@
   transform: translateX(0.24rem);
 }
 
+.oasis-project-card__status,
+.oasis-research-card__status {
+  margin-top: auto;
+  color: var(--oasis-text-muted);
+  font-size: 0.98rem;
+}
+
 .oasis-research-wall {
   display: grid;
   grid-template-columns: minmax(16rem, 22rem) repeat(6, minmax(0, 1fr));
