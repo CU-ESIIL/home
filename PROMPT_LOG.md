@@ -89,3 +89,36 @@ homepage sections.
   are now covered in Playwright. If future work expands the directory or adds
   new homepage sections, the link-health expectations should be reviewed
   alongside those content changes.
+
+## 2026-05-28
+
+- Goal: Split the old all-in-one ecosystem directory into dedicated gallery
+  subpages for working groups, research, events, and infrastructure, and fix
+  blank/failed browser back behavior across the custom homepage experience.
+- Context reviewed: `mkdocs.yml`, `docs/assets/css/custom.css`,
+  `docs/assets/js/homepage.js`, homepage partials, the new custom page
+  templates under `docs/overrides/`, the directory markdown pages, and the
+  existing Playwright coverage for homepage rendering and link health.
+- Files changed: `PROMPT_LOG.md`, `docs/assets/css/custom.css`,
+  `docs/assets/js/homepage.js`, `docs/directory/index.md`,
+  `docs/directory/working-groups.md`, `docs/directory/research.md`,
+  `docs/directory/events.md`, `docs/directory/infrastructure.md`,
+  `docs/overrides/home.html`, `docs/overrides/section-gallery.html`,
+  `docs/overrides/partials/working_groups.html`,
+  `docs/overrides/partials/staff_projects.html`,
+  `docs/overrides/partials/events.html`,
+  `docs/overrides/partials/infrastructure.html`,
+  `docs/overrides/partials/directory/hub.html`,
+  `docs/overrides/partials/directory/working_groups_page.html`,
+  `docs/overrides/partials/directory/research_page.html`,
+  `docs/overrides/partials/directory/events_page.html`,
+  `docs/overrides/partials/directory/infrastructure_page.html`, and
+  `tests/homepage.spec.ts`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission; in-app browser spot checks on
+  the homepage and working-groups gallery after fixing section-page asset
+  paths.
+- Follow-up / unresolved: The new gallery pages intentionally stay linked from
+  the homepage and ecosystem hub rather than expanding the top-level nav. If
+  the user wants them added to global navigation later, that can be done as a
+  small follow-up.

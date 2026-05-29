@@ -1,0 +1,182 @@
+{% set sections = [
+  {
+    "eyebrow": "Libraries & Learning",
+    "title": "Core infrastructure",
+    "description": "The calm, operational core of OASIS: libraries, container resources, and guided learning paths.",
+    "items": [
+      {
+        "title": "Analytics Library",
+        "url": "https://cu-esiil.github.io/analytics-library/",
+        "image": "../../assets/homepage/infrastructure/analytics-library-button.jpeg",
+        "meta": "Library",
+        "description": "Data harmonization, reusable workflows, and analytics methods."
+      },
+      {
+        "title": "Data Library",
+        "url": "https://cu-esiil.github.io/data-library/",
+        "image": "../../assets/homepage/infrastructure/data-library-button.jpeg",
+        "meta": "Library",
+        "description": "Organizational hub for datasets, discovery, and shared data access."
+      },
+      {
+        "title": "Container Library",
+        "url": base_url ~ "/container-library/",
+        "image": "../../assets/homepage/infrastructure/container-library-button.jpeg",
+        "meta": "Library",
+        "description": "Browse container images and runtime environments for ESIIL computing."
+      },
+      {
+        "title": "Quickstart",
+        "url": base_url ~ "/quickstart/",
+        "image": "../../assets/homepage/infrastructure/quickstart-button.jpg",
+        "meta": "Tutorials",
+        "description": "Orientation and learning paths into cloud, code, and OASIS workflows."
+      },
+      {
+        "title": "Advanced Textbook",
+        "url": base_url ~ "/quickstart/advanced-textbook/",
+        "image": "../../assets/homepage/infrastructure/advanced-textbook-button.jpeg",
+        "meta": "Tutorials",
+        "description": "Comprehensive guide to environmental data science practices."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Operational Tools",
+    "title": "Demos, utilities, and support surfaces",
+    "description": "Working infrastructure, troubleshooting surfaces, and lightweight demos that support day-to-day OASIS use.",
+    "items": [
+      {
+        "title": "Docker Hub Library",
+        "url": "https://hub.docker.com/u/esiil",
+        "image": "../../assets/homepage/infrastructure/container-library-button.jpeg",
+        "meta": "Registry",
+        "description": "Containerized workflows and published images on Docker Hub."
+      },
+      {
+        "title": "CyVerse Utils",
+        "url": "https://github.com/CU-ESIIL/cyverse-utils",
+        "image": "../../assets/homepage/infrastructure/cyverse-utils-button.jpeg",
+        "meta": "Utility",
+        "description": "Utilities for working with CyVerse infrastructure and workflows."
+      },
+      {
+        "title": "CyVerse Issues",
+        "url": "https://github.com/CU-ESIIL/cyverse-issues",
+        "image": "../../assets/homepage/infrastructure/cyverse-issues-button.jpeg",
+        "meta": "Support",
+        "description": "Tracking and troubleshooting infrastructure issues."
+      },
+      {
+        "title": "OASIS Docker Demo",
+        "url": "https://cu-esiil.github.io/OASISDockerDemo/",
+        "image": "../../assets/homepage/infrastructure/oasis-docker-demo-button.jpeg",
+        "meta": "Demo",
+        "description": "Public demonstration of Dockerized OASIS workflows."
+      },
+      {
+        "title": "Min Docker Demo",
+        "url": "https://cu-esiil.github.io/Min_docker_demo/",
+        "image": "../../assets/homepage/infrastructure/min-docker-demo-button.jpeg",
+        "meta": "Demo",
+        "description": "Minimal demonstration of container workflows."
+      },
+      {
+        "title": "Development Schedule",
+        "url": base_url ~ "/dev-schedule/",
+        "image": "../../assets/homepage/infrastructure/analytics-library-button.jpeg",
+        "meta": "Roadmap",
+        "description": "Current implementation planning and maintenance schedule for the home repository."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Reusable Templates",
+    "title": "Launch pads for new OASIS sites",
+    "description": "Starter repositories and template sites for new working groups, projects, education hubs, and presentations.",
+    "items": [
+      {
+        "title": "Basic OASIS",
+        "url": "https://github.com/CU-ESIIL/basic_OASIS",
+        "image": "../../assets/homepage/templates/basic-oasis-template-button.png",
+        "meta": "Template",
+        "description": "Starter template for building a new OASIS project site."
+      },
+      {
+        "title": "Postdoc OASIS",
+        "url": "https://cu-esiil.github.io/Postdoc_OASIS/",
+        "image": "../../assets/homepage/templates/postdoc-oasis-template-button.jpeg",
+        "meta": "Template",
+        "description": "Template for postdoc research documentation."
+      },
+      {
+        "title": "Working Group OASIS",
+        "url": "https://cu-esiil.github.io/Working_group_OASIS/",
+        "image": "../../assets/homepage/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Template",
+        "description": "Central template for working-group collaboration and documentation."
+      },
+      {
+        "title": "Project Group OASIS",
+        "url": "https://cu-esiil.github.io/Project_group_OASIS/",
+        "image": "../../assets/homepage/templates/project-group-oasis-template-button.png",
+        "meta": "Template",
+        "description": "Template for project-group collaboration and documentation."
+      },
+      {
+        "title": "Base GitHub Pages",
+        "url": "https://github.com/CU-ESIIL/base-gh-pages",
+        "image": "../../assets/homepage/templates/base-github-pages-template-button.jpeg",
+        "meta": "Template",
+        "description": "Starter repository for GitHub Pages projects."
+      },
+      {
+        "title": "Education OASIS",
+        "url": "https://cu-esiil.github.io/Education_OASIS/",
+        "image": "../../assets/homepage/templates/education-oasis-template-button.jpeg",
+        "meta": "Template",
+        "description": "Template for ESIIL education and training projects."
+      },
+      {
+        "title": "Slideshow OASIS",
+        "url": "https://cu-esiil.github.io/Slideshow_OASIS/",
+        "image": "../../assets/homepage/templates/slideshow-oasis-template-button.jpeg",
+        "meta": "Template",
+        "description": "Basic slideshow template for presentations and event materials."
+      }
+    ]
+  }
+] %}
+
+<div class="oasis-section-page__sections">
+  {% for section in sections %}
+    <section class="oasis-gallery-section" data-reveal>
+      <div class="oasis-section-heading">
+        <div class="oasis-section-heading__copy">
+          <p class="oasis-section-heading__eyebrow">{{ section.eyebrow }}</p>
+          <h2>{{ section.title }}</h2>
+          <p>{{ section.description }}</p>
+        </div>
+      </div>
+
+      <div class="oasis-gallery-grid">
+        {% for item in section["items"] %}
+          <a class="oasis-project-card" href="{{ item.url }}" {% if item.url.startswith("http") %}target="_blank" rel="noopener"{% endif %} data-reveal>
+            <div class="oasis-project-card__media">
+              <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
+            </div>
+            <div class="oasis-project-card__body">
+              <p class="oasis-project-card__meta">{{ item.meta }}</p>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+              <span class="oasis-project-card__cta">
+                <span>Open Resource</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

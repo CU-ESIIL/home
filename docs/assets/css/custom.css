@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 
-.oasis-home-template {
+.oasis-home-template,
+.oasis-section-template {
   --oasis-home-bg: #f7f4ef;
   --oasis-paper: #fbf7f0;
   --oasis-paper-strong: #f3ede3;
@@ -24,28 +25,35 @@
   --oasis-radius-md: 18px;
 }
 
-.oasis-home-template body {
+.oasis-home-template body,
+.oasis-section-template body {
   background: var(--oasis-home-bg);
   color: var(--oasis-text);
   font-family: "Source Sans 3", "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 .oasis-home-template .md-header,
-.oasis-home-template .md-tabs {
+.oasis-home-template .md-tabs,
+.oasis-section-template .md-header,
+.oasis-section-template .md-tabs {
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(16px);
 }
 
-.oasis-home-template .md-header {
+.oasis-home-template .md-header,
+.oasis-section-template .md-header {
   box-shadow: 0 1px 0 rgba(35, 74, 101, 0.08);
 }
 
 .oasis-home-template .md-main__inner,
-.oasis-home-template .md-content {
+.oasis-home-template .md-content,
+.oasis-section-template .md-main__inner,
+.oasis-section-template .md-content {
   max-width: none;
 }
 
-.oasis-home-template .md-content__inner {
+.oasis-home-template .md-content__inner,
+.oasis-section-template .md-content__inner {
   margin: 0;
   padding: 0;
 }
@@ -53,24 +61,32 @@
 .oasis-home-template .md-content__button,
 .oasis-home-template .md-sidebar,
 .oasis-home-template .md-sidebar--secondary,
-.oasis-home-template .md-sidebar--primary {
+.oasis-home-template .md-sidebar--primary,
+.oasis-section-template .md-content__button,
+.oasis-section-template .md-sidebar,
+.oasis-section-template .md-sidebar--secondary,
+.oasis-section-template .md-sidebar--primary {
   display: none;
 }
 
-.oasis-home-template .md-main__inner.md-grid {
+.oasis-home-template .md-main__inner.md-grid,
+.oasis-section-template .md-main__inner.md-grid {
   margin: 0;
   max-width: none;
 }
 
-.oasis-home-template .md-content {
+.oasis-home-template .md-content,
+.oasis-section-template .md-content {
   width: 100%;
 }
 
-.oasis-home-template .md-content__inner::before {
+.oasis-home-template .md-content__inner::before,
+.oasis-section-template .md-content__inner::before {
   display: none;
 }
 
-.oasis-home-template .md-footer {
+.oasis-home-template .md-footer,
+.oasis-section-template .md-footer {
   display: none;
 }
 
@@ -97,6 +113,63 @@
     linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.18) 100%);
   background-size: 30px 30px, 26px 26px, 100% 100%, 100% 100%;
   opacity: 0.35;
+}
+
+.oasis-section-page {
+  --oasis-section-surface: rgba(233, 239, 244, 0.92);
+  position: relative;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  overflow: clip;
+  background:
+    radial-gradient(circle at 14% 14%, rgba(66, 188, 220, 0.1), transparent 24%),
+    radial-gradient(circle at 84% 10%, rgba(0, 113, 53, 0.09), transparent 22%),
+    linear-gradient(180deg, #fcfaf6 0%, var(--oasis-home-bg) 100%);
+}
+
+.oasis-section-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(35, 74, 101, 0.06) 0 1px, transparent 1px),
+    radial-gradient(circle at 76% 28%, rgba(0, 113, 53, 0.05) 0 1px, transparent 1px),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.34), transparent 40%);
+  background-size: 28px 28px, 24px 24px, 100% 100%;
+  opacity: 0.4;
+}
+
+.oasis-section-page--sage {
+  --oasis-section-surface: rgba(231, 239, 230, 0.96);
+  background:
+    radial-gradient(circle at 16% 14%, rgba(77, 187, 116, 0.12), transparent 23%),
+    radial-gradient(circle at 82% 16%, rgba(35, 74, 101, 0.08), transparent 24%),
+    linear-gradient(180deg, #faf8f1 0%, #eef4ea 100%);
+}
+
+.oasis-section-page--mist {
+  --oasis-section-surface: rgba(233, 239, 244, 0.94);
+  background:
+    radial-gradient(circle at 14% 14%, rgba(66, 188, 220, 0.11), transparent 24%),
+    radial-gradient(circle at 84% 12%, rgba(35, 74, 101, 0.07), transparent 24%),
+    linear-gradient(180deg, #fcfaf6 0%, #edf3f7 100%);
+}
+
+.oasis-section-page--earth {
+  --oasis-section-surface: rgba(240, 226, 210, 0.95);
+  background:
+    radial-gradient(circle at 18% 15%, rgba(209, 108, 67, 0.11), transparent 22%),
+    radial-gradient(circle at 80% 14%, rgba(35, 74, 101, 0.07), transparent 23%),
+    linear-gradient(180deg, #fcfaf6 0%, #f4e8d8 100%);
+}
+
+.oasis-section-page--white {
+  --oasis-section-surface: rgba(255, 255, 255, 0.95);
+  background:
+    radial-gradient(circle at 16% 14%, rgba(66, 188, 220, 0.08), transparent 22%),
+    radial-gradient(circle at 82% 12%, rgba(0, 113, 53, 0.06), transparent 22%),
+    linear-gradient(180deg, #fffdfa 0%, #f7f4ef 100%);
 }
 
 .oasis-shell {
@@ -164,6 +237,7 @@
 }
 
 .oasis-home__kicker,
+.oasis-section-page__eyebrow,
 .oasis-section-heading__eyebrow,
 .oasis-feature-intro__label,
 .oasis-project-card__meta,
@@ -179,6 +253,7 @@
 }
 
 .oasis-home__hero h1,
+.oasis-section-page__hero h1,
 .oasis-section-heading h2,
 .oasis-footer-band__message h2 {
   margin: 0;
@@ -194,12 +269,18 @@
   max-width: 10.2ch;
 }
 
+.oasis-section-page__hero h1 {
+  font-size: clamp(3.4rem, 6vw, 5.6rem);
+  max-width: 12ch;
+}
+
 .oasis-section-heading h2,
 .oasis-footer-band__message h2 {
   font-size: clamp(2.7rem, 5vw, 4.3rem);
 }
 
 .oasis-home__lede,
+.oasis-section-page__lede,
 .oasis-section-heading__copy > p:last-child,
 .oasis-feature-intro__text,
 .oasis-footer-band__message > p {
@@ -222,6 +303,132 @@
   color: var(--oasis-text-muted);
   font-size: 1rem;
   max-width: 34rem;
+}
+
+.oasis-section-page__shell {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  padding: clamp(3.5rem, 7vw, 6rem) 0 clamp(4rem, 8vw, 6.5rem);
+}
+
+.oasis-section-page__hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  padding: clamp(1.8rem, 3.6vw, 3rem);
+  border: 1px solid rgba(35, 74, 101, 0.12);
+  border-radius: calc(var(--oasis-radius-xl) + 4px);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.58)),
+    var(--oasis-section-surface);
+  box-shadow: var(--oasis-shadow-soft);
+  backdrop-filter: blur(12px);
+}
+
+.oasis-section-page__hero::before,
+.oasis-gallery-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.32), transparent 28%),
+    linear-gradient(135deg, rgba(35, 74, 101, 0.04), transparent 44%);
+  opacity: 0.65;
+}
+
+.oasis-section-page__hero-copy,
+.oasis-gallery-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.oasis-section-page__hero-copy {
+  max-width: 48rem;
+}
+
+.oasis-section-page__actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.9rem;
+}
+
+.oasis-section-page__intro {
+  max-width: 42rem;
+  padding: 0 0.15rem;
+}
+
+.oasis-section-page__intro > *:first-child {
+  margin-top: 0;
+}
+
+.oasis-section-page__intro > *:last-child {
+  margin-bottom: 0;
+}
+
+.oasis-section-page__intro p {
+  color: var(--oasis-text-soft);
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+.oasis-section-page__sections {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.oasis-gallery-section {
+  position: relative;
+  padding: clamp(1.6rem, 3vw, 2.5rem);
+  border: 1px solid rgba(35, 74, 101, 0.1);
+  border-radius: calc(var(--oasis-radius-xl) + 2px);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.54)),
+    var(--oasis-section-surface);
+  box-shadow: 0 12px 28px rgba(35, 74, 101, 0.08);
+}
+
+.oasis-gallery-section--plain {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.48)),
+    var(--oasis-section-surface);
+}
+
+.oasis-gallery-section .oasis-section-heading {
+  margin-bottom: 1.8rem;
+}
+
+.oasis-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.oasis-gallery-grid--hub {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.oasis-event-grid--directory {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.oasis-gallery-card--placeholder {
+  min-height: 100%;
+  border-style: dashed;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 244, 237, 0.72));
+  box-shadow: none;
+}
+
+.oasis-gallery-card--placeholder .oasis-project-card__body {
+  justify-content: center;
+  min-height: 100%;
 }
 
 .oasis-button {
@@ -724,19 +931,22 @@
   text-transform: uppercase;
 }
 
-.oasis-home-template.oasis-home-enhanced [data-reveal] {
+.oasis-home-template.oasis-motion-enhanced [data-reveal],
+.oasis-section-template.oasis-motion-enhanced [data-reveal] {
   opacity: 0;
   transform: translateY(22px);
   transition: opacity 500ms ease, transform 500ms ease;
 }
 
-.oasis-home-template.oasis-home-enhanced [data-reveal].is-visible {
+.oasis-home-template.oasis-motion-enhanced [data-reveal].is-visible,
+.oasis-section-template.oasis-motion-enhanced [data-reveal].is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .oasis-home-template.oasis-home-enhanced [data-reveal] {
+  .oasis-home-template.oasis-motion-enhanced [data-reveal],
+  .oasis-section-template.oasis-motion-enhanced [data-reveal] {
     opacity: 1;
     transform: none;
     transition: none;
@@ -754,7 +964,8 @@
 
 @media (max-width: 1220px) {
   .oasis-home__hero-shell,
-  .oasis-feature-row {
+  .oasis-feature-row,
+  .oasis-section-page__hero {
     grid-template-columns: 1fr;
   }
 
@@ -780,6 +991,11 @@
 
   .oasis-event-grid,
   .oasis-infra-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .oasis-gallery-grid,
+  .oasis-event-grid--directory {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -810,6 +1026,10 @@
 
   .oasis-home__hero-art {
     min-height: 28rem;
+  }
+
+  .oasis-section-page__actions {
+    justify-content: flex-start;
   }
 
   .oasis-section-heading {
@@ -844,10 +1064,16 @@
   .oasis-infra-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .oasis-gallery-grid,
+  .oasis-event-grid--directory {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
-  .oasis-homepage {
+  .oasis-homepage,
+  .oasis-section-page {
     width: 100%;
     margin-inline: 0;
   }
@@ -873,7 +1099,9 @@
   }
 
   .oasis-card-rail--groups,
+  .oasis-gallery-grid,
   .oasis-event-grid,
+  .oasis-event-grid--directory,
   .oasis-infra-grid,
   .oasis-research-wall {
     grid-template-columns: 1fr;
@@ -882,5 +1110,10 @@
   .oasis-feature-intro,
   .oasis-research-wall__intro {
     padding: 0;
+  }
+
+  .oasis-section-page__hero,
+  .oasis-gallery-section {
+    padding: 1.35rem;
   }
 }

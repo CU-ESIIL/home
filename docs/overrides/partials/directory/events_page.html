@@ -1,0 +1,93 @@
+{% set events = [
+  {
+    "title": "Innovation Summit 2026",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2026/",
+    "image": "../../assets/homepage/events/innovation-summit-2026-button.png",
+    "tag": "2026",
+    "description": "AI for sustainability and environmental data-to-decision exchange."
+  },
+  {
+    "title": "HDR-ML Hackathon 2026",
+    "url": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026",
+    "image": "../../assets/homepage/events/hdr-ml-hackathon-2026-button.png",
+    "tag": "2026",
+    "description": "Hands-on machine-learning collaboration around environmental datasets."
+  },
+  {
+    "title": "Innovation Summit 2025",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2025/",
+    "image": "../../assets/homepage/events/innovation-summit-2025-button.jpeg",
+    "tag": "2025",
+    "description": "Official repository for the ESIIL Innovation Summit 2025."
+  },
+  {
+    "title": "FIRE Plan 2024",
+    "url": "https://cu-esiil.github.io/FIRE-plan-2024/",
+    "image": "../../assets/homepage/events/fire-plan-2024-button.jpeg",
+    "tag": "2024",
+    "description": "Planning and strategy for fire management and shared response."
+  },
+  {
+    "title": "Innovation Summit 2024",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2024/",
+    "image": "../../assets/homepage/events/innovation-summit-2024-button.jpeg",
+    "tag": "2024",
+    "description": "Earlier summit materials and environmental innovation exchange."
+  },
+  {
+    "title": "Forest Carbon Codefest",
+    "url": "https://cu-esiil.github.io/forest-carbon-codefest/",
+    "image": "../../assets/homepage/events/forest-carbon-codefest-button.jpeg",
+    "tag": "Codefest",
+    "description": "Hands-on coding event for forest carbon research and tools."
+  },
+  {
+    "title": "HYR-SENSE",
+    "url": "https://cu-esiil.github.io/HYR-SENSE/",
+    "image": "../../assets/homepage/events/hyr-sense-button.jpeg",
+    "tag": "Workshop",
+    "description": "Remote sensing workshop and collaboration hub."
+  },
+  {
+    "title": "AGU 2023 Innovation Session",
+    "url": "https://cu-esiil.github.io/agu-2023_innovation_session/",
+    "image": "../../assets/homepage/events/agu-2023-innovation-session-button.jpeg",
+    "tag": "AGU",
+    "description": "Stakeholder engagement in open environmental data science."
+  }
+] %}
+
+<div class="oasis-section-page__sections">
+  <section class="oasis-gallery-section" data-reveal>
+    <div class="oasis-section-heading">
+      <div class="oasis-section-heading__copy">
+        <p class="oasis-section-heading__eyebrow">Calendar of Exchange</p>
+        <h2>Gatherings, workshops, and public exchange</h2>
+        <p>
+          OASIS events are where the ecosystem becomes visible: summits,
+          hackathons, codefests, and disciplinary touchpoints that turn tools
+          into collaboration.
+        </p>
+      </div>
+    </div>
+
+    <div class="oasis-event-grid oasis-event-grid--directory">
+      {% for event in events %}
+        <a class="oasis-event-card" href="{{ event.url }}" target="_blank" rel="noopener" data-reveal>
+          <div class="oasis-event-card__media">
+            <img src="{{ event.image }}" alt="{{ event.title }}" loading="lazy" decoding="async" />
+            <span class="oasis-event-card__tag">{{ event.tag }}</span>
+          </div>
+          <div class="oasis-event-card__body">
+            <h3>{{ event.title }}</h3>
+            <p>{{ event.description }}</p>
+            <span class="oasis-event-card__link">
+              <span>Open Event</span>
+              <span aria-hidden="true">→</span>
+            </span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+</div>

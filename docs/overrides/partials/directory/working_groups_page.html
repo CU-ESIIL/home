@@ -1,0 +1,152 @@
+{% set cohorts = [
+  {
+    "eyebrow": "Cohort 1",
+    "title": "Foundational working groups",
+    "description": "The first cohort established the collaborative template for OASIS working groups and remains the densest cluster of active project sites.",
+    "items": [
+      {
+        "title": "BioViewPoint",
+        "url": "https://cu-esiil.github.io/BioViewPoint/",
+        "image": "../../assets/homepage/working-groups/bioviewpoint-button.jpeg",
+        "meta": "Cohort 1",
+        "description": "Visualization tools and ecological viewpoints for biodiversity data."
+      },
+      {
+        "title": "Extreme Wildfire",
+        "url": "https://cu-esiil.github.io/ExtremeWildfire/",
+        "image": "../../assets/homepage/working-groups/extreme-wildfire-button.jpeg",
+        "meta": "Cohort 1",
+        "description": "Investigating extreme wildfire behavior and environmental change."
+      },
+      {
+        "title": "Fungal Dispersal",
+        "url": "https://cu-esiil.github.io/fungal_dispersal/",
+        "image": "../../assets/homepage/working-groups/fungal-dispersal-button.jpeg",
+        "meta": "Cohort 1",
+        "description": "Open synthesis on fungal dispersal, connectivity, and ecological spread."
+      },
+      {
+        "title": "Macrophenology",
+        "url": "https://cu-esiil.github.io/macrophenology/",
+        "image": "../../assets/homepage/working-groups/macrophenology-button.jpeg",
+        "meta": "Cohort 1",
+        "description": "Macroecological phenology patterns across changing environments."
+      },
+      {
+        "title": "Maka-Sitomniya",
+        "url": "https://cu-esiil.github.io/Maka-Sitomniya/",
+        "image": "../../assets/homepage/working-groups/maka-sitomniya-button.jpeg",
+        "meta": "Cohort 1",
+        "description": "Research on place-based and traditional ecological knowledge."
+      },
+      {
+        "title": "AI for Natural Methane",
+        "url": "https://cu-esiil.github.io/AI-for-Natural-Methane/",
+        "image": "../../assets/homepage/working-groups/ai-for-natural-methane-button.jpeg",
+        "meta": "Cohort 1",
+        "description": "Harmonizing natural methane datasets and discovery workflows with AI."
+      },
+      {
+        "title": "Zooplankton Indicator Dataset",
+        "url": "https://cu-esiil.github.io/zooplankton_indicator_dataset/",
+        "image": "../../assets/homepage/working-groups/zooplankton-indicator-dataset-button.jpeg",
+        "meta": "Cohort 1",
+        "description": "Indicator dataset and tools for zooplankton-driven environmental analysis."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Cohort 2",
+    "title": "Newly launched cohorts",
+    "description": "These groups have their own emerging project identities and now have public-facing OASIS pages to match.",
+    "items": [
+      {
+        "title": "popClimVar",
+        "url": "https://cu-esiil.github.io/popClimVar/",
+        "image": "../../assets/homepage/working-groups/popclimvar-button.png",
+        "meta": "Cohort 2",
+        "description": "Working group site for population and climate variability research."
+      },
+      {
+        "title": "EnviroLLM",
+        "url": "https://cu-esiil.github.io/envirollm/",
+        "image": "../../assets/homepage/working-groups/envirollm-button.png",
+        "meta": "Cohort 2",
+        "description": "Environmental large-language-model workflows and collaborative experimentation."
+      },
+      {
+        "title": "GUBIC",
+        "url": "https://cu-esiil.github.io/GUBIC/",
+        "image": "../../assets/homepage/working-groups/gubic-button.png",
+        "meta": "Cohort 2",
+        "description": "Global Urban Biological Invasions Consortium collaboration hub."
+      },
+      {
+        "title": "Public Observing Unci Maka",
+        "url": "https://cu-esiil.github.io/Public-Observing-Unci-Maka/",
+        "image": "../../assets/homepage/working-groups/public-observing-unci-maka-button.png",
+        "meta": "Cohort 2",
+        "description": "Public observing and place-based environmental knowledge collaboration."
+      },
+      {
+        "title": "VERDE",
+        "url": "https://cu-esiil.github.io/VERDE/",
+        "image": "../../assets/homepage/working-groups/verde-button.png",
+        "meta": "Cohort 2",
+        "description": "Working group site for VERDE environmental data synthesis."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Cohort 3",
+    "title": "Next cohort",
+    "description": "Cohort 3 will populate after the next round of technical training. The row is ready so the gallery can grow without another layout rewrite.",
+    "items": []
+  }
+] %}
+
+<div class="oasis-section-page__sections">
+  {% for cohort in cohorts %}
+    <section class="oasis-gallery-section" data-reveal>
+      <div class="oasis-section-heading">
+        <div class="oasis-section-heading__copy">
+          <p class="oasis-section-heading__eyebrow">{{ cohort.eyebrow }}</p>
+          <h2>{{ cohort.title }}</h2>
+          <p>{{ cohort.description }}</p>
+        </div>
+      </div>
+
+      {% if cohort["items"] %}
+        <div class="oasis-gallery-grid">
+          {% for item in cohort["items"] %}
+            <a class="oasis-project-card" href="{{ item.url }}" target="_blank" rel="noopener" data-reveal>
+              <div class="oasis-project-card__media">
+                <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
+              </div>
+              <div class="oasis-project-card__body">
+                <p class="oasis-project-card__meta">{{ item.meta }}</p>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+                <span class="oasis-project-card__cta">
+                  <span>Open Project</span>
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      {% else %}
+        <article class="oasis-project-card oasis-gallery-card--placeholder" data-reveal>
+          <div class="oasis-project-card__body">
+            <p class="oasis-project-card__meta">Coming Soon</p>
+            <h3>Cohort 3 is being prepared</h3>
+            <p>
+              Public project buttons will be added here after the next month of
+              technical training and site setup.
+            </p>
+          </div>
+        </article>
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>
