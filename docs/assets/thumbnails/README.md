@@ -12,13 +12,16 @@ The goal is to keep thumbnail work durable and reversible. The live site can poi
 - `docs/assets/thumbnails/thumbnail-manifest.yml`: machine-readable manifest of stable thumbnail IDs, current active paths, original paths, and set locations.
 - `docs/assets/thumbnails/originals/`: preserved copy of the original homepage thumbnail collection.
 - `docs/assets/thumbnails/sets/set-001-originals/`: first tracked set, matching the original thumbnails.
-- `docs/assets/thumbnails/sets/set-002-generated/`: placeholder for the next generated set.
+- `docs/assets/thumbnails/sets/set-002-generated/`: alternate painted-panel
+  set derived from user-provided thumbnail sheets.
 - `docs/assets/thumbnails/active/`: files currently referenced by the site.
 - `docs/assets/thumbnails/style-guides/`: reference panels or visual guide images for future thumbnail-generation prompts.
 
 ## Current layout
 
-The current active set is a copied version of the original homepage thumbnails. The legacy source files under `docs/assets/homepage/` are still preserved and were not deleted.
+The current active set points at `set-002-generated`, an alternate white-background painted-thumbnail set cropped from user-provided panel sheets. The original screen-print-like set remains preserved under both `docs/assets/thumbnails/originals/` and `docs/assets/thumbnails/sets/set-001-originals/`.
+
+Not every thumbnail family was included in the supplied panels. Any uncovered assets in `set-002-generated`, such as templates and some secondary infrastructure items, were intentionally carried forward from the prior active set so the site can switch styles without breaking image coverage.
 
 ## How to switch the active thumbnail set
 

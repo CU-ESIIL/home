@@ -12,4 +12,11 @@ Suggested practice:
 - add a short note in the generation prompt or manifest describing which set it informed
 - if a guide introduces a new house style, update the repository image guidance before making that set active
 
-The user-provided panel reference for a future set can be copied here later if you want it tracked inside the repository.
+The current repository now tracks the panel sheets that informed
+`set-002-generated`:
+
+- `working-group-thumbnails-panel.png`
+- `staff-postdoc-thumbnails-panel.png`
+- `events-and-infrastructure-thumbnails-panel.png`
+
+These are source panels for cropping, not direct website assets.

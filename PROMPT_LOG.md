@@ -259,3 +259,24 @@ homepage sections.
 - Follow-up / unresolved: The centered OASIS header logo is intentionally
   hidden below `900px` so the palette toggle, search, and mobile navigation
   stay discoverable and uncluttered on narrow screens.
+
+## 2026-05-29
+
+- Goal: Convert user-provided thumbnail panels into a managed alternate set,
+  preserve the legacy screen-print set, and switch the live site to the new
+  panel-derived thumbnails.
+- Context reviewed: `docs/assets/thumbnails/README.md`,
+  `docs/assets/thumbnails/thumbnail-manifest.yml`,
+  `docs/thumbnail-system/project-thumbnail-index.md`, and the live active-tree
+  filenames under `docs/assets/thumbnails/active/`.
+- Files changed: `docs/assets/thumbnails/active/` for the newly promoted live
+  alternate thumbnails, populated `docs/assets/thumbnails/sets/set-002-generated/`,
+  copied reference panels into `docs/assets/thumbnails/style-guides/`, and
+  updated thumbnail-system documentation.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission.
+- Follow-up / unresolved: The provided panels covered working groups, research,
+  events, and four major infrastructure cards. Template thumbnails and several
+  secondary infrastructure assets were intentionally inherited from the prior
+  active set inside `set-002-generated` because no alternate panel art was
+  provided for them.
