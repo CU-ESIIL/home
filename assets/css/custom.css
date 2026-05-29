@@ -301,8 +301,8 @@
 .oasis-home__hero {
   min-height: calc(100vh - 5rem);
   display: flex;
-  align-items: center;
-  padding: clamp(1.1rem, 1.8vw, 1.9rem) 0 clamp(4rem, 7vw, 6rem);
+  align-items: flex-start;
+  padding: clamp(0.2rem, 0.7vw, 0.65rem) 0 clamp(4rem, 7vw, 6rem);
   background:
     radial-gradient(circle at 82% 20%, rgba(66, 188, 220, 0.13), transparent 28%),
     radial-gradient(circle at 12% 12%, rgba(0, 113, 53, 0.06), transparent 24%),
@@ -387,7 +387,7 @@
   display: grid;
   grid-template-columns: minmax(18rem, 0.92fr) minmax(22rem, 1.08fr);
   gap: clamp(0.75rem, 2vw, 2.25rem);
-  align-items: center;
+  align-items: start;
 }
 
 .oasis-home__hero-copy {
@@ -676,7 +676,7 @@
 
 .oasis-home__hero-art {
   position: relative;
-  min-height: 104rem;
+  min-height: 90rem;
   margin-left: clamp(-1rem, -1vw, 0rem);
   isolation: isolate;
 }
@@ -684,9 +684,9 @@
 .oasis-home__hero-figure {
   position: absolute;
   z-index: 1;
-  top: clamp(13.5rem, 16vw, 19rem);
-  right: clamp(-28rem, -16vw, -8rem);
-  width: min(216rem, 188vw);
+  top: clamp(20rem, 23vw, 27rem);
+  right: clamp(-8rem, -2vw, 2rem);
+  width: min(252rem, 220vw);
   max-width: none;
   margin: 0;
   transform: translate3d(0, var(--oasis-parallax-shift, 0px), 0);
