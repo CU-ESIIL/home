@@ -265,13 +265,18 @@ Constraints: no text, no logos, no scenic layouts, no glossy UI icon style.
 
 Detected existing repository pattern:
 
-- homepage button imagery is now organized under `docs/assets/homepage/`
+- the legacy source thumbnails remain preserved under `docs/assets/homepage/`
+- the managed thumbnail system now routes live button imagery through
+  `docs/assets/thumbnails/active/`
 - assets are grouped by section or content family
 - existing filenames are standardized to describe the destination project or use
 
 Authoritative rule for new button-image assets:
 
-- place new assets in the matching `docs/assets/homepage/<section>/` folder
+- save new generated sets under
+  `docs/assets/thumbnails/sets/set-00X-name/<section>/`
+- promote approved files into `docs/assets/thumbnails/active/<section>/`
+- preserve originals under `docs/assets/thumbnails/originals/<section>/`
 - use the existing section folders whenever possible:
   `working-groups/`, `research/`, `events/`, `infrastructure/`, and
   `templates/`
@@ -282,9 +287,9 @@ Authoritative rule for new button-image assets:
 
 Examples:
 
-- `docs/assets/homepage/working-groups/wildfire-boundary-button.png`
-- `docs/assets/homepage/infrastructure/analytics-library-button.png`
-- `docs/assets/homepage/research/graduate-student-button.png`
+- `docs/assets/thumbnails/sets/set-002-generated/working-groups/wildfire-boundary-button.png`
+- `docs/assets/thumbnails/active/infrastructure/analytics-library-button.png`
+- `docs/assets/thumbnails/originals/research/graduate-student-button.png`
 
 ## Review checklist before committing
 
@@ -311,15 +316,18 @@ Examples:
 Before generating or replacing any button image, Codex must:
 
 1. Read this file in full.
-2. Inspect existing button images in `docs/assets/homepage/`.
+2. Inspect existing button images in `docs/assets/thumbnails/active/` and the
+   inventory notes in `docs/thumbnail-system/project-thumbnail-index.md`.
 3. Write a one-sentence subject summary.
 4. Define the primary symbol, supporting symbol, and optional biology.
 5. Derive the image from the actual content.
 6. Use the prompt template from this document.
 5. Use the negative prompt template when supported.
 7. Prefer the simpler composition if multiple ideas compete.
-8. Save the asset using the correct path and naming convention.
-9. Verify consistency before committing.
+8. Save the asset into a new set folder under `docs/assets/thumbnails/sets/`.
+9. Copy approved files into `docs/assets/thumbnails/active/`.
+10. Update `docs/assets/thumbnails/thumbnail-manifest.yml`.
+11. Verify consistency before committing.
 
 ## Notes on consistency with homepage
 
@@ -336,11 +344,11 @@ system.
 
 When choosing a destination path, match the content type first:
 
-- working groups to `docs/assets/homepage/working-groups/`
-- staff, postdoc, and student projects to `docs/assets/homepage/research/`
-- summits, hackathons, and codefests to `docs/assets/homepage/events/`
-- libraries, tools, and tutorials to `docs/assets/homepage/infrastructure/`
-- reusable site starters to `docs/assets/homepage/templates/`
+- working groups to `docs/assets/thumbnails/active/working-groups/`
+- staff, postdoc, and student projects to `docs/assets/thumbnails/active/research/`
+- summits, hackathons, and codefests to `docs/assets/thumbnails/active/events/`
+- libraries, tools, and tutorials to `docs/assets/thumbnails/active/infrastructure/`
+- reusable site starters to `docs/assets/thumbnails/active/templates/`
 
 ## Codex operating rule
 

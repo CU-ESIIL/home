@@ -206,6 +206,12 @@ All agents, including Codex, MUST read
 [`docs/button-image-guidelines.md`](docs/button-image-guidelines.md) before
 generating, replacing, or modifying any button image.
 
+Agents working on thumbnail replacement or image-set refreshes must also read:
+
+- [`docs/thumbnail-system/project-thumbnail-index.md`](docs/thumbnail-system/project-thumbnail-index.md)
+- [`docs/assets/thumbnails/README.md`](docs/assets/thumbnails/README.md)
+- [`docs/assets/thumbnails/thumbnail-manifest.yml`](docs/assets/thumbnails/thumbnail-manifest.yml)
+
 The guideline is authoritative over default image generation behavior. Agents
 must match the existing visual family before creating new assets.
 
@@ -236,8 +242,10 @@ the agent must:
 3. Define the subject, primary symbol, supporting symbol, and optional biology.
 4. Build a connected square-tile composition rather than a centered icon.
 5. Use the prompt template defined in the guideline.
-6. Save the image using the correct path and naming convention.
-7. Verify visual consistency before committing.
+6. Save the image into a new set folder under `docs/assets/thumbnails/sets/`.
+7. Update `docs/assets/thumbnails/thumbnail-manifest.yml`.
+8. Copy approved assets into `docs/assets/thumbnails/active/`.
+9. Verify visual consistency before committing.
 
 ## 7. Build, Test, and Validation Expectations
 

@@ -211,3 +211,27 @@ homepage sections.
 - Follow-up / unresolved: The repo metadata stays in `mkdocs.yml` so `edit_uri`
   remains valid, and the visible header source badge is suppressed in CSS
   instead of removing repository configuration entirely.
+
+## 2026-05-28
+
+- Goal: Build a durable thumbnail-management system with preserved originals, an
+  active-set folder, a manifest, and a human-readable inventory for future
+  image-generation work.
+- Context reviewed: `mkdocs.yml`, homepage and gallery partials under
+  `docs/overrides/partials/`, directory pages under `docs/directory/`, the
+  current thumbnail tree under `docs/assets/homepage/`, and the existing
+  Playwright link-and-image checks in `tests/homepage.spec.ts`.
+- Files changed: `PROMPT_LOG.md`, homepage and directory partials now pointing
+  to `docs/assets/thumbnails/active/`, new docs under
+  `docs/thumbnail-system/project-thumbnail-index.md`,
+  `docs/assets/thumbnails/README.md`,
+  `docs/assets/thumbnails/thumbnail-manifest.yml`,
+  `docs/assets/thumbnails/style-guides/README.md`, and copied thumbnail trees
+  under `docs/assets/thumbnails/active/`, `originals/`, and
+  `sets/set-001-originals/`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission.
+- Follow-up / unresolved: Several entries are marked `needs review` in the
+  inventory and manifest because local card text was enough to place them in
+  the system, but not enough to support a high-confidence replacement image
+  without deeper page review.
