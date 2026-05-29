@@ -235,3 +235,27 @@ homepage sections.
   inventory and manifest because local card text was enough to place them in
   the system, but not enough to support a high-confidence replacement image
   without deeper page review.
+
+## 2026-05-29
+
+- Goal: Split the combined ESIIL/OASIS header-footer lockup into separate
+  marks, add the new standalone OASIS hero illustration, make the dark-mode
+  toggle easy to find again, and introduce light-touch biology flourishes
+  across the curated homepage and gallery templates.
+- Context reviewed: `mkdocs.yml`, `docs/overrides/partials/hero.html`,
+  `docs/overrides/partials/footer_cta.html`,
+  `docs/overrides/section-gallery.html`, `docs/styles/brand.css`,
+  `docs/styles/extra.css`, `docs/assets/css/custom.css`, and the Material
+  header partial structure inside the local `.venv` theme package.
+- Files changed: `PROMPT_LOG.md`, `mkdocs.yml`, new
+  `docs/overrides/partials/header.html`, homepage/gallery partials, and the
+  branding assets `docs/assets/branding/esiil-wordmark-color.png`,
+  `docs/assets/branding/oasis-wordmark-mark.png`,
+  `docs/assets/branding/oasis-hero-illustration.png`, and
+  `docs/assets/branding/biology-flourishes-panel.png`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission; in-app browser snapshot check on
+  the rebuilt homepage header and hero.
+- Follow-up / unresolved: The centered OASIS header logo is intentionally
+  hidden below `900px` so the palette toggle, search, and mobile navigation
+  stay discoverable and uncluttered on narrow screens.
