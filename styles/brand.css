@@ -30,9 +30,10 @@
   --oasis-sidebar-line-height: 1.4;
 
   /* Logo sizing */
-  --oasis-logo-height: 110px;
-  --oasis-header-height: 120px;
+  --oasis-logo-height: 3.15rem;
+  --oasis-header-height: 4.7rem;
   --oasis-topband-height: 10px;
+  --oasis-center-logo-width: clamp(10rem, 20vw, 15rem);
 
   --brand-primary: var(--oasis-blue);
   --brand-accent: var(--oasis-teal);
@@ -73,6 +74,7 @@ body,
 
 .md-header {
   box-shadow: 0 1px 0 var(--brand-border);
+  min-height: var(--oasis-header-height);
 }
 
 .md-header__title,
@@ -92,6 +94,48 @@ body,
   display: none;
 }
 
+.oasis-header-shell {
+  position: relative;
+  min-height: var(--oasis-header-height);
+  align-items: center;
+}
+
+.md-header__button.md-logo {
+  padding-right: 0.7rem;
+  z-index: 2;
+}
+
+.md-header__title {
+  min-width: 0;
+}
+
+.md-header__option,
+.md-header__button.md-icon,
+.md-search {
+  position: relative;
+  z-index: 2;
+}
+
+.oasis-header__center-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--oasis-center-logo-width);
+  transform: translate(-50%, -50%);
+}
+
+.oasis-header__center-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 2.95rem;
+  object-fit: contain;
+}
+
 [data-md-color-scheme="slate"] .md-header,
 [data-md-color-scheme="slate"] .md-tabs {
   background-color: #0f1820;
@@ -104,6 +148,7 @@ body,
 
 [data-md-color-scheme="slate"] .md-header__title,
 [data-md-color-scheme="slate"] .md-header__button,
+[data-md-color-scheme="slate"] .oasis-header__center-logo,
 [data-md-color-scheme="slate"] .md-tabs__link,
 [data-md-color-scheme="slate"] .md-search__icon,
 [data-md-color-scheme="slate"] .md-search__input,
@@ -113,6 +158,24 @@ body,
 
 [data-md-color-scheme="slate"] .md-search__form {
   background-color: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 900px) {
+  :root {
+    --oasis-logo-height: 2.8rem;
+    --oasis-header-height: 4.25rem;
+  }
+
+  .oasis-header__center-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --oasis-logo-height: 2.55rem;
+    --oasis-header-height: 4rem;
+  }
 }
 
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li,

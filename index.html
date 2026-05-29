@@ -115,12 +115,17 @@
   
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid oasis-header-shell" aria-label="Header">
     <a href="." title="OASIS: Open Analysis and Synthesis Infrastructure for Science" class="md-header__button md-logo" aria-label="OASIS: Open Analysis and Synthesis Infrastructure for Science" data-md-component="logo">
       
-  <img src="assets/branding/esiil-oasis-lockup.png" alt="logo">
+  <img src="assets/branding/esiil-wordmark-color.png" alt="logo">
 
     </a>
+
+    <a class="oasis-header__center-logo" href="." aria-label="OASIS home">
+      <img src="assets/branding/oasis-wordmark-mark.png" alt="OASIS">
+    </a>
+
     <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
@@ -252,7 +257,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="OASIS: Open Analysis and Synthesis Infrastructure for Science" class="md-nav__button md-logo" aria-label="OASIS: Open Analysis and Synthesis Infrastructure for Science" data-md-component="logo">
       
-  <img src="assets/branding/esiil-oasis-lockup.png" alt="logo">
+  <img src="assets/branding/esiil-wordmark-color.png" alt="logo">
 
     </a>
     OASIS: Open Analysis and Synthesis Infrastructure for Science
@@ -481,39 +486,14 @@
     <div class="oasis-home__hero-art" aria-hidden="true" data-reveal>
       <div class="oasis-home__hero-atlas"></div>
       <div class="oasis-home__hero-scratch"></div>
+      <div class="oasis-bio-flourish oasis-bio-flourish--hummingbird oasis-bio-flourish--hero-left"></div>
+      <div class="oasis-bio-flourish oasis-bio-flourish--butterfly oasis-bio-flourish--hero-right"></div>
 
-      <figure class="oasis-home__art-card oasis-home__art-card--main" data-parallax="slow">
+      <figure class="oasis-home__hero-figure" data-parallax="slow">
         <img
-          src="assets/thumbnails/active/working-groups/extreme-wildfire-button.jpeg"
+          src="assets/branding/oasis-hero-illustration.png"
           alt=""
           loading="eager"
-          decoding="async"
-        />
-      </figure>
-
-      <figure class="oasis-home__art-card oasis-home__art-card--secondary" data-parallax="mid">
-        <img
-          src="assets/thumbnails/active/working-groups/fungal-dispersal-button.jpeg"
-          alt=""
-          loading="lazy"
-          decoding="async"
-        />
-      </figure>
-
-      <figure class="oasis-home__art-card oasis-home__art-card--tertiary" data-parallax="fast">
-        <img
-          src="assets/thumbnails/active/working-groups/maka-sitomniya-button.jpeg"
-          alt=""
-          loading="lazy"
-          decoding="async"
-        />
-      </figure>
-
-      <figure class="oasis-home__art-card oasis-home__art-card--quaternary" data-parallax="mid">
-        <img
-          src="assets/thumbnails/active/working-groups/macrophenology-button.jpeg"
-          alt=""
-          loading="lazy"
           decoding="async"
         />
       </figure>
@@ -524,6 +504,7 @@
 
 <section class="oasis-band oasis-band--sage" id="working-groups-section">
   <div class="oasis-shell">
+    <div class="oasis-bio-flourish oasis-bio-flourish--bee oasis-bio-flourish--band-groups" aria-hidden="true"></div>
     <div class="oasis-section-heading" data-reveal>
       <div class="oasis-section-heading__copy">
         <p class="oasis-section-heading__eyebrow">Living Ecosystem</p>
@@ -822,6 +803,7 @@
 
 <section class="oasis-band oasis-band--earth" id="events-summits-section">
   <div class="oasis-shell">
+    <div class="oasis-bio-flourish oasis-bio-flourish--turtle oasis-bio-flourish--band-events" aria-hidden="true"></div>
     <div class="oasis-section-heading" data-reveal>
       <div class="oasis-section-heading__copy">
         <p class="oasis-section-heading__eyebrow">Momentum</p>
@@ -920,6 +902,7 @@
 </section>
     <section class="oasis-band oasis-band--white" id="infrastructure-libraries-section">
   <div class="oasis-shell">
+    <div class="oasis-bio-flourish oasis-bio-flourish--oak oasis-bio-flourish--band-infra" aria-hidden="true"></div>
     <div class="oasis-section-heading" data-reveal>
       <div class="oasis-section-heading__copy">
         <p class="oasis-section-heading__eyebrow">Trusted Systems</p>
@@ -1012,7 +995,22 @@
   <div class="oasis-shell oasis-footer-band__shell">
     <div class="oasis-footer-band__cta" data-reveal>
       <div class="oasis-footer-band__brand">
-        <img src="assets/branding/esiil-oasis-lockup.png" alt="ESIIL OASIS" loading="lazy" decoding="async" />
+        <div class="oasis-footer-band__brand-lockup">
+          <img
+            class="oasis-footer-band__brand-esiil"
+            src="assets/branding/esiil-wordmark-color.png"
+            alt="ESIIL"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="oasis-footer-band__brand-oasis"
+            src="assets/branding/oasis-wordmark-mark.png"
+            alt="OASIS"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
       </div>
 
       <div class="oasis-footer-band__message">

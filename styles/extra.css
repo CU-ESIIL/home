@@ -230,7 +230,7 @@ button.md-button {
 }
 
 /* -------------------------------------------------
-   Header / Logo — bigger to match ESIIL scale
+   Header / Logo sizing
    ------------------------------------------------- */
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg,
@@ -245,7 +245,7 @@ button.md-button {
 }
 
 .md-header {
-  min-height: calc(var(--oasis-logo-height) + 22px);
+  min-height: var(--oasis-header-height);
 }
 
 /* -------------------------------------------------
