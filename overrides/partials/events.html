@@ -54,23 +54,34 @@
       </a>
     </div>
 
-    <div class="oasis-event-grid">
-      {% for event in events %}
-        <a class="oasis-event-card" href="{{ event.url }}" target="_blank" rel="noopener" data-reveal>
-          <div class="oasis-event-card__media">
-            <img src="{{ event.image }}" alt="{{ event.title }}" loading="lazy" decoding="async" />
-            <span class="oasis-event-card__tag">{{ event.tag }}</span>
-          </div>
-          <div class="oasis-event-card__body">
-            <h3>{{ event.title }}</h3>
-            <p>{{ event.description }}</p>
-            <span class="oasis-event-card__link">
-              <span>See Event</span>
-              <span aria-hidden="true">→</span>
-            </span>
-          </div>
-        </a>
-      {% endfor %}
+    <div class="oasis-feature-row oasis-feature-row--events">
+      <aside class="oasis-feature-intro" data-reveal>
+        <p class="oasis-feature-intro__label">Public exchange</p>
+        <p class="oasis-feature-intro__text">
+          These featured gatherings give the homepage visible momentum while the
+          full archive of events, summits, and codefests lives on the category
+          page.
+        </p>
+      </aside>
+
+      <div class="oasis-event-grid" data-reveal>
+        {% for event in events %}
+          <a class="oasis-event-card" href="{{ event.url }}" target="_blank" rel="noopener">
+            <div class="oasis-event-card__media">
+              <img src="{{ event.image }}" alt="{{ event.title }}" loading="lazy" decoding="async" />
+              <span class="oasis-event-card__tag">{{ event.tag }}</span>
+            </div>
+            <div class="oasis-event-card__body">
+              <h3>{{ event.title }}</h3>
+              <p>{{ event.description }}</p>
+              <span class="oasis-event-card__link">
+                <span>See Event</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
