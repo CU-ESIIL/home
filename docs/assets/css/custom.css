@@ -668,7 +668,7 @@
 
 .oasis-home__hero-art {
   position: relative;
-  min-height: 96rem;
+  min-height: 104rem;
   margin-left: clamp(-1rem, -1vw, 0rem);
   isolation: isolate;
 }
@@ -676,9 +676,9 @@
 .oasis-home__hero-figure {
   position: absolute;
   z-index: 1;
-  top: clamp(9rem, 12vw, 13.5rem);
-  right: clamp(-52rem, -32vw, -22rem);
-  width: min(168rem, 156vw);
+  top: clamp(13.5rem, 16vw, 19rem);
+  right: clamp(-28rem, -16vw, -8rem);
+  width: min(216rem, 188vw);
   max-width: none;
   margin: 0;
   transform: translate3d(0, var(--oasis-parallax-shift, 0px), 0);
@@ -1278,7 +1278,7 @@
   }
 
   .oasis-home__hero-art {
-    min-height: 44rem;
+    min-height: 52rem;
     margin-left: clamp(-6rem, -7vw, -1.5rem);
   }
 
@@ -1337,12 +1337,14 @@
   }
 
   .oasis-home__hero-art {
-    min-height: 28rem;
+    min-height: 34rem;
     margin-left: 0;
   }
 
   .oasis-home__hero-figure {
-    width: min(112%, 48rem);
+    top: clamp(2.2rem, 7vw, 4rem);
+    right: clamp(-6rem, -10vw, -2rem);
+    width: min(148%, 62rem);
     margin: 0 auto;
     max-width: none;
   }
@@ -1420,7 +1422,7 @@
   }
 
   .oasis-home__hero-art {
-    min-height: 20rem;
+    min-height: 24rem;
   }
 
   .oasis-card-rail--groups,
