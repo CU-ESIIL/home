@@ -997,6 +997,12 @@
   aspect-ratio: 1.5;
 }
 
+.oasis-research-card--feature .oasis-research-card__image img,
+.oasis-research-card--wide .oasis-research-card__image img {
+  padding: 0.1rem;
+  object-fit: cover;
+}
+
 .oasis-research-card--wide {
   grid-column: span 3;
 }
