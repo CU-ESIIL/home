@@ -233,6 +233,7 @@
 }
 
 .oasis-home__hero-copy {
+  min-width: 0;
   max-width: 40rem;
 }
 
@@ -347,6 +348,7 @@
 }
 
 .oasis-section-page__hero-copy {
+  min-width: 0;
   max-width: 48rem;
 }
 
@@ -571,7 +573,18 @@
 }
 
 .oasis-section-heading__copy {
+  min-width: 0;
   max-width: 48rem;
+}
+
+.oasis-home__hero-art,
+.oasis-section-page__actions,
+.oasis-feature-intro,
+.oasis-research-wall__intro,
+.oasis-footer-band__brand,
+.oasis-footer-band__message,
+.oasis-footer-band__meta {
+  min-width: 0;
 }
 
 .oasis-inline-link,
@@ -888,47 +901,66 @@
   filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.18));
 }
 
-.oasis-footer-band__message > p,
-.oasis-footer-band__meta > p {
+.oasis-footer-band__message > p {
   color: rgba(243, 247, 248, 0.84);
 }
 
-.oasis-footer-band__partners ul,
-.oasis-footer-band__meta nav {
+.oasis-footer-band__institutional {
+  display: grid;
+  grid-template-columns: minmax(18rem, 1.15fr) auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.7rem 1.8rem;
+  border-radius: var(--oasis-radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(247, 249, 248, 0.96);
+  box-shadow: 0 14px 34px rgba(8, 20, 29, 0.18);
+}
+
+.oasis-footer-band__institutional-copy {
+  color: var(--oasis-text);
+}
+
+.oasis-footer-band__institutional-copy strong,
+.oasis-footer-band__institutional-copy p {
+  display: block;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.oasis-footer-band__institutional-copy strong {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.oasis-footer-band__institutional-copy p + p,
+.oasis-footer-band__institutional-copy strong + p {
+  margin-top: 0.18rem;
+}
+
+.oasis-footer-band__institutional-copy a {
+  color: var(--oasis-blue-deep);
+  text-decoration: none;
+}
+
+.oasis-footer-band__institutional-copy em {
+  color: var(--oasis-text-muted);
+}
+
+.oasis-footer-band__institutional-logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.oasis-footer-band__partners li {
-  padding: 0.55rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(255, 255, 255, 0.06);
-  color: #f7fafb;
-  font-family: "Barlow Condensed", "Inter", sans-serif;
-  font-size: 0.96rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.oasis-footer-band__meta {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-end;
+  gap: 1.15rem;
 }
 
-.oasis-footer-band__meta nav a {
-  color: #f3f7f8;
-  font-family: "Barlow Condensed", "Inter", sans-serif;
-  font-size: 0.98rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.oasis-footer-band__institutional-logos img {
+  display: block;
+  width: auto;
+  max-width: min(9rem, 100%);
+  height: 3rem;
+  object-fit: contain;
 }
 
 .oasis-home-template.oasis-motion-enhanced [data-reveal],
@@ -1003,9 +1035,12 @@
     grid-template-columns: 1fr;
   }
 
-  .oasis-footer-band__meta {
-    flex-direction: column;
-    align-items: flex-start;
+  .oasis-footer-band__institutional {
+    grid-template-columns: 1fr;
+  }
+
+  .oasis-footer-band__institutional-logos {
+    justify-content: flex-start;
   }
 }
 
@@ -1069,6 +1104,10 @@
   .oasis-event-grid--directory {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .oasis-footer-band__institutional {
+    padding: 1.4rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1076,6 +1115,19 @@
   .oasis-section-page {
     width: 100%;
     margin-inline: 0;
+  }
+
+  .oasis-home__hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.9rem, 14vw, 4.2rem);
+  }
+
+  .oasis-home__lede,
+  .oasis-home__hero-note,
+  .oasis-section-page__lede,
+  .oasis-section-page__intro p {
+    max-width: 100%;
+    font-size: 1rem;
   }
 
   .oasis-home__hero-art {
@@ -1105,6 +1157,15 @@
   .oasis-infra-grid,
   .oasis-research-wall {
     grid-template-columns: 1fr;
+  }
+
+  .oasis-footer-band__institutional-logos {
+    gap: 0.9rem;
+  }
+
+  .oasis-footer-band__institutional-logos img {
+    height: 2.4rem;
+    max-width: 7.5rem;
   }
 
   .oasis-feature-intro,
