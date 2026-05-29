@@ -31,7 +31,7 @@ theme:
     text: 'Open Sans'
     code: 'Roboto Mono'
   favicon: 'assets/branding/site-favicon.ico'
-  logo: 'assets/branding/esiil-oasis-lockup.png'
+  logo: 'assets/branding/esiil-wordmark-color.png'
   # setting features for the navigation tab
   toc:
     position: right
