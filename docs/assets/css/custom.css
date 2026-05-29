@@ -662,7 +662,7 @@
 
 .oasis-home__hero-art {
   position: relative;
-  min-height: 68rem;
+  min-height: 82rem;
   margin-left: clamp(-1rem, -1vw, 0rem);
   isolation: isolate;
 }
@@ -670,9 +670,9 @@
 .oasis-home__hero-figure {
   position: absolute;
   z-index: 1;
-  top: clamp(5rem, 8vw, 8.5rem);
-  right: clamp(-24rem, -16vw, -8rem);
-  width: min(92rem, 86vw);
+  top: clamp(8rem, 11vw, 12rem);
+  right: clamp(-34rem, -22vw, -14rem);
+  width: min(132rem, 122vw);
   max-width: none;
   margin: 0;
   transform: translate3d(0, var(--oasis-parallax-shift, 0px), 0);
