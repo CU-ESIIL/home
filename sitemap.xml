@@ -96,6 +96,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://CU-ESIIL.github.io/home/assets/thumbnails/</loc>
+         <lastmod>2026-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://CU-ESIIL.github.io/home/assets/thumbnails/style-guides/</loc>
+         <lastmod>2026-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://CU-ESIIL.github.io/home/collaborating-on-the-cloud/cyverse-instructions/</loc>
          <lastmod>2026-05-29</lastmod>
          <changefreq>daily</changefreq>
@@ -472,6 +482,11 @@
     </url>
     <url>
          <loc>https://CU-ESIIL.github.io/home/tags/vsi/</loc>
+         <lastmod>2026-05-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://CU-ESIIL.github.io/home/thumbnail-system/project-thumbnail-index/</loc>
          <lastmod>2026-05-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
