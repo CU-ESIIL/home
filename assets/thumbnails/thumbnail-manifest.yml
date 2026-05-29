@@ -6,11 +6,11 @@
   target_url: "/directory/working-groups/"
   source_pages:
     - "docs/overrides/partials/directory/hub.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/extreme-wildfire-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/extreme-wildfire-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/extreme-wildfire-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/extreme-wildfire-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/extreme-wildfire-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/extreme-wildfire-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/extreme-wildfire-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/extreme-wildfire-button.png"
   description_source: "docs/directory/working-groups.md; docs/overrides/partials/directory/hub.html"
   visual_summary: "Use a multi-theme synthesis composition rather than a single project icon. The image should communicate collaboration across wildfire, fungi, methane, phenology, and place-based knowledge."
 
@@ -48,11 +48,11 @@
   target_url: "/directory/infrastructure/"
   source_pages:
     - "docs/overrides/partials/directory/hub.html"
-  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/analytics-library-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/analytics-library-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/analytics-library-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/analytics-library-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/analytics-library-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/analytics-library-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/analytics-library-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/analytics-library-button.png"
   description_source: "docs/directory/infrastructure.md; docs/overrides/partials/directory/hub.html"
   visual_summary: "Keep the image calm and structural. It should read as reusable infrastructure for environmental computing, not as a flashy product dashboard."
 
@@ -63,11 +63,11 @@
   status: "needs review"
   source_pages:
     - "docs/overrides/partials/directory/working_groups_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/bioviewpoint-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/bioviewpoint-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/bioviewpoint-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/bioviewpoint-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/bioviewpoint-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/bioviewpoint-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/bioviewpoint-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/bioviewpoint-button.png"
   description_source: "docs/overrides/partials/directory/working_groups_page.html plus public site title"
   visual_summary: "Treat this as biodiversity interpretation plus visualization, not just species illustration. Pair ecological structure with a viewing or analytical frame."
 
@@ -79,11 +79,11 @@
     - "docs/overrides/partials/working_groups.html"
     - "docs/overrides/partials/directory/working_groups_page.html"
     - "docs/overrides/partials/hero.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/extreme-wildfire-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/extreme-wildfire-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/extreme-wildfire-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/extreme-wildfire-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/extreme-wildfire-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/extreme-wildfire-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/extreme-wildfire-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/extreme-wildfire-button.png"
   description_source: "docs/overrides/partials/working_groups.html; docs/overrides/partials/directory/working_groups_page.html"
   visual_summary: "Keep the fire connected to landscape structure, weather, or data. A burning shape alone is too generic."
 
@@ -95,11 +95,11 @@
     - "docs/overrides/partials/working_groups.html"
     - "docs/overrides/partials/directory/working_groups_page.html"
     - "docs/overrides/partials/hero.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/fungal-dispersal-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/fungal-dispersal-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/fungal-dispersal-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/fungal-dispersal-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/fungal-dispersal-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/fungal-dispersal-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/fungal-dispersal-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/fungal-dispersal-button.png"
   description_source: "docs/overrides/partials/working_groups.html; docs/overrides/partials/directory/working_groups_page.html"
   visual_summary: "Use fungi as part of a dispersal system. Spores, flow, and connectivity matter more than a decorative mushroom portrait."
 
@@ -111,11 +111,11 @@
     - "docs/overrides/partials/working_groups.html"
     - "docs/overrides/partials/directory/working_groups_page.html"
     - "docs/overrides/partials/hero.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/macrophenology-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/macrophenology-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/macrophenology-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/macrophenology-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/macrophenology-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/macrophenology-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/macrophenology-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/macrophenology-button.png"
   description_source: "docs/overrides/partials/working_groups.html; docs/overrides/partials/directory/working_groups_page.html"
   visual_summary: "Show timing and ecological change together. The project is about pattern and scale, not just a plant blooming."
 
@@ -127,11 +127,11 @@
     - "docs/overrides/partials/working_groups.html"
     - "docs/overrides/partials/directory/working_groups_page.html"
     - "docs/overrides/partials/hero.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/maka-sitomniya-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/maka-sitomniya-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/maka-sitomniya-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/maka-sitomniya-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/maka-sitomniya-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/maka-sitomniya-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/maka-sitomniya-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/maka-sitomniya-button.png"
   description_source: "docs/overrides/partials/working_groups.html; docs/overrides/partials/directory/working_groups_page.html"
   visual_summary: "Use land, pathways, circles, and observation structures carefully. Avoid flattening the work into generic Indigenous symbolism."
 
@@ -142,11 +142,11 @@
   source_pages:
     - "docs/overrides/partials/working_groups.html"
     - "docs/overrides/partials/directory/working_groups_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/ai-for-natural-methane-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/ai-for-natural-methane-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/ai-for-natural-methane-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/ai-for-natural-methane-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/ai-for-natural-methane-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/ai-for-natural-methane-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/ai-for-natural-methane-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/ai-for-natural-methane-button.png"
   description_source: "docs/overrides/partials/working_groups.html; docs/overrides/partials/directory/working_groups_page.html"
   visual_summary: "Lead with methane as an environmental signal, then add AI/data motifs. Do not reduce it to a robot or chat icon."
 
@@ -157,11 +157,11 @@
   status: "needs review"
   source_pages:
     - "docs/overrides/partials/directory/working_groups_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/working-groups/zooplankton-indicator-dataset-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/zooplankton-indicator-dataset-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/working-groups/zooplankton-indicator-dataset-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/working-groups/zooplankton-indicator-dataset-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/zooplankton-indicator-dataset-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/zooplankton-indicator-dataset-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/working-groups/zooplankton-indicator-dataset-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/working-groups/zooplankton-indicator-dataset-button.png"
   description_source: "docs/overrides/partials/directory/working_groups_page.html plus public site title"
   visual_summary: "Use aquatic data and indicator framing, not just a microscopic creature floating in space."
 
@@ -319,11 +319,11 @@
   source_pages:
     - "docs/overrides/partials/staff_projects.html"
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/water-carbon-dynamics-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/water-carbon-dynamics-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/water-carbon-dynamics-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/water-carbon-dynamics-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/water-carbon-dynamics-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/water-carbon-dynamics-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/water-carbon-dynamics-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/water-carbon-dynamics-button.png"
   description_source: "docs/overrides/partials/staff_projects.html; docs/overrides/partials/directory/research_page.html"
   visual_summary: "Keep this as a coupled flux problem. Water flow and carbon cycling should both be visible."
 
@@ -349,11 +349,11 @@
   source_pages:
     - "docs/overrides/partials/staff_projects.html"
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/datacube-sandbox-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/datacube-sandbox-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/datacube-sandbox-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/datacube-sandbox-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/datacube-sandbox-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/datacube-sandbox-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/datacube-sandbox-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/datacube-sandbox-button.png"
   description_source: "docs/overrides/partials/staff_projects.html; docs/overrides/partials/directory/research_page.html"
   visual_summary: "Focus on experimentation and transformation over tidy final products. The sandbox idea can be structural rather than literal sand."
 
@@ -363,11 +363,11 @@
   target_url: "https://cu-esiil.github.io/biotic_niche_modeling/"
   source_pages:
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/biotic-niche-modeling-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/biotic-niche-modeling-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/biotic-niche-modeling-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/biotic-niche-modeling-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/biotic-niche-modeling-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/biotic-niche-modeling-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/biotic-niche-modeling-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/biotic-niche-modeling-button.png"
   description_source: "docs/overrides/partials/directory/research_page.html"
   visual_summary: "If biology appears, keep it secondary to niche-space logic, gradients, or predictive surfaces."
 
@@ -378,11 +378,11 @@
   status: "needs review"
   source_pages:
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/nutrient-flows-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/nutrient-flows-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/nutrient-flows-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/nutrient-flows-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/nutrient-flows-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/nutrient-flows-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/nutrient-flows-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/nutrient-flows-button.png"
   description_source: "docs/overrides/partials/directory/research_page.html"
   visual_summary: "Make nutrient transfer or trade pathways visible. Treat seafood as part of a movement network."
 
@@ -392,11 +392,11 @@
   target_url: "https://github.com/CU-ESIIL/LTER-material-legacies"
   source_pages:
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/lter-material-legacies-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/lter-material-legacies-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/lter-material-legacies-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/lter-material-legacies-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/lter-material-legacies-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/lter-material-legacies-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/lter-material-legacies-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/lter-material-legacies-button.png"
   description_source: "docs/overrides/partials/directory/research_page.html plus repository title"
   visual_summary: "Think persistence, wood, rings, and long-term change rather than generic forest scenery."
 
@@ -407,11 +407,11 @@
   source_pages:
     - "docs/overrides/partials/staff_projects.html"
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/team-science-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/team-science-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/team-science-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/team-science-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/team-science-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/team-science-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/team-science-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/team-science-button.png"
   description_source: "docs/overrides/partials/staff_projects.html; docs/overrides/partials/directory/research_page.html"
   visual_summary: "Show collaboration as structured scientific practice, not just a happy group photo."
 
@@ -421,11 +421,11 @@
   target_url: "https://github.com/CU-ESIIL/opt-decision-making"
   source_pages:
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/opt-decision-making-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/opt-decision-making-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/opt-decision-making-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/opt-decision-making-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/opt-decision-making-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/opt-decision-making-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/opt-decision-making-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/opt-decision-making-button.png"
   description_source: "docs/overrides/partials/directory/research_page.html plus repository title"
   visual_summary: "Use decision structure instead of abstract math decoration. The link to environmental planning should remain visible."
 
@@ -435,11 +435,11 @@
   target_url: "https://cu-esiil.github.io/CulturalES_WildfireRx/"
   source_pages:
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/cultural-es-wildfire-rx-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/cultural-es-wildfire-rx-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/cultural-es-wildfire-rx-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/cultural-es-wildfire-rx-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/cultural-es-wildfire-rx-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/cultural-es-wildfire-rx-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/cultural-es-wildfire-rx-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/cultural-es-wildfire-rx-button.png"
   description_source: "docs/overrides/partials/directory/research_page.html"
   visual_summary: "Balance fire, landscape, and cultural-service framing with care. Avoid reducing culture to icons or stereotypes."
 
@@ -449,11 +449,11 @@
   target_url: "https://cu-esiil.github.io/SCE-Wildfire/"
   source_pages:
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/sce-wildfire-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/sce-wildfire-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/sce-wildfire-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/sce-wildfire-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/sce-wildfire-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/sce-wildfire-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/sce-wildfire-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/sce-wildfire-button.png"
   description_source: "docs/overrides/partials/directory/research_page.html"
   visual_summary: "Community and ecology should be visibly linked. Avoid emergency-response branding."
 
@@ -463,11 +463,11 @@
   target_url: "https://cu-esiil.github.io/tundra_shrub_expansion/"
   source_pages:
     - "docs/overrides/partials/directory/research_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/research/tundra-shrub-expansion-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/research/tundra-shrub-expansion-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/research/tundra-shrub-expansion-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/research/tundra-shrub-expansion-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/tundra-shrub-expansion-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/tundra-shrub-expansion-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/research/tundra-shrub-expansion-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/research/tundra-shrub-expansion-button.png"
   description_source: "docs/overrides/partials/directory/research_page.html"
   visual_summary: "Lead with tundra change and spatial monitoring. Do not make it look like a generic forest project."
 
@@ -523,11 +523,11 @@
   source_pages:
     - "docs/overrides/partials/events.html"
     - "docs/overrides/partials/directory/events_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/events/innovation-summit-2025-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/events/innovation-summit-2025-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/events/innovation-summit-2025-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/events/innovation-summit-2025-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/innovation-summit-2025-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/innovation-summit-2025-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/innovation-summit-2025-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/innovation-summit-2025-button.png"
   description_source: "docs/overrides/partials/events.html; docs/overrides/partials/directory/events_page.html"
   visual_summary: "Summit atmosphere matters, but keep scientific content visible. It should not read as a generic corporate annual meeting."
 
@@ -538,11 +538,11 @@
   source_pages:
     - "docs/overrides/partials/events.html"
     - "docs/overrides/partials/directory/events_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/events/fire-plan-2024-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/events/fire-plan-2024-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/events/fire-plan-2024-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/events/fire-plan-2024-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/fire-plan-2024-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/fire-plan-2024-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/fire-plan-2024-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/fire-plan-2024-button.png"
   description_source: "docs/overrides/partials/events.html; docs/overrides/partials/directory/events_page.html"
   visual_summary: "Make planning and management visible. This is a strategy hub, not only a wildfire image opportunity."
 
@@ -552,11 +552,11 @@
   target_url: "https://cu-esiil.github.io/Innovation-Summit-2024/"
   source_pages:
     - "docs/overrides/partials/directory/events_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/events/innovation-summit-2024-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/events/innovation-summit-2024-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/events/innovation-summit-2024-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/events/innovation-summit-2024-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/innovation-summit-2024-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/innovation-summit-2024-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/innovation-summit-2024-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/innovation-summit-2024-button.png"
   description_source: "docs/overrides/partials/directory/events_page.html"
   visual_summary: "Keep it in the same event family as the 2025 and 2026 summits, but do not make it indistinguishable from them."
 
@@ -567,11 +567,11 @@
   source_pages:
     - "docs/overrides/partials/events.html"
     - "docs/overrides/partials/directory/events_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/events/forest-carbon-codefest-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/events/forest-carbon-codefest-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/events/forest-carbon-codefest-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/events/forest-carbon-codefest-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/forest-carbon-codefest-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/forest-carbon-codefest-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/forest-carbon-codefest-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/forest-carbon-codefest-button.png"
   description_source: "docs/overrides/partials/events.html; docs/overrides/partials/directory/events_page.html"
   visual_summary: "Show both forest carbon and collaborative code work. One without the other misses the point."
 
@@ -582,11 +582,11 @@
   status: "needs review"
   source_pages:
     - "docs/overrides/partials/directory/events_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/events/hyr-sense-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/events/hyr-sense-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/events/hyr-sense-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/events/hyr-sense-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/hyr-sense-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/hyr-sense-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/hyr-sense-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/hyr-sense-button.png"
   description_source: "docs/overrides/partials/directory/events_page.html"
   visual_summary: "Lead with remote-sensing structure, then add workshop or collaboration cues."
 
@@ -596,11 +596,11 @@
   target_url: "https://cu-esiil.github.io/agu-2023_innovation_session/"
   source_pages:
     - "docs/overrides/partials/directory/events_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/events/agu-2023-innovation-session-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/events/agu-2023-innovation-session-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/events/agu-2023-innovation-session-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/events/agu-2023-innovation-session-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/agu-2023-innovation-session-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/agu-2023-innovation-session-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/events/agu-2023-innovation-session-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/events/agu-2023-innovation-session-button.png"
   description_source: "docs/overrides/partials/directory/events_page.html"
   visual_summary: "Balance conference energy with open-science discussion. People and knowledge exchange matter here."
 
@@ -611,11 +611,11 @@
   source_pages:
     - "docs/overrides/partials/infrastructure.html"
     - "docs/overrides/partials/directory/infrastructure_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/analytics-library-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/analytics-library-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/analytics-library-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/analytics-library-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/analytics-library-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/analytics-library-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/analytics-library-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/analytics-library-button.png"
   description_source: "docs/overrides/partials/infrastructure.html; docs/overrides/partials/directory/infrastructure_page.html"
   visual_summary: "Keep the composition calm and precise. This is a methods library, not a flashy app."
 
@@ -626,11 +626,11 @@
   source_pages:
     - "docs/overrides/partials/infrastructure.html"
     - "docs/overrides/partials/directory/infrastructure_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/data-library-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/data-library-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/data-library-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/data-library-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/data-library-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/data-library-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/data-library-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/data-library-button.png"
   description_source: "docs/overrides/partials/infrastructure.html; docs/overrides/partials/directory/infrastructure_page.html"
   visual_summary: "Think storage, indexing, and shared access. Avoid making it look like a hard drive commercial."
 
@@ -641,11 +641,11 @@
   source_pages:
     - "docs/overrides/partials/infrastructure.html"
     - "docs/overrides/partials/directory/infrastructure_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/container-library-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/container-library-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/container-library-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/container-library-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/container-library-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/container-library-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/container-library-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/container-library-button.png"
   description_source: "docs/container-library/index.md; docs/overrides/partials/infrastructure.html; docs/overrides/partials/directory/infrastructure_page.html"
   visual_summary: "Stay with scientific computing containers, not shipping-industry visuals. The concept is runtime consistency."
 
@@ -655,11 +655,11 @@
   target_url: "/quickstart/"
   source_pages:
     - "docs/overrides/partials/directory/infrastructure_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/quickstart-button.jpg"
-  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/quickstart-button.jpg"
+  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/quickstart-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/quickstart-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/quickstart-button.jpg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/quickstart-button.jpg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/quickstart-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/quickstart-button.png"
   description_source: "docs/quickstart/index.md; docs/overrides/partials/directory/infrastructure_page.html"
   visual_summary: "Make onboarding visible. The image should feel like an entry ramp into multiple ecosystem components."
 
@@ -684,11 +684,11 @@
   target_url: "https://hub.docker.com/u/esiil"
   source_pages:
     - "docs/overrides/partials/directory/infrastructure_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/container-library-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/container-library-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/container-library-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/container-library-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/container-library-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/container-library-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/container-library-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/container-library-button.png"
   description_source: "docs/overrides/partials/directory/infrastructure_page.html"
   visual_summary: "Differentiate this from the internal Container Library page by making the registry or publication aspect more explicit."
 
@@ -754,11 +754,11 @@
   target_url: "/dev-schedule/"
   source_pages:
     - "docs/overrides/partials/directory/infrastructure_page.html"
-  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/analytics-library-button.jpeg"
-  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/analytics-library-button.jpeg"
+  active_thumbnail: "docs/assets/thumbnails/active/infrastructure/analytics-library-button.png"
+  original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/analytics-library-button.png"
   set_paths:
-    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/analytics-library-button.jpeg"
-    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/analytics-library-button.jpeg"
+    set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/analytics-library-button.png"
+    set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/analytics-library-button.png"
   description_source: "docs/dev-schedule.md; docs/overrides/partials/directory/infrastructure_page.html"
   visual_summary: "This is a schedule/archive surface, not a live event calendar."
 

@@ -255,6 +255,7 @@
   min-height: calc(100vh - 5rem);
   display: flex;
   align-items: center;
+  padding: clamp(1.1rem, 1.8vw, 1.9rem) 0 clamp(4rem, 7vw, 6rem);
   background:
     radial-gradient(circle at 82% 20%, rgba(66, 188, 220, 0.13), transparent 28%),
     radial-gradient(circle at 12% 12%, rgba(0, 113, 53, 0.06), transparent 24%),
@@ -337,14 +338,16 @@
 
 .oasis-home__hero-shell {
   display: grid;
-  grid-template-columns: minmax(18rem, 1.05fr) minmax(20rem, 0.95fr);
-  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: minmax(18rem, 0.92fr) minmax(22rem, 1.08fr);
+  gap: clamp(0.75rem, 2vw, 2.25rem);
   align-items: center;
 }
 
 .oasis-home__hero-copy {
+  position: relative;
+  z-index: 2;
   min-width: 0;
-  max-width: 40rem;
+  max-width: 42rem;
 }
 
 .oasis-home__kicker,
@@ -378,6 +381,7 @@
 .oasis-home__hero h1 {
   font-size: clamp(4.2rem, 9vw, 7.2rem);
   max-width: 10.2ch;
+  margin-top: 0.15rem;
 }
 
 .oasis-section-page__hero h1 {
@@ -395,7 +399,7 @@
 .oasis-section-heading__copy > p:last-child,
 .oasis-feature-intro__text,
 .oasis-footer-band__message > p {
-  margin: 1.35rem 0 0;
+  margin: 1rem 0 0;
   max-width: 34rem;
   color: var(--oasis-text-soft);
   font-size: clamp(1.08rem, 1.3vw, 1.18rem);
@@ -406,11 +410,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2.1rem;
+  margin-top: 1.75rem;
 }
 
 .oasis-home__hero-note {
-  margin: 1.35rem 0 0;
+  margin: 1rem 0 0;
   color: var(--oasis-text-muted);
   font-size: 1rem;
   max-width: 34rem;
@@ -625,17 +629,18 @@
 
 .oasis-home__hero-art {
   position: relative;
-  min-height: 40rem;
+  min-height: 47rem;
+  margin-left: clamp(-7rem, -9vw, -1.5rem);
   isolation: isolate;
 }
 
 .oasis-home__hero-figure {
   position: relative;
   z-index: 1;
-  width: min(100%, 40rem);
-  margin: 0 auto;
+  width: min(100%, 58rem);
+  margin: -2rem 0 0 auto;
   transform: translate3d(0, var(--oasis-parallax-shift, 0px), 0);
-  filter: drop-shadow(0 26px 50px rgba(35, 74, 101, 0.18));
+  filter: drop-shadow(0 34px 64px rgba(35, 74, 101, 0.22));
 }
 
 .oasis-home__hero-figure img {
@@ -646,9 +651,9 @@
 
 .oasis-home__hero-atlas {
   position: absolute;
-  top: 4%;
-  left: 20%;
-  width: min(34rem, 68%);
+  top: 0;
+  left: 6%;
+  width: min(48rem, 90%);
   aspect-ratio: 1;
   border-radius: 50%;
   background:
@@ -659,8 +664,8 @@
 
 .oasis-home__hero-scratch {
   position: absolute;
-  inset: 12% 4% 0 auto;
-  width: min(26rem, 52%);
+  inset: 8% 0 0 auto;
+  width: min(35rem, 62%);
   background:
     linear-gradient(135deg, rgba(35, 74, 101, 0.08), transparent 40%),
     repeating-linear-gradient(90deg, transparent 0 14px, rgba(35, 74, 101, 0.06) 14px 15px);
@@ -844,12 +849,25 @@
   overflow: hidden;
 }
 
+.oasis-project-card__media,
+.oasis-research-card__image,
+.oasis-event-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.94), rgba(248, 250, 251, 0.96) 58%, rgba(242, 246, 248, 0.98) 100%);
+}
+
 .oasis-project-card__media img,
 .oasis-research-card__image img,
 .oasis-event-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
+  box-sizing: border-box;
+  padding: 1rem;
   display: block;
 }
 
@@ -993,6 +1011,13 @@
 .oasis-event-card__media {
   position: relative;
   aspect-ratio: 1.05;
+}
+
+.oasis-event-card__media img {
+  padding-top: 3.35rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .oasis-event-card__tag {
@@ -1223,7 +1248,8 @@
   }
 
   .oasis-home__hero-art {
-    min-height: 32rem;
+    min-height: 38rem;
+    margin-left: clamp(-3rem, -4vw, -0.75rem);
   }
 
   .oasis-card-rail--groups {
@@ -1272,7 +1298,7 @@
 
   .oasis-home__hero {
     min-height: auto;
-    padding-top: clamp(2.5rem, 10vw, 4rem);
+    padding-top: clamp(1.4rem, 5vw, 2.2rem);
   }
 
   .oasis-home__hero h1 {
@@ -1281,7 +1307,24 @@
   }
 
   .oasis-home__hero-art {
-    min-height: 24rem;
+    min-height: 28rem;
+    margin-left: 0;
+  }
+
+  .oasis-home__hero-figure {
+    width: min(100%, 36rem);
+    margin: 0 auto;
+  }
+
+  .oasis-home__hero-atlas {
+    left: 50%;
+    width: min(30rem, 92%);
+    transform: translateX(-50%);
+  }
+
+  .oasis-home__hero-scratch {
+    inset: 10% 4% 0 auto;
+    width: min(22rem, 56%);
   }
 
   .oasis-section-page__actions {
