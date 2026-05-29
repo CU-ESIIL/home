@@ -219,6 +219,14 @@
 .oasis-home__hero,
 .oasis-footer-band {
   position: relative;
+}
+
+.oasis-band {
+  padding: clamp(4rem, 7vw, 7.5rem) 0 clamp(5rem, 8.5vw, 8.75rem);
+}
+
+.oasis-home__hero,
+.oasis-footer-band {
   padding: clamp(4rem, 7vw, 7.5rem) 0;
 }
 
@@ -269,7 +277,7 @@
   height: auto;
   min-height: 0;
   margin-left: 0;
-  transform: translateY(-31%);
+  transform: translateY(-41%);
   background: transparent;
   box-shadow: none;
   overflow: visible;
@@ -287,7 +295,7 @@
 
 .oasis-interlude + .oasis-band,
 .oasis-interlude + .oasis-footer-band {
-  padding-top: clamp(7rem, 10vw, 10rem);
+  padding-top: clamp(8.75rem, 12vw, 12.5rem);
 }
 
 .oasis-home__hero {
