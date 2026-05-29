@@ -280,3 +280,43 @@ homepage sections.
   secondary infrastructure assets were intentionally inherited from the prior
   active set inside `set-002-generated` because no alternate panel art was
   provided for them.
+
+## 2026-05-29
+
+- Goal: Repair the panel-derived alternate thumbnail set so the thumbnails use
+  real transparency, stay centered inside cards across sections, render at
+  higher effective quality, and remove any embedded title text from the source
+  panels.
+- Context reviewed: `docs/assets/css/custom.css`, the active and
+  `set-002-generated` thumbnail trees, the three panel source sheets in
+  `docs/assets/thumbnails/style-guides/`, and the homepage/gallery partials
+  that reference active thumbnails.
+- Files changed: `docs/assets/css/custom.css`, the panel-derived PNG assets
+  under `docs/assets/thumbnails/active/` and
+  `docs/assets/thumbnails/sets/set-002-generated/`, the directory/homepage
+  partials referencing panel-derived thumbnails, and
+  `docs/assets/thumbnails/thumbnail-manifest.yml`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission.
+- Follow-up / unresolved: The repaired extraction path now uses transparent PNG
+  assets derived directly from the source panels rather than relying on the
+  earlier cropped intermediates. Panel coverage still does not include every
+  template or secondary infrastructure tile, so inherited non-panel thumbnails
+  remain in place for those items.
+
+## 2026-05-29
+
+- Goal: Refine the homepage opening view by removing the small green OASIS
+  kicker, tightening the gap beneath the header, giving the hero illustration a
+  larger overlapping presence, adding more horizontal breathing room to the
+  header edges, and making the dark-mode toggle visible in slate mode.
+- Context reviewed: `docs/overrides/partials/hero.html`,
+  `docs/styles/brand.css`, and the hero/header sections of
+  `docs/assets/css/custom.css`.
+- Files changed: `docs/overrides/partials/hero.html`,
+  `docs/styles/brand.css`, `docs/assets/css/custom.css`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission.
+- Follow-up / unresolved: The hero art now intentionally pushes further into
+  the text column on desktop while collapsing back to a centered stacked layout
+  on tablet and mobile breakpoints.

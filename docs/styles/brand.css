@@ -98,10 +98,13 @@ body,
   position: relative;
   min-height: var(--oasis-header-height);
   align-items: center;
+  width: min(1500px, calc(100vw - 2.8rem));
+  margin: 0 auto;
+  padding-inline: clamp(0.9rem, 1.8vw, 1.6rem);
 }
 
 .md-header__button.md-logo {
-  padding-right: 0.7rem;
+  padding-right: 1rem;
   z-index: 2;
 }
 
@@ -114,6 +117,10 @@ body,
 .md-search {
   position: relative;
   z-index: 2;
+}
+
+.md-header__option {
+  margin-inline-end: 0.35rem;
 }
 
 .oasis-header__center-logo {
@@ -160,6 +167,23 @@ body,
   background-color: rgba(255, 255, 255, 0.08);
 }
 
+.md-header__option .md-header__button,
+.md-header__option .md-icon {
+  border-radius: 999px;
+}
+
+[data-md-color-scheme="slate"] .md-header__option .md-header__button,
+[data-md-color-scheme="slate"] .md-header__option .md-icon {
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(143, 221, 240, 0.22);
+}
+
+[data-md-color-scheme="slate"] .md-header__option .md-header__button svg,
+[data-md-color-scheme="slate"] .md-header__option .md-icon svg {
+  color: #edf3f5;
+  fill: currentColor;
+}
+
 @media (max-width: 900px) {
   :root {
     --oasis-logo-height: 2.8rem;
@@ -168,6 +192,11 @@ body,
 
   .oasis-header__center-logo {
     display: none;
+  }
+
+  .oasis-header-shell {
+    width: min(100vw - 1.2rem, 1500px);
+    padding-inline: 0.75rem;
   }
 }
 
