@@ -669,7 +669,7 @@
   z-index: 1;
   width: min(224%, 116rem);
   max-width: none;
-  margin: -9rem -46rem 0 auto;
+  margin: -9rem -58rem 0 auto;
   transform: translate3d(0, var(--oasis-parallax-shift, 0px), 0);
   filter: drop-shadow(0 34px 64px rgba(35, 74, 101, 0.22));
 }
@@ -683,25 +683,14 @@
 .oasis-home__hero-atlas {
   position: absolute;
   top: -4%;
-  left: 26%;
-  width: min(58rem, 112%);
+  left: 18%;
+  width: min(56rem, 108%);
   aspect-ratio: 1;
   border-radius: 50%;
   background:
     radial-gradient(circle at 35% 40%, rgba(255, 255, 255, 0.82), transparent 45%),
     linear-gradient(180deg, rgba(66, 188, 220, 0.3), rgba(35, 74, 101, 0.08));
   filter: blur(0.3px);
-}
-
-.oasis-home__hero-scratch {
-  position: absolute;
-  inset: 4% -4% 0 auto;
-  width: min(50rem, 78%);
-  background:
-    linear-gradient(135deg, rgba(35, 74, 101, 0.08), transparent 40%),
-    repeating-linear-gradient(90deg, transparent 0 14px, rgba(35, 74, 101, 0.06) 14px 15px);
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 92%);
-  opacity: 0.6;
 }
 
 .oasis-home__art-card {
@@ -1357,11 +1346,6 @@
     left: 50%;
     width: min(30rem, 92%);
     transform: translateX(-50%);
-  }
-
-  .oasis-home__hero-scratch {
-    inset: 10% 4% 0 auto;
-    width: min(22rem, 56%);
   }
 
   .oasis-interlude {
