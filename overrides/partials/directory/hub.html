@@ -1,0 +1,64 @@
+{% set sections = [
+  {
+    "title": "Working Groups",
+    "url": "working-groups/",
+    "image": "../assets/homepage/working-groups/extreme-wildfire-button.jpeg",
+    "meta": "Living Ecosystem",
+    "description": "Cohort-based working groups exploring wildfire, fungi, methane, traditional knowledge, and more."
+  },
+  {
+    "title": "Staff, Postdoc & Graduate Research",
+    "url": "research/",
+    "image": "../assets/homepage/research/cubedynamics-button.png",
+    "meta": "Research Wall",
+    "description": "Computational ecology, open methods, lesson design, and project-driven synthesis led inside ESIIL."
+  },
+  {
+    "title": "Events & Summits",
+    "url": "events/",
+    "image": "../assets/homepage/events/innovation-summit-2026-button.png",
+    "meta": "Momentum",
+    "description": "Summits, hackathons, codefests, and public-facing scientific exchange across the ecosystem."
+  },
+  {
+    "title": "Infrastructure & Tools",
+    "url": "infrastructure/",
+    "image": "../assets/homepage/infrastructure/analytics-library-button.jpeg",
+    "meta": "Trusted Systems",
+    "description": "Libraries, tutorials, demos, utilities, and reusable OASIS templates gathered in one visual index."
+  }
+] %}
+
+<div class="oasis-section-page__sections">
+  <section class="oasis-gallery-section oasis-gallery-section--plain" data-reveal>
+    <div class="oasis-section-heading">
+      <div class="oasis-section-heading__copy">
+        <p class="oasis-section-heading__eyebrow">Section Portal</p>
+        <h2>Choose a gallery</h2>
+        <p>
+          The homepage now branches into dedicated visual indexes so each part
+          of OASIS can breathe instead of being crammed into one long text page.
+        </p>
+      </div>
+    </div>
+
+    <div class="oasis-gallery-grid oasis-gallery-grid--hub">
+      {% for section in sections %}
+        <a class="oasis-project-card" href="{{ section.url }}" data-reveal>
+          <div class="oasis-project-card__media">
+            <img src="{{ section.image }}" alt="{{ section.title }}" loading="lazy" decoding="async" />
+          </div>
+          <div class="oasis-project-card__body">
+            <p class="oasis-project-card__meta">{{ section.meta }}</p>
+            <h3>{{ section.title }}</h3>
+            <p>{{ section.description }}</p>
+            <span class="oasis-project-card__cta">
+              <span>Open Gallery</span>
+              <span aria-hidden="true">→</span>
+            </span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+</div>
