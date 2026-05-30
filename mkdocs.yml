@@ -117,10 +117,12 @@ extra_css:
   - styles/brand.css
   - styles/extra.css
   - assets/css/custom.css
+  - stylesheets/oasis-ring.css
 
 extra_javascript:
   - chatbot_widget.js
   - assets/js/homepage.js
+  - javascripts/oasis-ring.js
 
 validation:
   nav:

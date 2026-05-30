@@ -684,7 +684,7 @@
 .oasis-home__hero-figure {
   position: absolute;
   z-index: 1;
-  top: clamp(20rem, 23vw, 27rem);
+  top: clamp(5rem, 8vw, 8.5rem);
   right: clamp(-8rem, -2vw, 2rem);
   width: min(252rem, 220vw);
   max-width: none;
@@ -1032,7 +1032,7 @@
 
 .oasis-event-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
