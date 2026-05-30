@@ -33,7 +33,7 @@
   --oasis-logo-height: 3.15rem;
   --oasis-header-height: 4.7rem;
   --oasis-topband-height: 10px;
-  --oasis-center-logo-width: clamp(10rem, 20vw, 15rem);
+  --oasis-center-logo-width: clamp(15rem, 29vw, 22.5rem);
 
   --brand-primary: var(--oasis-blue);
   --brand-accent: var(--oasis-teal);
@@ -139,7 +139,7 @@ body,
   display: block;
   width: 100%;
   height: auto;
-  max-height: 2.95rem;
+  max-height: 4.45rem;
   object-fit: contain;
 }
 
