@@ -306,7 +306,7 @@
   min-height: calc(100vh - 5rem);
   display: flex;
   align-items: flex-start;
-  padding: clamp(0.2rem, 0.7vw, 0.65rem) 0 clamp(4rem, 7vw, 6rem);
+  padding: 0 0 clamp(4rem, 7vw, 6rem);
   background:
     radial-gradient(circle at 82% 20%, rgba(66, 188, 220, 0.13), transparent 28%),
     radial-gradient(circle at 12% 12%, rgba(0, 113, 53, 0.06), transparent 24%),
