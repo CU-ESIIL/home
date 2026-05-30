@@ -1,0 +1,24 @@
+{#-
+  Phase 1 ring prototype:
+  - single decorative layer
+  - CSS idle motion
+  - JS scroll parallax via CSS custom property
+  Future layers can be added as siblings inside the stage without changing the API.
+-#}
+<section class="oasis-ring-interlude" aria-hidden="true">
+  <div class="oasis-shell oasis-ring-interlude__shell">
+    <div
+      class="oasis-ring-interlude__stage"
+      data-oasis-ring
+      data-oasis-ring-parallax="0.2"
+    >
+      <img
+        class="oasis-ring-interlude__asset"
+        src="assets/branding/oasis-ring-asset.png"
+        alt=""
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  </div>
+</section>

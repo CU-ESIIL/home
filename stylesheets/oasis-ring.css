@@ -1,0 +1,96 @@
+/*
+ * OASIS Ring Phase 1
+ * Purpose: isolated interlude for validating asset loading, transparency,
+ * lightweight motion, and scroll-linked parallax before layering in a larger
+ * storytelling sequence.
+ */
+
+.oasis-ring-interlude {
+  position: relative;
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(251, 248, 243, 0.98));
+  overflow: clip;
+}
+
+.oasis-ring-interlude__shell {
+  display: flex;
+  justify-content: center;
+}
+
+.oasis-ring-interlude__stage {
+  --oasis-ring-scroll-shift: 0px;
+  position: relative;
+  width: min(31rem, 62vw);
+  transform: translate3d(0, var(--oasis-ring-scroll-shift), 0);
+  will-change: transform;
+}
+
+.oasis-ring-interlude__asset {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  animation:
+    oasis-ring-spin 72s linear infinite,
+    oasis-ring-float 7.2s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes oasis-ring-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes oasis-ring-float {
+  from {
+    translate: 0 -4px;
+  }
+
+  to {
+    translate: 0 4px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .oasis-ring-interlude {
+    padding: clamp(5rem, 10vw, 8rem) 0;
+  }
+
+  .oasis-ring-interlude__stage {
+    width: min(26rem, 70vw);
+  }
+}
+
+@media (max-width: 900px) {
+  .oasis-ring-interlude {
+    padding: clamp(4rem, 8vw, 6rem) 0;
+  }
+
+  .oasis-ring-interlude__stage {
+    width: min(20rem, 78vw);
+  }
+}
+
+@media (max-width: 640px) {
+  .oasis-ring-interlude__stage {
+    width: min(16rem, 82vw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oasis-ring-interlude__stage {
+    transform: none;
+    will-change: auto;
+  }
+
+  .oasis-ring-interlude__asset {
+    animation: none;
+    will-change: auto;
+  }
+}
