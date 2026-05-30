@@ -226,7 +226,7 @@
 }
 
 .oasis-band--pre-interlude {
-  padding-bottom: clamp(10rem, 15vw, 15.5rem);
+  padding-bottom: clamp(12rem, 18vw, 18rem);
 }
 
 .oasis-home__hero,
@@ -704,7 +704,7 @@
 .oasis-home__hero-figure {
   position: absolute;
   z-index: 1;
-  top: clamp(-0.45rem, 0.55vw, 0.25rem);
+  top: clamp(-1rem, -0.1vw, -0.2rem);
   right: clamp(-8rem, -2vw, 2rem);
   width: min(252rem, 220vw);
   max-width: none;
