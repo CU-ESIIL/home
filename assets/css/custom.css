@@ -225,6 +225,10 @@
   padding: clamp(4rem, 7vw, 7.5rem) 0 clamp(7rem, 11vw, 11.5rem);
 }
 
+.oasis-band--pre-interlude {
+  padding-bottom: clamp(10rem, 15vw, 15.5rem);
+}
+
 .oasis-home__hero,
 .oasis-footer-band {
   padding: clamp(4rem, 7vw, 7.5rem) 0;
