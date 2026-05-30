@@ -704,7 +704,7 @@
 .oasis-home__hero-figure {
   position: absolute;
   z-index: 1;
-  top: clamp(0rem, 1.2vw, 1rem);
+  top: clamp(-0.45rem, 0.55vw, 0.25rem);
   right: clamp(-8rem, -2vw, 2rem);
   width: min(252rem, 220vw);
   max-width: none;
