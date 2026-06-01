@@ -166,13 +166,39 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
     await expect(page.locator(sectionId)).toHaveCount(1);
   }
 
-  await expect(page.getByRole("link", { name: /explore projects/i })).toHaveAttribute(
+  const heroQuicklinks = page.locator(".oasis-home__hero-quicklinks");
+
+  await expect(heroQuicklinks.getByRole("link", { name: /quick start/i })).toHaveAttribute(
     "href",
-    /#working-groups-section$/,
+    /\/quickstart\/$/,
   );
-  await expect(page.getByRole("link", { name: /browse libraries/i })).toHaveAttribute(
+  await expect(
+    heroQuicklinks.getByRole("link", { name: /i'm here for a training/i }),
+  ).toHaveAttribute(
     "href",
-    /#infrastructure-libraries-section$/,
+    /\/trainings\/$/,
+  );
+  await expect(heroQuicklinks.getByRole("link", { name: /data library/i })).toHaveAttribute(
+    "href",
+    /https:\/\/cu-esiil\.github\.io\/data-library\/?$/,
+  );
+  await expect(
+    heroQuicklinks.getByRole("link", { name: /analytics library/i }),
+  ).toHaveAttribute(
+    "href",
+    /https:\/\/cu-esiil\.github\.io\/analytics-library\/?$/,
+  );
+  await expect(
+    heroQuicklinks.getByRole("link", { name: /cloud container/i }),
+  ).toHaveAttribute(
+    "href",
+    /\/quickstart\/cloud\/$/,
+  );
+  await expect(
+    heroQuicklinks.getByRole("link", { name: /how to contribute/i }),
+  ).toHaveAttribute(
+    "href",
+    /https:\/\/cu-esiil\.github\.io\/how_to_contribute\/?$/,
   );
 });
 
