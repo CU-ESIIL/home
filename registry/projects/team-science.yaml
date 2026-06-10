@@ -1,0 +1,22 @@
+id: team-science
+title: Team Science
+description: Studying scientific collaboration networks and synthesis practice.
+type: research-project
+status: active
+website: https://cu-esiil.github.io/Team-Science/
+repository: https://github.com/CU-ESIIL/Team-Science
+people:
+  - esiil-postdocs
+  - esiil-staff
+themes:
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - network analysis
+  - collaboration research
+outputs:
+  - project website
+  - collaboration insights
+related_projects:
+  - innovation-summit-2026

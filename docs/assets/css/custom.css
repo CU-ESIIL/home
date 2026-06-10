@@ -276,12 +276,12 @@
 .oasis-interlude__frame {
   position: relative;
   top: 0;
-  left: 50%;
-  width: min(112rem, 112vw);
-  height: clamp(12rem, 17vw, 17rem);
-  min-height: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: auto;
   margin-left: 0;
-  transform: translate(-50%, -72%);
+  transform: translateY(-72%);
   background: transparent;
   box-shadow: none;
   overflow: visible;
@@ -291,7 +291,7 @@
 .oasis-interlude__frame img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   object-position: center center;
   mix-blend-mode: normal;
@@ -299,21 +299,15 @@
 }
 
 .oasis-interlude--data-insight .oasis-interlude__frame {
-  height: clamp(9rem, 12vw, 12.5rem);
-  width: min(112rem, 112vw);
-  transform: translate(-50%, -118%);
+  transform: translateY(-118%);
 }
 
 .oasis-interlude--tech .oasis-interlude__frame {
-  height: clamp(12.5rem, 18vw, 18rem);
-  width: min(118rem, 118vw);
-  transform: translate(-50%, -84%);
+  transform: translateY(-84%);
 }
 
 .oasis-interlude--ecology .oasis-interlude__frame {
-  height: clamp(12.5rem, 18vw, 18rem);
-  width: min(112rem, 112vw);
-  transform: translate(-50%, -76%);
+  transform: translateY(-76%);
 }
 
 .oasis-interlude + .oasis-band,

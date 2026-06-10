@@ -1,0 +1,23 @@
+id: extreme-wildfire
+title: Extreme Wildfire
+description: Collaborative research on extreme wildfire behavior and environmental change.
+type: working-group
+status: active
+website: https://cu-esiil.github.io/ExtremeWildfire/
+repository: https://github.com/CU-ESIIL/ExtremeWildfire
+people:
+  - working-group-community
+themes:
+  - wildfire
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - synthesis workshops
+  - comparative analysis
+outputs:
+  - project website
+  - collaborative research agenda
+related_projects:
+  - fire-plan-2024
+  - wui-boundary

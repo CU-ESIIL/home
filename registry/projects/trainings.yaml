@@ -1,0 +1,23 @@
+id: trainings
+title: Train-the-Trainer Materials
+description: Central training page for technical trainings and onboarding materials.
+type: training
+status: active
+website: https://cu-esiil.github.io/home/trainings/
+repository: https://github.com/CU-ESIIL/home
+people:
+  - esiil-staff
+themes:
+  - training
+  - data-infrastructure
+datasets:
+  - esiil-shared-datasets
+methods:
+  - technical training
+  - onboarding guides
+outputs:
+  - training page
+  - workshop materials
+related_projects:
+  - datacube-sandbox
+  - analytics-library

@@ -1,0 +1,23 @@
+id: analytics-library
+title: Analytics Library
+description: Data harmonization, workflows, and environmental analytics methods.
+type: library
+status: active
+website: https://cu-esiil.github.io/analytics-library/
+repository: https://github.com/CU-ESIIL/analytics-library
+people:
+  - esiil-staff
+themes:
+  - data-infrastructure
+  - training
+datasets:
+  - esiil-shared-datasets
+methods:
+  - analytics workflows
+  - reproducible methods
+outputs:
+  - documentation site
+  - reusable methods
+related_projects:
+  - data-library
+  - cubedynamics

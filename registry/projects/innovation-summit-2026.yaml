@@ -1,0 +1,23 @@
+id: innovation-summit-2026
+title: Innovation Summit 2026
+description: AI for sustainability and environmental data-to-decision exchange.
+type: event
+status: active
+website: https://cu-esiil.github.io/Innovation-Summit-2026/
+repository: https://github.com/CU-ESIIL/Innovation-Summit-2026
+people:
+  - esiil-staff
+themes:
+  - events
+  - environmental-ai
+datasets:
+  - esiil-shared-datasets
+methods:
+  - summit convening
+  - interdisciplinary collaboration
+outputs:
+  - summit website
+  - event programming
+related_projects:
+  - hdr-ml-hackathon-2026
+  - team-science

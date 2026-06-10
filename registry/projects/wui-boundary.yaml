@@ -1,0 +1,21 @@
+id: wui-boundary
+title: WUI Boundary
+description: Measuring the wildland-urban interface across delineation and scale.
+type: research-project
+status: active
+website: https://cu-esiil.github.io/WUI_boundary/
+repository: https://github.com/CU-ESIIL/WUI_boundary
+people:
+  - esiil-staff
+themes:
+  - wildfire
+datasets:
+  - esiil-shared-datasets
+methods:
+  - spatial delineation
+  - comparative boundary analysis
+outputs:
+  - project website
+  - research materials
+related_projects:
+  - extreme-wildfire

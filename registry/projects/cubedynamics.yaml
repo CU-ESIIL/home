@@ -1,0 +1,23 @@
+id: cubedynamics
+title: CubeDynamics
+description: Composable operations for spatiotemporal data cubes.
+type: research-project
+status: active
+website: https://cu-esiil.github.io/cubedynamics/
+repository: https://github.com/CU-ESIIL/cubedynamics
+people:
+  - esiil-staff
+  - esiil-postdocs
+themes:
+  - data-infrastructure
+datasets:
+  - spatiotemporal-data-cubes
+methods:
+  - data cubes
+  - composable computation
+outputs:
+  - software documentation
+  - project website
+related_projects:
+  - datacube-sandbox
+  - analytics-library

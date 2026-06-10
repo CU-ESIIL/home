@@ -15,6 +15,9 @@ copyright: 'Copyright &copy; 2024 University of Colorado Boulder'
 # Page tree
 nav:
   - Home: index.md
+  - Explore:
+      - Overview: explore/index.md
+      - Themes: explore/themes/index.md
   - Ecosystem Directory: directory/index.md
   - Quickstart: quickstart/index.md
   - Container Library: container-library/index.md

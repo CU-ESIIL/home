@@ -1,0 +1,22 @@
+id: macrophenology
+title: Macrophenology
+description: Macroecological phenology patterns across changing environments.
+type: working-group
+status: active
+website: https://cu-esiil.github.io/macrophenology/
+repository: https://github.com/CU-ESIIL/macrophenology
+people:
+  - working-group-community
+themes:
+  - phenology
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - macroecological analysis
+  - temporal pattern analysis
+outputs:
+  - project website
+  - synthesis outputs
+related_projects:
+  - bioviewpoint

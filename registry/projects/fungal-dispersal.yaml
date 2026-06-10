@@ -1,0 +1,22 @@
+id: fungal-dispersal
+title: Fungal Dispersal
+description: Open synthesis on fungal dispersal, connectivity, and ecological spread.
+type: working-group
+status: active
+website: https://cu-esiil.github.io/fungal_dispersal/
+repository: https://github.com/CU-ESIIL/fungal_dispersal
+people:
+  - working-group-community
+themes:
+  - fungal-ecology
+  - synthesis-collaboration
+datasets:
+  - fungal-dispersal-observations
+methods:
+  - ecological synthesis
+  - connectivity analysis
+outputs:
+  - project website
+  - synthesis materials
+related_projects:
+  - bioviewpoint

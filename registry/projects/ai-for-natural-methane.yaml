@@ -1,0 +1,22 @@
+id: ai-for-natural-methane
+title: AI for Natural Methane
+description: Harmonizing natural methane datasets and discovery workflows with AI.
+type: working-group
+status: active
+website: https://cu-esiil.github.io/AI-for-Natural-Methane/
+repository: https://github.com/CU-ESIIL/AI-for-Natural-Methane
+people:
+  - working-group-community
+themes:
+  - environmental-ai
+  - data-infrastructure
+datasets:
+  - natural-methane-datasets
+methods:
+  - machine learning
+  - data harmonization
+outputs:
+  - project website
+  - harmonized workflows
+related_projects:
+  - analytics-library

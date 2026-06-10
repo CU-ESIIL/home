@@ -1,0 +1,24 @@
+id: hdr-ml-hackathon-2026
+title: HDR-ML Hackathon 2026
+description: Hands-on machine learning collaboration around environmental datasets.
+type: event
+status: active
+website: https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026
+repository: https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026
+people:
+  - esiil-staff
+themes:
+  - events
+  - environmental-ai
+  - training
+datasets:
+  - esiil-shared-datasets
+methods:
+  - hackathon collaboration
+  - applied machine learning
+outputs:
+  - event repository
+  - training materials
+related_projects:
+  - innovation-summit-2026
+  - analytics-library

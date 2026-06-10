@@ -407,3 +407,32 @@ homepage sections.
   The remaining most noticeable whitespace issue was image-intrinsic, not CSS
   layout padding, so the final pass focused on tighter asset crops rather than
   further shrinking card gutters.
+
+## 2026-06-09
+
+- Goal: add a static organization-wide metadata graph system for the CU-ESIIL
+  ecosystem inside the OASIS home repo, generate initial Explore theme pages,
+  add graph CI/test scaffolding, and restore the interlude banners to true
+  full-width presentation.
+- Context reviewed: `AGENTS.md`, `mkdocs.yml`, current homepage section
+  partials, `.github/workflows/`, `requirements.txt`, existing docs directory
+  structure, interlude banner CSS in `docs/assets/css/custom.css`, and current
+  homepage-linked projects/libraries/events used as seed registry content.
+- Files changed: `mkdocs.yml`, `requirements.txt`, `PROMPT_LOG.md`,
+  `.github/workflows/build-graph.yml`, `scripts/__init__.py`,
+  `scripts/discover_org_repos.py`, `scripts/build_graph.py`,
+  `tests/test_build_graph.py`, `docs/explore/index.md`,
+  `docs/assets/css/custom.css`, `docs/assets/data/esiil_graph.json`,
+  generated theme pages under `docs/explore/themes/`, `data/org_repos.json`,
+  and new registry content under `registry/projects/`, `registry/people/`,
+  `registry/themes/`, `registry/datasets/`, and `registry/schema/`.
+- Validation: `./.venv/bin/python scripts/build_graph.py`;
+  `./.venv/bin/python -m py_compile scripts/build_graph.py scripts/discover_org_repos.py`;
+  `./.venv/bin/python -m mkdocs build --strict`.
+- Follow-up / unresolved: local `pytest` execution could not be completed on
+  this machine because `pytest` is not installed in the repo virtualenv and
+  package installation was blocked by network restrictions/approval limits, but
+  the new CI workflow installs dependencies and runs `pytest
+  tests/test_build_graph.py` automatically. The first graph registry is a
+  starter slice of the ecosystem and should be extended over time rather than
+  treated as complete coverage.

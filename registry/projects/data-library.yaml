@@ -1,0 +1,21 @@
+id: data-library
+title: Data Library
+description: Organizational hub for datasets, discovery, and shared data access.
+type: library
+status: active
+website: https://cu-esiil.github.io/data-library/
+repository: https://github.com/CU-ESIIL/data-library
+people:
+  - esiil-staff
+themes:
+  - data-infrastructure
+datasets:
+  - esiil-shared-datasets
+methods:
+  - dataset cataloging
+  - data discovery
+outputs:
+  - documentation site
+  - shared dataset access
+related_projects:
+  - analytics-library

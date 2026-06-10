@@ -1,0 +1,23 @@
+id: datacube-sandbox
+title: Datacube Sandbox
+description: Training and experimentation space for data cube workflows.
+type: research-project
+status: active
+website: https://cu-esiil.github.io/Jim-s-Sandbox/
+repository: https://github.com/CU-ESIIL/Jim-s-Sandbox
+people:
+  - esiil-postdocs
+themes:
+  - data-infrastructure
+  - training
+datasets:
+  - spatiotemporal-data-cubes
+methods:
+  - sandbox prototyping
+  - training exercises
+outputs:
+  - prototype workflows
+  - project website
+related_projects:
+  - cubedynamics
+  - trainings

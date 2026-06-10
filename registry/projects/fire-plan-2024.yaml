@@ -1,0 +1,23 @@
+id: fire-plan-2024
+title: FIRE Plan 2024
+description: Planning and strategy work for fire management and shared response.
+type: event
+status: active
+website: https://cu-esiil.github.io/FIRE-plan-2024/
+repository: https://github.com/CU-ESIIL/FIRE-plan-2024
+people:
+  - esiil-staff
+themes:
+  - wildfire
+  - events
+datasets:
+  - esiil-shared-datasets
+methods:
+  - planning workshops
+  - fire strategy development
+outputs:
+  - event website
+  - planning materials
+related_projects:
+  - extreme-wildfire
+  - wui-boundary

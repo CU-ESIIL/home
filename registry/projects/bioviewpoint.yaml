@@ -1,0 +1,23 @@
+id: bioviewpoint
+title: BioViewPoint
+description: Visualization-focused project space for ecological interpretation and biological insight.
+type: working-group
+status: active
+website: https://cu-esiil.github.io/BioViewPoint/
+repository: https://github.com/CU-ESIIL/BioViewPoint
+people:
+  - working-group-community
+themes:
+  - phenology
+  - fungal-ecology
+datasets:
+  - esiil-shared-datasets
+methods:
+  - visualization
+  - exploratory analysis
+outputs:
+  - project website
+  - visual interpretation workflows
+related_projects:
+  - macrophenology
+  - fungal-dispersal
