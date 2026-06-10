@@ -471,3 +471,23 @@ homepage sections.
 - Follow-up / unresolved: Only one event-group URL was provided in this pass,
   so the remaining slots are placeholders ready to be replaced with real group
   repos as they are shared.
+
+## 2026-06-10
+
+- Goal: finish the `Event Groups` section by giving it its own directory page
+  and forcing the homepage version into a four-card single-row strip instead of
+  another event-archive shelf.
+- Context reviewed: `docs/overrides/partials/event_groups.html`,
+  `docs/overrides/section-gallery.html`,
+  `docs/overrides/partials/directory/events_page.html`,
+  sibling `docs/directory/*.md` pages, and the shared rail/grid rules in
+  `docs/assets/css/custom.css`.
+- Files changed: `docs/overrides/partials/event_groups.html`,
+  `docs/directory/event-groups.md`,
+  `docs/overrides/partials/directory/event_groups_page.html`,
+  `PROMPT_LOG.md`.
+- Validation: Pending strict MkDocs build after wiring the new event-group
+  directory page.
+- Follow-up / unresolved: The user has only supplied one true event-group URL
+  so far, so the dedicated page and homepage strip still contain placeholders
+  until the remaining links are provided.

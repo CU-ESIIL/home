@@ -20,8 +20,8 @@
         </p>
       </div>
 
-      <a class="oasis-inline-link" href="directory/events/">
-        <span>View All Events</span>
+      <a class="oasis-inline-link" href="directory/event-groups/">
+        <span>View Event Groups</span>
         <span aria-hidden="true">→</span>
       </a>
     </div>
@@ -36,7 +36,7 @@
         </p>
       </aside>
 
-      <div class="oasis-card-rail oasis-card-rail--groups" data-reveal>
+      <div class="oasis-card-rail oasis-card-rail--event-groups" data-reveal>
         {% for group in event_groups %}
           <a class="oasis-project-card oasis-project-card--event-group" href="{{ group.url }}" target="_blank" rel="noopener">
             <div class="oasis-project-card__media">
