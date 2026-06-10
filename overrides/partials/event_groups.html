@@ -1,0 +1,101 @@
+{% set event_groups = [
+  {
+    "title": "Innovation Summit 2026",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2026/",
+    "image": "assets/thumbnails/active/events/innovation-summit-2026-button.png",
+    "meta": "Event Group Repo",
+    "description": "Current summit repository for AI, sustainability, and environmental data-to-decision exchange."
+  },
+  {
+    "title": "HDR-ML Hackathon 2026",
+    "url": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026",
+    "image": "assets/thumbnails/active/events/hdr-ml-hackathon-2026-button.png",
+    "meta": "Event Group Repo",
+    "description": "Hands-on machine-learning collaboration hub built around environmental datasets."
+  },
+  {
+    "title": "Innovation Summit 2025",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2025/",
+    "image": "assets/thumbnails/active/events/innovation-summit-2025-button.png",
+    "meta": "Event Group Repo",
+    "description": "Previous summit repository with materials, structure, and public-facing event context."
+  },
+  {
+    "title": "Innovation Summit 2024",
+    "url": "https://cu-esiil.github.io/Innovation-Summit-2024/",
+    "image": "assets/thumbnails/active/events/innovation-summit-2024-button.png",
+    "meta": "Event Group Repo",
+    "description": "Earlier summit workspace for environmental innovation exchange and planning materials."
+  },
+  {
+    "title": "Forest Carbon Codefest",
+    "url": "https://cu-esiil.github.io/forest-carbon-codefest/",
+    "image": "assets/thumbnails/active/events/forest-carbon-codefest-button.png",
+    "meta": "Event Group Repo",
+    "description": "Codefest repository for forest carbon collaboration, tools, and event resources."
+  },
+  {
+    "title": "HYR-SENSE",
+    "url": "https://cu-esiil.github.io/HYR-SENSE/",
+    "image": "assets/thumbnails/active/events/hyr-sense-button.png",
+    "meta": "Event Group Repo",
+    "description": "Remote sensing workshop hub with linked materials and group-facing event context."
+  },
+  {
+    "title": "AGU 2023 Innovation Session",
+    "url": "https://cu-esiil.github.io/agu-2023_innovation_session/",
+    "image": "assets/thumbnails/active/events/agu-2023-innovation-session-button.png",
+    "meta": "Event Group Repo",
+    "description": "AGU session repository focused on stakeholder engagement in open environmental data science."
+  }
+] %}
+
+<section class="oasis-band oasis-band--white oasis-band--pre-interlude" id="event-groups-section">
+  <div class="oasis-shell">
+    <div class="oasis-section-heading" data-reveal>
+      <div class="oasis-section-heading__copy">
+        <p class="oasis-section-heading__eyebrow">Repository Layer</p>
+        <h2>Event Groups</h2>
+        <p>
+          A dedicated place for event-group repositories, planning hubs, and
+          working spaces that sit underneath the more public-facing events band.
+        </p>
+      </div>
+
+      <a class="oasis-inline-link" href="directory/events/">
+        <span>Browse Event Archive</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="oasis-feature-row oasis-feature-row--events">
+      <aside class="oasis-feature-intro" data-reveal>
+        <p class="oasis-feature-intro__label">Group repos</p>
+        <p class="oasis-feature-intro__text">
+          Use this band to collect the event repositories themselves, including
+          summit workspaces, hackathon repos, codefest materials, and other
+          event-linked collaboration hubs as they come online.
+        </p>
+      </aside>
+
+      <div class="oasis-card-rail oasis-card-rail--groups" data-reveal>
+        {% for group in event_groups %}
+          <a class="oasis-project-card oasis-project-card--event-group" href="{{ group.url }}" target="_blank" rel="noopener">
+            <div class="oasis-project-card__media">
+              <img src="{{ group.image }}" alt="{{ group.title }}" loading="lazy" decoding="async" />
+            </div>
+            <div class="oasis-project-card__body">
+              <p class="oasis-project-card__meta">{{ group.meta }}</p>
+              <h3>{{ group.title }}</h3>
+              <p>{{ group.description }}</p>
+              <span class="oasis-project-card__cta">
+                <span>Open Repo</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
