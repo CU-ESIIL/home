@@ -857,6 +857,10 @@
   grid-template-columns: repeat(5, minmax(12rem, 1fr));
 }
 
+.oasis-card-rail--event-groups {
+  grid-template-columns: repeat(4, minmax(12rem, 1fr));
+}
+
 .oasis-project-card {
   display: flex;
   flex-direction: column;
@@ -1412,6 +1416,10 @@
     grid-template-columns: repeat(5, minmax(14rem, 1fr));
   }
 
+  .oasis-card-rail--event-groups {
+    grid-template-columns: repeat(4, minmax(14rem, 1fr));
+  }
+
   .oasis-research-wall {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1482,6 +1490,7 @@
   }
 
   .oasis-card-rail--groups,
+  .oasis-card-rail--event-groups,
   .oasis-gallery-grid,
   .oasis-event-grid,
   .oasis-event-grid--directory,
