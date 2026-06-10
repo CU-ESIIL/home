@@ -1,0 +1,1645 @@
+{
+  "edges": [
+    {
+      "source": "person:esiil-postdocs",
+      "target": "project:cubedynamics",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-postdocs",
+      "target": "project:datacube-sandbox",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-postdocs",
+      "target": "project:team-science",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:analytics-library",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:cubedynamics",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:data-library",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:fire-plan-2024",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:hdr-ml-hackathon-2026",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:innovation-summit-2026",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:team-science",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:trainings",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:wui-boundary",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:ai-for-natural-methane",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:bioviewpoint",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:extreme-wildfire",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:fungal-dispersal",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:macrophenology",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "output:harmonized-workflows",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "repo:ai-for-natural-methane",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "website:https-cu-esiil-github-io-ai-for-natural-methane",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "project:analytics-library",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "dataset:natural-methane-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "method:data-harmonization",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:ai-for-natural-methane",
+      "target": "method:machine-learning",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "output:documentation-site",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "output:reusable-methods",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "repo:analytics-library",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "theme:training",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "website:https-cu-esiil-github-io-analytics-library",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "project:cubedynamics",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "project:data-library",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "method:analytics-workflows",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:analytics-library",
+      "target": "method:reproducible-methods",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "output:visual-interpretation-workflows",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "repo:bioviewpoint",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "theme:fungal-ecology",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "theme:phenology",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "website:https-cu-esiil-github-io-bioviewpoint",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "project:fungal-dispersal",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "project:macrophenology",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "method:exploratory-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:bioviewpoint",
+      "target": "method:visualization",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "output:software-documentation",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "person:esiil-postdocs",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "repo:cubedynamics",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "website:https-cu-esiil-github-io-cubedynamics",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "project:analytics-library",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "project:datacube-sandbox",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "dataset:spatiotemporal-data-cubes",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "method:composable-computation",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:cubedynamics",
+      "target": "method:data-cubes",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:data-library",
+      "target": "output:documentation-site",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:data-library",
+      "target": "output:shared-dataset-access",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:data-library",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:data-library",
+      "target": "repo:data-library",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:data-library",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:data-library",
+      "target": "website:https-cu-esiil-github-io-data-library",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:data-library",
+      "target": "project:analytics-library",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:data-library",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:data-library",
+      "target": "method:data-discovery",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:data-library",
+      "target": "method:dataset-cataloging",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "output:prototype-workflows",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "person:esiil-postdocs",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "repo:jim-s-sandbox",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "theme:training",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "website:https-cu-esiil-github-io-jim-s-sandbox",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "project:cubedynamics",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "project:trainings",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "dataset:spatiotemporal-data-cubes",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "method:sandbox-prototyping",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:datacube-sandbox",
+      "target": "method:training-exercises",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "output:collaborative-research-agenda",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "repo:extremewildfire",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "theme:wildfire",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "website:https-cu-esiil-github-io-extremewildfire",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "project:fire-plan-2024",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "project:wui-boundary",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "method:comparative-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:extreme-wildfire",
+      "target": "method:synthesis-workshops",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "output:event-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "output:planning-materials",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "repo:fire-plan-2024",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "theme:wildfire",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "website:https-cu-esiil-github-io-fire-plan-2024",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "project:extreme-wildfire",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "project:wui-boundary",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "method:fire-strategy-development",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:fire-plan-2024",
+      "target": "method:planning-workshops",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "output:synthesis-materials",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "repo:fungal-dispersal",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "theme:fungal-ecology",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "website:https-cu-esiil-github-io-fungal-dispersal",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "project:bioviewpoint",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "dataset:fungal-dispersal-observations",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "method:connectivity-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:fungal-dispersal",
+      "target": "method:ecological-synthesis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "output:event-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "output:training-materials",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "repo:hdr-ml-hackathon-2026",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "theme:training",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "website:https-github-com-cu-esiil-hdr-ml-hackathon-2026",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "project:analytics-library",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "project:innovation-summit-2026",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "method:applied-machine-learning",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:hdr-ml-hackathon-2026",
+      "target": "method:hackathon-collaboration",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "output:event-programming",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "output:summit-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "repo:innovation-summit-2026",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "website:https-cu-esiil-github-io-innovation-summit-2026",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "project:hdr-ml-hackathon-2026",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "project:team-science",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "method:interdisciplinary-collaboration",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:innovation-summit-2026",
+      "target": "method:summit-convening",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "output:synthesis-outputs",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "repo:macrophenology",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "theme:phenology",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "website:https-cu-esiil-github-io-macrophenology",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "project:bioviewpoint",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "method:macroecological-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:macrophenology",
+      "target": "method:temporal-pattern-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:team-science",
+      "target": "output:collaboration-insights",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:team-science",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:team-science",
+      "target": "person:esiil-postdocs",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:team-science",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:team-science",
+      "target": "repo:team-science",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:team-science",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:team-science",
+      "target": "website:https-cu-esiil-github-io-team-science",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:team-science",
+      "target": "project:innovation-summit-2026",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:team-science",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:team-science",
+      "target": "method:collaboration-research",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:team-science",
+      "target": "method:network-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:trainings",
+      "target": "output:training-page",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:trainings",
+      "target": "output:workshop-materials",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:trainings",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:trainings",
+      "target": "repo:home",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:trainings",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:trainings",
+      "target": "theme:training",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:trainings",
+      "target": "website:https-cu-esiil-github-io-home-trainings",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:trainings",
+      "target": "project:analytics-library",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:trainings",
+      "target": "project:datacube-sandbox",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:trainings",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:trainings",
+      "target": "method:onboarding-guides",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:trainings",
+      "target": "method:technical-training",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "output:research-materials",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "repo:wui-boundary",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "theme:wildfire",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "website:https-cu-esiil-github-io-wui-boundary",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "project:extreme-wildfire",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "method:comparative-boundary-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:wui-boundary",
+      "target": "method:spatial-delineation",
+      "type": "USES_METHOD"
+    }
+  ],
+  "meta": {
+    "dataset_count": 4,
+    "person_count": 3,
+    "project_count": 15,
+    "repo_count": 15,
+    "theme_count": 8
+  },
+  "nodes": [
+    {
+      "description": "Shared organizational datasets surfaced through the OASIS ecosystem.",
+      "id": "dataset:esiil-shared-datasets",
+      "label": "ESIIL Shared Datasets",
+      "type": "dataset",
+      "website": "https://cu-esiil.github.io/data-library/"
+    },
+    {
+      "description": "Observations and synthesis inputs related to fungal spread and connectivity.",
+      "id": "dataset:fungal-dispersal-observations",
+      "label": "Fungal Dispersal Observations",
+      "type": "dataset",
+      "website": "https://cu-esiil.github.io/fungal_dispersal/"
+    },
+    {
+      "description": "Harmonized environmental methane observations and derived inputs.",
+      "id": "dataset:natural-methane-datasets",
+      "label": "Natural Methane Datasets",
+      "type": "dataset",
+      "website": "https://cu-esiil.github.io/AI-for-Natural-Methane/"
+    },
+    {
+      "description": "Structured cube-based environmental datasets and computational layers.",
+      "id": "dataset:spatiotemporal-data-cubes",
+      "label": "Spatiotemporal Data Cubes",
+      "type": "dataset",
+      "website": "https://cu-esiil.github.io/cubedynamics/"
+    },
+    {
+      "id": "method:analytics-workflows",
+      "label": "analytics workflows",
+      "type": "method"
+    },
+    {
+      "id": "method:applied-machine-learning",
+      "label": "applied machine learning",
+      "type": "method"
+    },
+    {
+      "id": "method:collaboration-research",
+      "label": "collaboration research",
+      "type": "method"
+    },
+    {
+      "id": "method:comparative-analysis",
+      "label": "comparative analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:comparative-boundary-analysis",
+      "label": "comparative boundary analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:composable-computation",
+      "label": "composable computation",
+      "type": "method"
+    },
+    {
+      "id": "method:connectivity-analysis",
+      "label": "connectivity analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:data-cubes",
+      "label": "data cubes",
+      "type": "method"
+    },
+    {
+      "id": "method:data-discovery",
+      "label": "data discovery",
+      "type": "method"
+    },
+    {
+      "id": "method:data-harmonization",
+      "label": "data harmonization",
+      "type": "method"
+    },
+    {
+      "id": "method:dataset-cataloging",
+      "label": "dataset cataloging",
+      "type": "method"
+    },
+    {
+      "id": "method:ecological-synthesis",
+      "label": "ecological synthesis",
+      "type": "method"
+    },
+    {
+      "id": "method:exploratory-analysis",
+      "label": "exploratory analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:fire-strategy-development",
+      "label": "fire strategy development",
+      "type": "method"
+    },
+    {
+      "id": "method:hackathon-collaboration",
+      "label": "hackathon collaboration",
+      "type": "method"
+    },
+    {
+      "id": "method:interdisciplinary-collaboration",
+      "label": "interdisciplinary collaboration",
+      "type": "method"
+    },
+    {
+      "id": "method:machine-learning",
+      "label": "machine learning",
+      "type": "method"
+    },
+    {
+      "id": "method:macroecological-analysis",
+      "label": "macroecological analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:network-analysis",
+      "label": "network analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:onboarding-guides",
+      "label": "onboarding guides",
+      "type": "method"
+    },
+    {
+      "id": "method:planning-workshops",
+      "label": "planning workshops",
+      "type": "method"
+    },
+    {
+      "id": "method:reproducible-methods",
+      "label": "reproducible methods",
+      "type": "method"
+    },
+    {
+      "id": "method:sandbox-prototyping",
+      "label": "sandbox prototyping",
+      "type": "method"
+    },
+    {
+      "id": "method:spatial-delineation",
+      "label": "spatial delineation",
+      "type": "method"
+    },
+    {
+      "id": "method:summit-convening",
+      "label": "summit convening",
+      "type": "method"
+    },
+    {
+      "id": "method:synthesis-workshops",
+      "label": "synthesis workshops",
+      "type": "method"
+    },
+    {
+      "id": "method:technical-training",
+      "label": "technical training",
+      "type": "method"
+    },
+    {
+      "id": "method:temporal-pattern-analysis",
+      "label": "temporal pattern analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:training-exercises",
+      "label": "training exercises",
+      "type": "method"
+    },
+    {
+      "id": "method:visualization",
+      "label": "visualization",
+      "type": "method"
+    },
+    {
+      "id": "output:collaboration-insights",
+      "label": "collaboration insights",
+      "type": "output"
+    },
+    {
+      "id": "output:collaborative-research-agenda",
+      "label": "collaborative research agenda",
+      "type": "output"
+    },
+    {
+      "id": "output:documentation-site",
+      "label": "documentation site",
+      "type": "output"
+    },
+    {
+      "id": "output:event-programming",
+      "label": "event programming",
+      "type": "output"
+    },
+    {
+      "id": "output:event-repository",
+      "label": "event repository",
+      "type": "output"
+    },
+    {
+      "id": "output:event-website",
+      "label": "event website",
+      "type": "output"
+    },
+    {
+      "id": "output:harmonized-workflows",
+      "label": "harmonized workflows",
+      "type": "output"
+    },
+    {
+      "id": "output:planning-materials",
+      "label": "planning materials",
+      "type": "output"
+    },
+    {
+      "id": "output:project-website",
+      "label": "project website",
+      "type": "output"
+    },
+    {
+      "id": "output:prototype-workflows",
+      "label": "prototype workflows",
+      "type": "output"
+    },
+    {
+      "id": "output:research-materials",
+      "label": "research materials",
+      "type": "output"
+    },
+    {
+      "id": "output:reusable-methods",
+      "label": "reusable methods",
+      "type": "output"
+    },
+    {
+      "id": "output:shared-dataset-access",
+      "label": "shared dataset access",
+      "type": "output"
+    },
+    {
+      "id": "output:software-documentation",
+      "label": "software documentation",
+      "type": "output"
+    },
+    {
+      "id": "output:summit-website",
+      "label": "summit website",
+      "type": "output"
+    },
+    {
+      "id": "output:synthesis-materials",
+      "label": "synthesis materials",
+      "type": "output"
+    },
+    {
+      "id": "output:synthesis-outputs",
+      "label": "synthesis outputs",
+      "type": "output"
+    },
+    {
+      "id": "output:training-materials",
+      "label": "training materials",
+      "type": "output"
+    },
+    {
+      "id": "output:training-page",
+      "label": "training page",
+      "type": "output"
+    },
+    {
+      "id": "output:visual-interpretation-workflows",
+      "label": "visual interpretation workflows",
+      "type": "output"
+    },
+    {
+      "id": "output:workshop-materials",
+      "label": "workshop materials",
+      "type": "output"
+    },
+    {
+      "id": "person:esiil-postdocs",
+      "label": "ESIIL Postdocs",
+      "role": "Postdoctoral research cohort",
+      "type": "person",
+      "website": "https://cu-esiil.github.io/home/directory/research/"
+    },
+    {
+      "id": "person:esiil-staff",
+      "label": "ESIIL Staff",
+      "role": "Organizational team",
+      "type": "person",
+      "website": "https://esiil.org/"
+    },
+    {
+      "id": "person:working-group-community",
+      "label": "Working Group Community",
+      "role": "Collaborative research community",
+      "type": "person",
+      "website": "https://cu-esiil.github.io/home/directory/working-groups/"
+    },
+    {
+      "description": "Harmonizing natural methane datasets and discovery workflows with AI.",
+      "id": "project:ai-for-natural-methane",
+      "label": "AI for Natural Methane",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/AI-for-Natural-Methane",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/AI-for-Natural-Methane/"
+    },
+    {
+      "description": "Data harmonization, workflows, and environmental analytics methods.",
+      "id": "project:analytics-library",
+      "label": "Analytics Library",
+      "project_type": "library",
+      "repository": "https://github.com/CU-ESIIL/analytics-library",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/analytics-library/"
+    },
+    {
+      "description": "Visualization-focused project space for ecological interpretation and biological insight.",
+      "id": "project:bioviewpoint",
+      "label": "BioViewPoint",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/BioViewPoint",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/BioViewPoint/"
+    },
+    {
+      "description": "Composable operations for spatiotemporal data cubes.",
+      "id": "project:cubedynamics",
+      "label": "CubeDynamics",
+      "project_type": "research-project",
+      "repository": "https://github.com/CU-ESIIL/cubedynamics",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/cubedynamics/"
+    },
+    {
+      "description": "Organizational hub for datasets, discovery, and shared data access.",
+      "id": "project:data-library",
+      "label": "Data Library",
+      "project_type": "library",
+      "repository": "https://github.com/CU-ESIIL/data-library",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/data-library/"
+    },
+    {
+      "description": "Training and experimentation space for data cube workflows.",
+      "id": "project:datacube-sandbox",
+      "label": "Datacube Sandbox",
+      "project_type": "research-project",
+      "repository": "https://github.com/CU-ESIIL/Jim-s-Sandbox",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/Jim-s-Sandbox/"
+    },
+    {
+      "description": "Collaborative research on extreme wildfire behavior and environmental change.",
+      "id": "project:extreme-wildfire",
+      "label": "Extreme Wildfire",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/ExtremeWildfire",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/ExtremeWildfire/"
+    },
+    {
+      "description": "Planning and strategy work for fire management and shared response.",
+      "id": "project:fire-plan-2024",
+      "label": "FIRE Plan 2024",
+      "project_type": "event",
+      "repository": "https://github.com/CU-ESIIL/FIRE-plan-2024",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/FIRE-plan-2024/"
+    },
+    {
+      "description": "Open synthesis on fungal dispersal, connectivity, and ecological spread.",
+      "id": "project:fungal-dispersal",
+      "label": "Fungal Dispersal",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/fungal_dispersal",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/fungal_dispersal/"
+    },
+    {
+      "description": "Hands-on machine learning collaboration around environmental datasets.",
+      "id": "project:hdr-ml-hackathon-2026",
+      "label": "HDR-ML Hackathon 2026",
+      "project_type": "event",
+      "repository": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026",
+      "status": "active",
+      "type": "project",
+      "website": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026"
+    },
+    {
+      "description": "AI for sustainability and environmental data-to-decision exchange.",
+      "id": "project:innovation-summit-2026",
+      "label": "Innovation Summit 2026",
+      "project_type": "event",
+      "repository": "https://github.com/CU-ESIIL/Innovation-Summit-2026",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/Innovation-Summit-2026/"
+    },
+    {
+      "description": "Macroecological phenology patterns across changing environments.",
+      "id": "project:macrophenology",
+      "label": "Macrophenology",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/macrophenology",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/macrophenology/"
+    },
+    {
+      "description": "Studying scientific collaboration networks and synthesis practice.",
+      "id": "project:team-science",
+      "label": "Team Science",
+      "project_type": "research-project",
+      "repository": "https://github.com/CU-ESIIL/Team-Science",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/Team-Science/"
+    },
+    {
+      "description": "Central training page for technical trainings and onboarding materials.",
+      "id": "project:trainings",
+      "label": "Train-the-Trainer Materials",
+      "project_type": "training",
+      "repository": "https://github.com/CU-ESIIL/home",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/home/trainings/"
+    },
+    {
+      "description": "Measuring the wildland-urban interface across delineation and scale.",
+      "id": "project:wui-boundary",
+      "label": "WUI Boundary",
+      "project_type": "research-project",
+      "repository": "https://github.com/CU-ESIIL/WUI_boundary",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/WUI_boundary/"
+    },
+    {
+      "id": "repo:ai-for-natural-methane",
+      "label": "AI-for-Natural-Methane",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/AI-for-Natural-Methane"
+    },
+    {
+      "id": "repo:analytics-library",
+      "label": "analytics-library",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/analytics-library"
+    },
+    {
+      "id": "repo:bioviewpoint",
+      "label": "BioViewPoint",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/BioViewPoint"
+    },
+    {
+      "id": "repo:cubedynamics",
+      "label": "cubedynamics",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/cubedynamics"
+    },
+    {
+      "id": "repo:data-library",
+      "label": "data-library",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/data-library"
+    },
+    {
+      "id": "repo:extremewildfire",
+      "label": "ExtremeWildfire",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/ExtremeWildfire"
+    },
+    {
+      "id": "repo:fire-plan-2024",
+      "label": "FIRE-plan-2024",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/FIRE-plan-2024"
+    },
+    {
+      "id": "repo:fungal-dispersal",
+      "label": "fungal_dispersal",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/fungal_dispersal"
+    },
+    {
+      "id": "repo:hdr-ml-hackathon-2026",
+      "label": "HDR-ML-Hackathon-2026",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026"
+    },
+    {
+      "id": "repo:home",
+      "label": "home",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/home"
+    },
+    {
+      "id": "repo:innovation-summit-2026",
+      "label": "Innovation-Summit-2026",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/Innovation-Summit-2026"
+    },
+    {
+      "id": "repo:jim-s-sandbox",
+      "label": "Jim-s-Sandbox",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/Jim-s-Sandbox"
+    },
+    {
+      "id": "repo:macrophenology",
+      "label": "macrophenology",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/macrophenology"
+    },
+    {
+      "id": "repo:team-science",
+      "label": "Team-Science",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/Team-Science"
+    },
+    {
+      "id": "repo:wui-boundary",
+      "label": "WUI_boundary",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/WUI_boundary"
+    },
+    {
+      "description": "Open infrastructure for containers, libraries, data access, and workflows.",
+      "id": "theme:data-infrastructure",
+      "label": "Data Infrastructure",
+      "type": "theme"
+    },
+    {
+      "description": "Machine learning and AI methods applied to environmental questions.",
+      "id": "theme:environmental-ai",
+      "label": "Environmental AI",
+      "type": "theme"
+    },
+    {
+      "description": "Public convenings, hackathons, summits, and collaborative gatherings.",
+      "id": "theme:events",
+      "label": "Events & Summits",
+      "type": "theme"
+    },
+    {
+      "description": "Fungal dispersal, connectivity, and ecological spread.",
+      "id": "theme:fungal-ecology",
+      "label": "Fungal Ecology",
+      "type": "theme"
+    },
+    {
+      "description": "Seasonal and macroecological timing patterns across landscapes.",
+      "id": "theme:phenology",
+      "label": "Phenology",
+      "type": "theme"
+    },
+    {
+      "description": "Team science, collaborative research design, and synthesis practice.",
+      "id": "theme:synthesis-collaboration",
+      "label": "Synthesis & Collaboration",
+      "type": "theme"
+    },
+    {
+      "description": "Learning pathways, quickstarts, and train-the-trainer materials.",
+      "id": "theme:training",
+      "label": "Training",
+      "type": "theme"
+    },
+    {
+      "description": "Fire behavior, planning, and community-facing wildfire research.",
+      "id": "theme:wildfire",
+      "label": "Wildfire",
+      "type": "theme"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-ai-for-natural-methane",
+      "label": "AI for Natural Methane",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/AI-for-Natural-Methane/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-analytics-library",
+      "label": "Analytics Library",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/analytics-library/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-bioviewpoint",
+      "label": "BioViewPoint",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/BioViewPoint/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-cubedynamics",
+      "label": "CubeDynamics",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/cubedynamics/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-data-library",
+      "label": "Data Library",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/data-library/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-extremewildfire",
+      "label": "Extreme Wildfire",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/ExtremeWildfire/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-fire-plan-2024",
+      "label": "FIRE Plan 2024",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/FIRE-plan-2024/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-fungal-dispersal",
+      "label": "Fungal Dispersal",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/fungal_dispersal/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-home-trainings",
+      "label": "Train-the-Trainer Materials",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/home/trainings/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-innovation-summit-2026",
+      "label": "Innovation Summit 2026",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/Innovation-Summit-2026/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-jim-s-sandbox",
+      "label": "Datacube Sandbox",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/Jim-s-Sandbox/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-macrophenology",
+      "label": "Macrophenology",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/macrophenology/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-team-science",
+      "label": "Team Science",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/Team-Science/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-wui-boundary",
+      "label": "WUI Boundary",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/WUI_boundary/"
+    },
+    {
+      "id": "website:https-github-com-cu-esiil-hdr-ml-hackathon-2026",
+      "label": "HDR-ML Hackathon 2026",
+      "type": "website",
+      "url": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026"
+    }
+  ]
+}
