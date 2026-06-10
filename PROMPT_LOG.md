@@ -491,3 +491,17 @@ homepage sections.
 - Follow-up / unresolved: The user has only supplied one true event-group URL
   so far, so the dedicated page and homepage strip still contain placeholders
   until the remaining links are provided.
+
+## 2026-06-10
+
+- Goal: repair CI graph tests after GitHub Actions reported
+  `ModuleNotFoundError: No module named 'scripts'` during pytest collection.
+- Context reviewed: `.github/workflows/build-graph.yml`,
+  `tests/test_build_graph.py`, `scripts/__init__.py`, and the import behavior
+  of the local Python environment relative to repo-root path handling.
+- Files changed: `tests/conftest.py`, `PROMPT_LOG.md`.
+- Validation: Local sanity check confirmed the repository root was not being
+  inserted into `sys.path` by default in this environment, so the new
+  `tests/conftest.py` now establishes that path explicitly for pytest.
+- Follow-up / unresolved: This fix is intentionally narrow and only affects the
+  test harness. It does not change runtime graph-building behavior.
