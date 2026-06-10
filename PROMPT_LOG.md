@@ -436,3 +436,22 @@ homepage sections.
   tests/test_build_graph.py` automatically. The first graph registry is a
   starter slice of the ecosystem and should be extended over time rather than
   treated as complete coverage.
+
+## 2026-06-09
+
+- Goal: add a dedicated `Event Groups` homepage band directly below `Events &
+  Summits` so event-linked repositories have a clear place on the front page.
+- Context reviewed: `docs/overrides/home.html`,
+  `docs/overrides/partials/events.html`,
+  `docs/overrides/partials/working_groups.html`,
+  `docs/overrides/partials/staff_projects.html`,
+  `docs/overrides/partials/directory/events_page.html`, and the homepage card
+  rail/grid patterns in `docs/assets/css/custom.css`.
+- Files changed: `docs/overrides/home.html`,
+  `docs/overrides/partials/event_groups.html`, `PROMPT_LOG.md`.
+- Validation: Pending strict MkDocs build after wiring the new partial into the
+  homepage template.
+- Follow-up / unresolved: This first pass uses the existing event archive URLs
+  and thumbnails so the section is immediately usable. If desired later, the
+  event-group band can get its own dedicated directory page instead of sharing
+  the current events archive destination.
