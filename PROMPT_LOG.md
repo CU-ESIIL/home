@@ -455,3 +455,19 @@ homepage sections.
   and thumbnails so the section is immediately usable. If desired later, the
   event-group band can get its own dedicated directory page instead of sharing
   the current events archive destination.
+
+## 2026-06-10
+
+- Goal: correct the new homepage `Event Groups` band so it stops duplicating
+  the public event archive and instead points at actual event-group pages in a
+  single-row shelf.
+- Context reviewed: `docs/overrides/partials/event_groups.html`,
+  `docs/overrides/partials/events.html`, the placeholder card pattern in
+  `docs/assets/css/custom.css`, and the user-provided summit-group URL.
+- Files changed: `docs/overrides/partials/event_groups.html`,
+  `PROMPT_LOG.md`.
+- Validation: Pending strict MkDocs build after converting the section from
+  duplicate event cards to one real event-group card plus placeholders.
+- Follow-up / unresolved: Only one event-group URL was provided in this pass,
+  so the remaining slots are placeholders ready to be replaced with real group
+  repos as they are shared.
