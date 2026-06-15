@@ -559,3 +559,24 @@ homepage sections.
 - Follow-up / unresolved: The page remains archived historical documentation;
   active prioritization should still happen in GitHub issues and pull
   requests.
+
+## 2026-06-15
+
+- Goal: add a polished homepage stats band using manual program metrics plus
+  conservative generated repository/website fallbacks.
+- Context reviewed: homepage template ordering, hero quicklinks, existing
+  interlude placement, custom homepage CSS, Playwright homepage/link-health
+  tests, registry project metadata, and the empty `data/org_repos.json` cache.
+- Files changed: `data/oasis_stats_config.yml`,
+  `scripts/build_oasis_stats.py`, `docs/assets/data/oasis_stats.json`,
+  `docs/overrides/partials/stats_bar.html`, `docs/overrides/home.html`,
+  `docs/assets/css/custom.css`, `tests/homepage.spec.ts`, and
+  `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python scripts/build_oasis_stats.py`,
+  `./.venv/bin/python -m mkdocs build --strict`, and
+  `npx playwright test`; all passed after rerunning Playwright with permission
+  to start its local web server.
+- Follow-up / unresolved: Repository and website counts currently use fallback
+  values because `data/org_repos.json` is empty. Compute hours remain a manual
+  external-infrastructure metric and are not calculated from in-repository
+  automation.

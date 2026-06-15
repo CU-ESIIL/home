@@ -1,0 +1,31 @@
+manual_stats:
+  working_groups:
+    value: "22"
+    label: "Working Groups"
+    href: "directory/working-groups/"
+    source_note: "ESIIL program count; includes active and inactive working groups."
+  events:
+    value: "25+"
+    label: "Events"
+    href: "directory/events/"
+    source_note: "ESIIL program/event count."
+  dois:
+    value: "100+"
+    label: "DOIs"
+    href: "#"
+    source_note: "Program-reported DOI count; replace with generated DOI harvest later."
+  websites:
+    fallback_value: "100+"
+    label: "Websites"
+    href: "directory/"
+    source_note: "Generated from OASIS metadata when available; otherwise fallback."
+  repositories:
+    fallback_value: "200+"
+    label: "Repositories"
+    href: "https://github.com/CU-ESIIL"
+    source_note: "Generated from CU-ESIIL GitHub organization metadata when available; otherwise fallback."
+  compute_hours:
+    value: "Millions"
+    label: "Compute Hours"
+    href: "#"
+    source_note: "Program-reported external compute usage across ESIIL-supported infrastructure; not derived from GitHub Actions."

@@ -55,6 +55,7 @@ vignettes/*.pdf
 
 #User-added directories
 data/*
+!data/oasis_stats_config.yml
 
 
 # translation temp files
