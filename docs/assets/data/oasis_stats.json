@@ -1,0 +1,53 @@
+{
+  "generated_by": "scripts/build_oasis_stats.py",
+  "stats": [
+    {
+      "generated": false,
+      "href": "directory/working-groups/",
+      "id": "working-groups",
+      "label": "Working Groups",
+      "source_note": "ESIIL program count; includes active and inactive working groups.",
+      "value": "22"
+    },
+    {
+      "generated": false,
+      "href": "directory/events/",
+      "id": "events",
+      "label": "Events",
+      "source_note": "ESIIL program/event count.",
+      "value": "25+"
+    },
+    {
+      "generated": false,
+      "href": "#",
+      "id": "dois",
+      "label": "DOIs",
+      "source_note": "Program-reported DOI count; replace with generated DOI harvest later.",
+      "value": "100+"
+    },
+    {
+      "generated": false,
+      "href": "directory/",
+      "id": "websites",
+      "label": "Websites",
+      "source_note": "Generated from OASIS metadata when available; otherwise fallback.",
+      "value": "100+"
+    },
+    {
+      "generated": false,
+      "href": "https://github.com/CU-ESIIL",
+      "id": "repositories",
+      "label": "Repositories",
+      "source_note": "Generated from CU-ESIIL GitHub organization metadata when available; otherwise fallback.",
+      "value": "200+"
+    },
+    {
+      "generated": false,
+      "href": "#",
+      "id": "compute-hours",
+      "label": "Compute Hours",
+      "source_note": "Program-reported external compute usage across ESIIL-supported infrastructure; not derived from GitHub Actions.",
+      "value": "Millions"
+    }
+  ]
+}

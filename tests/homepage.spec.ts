@@ -166,6 +166,18 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
     await expect(page.locator(sectionId)).toHaveCount(1);
   }
 
+  const statsBand = page.locator(".oasis-stats-band");
+  await expect(statsBand).toBeVisible();
+  await expect(
+    statsBand.getByRole("heading", { name: /esiil science at scale/i }),
+  ).toBeVisible();
+  await expect(statsBand.getByText("Millions")).toBeVisible();
+  await expect(statsBand.getByText("Compute Hours")).toBeVisible();
+  await expect(statsBand.getByText(/github actions/i)).toHaveCount(0);
+  await expect(
+    page.locator(".oasis-home__hero + .oasis-stats-band + .oasis-interlude--data-insight"),
+  ).toHaveCount(1);
+
   const heroQuicklinks = page.locator(".oasis-home__hero-quicklinks");
 
   await expect(heroQuicklinks.getByRole("link", { name: /quick start/i })).toHaveAttribute(

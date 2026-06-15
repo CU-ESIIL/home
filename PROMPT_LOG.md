@@ -553,9 +553,9 @@ homepage sections.
   10 graph test harness fix, and June 15 Event Group gallery completion.
 - Files changed: `docs/dev-schedule.md`, `PROMPT_LOG.md`.
 - Validation: Added a `Recent Updates Since April 2026` section, appended
-  checked historical tasks, extended the timeline table, and appended May/June
-  sections to the Mermaid Gantt block. Strict MkDocs validation follows this
-  log entry.
+  checked historical tasks, extended the timeline table, appended May/June
+  sections to the Mermaid Gantt block, and ran
+  `./.venv/bin/python -m mkdocs build --strict` successfully.
 - Follow-up / unresolved: The page remains archived historical documentation;
   active prioritization should still happen in GitHub issues and pull
   requests.
