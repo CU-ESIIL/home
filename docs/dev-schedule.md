@@ -188,19 +188,6 @@ gantt
     Homepage research project section refresh  :done, plan9, 2026-04-21, 1d
     Homepage events and summits refresh  :done, plan10, 2026-04-21, 1d
     Homepage templates and resource links refresh  :done, plan11, 2026-04-21, 1d
-    section May 2026 Refresh
-    Homepage restoration and CI hardening :done, may1, 2026-05-28, 1d
-    Ecosystem directory gallery split :done, may2, 2026-05-28, 1d
-    Mobile responsiveness and footer refinements :done, may3, 2026-05-28, 1d
-    Branding, dark mode, and header refinements :done, may4, 2026-05-28, 2d
-    Thumbnail management system :done, may5, 2026-05-28, 2d
-    OASIS hero, interlude banners, and biology flourishes :done, may6, 2026-05-29, 1d
-    Panel-derived thumbnail repair and crop pass :done, may7, 2026-05-29, 1d
-    section June 2026 Platform Work
-    Organization metadata graph and Explore pages :done, jun1, 2026-06-09, 1d
-    Event Groups homepage band and directory page :done, jun2, 2026-06-09, 2d
-    Graph CI test harness fix :done, jun3, 2026-06-10, 1d
-    Event Groups gallery completion :done, jun4, 2026-06-15, 1d
 %% gantt-end
 ```
 
