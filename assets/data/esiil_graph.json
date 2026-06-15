@@ -37,12 +37,37 @@
     },
     {
       "source": "person:esiil-staff",
+      "target": "project:forest-carbon-codefest-2024-group-sites",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:hackathon-2023-group-sites",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
       "target": "project:hdr-ml-hackathon-2026",
       "type": "CONTRIBUTED_TO"
     },
     {
       "source": "person:esiil-staff",
+      "target": "project:innovation-summit-2024-group-sites",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:innovation-summit-2025-group-sites",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
       "target": "project:innovation-summit-2026",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:innovation-summit-2026-group-sites",
       "type": "CONTRIBUTED_TO"
     },
     {
@@ -551,6 +576,56 @@
       "type": "USES_METHOD"
     },
     {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "output:event-group-gallery",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "output:participant-team-websites",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "repo:home",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "website:https-cu-esiil-github-io-home-event-groups-forest-carbon-codefest-2024",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "method:codefest-collaboration",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:forest-carbon-codefest-2024-group-sites",
+      "target": "method:templated-event-site-generation",
+      "type": "USES_METHOD"
+    },
+    {
       "source": "project:fungal-dispersal",
       "target": "output:project-website",
       "type": "HAS_OUTPUT"
@@ -603,6 +678,56 @@
     {
       "source": "project:fungal-dispersal",
       "target": "method:ecological-synthesis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "output:event-group-gallery",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "output:participant-team-websites",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "repo:home",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "website:https-cu-esiil-github-io-home-event-groups-hackathon-2023",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "method:hackathon-collaboration",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:hackathon-2023-group-sites",
+      "target": "method:templated-event-site-generation",
       "type": "USES_METHOD"
     },
     {
@@ -671,6 +796,106 @@
       "type": "USES_METHOD"
     },
     {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "output:event-group-gallery",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "output:participant-team-websites",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "repo:home",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "website:https-cu-esiil-github-io-home-event-groups-innovation-summit-2024",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "method:participant-team-collaboration",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:innovation-summit-2024-group-sites",
+      "target": "method:templated-event-site-generation",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "output:event-group-gallery",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "output:participant-team-websites",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "repo:home",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "website:https-cu-esiil-github-io-home-event-groups-innovation-summit-2025",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "method:participant-team-collaboration",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:innovation-summit-2025-group-sites",
+      "target": "method:templated-event-site-generation",
+      "type": "USES_METHOD"
+    },
+    {
       "source": "project:innovation-summit-2026",
       "target": "output:event-programming",
       "type": "HAS_OUTPUT"
@@ -728,6 +953,61 @@
     {
       "source": "project:innovation-summit-2026",
       "target": "method:summit-convening",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "output:event-group-gallery",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "output:participant-team-websites",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "repo:home",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "theme:events",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "website:https-cu-esiil-github-io-home-event-groups-innovation-summit-2026",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "project:innovation-summit-2026",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "method:participant-team-collaboration",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:innovation-summit-2026-group-sites",
+      "target": "method:templated-event-site-generation",
       "type": "USES_METHOD"
     },
     {
@@ -954,7 +1234,7 @@
   "meta": {
     "dataset_count": 4,
     "person_count": 3,
-    "project_count": 15,
+    "project_count": 20,
     "repo_count": 15,
     "theme_count": 8
   },
@@ -995,6 +1275,11 @@
     {
       "id": "method:applied-machine-learning",
       "label": "applied machine learning",
+      "type": "method"
+    },
+    {
+      "id": "method:codefest-collaboration",
+      "label": "codefest collaboration",
       "type": "method"
     },
     {
@@ -1088,6 +1373,11 @@
       "type": "method"
     },
     {
+      "id": "method:participant-team-collaboration",
+      "label": "participant team collaboration",
+      "type": "method"
+    },
+    {
       "id": "method:planning-workshops",
       "label": "planning workshops",
       "type": "method"
@@ -1123,6 +1413,11 @@
       "type": "method"
     },
     {
+      "id": "method:templated-event-site-generation",
+      "label": "templated event site generation",
+      "type": "method"
+    },
+    {
       "id": "method:temporal-pattern-analysis",
       "label": "temporal pattern analysis",
       "type": "method"
@@ -1153,6 +1448,11 @@
       "type": "output"
     },
     {
+      "id": "output:event-group-gallery",
+      "label": "event group gallery",
+      "type": "output"
+    },
+    {
       "id": "output:event-programming",
       "label": "event programming",
       "type": "output"
@@ -1170,6 +1470,11 @@
     {
       "id": "output:harmonized-workflows",
       "label": "harmonized workflows",
+      "type": "output"
+    },
+    {
+      "id": "output:participant-team-websites",
+      "label": "participant team websites",
       "type": "output"
     },
     {
@@ -1344,6 +1649,16 @@
       "website": "https://cu-esiil.github.io/FIRE-plan-2024/"
     },
     {
+      "description": "Gallery of group websites created during the 2024 Forest Carbon Codefest.",
+      "id": "project:forest-carbon-codefest-2024-group-sites",
+      "label": "Forest Carbon Codefest 2024 Group Sites",
+      "project_type": "event-group-gallery",
+      "repository": "https://github.com/CU-ESIIL/home",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/home/event-groups/forest-carbon-codefest-2024/"
+    },
+    {
       "description": "Open synthesis on fungal dispersal, connectivity, and ecological spread.",
       "id": "project:fungal-dispersal",
       "label": "Fungal Dispersal",
@@ -1352,6 +1667,16 @@
       "status": "active",
       "type": "project",
       "website": "https://cu-esiil.github.io/fungal_dispersal/"
+    },
+    {
+      "description": "Gallery of team websites and datacube work created during the 2023 hackathon.",
+      "id": "project:hackathon-2023-group-sites",
+      "label": "Hackathon 2023 Group Sites",
+      "project_type": "event-group-gallery",
+      "repository": "https://github.com/CU-ESIIL/home",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/home/event-groups/hackathon-2023/"
     },
     {
       "description": "Hands-on machine learning collaboration around environmental datasets.",
@@ -1364,6 +1689,26 @@
       "website": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026"
     },
     {
+      "description": "Gallery of participant-created team websites from the 2024 Innovation Summit.",
+      "id": "project:innovation-summit-2024-group-sites",
+      "label": "Innovation Summit 2024 Group Sites",
+      "project_type": "event-group-gallery",
+      "repository": "https://github.com/CU-ESIIL/home",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2024/"
+    },
+    {
+      "description": "Gallery of challenge-question group websites from the 2025 Innovation Summit.",
+      "id": "project:innovation-summit-2025-group-sites",
+      "label": "Innovation Summit 2025 Group Sites",
+      "project_type": "event-group-gallery",
+      "repository": "https://github.com/CU-ESIIL/home",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2025/"
+    },
+    {
       "description": "AI for sustainability and environmental data-to-decision exchange.",
       "id": "project:innovation-summit-2026",
       "label": "Innovation Summit 2026",
@@ -1372,6 +1717,16 @@
       "status": "active",
       "type": "project",
       "website": "https://cu-esiil.github.io/Innovation-Summit-2026/"
+    },
+    {
+      "description": "Gallery of participant-created team websites from the 2026 Innovation Summit.",
+      "id": "project:innovation-summit-2026-group-sites",
+      "label": "Innovation Summit 2026 Group Sites",
+      "project_type": "event-group-gallery",
+      "repository": "https://github.com/CU-ESIIL/home",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2026/"
     },
     {
       "description": "Macroecological phenology patterns across changing environments.",
@@ -1598,6 +1953,36 @@
       "label": "Fungal Dispersal",
       "type": "website",
       "url": "https://cu-esiil.github.io/fungal_dispersal/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-home-event-groups-forest-carbon-codefest-2024",
+      "label": "Forest Carbon Codefest 2024 Group Sites",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/home/event-groups/forest-carbon-codefest-2024/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-home-event-groups-hackathon-2023",
+      "label": "Hackathon 2023 Group Sites",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/home/event-groups/hackathon-2023/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-home-event-groups-innovation-summit-2024",
+      "label": "Innovation Summit 2024 Group Sites",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2024/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-home-event-groups-innovation-summit-2025",
+      "label": "Innovation Summit 2025 Group Sites",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2025/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-home-event-groups-innovation-summit-2026",
+      "label": "Innovation Summit 2026 Group Sites",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2026/"
     },
     {
       "id": "website:https-cu-esiil-github-io-home-trainings",
