@@ -505,3 +505,57 @@ homepage sections.
   `tests/conftest.py` now establishes that path explicitly for pytest.
 - Follow-up / unresolved: This fix is intentionally narrow and only affects the
   test harness. It does not change runtime graph-building behavior.
+
+## 2026-06-15
+
+- Goal: update `AGENTS.md` so future agents are explicitly instructed to add
+  metadata-graph registry entries when they introduce new discoverable
+  ecosystem entities.
+- Context reviewed: `AGENTS.md` file-boundary guidance, recent graph-system
+  additions (`registry/`, `scripts/build_graph.py`), and the current agent
+  workflow expectations for source-of-truth updates.
+- Files changed: `AGENTS.md`, `PROMPT_LOG.md`.
+- Validation: Editorial/rules update only; cross-checked the new guidance
+  against the existing static graph architecture and registry structure.
+- Follow-up / unresolved: The guidance is intentionally scoped so agents do not
+  over-register purely procedural docs or small utility pages.
+
+## 2026-06-15
+
+- Goal: rebuild the `Event Group Galleries` homepage section so it points to
+  event-level gallery pages instead of duplicating event cards or linking to a
+  single placeholder event-group repository.
+- Context reviewed: attached event-group prompt, `mkdocs.yml`,
+  `docs/overrides/partials/event_groups.html`, event-group gallery partials,
+  `docs/assets/css/custom.css`, existing registry schema, and public CU-ESIIL
+  GitHub repository names discovered through a read-only GitHub API query.
+- Files changed: `docs/overrides/partials/event_groups.html`,
+  `docs/overrides/partials/event_groups/index_page.html`,
+  `docs/overrides/partials/event_groups/gallery_page.html`,
+  `docs/event-groups/*.md`, `mkdocs.yml`, new
+  `registry/projects/*-group-sites.yaml`, generated graph/theme outputs, and
+  `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python scripts/build_graph.py` and
+  `./.venv/bin/python -m mkdocs build --strict`; both passed.
+- Follow-up / unresolved: The event group lists use public repository names
+  discoverable from GitHub. If any event group should have a more formal title
+  than its repository-derived topic label, update the matching
+  `docs/event-groups/*.md` front matter entry.
+
+## 2026-06-15
+
+- Goal: update the archived development schedule page so it reflects major
+  post-April homepage, CI, visual-system, metadata graph, and Event Groups
+  work recorded in `PROMPT_LOG.md`.
+- Context reviewed: `docs/dev-schedule.md` and the prompt-log entries covering
+  the May 28 homepage restoration/directory split, May 29 hero and thumbnail
+  work, June 9 metadata graph system, June 9-10 Event Groups iterations, June
+  10 graph test harness fix, and June 15 Event Group gallery completion.
+- Files changed: `docs/dev-schedule.md`, `PROMPT_LOG.md`.
+- Validation: Added a `Recent Updates Since April 2026` section, appended
+  checked historical tasks, extended the timeline table, and appended May/June
+  sections to the Mermaid Gantt block. Strict MkDocs validation follows this
+  log entry.
+- Follow-up / unresolved: The page remains archived historical documentation;
+  active prioritization should still happen in GitHub issues and pull
+  requests.

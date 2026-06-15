@@ -120,6 +120,14 @@ needed to finish the task.
 - `docs/analytics-library/` contains mirrored analytics-library content inside
   this repository. Treat it as imported reference material and update it
   intentionally rather than casually editing around it.
+- `registry/`: source-of-truth metadata for the static ESIIL network graph.
+  This includes:
+  - `registry/projects/`
+  - `registry/people/`
+  - `registry/themes/`
+  - `registry/datasets/`
+- `scripts/build_graph.py`: validates registry content and generates
+  `docs/assets/data/esiil_graph.json` plus Explore theme pages.
 
 ## 5. Homepage Safety Rules
 
@@ -199,6 +207,41 @@ homepage cards or docs:
 - prefer consistency in card text
 - remove “site unavailable” notes once a live site exists
 - note placeholder images/descriptions when final assets are not available yet
+
+### Metadata graph updates
+
+This repository now includes a static organization-wide metadata graph for the
+CU-ESIIL ecosystem. Agents should treat the registry content under
+`registry/` as part of the source of truth for discoverability.
+
+When adding a new file or page that introduces a new:
+
+- project
+- working group
+- event group
+- staff/postdoc/student project
+- library/resource that should appear in Explore
+- theme-connected ecosystem entry
+
+the agent should decide whether that addition also needs metadata in the
+registry. In most cases, if the new file represents a real ecosystem entity
+rather than a one-off utility page, the answer is yes.
+
+At minimum, agents should:
+
+1. Add or update the relevant YAML file under `registry/projects/`,
+   `registry/people/`, `registry/themes/`, or `registry/datasets/`.
+2. Make sure references such as `people`, `themes`, `datasets`, and
+   `related_projects` point to valid existing ids.
+3. Rebuild the graph with `python scripts/build_graph.py` when practical.
+4. Avoid adding a homepage card or directory page for a new ecosystem entity
+   without considering whether it should also exist in the metadata graph.
+
+Agents do not need to add registry metadata for every single new markdown file.
+Purely procedural docs, internal notes, styling changes, workflow files, and
+small utility pages usually do not need graph entries. The rule applies when a
+new file represents a discoverable ecosystem object that users may want to find
+through the Explore system later.
 
 ## Button Image Generation Rules
 

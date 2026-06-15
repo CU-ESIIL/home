@@ -1,10 +1,38 @@
-{% set event_groups = [
+{% set event_group_galleries = [
   {
-    "title": "Summit Group 2026",
-    "url": "https://cu-esiil.github.io/Summit_group_2026_8/",
+    "title": "Innovation Summit 2026 Group Sites",
+    "url": "event-groups/innovation-summit-2026/",
     "image": "assets/thumbnails/active/events/innovation-summit-2026-button.png",
-    "meta": "Event Group Repo",
-    "description": "Group repository for the 2026 summit collaboration space and linked working materials."
+    "meta": "Event Group Gallery",
+    "description": "Twenty team sites created during the 2026 Innovation Summit."
+  },
+  {
+    "title": "Innovation Summit 2025 Group Sites",
+    "url": "event-groups/innovation-summit-2025/",
+    "image": "assets/thumbnails/active/events/innovation-summit-2025-button.png",
+    "meta": "Event Group Gallery",
+    "description": "Challenge-question group sites created during the 2025 Innovation Summit."
+  },
+  {
+    "title": "Innovation Summit 2024 Group Sites",
+    "url": "event-groups/innovation-summit-2024/",
+    "image": "assets/thumbnails/active/events/innovation-summit-2024-button.png",
+    "meta": "Event Group Gallery",
+    "description": "Team sites created during the 2024 Innovation Summit."
+  },
+  {
+    "title": "Forest Carbon Codefest 2024 Group Sites",
+    "url": "event-groups/forest-carbon-codefest-2024/",
+    "image": "assets/thumbnails/active/events/forest-carbon-codefest-button.png",
+    "meta": "Event Group Gallery",
+    "description": "Six group sites created during the Forest Carbon Codefest."
+  },
+  {
+    "title": "Hackathon 2023 Group Sites",
+    "url": "event-groups/hackathon-2023/",
+    "image": "assets/thumbnails/active/events/hdr-ml-hackathon-2026-button.png",
+    "meta": "Event Group Gallery",
+    "description": "Team sites and datacube work created during the 2023 hackathon."
   }
 ] %}
 
@@ -12,59 +40,46 @@
   <div class="oasis-shell">
     <div class="oasis-section-heading" data-reveal>
       <div class="oasis-section-heading__copy">
-        <p class="oasis-section-heading__eyebrow">Repository Layer</p>
-        <h2>Event Groups</h2>
+        <p class="oasis-section-heading__eyebrow">Event Group Galleries</p>
+        <h2>Event Group Galleries</h2>
         <p>
-          This shelf is for the group-facing event repositories themselves,
-          separate from the public event and summit archive above.
+          Event group galleries collect the team sites created during ESIIL
+          summits, hackathons, codefests, and workshops.
         </p>
       </div>
 
-      <a class="oasis-inline-link" href="directory/event-groups/">
-        <span>View Event Groups</span>
+      <a class="oasis-inline-link" href="event-groups/">
+        <span>View All Galleries</span>
         <span aria-hidden="true">→</span>
       </a>
     </div>
 
     <div class="oasis-feature-row oasis-feature-row--events">
       <aside class="oasis-feature-intro" data-reveal>
-        <p class="oasis-feature-intro__label">Group repos</p>
+        <p class="oasis-feature-intro__label">Team sites</p>
         <p class="oasis-feature-intro__text">
-          Event-group pages can live here as they come online. This keeps the
-          homepage ready for summit groups, hackathon groups, and other
-          event-specific collaboration hubs without duplicating the event cards.
+          These sites are produced through structured, highly templated event
+          experiences where participants form groups around shared themes,
+          challenge questions, datasets, and community priorities.
         </p>
       </aside>
 
       <div class="oasis-card-rail oasis-card-rail--event-groups" data-reveal>
-        {% for group in event_groups %}
-          <a class="oasis-project-card oasis-project-card--event-group" href="{{ group.url }}" target="_blank" rel="noopener">
+        {% for gallery in event_group_galleries %}
+          <a class="oasis-project-card oasis-project-card--event-group" href="{{ gallery.url }}">
             <div class="oasis-project-card__media">
-              <img src="{{ group.image }}" alt="{{ group.title }}" loading="lazy" decoding="async" />
+              <img src="{{ gallery.image }}" alt="{{ gallery.title }}" loading="lazy" decoding="async" />
             </div>
             <div class="oasis-project-card__body">
-              <p class="oasis-project-card__meta">{{ group.meta }}</p>
-              <h3>{{ group.title }}</h3>
-              <p>{{ group.description }}</p>
+              <p class="oasis-project-card__meta">{{ gallery.meta }}</p>
+              <h3>{{ gallery.title }}</h3>
+              <p>{{ gallery.description }}</p>
               <span class="oasis-project-card__cta">
-                <span>Open Group</span>
+                <span>Open Gallery</span>
                 <span aria-hidden="true">→</span>
               </span>
             </div>
           </a>
-        {% endfor %}
-
-        {% for slot in range(3) %}
-          <article class="oasis-project-card oasis-gallery-card--placeholder" aria-label="Event group placeholder">
-            <div class="oasis-project-card__body">
-              <p class="oasis-project-card__meta">Event Group Repo</p>
-              <h3>More Event Groups Soon</h3>
-              <p>
-                This slot is ready for the next event-group repository when you
-                send the link.
-              </p>
-            </div>
-          </article>
         {% endfor %}
       </div>
     </div>

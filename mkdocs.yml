@@ -19,6 +19,13 @@ nav:
       - Overview: explore/index.md
       - Themes: explore/themes/index.md
   - Ecosystem Directory: directory/index.md
+  - Event Group Galleries:
+      - Overview: event-groups/index.md
+      - Innovation Summit 2026: event-groups/innovation-summit-2026.md
+      - Innovation Summit 2025: event-groups/innovation-summit-2025.md
+      - Innovation Summit 2024: event-groups/innovation-summit-2024.md
+      - Forest Carbon Codefest 2024: event-groups/forest-carbon-codefest-2024.md
+      - Hackathon 2023: event-groups/hackathon-2023.md
   - Quickstart: quickstart/index.md
   - Container Library: container-library/index.md
   - Resources: resources/index.md

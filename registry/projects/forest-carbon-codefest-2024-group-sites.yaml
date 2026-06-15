@@ -1,0 +1,22 @@
+id: forest-carbon-codefest-2024-group-sites
+title: Forest Carbon Codefest 2024 Group Sites
+description: Gallery of group websites created during the 2024 Forest Carbon Codefest.
+type: event-group-gallery
+status: active
+website: https://cu-esiil.github.io/home/event-groups/forest-carbon-codefest-2024/
+repository: https://github.com/CU-ESIIL/home
+people:
+  - esiil-staff
+themes:
+  - events
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - codefest collaboration
+  - templated event site generation
+outputs:
+  - event group gallery
+  - participant team websites
+related_projects: []
+

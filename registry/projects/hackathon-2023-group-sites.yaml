@@ -1,0 +1,22 @@
+id: hackathon-2023-group-sites
+title: Hackathon 2023 Group Sites
+description: Gallery of team websites and datacube work created during the 2023 hackathon.
+type: event-group-gallery
+status: active
+website: https://cu-esiil.github.io/home/event-groups/hackathon-2023/
+repository: https://github.com/CU-ESIIL/home
+people:
+  - esiil-staff
+themes:
+  - events
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - hackathon collaboration
+  - templated event site generation
+outputs:
+  - event group gallery
+  - participant team websites
+related_projects: []
+

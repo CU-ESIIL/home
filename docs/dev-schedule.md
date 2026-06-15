@@ -24,7 +24,74 @@ refreshed [Project Group OASIS hub](https://cu-esiil.github.io/Project_group_OAS
 April 2026 focused on homepage curation: working groups were reorganized into
 cohort rows, research sections were expanded for graduate student and staff
 projects, event and template cards were refreshed, and key external links such
-as the container library destination were updated.
+as the container library destination were updated. Late May 2026 focused on
+restoring and hardening the redesigned homepage, splitting directory galleries,
+refining the visual system, preserving and managing thumbnail sets, and
+strengthening CI coverage. June 2026 added the organization metadata graph,
+generated Explore theme pages, and the first Event Groups directory and gallery
+structure.
+
+## Recent Updates Since April 2026
+
+### 2026-05-28 — Homepage restoration and CI hardening
+
+- Restored the redesigned custom homepage after rendering issues.
+- Cleaned stale repo structure and asset organization.
+- Removed lingering analytics-library submodule metadata.
+- Strengthened Playwright and link-health coverage in CI/deploy workflows.
+
+### 2026-05-28 — Ecosystem directory split
+
+- Split the old all-in-one ecosystem directory into dedicated gallery subpages
+  for working groups, research, events, and infrastructure.
+- Fixed blank/failed browser-back behavior across the custom homepage
+  experience.
+
+### 2026-05-28 to 2026-05-29 — Responsive, footer, branding, and thumbnail system
+
+- Added narrow-window homepage fixes and regression checks.
+- Replaced the lower footer with the institutional footer pattern.
+- Tightened the header logo and repaired dark mode behavior.
+- Built a durable thumbnail-management system with preserved originals, active
+  thumbnails, a manifest, and documentation.
+
+### 2026-05-29 — Hero, interlude, and visual pacing pass
+
+- Split ESIIL/OASIS marks.
+- Added OASIS hero artwork and biology flourishes.
+- Added and refined full-width interlude banners.
+- Repaired panel-derived thumbnails with real transparency and tighter crops.
+
+### 2026-06-09 — Metadata graph and Explore system
+
+- Added a static organization-wide metadata graph system.
+- Generated initial Explore theme pages.
+- Added graph CI/test scaffolding.
+- Added starter registry content for projects, people, themes, datasets, and
+  schema.
+
+### 2026-06-09 to 2026-06-10 — Event Groups section
+
+- Added a dedicated Event Groups homepage band below Events & Summits.
+- Corrected the Event Groups section so it does not duplicate the public event
+  archive.
+- Added a dedicated Event Groups directory page.
+- June 10 status: the full gallery model for confirmed event-group sets was
+  still a follow-up for Hackathon 2023, Innovation Summit 2024, Forest Carbon
+  Codefest 2024, Innovation Summit 2025, and Innovation Summit 2026.
+
+### 2026-06-10 — Graph test harness fix
+
+- Added repo-root path handling for pytest after CI reported
+  `ModuleNotFoundError: No module named 'scripts'`.
+
+### 2026-06-15 — Event Groups gallery completion
+
+- Added event-level gallery pages for Hackathon 2023, Innovation Summit 2024,
+  Forest Carbon Codefest 2024, Innovation Summit 2025, and Innovation Summit
+  2026.
+- Added Event Group Galleries navigation and registry metadata for the new
+  gallery collections.
 
 ## Historical Task List
 
@@ -47,6 +114,17 @@ as the container library destination were updated.
 - [x] [Homepage research project section refresh](index.md) — 2026-04-21
 - [x] [Homepage events and summits refresh](index.md) — 2026-04-21
 - [x] [Homepage templates and resource links refresh](index.md) — 2026-04-21
+- [x] [Homepage restoration and CI hardening](index.md) — 2026-05-28
+- [x] [Ecosystem directory gallery split](directory/index.md) — 2026-05-28
+- [x] [Mobile responsiveness and footer refinements](index.md) — 2026-05-28
+- [x] [Branding, dark mode, and header refinements](index.md) — 2026-05-28
+- [x] [Thumbnail management system](assets/thumbnails/README.md) — 2026-05-28
+- [x] [OASIS hero, interlude banners, and biology flourishes](index.md) — 2026-05-29
+- [x] [Panel-derived thumbnail repair and crop pass](assets/thumbnails/README.md) — 2026-05-29
+- [x] [Organization metadata graph and Explore pages](explore/index.md) — 2026-06-09
+- [x] [Event Groups homepage band and directory page](event-groups/index.md) — 2026-06-09 to 2026-06-10
+- [x] [Graph CI test harness fix](https://github.com/CU-ESIIL/home/actions) — 2026-06-10
+- [x] [Event Groups gallery completion](event-groups/index.md) — 2026-06-15
 
 ## Upcoming Task List
 
@@ -79,6 +157,17 @@ _No active roadmap items are tracked on this archived page._
 | Homepage research project section refresh | 2026-04-21 | 2026-04-21 | OASIS Team |
 | Homepage events and summits refresh | 2026-04-21 | 2026-04-21 | OASIS Team |
 | Homepage templates and resource links refresh | 2026-04-21 | 2026-04-21 | OASIS Team |
+| Homepage restoration and CI hardening | 2026-05-28 | 2026-05-28 | OASIS Team |
+| Ecosystem directory gallery split | 2026-05-28 | 2026-05-28 | OASIS Team |
+| Mobile responsiveness and footer refinements | 2026-05-28 | 2026-05-28 | OASIS Team |
+| Branding, dark mode, and header refinements | 2026-05-28 | 2026-05-29 | OASIS Team |
+| Thumbnail management system | 2026-05-28 | 2026-05-29 | OASIS Team |
+| OASIS hero, interlude banners, and biology flourishes | 2026-05-29 | 2026-05-29 | OASIS Team |
+| Panel-derived thumbnail repair and crop pass | 2026-05-29 | 2026-05-29 | OASIS Team |
+| Organization metadata graph and Explore pages | 2026-06-09 | 2026-06-09 | OASIS Team |
+| Event Groups homepage band and directory page | 2026-06-09 | 2026-06-10 | OASIS Team |
+| Graph CI test harness fix | 2026-06-10 | 2026-06-10 | OASIS Team |
+| Event Groups gallery completion | 2026-06-15 | 2026-06-15 | OASIS Team |
 
 ## Gantt Chart
 
@@ -99,6 +188,19 @@ gantt
     Homepage research project section refresh  :done, plan9, 2026-04-21, 1d
     Homepage events and summits refresh  :done, plan10, 2026-04-21, 1d
     Homepage templates and resource links refresh  :done, plan11, 2026-04-21, 1d
+    section May 2026 Refresh
+    Homepage restoration and CI hardening :done, may1, 2026-05-28, 1d
+    Ecosystem directory gallery split :done, may2, 2026-05-28, 1d
+    Mobile responsiveness and footer refinements :done, may3, 2026-05-28, 1d
+    Branding, dark mode, and header refinements :done, may4, 2026-05-28, 2d
+    Thumbnail management system :done, may5, 2026-05-28, 2d
+    OASIS hero, interlude banners, and biology flourishes :done, may6, 2026-05-29, 1d
+    Panel-derived thumbnail repair and crop pass :done, may7, 2026-05-29, 1d
+    section June 2026 Platform Work
+    Organization metadata graph and Explore pages :done, jun1, 2026-06-09, 1d
+    Event Groups homepage band and directory page :done, jun2, 2026-06-09, 2d
+    Graph CI test harness fix :done, jun3, 2026-06-10, 1d
+    Event Groups gallery completion :done, jun4, 2026-06-15, 1d
 %% gantt-end
 ```
 

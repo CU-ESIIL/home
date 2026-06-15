@@ -281,7 +281,7 @@
   height: auto;
   min-height: auto;
   margin-left: 0;
-  transform: translateY(-72%);
+  transform: translateY(28%);
   background: transparent;
   box-shadow: none;
   overflow: visible;
@@ -299,15 +299,15 @@
 }
 
 .oasis-interlude--data-insight .oasis-interlude__frame {
-  transform: translateY(-118%);
+  transform: translateY(-18%);
 }
 
 .oasis-interlude--tech .oasis-interlude__frame {
-  transform: translateY(-84%);
+  transform: translateY(16%);
 }
 
 .oasis-interlude--ecology .oasis-interlude__frame {
-  transform: translateY(-76%);
+  transform: translateY(24%);
 }
 
 .oasis-interlude + .oasis-band,
@@ -595,6 +595,10 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.oasis-gallery-grid--event-groups {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .oasis-event-grid--directory {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -858,7 +862,7 @@
 }
 
 .oasis-card-rail--event-groups {
-  grid-template-columns: repeat(4, minmax(12rem, 1fr));
+  grid-template-columns: repeat(5, minmax(10rem, 1fr));
 }
 
 .oasis-project-card {
@@ -986,6 +990,13 @@
 .oasis-event-card__link span:last-child,
 .oasis-inline-link span:last-child {
   transition: transform 180ms ease;
+}
+
+.oasis-project-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: auto;
 }
 
 .oasis-project-card:is(:hover, :focus-visible) .oasis-project-card__cta span:last-child,
@@ -1417,7 +1428,7 @@
   }
 
   .oasis-card-rail--event-groups {
-    grid-template-columns: repeat(4, minmax(14rem, 1fr));
+    grid-template-columns: repeat(5, minmax(13rem, 1fr));
   }
 
   .oasis-research-wall {
@@ -1445,6 +1456,7 @@
   }
 
   .oasis-gallery-grid,
+  .oasis-gallery-grid--event-groups,
   .oasis-event-grid--directory {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1492,6 +1504,7 @@
   .oasis-card-rail--groups,
   .oasis-card-rail--event-groups,
   .oasis-gallery-grid,
+  .oasis-gallery-grid--event-groups,
   .oasis-event-grid,
   .oasis-event-grid--directory,
   .oasis-infra-grid,

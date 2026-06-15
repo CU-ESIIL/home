@@ -1,0 +1,23 @@
+id: innovation-summit-2026-group-sites
+title: Innovation Summit 2026 Group Sites
+description: Gallery of participant-created team websites from the 2026 Innovation Summit.
+type: event-group-gallery
+status: active
+website: https://cu-esiil.github.io/home/event-groups/innovation-summit-2026/
+repository: https://github.com/CU-ESIIL/home
+people:
+  - esiil-staff
+themes:
+  - events
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - participant team collaboration
+  - templated event site generation
+outputs:
+  - event group gallery
+  - participant team websites
+related_projects:
+  - innovation-summit-2026
+
