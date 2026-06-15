@@ -485,6 +485,120 @@
   max-width: 34rem;
 }
 
+.oasis-stats-band {
+  position: relative;
+  z-index: 4;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0 clamp(4.25rem, 7vw, 6rem);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(77, 187, 116, 0.08), transparent 28%),
+    linear-gradient(180deg, #f7f3eb 0%, rgba(247, 244, 239, 0.96) 100%);
+}
+
+.oasis-stats-band__panel {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.4rem);
+  padding: clamp(1.35rem, 2.8vw, 2.25rem);
+  border: 1px solid var(--oasis-border);
+  border-radius: calc(var(--oasis-radius-xl) + 4px);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.6)),
+    rgba(251, 247, 240, 0.84);
+  box-shadow: 0 18px 42px rgba(35, 74, 101, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.oasis-stats-band__intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.oasis-stats-band__intro h2 {
+  margin: 0;
+  color: var(--oasis-blue-deep);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: clamp(2.25rem, 4.2vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.94;
+}
+
+.oasis-stats-band__intro p {
+  max-width: 31rem;
+  margin: 0;
+  color: var(--oasis-text-soft);
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.55;
+}
+
+.oasis-stats-band__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0;
+}
+
+.oasis-stat {
+  position: relative;
+  display: grid;
+  gap: 0.35rem;
+  min-width: 0;
+  padding: 0.25rem clamp(0.65rem, 1.4vw, 1.15rem);
+  color: var(--oasis-text);
+  text-align: center;
+  text-decoration: none;
+}
+
+.oasis-stat + .oasis-stat {
+  border-left: 1px solid var(--oasis-border);
+}
+
+.oasis-stat__value {
+  display: block;
+  color: var(--oasis-blue-deep);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: clamp(2.15rem, 4vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+}
+
+.oasis-stat__label {
+  display: block;
+  color: var(--oasis-text-soft);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: clamp(0.82rem, 1vw, 0.96rem);
+  font-weight: 700;
+  letter-spacing: 0.105em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+a.oasis-stat {
+  transition: transform 200ms ease, color 200ms ease;
+}
+
+a.oasis-stat:is(:hover, :focus-visible) {
+  transform: translateY(-2px);
+}
+
+a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
+  color: var(--oasis-green-deep);
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-stats-band {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(124, 207, 152, 0.08), transparent 28%),
+    linear-gradient(180deg, #101920 0%, rgba(15, 23, 29, 0.98) 100%);
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-stats-band__panel {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)),
+    rgba(21, 33, 43, 0.74);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26);
+}
+
 .oasis-section-page__shell {
   display: grid;
   gap: clamp(2rem, 4vw, 3rem);
@@ -1359,6 +1473,15 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .oasis-stats-band__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 1.15rem;
+  }
+
+  .oasis-stat:nth-child(3n + 1) {
+    border-left: 0;
+  }
+
   .oasis-gallery-grid,
   .oasis-event-grid--directory {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1412,6 +1535,11 @@
   .oasis-interlude {
     height: 0;
     margin: 0;
+  }
+
+  .oasis-stats-band__intro {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .oasis-section-page__actions {
@@ -1499,6 +1627,27 @@
     min-height: 2.7rem;
     padding-inline: 0.95rem;
     font-size: 0.76rem;
+  }
+
+  .oasis-stats-band {
+    padding-bottom: clamp(3.5rem, 14vw, 5rem);
+  }
+
+  .oasis-stats-band__panel {
+    padding: 1.25rem;
+  }
+
+  .oasis-stats-band__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 0;
+  }
+
+  .oasis-stat:nth-child(n) {
+    border-left: 0;
+  }
+
+  .oasis-stat:nth-child(even) {
+    border-left: 1px solid var(--oasis-border);
   }
 
   .oasis-card-rail--groups,
