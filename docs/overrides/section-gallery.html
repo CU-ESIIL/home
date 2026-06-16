@@ -19,7 +19,7 @@
           <p class="oasis-section-page__eyebrow">
             {{ page.meta.eyebrow | default("Ecosystem Directory") }}
           </p>
-          <h1>{{ page.title }}</h1>
+          <h1>{{ page.meta.title | default(page.title) }}</h1>
           {% if page.meta.description %}
             <p class="oasis-section-page__lede">{{ page.meta.description }}</p>
           {% endif %}
