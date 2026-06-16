@@ -1,10 +1,10 @@
 ---
 title: Working Groups
-description: Browse OASIS working groups by cohort through image-forward project galleries instead of a single long text list.
+description: Teams scaling environmental synthesis beyond the laptop through shared questions, reusable methods, and public project sites.
 template: section-gallery.html
 section_partial: partials/directory/working_groups_page.html
 surface: sage
-eyebrow: Living Ecosystem
+eyebrow: Living Team Science
 hide:
   - toc
 ---

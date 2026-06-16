@@ -1,10 +1,10 @@
 ---
-title: Infrastructure & Tools
-description: Explore libraries, tutorials, tools, demos, and reusable OASIS templates through a dedicated gallery page.
+title: Infrastructure & Resources
+description: Templates, libraries, workflows, and guides that help others build similar science.
 template: section-gallery.html
 section_partial: partials/directory/infrastructure_page.html
 surface: white
-eyebrow: Trusted Systems
+eyebrow: Build Something Similar
 hide:
   - toc
 ---

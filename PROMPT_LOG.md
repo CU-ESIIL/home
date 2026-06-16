@@ -580,3 +580,46 @@ homepage sections.
   values because `data/org_repos.json` is empty. Compute hours remain a manual
   external-infrastructure metric and are not calculated from in-repository
   automation.
+
+## 2026-06-15
+
+- Goal: evolve the homepage narrative from an inventory/gallery framing toward
+  an ecosystem story centered on environmental science beyond the laptop,
+  collaborative teams, AI, reusable infrastructure, and durable project
+  outputs.
+- Context reviewed: attached narrative prompt, homepage wrapper ordering,
+  section partials, stats-band placement, custom homepage CSS, and existing
+  Playwright homepage structure/link-health tests.
+- Files changed: `docs/overrides/home.html`,
+  `docs/overrides/partials/hero.html`,
+  `docs/overrides/partials/working_groups.html`,
+  `docs/overrides/partials/event_groups.html`,
+  `docs/overrides/partials/staff_projects.html`,
+  `docs/overrides/partials/events.html`,
+  `docs/overrides/partials/infrastructure.html`,
+  `docs/overrides/partials/footer_cta.html`,
+  `docs/overrides/partials/ai_team_science.html`,
+  `docs/assets/css/custom.css`, `tests/homepage.spec.ts`, and
+  `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python scripts/build_oasis_stats.py`,
+  `./.venv/bin/python -m mkdocs build --strict`, and
+  `npx playwright test`; all passed after rerunning Playwright with permission
+  to start its local web server.
+- Follow-up / unresolved: The new `AI + Team Science` section is intentionally
+  lightweight and text-led. It can gain linked cards or visual assets later if
+  the team wants that section to become a deeper gateway.
+
+## 2026-06-15
+
+- Goal: add a future-facing Years 5-10 roadmap to the archived development
+  schedule page without replacing the historical schedule.
+- Context reviewed: attached future-roadmap prompt and the current
+  `docs/dev-schedule.md` archive structure, including the existing historical
+  Gantt chart and inline table styling.
+- Files changed: `docs/dev-schedule.md`, `PROMPT_LOG.md`.
+- Validation: Added a clearly separated `Future Roadmap (Years 5-10)` section
+  with introductory narrative, a Mermaid Gantt chart, a phase explanation
+  table, and a closing collective-intelligence narrative. Mermaid task labels
+  were kept on single lines for safer MkDocs Material rendering.
+- Follow-up / unresolved: The roadmap is strategic documentation only and does
+  not create active scheduled tasks in `docs/upcoming_tasks.yaml`.

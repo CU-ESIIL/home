@@ -1,10 +1,10 @@
 ---
 title: Staff, Postdoc & Graduate Research
-description: Explore ESIIL-led research projects across staff, postdoc, and graduate work through animated gallery cards.
+description: Staff, postdoc, and affiliated projects building reusable methods and examples.
 template: section-gallery.html
 section_partial: partials/directory/research_page.html
 surface: mist
-eyebrow: Research Wall
+eyebrow: Reusable Methods
 hide:
   - toc
 ---

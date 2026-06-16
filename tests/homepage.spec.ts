@@ -7,6 +7,11 @@ const galleryRoutes = [
     path: "/directory/working-groups/",
   },
   {
+    cta: /view all galleries/i,
+    heading: /event group galleries/i,
+    path: "/event-groups/",
+  },
+  {
     cta: /view all projects/i,
     heading: /staff, postdoc & graduate research/i,
     path: "/directory/research/",
@@ -18,7 +23,7 @@ const galleryRoutes = [
   },
   {
     cta: /browse infrastructure/i,
-    heading: /infrastructure & tools/i,
+    heading: /infrastructure & resources/i,
     path: "/directory/infrastructure/",
   },
 ] as const;
@@ -153,14 +158,16 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
   await expect(
     page.getByRole("heading", {
       level: 1,
-      name: /open analysis and synthesis infrastructure for science/i,
+      name: /environmental science beyond the laptop/i,
     }),
   ).toBeVisible();
 
   for (const sectionId of [
     "#working-groups-section",
+    "#event-groups-section",
     "#research-projects-section",
     "#events-summits-section",
+    "#ai-team-science-section",
     "#infrastructure-libraries-section",
   ]) {
     await expect(page.locator(sectionId)).toHaveCount(1);
@@ -175,7 +182,13 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
   await expect(statsBand.getByText("Compute Hours")).toBeVisible();
   await expect(statsBand.getByText(/github actions/i)).toHaveCount(0);
   await expect(
-    page.locator(".oasis-home__hero + .oasis-stats-band + .oasis-interlude--data-insight"),
+    page.locator(".oasis-home__hero + .oasis-stats-band + #working-groups-section"),
+  ).toHaveCount(1);
+  await expect(
+    page.locator("#events-summits-section + .oasis-interlude--data-insight + #infrastructure-libraries-section"),
+  ).toHaveCount(1);
+  await expect(
+    page.locator("#infrastructure-libraries-section + #ai-team-science-section"),
   ).toHaveCount(1);
 
   const heroQuicklinks = page.locator(".oasis-home__hero-quicklinks");
@@ -245,7 +258,7 @@ test("homepage stays within the viewport on small screens", async ({ page }) => 
   await expect(
     page.getByRole("heading", {
       level: 1,
-      name: /open analysis and synthesis infrastructure for science/i,
+      name: /environmental science beyond the laptop/i,
     }),
   ).toBeVisible();
 
@@ -261,6 +274,9 @@ test("homepage band links open dedicated gallery pages and browser back returns 
 
     await expect(page).toHaveURL(new RegExp(`${route.path.replace(/\//g, "\\/")}$`));
     await expect(page.locator(".oasis-section-page")).toBeVisible();
+    await expect(page.locator(".oasis-section-page__hero")).toBeVisible();
+    await expect(page.locator(".oasis-section-page__sections")).toBeVisible();
+    await expect(page.locator(".oasis-project-card, .oasis-event-card").first()).toBeVisible();
     await expect(page.getByRole("heading", { level: 1, name: route.heading })).toBeVisible();
 
     await page.goBack();
@@ -270,7 +286,7 @@ test("homepage band links open dedicated gallery pages and browser back returns 
     await expect(
       page.getByRole("heading", {
         level: 1,
-        name: /open analysis and synthesis infrastructure for science/i,
+        name: /environmental science beyond the laptop/i,
       }),
     ).toBeVisible();
   }
@@ -303,9 +319,11 @@ test("homepage and gallery links stay healthy", async ({ page, request }) => {
     "/",
     "/directory/",
     "/directory/working-groups/",
+    "/directory/event-groups/",
     "/directory/research/",
     "/directory/events/",
     "/directory/infrastructure/",
+    "/event-groups/",
   ];
 
   for (const route of routes) {

@@ -1,10 +1,10 @@
 ---
 title: Event Groups
-description: Browse event-group repositories, planning hubs, and linked collaboration pages separate from the public events archive.
+description: Curated team sites created during summits, hackathons, codefests, and workshops.
 template: section-gallery.html
 section_partial: partials/directory/event_groups_page.html
 surface: earth
-eyebrow: Repository Layer
+eyebrow: Reusable Event Memory
 hide:
   - toc
 ---

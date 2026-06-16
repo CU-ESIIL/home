@@ -12,23 +12,24 @@
   <div class="oasis-homepage">
     {% include "partials/hero.html" %}
     {% include "partials/stats_bar.html" %}
+    {% include "partials/working_groups.html" %}
+    {% include "partials/event_groups.html" %}
+    {% include "partials/staff_projects.html" %}
+    {% include "partials/events.html" %}
     {% set interlude_image = "assets/branding/data-insight-interlude-banner.png" %}
     {% set interlude_alt = "Data to insight interlude banner" %}
     {% set interlude_class = "oasis-interlude--data-insight" %}
     {% include "partials/interlude_banner.html" %}
-    {% include "partials/working_groups.html" %}
+    {% include "partials/infrastructure.html" %}
+    {% include "partials/ai_team_science.html" %}
     {% set interlude_image = "assets/branding/oasis-interlude-banner.png" %}
     {% set interlude_alt = "OASIS ecosystem interlude banner" %}
     {% set interlude_class = "oasis-interlude--tech" %}
     {% include "partials/interlude_banner.html" %}
-    {% include "partials/staff_projects.html" %}
-    {% include "partials/events.html" %}
-    {% include "partials/event_groups.html" %}
     {% set interlude_image = "assets/branding/animal-interlude-banner.png" %}
     {% set interlude_alt = "Ecological interlude banner with plants, animals, and water" %}
     {% set interlude_class = "oasis-interlude--ecology" %}
     {% include "partials/interlude_banner.html" %}
-    {% include "partials/infrastructure.html" %}
     {% include "partials/footer_cta.html" %}
   </div>
 {% endblock %}

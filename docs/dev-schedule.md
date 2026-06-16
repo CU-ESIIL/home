@@ -191,6 +191,58 @@ gantt
 %% gantt-end
 ```
 
+## Future Roadmap (Years 5–10)
+
+The first four years of OASIS focused on building the infrastructure required
+to support environmental synthesis at scales beyond a single researcher or
+laptop. Templates, repositories, websites, working groups, events, cloud
+resources, and AI-enabled workflows now provide a foundation for large-scale
+collaborative science. The next phase focuses on connecting those activities
+into a continuously learning synthesis ecosystem where every project
+contributes knowledge, memory, and reusable resources that strengthen future
+projects.
+
+```mermaid
+gantt
+    title OASIS: From Infrastructure to Collective Intelligence
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    section Foundation (Years 1-4)
+    Templates, repositories, websites          :done, f1, 2023-01-01, 2026-01-01
+    Working groups and events                  :done, f2, 2023-01-01, 2026-01-01
+    AI and cloud infrastructure                :done, f3, 2024-01-01, 2026-01-01
+    section CONNECT
+    Capture Activity: automatic onboarding     :a1, 2027-01-01, 2027-12-31
+    Connect Knowledge: projects, methods, datasets, people, events :a2, 2028-01-01, 2028-12-31
+    section REMEMBER
+    Preserve Memory: summaries and lessons learned :b1, 2029-01-01, 2029-12-31
+    Enable Reuse: reusable templates and workflows :b2, 2030-01-01, 2030-12-31
+    section COMPOUND
+    Integrate Communication: research, websites, documentation :c1, 2031-01-01, 2031-12-31
+    Compound Knowledge: automated synthesis and recommendations :c2, 2032-01-01, 2032-12-31
+    section Strategic Outcomes
+    Every activity enters OASIS                :milestone, m1, 2027-12-31, 0d
+    Knowledge becomes connected                :milestone, m2, 2028-12-31, 0d
+    Knowledge survives turnover                :milestone, m3, 2029-12-31, 0d
+    Reuse becomes the default                  :milestone, m4, 2030-12-31, 0d
+    Research and communication converge        :milestone, m5, 2031-12-31, 0d
+    Self-improving synthesis ecosystem         :milestone, m6, 2032-12-31, 0d
+```
+
+| Phase | Capability Gained | Why It Matters |
+|-------|-------------------|----------------|
+| Connect | Every activity becomes visible and connected | Researchers can discover related projects, datasets, methods, and communities instead of working in isolation. |
+| Remember | Knowledge survives beyond individual projects and people | Lessons learned, workflows, and institutional knowledge remain available for future teams. |
+| Compound | Every project strengthens future projects | Research, communication, and synthesis become integrated, reducing duplication and accelerating discovery. |
+
+This roadmap represents a shift from building infrastructure to building
+collective intelligence. The long-term goal is not simply to create more
+websites, repositories, or projects, but to create a synthesis ecosystem where
+knowledge accumulates, remains accessible, and becomes increasingly useful with
+every new contribution. Success is achieved when each project lowers the
+barrier for the next project and when environmental science continuously learns
+from itself.
+
 <style>
   table {
     width: 100%;

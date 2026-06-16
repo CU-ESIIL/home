@@ -1,10 +1,10 @@
 ---
 title: Event Group Galleries
-description: Curated collections of team and group websites created inside ESIIL events.
+description: Curated team sites created during summits, hackathons, codefests, and workshops.
 template: section-gallery.html
 section_partial: partials/event_groups/index_page.html
 surface: earth
-eyebrow: Event Group Galleries
+eyebrow: Reusable Event Memory
 galleries:
   - title: Innovation Summit 2026 Group Sites
     url: innovation-summit-2026/
@@ -29,4 +29,3 @@ galleries:
 hide:
   - toc
 ---
-
