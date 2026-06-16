@@ -623,3 +623,76 @@ homepage sections.
   were kept on single lines for safer MkDocs Material rendering.
 - Follow-up / unresolved: The roadmap is strategic documentation only and does
   not create active scheduled tasks in `docs/upcoming_tasks.yaml`.
+
+## 2026-06-15
+
+- Goal: modernize the subpages linked from the homepage's first-row section
+  buttons so the journey from the redesigned homepage continues into gallery
+  pages rather than legacy Markdown-style link lists.
+- Context reviewed: homepage partials, `section-gallery.html`, directory
+  Markdown entry points, event-group gallery partials, homepage link tests, and
+  existing section-card patterns.
+- Files changed: `docs/directory/working-groups.md`,
+  `docs/directory/event-groups.md`, `docs/directory/research.md`,
+  `docs/directory/events.md`, `docs/directory/infrastructure.md`,
+  `docs/event-groups/index.md`,
+  `docs/overrides/partials/directory/event_groups_page.html`,
+  `docs/overrides/section-gallery.html`, `tests/homepage.spec.ts`, and
+  `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python -m mkdocs build --strict` and
+  `npx playwright test`; all six Playwright tests passed after updating the
+  gallery journey checks to assert the shared section-gallery layout and
+  browser-back behavior.
+- Follow-up / unresolved: The destination pages now share the OASIS visual
+  system. Future content additions should continue to use section-gallery
+  front matter and card/grid partials instead of plain link lists.
+
+## 2026-06-16
+
+- Goal: complete a comprehensive QC, UX, agent-readability, and architecture
+  review of the OASIS website and document the findings for future maintainers.
+- Context reviewed: attached QC prompt, homepage partial ordering, gallery
+  destination pages, AI + Team Science partial, interlude banner partial/CSS,
+  registry and thumbnail documentation, graph/stats generators, workflows,
+  tag generation, and existing Playwright homepage tests.
+- Files changed: `docs/dev/oasis-qc-report.md`, `.gitignore`,
+  `docs/overrides/partials/ai_team_science.html`,
+  `docs/assets/css/custom.css`, generated tag pages under `docs/tags/`, and
+  removal of tracked `.DS_Store` metadata files.
+- Validation: Ran front-matter validation, stats generation, graph generation,
+  tag generation, and `./.venv/bin/python -m mkdocs build --strict`
+  successfully. Local graph pytest could not run because the active `.venv`
+  lacks `pytest`, even though `requirements.txt` declares it. Playwright was
+  not run because the app rejected the required browser-test escalation.
+- Follow-up / unresolved: Refresh the empty `data/org_repos.json` cache with
+  GitHub CLI access, rerun graph pytest after installing requirements into the
+  active `.venv`, and run Playwright in CI or a local session with browser-test
+  permission.
+
+## 2026-06-16
+
+- Goal: add confirmed Cohort 3 working group repositories and update the AI +
+  Team Science homepage section to foreground concrete OASIS AI infrastructure
+  examples.
+- Context reviewed: attached Cohort 3 prompt, Working Groups gallery partial,
+  AI + Team Science partial, homepage CSS/card styles, project registry schema,
+  graph builder, and Playwright homepage tests.
+- Files changed: `docs/overrides/partials/directory/working_groups_page.html`,
+  `docs/overrides/partials/ai_team_science.html`,
+  `docs/assets/css/custom.css`, `scripts/build_graph.py`,
+  `tests/homepage.spec.ts`, new Cohort 3 project registry files,
+  `registry/projects/openclaw-container.yaml`,
+  `registry/projects/hermes-container.yaml`, generated graph/explore outputs,
+  and `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python scripts/build_graph.py`,
+  `./.venv/bin/python scripts/check_front_matter.py`,
+  `./.venv/bin/python scripts/build_oasis_stats.py`,
+  `./.venv/bin/python -m mkdocs build --strict`, and `npx playwright test`.
+  Playwright passed all 6 tests after rerunning with permission to bind its
+  local web server.
+- Follow-up / unresolved: Cohort 3 cards currently reuse the working-group
+  OASIS template thumbnail as a placeholder. Excluded `byandell-esiil`,
+  `Wyatt_ESIIL_proj`, `hermes_container`, `openclaw_container`,
+  `ty_test_trainer`, and `Summit_group_2026_*` from Cohort 3 working groups as
+  directed; Hermes and OpenClaw were added as AI infrastructure registry entries
+  instead.

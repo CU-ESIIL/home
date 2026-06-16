@@ -1,0 +1,24 @@
+id: openclaw-container
+title: OpenClaw Container
+description: A multi-agent scientific workspace combining repositories, files, AI assistants, and environmental data science workflows within a shared synthesis environment.
+type: hub
+status: active
+website: https://cu-esiil.github.io/openclaw_container/
+repository: https://github.com/CU-ESIIL/openclaw_container
+people:
+  - esiil-staff
+themes:
+  - environmental-ai
+  - data-infrastructure
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - multi-agent workspaces
+  - GitHub-integrated workflows
+  - AI-assisted synthesis
+outputs:
+  - container documentation
+  - AI-enabled workspace
+related_projects:
+  - trainings

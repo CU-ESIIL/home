@@ -1,0 +1,20 @@
+id: wopasi-pazo
+title: Wopasi Pazo
+description: Newly launched Cohort 3 working group site; details and synthesis goals are in development.
+type: working-group
+status: in development
+cohort: 3
+website: https://cu-esiil.github.io/wopasi_pazo/
+repository: https://github.com/CU-ESIIL/wopasi_pazo
+people:
+  - working-group-community
+themes:
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - synthesis planning
+outputs:
+  - project website
+  - working group repository
+related_projects: []

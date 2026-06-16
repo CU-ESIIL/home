@@ -1,0 +1,22 @@
+id: spectral-diversity-ecosystem-functioning
+title: Spectral Diversity and Ecosystem Functioning
+description: Exploring how spectral diversity can inform ecosystem function and environmental synthesis.
+type: working-group
+status: active
+cohort: 3
+website: https://cu-esiil.github.io/spectral-diversity-ecosystem-functioning/
+repository: https://github.com/CU-ESIIL/spectral-diversity-ecosystem-functioning
+people:
+  - working-group-community
+themes:
+  - environmental-ai
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - spectral diversity analysis
+  - ecosystem-function synthesis
+outputs:
+  - project website
+  - working group repository
+related_projects: []

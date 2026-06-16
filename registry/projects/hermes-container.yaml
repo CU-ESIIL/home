@@ -1,0 +1,23 @@
+id: hermes-container
+title: Hermes Container
+description: An AI-enabled scientific workspace providing integrated development environments, assistants, and reproducible research tools for environmental synthesis.
+type: hub
+status: active
+website: https://cu-esiil.github.io/hermes_container/
+repository: https://github.com/CU-ESIIL/hermes_container
+people:
+  - esiil-staff
+themes:
+  - environmental-ai
+  - data-infrastructure
+datasets:
+  - esiil-shared-datasets
+methods:
+  - personal AI workspaces
+  - notebook workflows
+  - IDE workflows
+outputs:
+  - container documentation
+  - AI-enabled workspace
+related_projects:
+  - trainings

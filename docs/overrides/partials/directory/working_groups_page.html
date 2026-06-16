@@ -99,9 +99,90 @@
   },
   {
     "eyebrow": "Cohort 3",
-    "title": "Next cohort",
-    "description": "Cohort 3 will populate after the next round of technical training. The row is ready so the gallery can grow without another layout rewrite.",
-    "items": []
+    "title": "New synthesis teams",
+    "description": "Cohort 3 working groups are newly launched synthesis teams developing repositories and websites as living records of their science.",
+    "items": [
+      {
+        "title": "Ecosystems Under Invasion",
+        "url": "https://cu-esiil.github.io/ecosystems-under-invasion/",
+        "repo": "https://github.com/CU-ESIIL/ecosystems-under-invasion",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · Newly launched",
+        "description": "Synthesizing how terrestrial ecosystem properties respond to degree of invasion."
+      },
+      {
+        "title": "EdgeSS: Sensor Synthesis at the Edge",
+        "url": "https://cu-esiil.github.io/edgess/",
+        "repo": "https://github.com/CU-ESIIL/edgess",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · Active",
+        "description": "Integrating real-time environmental sensor data, edge computing, and AI for scalable environmental insight."
+      },
+      {
+        "title": "CMSMapper",
+        "url": "https://cu-esiil.github.io/CMSMapper/",
+        "repo": "https://github.com/CU-ESIIL/CMSMapper",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · In development",
+        "description": "Developing integrative strategies for siting climate mitigation solutions that balance nature, people, and land-use tradeoffs."
+      },
+      {
+        "title": "Worldwide Plankton",
+        "url": "https://cu-esiil.github.io/worldwideplankton/",
+        "repo": "https://github.com/CU-ESIIL/worldwideplankton",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · Newly launched",
+        "description": "Linking food web theory with global plankton datasets to quantify freshwater trophic interactions."
+      },
+      {
+        "title": "Thermo ToleRate",
+        "url": "https://cu-esiil.github.io/Thermo-Tolerate/",
+        "repo": "https://github.com/CU-ESIIL/Thermo-Tolerate",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · Newly launched",
+        "description": "Redefining ectotherm thermal tolerance under variable climate by accounting for temperature intensity and exposure duration."
+      },
+      {
+        "title": "Long Read Sequencing for Arbuscular Mycorrhizal Fungi",
+        "url": "https://cu-esiil.github.io/AMFungi_Biogeography_Diversity/",
+        "repo": "https://github.com/CU-ESIIL/AMFungi_Biogeography_Diversity",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · Newly launched",
+        "description": "Using long-read sequencing to synthesize arbuscular mycorrhizal fungi biogeography and diversity."
+      },
+      {
+        "title": "Spectral Diversity and Ecosystem Functioning",
+        "url": "https://cu-esiil.github.io/spectral-diversity-ecosystem-functioning/",
+        "repo": "https://github.com/CU-ESIIL/spectral-diversity-ecosystem-functioning",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · Active",
+        "description": "Exploring how spectral diversity can inform ecosystem function and environmental synthesis."
+      },
+      {
+        "title": "Wopasi Pazo",
+        "url": "https://cu-esiil.github.io/wopasi_pazo/",
+        "repo": "https://github.com/CU-ESIIL/wopasi_pazo",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · In development",
+        "description": "Newly launched Cohort 3 working group site; details and synthesis goals are in development."
+      },
+      {
+        "title": "NEON-SYNC",
+        "url": "https://cu-esiil.github.io/NEON_SYNC/",
+        "repo": "https://github.com/CU-ESIIL/NEON_SYNC",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · In development",
+        "description": "Newly launched Cohort 3 working group site focused on NEON-SYNC; details and synthesis goals are in development."
+      },
+      {
+        "title": "AI in a Day",
+        "url": "https://cu-esiil.github.io/AI-in-a-day/",
+        "repo": "https://github.com/CU-ESIIL/AI-in-a-day",
+        "image": "../../assets/thumbnails/active/templates/working-group-oasis-template-button.jpeg",
+        "meta": "Cohort 3 · Active",
+        "description": "Cohort 3 working group exploring AI-enabled environmental synthesis and practical AI workflows for science."
+      }
+    ]
   }
 ] %}
 
@@ -119,20 +200,42 @@
       {% if cohort["items"] %}
         <div class="oasis-gallery-grid">
           {% for item in cohort["items"] %}
-            <a class="oasis-project-card" href="{{ item.url }}" target="_blank" rel="noopener" data-reveal>
-              <div class="oasis-project-card__media">
-                <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
-              </div>
-              <div class="oasis-project-card__body">
-                <p class="oasis-project-card__meta">{{ item.meta }}</p>
-                <h3>{{ item.title }}</h3>
-                <p>{{ item.description }}</p>
-                <span class="oasis-project-card__cta">
-                  <span>Open Project</span>
-                  <span aria-hidden="true">→</span>
-                </span>
-              </div>
-            </a>
+            {% if item.repo %}
+              <article class="oasis-project-card" data-reveal>
+                <div class="oasis-project-card__media">
+                  <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
+                </div>
+                <div class="oasis-project-card__body">
+                  <p class="oasis-project-card__meta">{{ item.meta }}</p>
+                  <h3>{{ item.title }}</h3>
+                  <p>{{ item.description }}</p>
+                  <div class="oasis-project-card__actions">
+                    <a class="oasis-project-card__cta" href="{{ item.url }}" target="_blank" rel="noopener">
+                      <span>Open Project</span>
+                      <span aria-hidden="true">→</span>
+                    </a>
+                    <a class="oasis-project-card__repo" href="{{ item.repo }}" target="_blank" rel="noopener">
+                      {{ item.repo | replace("https://github.com/CU-ESIIL/", "CU-ESIIL/") }}
+                    </a>
+                  </div>
+                </div>
+              </article>
+            {% else %}
+              <a class="oasis-project-card" href="{{ item.url }}" target="_blank" rel="noopener" data-reveal>
+                <div class="oasis-project-card__media">
+                  <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
+                </div>
+                <div class="oasis-project-card__body">
+                  <p class="oasis-project-card__meta">{{ item.meta }}</p>
+                  <h3>{{ item.title }}</h3>
+                  <p>{{ item.description }}</p>
+                  <span class="oasis-project-card__cta">
+                    <span>Open Project</span>
+                    <span aria-hidden="true">→</span>
+                  </span>
+                </div>
+              </a>
+            {% endif %}
           {% endfor %}
         </div>
       {% else %}

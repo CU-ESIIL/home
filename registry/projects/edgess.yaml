@@ -1,0 +1,24 @@
+id: edgess
+title: "EdgeSS: Sensor Synthesis at the Edge"
+description: Integrating real-time environmental sensor data, edge computing, and AI for scalable environmental insight.
+type: working-group
+status: active
+cohort: 3
+website: https://cu-esiil.github.io/edgess/
+repository: https://github.com/CU-ESIIL/edgess
+people:
+  - working-group-community
+themes:
+  - environmental-ai
+  - data-infrastructure
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - edge computing
+  - sensor synthesis
+  - AI-assisted workflows
+outputs:
+  - project website
+  - working group repository
+related_projects: []

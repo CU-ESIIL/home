@@ -1,0 +1,21 @@
+id: thermo-tolerate
+title: Thermo ToleRate
+description: Redefining ectotherm thermal tolerance under variable climate by accounting for temperature intensity and exposure duration.
+type: working-group
+status: newly launched
+cohort: 3
+website: https://cu-esiil.github.io/Thermo-Tolerate/
+repository: https://github.com/CU-ESIIL/Thermo-Tolerate
+people:
+  - working-group-community
+themes:
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - thermal tolerance synthesis
+  - trait analysis
+outputs:
+  - project website
+  - working group repository
+related_projects: []

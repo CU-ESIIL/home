@@ -1,0 +1,21 @@
+id: ecosystems-under-invasion
+title: Ecosystems Under Invasion
+description: Synthesizing how terrestrial ecosystem properties respond to degree of invasion.
+type: working-group
+status: newly launched
+cohort: 3
+website: https://cu-esiil.github.io/ecosystems-under-invasion/
+repository: https://github.com/CU-ESIIL/ecosystems-under-invasion
+people:
+  - working-group-community
+themes:
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - synthesis workshops
+  - comparative analysis
+outputs:
+  - project website
+  - working group repository
+related_projects: []

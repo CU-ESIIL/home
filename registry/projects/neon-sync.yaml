@@ -1,0 +1,21 @@
+id: neon-sync
+title: NEON-SYNC
+description: Newly launched Cohort 3 working group site focused on NEON-SYNC; details and synthesis goals are in development.
+type: working-group
+status: in development
+cohort: 3
+website: https://cu-esiil.github.io/NEON_SYNC/
+repository: https://github.com/CU-ESIIL/NEON_SYNC
+people:
+  - working-group-community
+themes:
+  - data-infrastructure
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - NEON data synthesis
+outputs:
+  - project website
+  - working group repository
+related_projects: []

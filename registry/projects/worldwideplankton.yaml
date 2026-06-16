@@ -1,0 +1,21 @@
+id: worldwideplankton
+title: Worldwide Plankton
+description: Linking food web theory with global plankton datasets to quantify freshwater trophic interactions.
+type: working-group
+status: newly launched
+cohort: 3
+website: https://cu-esiil.github.io/worldwideplankton/
+repository: https://github.com/CU-ESIIL/worldwideplankton
+people:
+  - working-group-community
+themes:
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - food web synthesis
+  - global dataset comparison
+outputs:
+  - project website
+  - working group repository
+related_projects: []

@@ -1,0 +1,23 @@
+id: amfungi-biogeography-diversity
+title: Long Read Sequencing for Arbuscular Mycorrhizal Fungi
+description: Using long-read sequencing to synthesize arbuscular mycorrhizal fungi biogeography and diversity.
+type: working-group
+status: newly launched
+cohort: 3
+website: https://cu-esiil.github.io/AMFungi_Biogeography_Diversity/
+repository: https://github.com/CU-ESIIL/AMFungi_Biogeography_Diversity
+people:
+  - working-group-community
+themes:
+  - fungal-ecology
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - long-read sequencing synthesis
+  - biogeographic analysis
+outputs:
+  - project website
+  - working group repository
+related_projects:
+  - fungal-dispersal

@@ -1,0 +1,22 @@
+id: cmsmapper
+title: CMSMapper
+description: Developing integrative strategies for siting climate mitigation solutions that balance nature, people, and land-use tradeoffs.
+type: working-group
+status: in development
+cohort: 3
+website: https://cu-esiil.github.io/CMSMapper/
+repository: https://github.com/CU-ESIIL/CMSMapper
+people:
+  - working-group-community
+themes:
+  - data-infrastructure
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - spatial prioritization
+  - scenario mapping
+outputs:
+  - project website
+  - working group repository
+related_projects: []

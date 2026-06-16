@@ -52,6 +52,11 @@
     },
     {
       "source": "person:esiil-staff",
+      "target": "project:hermes-container",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
       "target": "project:innovation-summit-2024-group-sites",
       "type": "CONTRIBUTED_TO"
     },
@@ -68,6 +73,11 @@
     {
       "source": "person:esiil-staff",
       "target": "project:innovation-summit-2026-group-sites",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:esiil-staff",
+      "target": "project:openclaw-container",
       "type": "CONTRIBUTED_TO"
     },
     {
@@ -92,7 +102,32 @@
     },
     {
       "source": "person:working-group-community",
+      "target": "project:ai-in-a-day",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:amfungi-biogeography-diversity",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
       "target": "project:bioviewpoint",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:cmsmapper",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:ecosystems-under-invasion",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:edgess",
       "type": "CONTRIBUTED_TO"
     },
     {
@@ -108,6 +143,31 @@
     {
       "source": "person:working-group-community",
       "target": "project:macrophenology",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:neon-sync",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:spectral-diversity-ecosystem-functioning",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:thermo-tolerate",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:wopasi-pazo",
+      "type": "CONTRIBUTED_TO"
+    },
+    {
+      "source": "person:working-group-community",
+      "target": "project:worldwideplankton",
       "type": "CONTRIBUTED_TO"
     },
     {
@@ -163,6 +223,121 @@
     {
       "source": "project:ai-for-natural-methane",
       "target": "method:machine-learning",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "repo:ai-in-a-day",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "theme:training",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "website:https-cu-esiil-github-io-ai-in-a-day",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "project:trainings",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "method:ai-assisted-workflows",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:ai-in-a-day",
+      "target": "method:technical-training",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "repo:amfungi-biogeography-diversity",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "theme:fungal-ecology",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "website:https-cu-esiil-github-io-amfungi-biogeography-diversity",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "project:fungal-dispersal",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "method:biogeographic-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:amfungi-biogeography-diversity",
+      "target": "method:long-read-sequencing-synthesis",
       "type": "USES_METHOD"
     },
     {
@@ -283,6 +458,56 @@
     {
       "source": "project:bioviewpoint",
       "target": "method:visualization",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "repo:cmsmapper",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "website:https-cu-esiil-github-io-cmsmapper",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "method:scenario-mapping",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:cmsmapper",
+      "target": "method:spatial-prioritization",
       "type": "USES_METHOD"
     },
     {
@@ -453,6 +678,111 @@
     {
       "source": "project:datacube-sandbox",
       "target": "method:training-exercises",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "repo:ecosystems-under-invasion",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "website:https-cu-esiil-github-io-ecosystems-under-invasion",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "method:comparative-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:ecosystems-under-invasion",
+      "target": "method:synthesis-workshops",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:edgess",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:edgess",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:edgess",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:edgess",
+      "target": "repo:edgess",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:edgess",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:edgess",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:edgess",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:edgess",
+      "target": "website:https-cu-esiil-github-io-edgess",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:edgess",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:edgess",
+      "target": "method:ai-assisted-workflows",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:edgess",
+      "target": "method:edge-computing",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:edgess",
+      "target": "method:sensor-synthesis",
       "type": "USES_METHOD"
     },
     {
@@ -796,6 +1126,66 @@
       "type": "USES_METHOD"
     },
     {
+      "source": "project:hermes-container",
+      "target": "output:ai-enabled-workspace",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "output:container-documentation",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "repo:hermes-container",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "website:https-cu-esiil-github-io-hermes-container",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "project:trainings",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "method:ide-workflows",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "method:notebook-workflows",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:hermes-container",
+      "target": "method:personal-ai-workspaces",
+      "type": "USES_METHOD"
+    },
+    {
       "source": "project:innovation-summit-2024-group-sites",
       "target": "output:event-group-gallery",
       "type": "HAS_OUTPUT"
@@ -1066,6 +1456,166 @@
       "type": "USES_METHOD"
     },
     {
+      "source": "project:neon-sync",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "repo:neon-sync",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "website:https-cu-esiil-github-io-neon-sync",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:neon-sync",
+      "target": "method:neon-data-synthesis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "output:ai-enabled-workspace",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "output:container-documentation",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "person:esiil-staff",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "repo:openclaw-container",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "theme:data-infrastructure",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "website:https-cu-esiil-github-io-openclaw-container",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "project:trainings",
+      "type": "RELATED_TO"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "method:ai-assisted-synthesis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "method:github-integrated-workflows",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:openclaw-container",
+      "target": "method:multi-agent-workspaces",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "repo:spectral-diversity-ecosystem-functioning",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "theme:environmental-ai",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "website:https-cu-esiil-github-io-spectral-diversity-ecosystem-functioning",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "method:ecosystem-function-synthesis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:spectral-diversity-ecosystem-functioning",
+      "target": "method:spectral-diversity-analysis",
+      "type": "USES_METHOD"
+    },
+    {
       "source": "project:team-science",
       "target": "output:collaboration-insights",
       "type": "HAS_OUTPUT"
@@ -1118,6 +1668,51 @@
     {
       "source": "project:team-science",
       "target": "method:network-analysis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "repo:thermo-tolerate",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "website:https-cu-esiil-github-io-thermo-tolerate",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "method:thermal-tolerance-synthesis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:thermo-tolerate",
+      "target": "method:trait-analysis",
       "type": "USES_METHOD"
     },
     {
@@ -1181,6 +1776,91 @@
       "type": "USES_METHOD"
     },
     {
+      "source": "project:wopasi-pazo",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:wopasi-pazo",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:wopasi-pazo",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:wopasi-pazo",
+      "target": "repo:wopasi-pazo",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:wopasi-pazo",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:wopasi-pazo",
+      "target": "website:https-cu-esiil-github-io-wopasi-pazo",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:wopasi-pazo",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:wopasi-pazo",
+      "target": "method:synthesis-planning",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "output:project-website",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "output:working-group-repository",
+      "type": "HAS_OUTPUT"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "person:working-group-community",
+      "type": "HAS_PERSON"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "repo:worldwideplankton",
+      "type": "HAS_REPO"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "theme:synthesis-collaboration",
+      "type": "HAS_THEME"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "website:https-cu-esiil-github-io-worldwideplankton",
+      "type": "HAS_WEBSITE"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "dataset:esiil-shared-datasets",
+      "type": "USES_DATASET"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "method:food-web-synthesis",
+      "type": "USES_METHOD"
+    },
+    {
+      "source": "project:worldwideplankton",
+      "target": "method:global-dataset-comparison",
+      "type": "USES_METHOD"
+    },
+    {
       "source": "project:wui-boundary",
       "target": "output:project-website",
       "type": "HAS_OUTPUT"
@@ -1234,8 +1914,8 @@
   "meta": {
     "dataset_count": 4,
     "person_count": 3,
-    "project_count": 20,
-    "repo_count": 15,
+    "project_count": 32,
+    "repo_count": 27,
     "theme_count": 8
   },
   "nodes": [
@@ -1268,6 +1948,16 @@
       "website": "https://cu-esiil.github.io/cubedynamics/"
     },
     {
+      "id": "method:ai-assisted-synthesis",
+      "label": "AI-assisted synthesis",
+      "type": "method"
+    },
+    {
+      "id": "method:ai-assisted-workflows",
+      "label": "AI-assisted workflows",
+      "type": "method"
+    },
+    {
       "id": "method:analytics-workflows",
       "label": "analytics workflows",
       "type": "method"
@@ -1275,6 +1965,11 @@
     {
       "id": "method:applied-machine-learning",
       "label": "applied machine learning",
+      "type": "method"
+    },
+    {
+      "id": "method:biogeographic-analysis",
+      "label": "biogeographic analysis",
       "type": "method"
     },
     {
@@ -1333,6 +2028,16 @@
       "type": "method"
     },
     {
+      "id": "method:ecosystem-function-synthesis",
+      "label": "ecosystem-function synthesis",
+      "type": "method"
+    },
+    {
+      "id": "method:edge-computing",
+      "label": "edge computing",
+      "type": "method"
+    },
+    {
       "id": "method:exploratory-analysis",
       "label": "exploratory analysis",
       "type": "method"
@@ -1343,13 +2048,38 @@
       "type": "method"
     },
     {
+      "id": "method:food-web-synthesis",
+      "label": "food web synthesis",
+      "type": "method"
+    },
+    {
+      "id": "method:github-integrated-workflows",
+      "label": "GitHub-integrated workflows",
+      "type": "method"
+    },
+    {
+      "id": "method:global-dataset-comparison",
+      "label": "global dataset comparison",
+      "type": "method"
+    },
+    {
       "id": "method:hackathon-collaboration",
       "label": "hackathon collaboration",
       "type": "method"
     },
     {
+      "id": "method:ide-workflows",
+      "label": "IDE workflows",
+      "type": "method"
+    },
+    {
       "id": "method:interdisciplinary-collaboration",
       "label": "interdisciplinary collaboration",
+      "type": "method"
+    },
+    {
+      "id": "method:long-read-sequencing-synthesis",
+      "label": "long-read sequencing synthesis",
       "type": "method"
     },
     {
@@ -1363,8 +2093,23 @@
       "type": "method"
     },
     {
+      "id": "method:multi-agent-workspaces",
+      "label": "multi-agent workspaces",
+      "type": "method"
+    },
+    {
+      "id": "method:neon-data-synthesis",
+      "label": "NEON data synthesis",
+      "type": "method"
+    },
+    {
       "id": "method:network-analysis",
       "label": "network analysis",
+      "type": "method"
+    },
+    {
+      "id": "method:notebook-workflows",
+      "label": "notebook workflows",
       "type": "method"
     },
     {
@@ -1375,6 +2120,11 @@
     {
       "id": "method:participant-team-collaboration",
       "label": "participant team collaboration",
+      "type": "method"
+    },
+    {
+      "id": "method:personal-ai-workspaces",
+      "label": "personal AI workspaces",
       "type": "method"
     },
     {
@@ -1393,13 +2143,38 @@
       "type": "method"
     },
     {
+      "id": "method:scenario-mapping",
+      "label": "scenario mapping",
+      "type": "method"
+    },
+    {
+      "id": "method:sensor-synthesis",
+      "label": "sensor synthesis",
+      "type": "method"
+    },
+    {
       "id": "method:spatial-delineation",
       "label": "spatial delineation",
       "type": "method"
     },
     {
+      "id": "method:spatial-prioritization",
+      "label": "spatial prioritization",
+      "type": "method"
+    },
+    {
+      "id": "method:spectral-diversity-analysis",
+      "label": "spectral diversity analysis",
+      "type": "method"
+    },
+    {
       "id": "method:summit-convening",
       "label": "summit convening",
+      "type": "method"
+    },
+    {
+      "id": "method:synthesis-planning",
+      "label": "synthesis planning",
       "type": "method"
     },
     {
@@ -1423,14 +2198,29 @@
       "type": "method"
     },
     {
+      "id": "method:thermal-tolerance-synthesis",
+      "label": "thermal tolerance synthesis",
+      "type": "method"
+    },
+    {
       "id": "method:training-exercises",
       "label": "training exercises",
+      "type": "method"
+    },
+    {
+      "id": "method:trait-analysis",
+      "label": "trait analysis",
       "type": "method"
     },
     {
       "id": "method:visualization",
       "label": "visualization",
       "type": "method"
+    },
+    {
+      "id": "output:ai-enabled-workspace",
+      "label": "AI-enabled workspace",
+      "type": "output"
     },
     {
       "id": "output:collaboration-insights",
@@ -1440,6 +2230,11 @@
     {
       "id": "output:collaborative-research-agenda",
       "label": "collaborative research agenda",
+      "type": "output"
+    },
+    {
+      "id": "output:container-documentation",
+      "label": "container documentation",
       "type": "output"
     },
     {
@@ -1543,6 +2338,11 @@
       "type": "output"
     },
     {
+      "id": "output:working-group-repository",
+      "label": "working group repository",
+      "type": "output"
+    },
+    {
       "id": "output:workshop-materials",
       "label": "workshop materials",
       "type": "output"
@@ -1569,6 +2369,7 @@
       "website": "https://cu-esiil.github.io/home/directory/working-groups/"
     },
     {
+      "cohort": "",
       "description": "Harmonizing natural methane datasets and discovery workflows with AI.",
       "id": "project:ai-for-natural-methane",
       "label": "AI for Natural Methane",
@@ -1579,6 +2380,29 @@
       "website": "https://cu-esiil.github.io/AI-for-Natural-Methane/"
     },
     {
+      "cohort": 3,
+      "description": "Cohort 3 working group exploring AI-enabled environmental synthesis and practical AI workflows for science.",
+      "id": "project:ai-in-a-day",
+      "label": "AI in a Day",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/AI-in-a-day",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/AI-in-a-day/"
+    },
+    {
+      "cohort": 3,
+      "description": "Using long-read sequencing to synthesize arbuscular mycorrhizal fungi biogeography and diversity.",
+      "id": "project:amfungi-biogeography-diversity",
+      "label": "Long Read Sequencing for Arbuscular Mycorrhizal Fungi",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/AMFungi_Biogeography_Diversity",
+      "status": "newly launched",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/AMFungi_Biogeography_Diversity/"
+    },
+    {
+      "cohort": "",
       "description": "Data harmonization, workflows, and environmental analytics methods.",
       "id": "project:analytics-library",
       "label": "Analytics Library",
@@ -1589,6 +2413,7 @@
       "website": "https://cu-esiil.github.io/analytics-library/"
     },
     {
+      "cohort": "",
       "description": "Visualization-focused project space for ecological interpretation and biological insight.",
       "id": "project:bioviewpoint",
       "label": "BioViewPoint",
@@ -1599,6 +2424,18 @@
       "website": "https://cu-esiil.github.io/BioViewPoint/"
     },
     {
+      "cohort": 3,
+      "description": "Developing integrative strategies for siting climate mitigation solutions that balance nature, people, and land-use tradeoffs.",
+      "id": "project:cmsmapper",
+      "label": "CMSMapper",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/CMSMapper",
+      "status": "in development",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/CMSMapper/"
+    },
+    {
+      "cohort": "",
       "description": "Composable operations for spatiotemporal data cubes.",
       "id": "project:cubedynamics",
       "label": "CubeDynamics",
@@ -1609,6 +2446,7 @@
       "website": "https://cu-esiil.github.io/cubedynamics/"
     },
     {
+      "cohort": "",
       "description": "Organizational hub for datasets, discovery, and shared data access.",
       "id": "project:data-library",
       "label": "Data Library",
@@ -1619,6 +2457,7 @@
       "website": "https://cu-esiil.github.io/data-library/"
     },
     {
+      "cohort": "",
       "description": "Training and experimentation space for data cube workflows.",
       "id": "project:datacube-sandbox",
       "label": "Datacube Sandbox",
@@ -1629,6 +2468,29 @@
       "website": "https://cu-esiil.github.io/Jim-s-Sandbox/"
     },
     {
+      "cohort": 3,
+      "description": "Synthesizing how terrestrial ecosystem properties respond to degree of invasion.",
+      "id": "project:ecosystems-under-invasion",
+      "label": "Ecosystems Under Invasion",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/ecosystems-under-invasion",
+      "status": "newly launched",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/ecosystems-under-invasion/"
+    },
+    {
+      "cohort": 3,
+      "description": "Integrating real-time environmental sensor data, edge computing, and AI for scalable environmental insight.",
+      "id": "project:edgess",
+      "label": "EdgeSS: Sensor Synthesis at the Edge",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/edgess",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/edgess/"
+    },
+    {
+      "cohort": "",
       "description": "Collaborative research on extreme wildfire behavior and environmental change.",
       "id": "project:extreme-wildfire",
       "label": "Extreme Wildfire",
@@ -1639,6 +2501,7 @@
       "website": "https://cu-esiil.github.io/ExtremeWildfire/"
     },
     {
+      "cohort": "",
       "description": "Planning and strategy work for fire management and shared response.",
       "id": "project:fire-plan-2024",
       "label": "FIRE Plan 2024",
@@ -1649,6 +2512,7 @@
       "website": "https://cu-esiil.github.io/FIRE-plan-2024/"
     },
     {
+      "cohort": "",
       "description": "Gallery of group websites created during the 2024 Forest Carbon Codefest.",
       "id": "project:forest-carbon-codefest-2024-group-sites",
       "label": "Forest Carbon Codefest 2024 Group Sites",
@@ -1659,6 +2523,7 @@
       "website": "https://cu-esiil.github.io/home/event-groups/forest-carbon-codefest-2024/"
     },
     {
+      "cohort": "",
       "description": "Open synthesis on fungal dispersal, connectivity, and ecological spread.",
       "id": "project:fungal-dispersal",
       "label": "Fungal Dispersal",
@@ -1669,6 +2534,7 @@
       "website": "https://cu-esiil.github.io/fungal_dispersal/"
     },
     {
+      "cohort": "",
       "description": "Gallery of team websites and datacube work created during the 2023 hackathon.",
       "id": "project:hackathon-2023-group-sites",
       "label": "Hackathon 2023 Group Sites",
@@ -1679,6 +2545,7 @@
       "website": "https://cu-esiil.github.io/home/event-groups/hackathon-2023/"
     },
     {
+      "cohort": "",
       "description": "Hands-on machine learning collaboration around environmental datasets.",
       "id": "project:hdr-ml-hackathon-2026",
       "label": "HDR-ML Hackathon 2026",
@@ -1689,6 +2556,18 @@
       "website": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026"
     },
     {
+      "cohort": "",
+      "description": "An AI-enabled scientific workspace providing integrated development environments, assistants, and reproducible research tools for environmental synthesis.",
+      "id": "project:hermes-container",
+      "label": "Hermes Container",
+      "project_type": "hub",
+      "repository": "https://github.com/CU-ESIIL/hermes_container",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/hermes_container/"
+    },
+    {
+      "cohort": "",
       "description": "Gallery of participant-created team websites from the 2024 Innovation Summit.",
       "id": "project:innovation-summit-2024-group-sites",
       "label": "Innovation Summit 2024 Group Sites",
@@ -1699,6 +2578,7 @@
       "website": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2024/"
     },
     {
+      "cohort": "",
       "description": "Gallery of challenge-question group websites from the 2025 Innovation Summit.",
       "id": "project:innovation-summit-2025-group-sites",
       "label": "Innovation Summit 2025 Group Sites",
@@ -1709,6 +2589,7 @@
       "website": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2025/"
     },
     {
+      "cohort": "",
       "description": "AI for sustainability and environmental data-to-decision exchange.",
       "id": "project:innovation-summit-2026",
       "label": "Innovation Summit 2026",
@@ -1719,6 +2600,7 @@
       "website": "https://cu-esiil.github.io/Innovation-Summit-2026/"
     },
     {
+      "cohort": "",
       "description": "Gallery of participant-created team websites from the 2026 Innovation Summit.",
       "id": "project:innovation-summit-2026-group-sites",
       "label": "Innovation Summit 2026 Group Sites",
@@ -1729,6 +2611,7 @@
       "website": "https://cu-esiil.github.io/home/event-groups/innovation-summit-2026/"
     },
     {
+      "cohort": "",
       "description": "Macroecological phenology patterns across changing environments.",
       "id": "project:macrophenology",
       "label": "Macrophenology",
@@ -1739,6 +2622,40 @@
       "website": "https://cu-esiil.github.io/macrophenology/"
     },
     {
+      "cohort": 3,
+      "description": "Newly launched Cohort 3 working group site focused on NEON-SYNC; details and synthesis goals are in development.",
+      "id": "project:neon-sync",
+      "label": "NEON-SYNC",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/NEON_SYNC",
+      "status": "in development",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/NEON_SYNC/"
+    },
+    {
+      "cohort": "",
+      "description": "A multi-agent scientific workspace combining repositories, files, AI assistants, and environmental data science workflows within a shared synthesis environment.",
+      "id": "project:openclaw-container",
+      "label": "OpenClaw Container",
+      "project_type": "hub",
+      "repository": "https://github.com/CU-ESIIL/openclaw_container",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/openclaw_container/"
+    },
+    {
+      "cohort": 3,
+      "description": "Exploring how spectral diversity can inform ecosystem function and environmental synthesis.",
+      "id": "project:spectral-diversity-ecosystem-functioning",
+      "label": "Spectral Diversity and Ecosystem Functioning",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/spectral-diversity-ecosystem-functioning",
+      "status": "active",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/spectral-diversity-ecosystem-functioning/"
+    },
+    {
+      "cohort": "",
       "description": "Studying scientific collaboration networks and synthesis practice.",
       "id": "project:team-science",
       "label": "Team Science",
@@ -1749,6 +2666,18 @@
       "website": "https://cu-esiil.github.io/Team-Science/"
     },
     {
+      "cohort": 3,
+      "description": "Redefining ectotherm thermal tolerance under variable climate by accounting for temperature intensity and exposure duration.",
+      "id": "project:thermo-tolerate",
+      "label": "Thermo ToleRate",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/Thermo-Tolerate",
+      "status": "newly launched",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/Thermo-Tolerate/"
+    },
+    {
+      "cohort": "",
       "description": "Central training page for technical trainings and onboarding materials.",
       "id": "project:trainings",
       "label": "Train-the-Trainer Materials",
@@ -1759,6 +2688,29 @@
       "website": "https://cu-esiil.github.io/home/trainings/"
     },
     {
+      "cohort": 3,
+      "description": "Newly launched Cohort 3 working group site; details and synthesis goals are in development.",
+      "id": "project:wopasi-pazo",
+      "label": "Wopasi Pazo",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/wopasi_pazo",
+      "status": "in development",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/wopasi_pazo/"
+    },
+    {
+      "cohort": 3,
+      "description": "Linking food web theory with global plankton datasets to quantify freshwater trophic interactions.",
+      "id": "project:worldwideplankton",
+      "label": "Worldwide Plankton",
+      "project_type": "working-group",
+      "repository": "https://github.com/CU-ESIIL/worldwideplankton",
+      "status": "newly launched",
+      "type": "project",
+      "website": "https://cu-esiil.github.io/worldwideplankton/"
+    },
+    {
+      "cohort": "",
       "description": "Measuring the wildland-urban interface across delineation and scale.",
       "id": "project:wui-boundary",
       "label": "WUI Boundary",
@@ -1775,6 +2727,18 @@
       "url": "https://github.com/CU-ESIIL/AI-for-Natural-Methane"
     },
     {
+      "id": "repo:ai-in-a-day",
+      "label": "AI-in-a-day",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/AI-in-a-day"
+    },
+    {
+      "id": "repo:amfungi-biogeography-diversity",
+      "label": "AMFungi_Biogeography_Diversity",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/AMFungi_Biogeography_Diversity"
+    },
+    {
       "id": "repo:analytics-library",
       "label": "analytics-library",
       "type": "repo",
@@ -1787,6 +2751,12 @@
       "url": "https://github.com/CU-ESIIL/BioViewPoint"
     },
     {
+      "id": "repo:cmsmapper",
+      "label": "CMSMapper",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/CMSMapper"
+    },
+    {
       "id": "repo:cubedynamics",
       "label": "cubedynamics",
       "type": "repo",
@@ -1797,6 +2767,18 @@
       "label": "data-library",
       "type": "repo",
       "url": "https://github.com/CU-ESIIL/data-library"
+    },
+    {
+      "id": "repo:ecosystems-under-invasion",
+      "label": "ecosystems-under-invasion",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/ecosystems-under-invasion"
+    },
+    {
+      "id": "repo:edgess",
+      "label": "edgess",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/edgess"
     },
     {
       "id": "repo:extremewildfire",
@@ -1823,6 +2805,12 @@
       "url": "https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026"
     },
     {
+      "id": "repo:hermes-container",
+      "label": "hermes_container",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/hermes_container"
+    },
+    {
       "id": "repo:home",
       "label": "home",
       "type": "repo",
@@ -1847,10 +2835,46 @@
       "url": "https://github.com/CU-ESIIL/macrophenology"
     },
     {
+      "id": "repo:neon-sync",
+      "label": "NEON_SYNC",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/NEON_SYNC"
+    },
+    {
+      "id": "repo:openclaw-container",
+      "label": "openclaw_container",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/openclaw_container"
+    },
+    {
+      "id": "repo:spectral-diversity-ecosystem-functioning",
+      "label": "spectral-diversity-ecosystem-functioning",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/spectral-diversity-ecosystem-functioning"
+    },
+    {
       "id": "repo:team-science",
       "label": "Team-Science",
       "type": "repo",
       "url": "https://github.com/CU-ESIIL/Team-Science"
+    },
+    {
+      "id": "repo:thermo-tolerate",
+      "label": "Thermo-Tolerate",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/Thermo-Tolerate"
+    },
+    {
+      "id": "repo:wopasi-pazo",
+      "label": "wopasi_pazo",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/wopasi_pazo"
+    },
+    {
+      "id": "repo:worldwideplankton",
+      "label": "worldwideplankton",
+      "type": "repo",
+      "url": "https://github.com/CU-ESIIL/worldwideplankton"
     },
     {
       "id": "repo:wui-boundary",
@@ -1913,6 +2937,18 @@
       "url": "https://cu-esiil.github.io/AI-for-Natural-Methane/"
     },
     {
+      "id": "website:https-cu-esiil-github-io-ai-in-a-day",
+      "label": "AI in a Day",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/AI-in-a-day/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-amfungi-biogeography-diversity",
+      "label": "Long Read Sequencing for Arbuscular Mycorrhizal Fungi",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/AMFungi_Biogeography_Diversity/"
+    },
+    {
       "id": "website:https-cu-esiil-github-io-analytics-library",
       "label": "Analytics Library",
       "type": "website",
@@ -1925,6 +2961,12 @@
       "url": "https://cu-esiil.github.io/BioViewPoint/"
     },
     {
+      "id": "website:https-cu-esiil-github-io-cmsmapper",
+      "label": "CMSMapper",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/CMSMapper/"
+    },
+    {
       "id": "website:https-cu-esiil-github-io-cubedynamics",
       "label": "CubeDynamics",
       "type": "website",
@@ -1935,6 +2977,18 @@
       "label": "Data Library",
       "type": "website",
       "url": "https://cu-esiil.github.io/data-library/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-ecosystems-under-invasion",
+      "label": "Ecosystems Under Invasion",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/ecosystems-under-invasion/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-edgess",
+      "label": "EdgeSS: Sensor Synthesis at the Edge",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/edgess/"
     },
     {
       "id": "website:https-cu-esiil-github-io-extremewildfire",
@@ -1953,6 +3007,12 @@
       "label": "Fungal Dispersal",
       "type": "website",
       "url": "https://cu-esiil.github.io/fungal_dispersal/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-hermes-container",
+      "label": "Hermes Container",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/hermes_container/"
     },
     {
       "id": "website:https-cu-esiil-github-io-home-event-groups-forest-carbon-codefest-2024",
@@ -2009,10 +3069,46 @@
       "url": "https://cu-esiil.github.io/macrophenology/"
     },
     {
+      "id": "website:https-cu-esiil-github-io-neon-sync",
+      "label": "NEON-SYNC",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/NEON_SYNC/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-openclaw-container",
+      "label": "OpenClaw Container",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/openclaw_container/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-spectral-diversity-ecosystem-functioning",
+      "label": "Spectral Diversity and Ecosystem Functioning",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/spectral-diversity-ecosystem-functioning/"
+    },
+    {
       "id": "website:https-cu-esiil-github-io-team-science",
       "label": "Team Science",
       "type": "website",
       "url": "https://cu-esiil.github.io/Team-Science/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-thermo-tolerate",
+      "label": "Thermo ToleRate",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/Thermo-Tolerate/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-wopasi-pazo",
+      "label": "Wopasi Pazo",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/wopasi_pazo/"
+    },
+    {
+      "id": "website:https-cu-esiil-github-io-worldwideplankton",
+      "label": "Worldwide Plankton",
+      "type": "website",
+      "url": "https://cu-esiil.github.io/worldwideplankton/"
     },
     {
       "id": "website:https-cu-esiil-github-io-wui-boundary",

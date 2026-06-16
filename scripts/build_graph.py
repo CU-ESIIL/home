@@ -258,6 +258,7 @@ def build_graph(
                 description=project.data["description"],
                 project_type=project.data["type"],
                 status=project.data["status"],
+                cohort=project.data.get("cohort", ""),
                 website=project.data["website"],
                 repository=project.data["repository"],
             )

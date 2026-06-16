@@ -8,6 +8,7 @@ Learning pathways, quickstarts, and train-the-trainer materials.
 
 ## Connected Projects
 
+- [AI in a Day](https://cu-esiil.github.io/AI-in-a-day/): Cohort 3 working group exploring AI-enabled environmental synthesis and practical AI workflows for science.
 - [Analytics Library](https://cu-esiil.github.io/analytics-library/): Data harmonization, workflows, and environmental analytics methods.
 - [Datacube Sandbox](https://cu-esiil.github.io/Jim-s-Sandbox/): Training and experimentation space for data cube workflows.
 - [HDR-ML Hackathon 2026](https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026): Hands-on machine learning collaboration around environmental datasets.
@@ -15,6 +16,7 @@ Learning pathways, quickstarts, and train-the-trainer materials.
 
 ## Repositories
 
+- [https://github.com/CU-ESIIL/AI-in-a-day](https://github.com/CU-ESIIL/AI-in-a-day)
 - [https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026](https://github.com/CU-ESIIL/HDR-ML-Hackathon-2026)
 - [https://github.com/CU-ESIIL/Jim-s-Sandbox](https://github.com/CU-ESIIL/Jim-s-Sandbox)
 - [https://github.com/CU-ESIIL/analytics-library](https://github.com/CU-ESIIL/analytics-library)
@@ -22,6 +24,7 @@ Learning pathways, quickstarts, and train-the-trainer materials.
 
 ## Websites
 
+- [https://cu-esiil.github.io/AI-in-a-day/](https://cu-esiil.github.io/AI-in-a-day/)
 - [https://cu-esiil.github.io/Jim-s-Sandbox/](https://cu-esiil.github.io/Jim-s-Sandbox/)
 - [https://cu-esiil.github.io/analytics-library/](https://cu-esiil.github.io/analytics-library/)
 - [https://cu-esiil.github.io/home/trainings/](https://cu-esiil.github.io/home/trainings/)
@@ -31,6 +34,7 @@ Learning pathways, quickstarts, and train-the-trainer materials.
 
 - ESIIL Postdocs
 - ESIIL Staff
+- Working Group Community
 
 ## Datasets
 
@@ -46,4 +50,5 @@ Learning pathways, quickstarts, and train-the-trainer materials.
 - reusable methods
 - training materials
 - training page
+- working group repository
 - workshop materials

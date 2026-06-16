@@ -225,6 +225,20 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
     "href",
     /https:\/\/cu-esiil\.github\.io\/how_to_contribute\/?$/,
   );
+
+  const aiExampleCards = page.locator(
+    "#ai-team-science-section .oasis-ai-team-science__item--example",
+  );
+  await expect(aiExampleCards).toHaveCount(3);
+  await expect(aiExampleCards.nth(0).getByRole("heading", { level: 3 })).toHaveText(
+    "LLM Lesson Exemplar",
+  );
+  await expect(aiExampleCards.nth(1).getByRole("heading", { level: 3 })).toHaveText(
+    "OpenClaw Container",
+  );
+  await expect(aiExampleCards.nth(2).getByRole("heading", { level: 3 })).toHaveText(
+    "Hermes Container",
+  );
 });
 
 test("theme toggle switches to dark mode without restoring the repo badge", async ({ page }) => {

@@ -1,0 +1,24 @@
+id: ai-in-a-day
+title: AI in a Day
+description: Cohort 3 working group exploring AI-enabled environmental synthesis and practical AI workflows for science.
+type: working-group
+status: active
+cohort: 3
+website: https://cu-esiil.github.io/AI-in-a-day/
+repository: https://github.com/CU-ESIIL/AI-in-a-day
+people:
+  - working-group-community
+themes:
+  - environmental-ai
+  - training
+  - synthesis-collaboration
+datasets:
+  - esiil-shared-datasets
+methods:
+  - AI-assisted workflows
+  - technical training
+outputs:
+  - project website
+  - working group repository
+related_projects:
+  - trainings
