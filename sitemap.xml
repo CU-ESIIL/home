@@ -141,6 +141,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://CU-ESIIL.github.io/home/dev/oasis-qc-report/</loc>
+         <lastmod>2026-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://CU-ESIIL.github.io/home/dev/oasis-site-dev-guide/</loc>
          <lastmod>2026-06-16</lastmod>
          <changefreq>daily</changefreq>
@@ -531,6 +536,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://CU-ESIIL.github.io/home/tags/onboarding/</loc>
+         <lastmod>2026-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://CU-ESIIL.github.io/home/tags/quickstart/</loc>
          <lastmod>2026-06-16</lastmod>
          <changefreq>daily</changefreq>
@@ -557,6 +567,16 @@
     </url>
     <url>
          <loc>https://CU-ESIIL.github.io/home/tags/streaming/</loc>
+         <lastmod>2026-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://CU-ESIIL.github.io/home/tags/training/</loc>
+         <lastmod>2026-06-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://CU-ESIIL.github.io/home/tags/tutorials/</loc>
          <lastmod>2026-06-16</lastmod>
          <changefreq>daily</changefreq>
     </url>

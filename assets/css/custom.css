@@ -1113,6 +1113,22 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   margin-top: auto;
 }
 
+.oasis-project-card__repo {
+  display: inline-flex;
+  align-items: center;
+  color: var(--oasis-text-muted);
+  font-size: 0.92rem;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.oasis-project-card__repo:is(:hover, :focus-visible) {
+  color: var(--oasis-green-deep);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .oasis-project-card:is(:hover, :focus-visible) .oasis-project-card__cta span:last-child,
 .oasis-research-card:is(:hover, :focus-visible) .oasis-research-card__link span:last-child,
 .oasis-event-card:is(:hover, :focus-visible) .oasis-event-card__link span:last-child {
@@ -1306,6 +1322,41 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   box-shadow: 0 8px 18px rgba(35, 74, 101, 0.05);
 }
 
+.oasis-ai-team-science__item:is(a) {
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.oasis-ai-team-science__item:is(a):is(:hover, :focus-visible) {
+  border-color: rgba(0, 113, 53, 0.28);
+  box-shadow: 0 18px 36px rgba(35, 74, 101, 0.12);
+  transform: translateY(-3px);
+}
+
+.oasis-ai-team-science__item--example {
+  display: flex;
+  flex-direction: column;
+}
+
+.oasis-ai-team-science__item--lead {
+  grid-column: span 2;
+}
+
+.oasis-ai-team-science__meta {
+  margin: 0 0 0.55rem;
+  color: var(--oasis-green-deep);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .oasis-ai-team-science__item h3 {
   margin: 0;
   color: var(--oasis-blue-deep);
@@ -1322,6 +1373,11 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   line-height: 1.55;
 }
 
+.oasis-ai-team-science__item .oasis-project-card__cta {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 .oasis-home-template body[data-md-color-scheme="slate"] .oasis-ai-team-science {
   background:
     radial-gradient(circle at 18% 18%, rgba(115, 215, 235, 0.09), transparent 26%),
@@ -1334,6 +1390,25 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
     rgba(21, 33, 43, 0.82);
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-ai-team-science__item:is(a):is(:hover, :focus-visible) {
+  border-color: rgba(143, 221, 240, 0.32);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-ai-team-science__meta {
+  color: var(--oasis-green-light);
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-project-card__repo,
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-project-card__repo {
+  color: rgba(234, 244, 245, 0.68);
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-project-card__repo:is(:hover, :focus-visible),
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-project-card__repo:is(:hover, :focus-visible) {
+  color: var(--oasis-green-light);
 }
 
 .oasis-footer-band {
@@ -1723,6 +1798,10 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   .oasis-ai-team-science__grid,
   .oasis-research-wall {
     grid-template-columns: 1fr;
+  }
+
+  .oasis-ai-team-science__item--lead {
+    grid-column: span 1;
   }
 
   .oasis-footer-band__institutional-logos {
