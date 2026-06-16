@@ -299,7 +299,7 @@
 }
 
 .oasis-interlude--data-insight .oasis-interlude__frame {
-  transform: translateY(-68%);
+  transform: translateY(+78%);
 }
 
 .oasis-interlude--tech .oasis-interlude__frame {
@@ -307,7 +307,7 @@
 }
 
 .oasis-interlude--ecology .oasis-interlude__frame {
-  transform: translateY(-26%);
+  transform: translateY(-16%);
 }
 
 .oasis-interlude + .oasis-band,
