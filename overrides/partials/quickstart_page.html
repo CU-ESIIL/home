@@ -1,0 +1,140 @@
+{% set sections = [
+  {
+    "eyebrow": "Start Here",
+    "title": "First OASIS moves",
+    "description": "Orient yourself, choose the right infrastructure path, and learn the collaboration habits that keep work durable.",
+    "items": [
+      {
+        "title": "Cloud Container",
+        "url": base_url ~ "/cloud-container/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/container-library-button.png",
+        "meta": "Compute",
+        "description": "A polished entry point for launching and understanding cloud/container workflows."
+      },
+      {
+        "title": "Cloud Reproducibility Triangle",
+        "url": base_url ~ "/quickstart/cloud/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/quickstart-button.png",
+        "meta": "Guide",
+        "description": "Connect GitHub, ephemeral compute, and persistent storage into a durable workflow."
+      },
+      {
+        "title": "Starting with CyVerse",
+        "url": base_url ~ "/quickstart/cyverse/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/cyverse-utils-button.jpeg",
+        "meta": "Cloud",
+        "description": "Get oriented to CyVerse services and OASIS cloud collaboration patterns."
+      },
+      {
+        "title": "Starting with GitHub",
+        "url": base_url ~ "/quickstart/github/",
+        "image": base_url ~ "/assets/thumbnails/active/templates/base-github-pages-template-button.jpeg",
+        "meta": "Collaboration",
+        "description": "Use GitHub as a shared lab notebook, code home, and publishing surface."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Analysis Foundations",
+    "title": "Languages, containers, and libraries",
+    "description": "Reusable entry points for common OASIS analysis and infrastructure workflows.",
+    "items": [
+      {
+        "title": "Starting with R",
+        "url": base_url ~ "/quickstart/r/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/analytics-library-button.png",
+        "meta": "Analysis",
+        "description": "Begin environmental analysis workflows in R."
+      },
+      {
+        "title": "Data Exploration in the Cloud",
+        "url": base_url ~ "/quickstart/python/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/data-library-button.png",
+        "meta": "Python",
+        "description": "Use Python-centered notebooks and cloud environments for exploration."
+      },
+      {
+        "title": "Starting Docker Container",
+        "url": base_url ~ "/quickstart/docker/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/container-library-button.png",
+        "meta": "Containers",
+        "description": "Learn the container concepts that help OASIS workflows travel cleanly."
+      },
+      {
+        "title": "Starting with OASIS",
+        "url": base_url ~ "/quickstart/oasis/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/quickstart-button.png",
+        "meta": "Orientation",
+        "description": "Understand how OASIS connects people, data, tools, and project sites."
+      }
+    ]
+  },
+  {
+    "eyebrow": "External Ecosystem",
+    "title": "Companion resources",
+    "description": "These links intentionally leave the home repository and open companion ESIIL sites.",
+    "items": [
+      {
+        "title": "Data Library",
+        "url": "https://cu-esiil.github.io/data-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/data-library-button.png",
+        "meta": "External Site",
+        "description": "Discover curated datasets and shared access pathways."
+      },
+      {
+        "title": "Analytics Library",
+        "url": "https://cu-esiil.github.io/analytics-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/analytics-library-button.png",
+        "meta": "External Site",
+        "description": "Reusable workflows, functions, and environmental analytics methods."
+      },
+      {
+        "title": "Container Image Library",
+        "url": base_url ~ "/container-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/container-library-button.png",
+        "meta": "Library",
+        "description": "OASIS container documentation and examples."
+      },
+      {
+        "title": "Advanced Textbook",
+        "url": base_url ~ "/quickstart/advanced-textbook/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/advanced-textbook-button.jpeg",
+        "meta": "Reference",
+        "description": "Longer-form training material for deeper study."
+      }
+    ]
+  }
+] %}
+
+<div class="oasis-section-page__sections">
+  {% for section in sections %}
+    <section class="oasis-gallery-section" data-reveal>
+      <div class="oasis-section-heading">
+        <div class="oasis-section-heading__copy">
+          <p class="oasis-section-heading__eyebrow">{{ section.eyebrow }}</p>
+          <h2>{{ section.title }}</h2>
+          <p>{{ section.description }}</p>
+        </div>
+      </div>
+
+      <div class="oasis-gallery-grid">
+        {% for item in section["items"] %}
+          <a class="oasis-project-card" href="{{ item.url }}" {% if item.url.startswith("http") %}target="_blank" rel="noopener"{% endif %} data-reveal>
+            <div class="oasis-project-card__media">
+              <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
+            </div>
+            <div class="oasis-project-card__body">
+              <p class="oasis-project-card__meta">{{ item.meta }}</p>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+              <span class="oasis-project-card__cta">
+                <span>Open Guide</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

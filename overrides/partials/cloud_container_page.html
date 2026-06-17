@@ -1,0 +1,105 @@
+{% set sections = [
+  {
+    "eyebrow": "Current Launch Path",
+    "title": "Cloud workflows that do not live only on the instance",
+    "description": "OASIS cloud work is organized around durable code, temporary compute, and persistent data storage.",
+    "items": [
+      {
+        "title": "Cloud Reproducibility Triangle",
+        "url": base_url ~ "/quickstart/cloud/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/quickstart-button.png",
+        "meta": "Core Guide",
+        "description": "The detailed guide for connecting GitHub, ephemeral compute, and persistent storage."
+      },
+      {
+        "title": "Container Library",
+        "url": base_url ~ "/container-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/container-library-button.png",
+        "meta": "Documentation",
+        "description": "Container documentation and examples for reusable OASIS compute environments."
+      },
+      {
+        "title": "Docker Hub Library",
+        "url": "https://hub.docker.com/u/esiil",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/container-library-button.png",
+        "meta": "Registry",
+        "description": "Published ESIIL container images and reusable compute environments."
+      },
+      {
+        "title": "Starting Docker Container",
+        "url": base_url ~ "/quickstart/docker/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/container-library-button.png",
+        "meta": "Quickstart",
+        "description": "A practical introduction to container concepts for OASIS workflows."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Cloud Collaboration",
+    "title": "The pieces that make cloud work durable",
+    "description": "Use these supporting guides when the work needs to move between people, infrastructure, and persistent storage.",
+    "items": [
+      {
+        "title": "Starting with GitHub",
+        "url": base_url ~ "/quickstart/github/",
+        "image": base_url ~ "/assets/thumbnails/active/templates/base-github-pages-template-button.jpeg",
+        "meta": "Code",
+        "description": "Keep scripts, notebooks, documentation, and websites versioned and shareable."
+      },
+      {
+        "title": "Starting with CyVerse",
+        "url": base_url ~ "/quickstart/cyverse/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/cyverse-utils-button.jpeg",
+        "meta": "Cloud",
+        "description": "Use CyVerse services as part of the OASIS cloud collaboration pattern."
+      },
+      {
+        "title": "Data Library",
+        "url": "https://cu-esiil.github.io/data-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/data-library-button.png",
+        "meta": "External Site",
+        "description": "Find curated datasets and shared data access pathways."
+      },
+      {
+        "title": "Analytics Library",
+        "url": "https://cu-esiil.github.io/analytics-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/analytics-library-button.png",
+        "meta": "External Site",
+        "description": "Bring reusable methods and analytics workflows into cloud environments."
+      }
+    ]
+  }
+] %}
+
+<div class="oasis-section-page__sections">
+  {% for section in sections %}
+    <section class="oasis-gallery-section" data-reveal>
+      <div class="oasis-section-heading">
+        <div class="oasis-section-heading__copy">
+          <p class="oasis-section-heading__eyebrow">{{ section.eyebrow }}</p>
+          <h2>{{ section.title }}</h2>
+          <p>{{ section.description }}</p>
+        </div>
+      </div>
+
+      <div class="oasis-gallery-grid">
+        {% for item in section["items"] %}
+          <a class="oasis-project-card" href="{{ item.url }}" {% if item.url.startswith("http") %}target="_blank" rel="noopener"{% endif %} data-reveal>
+            <div class="oasis-project-card__media">
+              <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
+            </div>
+            <div class="oasis-project-card__body">
+              <p class="oasis-project-card__meta">{{ item.meta }}</p>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+              <span class="oasis-project-card__cta">
+                <span>Open Resource</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
