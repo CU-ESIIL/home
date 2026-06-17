@@ -6,6 +6,8 @@ hide:
 
 # development
 
+- [OASIS Website QC Report](../dev/oasis-qc-report.md)  
+  <small>2026-06-16</small>
 - [pending-tasks](../pending-tasks.md)  
   <small>2026-04-21</small>
 - [Button Image Guidelines](../button-image-guidelines.md)  

@@ -27,6 +27,7 @@ nav:
       - Forest Carbon Codefest 2024: event-groups/forest-carbon-codefest-2024.md
       - Hackathon 2023: event-groups/hackathon-2023.md
   - Quickstart: quickstart/index.md
+  - Cloud Container: cloud-container/index.md
   - Container Library: container-library/index.md
   - Resources: resources/index.md
   - Development Schedule: dev-schedule.md

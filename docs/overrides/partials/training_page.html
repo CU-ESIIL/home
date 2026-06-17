@@ -1,0 +1,140 @@
+{% set sections = [
+  {
+    "eyebrow": "Start Here",
+    "title": "Training orientation",
+    "description": "The shortest path into the core documents people need before and during technical training.",
+    "items": [
+      {
+        "title": "Quick Start",
+        "url": base_url ~ "/quickstart/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/quickstart-button.png",
+        "meta": "Onboarding",
+        "description": "First-path orientation for OASIS tools, workflows, and companion resources."
+      },
+      {
+        "title": "ESIIL Training Overview",
+        "url": base_url ~ "/resources/esiil_training/",
+        "image": base_url ~ "/assets/thumbnails/active/templates/education-oasis-template-button.jpeg",
+        "meta": "Overview",
+        "description": "Program-level framing for training sessions, outcomes, and support."
+      },
+      {
+        "title": "Cloud Quickstart",
+        "url": base_url ~ "/quickstart/cloud/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/container-library-button.png",
+        "meta": "Cloud",
+        "description": "GitHub, cloud compute, and persistent storage as one reproducible routine."
+      },
+      {
+        "title": "CyVerse Quickstart",
+        "url": base_url ~ "/quickstart/cyverse/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/cyverse-utils-button.jpeg",
+        "meta": "CyVerse",
+        "description": "Practical entry into CyVerse-backed OASIS workflows."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Train-the-Trainer Materials",
+    "title": "Reusable training sessions",
+    "description": "Structured materials that trainers can reuse, adapt, and connect to live cohort work.",
+    "items": [
+      {
+        "title": "Training One",
+        "url": base_url ~ "/trainings/training_one/",
+        "image": base_url ~ "/assets/thumbnails/active/templates/education-oasis-template-button.jpeg",
+        "meta": "Session",
+        "description": "First guided technical training module."
+      },
+      {
+        "title": "Training Two",
+        "url": base_url ~ "/trainings/training_two/",
+        "image": base_url ~ "/assets/thumbnails/active/templates/education-oasis-template-button.jpeg",
+        "meta": "Session",
+        "description": "Second guided technical training module."
+      },
+      {
+        "title": "Training Three",
+        "url": base_url ~ "/trainings/training_three/",
+        "image": base_url ~ "/assets/thumbnails/active/templates/education-oasis-template-button.jpeg",
+        "meta": "Session",
+        "description": "Third guided technical training module."
+      },
+      {
+        "title": "Pre-summit Training Notes",
+        "url": base_url ~ "/trainings/training_2_code/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/analytics-library-button.png",
+        "meta": "Notes",
+        "description": "Pre-summit technical notes and supporting code context."
+      }
+    ]
+  },
+  {
+    "eyebrow": "Companion Infrastructure",
+    "title": "Training support resources",
+    "description": "External and internal infrastructure that learners commonly need during OASIS trainings.",
+    "items": [
+      {
+        "title": "Data Library",
+        "url": "https://cu-esiil.github.io/data-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/data-library-button.png",
+        "meta": "External Site",
+        "description": "Dataset discovery and access pathways for environmental science training."
+      },
+      {
+        "title": "Analytics Library",
+        "url": "https://cu-esiil.github.io/analytics-library/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/analytics-library-button.png",
+        "meta": "External Site",
+        "description": "Reusable analytics workflows and methods."
+      },
+      {
+        "title": "How to Contribute",
+        "url": "https://cu-esiil.github.io/how_to_contribute/",
+        "image": base_url ~ "/assets/thumbnails/active/infrastructure/quickstart-button.png",
+        "meta": "External Site",
+        "description": "Contribution guidance for data, code, documentation, and project resources."
+      },
+      {
+        "title": "GitHub Quickstart",
+        "url": base_url ~ "/quickstart/github/",
+        "image": base_url ~ "/assets/thumbnails/active/templates/base-github-pages-template-button.jpeg",
+        "meta": "Collaboration",
+        "description": "GitHub basics for shared scientific workflows."
+      }
+    ]
+  }
+] %}
+
+<div class="oasis-section-page__sections">
+  {% for section in sections %}
+    <section class="oasis-gallery-section" data-reveal>
+      <div class="oasis-section-heading">
+        <div class="oasis-section-heading__copy">
+          <p class="oasis-section-heading__eyebrow">{{ section.eyebrow }}</p>
+          <h2>{{ section.title }}</h2>
+          <p>{{ section.description }}</p>
+        </div>
+      </div>
+
+      <div class="oasis-gallery-grid">
+        {% for item in section["items"] %}
+          <a class="oasis-project-card" href="{{ item.url }}" {% if item.url.startswith("http") %}target="_blank" rel="noopener"{% endif %} data-reveal>
+            <div class="oasis-project-card__media">
+              <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async" />
+            </div>
+            <div class="oasis-project-card__body">
+              <p class="oasis-project-card__meta">{{ item.meta }}</p>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+              <span class="oasis-project-card__cta">
+                <span>Open Resource</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

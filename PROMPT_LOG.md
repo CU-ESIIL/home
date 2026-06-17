@@ -696,3 +696,29 @@ homepage sections.
   `ty_test_trainer`, and `Summit_group_2026_*` from Cohort 3 working groups as
   directed; Hermes and OpenClaw were added as AI infrastructure registry entries
   instead.
+
+## 2026-06-16
+
+- Goal: modernize the local pages linked from the homepage's first-row action
+  buttons so they match the redesigned OASIS homepage instead of older
+  documentation/list styling.
+- Context reviewed: homepage hero quicklinks, existing Quick Start, Technical
+  Training, Cloud Reproducibility Triangle, infrastructure gallery partial,
+  section-gallery template, active thumbnail assets, MkDocs navigation, and
+  Playwright homepage checks.
+- Files changed: `docs/quickstart/index.md`, `docs/trainings/index.md`,
+  `docs/cloud-container/index.md`, `docs/overrides/partials/quickstart_page.html`,
+  `docs/overrides/partials/training_page.html`,
+  `docs/overrides/partials/cloud_container_page.html`,
+  `docs/overrides/partials/hero.html`,
+  `docs/overrides/partials/directory/infrastructure_page.html`, `mkdocs.yml`,
+  `tests/homepage.spec.ts`, generated tag pages, and `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python scripts/check_front_matter.py`,
+  `./.venv/bin/python scripts/generate_tags.py`,
+  `./.venv/bin/python -m mkdocs build --strict`, and `npx playwright test`.
+  Playwright passed all 7 tests after rerunning with permission to bind its
+  local web server.
+- Follow-up / unresolved: Data Library, Analytics Library, and How to
+  Contribute remain external repo sites and were intentionally not restyled in
+  this repository. The new Cloud Container landing page keeps the detailed
+  Cloud Reproducibility Triangle guide intact at `docs/quickstart/cloud.md`.

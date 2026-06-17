@@ -28,6 +28,24 @@ const galleryRoutes = [
   },
 ] as const;
 
+const heroInternalRoutes = [
+  {
+    cta: /quick start/i,
+    heading: /quick start/i,
+    path: "/quickstart/",
+  },
+  {
+    cta: /i'm here for a training/i,
+    heading: /technical training/i,
+    path: "/trainings/",
+  },
+  {
+    cta: /cloud container/i,
+    heading: /cloud container/i,
+    path: "/cloud-container/",
+  },
+] as const;
+
 function isSkippableHref(href: string): boolean {
   return (
     href.startsWith("mailto:") ||
@@ -158,7 +176,7 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
   await expect(
     page.getByRole("heading", {
       level: 1,
-      name: /environmental science beyond the laptop/i,
+      name: /open analysis and synthesis infrastructure for science/i,
     }),
   ).toBeVisible();
 
@@ -217,7 +235,7 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
     heroQuicklinks.getByRole("link", { name: /cloud container/i }),
   ).toHaveAttribute(
     "href",
-    /\/quickstart\/cloud\/$/,
+    /\/cloud-container\/$/,
   );
   await expect(
     heroQuicklinks.getByRole("link", { name: /how to contribute/i }),
@@ -239,6 +257,22 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
   await expect(aiExampleCards.nth(2).getByRole("heading", { level: 3 })).toHaveText(
     "Hermes Container",
   );
+});
+
+test("first-row internal hero buttons land on modern gallery pages", async ({ page }) => {
+  for (const route of heroInternalRoutes) {
+    await page.goto("/");
+    await expect(page.locator(".oasis-homepage")).toBeVisible();
+
+    await page.locator(".oasis-home__hero-quicklinks").getByRole("link", { name: route.cta }).click();
+
+    await expect(page).toHaveURL(new RegExp(`${route.path.replace(/\//g, "\\/")}$`));
+    await expect(page.locator(".oasis-section-page")).toBeVisible();
+    await expect(page.locator(".oasis-section-page__hero")).toBeVisible();
+    await expect(page.locator(".oasis-section-page__sections")).toBeVisible();
+    await expect(page.locator(".oasis-project-card").first()).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1, name: route.heading })).toBeVisible();
+  }
 });
 
 test("theme toggle switches to dark mode without restoring the repo badge", async ({ page }) => {
@@ -272,7 +306,7 @@ test("homepage stays within the viewport on small screens", async ({ page }) => 
   await expect(
     page.getByRole("heading", {
       level: 1,
-      name: /environmental science beyond the laptop/i,
+      name: /open analysis and synthesis infrastructure for science/i,
     }),
   ).toBeVisible();
 
@@ -300,7 +334,7 @@ test("homepage band links open dedicated gallery pages and browser back returns 
     await expect(
       page.getByRole("heading", {
         level: 1,
-        name: /environmental science beyond the laptop/i,
+        name: /open analysis and synthesis infrastructure for science/i,
       }),
     ).toBeVisible();
   }
@@ -331,6 +365,9 @@ test("homepage and gallery links stay healthy", async ({ page, request }) => {
 
   const routes = [
     "/",
+    "/quickstart/",
+    "/trainings/",
+    "/cloud-container/",
     "/directory/",
     "/directory/working-groups/",
     "/directory/event-groups/",

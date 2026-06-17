@@ -7,6 +7,7 @@ hide:
 # Tags
 
 - [analytics](analytics.md)
+- [architecture](architecture.md)
 - [cloud](cloud.md)
 - [collaboration](collaboration.md)
 - [container](container.md)
@@ -22,6 +23,7 @@ hide:
 - [GDAL](gdal.md)
 - [oasis](oasis.md)
 - [onboarding](onboarding.md)
+- [qc](qc.md)
 - [quickstart](quickstart.md)
 - [R](R.md)
 - [raster](raster.md)

@@ -6,6 +6,8 @@ hide:
 
 # cloud
 
+- [Cloud Container](../cloud-container/index.md)  
+  <small>2026-06-16</small>
 - [Streaming Data in the Cloud with GDAL, VSI, and STAC](../resources/cyverse_stream_data.md)  
   <small>2024-01-01</small>
 - [Connecting CyVerse to GitHub](../quickstart/cyverse.md)  
