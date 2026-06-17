@@ -740,3 +740,14 @@ homepage sections.
 - Follow-up / unresolved: Preview iframes depend on destination sites allowing
   embedding. The current CU-ESIIL GitHub Pages event-group sites are expected
   to work with this pattern.
+
+## 2026-06-17
+
+- Goal: update the homepage working-groups feature row to highlight four
+  requested projects in a specific order.
+- Context reviewed: homepage working-group partial and full working-groups
+  directory metadata for URLs, descriptions, and active thumbnail paths.
+- Files changed: `docs/overrides/partials/working_groups.html` and
+  `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python -m mkdocs build --strict`.
+- Follow-up / unresolved: None.
