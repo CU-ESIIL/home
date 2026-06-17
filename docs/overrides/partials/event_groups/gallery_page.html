@@ -10,7 +10,18 @@
 
     <div class="oasis-gallery-grid oasis-gallery-grid--event-groups">
       {% for group in page.meta.groups %}
-        <article class="oasis-project-card" data-reveal>
+        <article class="oasis-project-card oasis-project-card--site-preview" data-reveal>
+          {% if group.site %}
+            <a class="oasis-project-card__preview" href="{{ group.site }}" target="_blank" rel="noopener" aria-label="Open {{ group.title }} site preview">
+              <iframe
+                src="{{ group.site }}"
+                title="{{ group.title }} site preview"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                tabindex="-1"
+              ></iframe>
+            </a>
+          {% endif %}
           <div class="oasis-project-card__body">
             <p class="oasis-project-card__meta">{{ page.meta.group_meta | default("Team Site") }}</p>
             <h3>{{ group.title }}</h3>

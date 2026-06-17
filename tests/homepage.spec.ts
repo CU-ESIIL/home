@@ -203,8 +203,9 @@ test("homepage renders the custom OASIS layout", async ({ page }) => {
     page.locator(".oasis-home__hero + .oasis-stats-band + #working-groups-section"),
   ).toHaveCount(1);
   await expect(
-    page.locator("#events-summits-section + .oasis-interlude--data-insight + #infrastructure-libraries-section"),
+    page.locator("#events-summits-section + #infrastructure-libraries-section"),
   ).toHaveCount(1);
+  await expect(page.locator(".oasis-interlude")).toHaveCount(0);
   await expect(
     page.locator("#infrastructure-libraries-section + #ai-team-science-section"),
   ).toHaveCount(1);
@@ -358,6 +359,23 @@ test("gallery pages keep history intact through the directory hub", async ({ pag
   await page.goBack();
   await expect(page).toHaveURL(/\/$/);
   await expect(page.locator(".oasis-homepage")).toBeVisible();
+});
+
+test("event group galleries render live site previews", async ({ page }) => {
+  await page.goto("/event-groups/innovation-summit-2026/");
+
+  await expect(page.locator(".oasis-section-page")).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /innovation summit 2026 group sites/i })).toBeVisible();
+
+  const previewCards = page.locator(".oasis-project-card--site-preview");
+  await expect(previewCards).toHaveCount(20);
+  await expect(previewCards.first().locator(".oasis-project-card__preview iframe")).toHaveAttribute(
+    "src",
+    "https://cu-esiil.github.io/Summit_group_2026_1/",
+  );
+  await expect(
+    previewCards.first().locator(".oasis-project-card__actions").getByRole("link", { name: "Site", exact: true }),
+  ).toHaveAttribute("href", "https://cu-esiil.github.io/Summit_group_2026_1/");
 });
 
 test("homepage and gallery links stay healthy", async ({ page, request }) => {

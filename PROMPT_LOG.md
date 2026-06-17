@@ -722,3 +722,21 @@ homepage sections.
   Contribute remain external repo sites and were intentionally not restyled in
   this repository. The new Cloud Container landing page keeps the detailed
   Cloud Reproducibility Triangle guide intact at `docs/quickstart/cloud.md`.
+
+## 2026-06-17
+
+- Goal: make event-group gallery cards behave more like the Project Group OASIS
+  summit gallery by showing live website previews inside the buttons/cards.
+- Context reviewed: Project Group OASIS gallery example, event group directory
+  and gallery partials, event group markdown metadata, homepage/gallery CSS, and
+  Playwright homepage checks.
+- Files changed: `docs/overrides/partials/event_groups/gallery_page.html`,
+  `docs/assets/css/custom.css`, `tests/homepage.spec.ts`, and
+  `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python -m mkdocs build --strict`
+  successfully. `npx playwright test` was attempted, but the local Playwright
+  web server was blocked by sandbox port permissions and the escalated rerun
+  was blocked by the app approval/usage limit.
+- Follow-up / unresolved: Preview iframes depend on destination sites allowing
+  embedding. The current CU-ESIIL GitHub Pages event-group sites are expected
+  to work with this pattern.
