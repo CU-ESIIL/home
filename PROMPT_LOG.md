@@ -751,3 +751,20 @@ homepage sections.
   `PROMPT_LOG.md`.
 - Validation: Ran `./.venv/bin/python -m mkdocs build --strict`.
 - Follow-up / unresolved: None.
+
+## 2026-06-23
+
+- Goal: reconstruct the archived development schedule and Gantt chart so the
+  visible timeline reflects the full repo history instead of implying long
+  periods of inactivity.
+- Context reviewed: `docs/dev-schedule.md`, `docs/upcoming_tasks.yaml`,
+  `scripts/update_dev_schedule.py`, `PROMPT_LOG.md`, and the git commit history
+  from the initial February 2025 scaffold through June 2026 homepage, graph,
+  gallery, CI, and verification work.
+- Files changed: `docs/upcoming_tasks.yaml`, `docs/dev-schedule.md`, and
+  `PROMPT_LOG.md`.
+- Validation: Regenerated the Mermaid Gantt block with
+  `./.venv/bin/python scripts/update_dev_schedule.py` and ran
+  `./.venv/bin/python -m mkdocs build --strict`.
+- Follow-up / unresolved: `docs/gantt_chart.png` remains a legacy static image
+  and is not the rendered source for the current Mermaid timeline.
