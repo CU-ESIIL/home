@@ -347,22 +347,22 @@ projects.
 
 ```mermaid
 gantt
-    title OASIS: From Infrastructure to Collective Intelligence
+    title OASIS From Infrastructure to Collective Intelligence
     dateFormat YYYY-MM-DD
     axisFormat %Y
-    section Foundation (Years 1-4)
+    section Foundation Years 1-4
     Templates, repositories, websites          :done, f1, 2023-01-01, 2026-01-01
     Working groups and events                  :done, f2, 2023-01-01, 2026-01-01
     AI and cloud infrastructure                :done, f3, 2024-01-01, 2026-01-01
     section CONNECT
-    Capture Activity: automatic onboarding     :a1, 2027-01-01, 2027-12-31
-    Connect Knowledge: projects, methods, datasets, people, events :a2, 2028-01-01, 2028-12-31
+    Capture activity and automatic onboarding     :a1, 2027-01-01, 2027-12-31
+    Connect knowledge across projects methods datasets people and events :a2, 2028-01-01, 2028-12-31
     section REMEMBER
-    Preserve Memory: summaries and lessons learned :b1, 2029-01-01, 2029-12-31
-    Enable Reuse: reusable templates and workflows :b2, 2030-01-01, 2030-12-31
+    Preserve memory through summaries and lessons learned :b1, 2029-01-01, 2029-12-31
+    Enable reuse through templates and workflows :b2, 2030-01-01, 2030-12-31
     section COMPOUND
-    Integrate Communication: research, websites, documentation :c1, 2031-01-01, 2031-12-31
-    Compound Knowledge: automated synthesis and recommendations :c2, 2032-01-01, 2032-12-31
+    Integrate communication across research websites and documentation :c1, 2031-01-01, 2031-12-31
+    Compound knowledge through synthesis and recommendations :c2, 2032-01-01, 2032-12-31
     section Strategic Outcomes
     Every activity enters OASIS                :milestone, m1, 2027-12-31, 0d
     Knowledge becomes connected                :milestone, m2, 2028-12-31, 0d

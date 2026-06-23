@@ -795,3 +795,16 @@ homepage sections.
 - Validation: Ran `./.venv/bin/python -m mkdocs build --strict`.
 - Follow-up / unresolved: The page still keeps the long historical Markdown
   content as the source of truth so future schedule updates remain simple.
+
+## 2026-06-23
+
+- Goal: repair a browser-side Mermaid parse error on the Development Schedule
+  page.
+- Context reviewed: the current `docs/dev-schedule.md` Mermaid blocks and the
+  screenshot showing Mermaid 10.7.0 syntax failure.
+- Files changed: `docs/dev-schedule.md` and `PROMPT_LOG.md`.
+- Validation: Removed Mermaid-unsafe colons from future-roadmap Gantt labels
+  and ran `./.venv/bin/python -m mkdocs build --strict`.
+- Follow-up / unresolved: MkDocs strict builds do not validate Mermaid browser
+  parsing, so future Gantt labels should avoid colon-delimited prose before
+  the task metadata marker.
