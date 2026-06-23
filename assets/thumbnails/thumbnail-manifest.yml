@@ -749,10 +749,11 @@
   visual_summary: "Keep this one simpler and lighter than the main Docker demo."
 
 - id: resource-development-schedule
-  title: "Development Schedule"
+  title: "Development Schedule & Future Roadmap"
   category: "Other"
   target_url: "/dev-schedule/"
   source_pages:
+    - "docs/overrides/partials/infrastructure.html"
     - "docs/overrides/partials/directory/infrastructure_page.html"
   active_thumbnail: "docs/assets/thumbnails/active/infrastructure/analytics-library-button.png"
   original_thumbnail: "docs/assets/thumbnails/originals/infrastructure/analytics-library-button.png"
@@ -760,7 +761,7 @@
     set-001-originals: "docs/assets/thumbnails/sets/set-001-originals/infrastructure/analytics-library-button.png"
     set-002-generated: "docs/assets/thumbnails/sets/set-002-generated/infrastructure/analytics-library-button.png"
   description_source: "docs/dev-schedule.md; docs/overrides/partials/directory/infrastructure_page.html"
-  visual_summary: "This is a schedule/archive surface, not a live event calendar."
+  visual_summary: "This is a schedule/archive and future roadmap surface, not a live event calendar."
 
 - id: template-basic-oasis
   title: "Basic OASIS"

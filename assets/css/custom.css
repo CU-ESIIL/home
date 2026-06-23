@@ -747,6 +747,132 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
 }
 
+.oasis-dev-schedule__content {
+  display: block;
+  overflow: hidden;
+}
+
+.oasis-dev-schedule__content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.oasis-dev-schedule__content > *:first-child {
+  margin-top: 0;
+}
+
+.oasis-dev-schedule__content > *:last-child {
+  margin-bottom: 0;
+}
+
+.oasis-dev-schedule__content blockquote {
+  margin: 0 0 clamp(1.8rem, 3vw, 2.4rem);
+  padding: 1rem 1.25rem;
+  border-left: 0.35rem solid var(--oasis-green);
+  border-radius: 1rem;
+  background: rgba(0, 113, 53, 0.08);
+  color: var(--oasis-text);
+}
+
+.oasis-dev-schedule__content h2 {
+  margin-top: clamp(2.3rem, 4vw, 3.4rem);
+  color: var(--oasis-blue-deep);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+}
+
+.oasis-dev-schedule__content h3 {
+  margin-top: 1.8rem;
+  color: var(--oasis-green);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  letter-spacing: 0.01em;
+}
+
+.oasis-dev-schedule__content p,
+.oasis-dev-schedule__content li {
+  color: var(--oasis-text-soft);
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+
+.oasis-dev-schedule__content ul,
+.oasis-dev-schedule__content ol {
+  padding-left: 1.35rem;
+}
+
+.oasis-dev-schedule__content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: inset 0 0 0 1px rgba(35, 74, 101, 0.08);
+}
+
+.oasis-dev-schedule__content thead,
+.oasis-dev-schedule__content tbody,
+.oasis-dev-schedule__content tr {
+  width: 100%;
+}
+
+.oasis-dev-schedule__content th,
+.oasis-dev-schedule__content td {
+  min-width: 10rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(35, 74, 101, 0.1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.oasis-dev-schedule__content th {
+  color: var(--oasis-blue-deep);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.oasis-dev-schedule__content .mermaid {
+  margin: 1.5rem 0 2.5rem;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid rgba(35, 74, 101, 0.1);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.72);
+  overflow-x: auto;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+}
+
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content blockquote {
+  border-left-color: var(--oasis-accent-blue);
+  background: rgba(66, 188, 220, 0.08);
+  color: rgba(241, 247, 245, 0.9);
+}
+
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content h2,
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content th {
+  color: rgba(235, 249, 252, 0.94);
+}
+
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content h3 {
+  color: var(--oasis-accent-blue);
+}
+
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content table,
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content .mermaid {
+  border-color: rgba(143, 221, 240, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content th,
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-dev-schedule__content td {
+  border-bottom-color: rgba(143, 221, 240, 0.12);
+}
+
 .oasis-gallery-card--placeholder .oasis-project-card__body {
   justify-content: center;
   min-height: 100%;
