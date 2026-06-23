@@ -768,3 +768,30 @@ homepage sections.
   `./.venv/bin/python -m mkdocs build --strict`.
 - Follow-up / unresolved: `docs/gantt_chart.png` remains a legacy static image
   and is not the rendered source for the current Mermaid timeline.
+
+## 2026-06-23
+
+- Goal: make the development schedule and future roadmap easier to find from
+  the OASIS tools/infrastructure surfaces.
+- Context reviewed: `mkdocs.yml`, `docs/dev-schedule.md`, homepage
+  infrastructure partial, infrastructure gallery partial, thumbnail index, and
+  thumbnail manifest.
+- Files changed: `docs/overrides/partials/infrastructure.html`,
+  `docs/overrides/partials/directory/infrastructure_page.html`,
+  `docs/thumbnail-system/project-thumbnail-index.md`,
+  `docs/assets/thumbnails/thumbnail-manifest.yml`, and `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python -m mkdocs build --strict`.
+- Follow-up / unresolved: The card currently reuses the analytics-library
+  thumbnail until a dedicated roadmap/timeline thumbnail is generated.
+
+## 2026-06-23
+
+- Goal: restyle the Development Schedule page so it feels like the current
+  OASIS section/gallery pages instead of the legacy default Markdown view.
+- Context reviewed: section-gallery template, shared main override, current
+  development schedule content, and homepage/section CSS.
+- Files changed: `docs/overrides/dev-schedule.html`, `docs/dev-schedule.md`,
+  `docs/assets/css/custom.css`, and `PROMPT_LOG.md`.
+- Validation: Ran `./.venv/bin/python -m mkdocs build --strict`.
+- Follow-up / unresolved: The page still keeps the long historical Markdown
+  content as the source of truth so future schedule updates remain simple.

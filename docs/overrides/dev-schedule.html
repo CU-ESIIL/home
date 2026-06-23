@@ -1,0 +1,45 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    document.documentElement.classList.add("oasis-section-template");
+    document.documentElement.classList.remove("oasis-home-template");
+  </script>
+{% endblock %}
+
+{% block content %}
+  <div
+    class="oasis-section-page oasis-section-page--{{ page.meta.surface | default('mist') }} oasis-dev-schedule"
+    data-oasis-surface="section"
+  >
+    <div class="oasis-shell oasis-section-page__shell">
+      <section class="oasis-section-page__hero" data-reveal>
+        <div class="oasis-section-page__hero-copy">
+          <p class="oasis-section-page__eyebrow">
+            {{ page.meta.eyebrow | default("Development Record") }}
+          </p>
+          <h1>{{ page.meta.title | default(page.title) }}</h1>
+          {% if page.meta.description %}
+            <p class="oasis-section-page__lede">{{ page.meta.description }}</p>
+          {% endif %}
+        </div>
+
+        <div class="oasis-section-page__actions">
+          <a class="oasis-button oasis-button--ghost" href="{{ base_url }}/">
+            <span>Back Home</span>
+            <span class="oasis-button__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="oasis-button oasis-button--ghost" href="{{ base_url }}/directory/infrastructure/">
+            <span>Infrastructure</span>
+            <span class="oasis-button__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="oasis-gallery-section oasis-dev-schedule__content" data-reveal>
+        {{ page.content }}
+      </section>
+    </div>
+  </div>
+{% endblock %}

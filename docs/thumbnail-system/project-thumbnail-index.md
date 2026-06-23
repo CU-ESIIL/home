@@ -56,14 +56,14 @@ All legacy source thumbnails remain preserved under `docs/assets/homepage/`. The
 - Suggested motifs: modular blocks, tools, linked repositories, documentation frames
 - Avoid: server-rack clichés, glossy SaaS dashboard tiles
 
-## Development Schedule
+## Development Schedule & Future Roadmap
 - Category: Other
-- Source page: docs/overrides/partials/directory/infrastructure_page.html
+- Source page: docs/overrides/partials/infrastructure.html; docs/overrides/partials/directory/infrastructure_page.html
 - Target URL: /dev-schedule/
 - Current thumbnail: docs/assets/homepage/infrastructure/analytics-library-button.jpeg
 - Current thumbnail set path: docs/assets/thumbnails/active/infrastructure/analytics-library-button.jpeg
-- One-sentence summary: Archived implementation planning and maintenance schedule for the home repository.
-- Expanded description: The Development Schedule page is a historical roadmap for the site rather than an active program dashboard. If it ever receives a dedicated thumbnail, it should read as planning, timeline, and repository stewardship.
+- One-sentence summary: Archived implementation planning, development timeline, and future roadmap for the home repository.
+- Expanded description: The Development Schedule page is a historical roadmap for the site rather than an active program dashboard. It includes the completed development Gantt chart plus a future roadmap Gantt chart for longer-range OASIS planning. If it ever receives a dedicated thumbnail, it should read as planning, timeline, and repository stewardship.
 - Visual generation notes: This is a schedule/archive surface, not a live event calendar.
 - Suggested motifs: gantt bars, timeline, roadmap markers, planning grid
 - Avoid: calendar app icon, sprint dashboard clichés

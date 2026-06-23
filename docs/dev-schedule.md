@@ -1,9 +1,14 @@
 ---
+title: Development Schedule
+description: Historical development record, completed Gantt timeline, and future OASIS roadmap.
+template: dev-schedule.html
+surface: mist
+eyebrow: Development Record
 tags: [development, schedule]
 date: 2026-04-21
+hide:
+  - toc
 ---
-
-# Development Schedule
 
 > Archive note: This page documents the 2025 OASIS launch roadmap and is kept
 > for historical context. Active prioritization should happen in GitHub issues
@@ -380,24 +385,3 @@ knowledge accumulates, remains accessible, and becomes increasingly useful with
 every new contribution. Success is achieved when each project lowers the
 barrier for the next project and when environmental science continuously learns
 from itself.
-
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-  }
-  tr:hover {
-    background-color: #f5f5f5;
-  }
-  .task-list li {
-    background: #f5f5f5;
-    border-radius: 8px;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    list-style: none;
-  }
-</style>
