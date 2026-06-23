@@ -1,35 +1,158 @@
 upcoming_tasks: []
 completed_tasks:
-  - title: "Add GitHub linking to tasks"
-    start: 2025-08-15
-    end: 2025-08-21
-  - title: "Automate Gantt chart updates"
+  - title: "Initial MkDocs site scaffold"
+    start: 2025-02-05
+    end: 2025-02-05
+  - title: "Homepage prototype, content tiles, and assets"
+    start: 2025-02-05
+    end: 2025-02-07
+  - title: "Google verification and early custom styling"
+    start: 2025-02-06
+    end: 2025-02-07
+  - title: "Chatbot widget and GitHub Pages deploy setup"
+    start: 2025-04-02
+    end: 2025-04-03
+  - title: "Homepage resource refresh and MTBS path fix"
+    start: 2025-08-01
+    end: 2025-08-13
+  - title: "Container library and quickstart landing"
+    start: 2025-08-13
+    end: 2025-08-13
+  - title: "Quickstart onboarding expansion"
+    start: 2025-08-13
+    end: 2025-08-13
+  - title: "Data Library tag system and guides"
+    start: 2025-08-13
+    end: 2025-08-13
+  - title: "Analytics and container library pages"
+    start: 2025-08-13
+    end: 2025-08-13
+  - title: "Homepage search, tabs, logo, and animated links"
+    start: 2025-08-13
+    end: 2025-08-13
+  - title: "Static tag system and generated tag pages"
+    start: 2025-08-14
+    end: 2025-08-15
+  - title: "Repository structure and development schedule docs"
+    start: 2025-08-14
+    end: 2025-08-14
+  - title: "Build, dependency, and tag-link fixes"
+    start: 2025-08-14
+    end: 2025-08-19
+  - title: "Analytics and data library mirroring"
+    start: 2025-08-18
+    end: 2025-08-18
+  - title: "Sidebar tag pages and external tag links"
+    start: 2025-08-19
+    end: 2025-08-19
+  - title: "Cloud Triangle lesson buildout"
     start: 2025-08-22
-    end: 2025-08-26
-  - title: "Interactive Cloud Triangle lesson"
+    end: 2025-08-29
+  - title: "Development schedule automation and requests"
     start: 2025-08-29
-    end: 2025-09-02
-  - title: "How to Contribute guide launch"
+    end: 2025-08-29
+  - title: "Cloud data exploration quickstart"
+    start: 2025-09-09
+    end: 2025-09-09
+  - title: "Task scheduling workflow"
     start: 2025-09-10
-    end: 2025-09-12
-  - title: "Data Library quickstart integration"
+    end: 2025-09-10
+  - title: "Contribute, Data Library, and Analytics links"
     start: 2025-09-12
-    end: 2025-09-12
-  - title: "Analytics Library quickstart integration"
-    start: 2025-09-12
-    end: 2025-09-12
-  - title: "Project Group OASIS hub refresh"
+    end: 2025-09-16
+  - title: "Contribute badge and Project Group hub refresh"
     start: 2025-09-15
     end: 2025-09-16
-  - title: "Homepage working group cohort refresh"
+  - title: "Resources landing, tag fixes, and summit links"
+    start: 2025-09-18
+    end: 2025-09-23
+  - title: "Brand CSS cleanup and prototype layers"
+    start: 2026-02-12
+    end: 2026-02-13
+  - title: "ESIIL style guide alignment"
+    start: 2026-02-13
+    end: 2026-02-13
+  - title: "Homepage hero, CTA, header, and sidebar polish"
+    start: 2026-02-13
+    end: 2026-02-13
+  - title: "Safari tinting and hero architecture"
+    start: 2026-02-18
+    end: 2026-02-18
+  - title: "Homepage layout guardrails"
+    start: 2026-02-18
+    end: 2026-02-18
+  - title: "Homepage curation and repo housekeeping"
+    start: 2026-04-13
+    end: 2026-04-21
+  - title: "Working group, research, events, and resources refresh"
     start: 2026-04-21
     end: 2026-04-21
-  - title: "Homepage research project section refresh"
+  - title: "Agent instructions and prompt log"
     start: 2026-04-21
     end: 2026-04-21
-  - title: "Homepage events and summits refresh"
+  - title: "Button image guidelines and image refresh"
     start: 2026-04-21
-    end: 2026-04-21
-  - title: "Homepage templates and resource links refresh"
-    start: 2026-04-21
-    end: 2026-04-21
+    end: 2026-04-23
+  - title: "Homepage redesign and restoration"
+    start: 2026-05-28
+    end: 2026-05-28
+  - title: "CI hardening and Playwright link checks"
+    start: 2026-05-28
+    end: 2026-05-28
+  - title: "Ecosystem directory gallery split"
+    start: 2026-05-28
+    end: 2026-05-28
+  - title: "Footer, header, dark mode, and logo repairs"
+    start: 2026-05-28
+    end: 2026-05-29
+  - title: "Thumbnail management system"
+    start: 2026-05-28
+    end: 2026-05-29
+  - title: "Hero, interlude, and banner visual pacing"
+    start: 2026-05-29
+    end: 2026-06-01
+  - title: "Panel-derived thumbnail set and crop repair"
+    start: 2026-05-29
+    end: 2026-05-29
+  - title: "Research card layout and hero refinements"
+    start: 2026-05-29
+    end: 2026-06-03
+  - title: "Organization metadata graph and Explore pages"
+    start: 2026-06-09
+    end: 2026-06-09
+  - title: "Event Groups homepage band and directory"
+    start: 2026-06-09
+    end: 2026-06-10
+  - title: "Graph CI and pytest harness fixes"
+    start: 2026-06-10
+    end: 2026-06-10
+  - title: "Agent metadata guidance"
+    start: 2026-06-15
+    end: 2026-06-15
+  - title: "Event Group gallery completion"
+    start: 2026-06-15
+    end: 2026-06-15
+  - title: "Homepage stats band"
+    start: 2026-06-15
+    end: 2026-06-15
+  - title: "Homepage narrative and AI section"
+    start: 2026-06-15
+    end: 2026-06-16
+  - title: "Future roadmap and section-gallery continuity"
+    start: 2026-06-15
+    end: 2026-06-16
+  - title: "QC report and repo hygiene"
+    start: 2026-06-16
+    end: 2026-06-16
+  - title: "Cohort 3 and AI infrastructure cards"
+    start: 2026-06-16
+    end: 2026-06-16
+  - title: "First-row destination page modernization"
+    start: 2026-06-16
+    end: 2026-06-17
+  - title: "Interlude disable, gallery previews, and card reorder"
+    start: 2026-06-17
+    end: 2026-06-17
+  - title: "Google verification refresh"
+    start: 2026-06-23
+    end: 2026-06-23
