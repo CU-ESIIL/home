@@ -28,6 +28,7 @@
     "description": "Collaborative research on extreme wildfire behavior and environmental change."
   }
 ] %}
+{% set working_group_guide_url = "https://cu-esiil.github.io/Working_group_OASIS/" %}
 
 <section class="oasis-band oasis-band--sage" id="working-groups-section">
   <div class="oasis-shell">
@@ -48,14 +49,18 @@
     </div>
 
     <div class="oasis-feature-row oasis-feature-row--groups">
-      <aside class="oasis-feature-intro" data-reveal>
-        <p class="oasis-feature-intro__label">Primary ecosystem</p>
-        <p class="oasis-feature-intro__text">
-          These groups show OASIS as active collaboration: shared questions,
-          reusable methods, and visible records that help teams build from one
-          another.
-        </p>
-      </aside>
+      <a class="oasis-guide-callout oasis-guide-callout--working-groups" href="{{ working_group_guide_url }}" target="_blank" rel="noopener" data-reveal>
+        <span class="oasis-guide-callout__label">Working Group Guide</span>
+        <span class="oasis-guide-callout__title">Documentation and FAQ for ESIIL working groups.</span>
+        <span class="oasis-guide-callout__text">
+          Find shared guidance for launching, maintaining, and documenting a
+          working group site from the standalone guide repository.
+        </span>
+        <span class="oasis-project-card__cta">
+          <span>Open Guide</span>
+          <span aria-hidden="true">→</span>
+        </span>
+      </a>
 
       <div class="oasis-card-rail oasis-card-rail--groups" data-reveal>
         {% for group in groups %}

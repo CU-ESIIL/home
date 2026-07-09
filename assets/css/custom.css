@@ -1096,6 +1096,80 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   padding: 1.5rem 1rem 0 0;
 }
 
+.oasis-guide-callout {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 100%;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.35rem 1.2rem 1.25rem;
+  color: var(--oasis-text);
+  text-decoration: none;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(231, 239, 230, 0.78)),
+    var(--oasis-paper);
+  border: 1px solid rgba(35, 74, 101, 0.14);
+  border-left: 0.45rem solid var(--oasis-blue-accent);
+  border-radius: var(--oasis-radius-lg);
+  box-shadow: 0 14px 32px rgba(35, 74, 101, 0.1);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.oasis-guide-callout::after {
+  content: "";
+  position: absolute;
+  inset: 0.8rem;
+  pointer-events: none;
+  border: 1px solid rgba(66, 188, 220, 0.22);
+  border-radius: calc(var(--oasis-radius-lg) - 0.45rem);
+}
+
+.oasis-guide-callout:is(:hover, :focus-visible) {
+  transform: translateY(-6px);
+  border-color: rgba(35, 74, 101, 0.22);
+  border-left-color: var(--oasis-green-deep);
+  box-shadow: var(--oasis-shadow-hover);
+}
+
+.oasis-guide-callout:is(:hover, :focus-visible) .oasis-project-card__cta span:last-child {
+  transform: translateX(0.24rem);
+}
+
+.oasis-guide-callout__label {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.34rem 0.62rem;
+  color: #fff;
+  background: var(--oasis-blue-deep);
+  border-radius: 999px;
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-guide-callout__label,
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-guide-callout__label {
+  color: #0f171d;
+  background: var(--oasis-blue-accent);
+}
+
+.oasis-guide-callout__title {
+  color: var(--oasis-blue-deep);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: clamp(1.55rem, 2vw, 2rem);
+  font-weight: 700;
+  line-height: 1.04;
+}
+
+.oasis-guide-callout__text {
+  color: var(--oasis-text-soft);
+  line-height: 1.55;
+}
+
 .oasis-card-rail {
   display: grid;
   gap: 1.25rem;
@@ -1126,12 +1200,15 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
 .oasis-home-template body[data-md-color-scheme="slate"] .oasis-research-card,
 .oasis-home-template body[data-md-color-scheme="slate"] .oasis-event-card,
 .oasis-home-template body[data-md-color-scheme="slate"] .oasis-infra-card,
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-guide-callout,
 .oasis-section-template body[data-md-color-scheme="slate"] .oasis-project-card,
 .oasis-section-template body[data-md-color-scheme="slate"] .oasis-research-card,
 .oasis-section-template body[data-md-color-scheme="slate"] .oasis-event-card,
-.oasis-section-template body[data-md-color-scheme="slate"] .oasis-infra-card {
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-infra-card,
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-guide-callout {
   background: rgba(21, 33, 43, 0.88);
   border-color: rgba(143, 221, 240, 0.12);
+  border-left-color: var(--oasis-blue-accent);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.24);
 }
 
@@ -1139,11 +1216,18 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
 .oasis-home-template body[data-md-color-scheme="slate"] .oasis-research-card:is(:hover, :focus-visible),
 .oasis-home-template body[data-md-color-scheme="slate"] .oasis-event-card:is(:hover, :focus-visible),
 .oasis-home-template body[data-md-color-scheme="slate"] .oasis-infra-card:is(:hover, :focus-visible),
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-guide-callout:is(:hover, :focus-visible),
 .oasis-section-template body[data-md-color-scheme="slate"] .oasis-project-card:is(:hover, :focus-visible),
 .oasis-section-template body[data-md-color-scheme="slate"] .oasis-research-card:is(:hover, :focus-visible),
 .oasis-section-template body[data-md-color-scheme="slate"] .oasis-event-card:is(:hover, :focus-visible),
-.oasis-section-template body[data-md-color-scheme="slate"] .oasis-infra-card:is(:hover, :focus-visible) {
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-infra-card:is(:hover, :focus-visible),
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-guide-callout:is(:hover, :focus-visible) {
   border-color: rgba(143, 221, 240, 0.24);
+}
+
+.oasis-home-template body[data-md-color-scheme="slate"] .oasis-guide-callout:is(:hover, :focus-visible),
+.oasis-section-template body[data-md-color-scheme="slate"] .oasis-guide-callout:is(:hover, :focus-visible) {
+  border-left-color: var(--oasis-green-light);
 }
 
 .oasis-project-card:is(:hover, :focus-visible),
@@ -1730,6 +1814,7 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   .oasis-research-card,
   .oasis-event-card,
   .oasis-infra-card,
+  .oasis-guide-callout,
   .oasis-home__art-card {
     transition: none;
   }
