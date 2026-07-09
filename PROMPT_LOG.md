@@ -123,6 +123,25 @@ homepage sections.
   the user wants them added to global navigation later, that can be done as a
   small follow-up.
 
+## 2026-07-09
+
+- Goal: Add a prominent homepage link from the working-groups section to the
+  standalone Working Group Guide documentation and FAQ.
+- Context reviewed: `docs/dev/oasis-site-dev-guide.md`, the working-groups
+  homepage partial, homepage card/callout CSS, existing Playwright homepage
+  coverage, and prior prompt-log conventions.
+- Files changed: `docs/overrides/partials/working_groups.html`,
+  `docs/assets/css/custom.css`, `PROMPT_LOG.md`.
+- Validation: `.venv/bin/python -m mkdocs build --strict`; `npx playwright
+  test` with elevated local-server permission passed 7 of 8 tests, with the
+  remaining external link-health test blocked by DNS resolution for
+  `cu-esiil.github.io` in the restricted environment; local Playwright smoke
+  check confirmed the guide callout href/text/visibility and zero horizontal
+  overflow.
+- Follow-up / unresolved: The guide URL is set to the expected GitHub Pages
+  path, `https://cu-esiil.github.io/working-group-guide/`; update it if the
+  standalone repository publishes under a different slug.
+
 ## 2026-05-28
 
 - Goal: Fix narrow-window homepage overlap by making the hero responsive at
