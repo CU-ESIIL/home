@@ -137,10 +137,12 @@ homepage sections.
   remaining external link-health test blocked by DNS resolution for
   `cu-esiil.github.io` in the restricted environment; local Playwright smoke
   check confirmed the guide callout href/text/visibility and zero horizontal
-  overflow.
-- Follow-up / unresolved: The guide URL is set to the expected GitHub Pages
-  path, `https://cu-esiil.github.io/working-group-guide/`; update it if the
-  standalone repository publishes under a different slug.
+  overflow. After CI reported the original guide slug as a 404, the callout was
+  updated to the live `Working_group_OASIS` URL and rebuilt with
+  `.venv/bin/python -m mkdocs build --strict`.
+- Follow-up / unresolved: The guide URL points to the live standalone
+  `Working_group_OASIS` GitHub Pages site. If a separate FAQ-specific guide
+  publishes later, update the isolated template variable.
 
 ## 2026-05-28
 
