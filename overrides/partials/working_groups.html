@@ -3,32 +3,32 @@
     "title": "AI for Natural Methane",
     "url": "https://cu-esiil.github.io/AI-for-Natural-Methane/",
     "image": "assets/thumbnails/active/working-groups/ai-for-natural-methane-button.png",
-    "meta": "Working Group",
+    "meta": "Group Site",
     "description": "Harmonizing natural methane datasets and discovery workflows with AI."
   },
   {
     "title": "VERDE",
     "url": "https://cu-esiil.github.io/VERDE/",
     "image": "assets/thumbnails/active/working-groups/verde-button.png",
-    "meta": "Working Group",
+    "meta": "Group Site",
     "description": "Working group site for VERDE environmental data synthesis."
   },
   {
     "title": "BioViewPoint",
     "url": "https://cu-esiil.github.io/BioViewPoint/",
     "image": "assets/thumbnails/active/working-groups/bioviewpoint-button.png",
-    "meta": "Working Group",
+    "meta": "Group Site",
     "description": "Visualization tools and ecological viewpoints for biodiversity data."
   },
   {
     "title": "Extreme Wildfire",
     "url": "https://cu-esiil.github.io/ExtremeWildfire/",
     "image": "assets/thumbnails/active/working-groups/extreme-wildfire-button.png",
-    "meta": "Working Group",
+    "meta": "Group Site",
     "description": "Collaborative research on extreme wildfire behavior and environmental change."
   }
 ] %}
-{% set working_group_guide_url = "https://cu-esiil.github.io/Working_group_OASIS/" %}
+{% set working_group_guide_url = "https://cu-esiil.github.io/Working-Group-Guide/" %}
 
 <section class="oasis-band oasis-band--sage" id="working-groups-section">
   <div class="oasis-shell">
@@ -38,7 +38,8 @@
         <h2>Working groups that scale science.</h2>
         <p>
           ESIIL working groups bring expert teams together to synthesize data,
-          methods, and ideas at scales larger than any single lab or laptop.
+          methods, and ideas. Start with the shared guide, then explore the
+          public sites produced by individual working groups.
         </p>
       </div>
 
@@ -53,8 +54,8 @@
         <span class="oasis-guide-callout__label">Working Group Guide</span>
         <span class="oasis-guide-callout__title">Documentation and FAQ for ESIIL working groups.</span>
         <span class="oasis-guide-callout__text">
-          Find shared guidance for launching, maintaining, and documenting a
-          working group site from the standalone guide repository.
+          Use the guide for shared expectations, onboarding notes, site
+          maintenance, and frequently asked questions for working group teams.
         </span>
         <span class="oasis-project-card__cta">
           <span>Open Guide</span>
@@ -62,23 +63,33 @@
         </span>
       </a>
 
-      <div class="oasis-card-rail oasis-card-rail--groups" data-reveal>
-        {% for group in groups %}
-          <a class="oasis-project-card oasis-project-card--group" href="{{ group.url }}" target="_blank" rel="noopener">
-            <div class="oasis-project-card__media">
-              <img src="{{ group.image }}" alt="{{ group.title }}" loading="lazy" decoding="async" />
-            </div>
-            <div class="oasis-project-card__body">
-              <p class="oasis-project-card__meta">{{ group.meta }}</p>
-              <h3>{{ group.title }}</h3>
-              <p>{{ group.description }}</p>
-              <span class="oasis-project-card__cta">
-                <span>Explore</span>
-                <span aria-hidden="true">→</span>
-              </span>
-            </div>
-          </a>
-        {% endfor %}
+      <div class="oasis-card-rail-panel" data-reveal>
+        <div class="oasis-card-rail-panel__heading">
+          <p class="oasis-card-rail-panel__label">Working group sites</p>
+          <p class="oasis-card-rail-panel__text">
+            These cards open the public pages created and maintained by the
+            groups themselves.
+          </p>
+        </div>
+
+        <div class="oasis-card-rail oasis-card-rail--groups">
+          {% for group in groups %}
+            <a class="oasis-project-card oasis-project-card--group" href="{{ group.url }}" target="_blank" rel="noopener">
+              <div class="oasis-project-card__media">
+                <img src="{{ group.image }}" alt="{{ group.title }}" loading="lazy" decoding="async" />
+              </div>
+              <div class="oasis-project-card__body">
+                <p class="oasis-project-card__meta">{{ group.meta }}</p>
+                <h3>{{ group.title }}</h3>
+                <p>{{ group.description }}</p>
+                <span class="oasis-project-card__cta">
+                  <span>Explore</span>
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
