@@ -1175,6 +1175,42 @@ a.oasis-stat:is(:hover, :focus-visible) .oasis-stat__value {
   gap: 1.25rem;
 }
 
+.oasis-card-rail-panel {
+  display: grid;
+  min-width: 0;
+  gap: 0.85rem;
+}
+
+.oasis-card-rail-panel__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+}
+
+.oasis-card-rail-panel__label,
+.oasis-card-rail-panel__text {
+  margin: 0;
+}
+
+.oasis-card-rail-panel__label {
+  color: var(--oasis-green-deep);
+  font-family: "Barlow Condensed", "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.oasis-card-rail-panel__text {
+  max-width: 34rem;
+  color: var(--oasis-text-soft);
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
 .oasis-card-rail--groups {
   grid-template-columns: repeat(5, minmax(12rem, 1fr));
 }

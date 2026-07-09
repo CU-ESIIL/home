@@ -138,11 +138,13 @@ homepage sections.
   `cu-esiil.github.io` in the restricted environment; local Playwright smoke
   check confirmed the guide callout href/text/visibility and zero horizontal
   overflow. After CI reported the original guide slug as a 404, the callout was
-  updated to the live `Working_group_OASIS` URL and rebuilt with
-  `.venv/bin/python -m mkdocs build --strict`.
-- Follow-up / unresolved: The guide URL points to the live standalone
-  `Working_group_OASIS` GitHub Pages site. If a separate FAQ-specific guide
-  publishes later, update the isolated template variable.
+  updated to the user-provided `Working-Group-Guide` URL, checked with `curl`
+  for HTTP 200, and rebuilt with `.venv/bin/python -m mkdocs build --strict`.
+  Full Playwright rerun passed the homepage link-health test; one unrelated
+  event-group preview test timed out once and then passed when rerun by itself.
+- Follow-up / unresolved: The guide URL points to the live standalone Working
+  Group Guide GitHub Pages site at
+  `https://cu-esiil.github.io/Working-Group-Guide/`.
 
 ## 2026-05-28
 
