@@ -29,7 +29,9 @@ nav:
   - Quickstart: quickstart/index.md
   - Cloud Container: cloud-container/index.md
   - Container Library: container-library/index.md
-  - Resources: resources/index.md
+  - Resources:
+      - Overview: resources/index.md
+      - Working with Sensitive and Restricted Data: quickstart/sensitive-data.md
   - Development Schedule: dev-schedule.md
   - Tags: tags/index.md
       
@@ -148,5 +150,6 @@ plugins:
       exclude:
         - ^tags/.*
   - mkdocs-jupyter:
+        ignore: ["assets/security-templates/*.py"]
         include_source: True
         ignore_h1_titles: False

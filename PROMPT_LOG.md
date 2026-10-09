@@ -831,3 +831,17 @@ homepage sections.
 - Follow-up / unresolved: MkDocs strict builds do not validate Mermaid browser
   parsing, so future Gantt labels should avoid colon-delimited prose before
   the task metadata marker.
+
+## 2026-10-09 — Sensitive and restricted research data workflow (Codex)
+
+- Goal: create a reusable OASIS guide for classified/confidential environmental research data, without implying infrastructure features establish compliance.
+- Reviewed: AGENTS.md, homepage safety guide, Cloud Triangle, Python/cloud training, actual nested Data Library quickstart, CyVerse/data-movement guides, Resources, navigation, infrastructure gallery, button-image rules, GoCommands pinned source and iRODS/OpenPGP dependencies, CyVerse/NIST/Docker/institutional references.
+- Changed: new `docs/quickstart/sensitive-data.md`, three accessible SVG diagrams, ten Markdown security templates and downloadable ZIP, educational synthetic AES-GCM helper, deterministic ZIP packager, technical verification report; Cloud Container card reuses an existing thumbnail; Resources nav/hub, contextual links and generated tags updated. Procedural guide needs no registry entity; no homepage layout/CSS changes.
+- Validation: strict MkDocs build; 8 existing Playwright tests passed; additional browser checks at 1280/375/320 px, diagrams, keyboard details, and 173 internal links/downloads passed; front matter checker; 11 shell blocks syntax-checked; synthetic analysis and encryption round trips, tamper/wrong-key/wrong-context rejection, exclusive writes, key permissions, nonce freshness, empty files and size limit verified. ZIP contents match source files. Full details in `docs/dev/sensitive-data-verification.md`.
+- Limits: no live CyVerse transactions or provider-security tests. Source shows native SSH/WinSCP AES-CTR lacks content authentication, SSH filenames are recoverable with the public key, PGP checks MDC after plaintext writing, and the reviewed TLS dependency requires `hostname` for normal verification. Backend encryption/replicas/audits/retention and VM controls explicitly await provider confirmation; restricted data require custodian/institutional approval before upload.
+
+## 2026-10-09 — Add sensitive-data guide to documentation galleries (Codex)
+
+- User requested website documentation placement following the complete guide creation. Added matching Documentation cards to Quick Start and Browse Infrastructure, alongside existing Cloud Container and Resources links. Reused the existing guide thumbnail; no homepage layout or image changes.
+- Reviewed the gallery partials, current navigation and GitHub Pages deployment workflow. Updated the verification report to include both galleries.
+- Validation: strict build and existing browser navigation/gallery tests; published through the repository's main-branch deployment path when available. Provider-security verification remains outside this documentation update.

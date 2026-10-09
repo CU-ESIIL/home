@@ -14,6 +14,10 @@ Explore curated guides, reference material, and notes that support the OASIS com
 - [Move and save data in CyVerse](./cyverse_move_and_save_data.md)
 - [Stream data from CyVerse](./cyverse_stream_data.md)
 
+## Sensitive research data
+
+- [Working with Sensitive and Restricted Data](../quickstart/sensitive-data.md): classification, encryption, controlled analysis, validation, approvals, and reusable security templates.
+
 ## Data skills and tooling
 
 - [Data analysis workflow](./data_analysis.md)

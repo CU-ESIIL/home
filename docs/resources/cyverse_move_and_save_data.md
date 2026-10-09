@@ -1,5 +1,9 @@
 # Connecting Cyverse to GitHub
 
+!!! warning "Sensitive or restricted records"
+    Before applying this open-science workflow to confidential records, follow [Working with Sensitive and Restricted Data](../quickstart/sensitive-data.md) for classification, environment authorization, verified controls, and output review. Use synthetic data until required approvals are in place.
+
+
 ## Log in to Cyverse
 
 1. Go to the Cyverse user account website [https://user.cyverse.org/](https://user.cyverse.org/)

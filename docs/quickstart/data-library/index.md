@@ -16,6 +16,9 @@ Visit a dataset page to see descriptive metadata, citation information, and
 copy-and-paste code snippets, like on the
 [library homepage](https://cu-esiil.github.io/data-library/).
 
+!!! warning "Sensitive or restricted records"
+    Before applying this open-science workflow to confidential records, follow [Working with Sensitive and Restricted Data](../sensitive-data.md) for classification, environment authorization, verified controls, and output review. Use synthetic data until required approvals are in place.
+
 ## Do It
 1. **Head to the site.** Open the
    [Data Library](https://cu-esiil.github.io/data-library/).

@@ -10,6 +10,9 @@ date: 2024-01-01
 > Launch a CyVerse Discovery Environment (DE) JupyterLab session, connect to GitHub with SSH through the Git sidebar, move data with GoCommands, and—most importantly—keep your work alive after an ephemeral compute session ends.
 
 
+!!! warning "Sensitive or restricted records"
+    Before applying this open-science workflow to confidential records, follow [Working with Sensitive and Restricted Data](sensitive-data.md) for classification, environment authorization, verified controls, and output review. Use synthetic data until required approvals are in place.
+
 ## 1. Why the Triangle?
 
 Across science platforms like **BinderHub**, **JupyterHub classrooms**, and cloud services such as **Azure ML** or **Vertex AI Workbench**, the same pattern repeats:

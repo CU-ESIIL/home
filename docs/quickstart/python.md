@@ -10,6 +10,9 @@ Today’s theme is **Creative Data Exploration in the Cloud**. We’ll learn how
 
 ---
 
+!!! warning "Sensitive or restricted records"
+    Before applying this open-science workflow to confidential records, follow [Working with Sensitive and Restricted Data](sensitive-data.md) for classification, environment authorization, verified controls, and output review. Use synthetic data until required approvals are in place.
+
 ## 1. Startup Procedure: Opening the Lab
 
 We’ll use the [OASIS QuickStart: Cloud Triangle](https://cu-esiil.github.io/home/quickstart/cloud/) to start our **CyVerse instance**.

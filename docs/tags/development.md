@@ -12,7 +12,7 @@ hide:
   <small>2026-04-21</small>
 - [Button Image Guidelines](../button-image-guidelines.md)  
   <small>2026-04-21</small>
-- [dev-schedule](../dev-schedule.md)  
+- [Development Schedule](../dev-schedule.md)  
   <small>2026-04-21</small>
 - [dev-requests](../dev-requests.md)  
   <small>2025-08-29</small>
