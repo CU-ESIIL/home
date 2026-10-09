@@ -658,16 +658,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../resources/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Resources
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/sensitive-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with Sensitive and Restricted Data
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1022,7 +1088,7 @@ will help you become bilingual in R and Python.</p>
 install.packages() function:</p>
 <p>R code:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Install the dplyr package from CRAN</span>
-<span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;dplyr&quot;</span><span class="p">)</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">"dplyr"</span><span class="p">)</span>
 </code></pre></div>
 <p>In Python, packages can be installed from the Anaconda repository by
 using the conda install command:</p>
@@ -1053,7 +1119,7 @@ its own repository by default.</p>
 environment.</p>
 <p>R libraries are stored and managed in a repository called CRAN. You can
 download R packages with the install.packages() function</p>
-<div class="highlight"><pre><span></span><code><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;reticulate&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nf">install.packages</span><span class="p">(</span><span class="s">"reticulate"</span><span class="p">)</span>
 </code></pre></div>
 <p>You only need to install packages once, but you need to mount those
 packages with the library() function each time you open R.</p>
@@ -1064,9 +1130,9 @@ their dependencies are not regulated as strictly as R libraries are in
 CRAN. It’s easier to publish a python package but it can also be more
 cumbersome for users because you need to manage dependencies yourself.
 You can download python packages using both R and Python code</p>
-<div class="highlight"><pre><span></span><code><span class="nf">py_install</span><span class="p">(</span><span class="s">&quot;laspy&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nf">py_install</span><span class="p">(</span><span class="s">"laspy"</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>## + &#39;/Users/ty/opt/miniconda3/bin/conda&#39; &#39;install&#39; &#39;--yes&#39; &#39;--prefix&#39; &#39;/Users/ty/opt/miniconda3/envs/earth-analytics-python&#39; &#39;-c&#39; &#39;conda-forge&#39; &#39;laspy&#39;
+<div class="highlight"><pre><span></span><code>## + '/Users/ty/opt/miniconda3/bin/conda' 'install' '--yes' '--prefix' '/Users/ty/opt/miniconda3/envs/earth-analytics-python' '-c' 'conda-forge' 'laspy'
 </code></pre></div>
 <p>Now, let’s create a Python list and assign it to a variable py_list:</p>
 <p>R code:</p>
@@ -1075,7 +1141,7 @@ You can download python packages using both R and Python code</p>
 <p>We can now print out the py_list variable in Python using the
 py_run_string() function:</p>
 <p>R code:</p>
-<div class="highlight"><pre><span></span><code><span class="nf">py_run_string</span><span class="p">(</span><span class="s">&quot;print(r.py_list)&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nf">py_run_string</span><span class="p">(</span><span class="s">"print(r.py_list)"</span><span class="p">)</span>
 </code></pre></div>
 <p>This will output [1, 2, 3] in the Python console.</p>
 <p>Now, let’s create an R vector and assign it to a variable r_vec:</p>
@@ -1092,7 +1158,7 @@ access Python variables:</p>
 For example, let’s call the Python sum() function on the py_list
 variable and assign the result to an R variable r_sum:</p>
 <p>R code:</p>
-<div class="highlight"><pre><span></span><code><span class="n">r_sum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">py_call</span><span class="p">(</span><span class="s">&quot;sum&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">py_list</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">r_sum</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">py_call</span><span class="p">(</span><span class="s">"sum"</span><span class="p">,</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">py_list</span><span class="p">))</span>
 </code></pre></div>
 <p>We can now print out the r_sum variable in R:</p>
 <p>R code:</p>
@@ -1100,7 +1166,7 @@ variable and assign the result to an R variable r_sum:</p>
 </code></pre></div>
 <p>This will output 6 in the R console.</p>
 <h2 id="load-packages-and-change-settings">Load packages and change settings<a class="headerlink" href="#load-packages-and-change-settings" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nf">options</span><span class="p">(</span><span class="n">java.parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;-Xmx5G&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nf">options</span><span class="p">(</span><span class="n">java.parameters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"-Xmx5G"</span><span class="p">)</span>
 
 <span class="nf">library</span><span class="p">(</span><span class="n">r5r</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
@@ -1123,7 +1189,7 @@ variable and assign the result to an R variable r_sum:</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">testthat</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">&quot;--max-memory&quot;</span><span class="p">,</span> <span class="s2">&quot;5G&quot;</span><span class="p">])</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s2">"--max-memory"</span><span class="p">,</span> <span class="s2">"5G"</span><span class="p">])</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span>
@@ -1184,17 +1250,17 @@ Ultimately, the choice between the two languages will depend on your
 specific needs and preferences.</p>
 <h2 id="load-saved-data">Load saved data<a class="headerlink" href="#load-saved-data" title="Permanent link">&para;</a></h2>
 <p>R Code:</p>
-<div class="highlight"><pre><span></span><code><span class="nf">data</span><span class="p">(</span><span class="s">&quot;iris&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nf">data</span><span class="p">(</span><span class="s">"iris"</span><span class="p">)</span>
 <span class="nf">here</span><span class="p">()</span>
-<span class="nf">load</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="nf">here</span><span class="p">(</span><span class="s">&quot;2_R_and_Py_bilingualism&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;iris_example_data.rdata&quot;</span><span class="p">))</span>
+<span class="nf">load</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="nf">here</span><span class="p">(</span><span class="s">"2_R_and_Py_bilingualism"</span><span class="p">,</span><span class="w"> </span><span class="s">"data"</span><span class="p">,</span><span class="w"> </span><span class="s">"iris_example_data.rdata"</span><span class="p">))</span>
 <span class="nf">objects</span><span class="p">()</span>
 </code></pre></div>
 <p>Python code:</p>
 <h2 id="save-data">Save data<a class="headerlink" href="#save-data" title="Permanent link">&para;</a></h2>
 <p>R Code:</p>
-<div class="highlight"><pre><span></span><code><span class="nf">save</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="o">=</span><span class="nf">here</span><span class="p">(</span><span class="s">&quot;2_R_and_Py_bilingualism&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;iris_example_data.rdata&quot;</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="nf">save</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="o">=</span><span class="nf">here</span><span class="p">(</span><span class="s">"2_R_and_Py_bilingualism"</span><span class="p">,</span><span class="w"> </span><span class="s">"data"</span><span class="p">,</span><span class="w"> </span><span class="s">"iris_example_data.rdata"</span><span class="p">))</span>
 
-<span class="nf">write.csv</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="o">=</span><span class="nf">here</span><span class="p">(</span><span class="s">&quot;2_R_and_Py_bilingualism&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;iris_example_data.csv&quot;</span><span class="p">))</span>
+<span class="nf">write.csv</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="o">=</span><span class="nf">here</span><span class="p">(</span><span class="s">"2_R_and_Py_bilingualism"</span><span class="p">,</span><span class="w"> </span><span class="s">"data"</span><span class="p">,</span><span class="w"> </span><span class="s">"iris_example_data.csv"</span><span class="p">))</span>
 </code></pre></div>
 <p>Python code:</p>
 <h2 id="functions">functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
@@ -1239,7 +1305,7 @@ used the sum_r() function in R and the sum_py() function in Python to
 calculate the sum of two numbers.</p>
 <h2 id="data-plots">Data Plots<a class="headerlink" href="#data-plots" title="Permanent link">&para;</a></h2>
 <p>R Code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;ggplot2&quot; package for plotting</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "ggplot2" package for plotting</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 
 <span class="c1"># Generate some sample data</span>
@@ -1252,7 +1318,7 @@ calculate the sum of two numbers.</p>
 </code></pre></div>
 <p><em>Associated figure not included in this repository snapshot.</em>
 Python code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;matplotlib&quot; library</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "matplotlib" library</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Generate some sample data</span>
@@ -1281,7 +1347,7 @@ create a scatter plot layer. In Python, we use the scatter() function
 from the matplotlib.pyplot module to create a scatter plot directly.</p>
 <h2 id="linear-regression">Linear regression<a class="headerlink" href="#linear-regression" title="Permanent link">&para;</a></h2>
 <p>R Code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;ggplot2&quot; package for plotting</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "ggplot2" package for plotting</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 
 <span class="c1"># Generate some sample data</span>
@@ -1307,7 +1373,7 @@ from the matplotlib.pyplot module to create a scatter plot directly.</p>
 ## (Intercept)  -0.1676     0.6781  -0.247    0.811    
 ## x             0.9750     0.1093   8.921 1.98e-05 ***
 ## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## Residual standard error: 0.9926 on 8 degrees of freedom
 ## Multiple R-squared:  0.9087, Adjusted R-squared:  0.8972 
@@ -1316,13 +1382,13 @@ from the matplotlib.pyplot module to create a scatter plot directly.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Plot the data and regression line</span>
 <span class="nf">ggplot</span><span class="p">(</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">),</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
 <span class="w">  </span><span class="nf">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span>
-<span class="w">  </span><span class="nf">geom_smooth</span><span class="p">(</span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;lm&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
+<span class="w">  </span><span class="nf">geom_smooth</span><span class="p">(</span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"lm"</span><span class="p">,</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;
+<div class="highlight"><pre><span></span><code>## `geom_smooth()` using formula = 'y ~ x'
 </code></pre></div>
 <p><em>Associated figure not included in this repository snapshot.</em></p>
 <p>Python code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;matplotlib&quot; and &quot;scikit-learn&quot; libraries</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "matplotlib" and "scikit-learn" libraries</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
 
@@ -1335,11 +1401,11 @@ from the matplotlib.pyplot module to create a scatter plot directly.</p>
 <span class="n">model_py</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
 
 <span class="c1"># Print the model coefficients</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coefficients: &quot;</span><span class="p">,</span> <span class="n">model_py</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Coefficients: "</span><span class="p">,</span> <span class="n">model_py</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>## Coefficients:  [1.15539692]
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Intercept: &quot;</span><span class="p">,</span> <span class="n">model_py</span><span class="o">.</span><span class="n">intercept_</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"Intercept: "</span><span class="p">,</span> <span class="n">model_py</span><span class="o">.</span><span class="n">intercept_</span><span class="p">)</span>
 
 <span class="c1">#clear last plot</span>
 </code></pre></div>
@@ -1349,7 +1415,7 @@ from the matplotlib.pyplot module to create a scatter plot directly.</p>
 
 <span class="c1"># Plot the data and regression line</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">model_py</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">model_py</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 <p><em>Associated figure not included in this repository snapshot.</em></p>
@@ -1372,10 +1438,10 @@ standard errors, and p-values. In Python, we need to print the
 coefficients and intercept separately.</p>
 <h2 id="random-forest">Random Forest<a class="headerlink" href="#random-forest" title="Permanent link">&para;</a></h2>
 <p>R Code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;randomForest&quot; package</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "randomForest" package</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">randomForest</span><span class="p">)</span>
 
-<span class="c1"># Load the &quot;iris&quot; dataset</span>
+<span class="c1"># Load the "iris" dataset</span>
 <span class="nf">data</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
 
 <span class="c1"># Split the data into training and testing sets</span>
@@ -1392,19 +1458,19 @@ coefficients and intercept separately.</p>
 
 <span class="c1"># Calculate accuracy of the model</span>
 <span class="n">accuracy</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">predictions</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">test_data</span><span class="o">$</span><span class="n">Species</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">nrow</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Accuracy:&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">accuracy</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">"Accuracy:"</span><span class="p">,</span><span class="w"> </span><span class="n">accuracy</span><span class="p">))</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>## [1] &quot;Accuracy: 0.977777777777778&quot;
+<div class="highlight"><pre><span></span><code>## [1] "Accuracy: 0.977777777777778"
 </code></pre></div>
 <p>Python code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;pandas&quot;, &quot;numpy&quot;, and &quot;sklearn&quot; libraries</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "pandas", "numpy", and "sklearn" libraries</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_iris</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
 
-<span class="c1"># Load the &quot;iris&quot; dataset</span>
+<span class="c1"># Load the "iris" dataset</span>
 <span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
 
 <span class="c1"># Split the data into training and testing sets</span>
@@ -1422,7 +1488,7 @@ coefficients and intercept separately.</p>
 
 <span class="c1"># Calculate accuracy of the model</span>
 <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">predictions</span> <span class="o">==</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Accuracy:"</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>## Accuracy: 0.9555555555555556
 </code></pre></div>
@@ -1443,7 +1509,7 @@ Data format: In R, we use a data frame to store the input data, while in
 Python, we use numpy arrays.</p>
 <h2 id="basic-streetmap-from-open-street-map">Basic streetmap from Open Street Map<a class="headerlink" href="#basic-streetmap-from-open-street-map" title="Permanent link">&para;</a></h2>
 <p>R Code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;osmdata&quot; package for mapping</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "osmdata" package for mapping</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">osmdata</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">tmap</span><span class="p">)</span>
 
@@ -1452,7 +1518,7 @@ Python, we use numpy arrays.</p>
 
 <span class="c1"># Get the OpenStreetMap data</span>
 <span class="n">osm_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">opq</span><span class="p">(</span><span class="n">bbox</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
-<span class="w">  </span><span class="nf">add_osm_feature</span><span class="p">(</span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;highway&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
+<span class="w">  </span><span class="nf">add_osm_feature</span><span class="p">(</span><span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"highway"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">osmdata_sf</span><span class="p">()</span>
 
 <span class="c1"># Plot the map using tmap</span>
@@ -1461,14 +1527,14 @@ Python, we use numpy arrays.</p>
 </code></pre></div>
 <p><em>Associated figure not included in this repository snapshot.</em>
 Python code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;osmnx&quot; package for mapping</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "osmnx" package for mapping</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">osmnx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ox</span>
 
 <span class="c1"># Define the map location and zoom level</span>
 <span class="n">bbox</span> <span class="o">=</span> <span class="p">(</span><span class="mf">51.49</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.16</span><span class="p">,</span> <span class="mf">51.51</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.13</span><span class="p">)</span>
 
 <span class="c1"># Get the OpenStreetMap data</span>
-<span class="n">osm_data</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_from_bbox</span><span class="p">(</span><span class="n">north</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">south</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">east</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">west</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">network_type</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+<span class="n">osm_data</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">graph_from_bbox</span><span class="p">(</span><span class="n">north</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">south</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">east</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">west</span><span class="o">=</span><span class="n">bbox</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">network_type</span><span class="o">=</span><span class="s1">'all'</span><span class="p">)</span>
 
 <span class="c1"># Plot the map using osmnx</span>
 <span class="n">ox</span><span class="o">.</span><span class="n">plot_graph</span><span class="p">(</span><span class="n">osm_data</span><span class="p">)</span>
@@ -1487,18 +1553,18 @@ in Python, we use the built-in ox.plot_graph function from the osmnx
 package to plot the map.</p>
 <h2 id="cnn-on-raster-data">CNN on Raster data<a class="headerlink" href="#cnn-on-raster-data" title="Permanent link">&para;</a></h2>
 <p>R Code:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Load the &quot;keras&quot; package for building the CNN</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Load the "keras" package for building the CNN</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">tensorflow</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">keras</span><span class="p">)</span>
 
-<span class="c1"># Load the &quot;raster&quot; package for working with raster data</span>
+<span class="c1"># Load the "raster" package for working with raster data</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">raster</span><span class="p">)</span>
 
-<span class="c1"># Load the &quot;magrittr&quot; package for pipe operator</span>
+<span class="c1"># Load the "magrittr" package for pipe operator</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span>
 
 <span class="c1"># Load the data as a raster brick</span>
-<span class="n">raster_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">brick</span><span class="p">(</span><span class="s">&quot;raster_data.tif&quot;</span><span class="p">)</span>
+<span class="n">raster_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">brick</span><span class="p">(</span><span class="s">"raster_data.tif"</span><span class="p">)</span>
 
 <span class="c1"># Split the data into training and testing sets</span>
 <span class="n">split_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sample</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="nf">nlayers</span><span class="p">(</span><span class="n">raster_data</span><span class="p">),</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">nlayers</span><span class="p">(</span><span class="n">raster_data</span><span class="p">)</span><span class="o">*</span><span class="m">0.8</span><span class="p">,</span><span class="w"> </span><span class="n">replace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
@@ -1507,16 +1573,16 @@ package to plot the map.</p>
 
 <span class="c1"># Define the CNN model</span>
 <span class="n">model</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">keras_model_sequential</span><span class="p">()</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
-<span class="w">  </span><span class="nf">layer_conv_2d</span><span class="p">(</span><span class="n">filters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">32</span><span class="p">,</span><span class="w"> </span><span class="n">kernel_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">activation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;relu&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">input_shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="nf">ncol</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span><span class="w"> </span><span class="nf">nrow</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span><span class="w"> </span><span class="nf">ncell</span><span class="p">(</span><span class="n">train_data</span><span class="p">)))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
+<span class="w">  </span><span class="nf">layer_conv_2d</span><span class="p">(</span><span class="n">filters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">32</span><span class="p">,</span><span class="w"> </span><span class="n">kernel_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">activation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"relu"</span><span class="p">,</span><span class="w"> </span><span class="n">input_shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="nf">ncol</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span><span class="w"> </span><span class="nf">nrow</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span><span class="w"> </span><span class="nf">ncell</span><span class="p">(</span><span class="n">train_data</span><span class="p">)))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">layer_max_pooling_2d</span><span class="p">(</span><span class="n">pool_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">layer_dropout</span><span class="p">(</span><span class="n">rate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.25</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">layer_flatten</span><span class="p">()</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
-<span class="w">  </span><span class="nf">layer_dense</span><span class="p">(</span><span class="n">units</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">128</span><span class="p">,</span><span class="w"> </span><span class="n">activation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;relu&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
+<span class="w">  </span><span class="nf">layer_dense</span><span class="p">(</span><span class="n">units</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">128</span><span class="p">,</span><span class="w"> </span><span class="n">activation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"relu"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">layer_dropout</span><span class="p">(</span><span class="n">rate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
-<span class="w">  </span><span class="nf">layer_dense</span><span class="p">(</span><span class="n">units</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">nlayers</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span><span class="w"> </span><span class="n">activation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;softmax&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="nf">layer_dense</span><span class="p">(</span><span class="n">units</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">nlayers</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span><span class="w"> </span><span class="n">activation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"softmax"</span><span class="p">)</span>
 
 <span class="c1"># Compile the model</span>
-<span class="n">model</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">compile</span><span class="p">(</span><span class="n">loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;categorical_crossentropy&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">optimizer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;adam&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">metrics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;accuracy&quot;</span><span class="p">)</span>
+<span class="n">model</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">compile</span><span class="p">(</span><span class="n">loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"categorical_crossentropy"</span><span class="p">,</span><span class="w"> </span><span class="n">optimizer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"adam"</span><span class="p">,</span><span class="w"> </span><span class="n">metrics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"accuracy"</span><span class="p">)</span>
 
 <span class="c1"># Train the model</span>
 <span class="n">history</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="nf">fit</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">array</span><span class="p">(</span><span class="n">train_data</span><span class="p">),</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">to_categorical</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="nf">nlayers</span><span class="p">(</span><span class="n">train_data</span><span class="p">)),</span><span class="w"> </span><span class="n">epochs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">validation_split</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.2</span><span class="p">)</span>
@@ -1564,11 +1630,11 @@ Here’s an example:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># create a DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'x'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="s1">'y'</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]})</span>
 
 <span class="c1"># calculate the sum of column x and y</span>
-<span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">z</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">])</span>
-   <span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">sum_z</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">)))</span>
+<span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">z</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'x'</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">'y'</span><span class="p">])</span>
+   <span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">sum_z</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'z'</span><span class="p">,</span> <span class="s1">'sum'</span><span class="p">)))</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>##         z
 ## sum_z  21
@@ -1586,15 +1652,15 @@ efficient and effective code.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 
 <span class="n">iris</span><span class="w"> </span><span class="o">%&gt;%</span>
-<span class="w">  </span><span class="nf">filter</span><span class="p">(</span><span class="n">Species</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;setosa&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
+<span class="w">  </span><span class="nf">filter</span><span class="p">(</span><span class="n">Species</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">"setosa"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">Sepal.Width</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">summarise</span><span class="p">(</span><span class="n">mean.Petal.Length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">mean</span><span class="p">(</span><span class="n">Petal.Length</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">mutate</span><span class="p">(</span><span class="n">Sepal.Width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.factor</span><span class="p">(</span><span class="n">Sepal.Width</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Sepal.Width</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mean.Petal.Length</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
-<span class="w">  </span><span class="nf">geom_bar</span><span class="p">(</span><span class="n">stat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;identity&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;dodgerblue&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
-<span class="w">  </span><span class="nf">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Mean Petal Length of Setosa by Sepal Width&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sepal Width&quot;</span><span class="p">,</span>
-<span class="w">       </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Mean Petal Length&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="nf">geom_bar</span><span class="p">(</span><span class="n">stat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"identity"</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"dodgerblue"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Mean Petal Length of Setosa by Sepal Width"</span><span class="p">,</span>
+<span class="w">       </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Sepal Width"</span><span class="p">,</span>
+<span class="w">       </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Mean Petal Length"</span><span class="p">)</span>
 </code></pre></div>
 <p><em>Associated figure not included in this repository snapshot.</em></p>
 <p>In this example, we start with the iris dataset and filter it to only
@@ -1610,19 +1676,19 @@ sepal width category.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># Load the iris dataset and pipe it into the next function</span>
-<span class="p">(</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal_length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal_width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal_length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal_width&#39;</span><span class="p">,</span> <span class="s1">&#39;class&#39;</span><span class="p">])</span>
+<span class="p">(</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">'sepal_length'</span><span class="p">,</span> <span class="s1">'sepal_width'</span><span class="p">,</span> <span class="s1">'petal_length'</span><span class="p">,</span> <span class="s1">'petal_width'</span><span class="p">,</span> <span class="s1">'class'</span><span class="p">])</span>
 
   <span class="c1"># Select columns and pivot the dataset</span>
-  <span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;sepal_length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal_width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal_length&#39;</span><span class="p">]]</span>
-  <span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+  <span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">'sepal_length'</span><span class="p">,</span> <span class="s1">'sepal_width'</span><span class="p">,</span> <span class="s1">'petal_length'</span><span class="p">]]</span>
+  <span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">var_name</span><span class="o">=</span><span class="s1">'variable'</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">'value'</span><span class="p">)</span>
 
   <span class="c1"># Group by variable and calculate mean</span>
-  <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+  <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'variable'</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
   <span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
   <span class="c1"># Filter for mean greater than 3.5 and sort by descending mean</span>
-  <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;value &gt; 3.5&#39;</span><span class="p">)</span>
-  <span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+  <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">'value &gt; 3.5'</span><span class="p">)</span>
+  <span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'value'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>##        variable     value
@@ -1822,17 +1888,17 @@ data frame:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># Load data</span>
-<span class="n">mtcars</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/mwaskom/seaborn-data/master/mtcars.csv&#39;</span><span class="p">)</span>
+<span class="n">mtcars</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/mtcars.csv'</span><span class="p">)</span>
 
 <span class="c1"># Filter for cars with more than 100 horsepower</span>
-<span class="n">filtered_mtcars</span> <span class="o">=</span> <span class="n">mtcars</span><span class="p">[</span><span class="n">mtcars</span><span class="p">[</span><span class="s1">&#39;hp&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">]</span>
+<span class="n">filtered_mtcars</span> <span class="o">=</span> <span class="n">mtcars</span><span class="p">[</span><span class="n">mtcars</span><span class="p">[</span><span class="s1">'hp'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">]</span>
 
 <span class="c1"># Add a new column with fuel efficiency in km per liter</span>
-<span class="n">filtered_mtcars</span><span class="p">[</span><span class="s1">&#39;kmpl&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.425</span> <span class="o">*</span> <span class="n">filtered_mtcars</span><span class="p">[</span><span class="s1">&#39;mpg&#39;</span><span class="p">]</span>
+<span class="n">filtered_mtcars</span><span class="p">[</span><span class="s1">'kmpl'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.425</span> <span class="o">*</span> <span class="n">filtered_mtcars</span><span class="p">[</span><span class="s1">'mpg'</span><span class="p">]</span>
 
 <span class="c1"># Group by number of cylinders and calculate mean horsepower and fuel efficiency</span>
-<span class="n">grouped_mtcars</span> <span class="o">=</span> <span class="n">filtered_mtcars</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cyl&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;hp&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
-                                                     <span class="s1">&#39;kmpl&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">})</span>
+<span class="n">grouped_mtcars</span> <span class="o">=</span> <span class="n">filtered_mtcars</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'cyl'</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">'hp'</span><span class="p">:</span> <span class="s1">'mean'</span><span class="p">,</span>
+                                                     <span class="s1">'kmpl'</span><span class="p">:</span> <span class="s1">'mean'</span><span class="p">})</span>
 </code></pre></div>
 <p>In this example, we first load the mtcars data from a CSV file. We then
 filter the data to only include cars with more than 100 horsepower,
@@ -1865,7 +1931,7 @@ OpenWeatherMap API:</p>
 <p>Python code:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://api.openweathermap.org/data/2.5/weather?q=London,uk&amp;appid=API_KEY&#39;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">'https://api.openweathermap.org/data/2.5/weather?q=London,uk&amp;appid=API_KEY'</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
@@ -1885,11 +1951,11 @@ in R:</p>
 <p>R code:</p>
 <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
 
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&#39;https://api.openweathermap.org/data/2.5/weather?q=London,uk&amp;appid=API_KEY&#39;</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">'https://api.openweathermap.org/data/2.5/weather?q=London,uk&amp;appid=API_KEY'</span>
 
 <span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
-<span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;text&#39;</span><span class="p">)</span>
+<span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">'text'</span><span class="p">)</span>
 
 <span class="nf">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </code></pre></div>
@@ -1905,13 +1971,13 @@ the httr and jsonlite packages to retrieve and process data from an API.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 
 <span class="c1"># Define API endpoint</span>
-<span class="n">endpoint</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://jsonplaceholder.typicode.com/posts&quot;</span>
+<span class="n">endpoint</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://jsonplaceholder.typicode.com/posts"</span>
 
 <span class="c1"># Retrieve data from API</span>
 <span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="n">endpoint</span><span class="p">)</span>
 
 <span class="c1"># Extract content from response</span>
-<span class="n">content</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">content</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">"text"</span><span class="p">)</span>
 
 <span class="c1"># Convert content to JSON</span>
 <span class="n">json</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">fromJSON</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
@@ -1933,7 +1999,7 @@ the JSON data.</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
 <span class="c1"># Define API endpoint</span>
-<span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;https://jsonplaceholder.typicode.com/posts&quot;</span>
+<span class="n">endpoint</span> <span class="o">=</span> <span class="s2">"https://jsonplaceholder.typicode.com/posts"</span>
 
 <span class="c1"># Retrieve data from API</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">endpoint</span><span class="p">)</span>
@@ -1975,13 +2041,13 @@ California:</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
 
 <span class="c1"># Set your Census API key</span>
-<span class="nf">census_api_key</span><span class="p">(</span><span class="s">&quot;your_api_key&quot;</span><span class="p">)</span>
+<span class="nf">census_api_key</span><span class="p">(</span><span class="s">"your_api_key"</span><span class="p">)</span>
 
 <span class="c1"># Get the total population for the state of California</span>
 <span class="n">ca_pop</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">get_acs</span><span class="p">(</span>
-<span class="w">  </span><span class="n">geography</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;state&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="n">variables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;B01003_001&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CA&quot;</span>
+<span class="w">  </span><span class="n">geography</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"state"</span><span class="p">,</span>
+<span class="w">  </span><span class="n">variables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"B01003_001"</span><span class="p">,</span>
+<span class="w">  </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"CA"</span>
 <span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">rename</span><span class="p">(</span><span class="n">total_population</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">select</span><span class="p">(</span><span class="n">total_population</span><span class="p">)</span>
@@ -1998,13 +2064,13 @@ the state of California using pipes and dplyr functions:</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
 
 <span class="c1"># Set your Census API key</span>
-<span class="nf">census_api_key</span><span class="p">(</span><span class="s">&quot;your_api_key&quot;</span><span class="p">)</span>
+<span class="nf">census_api_key</span><span class="p">(</span><span class="s">"your_api_key"</span><span class="p">)</span>
 
 <span class="c1"># Get the total population for the state of California</span>
 <span class="n">ca_pop</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">get_acs</span><span class="p">(</span>
-<span class="w">  </span><span class="n">geography</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;state&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="n">variables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;B01003_001&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CA&quot;</span>
+<span class="w">  </span><span class="n">geography</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"state"</span><span class="p">,</span>
+<span class="w">  </span><span class="n">variables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"B01003_001"</span><span class="p">,</span>
+<span class="w">  </span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"CA"</span>
 <span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">rename</span><span class="p">(</span><span class="n">total_population</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span>
 <span class="w">  </span><span class="nf">select</span><span class="p">(</span><span class="n">total_population</span><span class="p">)</span>
@@ -2022,19 +2088,19 @@ California:</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># Set your Census API key</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">Census</span><span class="p">(</span><span class="s2">&quot;your_api_key&quot;</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Census</span><span class="p">(</span><span class="s2">"your_api_key"</span><span class="p">)</span>
 
 <span class="c1"># Get the total population for the state of California</span>
-<span class="n">ca_pop</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">acs5</span><span class="o">.</span><span class="n">state</span><span class="p">((</span><span class="s2">&quot;B01003_001&quot;</span><span class="p">),</span> <span class="n">states</span><span class="o">.</span><span class="n">CA</span><span class="o">.</span><span class="n">fips</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="mi">2019</span><span class="p">)</span>
+<span class="n">ca_pop</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">acs5</span><span class="o">.</span><span class="n">state</span><span class="p">((</span><span class="s2">"B01003_001"</span><span class="p">),</span> <span class="n">states</span><span class="o">.</span><span class="n">CA</span><span class="o">.</span><span class="n">fips</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="mi">2019</span><span class="p">)</span>
 
 <span class="c1"># Convert the result to a Pandas DataFrame</span>
 <span class="n">ca_pop_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">ca_pop</span><span class="p">)</span>
 
 <span class="c1"># Rename the column</span>
-<span class="n">ca_pop_df</span> <span class="o">=</span> <span class="n">ca_pop_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;B01003_001E&quot;</span><span class="p">:</span> <span class="s2">&quot;total_population&quot;</span><span class="p">})</span>
+<span class="n">ca_pop_df</span> <span class="o">=</span> <span class="n">ca_pop_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"B01003_001E"</span><span class="p">:</span> <span class="s2">"total_population"</span><span class="p">})</span>
 
 <span class="c1"># Select only the total population column</span>
-<span class="n">ca_pop_df</span> <span class="o">=</span> <span class="n">ca_pop_df</span><span class="p">[[</span><span class="s2">&quot;total_population&quot;</span><span class="p">]]</span>
+<span class="n">ca_pop_df</span> <span class="o">=</span> <span class="n">ca_pop_df</span><span class="p">[[</span><span class="s2">"total_population"</span><span class="p">]]</span>
 
 <span class="c1"># View the result</span>
 <span class="n">ca_pop_df</span>
@@ -2055,7 +2121,7 @@ following code downloads and reads Lidar data for a specific area:</p>
 <div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">lidR</span><span class="p">)</span>
 
 <span class="c1"># Download Lidar data</span>
-<span class="n">LASfile</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">system.file</span><span class="p">(</span><span class="s">&quot;extdata&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Megaplot.laz&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">package</span><span class="o">=</span><span class="s">&quot;lidR&quot;</span><span class="p">)</span>
+<span class="n">LASfile</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">system.file</span><span class="p">(</span><span class="s">"extdata"</span><span class="p">,</span><span class="w"> </span><span class="s">"Megaplot.laz"</span><span class="p">,</span><span class="w"> </span><span class="n">package</span><span class="o">=</span><span class="s">"lidR"</span><span class="p">)</span>
 <span class="n">lidar</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">readLAS</span><span class="p">(</span><span class="n">LASfile</span><span class="p">)</span>
 
 <span class="c1"># Visualize the data</span>
@@ -2069,9 +2135,9 @@ websites. Access the data: You can use the pylastools package in Python
 to download and read Lidar data in the LAS format. For example, the
 following code downloads and reads Lidar data for a specific area:</p>
 <p>Python code:</p>
-<div class="highlight"><pre><span></span><code><span class="nf">py_install</span><span class="p">(</span><span class="s">&quot;requests&quot;</span><span class="p">)</span>
-<span class="nf">py_install</span><span class="p">(</span><span class="s">&quot;pylas&quot;</span><span class="p">)</span>
-<span class="nf">py_install</span><span class="p">(</span><span class="s">&quot;laspy&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nf">py_install</span><span class="p">(</span><span class="s">"requests"</span><span class="p">)</span>
+<span class="nf">py_install</span><span class="p">(</span><span class="s">"pylas"</span><span class="p">)</span>
+<span class="nf">py_install</span><span class="p">(</span><span class="s">"laspy"</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pylas</span><span class="w"> </span><span class="kn">import</span> <span class="n">read</span>
@@ -2079,10 +2145,10 @@ following code downloads and reads Lidar data for a specific area:</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1"># Download Lidar data</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_CA_SanFrancisco_2016_LAS_2018.zip&quot;</span>
-<span class="n">lasfile</span> <span class="o">=</span> <span class="s2">&quot;USGS_LPC_CA_SanFrancisco_2016_LAS_2018.las&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_CA_SanFrancisco_2016_LAS_2018.zip"</span>
+<span class="n">lasfile</span> <span class="o">=</span> <span class="s2">"USGS_LPC_CA_SanFrancisco_2016_LAS_2018.las"</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="nb">open</span><span class="p">(</span><span class="n">lasfile</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<span class="nb">open</span><span class="p">(</span><span class="n">lasfile</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
 <span class="c1"># Read the data</span>
 <span class="n">lidar</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">lasfile</span><span class="p">)</span>
@@ -2109,14 +2175,14 @@ and analyze the dataset.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 
 <span class="c1"># Read the CSV file</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://raw.githubusercontent.com/Data4BlackLives/covid-19/master/data/COVID19_race_data.csv&quot;</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://raw.githubusercontent.com/Data4BlackLives/covid-19/master/data/COVID19_race_data.csv"</span>
 <span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Basic information about the dataset</span>
 <span class="nf">print</span><span class="p">(</span><span class="nf">dim</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
 <span class="nf">print</span><span class="p">(</span><span class="nf">head</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
 
-<span class="c1"># Example analysis: calculate the mean of &#39;cases_total&#39; by &#39;state&#39;</span>
+<span class="c1"># Example analysis: calculate the mean of 'cases_total' by 'state'</span>
 <span class="n">data</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">summarize</span><span class="p">(</span><span class="n">mean_cases_total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">mean</span><span class="p">(</span><span class="n">cases_total</span><span class="p">,</span><span class="w"> </span><span class="n">na.rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span>
@@ -2128,15 +2194,15 @@ analyze the dataset.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># Read the CSV file</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/Data4BlackLives/covid-19/master/data/COVID19_race_data.csv&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://raw.githubusercontent.com/Data4BlackLives/covid-19/master/data/COVID19_race_data.csv"</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Basic information about the dataset</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 
-<span class="c1"># Example analysis: calculate the mean of &#39;cases_total&#39; by &#39;state&#39;</span>
-<span class="n">mean_cases_total</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;state&quot;</span><span class="p">)[</span><span class="s2">&quot;cases_total&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1"># Example analysis: calculate the mean of 'cases_total' by 'state'</span>
+<span class="n">mean_cases_total</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"state"</span><span class="p">)[</span><span class="s2">"cases_total"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mean_cases_total</span><span class="p">)</span>
 </code></pre></div>
 <p>In conclusion, both R and Python provide powerful libraries and tools
@@ -2159,17 +2225,17 @@ process data from the ProPublica Congress API.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 
-<span class="c1"># Replace &#39;your_api_key&#39; with your ProPublica API key</span>
+<span class="c1"># Replace 'your_api_key' with your ProPublica API key</span>
 
 <span class="c1">#</span>
 
 <span class="c1"># Fetch data about the current Senate members</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://api.propublica.org/congress/v1/117/senate/members.json&quot;</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://api.propublica.org/congress/v1/117/senate/members.json"</span>
 <span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">`X-API-Key`</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">api_key</span><span class="p">))</span>
 
 <span class="c1"># Check if the request was successful</span>
-<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">http_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">$</span><span class="n">category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Success&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">http_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">$</span><span class="n">category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">"Success"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">"parsed"</span><span class="p">)</span>
 <span class="w">  </span><span class="n">members</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">results</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span><span class="o">$</span><span class="n">members</span>
 
 <span class="w">  </span><span class="c1"># Calculate the number of members in each party</span>
@@ -2191,24 +2257,24 @@ the ProPublica Congress API and ‘pandas’ library to process the data.</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="c1"># Replace &#39;your_api_key&#39; with your ProPublica API key</span>
-<span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;your_api_key&quot;</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;X-API-Key&quot;</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+<span class="c1"># Replace 'your_api_key' with your ProPublica API key</span>
+<span class="n">api_key</span> <span class="o">=</span> <span class="s2">"your_api_key"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"X-API-Key"</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
 
 <span class="c1"># Fetch data about the current Senate members</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.propublica.org/congress/v1/117/senate/members.json&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://api.propublica.org/congress/v1/117/senate/members.json"</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
 
 <span class="c1"># Check if the request was successful</span>
 <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-    <span class="n">members</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;results&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;members&quot;</span><span class="p">]</span>
+    <span class="n">members</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"results"</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">"members"</span><span class="p">]</span>
 
     <span class="c1"># Calculate the number of members in each party</span>
-    <span class="n">party_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">members</span><span class="p">)[</span><span class="s2">&quot;party&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+    <span class="n">party_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">members</span><span class="p">)[</span><span class="s2">"party"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">party_counts</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <p>In conclusion, both R and Python offer efficient ways to fetch and
 process data from APIs like the ProPublica Congress API. The ‘httr’ and
@@ -2230,13 +2296,13 @@ process data from the Nonprofit Explorer API.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 
-<span class="c1"># Fetch data for organizations with the keyword &quot;education&quot;</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://projects.propublica.org/nonprofits/api/v2/search.json?q=education&quot;</span>
+<span class="c1"># Fetch data for organizations with the keyword "education"</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://projects.propublica.org/nonprofits/api/v2/search.json?q=education"</span>
 <span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Check if the request was successful</span>
-<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">http_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">$</span><span class="n">category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Success&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">http_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">$</span><span class="n">category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">"Success"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">"parsed"</span><span class="p">)</span>
 <span class="w">  </span><span class="n">organizations</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">organizations</span>
 
 <span class="w">  </span><span class="c1"># Count the number of organizations per state</span>
@@ -2263,20 +2329,20 @@ the Nonprofit Explorer API and ‘pandas’ library to process the data.</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="c1"># Fetch data for organizations with the keyword &quot;education&quot;</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://projects.propublica.org/nonprofits/api/v2/search.json?q=education&quot;</span>
+<span class="c1"># Fetch data for organizations with the keyword "education"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://projects.propublica.org/nonprofits/api/v2/search.json?q=education"</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Check if the request was successful</span>
 <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-    <span class="n">organizations</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;organizations&quot;</span><span class="p">]</span>
+    <span class="n">organizations</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"organizations"</span><span class="p">]</span>
 
     <span class="c1"># Count the number of organizations per state</span>
-    <span class="n">state_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">organizations</span><span class="p">)[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+    <span class="n">state_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">organizations</span><span class="p">)[</span><span class="s2">"state"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">state_counts</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>## CA         22
 ## TX         12
@@ -2333,23 +2399,23 @@ process data from the Campaign Finance API.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 
 <span class="c1"># Fetch data about individual contributions for the 2020 election cycle</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://api.open.fec.gov/v1/schedules/schedule_a/?api_key=&#39;OGwpkX7tH5Jihs1qQcisKfVAMddJzmzouWKtKoby&#39;&amp;two_year_transaction_period=2020&amp;sort_hide_null=false&amp;sort_null_only=false&amp;per_page=20&amp;page=1&quot;</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://api.open.fec.gov/v1/schedules/schedule_a/?api_key='OGwpkX7tH5Jihs1qQcisKfVAMddJzmzouWKtKoby'&amp;two_year_transaction_period=2020&amp;sort_hide_null=false&amp;sort_null_only=false&amp;per_page=20&amp;page=1"</span>
 <span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Check if the request was successful</span>
-<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">http_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">$</span><span class="n">category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Success&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+<span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">http_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">$</span><span class="n">category</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">"Success"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="s">"parsed"</span><span class="p">)</span>
 <span class="w">  </span><span class="n">contributions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">results</span>
 
 <span class="w">  </span><span class="c1"># Calculate the total contributions per state</span>
 <span class="w">  </span><span class="n">state_totals</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="n">contributions</span><span class="o">$</span><span class="n">contributor_state</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">contributions</span><span class="o">$</span><span class="n">contributor_state</span><span class="p">),</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span>
-<span class="w">  </span><span class="nf">colnames</span><span class="p">(</span><span class="n">state_totals</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;State&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Total_Contributions&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="nf">colnames</span><span class="p">(</span><span class="n">state_totals</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">"State"</span><span class="p">,</span><span class="w"> </span><span class="s">"Total_Contributions"</span><span class="p">)</span>
 <span class="w">  </span><span class="nf">print</span><span class="p">(</span><span class="n">state_totals</span><span class="p">)</span>
 <span class="p">}</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nf">print</span><span class="p">(</span><span class="nf">http_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">$</span><span class="n">message</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>## [1] &quot;Client error: (403) Forbidden&quot;
+<div class="highlight"><pre><span></span><code>## [1] "Client error: (403) Forbidden"
 </code></pre></div>
 <p>Python: In Python, we’ll use the ‘requests’ library to fetch data from
 the Campaign Finance API and ‘pandas’ library to process the data.</p>
@@ -2360,20 +2426,20 @@ the Campaign Finance API and ‘pandas’ library to process the data.</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># Fetch data about individual contributions for the 2020 election cycle</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.open.fec.gov/v1/schedules/schedule_a/?api_key=your_api_key&amp;two_year_transaction_period=2020&amp;sort_hide_null=false&amp;sort_null_only=false&amp;per_page=20&amp;page=1&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://api.open.fec.gov/v1/schedules/schedule_a/?api_key=your_api_key&amp;two_year_transaction_period=2020&amp;sort_hide_null=false&amp;sort_null_only=false&amp;per_page=20&amp;page=1"</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Check if the request was successful</span>
 <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-    <span class="n">contributions</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;results&quot;</span><span class="p">]</span>
+    <span class="n">contributions</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"results"</span><span class="p">]</span>
 
     <span class="c1"># Calculate the total contributions per state</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">contributions</span><span class="p">)</span>
-    <span class="n">state_totals</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;contributor_state&quot;</span><span class="p">)[</span><span class="s2">&quot;contribution_receipt_amount&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">state_totals</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"contributor_state"</span><span class="p">)[</span><span class="s2">"contribution_receipt_amount"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">state_totals</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>## Error: 403
 </code></pre></div>
@@ -2404,7 +2470,7 @@ GeoJSON data.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 
 <span class="c1"># Download historic redlining data for Philadelphia</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://dsl.richmond.edu/panorama/redlining/static/downloads/geojson/PAPhiladelphia1937.geojson&quot;</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://dsl.richmond.edu/panorama/redlining/static/downloads/geojson/PAPhiladelphia1937.geojson"</span>
 <span class="n">philly_geojson</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_sf</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Count the number of areas per HOLC grade</span>
@@ -2424,11 +2490,11 @@ the GeoJSON data.</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
 
 <span class="c1"># Download historic redlining data for Philadelphia</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://dsl.richmond.edu/panorama/redlining/static/downloads/geojson/PAPhiladelphia1937.geojson&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://dsl.richmond.edu/panorama/redlining/static/downloads/geojson/PAPhiladelphia1937.geojson"</span>
 <span class="n">philly_geojson</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Count the number of areas per HOLC grade</span>
-<span class="n">grade_counts</span> <span class="o">=</span> <span class="n">philly_geojson</span><span class="p">[</span><span class="s2">&quot;holc_grade&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">grade_counts</span> <span class="o">=</span> <span class="n">philly_geojson</span><span class="p">[</span><span class="s2">"holc_grade"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">grade_counts</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>## B    28
@@ -2459,13 +2525,13 @@ Shapefile data.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 
 <span class="c1"># Download historic redlining data for Philadelphia</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://www2.census.gov/geo/tiger/TIGER2020/AIANNH/tl_2020_us_aiannh.zip&quot;</span>
-<span class="n">temp_file</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tempfile</span><span class="p">(</span><span class="n">fileext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;.zip&quot;</span><span class="p">)</span>
-<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wb&quot;</span><span class="p">)</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://www2.census.gov/geo/tiger/TIGER2020/AIANNH/tl_2020_us_aiannh.zip"</span>
+<span class="n">temp_file</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tempfile</span><span class="p">(</span><span class="n">fileext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">".zip"</span><span class="p">)</span>
+<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"wb"</span><span class="p">)</span>
 <span class="nf">unzip</span><span class="p">(</span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">exdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">tempdir</span><span class="p">())</span>
 
 <span class="c1"># Read the Shapefile</span>
-<span class="n">shapefile_path</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="nf">tempdir</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;tl_2020_us_aiannh.shp&quot;</span><span class="p">)</span>
+<span class="n">shapefile_path</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="nf">tempdir</span><span class="p">(),</span><span class="w"> </span><span class="s">"tl_2020_us_aiannh.shp"</span><span class="p">)</span>
 <span class="n">aiannh</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_sf</span><span class="p">(</span><span class="n">shapefile_path</span><span class="p">)</span>
 
 <span class="c1"># Count the number of AIANNH per congressional district</span>
@@ -2506,26 +2572,26 @@ the Shapefile data.</p>
 <span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
 
 <span class="c1"># Download historic redlining data for Philadelphia</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://www2.census.gov/geo/tiger/TIGER2020/AIANNH/tl_2020_us_aiannh.zip&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://www2.census.gov/geo/tiger/TIGER2020/AIANNH/tl_2020_us_aiannh.zip"</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="n">zip_file</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">))</span>
 
 <span class="c1"># Extract Shapefile</span>
-<span class="n">temp_dir</span> <span class="o">=</span> <span class="s2">&quot;temp&quot;</span>
+<span class="n">temp_dir</span> <span class="o">=</span> <span class="s2">"temp"</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">)</span>
 
 <span class="n">zip_file</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">temp_dir</span><span class="p">)</span>
-<span class="n">shapefile_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">,</span> <span class="s2">&quot;tl_2020_us_aiannh.shp&quot;</span><span class="p">)</span>
+<span class="n">shapefile_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">,</span> <span class="s2">"tl_2020_us_aiannh.shp"</span><span class="p">)</span>
 
 <span class="c1"># Read the Shapefile</span>
 <span class="n">aiannh</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">shapefile_path</span><span class="p">)</span>
 
 <span class="c1"># Count the number of AIANNH per congressional district</span>
-<span class="n">state_counts</span> <span class="o">=</span> <span class="n">aiannh</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;LSAD&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;count&quot;</span><span class="p">)</span>
+<span class="n">state_counts</span> <span class="o">=</span> <span class="n">aiannh</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"LSAD"</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"count"</span><span class="p">)</span>
 
 <span class="c1"># Sort by descending count</span>
-<span class="n">state_counts_sorted</span> <span class="o">=</span> <span class="n">state_counts</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">state_counts_sorted</span> <span class="o">=</span> <span class="n">state_counts</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">"count"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">state_counts_sorted</span><span class="p">)</span>
 </code></pre></div>
@@ -2581,9 +2647,9 @@ and the ‘stringr’ package to process the text data.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 
 <span class="c1"># Download the BIA PDF</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://www.govinfo.gov/content/pkg/FR-2022-01-28/pdf/2022-01789.pdf&quot;</span>
-<span class="n">temp_file</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tempfile</span><span class="p">(</span><span class="n">fileext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;.pdf&quot;</span><span class="p">)</span>
-<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wb&quot;</span><span class="p">)</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://www.govinfo.gov/content/pkg/FR-2022-01-28/pdf/2022-01789.pdf"</span>
+<span class="n">temp_file</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tempfile</span><span class="p">(</span><span class="n">fileext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">".pdf"</span><span class="p">)</span>
+<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"wb"</span><span class="p">)</span>
 
 <span class="c1"># Extract text from the PDF</span>
 <span class="n">pdf_text</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">pdf_text</span><span class="p">(</span><span class="n">temp_file</span><span class="p">)</span>
@@ -2591,13 +2657,13 @@ and the ‘stringr’ package to process the text data.</p>
 
 <span class="c1"># Define helper functions</span>
 <span class="n">tribe_state_extractor</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">text_line</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">regex_pattern</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;(.*),\\s+([A-Z]{2})$&quot;</span>
+<span class="w">  </span><span class="n">regex_pattern</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"(.*),\\s+([A-Z]{2})$"</span>
 <span class="w">  </span><span class="n">tribe_state</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">str_match</span><span class="p">(</span><span class="n">text_line</span><span class="p">,</span><span class="w"> </span><span class="n">regex_pattern</span><span class="p">)</span>
 <span class="w">  </span><span class="kr">return</span><span class="p">(</span><span class="n">tribe_state</span><span class="p">)</span>
 <span class="p">}</span>
 
 <span class="n">is_valid_tribe_line</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="n">text_line</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">regex_pattern</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;^\\d+\\s+&quot;</span>
+<span class="w">  </span><span class="n">regex_pattern</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"^\\d+\\s+"</span>
 <span class="w">  </span><span class="kr">return</span><span class="p">(</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="nf">str_match</span><span class="p">(</span><span class="n">text_line</span><span class="p">,</span><span class="w"> </span><span class="n">regex_pattern</span><span class="p">)))</span>
 <span class="p">}</span>
 
@@ -2608,7 +2674,7 @@ and the ‘stringr’ package to process the text data.</p>
 
 <span class="c1"># Count the number of tribes per state</span>
 <span class="n">tribe_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.data.frame</span><span class="p">(</span><span class="n">tribe_states</span><span class="p">)</span>
-<span class="nf">colnames</span><span class="p">(</span><span class="n">tribe_data</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Tribe&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;State&quot;</span><span class="p">)</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">tribe_data</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">"Tribe"</span><span class="p">,</span><span class="w"> </span><span class="s">"State"</span><span class="p">)</span>
 <span class="n">state_counts</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tribe_data</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">group_by</span><span class="p">(</span><span class="n">State</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
 <span class="w">  </span><span class="nf">summarise</span><span class="p">(</span><span class="n">Count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">n</span><span class="p">())</span>
@@ -2629,7 +2695,7 @@ the PDF and the ‘re’ module to process the text data.</p>
 <span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
 
 <span class="c1"># Download the BIA PDF</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://www.bia.gov/sites/bia.gov/files/assets/public/raca/online-tribal-leaders-directory/tribal_leaders_2021-12-27.pdf&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://www.bia.gov/sites/bia.gov/files/assets/public/raca/online-tribal-leaders-directory/tribal_leaders_2021-12-27.pdf"</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># Extract text from the PDF</span>
@@ -2637,7 +2703,7 @@ the PDF and the ‘re’ module to process the text data.</p>
 <span class="n">tribe_text</span> <span class="o">=</span> <span class="p">[</span><span class="n">pdf_reader</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">extractText</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">pdf_reader</span><span class="o">.</span><span class="n">numPages</span><span class="p">)]</span>
 
 <span class="c1"># Process text data to extract tribes and states</span>
-<span class="n">tribes</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^\d+\s+(.+),\s+([A-Z]</span><span class="si">{2}</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">tribe_text</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">line</span><span class="p">]</span>
+<span class="n">tribes</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">'^\d+\s+(.+),\s+([A-Z]</span><span class="si">{2}</span><span class="s1">)'</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">tribe_text</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span> <span class="k">if</span> <span class="n">line</span><span class="p">]</span>
 <span class="n">tribe_states</span> <span class="o">=</span> <span class="p">[</span><span class="n">state</span> <span class="k">for</span> <span class="n">tribe</span><span class="p">,</span> <span class="n">state</span> <span class="ow">in</span> <span class="n">tribes</span><span class="p">]</span>
 
 <span class="c1"># Count the number of tribes per state</span>
@@ -2665,13 +2731,13 @@ read the dataset and count the number of Indian lands per state.</p>
 <span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 
 <span class="c1"># Download the Indian Lands dataset</span>
-<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Small-scale/data/Boundaries/indlanp010g.shp_nt00968.tar.gz&quot;</span>
-<span class="n">temp_file</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tempfile</span><span class="p">(</span><span class="n">fileext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;.tar.gz&quot;</span><span class="p">)</span>
-<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;wb&quot;</span><span class="p">)</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://prd-tnm.s3.amazonaws.com/StagedProducts/Small-scale/data/Boundaries/indlanp010g.shp_nt00968.tar.gz"</span>
+<span class="n">temp_file</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">tempfile</span><span class="p">(</span><span class="n">fileext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">".tar.gz"</span><span class="p">)</span>
+<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"wb"</span><span class="p">)</span>
 <span class="nf">untar</span><span class="p">(</span><span class="n">temp_file</span><span class="p">,</span><span class="w"> </span><span class="n">exdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">tempdir</span><span class="p">())</span>
 
 <span class="c1"># Read the Shapefile</span>
-<span class="n">shapefile_path</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="nf">tempdir</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;indlanp010g.shp&quot;</span><span class="p">)</span>
+<span class="n">shapefile_path</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="nf">tempdir</span><span class="p">(),</span><span class="w"> </span><span class="s">"indlanp010g.shp"</span><span class="p">)</span>
 <span class="n">indian_lands</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_sf</span><span class="p">(</span><span class="n">shapefile_path</span><span class="p">)</span>
 
 <span class="c1"># Count the number of Indian lands per state</span>
@@ -2696,23 +2762,23 @@ read the Shapefile and process the data.</p>
 <span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="n">BytesIO</span>
 
 <span class="c1"># Download the Indian Lands dataset</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://prd-tnm.s3.amazonaws.com/StagedProducts/Small-scale/data/Boundaries/indlanp010g.shp_nt00966.tar.gz&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://prd-tnm.s3.amazonaws.com/StagedProducts/Small-scale/data/Boundaries/indlanp010g.shp_nt00966.tar.gz"</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">tar_file</span> <span class="o">=</span> <span class="n">tarfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fileobj</span><span class="o">=</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r:gz&#39;</span><span class="p">)</span>
+<span class="n">tar_file</span> <span class="o">=</span> <span class="n">tarfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fileobj</span><span class="o">=</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'r:gz'</span><span class="p">)</span>
 
 <span class="c1"># Extract Shapefile</span>
-<span class="n">temp_dir</span> <span class="o">=</span> <span class="s2">&quot;temp&quot;</span>
+<span class="n">temp_dir</span> <span class="o">=</span> <span class="s2">"temp"</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">)</span>
 
 <span class="n">tar_file</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">temp_dir</span><span class="p">)</span>
-<span class="n">shapefile_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">,</span> <span class="s2">&quot;indlanp010g.shp&quot;</span><span class="p">)</span>
+<span class="n">shapefile_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">,</span> <span class="s2">"indlanp010g.shp"</span><span class="p">)</span>
 
 <span class="c1"># Read the Shapefile</span>
 <span class="n">indian_lands</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">shapefile_path</span><span class="p">)</span>
 
 <span class="c1"># Count the number of Indian lands per state</span>
-<span class="n">state_counts</span> <span class="o">=</span> <span class="n">indian_lands</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;STATE&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;count&quot;</span><span class="p">)</span>
+<span class="n">state_counts</span> <span class="o">=</span> <span class="n">indian_lands</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"STATE"</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"count"</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">state_counts</span><span class="p">)</span>
 </code></pre></div>

@@ -658,16 +658,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../resources/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../resources/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Resources
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../quickstart/sensitive-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with Sensitive and Restricted Data
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -811,9 +877,9 @@ cleaning it:  </p>
 
 # Helper function for opening Sentinel-2 jp2 files, with optional slicing
 def get_img_from_file(img_path, g_ncols, dtype, row_bound=None):
-    img = rasterio.open(img_path, driver=&#39;JP2OpenJPEG&#39;)
-    ncols, nrows = img.meta[&#39;width&#39;], img.meta[&#39;height&#39;]
-    assert g_ncols == ncols, f&#39;Imgs have different size ncols: {ncols} neq {g_ncols}&#39;
+    img = rasterio.open(img_path, driver='JP2OpenJPEG')
+    ncols, nrows = img.meta['width'], img.meta['height']
+    assert g_ncols == ncols, f'Imgs have different size ncols: {ncols} neq {g_ncols}'
     if row_bound is None:
         pixels = img.read(1).astype(np.float32)
     else:
@@ -830,7 +896,7 @@ def get_img_from_file(img_path, g_ncols, dtype, row_bound=None):
 def get_cloud_mask_from_file(cloud_path, crs, transform, shape, row_bound=None):
     # filter out RuntimeWarnings, due to geopandas/fiona read file spam
     # https://stackoverflow.com/questions/64995369/geopandas-warning-on-read-file
-    warnings.filterwarnings(&quot;ignore&quot;, category=RuntimeWarning)
+    warnings.filterwarnings("ignore", category=RuntimeWarning)
     try:
         cloud_file = gpd.read_file(cloud_path)
         cloud_file.crs = (str(crs))
@@ -838,7 +904,7 @@ def get_cloud_mask_from_file(cloud_path, crs, transform, shape, row_bound=None):
         # img raster data
         cloud_img = features.rasterize(
             (
-                (g[&#39;geometry&#39;], 1) for v, g in cloud_file.iterrows()
+                (g['geometry'], 1) for v, g in cloud_file.iterrows()
             ),
             out_shape=shape,
             transform=transform,
@@ -860,7 +926,7 @@ def nan_clouds(pixels, cloud_channels, max_pixel_val: float = MAX_BAND_VAL):
 <p>Finally we define our main function, which will create our cloud-cleaned composite for a single military 
 tile and optical band:  </p>
 <div class="highlight"><pre><span></span><code>def create_cloud_cleaned_composite(in_dir: str, mgrs_tile: str, band: str, out_file: str, num_slices: int = 12) -&gt; None:
-    &quot;&quot;&quot;
+    """
     Creates a cloud cleaned composite tif file from a set of sentinel 2 files
     Args:
         in_dir (str): Directory containing all of the date directories which contain the sentinel 2 data
@@ -868,13 +934,13 @@ tile and optical band:  </p>
         band (str): The optical band for which to create the composite for (B02, B03, B08) etc.
         num_slices (int): The amount of slices to split the composite up into while building it.
                           More slices will use less RAM
-    &quot;&quot;&quot;
+    """
     # Loop through each band, getting a median estimate for each
     crs = None
     transform = None
 
     # Find each optical and cloud file in the input directory for the mgrs_tile and band combination
-    mgrs_str = f&#39;{mgrs_tile[:2]}_{mgrs_tile[2]}_{mgrs_tile[3:]}&#39;.upper()
+    mgrs_str = f'{mgrs_tile[:2]}_{mgrs_tile[2]}_{mgrs_tile[3:]}'.upper()
     band_str = band.upper()
     dates = os.listdir(in_dir)
     file_sets = []
@@ -886,7 +952,7 @@ tile and optical band:  </p>
             file_path = os.path.join(in_dir, date_dir, file)
             if mgrs_str in file and band_str in file:
                 optical_file = file_path
-            elif mgrs_str in file and &#39;MSK_CLOUDS_B00&#39; in file:
+            elif mgrs_str in file and 'MSK_CLOUDS_B00' in file:
                 cloud_file = file_path
 
         if optical_file is None or cloud_file is None:
@@ -901,21 +967,21 @@ tile and optical band:  </p>
     g_nrows = None
     g_ncols = None
     for file_set in file_sets:
-        with rasterio.open(file_set[0], &#39;r&#39;, driver=&#39;JP2OpenJPEG&#39;) as rf:
-            g_nrows = rf.meta[&#39;height&#39;] if g_nrows is None else g_nrows
-            g_ncols = rf.meta[&#39;width&#39;] if g_ncols is None else g_ncols
+        with rasterio.open(file_set[0], 'r', driver='JP2OpenJPEG') as rf:
+            g_nrows = rf.meta['height'] if g_nrows is None else g_nrows
+            g_ncols = rf.meta['width'] if g_ncols is None else g_ncols
             crs = rf.crs if crs is None else crs
             transform = rf.transform if transform is None else transform
             if crs is not None and transform is not None and g_nrows is not None and g_ncols is not None:
                 break
 
     if crs is None or transform is None or g_nrows is None or g_ncols is None:
-        raise LookupError(f&#39;Could not determine the following projection attributes from the available &#39;
-                          f&#39;sentinel2 files in {in_dir}: \n&#39; \
-                          f&#39;{&quot;CRS&quot; if crs is None else &quot;&quot;} &#39;
-                          f&#39;{&quot;Transform&quot; if transform is None else &quot;&quot;} &#39;
-                          f&#39;{&quot;Number of rows&quot; if g_nrows is None else &quot;&quot;} &#39;
-                          f&#39;{&quot;Number of columns&quot; if g_ncols is None else &quot;&quot;}&#39;)
+        raise LookupError(f'Could not determine the following projection attributes from the available '
+                          f'sentinel2 files in {in_dir}: \n' \
+                          f'{"CRS" if crs is None else ""} '
+                          f'{"Transform" if transform is None else ""} '
+                          f'{"Number of rows" if g_nrows is None else ""} '
+                          f'{"Number of columns" if g_ncols is None else ""}')
 
     # Determine the slicing bounds to save memory as we process
     slice_height = g_nrows / num_slices
@@ -925,12 +991,12 @@ tile and optical band:  </p>
 
     # Correct the images one slice at a time, and then combine the slices. First create a temp directory in
     # the out_dir to store the slices 
-    slice_dir = os.path.join(os.path.dirname(out_file), &#39;slices&#39;)
+    slice_dir = os.path.join(os.path.dirname(out_file), 'slices')
     os.makedirs(slice_dir, exist_ok=True)
-    for k, row_bound in tqdm(enumerate(slice_bounds), desc=f&#39;band={band}&#39;, total=num_slices, position=2):
-        slice_file_path = os.path.join(slice_dir, f&#39;{row_bound[0]}_{row_bound[1]}.tif&#39;)
+    for k, row_bound in tqdm(enumerate(slice_bounds), desc=f'band={band}', total=num_slices, position=2):
+        slice_file_path = os.path.join(slice_dir, f'{row_bound[0]}_{row_bound[1]}.tif')
         cloud_correct_imgs = []
-        for file_set in tqdm(file_sets, desc=f&#39;slice {k + 1}&#39;, leave=False, position=3):
+        for file_set in tqdm(file_sets, desc=f'slice {k + 1}', leave=False, position=3):
             # Get data from files
             optical_file = file_set[0]
             cloud_file = file_set[1]
@@ -944,7 +1010,7 @@ tile and optical band:  </p>
         corrected_stack = np.vstack([img.ravel() for img in cloud_correct_imgs])
         median_corrected = np.nanmedian(corrected_stack, axis=0, overwrite_input=True)
         median_corrected = median_corrected.reshape(cloud_correct_imgs[0].shape)
-        with rasterio.open(slice_file_path, &#39;w&#39;, driver=&#39;GTiff&#39;, width=g_ncols, height=g_nrows,
+        with rasterio.open(slice_file_path, 'w', driver='GTiff', width=g_ncols, height=g_nrows,
                            count=1, crs=crs, transform=transform, dtype=np.float32) as wf:
             wf.write(median_corrected.astype(np.float32), 1)
 
@@ -955,13 +1021,13 @@ tile and optical band:  </p>
         del corrected_stack
 
     # Combine slices
-    with rasterio.open(out_file, &#39;w&#39;, driver=&#39;GTiff&#39;, width=g_ncols, height=g_nrows,
+    with rasterio.open(out_file, 'w', driver='GTiff', width=g_ncols, height=g_nrows,
                        count=1, crs=crs, transform=transform, dtype=np.float32) as wf:
         for slice_file in os.listdir(slice_dir):
-            bound_split = slice_file.split(&#39;.&#39;)[0].split(&#39;_&#39;)
+            bound_split = slice_file.split('.')[0].split('_')
             top_bound = int(bound_split[0])
             bottom_bound = int(bound_split[1])
-            with rasterio.open(os.path.join(slice_dir, slice_file), &#39;r&#39;, driver=&#39;GTiff&#39;) as rf:
+            with rasterio.open(os.path.join(slice_dir, slice_file), 'r', driver='GTiff') as rf:
                 wf.write(
                     rf.read(1),
                     window=Window.from_slices(
@@ -972,12 +1038,12 @@ tile and optical band:  </p>
                 )
 
     shutil.rmtree(slice_dir)
-    print(f&#39;Wrote file to {out_file}&#39;)
+    print(f'Wrote file to {out_file}')
 </code></pre></div>
 <p>Let's run an example now, using the files downloaded in the sentinel2 on aws
 tutorial for mgrs 36NUG and band B02. A figure of the file structure is included
 above. Make sure to change the in_dir and out_file parameters to match your environment.</p>
-<div class="highlight"><pre><span></span><code>create_cloud_cleaned_composite(in_dir=&lt;your_in_dir&gt;, mgrs_tile=&#39;36NUG&#39;, band=&#39;B02&#39;, out_file=&#39;test.tif&#39;)
+<div class="highlight"><pre><span></span><code>create_cloud_cleaned_composite(in_dir=&lt;your_in_dir&gt;, mgrs_tile='36NUG', band='B02', out_file='test.tif')
 </code></pre></div>
 <p>This should create an output file called test.tif in your working directory that is cloud cleaned.
 Let's take a look at the results.  </p>

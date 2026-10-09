@@ -1,0 +1,2518 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A practical guide to secure storage, encrypted transfers, controlled computing, and responsible research data management using OASIS infrastructure.">
+      
+      
+        <meta name="author" content="ESIIL staff">
+      
+      
+        <link rel="canonical" href="https://CU-ESIIL.github.io/home/quickstart/sensitive-data/">
+      
+      
+        <link rel="prev" href="../../resources/">
+      
+      
+        <link rel="next" href="../../dev-schedule/">
+      
+      
+      <link rel="icon" href="../../assets/branding/site-favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Working with Sensitive and Restricted Data - OASIS: Open Analysis and Synthesis Infrastructure for Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../assets/css/style.css">
+    
+      <link rel="stylesheet" href="../../chatbot_widget.css">
+    
+      <link rel="stylesheet" href="../../styles/brand.safe.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    
+      <link rel="stylesheet" href="../../styles/brand.css">
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+  
+  
+  
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Working with Sensitive and Restricted Data">
+  <meta property="og:description" content="Open Analysis and Synthesis Infrastructure for Science">
+  <meta property="og:url" content="https://CU-ESIIL.github.io/home/quickstart/sensitive-data/">
+  <meta property="og:image" content="https://CU-ESIIL.github.io/home//assets/branding/oasis-wordmark-mark.png">
+  <meta property="og:image:alt" content="OASIS logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Working with Sensitive and Restricted Data">
+  <meta name="twitter:description" content="Open Analysis and Synthesis Infrastructure for Science">
+  <meta name="twitter:image" content="https://CU-ESIIL.github.io/home//assets/branding/oasis-wordmark-mark.png">
+  <link rel="apple-touch-icon" href="../../assets/branding/oasis-wordmark-mark.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#working-with-sensitive-and-restricted-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid oasis-header-shell" aria-label="Header">
+    <a href="../.." title="OASIS: Open Analysis and Synthesis Infrastructure for Science" class="md-header__button md-logo" aria-label="OASIS: Open Analysis and Synthesis Infrastructure for Science" data-md-component="logo">
+      
+  <img src="../../assets/branding/esiil-wordmark-color.png" alt="logo">
+
+    </a>
+
+    <a class="oasis-header__center-logo" href="../.." aria-label="OASIS home">
+      <img src="../../assets/branding/oasis-wordmark-mark.png" alt="OASIS">
+    </a>
+
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OASIS: Open Analysis and Synthesis Infrastructure for Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Working with Sensitive and Restricted Data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CU-ESIIL/home" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    home
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OASIS: Open Analysis and Synthesis Infrastructure for Science" class="md-nav__button md-logo" aria-label="OASIS: Open Analysis and Synthesis Infrastructure for Science" data-md-component="logo">
+      
+  <img src="../../assets/branding/esiil-wordmark-color.png" alt="logo">
+
+    </a>
+    OASIS: Open Analysis and Synthesis Infrastructure for Science
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CU-ESIIL/home" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    home
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../explore/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Explore
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Explore
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explore/themes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Themes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../directory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ecosystem Directory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../event-groups/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Event Group Galleries
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Event Group Galleries
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-groups/innovation-summit-2026/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Innovation Summit 2026
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-groups/innovation-summit-2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Innovation Summit 2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-groups/innovation-summit-2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Innovation Summit 2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-groups/forest-carbon-codefest-2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forest Carbon Codefest 2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../event-groups/hackathon-2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hackathon 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud-container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Container
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../container-library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Container Library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Working with Sensitive and Restricted Data
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Working with Sensitive and Restricted Data
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-sensitive-data-require-different-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why sensitive data require different workflows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why sensitive data require different workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-the-right-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choose the right workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#four-states-to-record-for-every-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Four states to record for every control
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-secure-cloud-reproducibility-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      A secure Cloud Reproducibility Triangle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A secure Cloud Reproducibility Triangle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-reproducible-methods-without-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub: reproducible methods without disclosure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyverse-data-store-persistent-custody-through-irods" class="md-nav__link">
+    <span class="md-ellipsis">
+      CyVerse Data Store: persistent custody through iRODS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#containerized-compute-a-controlled-plaintext-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Containerized compute: a controlled plaintext environment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-secure-data-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The secure data lifecycle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The secure data lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prepare-the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prepare the data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-store-data-securely" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Store data securely
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-transfer-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Transfer data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-enter-the-computing-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Enter the computing environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-process-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Process data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-return-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Return results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Clean up
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption-different-protections-for-different-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encryption: different protections for different boundaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Encryption: different protections for different boundaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-gocommands-encryption-actually-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      What GoCommands encryption actually does
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryption-key-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encryption key management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-with-synthetic-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice with synthetic data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice with synthetic data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-establish-scratch-and-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Establish scratch and authenticate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-and-verify-a-private-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Create and verify a private collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-prepare-records-and-a-separate-exercise-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Prepare records and a separate exercise key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-upload-ciphertext-and-preserve-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Upload ciphertext and preserve evidence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-download-encrypted-bytes-and-decrypt-inside-compute" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Download encrypted bytes and decrypt inside compute
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-analyze-review-and-encrypt-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Analyze, review, and encrypt outputs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-verify-failure-behavior-and-close-the-exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Verify failure behavior and close the exercise
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-the-vm-and-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure the VM and container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure the VM and container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vm-controls-to-resolve-before-data-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      VM controls to resolve before data entry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Container controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scientific-computing-leaves-more-than-result-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scientific computing leaves more than result files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkage-keys-reidentification-and-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linkage keys, reidentification, and disclosure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validate-controls-and-retain-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validate controls and retain evidence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-is-responsible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Who is responsible?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtain-approval-before-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtain approval before processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copyable-security-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copyable security templates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue-with-oasis-and-authoritative-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continue with OASIS and authoritative references
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev-schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-sensitive-data-require-different-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why sensitive data require different workflows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why sensitive data require different workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-the-right-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choose the right workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#four-states-to-record-for-every-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Four states to record for every control
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-secure-cloud-reproducibility-triangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      A secure Cloud Reproducibility Triangle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A secure Cloud Reproducibility Triangle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-reproducible-methods-without-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub: reproducible methods without disclosure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cyverse-data-store-persistent-custody-through-irods" class="md-nav__link">
+    <span class="md-ellipsis">
+      CyVerse Data Store: persistent custody through iRODS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#containerized-compute-a-controlled-plaintext-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Containerized compute: a controlled plaintext environment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-secure-data-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The secure data lifecycle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The secure data lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prepare-the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prepare the data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-store-data-securely" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Store data securely
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-transfer-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Transfer data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-enter-the-computing-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Enter the computing environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-process-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Process data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-return-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Return results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-clean-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Clean up
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption-different-protections-for-different-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encryption: different protections for different boundaries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Encryption: different protections for different boundaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-gocommands-encryption-actually-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      What GoCommands encryption actually does
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryption-key-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encryption key management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-with-synthetic-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice with synthetic data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice with synthetic data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-establish-scratch-and-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Establish scratch and authenticate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-and-verify-a-private-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Create and verify a private collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-prepare-records-and-a-separate-exercise-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Prepare records and a separate exercise key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-upload-ciphertext-and-preserve-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Upload ciphertext and preserve evidence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-download-encrypted-bytes-and-decrypt-inside-compute" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Download encrypted bytes and decrypt inside compute
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-analyze-review-and-encrypt-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Analyze, review, and encrypt outputs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-verify-failure-behavior-and-close-the-exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Verify failure behavior and close the exercise
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-the-vm-and-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure the VM and container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure the VM and container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vm-controls-to-resolve-before-data-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      VM controls to resolve before data entry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Container controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scientific-computing-leaves-more-than-result-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scientific computing leaves more than result files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkage-keys-reidentification-and-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linkage keys, reidentification, and disclosure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validate-controls-and-retain-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validate controls and retain evidence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-is-responsible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Who is responsible?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtain-approval-before-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtain approval before processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copyable-security-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copyable security templates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue-with-oasis-and-authoritative-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continue with OASIS and authoritative references
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <a href="../../tags/#security" class="md-tag">security</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#sensitive-data" class="md-tag">sensitive data</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#restricted-data" class="md-tag">restricted data</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#cyverse" class="md-tag">cyverse</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#irods" class="md-tag">irods</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#gocommands" class="md-tag">gocommands</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#encryption" class="md-tag">encryption</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#cloud-computing" class="md-tag">cloud computing</a>
+    
+  
+    
+    
+    
+      <a href="../../tags/#data-management" class="md-tag">data management</a>
+    
+  
+</nav>
+
+
+  
+  
+
+
+<h1 id="working-with-sensitive-and-restricted-data">Working with Sensitive and Restricted Data<a class="headerlink" href="#working-with-sensitive-and-restricted-data" title="Permanent link">&para;</a></h1>
+<p><em>Secure storage, transfer, analysis, and preservation using OASIS infrastructure.</em></p>
+<p>Environmental research often needs information that cannot be openly shared: confidential agricultural measurements, private landowner records, sensitive species coordinates, restricted ecological observations, environmental monitoring records, proprietary datasets, personally identifiable information, or linkage keys. A reproducible workflow can keep methods open while controlling access to these records.</p>
+<p>This guide extends the <a href="../cloud/">Cloud Reproducibility Triangle</a>: <strong>GitHub → temporary compute → CyVerse Data Store</strong>. Read that introduction for ordinary setup; use this guide to identify the additional controls, evidence, and authorization your project needs. Start with <a href="#choose-the-right-workflow">classification</a>, then use the <a href="#the-secure-data-lifecycle">seven-stage lifecycle</a>, <a href="#practice-with-synthetic-data">synthetic tutorial</a>, and <a href="#obtain-approval-before-processing">approval process</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Authorization comes before restricted data</p>
+<p><strong>Do not upload restricted data to CyVerse until the data provider and responsible institutional authorities have confirmed that the proposed environment is appropriate.</strong> Agreements or regulated data may require a designated computing environment. Encryption does not override those requirements. Use synthetic data until approvals cover storage, transfer, compute, administrators, and preservation.</p>
+</div>
+<h2 id="why-sensitive-data-require-different-workflows">Why sensitive data require different workflows<a class="headerlink" href="#why-sensitive-data-require-different-workflows" title="Permanent link">&para;</a></h2>
+<p>Open science encourages sharing data, notebooks, maps, and intermediate results. For sensitive research, each of these can disclose information. A precise coordinate can identify a private property or vulnerable ecological resource without naming a person. Joining a land parcel layer to observations can reveal an owner; combining two innocuous tables can create an identifying record. Consider the combined dataset and likely external information, not just each source in isolation.</p>
+<p><strong>Privacy</strong> concerns appropriate use of information about people. <strong>Confidentiality</strong> means information is available only to authorized parties; it also applies to species, proprietary methods, or locations. <strong>Security</strong> comprises safeguards for confidentiality, integrity, and availability. <strong>Compliance</strong> means satisfying applicable obligations and approval processes. A security feature alone establishes none of the others.</p>
+<h3 id="choose-the-right-workflow">Choose the right workflow<a class="headerlink" href="#choose-the-right-workflow" title="Permanent link">&para;</a></h3>
+<p>These working categories support discussion; map them to your institution's actual classification scheme. They are not a substitute for that scheme.</p>
+<table>
+<thead>
+<tr>
+<th>Working category</th>
+<th>Examples</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public</td>
+<td>Released weather records, approved open datasets</td>
+<td>Standard Triangle, with licensing, provenance, and integrity checks.</td>
+</tr>
+<tr>
+<td>Private but unrestricted</td>
+<td>Unpublished work with no special sharing prohibition</td>
+<td>Standard infrastructure may be suitable with private access and ordinary institutional safeguards; confirm consent and publication plans.</td>
+</tr>
+<tr>
+<td>Confidential</td>
+<td>Landowner details, commercially sensitive observations, vulnerable species locations</td>
+<td>Document disclosure risks; obtain a control plan and environment decision from the custodian and institution.</td>
+</tr>
+<tr>
+<td>Restricted</td>
+<td>Data-use agreements, regulated identifiers, export restrictions, mandated enclaves</td>
+<td>Stop before transfer. Obtain explicit environment approval; use a different approved service if OASIS components cannot meet requirements.</td>
+</tr>
+</tbody>
+</table>
+<p>If classification is uncertain, ask the custodian and institutional research security team. Do not downgrade a dataset because names have been removed. At CU Boulder, consult <a href="https://curc.readthedocs.io/en/latest/cloud/aws/lca1/data-classification.html">Research Computing's classification guidance</a> and <a href="https://www.colorado.edu/rc/secure-research-computing-resources">secure research computing resources</a>. Their availability does not imply that any particular project is approved.</p>
+<h3 id="four-states-to-record-for-every-control">Four states to record for every control<a class="headerlink" href="#four-states-to-record-for-every-control" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Meaning</th>
+<th>Example evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supported</strong></td>
+<td>Technology provides a capability.</td>
+<td>Versioned documentation for iRODS ACLs.</td>
+</tr>
+<tr>
+<td><strong>Configured</strong></td>
+<td>Capability is enabled in the proposed environment.</td>
+<td>Reviewed collection ACLs and client settings.</td>
+</tr>
+<tr>
+<td><strong>Verified</strong></td>
+<td>A test demonstrates the intended behavior.</td>
+<td>Authorized reader succeeds; test account is denied.</td>
+</tr>
+<tr>
+<td><strong>Approved</strong></td>
+<td>Responsible authority authorizes this use.</td>
+<td>Written approval naming dataset, services, users, and conditions.</td>
+</tr>
+</tbody>
+</table>
+<p>Record these states separately, with an owner, date, and evidence reference. Unknown is an unresolved control, not a pass. Revalidate when users, images, transfer clients, endpoints, or agreements change.</p>
+<h2 id="a-secure-cloud-reproducibility-triangle">A secure Cloud Reproducibility Triangle<a class="headerlink" href="#a-secure-cloud-reproducibility-triangle" title="Permanent link">&para;</a></h2>
+<p><img alt="Secure Cloud Triangle: sanitized code in GitHub, ciphertext in CyVerse, and plaintext only within approved compute; key custody is separate." src="../../assets/diagrams/sensitive-data/secure-triangle.svg" /></p>
+<p><a href="../../assets/diagrams/sensitive-data/secure-triangle.svg">Open the full-size diagram</a>.</p>
+<p><em>The diagram describes a target architecture, not an attestation about a live OASIS deployment. Ordinary analysis exposes plaintext even when its backing volume is encrypted.</em></p>
+<h3 id="github-reproducible-methods-without-disclosure">GitHub: reproducible methods without disclosure<a class="headerlink" href="#github-reproducible-methods-without-disclosure" title="Permanent link">&para;</a></h3>
+<p>Keep code, environment manifests, image digests, and sanitized documentation public when authorized. Public repositories must exclude restricted records, credentials, encryption keys, confidential notebook outputs, sensitive metadata, and files enabling reidentification. A private repository also needs explicit authorization before receiving restricted content.</p>
+<p>Keep datasets outside the repository directory. Use <code>.gitignore</code>, notebook output review, secret scanning, and explicit staging as additional safeguards. <code>.gitignore</code> does not remove already tracked files or protect Git history. Review commit diffs, notebooks, generated HTML, CI artifacts, logs, Git LFS, and published websites. Store detailed security evidence privately: paths, ACLs, and user registers can themselves be sensitive. If a secret is committed, revoke it and follow incident procedures; deleting the current file is insufficient.</p>
+<h3 id="cyverse-data-store-persistent-custody-through-irods">CyVerse Data Store: persistent custody through iRODS<a class="headerlink" href="#cyverse-data-store-persistent-custody-through-irods" title="Permanent link">&para;</a></h3>
+<p><a href="https://learning.cyverse.org/ds/">CyVerse documents Data Store access</a> and <a href="https://learning.cyverse.org/ds/gocommands/access_management/">GoCommands permission management</a>. iRODS ACLs distinguish read, write, and ownership permissions for users and groups; inheritance affects new objects. Authentication identifies a user; authorization decides what they can access. Review effective group membership, public access, tickets, and administrator privileges as well as direct ACLs.</p>
+<p>Private collections do <strong>not</strong> prove encryption at rest. Client-side encryption can protect content before upload, but storage-level encryption, replicas, backup restoration, audit coverage, geographic placement, and deletion timelines need separate confirmation. iRODS supports resource and rule-based data management; ask CyVerse which replication and auditing policies apply to your collection. A replica is not an independent backup or a retention guarantee. Checksums can detect accidental corruption; they do not by themselves authenticate a maliciously altered object.</p>
+<p>Before approval, request written answers on storage encryption and keys, authentication/MFA for the actual access route, administrator access, audit events and availability, replica/backup locations and encryption, recovery tests, retention/trash behavior, and incident notification. These deployment facts remain <strong>unconfirmed in this guide</strong>.</p>
+<h3 id="containerized-compute-a-controlled-plaintext-environment">Containerized compute: a controlled plaintext environment<a class="headerlink" href="#containerized-compute-a-controlled-plaintext-environment" title="Permanent link">&para;</a></h3>
+<p>An authenticated Jupyter interface controls one entry point. It does not exclude the VM owner, hypervisor operator, storage administrator, or someone with Docker daemon access. A container shares the host kernel and is one layer of isolation; a VM adds another layer but does not eliminate provider administration.</p>
+<p>Identify who operates your specific DE/VICE app or VM and where it runs. Confirm encrypted working volumes, swap, snapshots, temporary files, network restrictions, image provenance, secret release, logs, and termination behavior. Use an approved image and short-lived, narrowly scoped credentials through an approved secret service or protected runtime mount. Do not bake keys into images or paste tokens into notebooks. <a href="https://docs.jetstream-cloud.org/general/gateways/">Jetstream2 gateway guidance</a> calls for specific authorization for protected information; this guide makes no certification claim about CyVerse, Jetstream2, or OASIS.</p>
+<h2 id="the-secure-data-lifecycle">The secure data lifecycle<a class="headerlink" href="#the-secure-data-lifecycle" title="Permanent link">&para;</a></h2>
+<p><strong>CyVerse Data Store → GoCommands → containerized VM → analysis → GoCommands → CyVerse Data Store.</strong> Plan the entire path, including the authorized source environment where encryption happens.</p>
+<p><img alt="Lifecycle: prepare, encrypt and store, transfer ciphertext, analyze plaintext in approved compute, review and encrypt outputs, upload and verify, then close the plaintext boundary." src="../../assets/diagrams/sensitive-data/data-lifecycle.svg" /></p>
+<p><a href="../../assets/diagrams/sensitive-data/data-lifecycle.svg">Open the full-size diagram</a>.</p>
+<p><em>Ciphertext and plaintext are explicitly labeled. Network encryption protects the transfer path; file encryption protects content before and after transfer.</em></p>
+<h3 id="1-prepare-the-data">1. Prepare the data<a class="headerlink" href="#1-prepare-the-data" title="Permanent link">&para;</a></h3>
+<p><strong>What happens:</strong> The custodian classifies inputs and proposed combinations, authorizes a purpose, minimizes fields, and separates direct identifiers and linkage keys from routine analytical records.</p>
+<p><strong>What could go wrong:</strong> Unnecessary identifiers, sensitive filenames, or joins expand disclosure risk; a data-use agreement prohibits the selected service.</p>
+<p><strong>Protections:</strong> Define allowed users, purposes, locations, retention, outputs, and linkage operations before receiving data. Use pseudonymous records where practical; their classification may remain restricted.</p>
+<p><strong>Verify:</strong> Have the custodian review a synthetic schema, fields, joins, and proposed data flow against the agreement.</p>
+<p><strong>Retain:</strong> Classification worksheet, agreement references, minimized schema, environment decision, named approvals. Keep identifiers out of public evidence.</p>
+<h3 id="2-store-data-securely">2. Store data securely<a class="headerlink" href="#2-store-data-securely" title="Permanent link">&para;</a></h3>
+<p><strong>What happens:</strong> Ciphertext is preserved in a restricted collection with intended users and groups.</p>
+<p><strong>What could go wrong:</strong> Inherited access, a public ticket, misplaced keys, unencrypted replicas, or an undocumented backup copies data outside approved custody.</p>
+<p><strong>Protections:</strong> Audit parent and child ACLs, limit ownership, separate keys, use required at-rest controls, and document replication, recovery, and retention. Do not rely on a folder name such as <code>private</code>.</p>
+<p><strong>Verify:</strong> Test a permitted account and a separate non-member test account with synthetic objects. Inspect ACLs after upload and after changing membership; request provider evidence for backend controls.</p>
+<p><strong>Retain:</strong> Redacted ACL exports, access-test results, group review, key custody plan, and provider confirmations.</p>
+<h3 id="3-transfer-data">3. Transfer data<a class="headerlink" href="#3-transfer-data" title="Permanent link">&para;</a></h3>
+<p><strong>What happens:</strong> GoCommands authenticates and moves ciphertext through an encrypted, verified connection.</p>
+<p><strong>What could go wrong:</strong> Encryption negotiation is disabled, certificate checks are bypassed, a resource-server path differs from the catalog path, or corruption goes undetected.</p>
+<p><strong>Protections:</strong> Require the provider-approved secure iRODS configuration, trusted CA chain, hostname verification, and encrypted data channels. Use checksums and an authenticated file format when the threat model requires tamper detection.</p>
+<p><strong>Verify:</strong> Use synthetic transfers, examine effective client settings and server evidence, and test rejection of an invalid certificate in a controlled test environment. Validate all endpoints and parallel data paths; a successful <code>ls</code> only tests part of the route.</p>
+<p><strong>Retain:</strong> Client version and redacted configuration, certificate/endpoint evidence, transfer reports, and independently trusted digest records. Reports may expose filenames and account names.</p>
+<h3 id="4-enter-the-computing-environment">4. Enter the computing environment<a class="headerlink" href="#4-enter-the-computing-environment" title="Permanent link">&para;</a></h3>
+<p><strong>What happens:</strong> Named users enter the approved VM and container; credentials and decryption keys are released only to authorized work.</p>
+<p><strong>What could go wrong:</strong> A shared login, open notebook port, plaintext swap, broad mount, privileged container, or unauthorized snapshot expands access.</p>
+<p><strong>Protections:</strong> Apply required MFA/SSH controls, ingress and egress rules, encrypted disks/swap, limited administration, approved images, and protected key injection. Match controls to the agreement.</p>
+<p><strong>Verify:</strong> Check cloud rules and guest firewall, actual volume encryption evidence, identity configuration, runtime mounts, user id, capabilities, and update status. Ask the provider about host/hypervisor controls.</p>
+<p><strong>Retain:</strong> Approved image digest, configuration inventory, access tests, provider attestation, and administration register.</p>
+<h3 id="5-process-data">5. Process data<a class="headerlink" href="#5-process-data" title="Permanent link">&para;</a></h3>
+<p><strong>What happens:</strong> Decrypt only inside approved compute; plaintext enters RAM and approved working storage while analysis runs.</p>
+<p><strong>What could go wrong:</strong> Notebook output, cache, crash dump, spill directory, log, temporary file, or container layer persists plaintext. An external API receives it.</p>
+<p><strong>Protections:</strong> Route all scratch paths into approved storage; suppress confidential output; constrain network access; prohibit unapproved telemetry and external services. Release keys only for the required task.</p>
+<p><strong>Verify:</strong> Run a synthetic marker through every application; inspect checkpoints, temp paths, logs, spills, and writable layers after success and failure. Document that privileged runtime operators may still access plaintext.</p>
+<p><strong>Retain:</strong> Plaintext-boundary inventory, synthetic scan results, runtime settings, and access logs without real record values.</p>
+<h3 id="6-return-results">6. Return results<a class="headerlink" href="#6-return-results" title="Permanent link">&para;</a></h3>
+<p><strong>What happens:</strong> Classify outputs, review disclosure, encrypt restricted deliverables, upload, and verify restoration.</p>
+<p><strong>What could go wrong:</strong> Maps or model predictions reveal locations; small counts identify participants; an incomplete upload becomes the only copy.</p>
+<p><strong>Protections:</strong> Treat outputs as restricted until reviewed. Review records, geography, model artifacts, and metadata; preserve approved public outputs separately from restricted artifacts. Keep integrity evidence in trusted custody.</p>
+<p><strong>Verify:</strong> Restore to a second local location, compare bytes or trusted hashes, verify authentication tags before using plaintext, and inspect output ACLs. Require a named disclosure reviewer for release.</p>
+<p><strong>Retain:</strong> Review decision, authorized release versions, checksums, transfer results, restored-file comparison, and output classification.</p>
+<h3 id="7-clean-up">7. Clean up<a class="headerlink" href="#7-clean-up" title="Permanent link">&para;</a></h3>
+<p><strong>What happens:</strong> End the plaintext session; revoke credentials as appropriate; remove working copies and address retained infrastructure copies.</p>
+<p><strong>What could go wrong:</strong> Stopped VMs retain disks; snapshots, backup copies, trash, credentials, or notebook checkpoints survive. Secure-overwrite tools miss SSD or cloud copies.</p>
+<p><strong>Protections:</strong> Follow an approved destruction and retention plan for scratch, volumes, images, snapshots, backups, credentials, and keys. Preserve required evidence before cleanup. Cryptographic erasure requires destroying all relevant encryption keys and ruling out retained plaintext or recoverable key copies.</p>
+<p><strong>Verify:</strong> Confirm volume and snapshot inventory, session termination, credential expiration/revocation, and provider deletion processes. <code>rm</code> removes a directory entry; it does not prove media sanitization.</p>
+<p><strong>Retain:</strong> Destruction record, provider confirmations, retained-copy inventory, exceptions, and custodian acceptance. Consult <a href="https://csrc.nist.gov/pubs/sp/800/88/r2/final">NIST media sanitization guidance</a> when defining the process.</p>
+<h2 id="encryption-different-protections-for-different-boundaries">Encryption: different protections for different boundaries<a class="headerlink" href="#encryption-different-protections-for-different-boundaries" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Protection</th>
+<th>Helps address</th>
+<th>Does not establish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TLS / encrypted iRODS transfer</td>
+<td>Interception on the verified transfer path</td>
+<td>Encryption of stored files or trustworthy endpoints.</td>
+</tr>
+<tr>
+<td>Volume encryption at rest</td>
+<td>Exposure of underlying storage media when keys are unavailable</td>
+<td>Protection from a running VM's authorized processes or administrators.</td>
+</tr>
+<tr>
+<td>Client-side file encryption</td>
+<td>Exposure of remote file content to parties without the key</td>
+<td>Hidden sizes, collection names, access patterns, or approved processing.</td>
+</tr>
+<tr>
+<td>Authenticated file encryption, such as AES-GCM</td>
+<td>Confidentiality plus detection of changes to protected ciphertext</td>
+<td>Identity of its creator, rollback prevention, or safe publication.</td>
+</tr>
+<tr>
+<td>ACLs and authentication</td>
+<td>Restricting ordinary account access</td>
+<td>Encryption, exclusion of administrators, or resistance to key theft.</td>
+</tr>
+<tr>
+<td>Independent trusted checksum</td>
+<td>Detecting changed bytes relative to a trusted reference</td>
+<td>Authenticity if an attacker can replace both data and reference.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>In transit:</strong> TLS needs trusted certificates and correct peer verification. iRODS negotiates secure communication; catalog/control and resource/data connections must be covered. Do not equate an HTTPS browser session with encryption on a separate GoCommands path.</p>
+<p><strong>At rest:</strong> Files or volumes can be encrypted while stored. Record which layer, who controls keys, and whether replicas and snapshots inherit the protection. Private permissions alone are not encryption.</p>
+<p><strong>Client-side:</strong> Encrypt before upload in an authorized environment. This can reduce storage-side content exposure but still leaves metadata and requires key recovery. File encryption and transport encryption solve different problems.</p>
+<p><strong>During analysis:</strong> Ordinary Python, R, GDAL, and Dask workloads require plaintext in RAM. Encrypted disks encrypt blocks beneath the filesystem; applications still read plaintext. This guide does not assume confidential computing or encryption of active memory.</p>
+<h3 id="what-gocommands-encryption-actually-does">What GoCommands encryption actually does<a class="headerlink" href="#what-gocommands-encryption-actually-does" title="Permanent link">&para;</a></h3>
+<p>Verified against upstream commit <a href="https://github.com/cyverse/gocommands/tree/a5109339b174c7defca644a3c10a9fa0ed1f66de"><code>a5109339b174c7defca644a3c10a9fa0ed1f66de</code></a>, whose version file is <strong>v0.12.5</strong>, on <strong>2026-10-09</strong>. Recheck your installed release: current source and installed binaries can differ.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Implementation reviewed</th>
+<th>Filenames and integrity limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ssh</code> (default encryption mode)</td>
+<td>Random 32-byte AES key and 16-byte CTR IV per nonempty file; RSA-OAEP/SHA-256 wraps key and IV.</td>
+<td><code>.rsaaesctr.enc</code>; names are obfuscated with a key derived from the public RSA modulus, so public-key holders can recover them. Content has no MAC/tag.</td>
+</tr>
+<tr>
+<td><code>winscp</code></td>
+<td>AES-CTR using caller-supplied key bytes, with random IV.</td>
+<td><code>.aesctr.enc</code>; filenames use the secret key, but neither filename nor content has a MAC/tag.</td>
+</tr>
+<tr>
+<td><code>pgp</code></td>
+<td>Symmetric OpenPGP with AES-256 via <code>golang.org/x/crypto/openpgp</code>.</td>
+<td>Original filename plus <code>.pgp.enc</code>. Legacy OpenPGP SHA-1 modification detection (MDC) is checked at EOF, after plaintext writing has begun; no sender signature or GCM. Do not use partially written output on failure.</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://github.com/cyverse/gocommands/tree/a5109339b174c7defca644a3c10a9fa0ed1f66de/commons/encryption">encryption implementation</a>, <a href="https://github.com/cyverse/gocommands/blob/a5109339b174c7defca644a3c10a9fa0ed1f66de/cmd/flag/encryption.go">CLI flags</a>, and <a href="https://github.com/cyverse/gocommands/blob/a5109339b174c7defca644a3c10a9fa0ed1f66de/docs/encryption.md">encryption manual</a>.</p>
+<p>Encryption is <strong>optional</strong>, not automatically applied to every upload: <code>--encrypt</code> enables it, <code>--encrypt_key</code> can enable it, and collection metadata can select a mode. <code>--no_encrypt</code> overrides encryption. Decryption is enabled by default for recognized formats; <code>--no_decrypt</code> preserves encrypted bytes. Inspect effective behavior rather than assuming a flag-free transfer is safe.</p>
+<p>For SSH mode, GoCommands consumes existing RSA keys; it does not provision your long-term key custody. Its reviewed parser does not support passphrase-encrypted private keys. An Ed25519 GitHub key is not interchangeable with the RSA key this mode expects. For WinSCP, key strings become bytes and are padded to an AES-compatible length in the helper; no password-strengthening KDF is used there. Do not treat a memorable password as a strong AES key. PGP uses a supplied passphrase through OpenPGP; the CLI secret flags can expose it through process listings and history.</p>
+<div class="admonition warning">
+<p class="admonition-title">AES-CTR confidentiality is separate from integrity</p>
+<p>The reviewed SSH and WinSCP content paths call <code>cipher.NewCTR</code> without a content MAC or authentication tag. RSA wrapping does not authenticate the AES ciphertext body. An attacker can change encrypted content without a reliable rejection at decryption. Transfer checksums are not a replacement for authenticated encryption when the attacker can alter the reference. Use an institution-approved authenticated format, or an independently protected integrity mechanism reviewed by security staff.</p>
+</div>
+<p>The pinned OpenPGP dependency emits an MDC packet and checks it when the body reaches EOF. GoCommands' PGP helper writes plaintext as it reads, so it does not provide the tutorial's authenticate-before-output behavior. Treat a failed PGP operation as potentially leaving plaintext within the approved boundary; investigate and clean up through the approved process. See <a href="https://github.com/golang/crypto/blob/v0.43.0/openpgp/read.go">OpenPGP reading</a> and <a href="https://github.com/golang/crypto/blob/v0.43.0/openpgp/packet/symmetrically_encrypted.go">MDC implementation</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Native command options (source-verified)</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>put --encrypt --encrypt_mode ssh --encrypt_pub_key PATH</code></td>
+<td>Encrypt during upload using an existing RSA public key.</td>
+</tr>
+<tr>
+<td><code>put --encrypt --encrypt_mode winscp --encrypt_key STRING</code></td>
+<td>Use a supplied symmetric key; secret appears in CLI arguments.</td>
+</tr>
+<tr>
+<td><code>put --encrypt --encrypt_mode pgp --encrypt_key STRING</code></td>
+<td>Use a supplied OpenPGP passphrase; secret appears in CLI arguments.</td>
+</tr>
+<tr>
+<td><code>get --decrypt --decrypt_priv_key PATH</code></td>
+<td>Download and decrypt a recognized SSH-mode object.</td>
+</tr>
+<tr>
+<td><code>get --decrypt --decrypt_key STRING</code></td>
+<td>Download and decrypt a recognized WinSCP/PGP object.</td>
+</tr>
+<tr>
+<td><code>ls --decrypt --decrypt_priv_key PATH</code> or <code>ls --decrypt --decrypt_key STRING</code></td>
+<td>Display decoded names where that mode supports them.</td>
+</tr>
+<tr>
+<td><code>--encrypt_temp PATH</code> / <code>--decrypt_temp PATH</code></td>
+<td>Put native temporary files on reviewed scratch storage.</td>
+</tr>
+<tr>
+<td><code>put --no_encrypt</code> / <code>get --no_decrypt</code></td>
+<td>Transfer pre-encrypted bytes without native transformation.</td>
+</tr>
+</tbody>
+</table>
+<p>Append the source and destination paths documented in the tutorial. The key-string options above document the interface; they are not recommended secret-injection patterns. GoCommands does not automatically generate/custody your RSA or WinSCP key, and none of these flags hides the supplied secret from a privileged runtime observer.</p>
+<p>Names, collection hierarchy, user/group identities, sizes, timestamps, ACLs, metadata, and access patterns are not all hidden by file encryption. Use opaque nonsensitive names even in SSH mode. AES-GCM can authenticate ciphertext, but needs unique nonces for each key, careful failure handling, and an approved implementation; GoCommands does <strong>not</strong> offer a native GCM mode in this reviewed source. <a href="https://csrc.nist.gov/pubs/sp/800/38/d/final">NIST describes GCM and GMAC</a>.</p>
+<h3 id="encryption-key-management">Encryption key management<a class="headerlink" href="#encryption-key-management" title="Permanent link">&para;</a></h3>
+<p>Define key owners separately from data owners. Generate keys with a cryptographically secure generator; use an approved institutional vault or key service and record key identifiers, not key material. Limit who can release or recover them. Keep keys out of CyVerse data collections, Git, images, shell arguments, and notebooks. A protected runtime key file remains accessible to sufficiently privileged operators.</p>
+<p>Set rotation triggers and cryptoperiods, recovery procedures with an authorized second custodian, and a tested restoration exercise. Record revocation and compromise response: removing an account does not revoke a copied decryption key. Rotation may require re-encryption and addressing older retained copies. Destroy keys only after required retention and recovery obligations end. The institution must select applicable cryptographic/module requirements; an algorithm name alone does not establish them. See <a href="https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final">NIST key management guidance</a>.</p>
+<h2 id="practice-with-synthetic-data">Practice with synthetic data<a class="headerlink" href="#practice-with-synthetic-data" title="Permanent link">&para;</a></h2>
+<p>Run from a <strong>terminal</strong>, outside a Git checkout, on a Linux VM approved for the exercise. Nothing below authorizes restricted processing. Commands are labeled as follows:</p>
+<ul>
+<li><strong>Source-verified:</strong> GoCommands spelling and flags checked against the pinned source; live CyVerse transactions were not executed for this guide.</li>
+<li><strong>Configuration-dependent:</strong> Needs your provider's settings, accounts, permissions, runtime, or key service; synthetic validation must succeed before real use.</li>
+<li><strong>Locally tested:</strong> The supplied small-file encryption helper and synthetic analysis were exercised locally, including tamper rejection.</li>
+<li><strong>Illustrative:</strong> A design pattern needing adaptation and review, not a production control.</li>
+</ul>
+<p>This tutorial uses a small <strong>educational AES-GCM envelope</strong> before GoCommands upload to demonstrate authenticated encryption separately from transport. It is not a production encryption product, is not compatible with GoCommands native encryption, and reads the whole small file into memory. For large datasets use an approved streaming format/tool. The authenticated context identifies each expected artifact; maintain an independently approved manifest/version to prevent replay of older valid files.</p>
+<h3 id="1-establish-scratch-and-authenticate">1. Establish scratch and authenticate<a class="headerlink" href="#1-establish-scratch-and-authenticate" title="Permanent link">&para;</a></h3>
+<p><strong>Configuration-dependent.</strong> Have the VM owner provision <code>/mnt/approved-scratch</code> on an approved encrypted volume, including encrypted or disabled swap and reviewed snapshot policy. Creating a directory does not configure encryption. GoCommands and Python's <code>cryptography</code> package must already be installed through the reviewed environment manifest; record their versions. Download the <a href="../../assets/security-templates/synthetic-envelope.py">educational helper</a> to a reviewed tools directory and set its absolute path below.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">set</span><span class="w"> </span>-euo<span class="w"> </span>pipefail
+<span class="nb">umask</span><span class="w"> </span><span class="m">077</span>
+<span class="nv">ENVELOPE</span><span class="o">=</span><span class="s1">'/path/to/reviewed-tools/synthetic-envelope.py'</span>
+<span class="nv">WORK</span><span class="o">=</span><span class="s2">"</span><span class="k">$(</span>mktemp<span class="w"> </span>-d<span class="w"> </span>/mnt/approved-scratch/oasis-demo.XXXXXX<span class="k">)</span><span class="s2">"</span>
+mkdir<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/plain"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/tmp"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TMPDIR</span><span class="o">=</span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/tmp"</span>
+gocmd<span class="w"> </span>--version
+python3<span class="w"> </span>-c<span class="w"> </span><span class="s1">'import cryptography; print(cryptography.__version__)'</span>
+</code></pre></div>
+<p><strong>Source-verified configuration keys; configuration-dependent transport.</strong> Obtain the exact endpoint/CA and approved authentication scheme from CyVerse. Set these supported variables <strong>before</strong> <code>init</code>, so the login route also requests secure negotiation. GoCommands environment values override file values. These names are verified in its <a href="https://github.com/cyverse/gocommands/blob/a5109339b174c7defca644a3c10a9fa0ed1f66de/docs/configuration.md">configuration manual</a>; they are not a tested CyVerse deployment recipe.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">IRODS_CLIENT_SERVER_NEGOTIATION</span><span class="o">=</span><span class="s1">'request_server_negotiation'</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">IRODS_CLIENT_SERVER_POLICY</span><span class="o">=</span><span class="s1">'CS_NEG_REQUIRE'</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">IRODS_SSL_VERIFY_SERVER</span><span class="o">=</span><span class="s1">'hostname'</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">IRODS_SSL_CA_CERTIFICATE_FILE</span><span class="o">=</span><span class="s1">'/path/to/provider-approved-ca.pem'</span>
+gocmd<span class="w"> </span>init
+gocmd<span class="w"> </span>env
+gocmd<span class="w"> </span>ls
+</code></pre></div>
+<p>Use the interactive login, not password/token exports or notebook cells. Protect the actual configuration/authentication files created by your client. Review <code>gocmd env</code> privately: it can expose configuration details. Stop if TLS/authentication fails; do not disable certificate verification to get a connection. Require provider confirmation and synthetic failure tests for certificate checks and <strong>data</strong> channels, including resource servers. Client intent and a successful login are not that evidence. In the reviewed <code>go-irodsclient</code> v0.21.4 dependency, only <code>hostname</code> enables normal certificate verification; <code>cert</code> must not be substituted as though it provides the same check. See the <a href="https://github.com/cyverse/go-irodsclient/blob/v0.21.4/irods/types/ssl_config.go">versioned TLS configuration implementation</a>.</p>
+<h3 id="2-create-and-verify-a-private-collection">2. Create and verify a private collection<a class="headerlink" href="#2-create-and-verify-a-private-collection" title="Permanent link">&para;</a></h3>
+<p><strong>Source-verified syntax; configuration-dependent access.</strong> Replace <code>YOUR_USERNAME</code> and <code>PROJECT_ID</code> with nonsensitive identifiers. Use a new collection in your own home; inspect the parent before creation.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">REMOTE</span><span class="o">=</span><span class="s1">'/iplant/home/YOUR_USERNAME/PROJECT_ID-synthetic-demo'</span>
+gocmd<span class="w"> </span>ls<span class="w"> </span>-A<span class="w"> </span><span class="s1">'/iplant/home/YOUR_USERNAME'</span>
+gocmd<span class="w"> </span>mkdir<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">"</span>
+gocmd<span class="w"> </span>ls<span class="w"> </span>-A<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">"</span>
+gocmd<span class="w"> </span>chmodinherit<span class="w"> </span>noinherit<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">"</span>
+</code></pre></div>
+<p><code>noinherit</code> affects future children; it does not remove ACLs already inherited at creation. If inspection reveals an unintended user/group, remove that specific grant and inspect again. Do not remove required provider administration grants or your own ownership.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Replace UNINTENDED_PRINCIPAL only after reviewing the ACL and memberships.</span>
+gocmd<span class="w"> </span>chmod<span class="w"> </span>null<span class="w"> </span><span class="s1">'UNINTENDED_PRINCIPAL'</span><span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">"</span>
+gocmd<span class="w"> </span>ls<span class="w"> </span>-A<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">"</span>
+</code></pre></div>
+<p>Treat an absent grant-removal need as a reason to skip that block. Review tickets/public links separately with CyVerse. Test an unauthorized <strong>test account</strong>, without sharing anyone's credentials. After uploads, inspect each object's ACL; parent privacy alone is insufficient.</p>
+<h3 id="3-prepare-records-and-a-separate-exercise-key">3. Prepare records and a separate exercise key<a class="headerlink" href="#3-prepare-records-and-a-separate-exercise-key" title="Permanent link">&para;</a></h3>
+<p><strong>Locally tested synthetic preparation.</strong> These fictional identifiers and measurements refer to no people or properties. In real work a custodian would retain the linkage table separately.</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/plain/input.csv"</span><span class="w"> </span><span class="s">&lt;&lt;'CSV'</span>
+<span class="s">record_id,region,measurement</span>
+<span class="s">s001,A,12.0</span>
+<span class="s">s002,A,14.0</span>
+<span class="s">s003,B,9.0</span>
+<span class="s">s004,B,11.0</span>
+<span class="s">CSV</span>
+</code></pre></div>
+<p>For this synthetic exercise only, put a randomly generated key in a <strong>separate approved mount</strong>. For real data use the approved vault, recovery, release, and rotation process, not an unmanaged local key. The helper writes with mode <code>0600</code>, exclusive creation, and no key printing.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">KEYDIR</span><span class="o">=</span><span class="s2">"</span><span class="k">$(</span>mktemp<span class="w"> </span>-d<span class="w"> </span>/mnt/approved-keys/oasis-demo.XXXXXX<span class="k">)</span><span class="s2">"</span>
+<span class="nv">KEYFILE</span><span class="o">=</span><span class="s2">"</span><span class="nv">$KEYDIR</span><span class="s2">/exercise.key"</span>
+python3<span class="w"> </span><span class="s2">"</span><span class="nv">$ENVELOPE</span><span class="s2">"</span><span class="w"> </span>keygen<span class="w"> </span><span class="s2">"</span><span class="nv">$KEYFILE</span><span class="s2">"</span>
+python3<span class="w"> </span><span class="s2">"</span><span class="nv">$ENVELOPE</span><span class="s2">"</span><span class="w"> </span>encrypt<span class="w"> </span><span class="s2">"</span><span class="nv">$KEYFILE</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/plain/input.csv"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/object-001.bin"</span><span class="w"> </span><span class="s1">'PROJECT_ID:input:version-1'</span>
+</code></pre></div>
+<p>The VM owner must provision <code>/mnt/approved-keys</code>; it must not be an upload source, repository, or image layer. Ciphertext filename and context are deliberately nonsensitive. Every encryption call generates a fresh nonce; do not modify the helper to reuse nonces.</p>
+<h3 id="4-upload-ciphertext-and-preserve-evidence">4. Upload ciphertext and preserve evidence<a class="headerlink" href="#4-upload-ciphertext-and-preserve-evidence" title="Permanent link">&para;</a></h3>
+<p><strong>Source-verified.</strong> <code>--no_encrypt</code> intentionally avoids a second native encryption layer: the helper has already produced authenticated ciphertext. <code>-k</code> requests checksum verification; do not use <code>--no_hash</code> as an integrity check.</p>
+<div class="highlight"><pre><span></span><code>gocmd<span class="w"> </span>put<span class="w"> </span>--no_encrypt<span class="w"> </span>-k<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/object-001.bin"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">/"</span>
+gocmd<span class="w"> </span>ls<span class="w"> </span>-A<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">/object-001.bin"</span>
+gocmd<span class="w"> </span>ls<span class="w"> </span>-L<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">/object-001.bin"</span>
+python3<span class="w"> </span><span class="s2">"</span><span class="nv">$ENVELOPE</span><span class="s2">"</span><span class="w"> </span>digest<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/object-001.bin"</span>
+</code></pre></div>
+<p>Record the digest in trusted project evidence, along with effective ACLs, version, transfer result, and expected artifact context. A digest stored beside attacker-writable data is insufficient for adversarial integrity. If a transfer reports missing/skipped checksum verification, treat it as incomplete evidence; resolve it or verify an independent download before acceptance.</p>
+<h3 id="5-download-encrypted-bytes-and-decrypt-inside-compute">5. Download encrypted bytes and decrypt inside compute<a class="headerlink" href="#5-download-encrypted-bytes-and-decrypt-inside-compute" title="Permanent link">&para;</a></h3>
+<p><strong>Source-verified transfers; locally tested helper.</strong> Download to the approved scratch boundary without automatic native decryption. Compare ciphertext before attempting decryption; the helper verifies the GCM tag before writing any plaintext destination.</p>
+<div class="highlight"><pre><span></span><code>gocmd<span class="w"> </span>get<span class="w"> </span>--no_decrypt<span class="w"> </span>-k<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">/object-001.bin"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received/"</span>
+cmp<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/object-001.bin"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received/object-001.bin"</span>
+python3<span class="w"> </span><span class="s2">"</span><span class="nv">$ENVELOPE</span><span class="s2">"</span><span class="w"> </span>decrypt<span class="w"> </span><span class="s2">"</span><span class="nv">$KEYFILE</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received/object-001.bin"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored/input.csv"</span><span class="w"> </span><span class="s1">'PROJECT_ID:input:version-1'</span>
+cmp<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/plain/input.csv"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored/input.csv"</span>
+</code></pre></div>
+<p>A failed authentication tag means stop and investigate a wrong key/context or changed data. Do not consume partial plaintext. Byte comparison here proves a synthetic round trip against the local original; production must use a custodian-approved expected version/digest, not assume a local reference always exists.</p>
+<h3 id="6-analyze-review-and-encrypt-outputs">6. Analyze, review, and encrypt outputs<a class="headerlink" href="#6-analyze-review-and-encrypt-outputs" title="Permanent link">&para;</a></h3>
+<p><strong>Locally tested analysis.</strong> No row values are printed. The example averages by fictional region; aggregating two records would not by itself satisfy disclosure requirements for real data.</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored/input.csv"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/plain/result.csv"</span><span class="w"> </span><span class="s">&lt;&lt;'PY'</span>
+<span class="s">import csv, sys</span>
+<span class="s">from collections import defaultdict</span>
+<span class="s">values = defaultdict(list)</span>
+<span class="s">with open(sys.argv[1], newline='') as source:</span>
+<span class="s">    for row in csv.DictReader(source):</span>
+<span class="s">        values[row['region']].append(float(row['measurement']))</span>
+<span class="s">with open(sys.argv[2], 'x', newline='') as target:</span>
+<span class="s">    writer = csv.writer(target)</span>
+<span class="s">    writer.writerow(['region', 'n', 'mean'])</span>
+<span class="s">    for region, records in sorted(values.items()):</span>
+<span class="s">        writer.writerow([region, len(records), sum(records) / len(records)])</span>
+<span class="s">PY</span>
+<span class="c1"># Document output classification and disclosure review before release.</span>
+python3<span class="w"> </span><span class="s2">"</span><span class="nv">$ENVELOPE</span><span class="s2">"</span><span class="w"> </span>encrypt<span class="w"> </span><span class="s2">"</span><span class="nv">$KEYFILE</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/plain/result.csv"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/object-002.bin"</span><span class="w"> </span><span class="s1">'PROJECT_ID:output:version-1'</span>
+gocmd<span class="w"> </span>put<span class="w"> </span>--no_encrypt<span class="w"> </span>-k<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/object-002.bin"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">/"</span>
+gocmd<span class="w"> </span>ls<span class="w"> </span>-A<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">/object-002.bin"</span>
+gocmd<span class="w"> </span>get<span class="w"> </span>--no_decrypt<span class="w"> </span>-k<span class="w"> </span><span class="s2">"</span><span class="nv">$REMOTE</span><span class="s2">/object-002.bin"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received/"</span>
+cmp<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/object-002.bin"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received/object-002.bin"</span>
+python3<span class="w"> </span><span class="s2">"</span><span class="nv">$ENVELOPE</span><span class="s2">"</span><span class="w"> </span>decrypt<span class="w"> </span><span class="s2">"</span><span class="nv">$KEYFILE</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received/object-002.bin"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored/result.csv"</span><span class="w"> </span><span class="s1">'PROJECT_ID:output:version-1'</span>
+cmp<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/plain/result.csv"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored/result.csv"</span>
+</code></pre></div>
+<h3 id="7-verify-failure-behavior-and-close-the-exercise">7. Verify failure behavior and close the exercise<a class="headerlink" href="#7-verify-failure-behavior-and-close-the-exercise" title="Permanent link">&para;</a></h3>
+<p><strong>Locally tested negative test.</strong> Alter a synthetic ciphertext copy. Decryption must fail, and the destination must not exist. This tests the envelope, not live infrastructure controls.</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/received/object-001.bin"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/changed.bin"</span><span class="w"> </span><span class="s">&lt;&lt;'PY'</span>
+<span class="s">from pathlib import Path</span>
+<span class="s">import sys</span>
+<span class="s">payload = bytearray(Path(sys.argv[1]).read_bytes())</span>
+<span class="s">payload[-1] ^= 1</span>
+<span class="s">Path(sys.argv[2]).write_bytes(payload)</span>
+<span class="s">PY</span>
+<span class="k">if</span><span class="w"> </span>python3<span class="w"> </span><span class="s2">"</span><span class="nv">$ENVELOPE</span><span class="s2">"</span><span class="w"> </span>decrypt<span class="w"> </span><span class="s2">"</span><span class="nv">$KEYFILE</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/cipher/changed.bin"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored/should-not-exist.csv"</span><span class="w"> </span><span class="s1">'PROJECT_ID:input:version-1'</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s1">'FAIL: altered ciphertext accepted'</span><span class="w"> </span>&gt;<span class="p">&amp;</span><span class="m">2</span>
+<span class="w">  </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+<span class="nb">test</span><span class="w"> </span>!<span class="w"> </span>-e<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">/restored/should-not-exist.csv"</span>
+</code></pre></div>
+<p>After retaining nonsensitive test evidence and verifying results, delete only the exercise paths you created. Keep any production recovery key for its required retention period.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Guards restrict deletion to the mktemp exercise directories.</span>
+<span class="k">case</span><span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">"</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>/mnt/approved-scratch/oasis-demo.*<span class="o">)</span><span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>--<span class="w"> </span><span class="s2">"</span><span class="nv">$WORK</span><span class="s2">"</span><span class="w"> </span><span class="p">;;</span><span class="w"> </span>*<span class="o">)</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">;;</span><span class="w"> </span><span class="k">esac</span>
+<span class="k">case</span><span class="w"> </span><span class="s2">"</span><span class="nv">$KEYDIR</span><span class="s2">"</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>/mnt/approved-keys/oasis-demo.*<span class="o">)</span><span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>--<span class="w"> </span><span class="s2">"</span><span class="nv">$KEYDIR</span><span class="s2">"</span><span class="w"> </span><span class="p">;;</span><span class="w"> </span>*<span class="o">)</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">;;</span><span class="w"> </span><span class="k">esac</span>
+<span class="nb">unset</span><span class="w"> </span>KEYFILE<span class="w"> </span>KEYDIR<span class="w"> </span>WORK<span class="w"> </span>TMPDIR
+</code></pre></div>
+<p>Do not treat this as verified destruction. Use the provider-approved process for remote synthetic objects, trash, scratch volumes, snapshots, and backup copies; retain remote results only if the exercise plan allows it. Revoke or expire exercise credentials through the supported identity process, address client authentication caches, stop notebook sessions, and terminate the intended VM through the provider interface. Confirm deletion rather than only stopping compute.</p>
+<details class="details">
+<summary>Native GoCommands SSH encryption: a separate synthetic comparison</summary>
+<p><strong>Source-verified syntax; configuration-dependent key provision.</strong> This option does not provide authenticated content encryption. It is independent of the AES-GCM tutorial above. Provision a dedicated RSA encryption key pair through an approved process. The reviewed GoCommands parser needs an unencrypted private-key representation, so any runtime copy needs tightly controlled custody; do not weaken a production key merely to run this example.</p>
+<div class="highlight"><pre><span></span><code>gocmd<span class="w"> </span>put<span class="w"> </span>--encrypt<span class="w"> </span>--encrypt_mode<span class="w"> </span>ssh<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--encrypt_pub_key<span class="w"> </span>/approved-key-mount/demo-rsa.pub<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--encrypt_temp<span class="w"> </span>/mnt/approved-scratch/native-temp<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-k<span class="w"> </span>/mnt/approved-scratch/synthetic.csv<span class="w"> </span>/iplant/home/YOUR_USERNAME/SYNTHETIC_COLLECTION/
+gocmd<span class="w"> </span>ls<span class="w"> </span>--no_decrypt<span class="w"> </span>/iplant/home/YOUR_USERNAME/SYNTHETIC_COLLECTION/
+</code></pre></div>
+<p>Select the exact returned opaque name ending in <code>.rsaaesctr.enc</code>; do not guess it. To first preserve ciphertext and then compare native decryption behavior:</p>
+<div class="highlight"><pre><span></span><code>gocmd<span class="w"> </span>get<span class="w"> </span>--no_decrypt<span class="w"> </span>-k<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s1">'/iplant/home/YOUR_USERNAME/SYNTHETIC_COLLECTION/RETURNED_NAME.rsaaesctr.enc'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>/mnt/approved-scratch/native-cipher/
+gocmd<span class="w"> </span>get<span class="w"> </span>--decrypt<span class="w"> </span>--decrypt_priv_key<span class="w"> </span>/approved-key-mount/demo-rsa<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--decrypt_temp<span class="w"> </span>/mnt/approved-scratch/native-temp<span class="w"> </span>-k<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s1">'/iplant/home/YOUR_USERNAME/SYNTHETIC_COLLECTION/RETURNED_NAME.rsaaesctr.enc'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>/mnt/approved-scratch/native-plain/
+</code></pre></div>
+<p>Pre-create the three local destination/temp directories with restricted permissions on approved storage. Native encryption happens locally before upload; <code>get --decrypt</code> writes local plaintext after download. Keep original content and an independently protected digest for comparison. A successful CTR decryption is not proof that data were not maliciously modified. Do not use identifying filenames, expose the private key, or treat these source-checked examples as live-tested security guarantees.</p>
+</details>
+<h2 id="secure-the-vm-and-container">Secure the VM and container<a class="headerlink" href="#secure-the-vm-and-container" title="Permanent link">&para;</a></h2>
+<p><img alt="Security boundaries from user identity through container, VM, network, and storage; privileged access and plaintext exposure remain explicit." src="../../assets/diagrams/sensitive-data/security-boundaries.svg" /></p>
+<p><a href="../../assets/diagrams/sensitive-data/security-boundaries.svg">Open the full-size diagram</a>.</p>
+<p><em>These controls are complementary. Container restrictions do not replace VM, network, or storage controls.</em></p>
+<p><strong>Required</strong> means required by the classification, agreement, institutional decision, or this approved control plan. Additional hardening can reduce risk but cannot compensate for a missing required control. If the provider cannot supply a required control, use a permitted alternative environment.</p>
+<h3 id="vm-controls-to-resolve-before-data-entry">VM controls to resolve before data entry<a class="headerlink" href="#vm-controls-to-resolve-before-data-entry" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Required decision and practical verification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentication and MFA</td>
+<td>Use named accounts, required MFA at relevant entry points, limited session lifetime, and prompt removal of leavers. Check identity policy and test the actual notebook/SSH route. Web MFA does not imply CLI MFA.</td>
+</tr>
+<tr>
+<td>SSH</td>
+<td>If enabled, use approved keys, trusted host-key verification, restricted users/source networks, and the institution's privileged-login policy. Do not blindly trust <code>ssh-keyscan</code> output as identity proof.</td>
+</tr>
+<tr>
+<td>Firewall and network</td>
+<td>Allow only necessary ingress; prohibit public unauthenticated notebook ports. Review cloud security groups and guest firewall together. Restrict egress to approved destinations; test denials.</td>
+</tr>
+<tr>
+<td>Disk, swap, and snapshots</td>
+<td>Verify the actual scratch volume and encryption-key custody, encrypted or disabled swap, crash dumps/hibernation policy, and snapshot/backup eligibility. Provider evidence is needed for underlying storage.</td>
+</tr>
+<tr>
+<td>Administrative access</td>
+<td>Inventory research, platform, cloud, and support administrators; define escalation and logging. A mounted encrypted filesystem remains readable to privileged processes.</td>
+</tr>
+<tr>
+<td>Updates and audits</td>
+<td>Use supported OS/images, document patch cadence, collect access and security events into approved protected storage, synchronize time, and test alerting. Avoid sensitive record values in logs.</td>
+</tr>
+</tbody>
+</table>
+<p>Optional hardening beyond the approved baseline can include dedicated instances, shorter sessions, stricter egress, and more restrictive service exposure. Record tradeoffs and compatibility; do not silently disable a required control for a scientific package.</p>
+<h3 id="container-controls">Container controls<a class="headerlink" href="#container-controls" title="Permanent link">&para;</a></h3>
+<p><a href="https://docs.docker.com/engine/security/">Docker's security model</a> distinguishes kernel isolation, capabilities, and daemon privileges. Use non-root processes, read-only root filesystems when possible, minimal writable mounts, dropped capabilities, no privileged mode, no Docker socket, and no host-wide filesystem mounts. Pin images by digest, review their provenance, scan dependencies, and rebuild for security fixes. Scanning does not prove an image is safe.</p>
+<p>Inject only the required secret using an approved runtime mechanism, preferably a read-only protected mount. Exclude secrets from environment dumps, image layers, build arguments, logs, and repositories. Limit networks; host firewall/egress policy still matters.</p>
+<details class="details">
+<summary>Illustrative isolated analysis container</summary>
+<p><strong>Configuration-dependent / illustrative.</strong> A VM administrator may adapt this only after checking <a href="https://docs.docker.com/engine/containers/run/">Docker run options</a>, image compatibility, and the approved storage paths. Replace the image with its real approved digest. It is an offline analysis pattern; run authenticated GoCommands transfers in a separately controlled transfer step. A hosted VICE app may not expose these options to researchers.</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>--user<span class="w"> </span><span class="m">10001</span>:10001<span class="w"> </span>--read-only<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--cap-drop<span class="w"> </span>ALL<span class="w"> </span>--security-opt<span class="w"> </span>no-new-privileges:true<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--network<span class="w"> </span>none<span class="w"> </span>--pids-limit<span class="w"> </span><span class="m">256</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,src<span class="o">=</span>/mnt/approved-scratch/job,dst<span class="o">=</span>/work<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,src<span class="o">=</span>/mnt/approved-keys/job,dst<span class="o">=</span>/run/keys,readonly<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--workdir<span class="w"> </span>/work<span class="w"> </span>--env<span class="w"> </span><span class="nv">TMPDIR</span><span class="o">=</span>/work/tmp<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s1">'REGISTRY/IMAGE@sha256:APPROVED_DIGEST'</span><span class="w"> </span>python<span class="w"> </span>/work/analysis.py
+</code></pre></div>
+<p>Provision paths, ownership, and <code>/work/tmp</code> before launch; root filesystem read-only does not encrypt <code>/work</code>. This does not configure memory protection, swap, audit logs, or provider controls. Avoid moving secrets into <code>/work</code> where results are uploaded.</p>
+</details>
+<h3 id="scientific-computing-leaves-more-than-result-files">Scientific computing leaves more than result files<a class="headerlink" href="#scientific-computing-leaves-more-than-result-files" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Plaintext source</th>
+<th>Control and synthetic verification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jupyter outputs and checkpoints</td>
+<td>Avoid record previews, strip outputs from shareable notebooks, keep checkpoints inside approved storage, and inspect <code>.ipynb</code> JSON and checkpoint copies. Never place keys in cells.</td>
+</tr>
+<tr>
+<td>Python and R temporary files</td>
+<td>Set <code>TMPDIR</code> before starting processes; check Python <code>tempfile.gettempdir()</code> and R <code>tempdir()</code> at runtime. R chooses its temp directory at startup. Test error paths too.</td>
+</tr>
+<tr>
+<td>Dask spill</td>
+<td>Set worker <code>local_directory</code> inside approved scratch; inspect spill files after workloads and cleanup. Restrict dashboards and worker connections.</td>
+</tr>
+<tr>
+<td>GDAL and raster processing</td>
+<td>Set applicable <code>CPL_TMPDIR</code> and application-specific cache/output paths; memory cache configuration alone does not control all disk intermediates. Review VSI/network requests and logs.</td>
+</tr>
+<tr>
+<td>Logs, shell history, errors</td>
+<td>Avoid secrets in command arguments and record dumps in errors. Configure approved log retention/redaction; disabling history alone does not remove existing history or audit records.</td>
+</tr>
+<tr>
+<td>Container writable layers</td>
+<td>Use read-only root plus explicit scratch mounts where supported; inspect runtime mounts and residual layers. <code>--rm</code> does not remove bind-mounted data or host snapshots.</td>
+</tr>
+<tr>
+<td>RAM, swap, core dumps</td>
+<td>Plaintext and keys live in memory; approve administrator access, swap and dump policy. Do not promise Python objects are securely zeroed when freed.</td>
+</tr>
+</tbody>
+</table>
+<p>A synthetic marker scan should cover success, cancellation, crash, and restart. Constrain any scientific workflow calling public geocoding, AI, telemetry, or other external services; do not send restricted data to an unapproved API.</p>
+<h2 id="linkage-keys-reidentification-and-disclosure">Linkage keys, reidentification, and disclosure<a class="headerlink" href="#linkage-keys-reidentification-and-disclosure" title="Permanent link">&para;</a></h2>
+<p>A <strong>direct identifier</strong> names a person or property. An <strong>indirect identifier</strong>, such as coordinates, dates, rare habitat, or a distinctive farm size, can identify when combined. A <strong>pseudonymous identifier</strong> replaces the direct name while preserving record relationships. A <strong>linkage key</strong> maps records between datasets or connects pseudonyms to identities. Pseudonymization is not anonymization; <strong>reidentification</strong> recovers an identity using retained keys or outside information.</p>
+<p>For example, a private property table and confidential observations may be joined by parcel identifier. An authorized custodian can perform the join in a separately approved linkage environment, retain the mapping and identifying fields there, and provide only purpose-limited pseudonymous analytical records. Analysts receive no linkage key unless explicitly required and authorized. Code and synthetic schemas can remain reproducible without publishing the mapping.</p>
+<p>Review the analytical records for residual coordinates or combinations that permit relinking. A derived map may locate a property; model predictions can reconstruct confidential measurements; a spatial summary or rare-category count can single out one owner. A trained model or embedding may retain sensitive training information.</p>
+<p>For each release, a named custodian/reviewer should consider direct and indirect identifiers, joins to public datasets, geographic precision, dates, small cells and differencing across releases, outliers, model artifacts, notebook output, metadata, and licensing. Select suppression, coarsening, aggregation, or other approved disclosure controls for the actual risk. There is no universal safe cell size or map resolution. Record residual risk, allowed audience, and release approval; encryption during transfer does not make a public result safe.</p>
+<h2 id="validate-controls-and-retain-evidence">Validate controls and retain evidence<a class="headerlink" href="#validate-controls-and-retain-evidence" title="Permanent link">&para;</a></h2>
+<p>Use synthetic data and authorized test accounts. Preserve detailed evidence privately, with dataset/version, environment, date, tester, expected result, actual result, and remediation. <strong>Passing this checklist does not establish certification or substitute for authorization.</strong> Provider assertions should identify service scope and dates; a generic statement is insufficient.</p>
+<table>
+<thead>
+<tr>
+<th>Area / control</th>
+<th>Test procedure</th>
+<th>Expected outcome</th>
+<th>Evidence to retain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Storage: ACLs and groups</td>
+<td>Inspect parent, collection, new objects, groups, tickets; test permitted and non-member accounts.</td>
+<td>Intended access succeeds; unintended read/write denied.</td>
+<td>Redacted ACLs, membership/ticket review, denial/success record.</td>
+</tr>
+<tr>
+<td>Storage: encryption</td>
+<td>Identify file/volume layers and key owners; get evidence for backend, replicas, backups.</td>
+<td>Required layers are configured; custody matches plan.</td>
+<td>Configuration and scoped provider evidence; unresolved layers listed.</td>
+</tr>
+<tr>
+<td>Storage: replication/recovery</td>
+<td>Inspect available replica info; perform approved synthetic restore and ask provider about failure domains.</td>
+<td>Restored bytes match trusted original; required availability is evidenced.</td>
+<td>Replica/restore evidence, recovery objectives, provider response.</td>
+</tr>
+<tr>
+<td>Storage: retention</td>
+<td>Ask about trash, replicas, backups and legal holds; test agreed synthetic deletion.</td>
+<td>Retention and deletion match approved obligations.</td>
+<td>Inventory, deadlines, scoped deletion confirmation.</td>
+</tr>
+<tr>
+<td>Transfer: authentication/TLS</td>
+<td>Review actual auth route, effective config, CA/hostname; test bad cert in approved test endpoint and validate data channels.</td>
+<td>Required auth succeeds; bad peer fails; no unapproved plaintext channel.</td>
+<td>Version, redacted config, negative test, server/channel evidence.</td>
+</tr>
+<tr>
+<td>Transfer: integrity</td>
+<td>Upload/download synthetic bytes with checksums; compare trusted digest; tamper with test ciphertext.</td>
+<td>Round trip matches; authenticated format rejects changes before output.</td>
+<td>Digests, test results, checksum failures and resolution.</td>
+</tr>
+<tr>
+<td>Compute: access</td>
+<td>Test notebook, SSH and API entry points with named accounts; inspect MFA/session controls.</td>
+<td>Only approved users/routes allowed; termination works.</td>
+<td>Access policy and test results.</td>
+</tr>
+<tr>
+<td>Compute: VM/container isolation</td>
+<td>Inspect UID, capabilities, mounts, daemon access, image digest, firewall and volume settings.</td>
+<td>Approved runtime and plaintext boundary only; no forbidden mounts/privileges.</td>
+<td>Runtime inventory, image scan/provenance, provider host-control evidence.</td>
+</tr>
+<tr>
+<td>Compute: network</td>
+<td>Test required allowed destinations and representative blocked ingress/egress using synthetic requests.</td>
+<td>Required routes work; prohibited routes fail.</td>
+<td>Cloud and guest rules, observed results.</td>
+</tr>
+<tr>
+<td>Processing: keys</td>
+<td>Test authorized release, unauthorized denial, recovery, and revocation process using exercise keys.</td>
+<td>Least privilege and recovery work; compromise response is documented.</td>
+<td>Vault policy, audit records, recovery test; never key values.</td>
+</tr>
+<tr>
+<td>Processing: caches/logs</td>
+<td>Run synthetic marker through notebooks, Python/R, Dask, GDAL and failed jobs; inspect paths, logs, layers and dumps.</td>
+<td>No marker outside approved custody; retained copies covered by plan.</td>
+<td>Path inventory, scan results, remediation.</td>
+</tr>
+<tr>
+<td>Outputs: review and preservation</td>
+<td>Review maps/tables/models/notebooks; encrypt restricted outputs; restore and inspect ACLs.</td>
+<td>Authorized release only; restored outputs match; restricted access persists.</td>
+<td>Reviewer sign-off, version/digest, transfer and access results.</td>
+</tr>
+<tr>
+<td>Cleanup: files and snapshots</td>
+<td>Inspect scratch volumes, container remnants, snapshots, backups and trash after planned cleanup.</td>
+<td>No unexplained copies; retained exceptions approved.</td>
+<td>Destruction record and provider confirmations.</td>
+</tr>
+<tr>
+<td>Cleanup: credentials/session</td>
+<td>End notebook and VM session, expire/revoke exercise access, address authentication cache.</td>
+<td>Old session/credential unusable; volume retention resolved.</td>
+<td>Session/credential test and residual-copy inventory.</td>
+</tr>
+</tbody>
+</table>
+<p>Download the <a href="../../assets/security-templates/security-validation-checklist/">validation worksheet</a> to record actual outcomes and the four states for an access application.</p>
+<h2 id="who-is-responsible">Who is responsible?<a class="headerlink" href="#who-is-responsible" title="Permanent link">&para;</a></h2>
+<p>The table identifies responsibilities to <strong>negotiate and document</strong>, not a service-level agreement. CyVerse and the VM provider may be different organizations; responsibilities vary by launch route. Every control needs a named accountable person and an evidence source.</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>CyVerse</th>
+<th>VM/cloud provider</th>
+<th>Institution</th>
+<th>Research team</th>
+<th>Data custodian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentication</td>
+<td>Describe storage/service auth</td>
+<td>Describe VM/platform auth</td>
+<td>Define identity/MFA baseline</td>
+<td>Use named accounts; maintain roster</td>
+<td>Approve eligible users</td>
+</tr>
+<tr>
+<td>Encryption and keys</td>
+<td>Confirm backend/transfer scope</td>
+<td>Confirm disk/swap/snapshot scope</td>
+<td>Approve crypto and key services</td>
+<td>Configure clients; protect runtime keys</td>
+<td>Agree key access/recovery</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Describe ACLs, replicas, recovery</td>
+<td>Describe volumes/backups</td>
+<td>Approve locations/services</td>
+<td>Apply/test ACLs; minimize copies</td>
+<td>Set permitted custody</td>
+</tr>
+<tr>
+<td>Compute</td>
+<td>Describe hosted app controls, if used</td>
+<td>Describe host/VM administration</td>
+<td>Approve plaintext boundary</td>
+<td>Harden runtime/images; patch owned layer</td>
+<td>Authorize analysis purpose</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>Describe storage endpoints/channels</td>
+<td>Supply network controls</td>
+<td>Approve routes/egress</td>
+<td>Configure/test owned rules</td>
+<td>State transfer limits</td>
+</tr>
+<tr>
+<td>Auditing</td>
+<td>Confirm events/retention/access</td>
+<td>Confirm infrastructure logs</td>
+<td>Define monitoring/evidence needs</td>
+<td>Collect permitted application evidence</td>
+<td>Review access where required</td>
+</tr>
+<tr>
+<td>Incident response</td>
+<td>Report/respond in service scope</td>
+<td>Report/respond in service scope</td>
+<td>Coordinate security/legal response</td>
+<td>Report quickly; preserve evidence</td>
+<td>Define contractual notification</td>
+</tr>
+<tr>
+<td>Retention/destruction</td>
+<td>Explain replicas/trash/backups</td>
+<td>Explain volumes/snapshots/backups</td>
+<td>Resolve holds/policy</td>
+<td>Inventory copies; execute plan</td>
+<td>Set retention/destruction terms</td>
+</tr>
+<tr>
+<td>Disclosure review</td>
+<td>No presumed scientific sign-off</td>
+<td>No presumed scientific sign-off</td>
+<td>Define required review</td>
+<td>Prepare and document proposed outputs</td>
+<td>Authorize disclosure/release</td>
+</tr>
+</tbody>
+</table>
+<p>Infrastructure providers do not assume all research responsibilities. If a control spans organizations, record handoffs and escalation contacts in the <a href="../../assets/security-templates/infrastructure-responsibility-matrix/">responsibility template</a>.</p>
+<h2 id="obtain-approval-before-processing">Obtain approval before processing<a class="headerlink" href="#obtain-approval-before-processing" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Classify</strong> inputs, combined records, linkage keys, and likely outputs with the custodian.</li>
+<li><strong>Identify obligations</strong> from consent, agreements, law, and institutional policy with the responsible offices.</li>
+<li><strong>Decide whether the proposed OASIS environment is permitted</strong>, naming exact storage, transfer paths, compute, providers, and administrative access. Choose a different approved environment if necessary.</li>
+<li><strong>Configure required controls</strong> and assign their owners.</li>
+<li><strong>Validate with synthetic data</strong>, including unauthorized-access and failure tests.</li>
+<li><strong>Document evidence</strong> and explicitly list unknowns and exceptions.</li>
+<li><strong>Obtain required written approvals</strong> covering the data, environment, users, purpose, retention, and release process. Required unresolved controls block this step.</li>
+<li><strong>Begin restricted processing</strong> only within the approved scope; periodically review access and reapprove material changes.</li>
+</ol>
+<p>Approval is project-specific and can expire. A passed exercise or previously approved project does not authorize a new dataset. Consult institutional security, privacy, research compliance, export control, or legal offices as appropriate to the actual obligations.</p>
+<h2 id="copyable-security-templates">Copyable security templates<a class="headerlink" href="#copyable-security-templates" title="Permanent link">&para;</a></h2>
+<p><a href="../../assets/security-templates/oasis-security-templates.zip">Download all ten Markdown templates and the synthetic helper as a ZIP</a>. The individual links below open readable previews; the ZIP contains the raw Markdown files to copy into your <strong>approved private documentation location</strong>. They are planning aids, not legally sufficient compliance documents. Remove placeholders, identify evidence, and get responsible review. They contain no sensitive records and should never contain actual key material.</p>
+<table>
+<thead>
+<tr>
+<th>Template</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../assets/security-templates/data-classification-worksheet/">Data classification worksheet</a></td>
+<td>Inputs, joins, disclosure risks, authority, environment decision.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/system-security-plan/">System security plan</a></td>
+<td>Scope, control implementation, unknowns, evidence, approvals.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/data-flow-description/">Data flow description</a></td>
+<td>Systems, routes, plaintext/ciphertext, metadata, third parties.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/access-control-register/">Access control register</a></td>
+<td>Named users/groups, roles, reviews, removal, administrators.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/encryption-key-management-plan/">Encryption and key management plan</a></td>
+<td>Crypto layers, custody, release, recovery, rotation, revocation.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/security-validation-checklist/">Security validation checklist</a></td>
+<td>Tests, expected/actual outcomes, four states, evidence.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/incident-response-plan/">Incident response plan</a></td>
+<td>Contacts, escalation, containment, evidence, notifications.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/data-retention-destruction-plan/">Data retention and destruction plan</a></td>
+<td>Copies, holds, timelines, deletion, proof, exceptions.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/research-output-disclosure-checklist/">Research output disclosure checklist</a></td>
+<td>Maps, models, linked records, reviewers, release approval.</td>
+</tr>
+<tr>
+<td><a href="../../assets/security-templates/infrastructure-responsibility-matrix/">Infrastructure responsibility matrix</a></td>
+<td>Control owners, provider handoffs, unresolved commitments.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="continue-with-oasis-and-authoritative-references">Continue with OASIS and authoritative references<a class="headerlink" href="#continue-with-oasis-and-authoritative-references" title="Permanent link">&para;</a></h2>
+<p>Use <a href="../../cloud-container/">Cloud Container</a>, <a href="../cyverse/">CyVerse setup</a>, <a href="../data-library/">data-library guidance</a>, <a href="../../resources/cyverse_move_and_save_data/">data movement and preservation</a>, <a href="../python/">Python/cloud exploration</a>, and <a href="../../resources/esiil_training/">ESIIL training</a> for foundational skills. Those open-data examples are not secure defaults for restricted research.</p>
+<p>Technical sources used here include the pinned GoCommands implementation and <a href="https://github.com/cyverse/gocommands/tree/a5109339b174c7defca644a3c10a9fa0ed1f66de/docs/commands">command manual</a>, <a href="https://learning.cyverse.org/ds/gocommands/">CyVerse GoCommands training</a>, <a href="https://github.com/irods/irods_docs">iRODS documentation</a>, CyVerse access documentation linked above, <a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final">NIST security control catalog</a>, key management and media sanitization guidance, and the <a href="https://cryptography.io/en/stable/hazmat/primitives/aead/">cryptography AES-GCM API</a>. Standards inform control selection; none of these links certifies this workflow.</p>
+<p>The <a href="../../dev/sensitive-data-verification/">technical verification report</a> records source checks, local validation, and deployment questions still requiring provider and institutional answers.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 9, 2026 21:48:29 UTC">October 9, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 University of Colorado Boulder
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.indexes", "navigation.tabs.sticky", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+        <script src="../../chatbot_widget.js"></script>
+      
+        <script src="../../assets/js/homepage.js"></script>
+      
+    
+  </body>
+</html>
